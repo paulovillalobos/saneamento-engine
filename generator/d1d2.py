@@ -10,6 +10,7 @@ import hashlib
 import io
 import json
 import random
+import re
 import sys
 from pathlib import Path
 
@@ -19,9 +20,15 @@ from pypdf import PdfReader  # noqa: E402
 
 PORT = {p["id"]: p for p in json.loads((ROOT / "structure" / "portaria-320-2026-1.json").read_text(encoding="utf-8"))["passages"]}
 MAXCH = 3500  # characters of document text shown to the reader (the first pages; a termo or a memória fits whole)
-D1_PROMPT = ("Um expediente de comunicação prévia de obras de edificação (CPEDI, Celorico de Basto) traz o ficheiro abaixo. Lê o texto e diz que elemento "
-             "instrutório da Portaria n.º 320/2026/1 (Anexo V) ele é. Responde {{\"elemento\": <id da passagem ou null>, \"citacao\": <texto da passagem ou \"\">, "
-             "\"tipo\": \"escrito\"|\"desenhado\"|\"nao_e_elemento\"|\"ilegivel\"}}.\n\nFicheiro: {name} ({pages} página(s))\n---\n{text}\n---")
+D1_PROMPT = ("Um expediente de comunicação prévia de obras de edificação (CPEDI, Celorico de Basto) traz o ficheiro abaixo. Os elementos instrutórios que este "
+             "pedido pode levar são estes (id — texto da Portaria n.º 320/2026/1):\n{shortlist}\n\nLê o texto do ficheiro e diz qual destes elementos ele é: "
+             "copia o id em «elemento» e o texto da passagem, letra a letra, em «citacao». Se o ficheiro não é nenhum deles, elemento null e tipo nao_e_elemento; "
+             "se não se lê, tipo ilegivel. Responde {{\"elemento\": <id ou null>, \"citacao\": <texto ou \"\">, \"tipo\": \"escrito\"|\"desenhado\"|\"nao_e_elemento\"|\"ilegivel\"}}."
+             "\n\nFicheiro: {name} ({pages} página(s))\n---\n{text}\n---")
+DOCS = json.loads((ROOT / "celorico" / "mapping" / "documents.json").read_text(encoding="utf-8"))["documents"]
+SHORTLIST_IDS = sorted({f"portaria-320-2026-1:{d['passages'][0]}" for d in DOCS if "CP/CPEDI" in d["requests"] and d["passages"]},
+                       key=lambda i: [int(x) if x.isdigit() else x for x in re.split(r"[.-]", i.split(":anexo-")[1])])
+SHORTLIST = "\n".join(f"{i} — {PORT[i]['text']}" for i in SHORTLIST_IDS if i in PORT)
 D2_FACT = ("Lê o documento abaixo de um expediente CPEDI (Celorico de Basto) e responde à pergunta com {{\"valor\": <texto exato como aparece ou null>, "
            "\"pagina\": <número ou null>, \"citacao\": <a linha onde aparece ou \"\">}}. Se o documento não o diz, valor null.\n\n"
            "Pergunta: {question}\n\nFicheiro: {name} ({pages} página(s))\n---\n{text}\n---")
@@ -73,11 +80,11 @@ def main():
             # D1
             if pages is None:
                 ans = {"elemento": None, "citacao": "", "tipo": "ilegivel"}; stats["illegible"] += 1
-            elif lab["noise"] or not lab["element"]:
+            elif lab["noise"] or not lab["element"] or lab["element"] not in SHORTLIST_IDS:
                 ans = {"elemento": None, "citacao": "", "tipo": "nao_e_elemento"}; stats["noise"] += lab["noise"]
             else:
                 ans = {"elemento": lab["element"], "citacao": PORT[lab["element"]]["text"], "tipo": "desenhado" if lab["kind"] == "drawn" else "escrito"}
-            d1.append({"id": rid("d1", lab["expediente"], lab["file"]), "task": "d1_elemento", "prompt": D1_PROMPT.format(name=lab["file"], pages=n or 0, text=text),
+            d1.append({"id": rid("d1", lab["expediente"], lab["file"]), "task": "d1_elemento", "prompt": D1_PROMPT.format(shortlist=SHORTLIST, name=lab["file"], pages=n or 0, text=text),
                        "answer": json.dumps(ans, ensure_ascii=False), "expediente": lab["expediente"]})
             if pages is None:
                 continue
