@@ -1,0 +1,105 @@
+{
+ "expediente": "T1-0019",
+ "case": {
+  "id": "T1-0019",
+  "work": "ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 3630,
+  "impl": 935,
+  "built": 1678,
+  "imperm": 1024,
+  "perm": 2606,
+  "volume": 5201,
+  "height": 7.0,
+  "facade": 6.3,
+  "parking": 2,
+  "cost": 1983300,
+  "submitted": "2026-12-01",
+  "site": "Travessa do Souto, n.º 77, Infesta, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 18,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Leonor Modelo Carla",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "60220-SIM",
+    "address": "Travessa do Souto, n.º 77, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5967"
+   },
+   "arquiteto": {
+    "name": "Nuno Simulado Vasco",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "08353-SIM",
+    "address": "Lugar de Vilar, n.º 7, 4800-000 Guimarães",
+    "policy": "SIM-RC-9431"
+   },
+   "engenheiro": {
+    "name": "Inês Fictício Vasco",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "98864-SIM",
+    "address": "Lugar da Devesa, n.º 47, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6596"
+   },
+   "diretor": {
+    "name": "João Exemplo Xavier",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "45623-SIM",
+    "address": "Lugar de Vilar, n.º 4, 4700-000 Braga",
+    "policy": "SIM-RC-4099"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "CORTES"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRCP"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  }
+ ],
+ "n_planted": 2,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

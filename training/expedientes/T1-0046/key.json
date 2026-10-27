@@ -1,0 +1,113 @@
+{
+ "expediente": "T1-0046",
+ "case": {
+  "id": "T1-0046",
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 1140,
+  "impl": 156,
+  "built": 149,
+  "imperm": 266,
+  "perm": 874,
+  "volume": 461,
+  "height": 4.1,
+  "facade": 3.4,
+  "parking": 2,
+  "cost": 180100,
+  "submitted": "2026-11-28",
+  "site": "Travessa do Souto, n.º 227, Moreira do Castelo, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 14,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Filipe Fictício Pedro",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "06906-SIM",
+    "address": "Travessa do Souto, n.º 227, Moreira do Castelo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2842"
+   },
+   "arquiteto": {
+    "name": "Vasco Exemplo Rita",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "02098-SIM",
+    "address": "Rua do Outeiro, n.º 114, 4000-000 Porto",
+    "policy": "SIM-RC-7277"
+   },
+   "engenheiro": {
+    "name": "Filipe Modelo Gonçalo",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "53470-SIM",
+    "address": "Lugar de Carvalhal, n.º 16, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4294"
+   },
+   "diretor": {
+    "name": "Eva Fictício Leonor",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "18254-SIM",
+    "address": "Lugar de Vilar, n.º 104, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3839"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-11-28"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "114 m2",
+    "area_implantacao": "156 m2",
+    "MDARQ": "1140 m2"
+   }
+  }
+ ],
+ "n_planted": 2,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

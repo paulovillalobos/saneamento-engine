@@ -1,0 +1,106 @@
+{
+ "expediente": "T1-0058",
+ "case": {
+  "id": "T1-0058",
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 3760,
+  "impl": 1147,
+  "built": 2202,
+  "imperm": 1191,
+  "perm": 2569,
+  "volume": 6826,
+  "height": 7.5,
+  "facade": 6.8,
+  "parking": 2,
+  "cost": 2455200,
+  "submitted": "2026-11-25",
+  "site": "Travessa do Souto, n.º 146, Canedo de Basto, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 10,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Olga Amostra Nuno",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "04655-SIM",
+    "address": "Travessa do Souto, n.º 146, Canedo de Basto, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9177"
+   },
+   "arquiteto": {
+    "name": "Nuno Exemplo Helena",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "67766-SIM",
+    "address": "Rua da Escola, n.º 49, 4000-000 Porto",
+    "policy": "SIM-RC-6727"
+   },
+   "engenheiro": {
+    "name": "Xavier Simulado Helena",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "89179-SIM",
+    "address": "Rua da Escola, n.º 116, 4800-000 Guimarães",
+    "policy": "SIM-RC-1373"
+   },
+   "diretor": {
+    "name": "João Modelo Bruno",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "46562-SIM",
+    "address": "Rua da Escola, n.º 9, 4000-000 Porto",
+    "policy": "SIM-RC-0743"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "CEO"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "João Modelo Bruno",
+    "assinante": "Nuno Exemplo Helena"
+   }
+  }
+ ],
+ "n_planted": 2,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

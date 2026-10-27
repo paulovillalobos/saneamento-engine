@@ -1,0 +1,113 @@
+{
+ "expediente": "T1-0030",
+ "case": {
+  "id": "T1-0030",
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 1,
+  "plot": 3200,
+  "impl": 792,
+  "built": 739,
+  "imperm": 976,
+  "perm": 2224,
+  "volume": 2290,
+  "height": 4.6,
+  "facade": 3.9,
+  "parking": 2,
+  "cost": 514300,
+  "submitted": "2026-12-08",
+  "site": "Rua da Escola, n.º 11, Gagos, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 22,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Inês Amostra Olga",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "22849-SIM",
+    "address": "Rua da Escola, n.º 11, Gagos, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8761"
+   },
+   "arquiteto": {
+    "name": "Pedro Modelo Olga",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "73590-SIM",
+    "address": "Lugar de Vilar, n.º 90, 4800-000 Guimarães",
+    "policy": "SIM-RC-6375"
+   },
+   "engenheiro": {
+    "name": "Gonçalo Exemplo Inês",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "48184-SIM",
+    "address": "Lugar de Vilar, n.º 34, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2870"
+   },
+   "diretor": {
+    "name": "Xavier Simulado Miguel",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "45055-SIM",
+    "address": "Lugar de Vilar, n.º 34, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4134"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "320 m2",
+    "area_implantacao": "792 m2",
+    "MDARQ": "3200 m2"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "739 m2",
+    "MDARQ": "841 m2"
+   }
+  }
+ ],
+ "n_planted": 2,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "expediente": "T1-0024",
+ "case": {
+  "id": "T1-0024",
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 3360,
+  "impl": 993,
+  "built": 1869,
+  "imperm": 1051,
+  "perm": 2309,
+  "volume": 5793,
+  "height": 7.7,
+  "facade": 7.0,
+  "parking": 2,
+  "cost": 1730600,
+  "submitted": "2026-11-16",
+  "site": "Caminho da Lameira, n.º 137, Vale de Bouro, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 14,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Rita de Teste Xavier",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "62675-SIM",
+    "address": "Caminho da Lameira, n.º 137, Vale de Bouro, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9925"
+   },
+   "arquiteto": {
+    "name": "Filipe Amostra Vasco",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "91986-SIM",
+    "address": "Lugar de Carvalhal, n.º 69, 4700-000 Braga",
+    "policy": "SIM-RC-0953"
+   },
+   "engenheiro": {
+    "name": "Sérgio de Teste Sérgio",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "91453-SIM",
+    "address": "Lugar de Vilar, n.º 83, 4700-000 Braga",
+    "policy": "SIM-RC-5167"
+   },
+   "diretor": {
+    "name": "Xavier Exemplo Rita",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "44259-SIM",
+    "address": "Travessa do Souto, n.º 17, 4700-000 Braga",
+    "policy": "SIM-RC-4202"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "CORTES"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

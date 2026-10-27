@@ -1,0 +1,106 @@
+{
+ "expediente": "T1-0006",
+ "case": {
+  "id": "T1-0006",
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 2640,
+  "impl": 410,
+  "built": 702,
+  "imperm": 505,
+  "perm": 2135,
+  "volume": 2176,
+  "height": 6.6,
+  "facade": 5.9,
+  "parking": 2,
+  "cost": 466100,
+  "submitted": "2026-10-14",
+  "site": "Travessa do Souto, n.º 21, Codeçoso, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 15,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Vasco Exemplo Filipe",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "16146-SIM",
+    "address": "Travessa do Souto, n.º 21, Codeçoso, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2605"
+   },
+   "arquiteto": {
+    "name": "Diogo Exemplo Nuno",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "72162-SIM",
+    "address": "Caminho da Lameira, n.º 71, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7816"
+   },
+   "engenheiro": {
+    "name": "Leonor Simulado Gonçalo",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "86465-SIM",
+    "address": "Lugar da Devesa, n.º 6, 4000-000 Porto",
+    "policy": "SIM-RC-0173"
+   },
+   "diretor": {
+    "name": "João Amostra Xavier",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "42975-SIM",
+    "address": "Lugar de Carvalhal, n.º 51, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6530"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "João Amostra Xavier",
+    "assinante": "Diogo Exemplo Nuno"
+   }
+  }
+ ],
+ "n_planted": 2,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

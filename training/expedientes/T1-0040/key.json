@@ -1,0 +1,116 @@
+{
+ "expediente": "T1-0040",
+ "case": {
+  "id": "T1-0040",
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 3960,
+  "impl": 561,
+  "built": 955,
+  "imperm": 718,
+  "perm": 3242,
+  "volume": 2960,
+  "height": 7.0,
+  "facade": 6.3,
+  "parking": 2,
+  "cost": 638800,
+  "submitted": "2026-12-01",
+  "site": "Rua do Outeiro, n.º 241, Codeçoso, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 16,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "João Modelo Teresa",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "69356-SIM",
+    "address": "Rua do Outeiro, n.º 241, Codeçoso, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2993"
+   },
+   "arquiteto": {
+    "name": "Gonçalo Exemplo Bruno",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "32272-SIM",
+    "address": "Lugar de Carvalhal, n.º 5, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5353"
+   },
+   "engenheiro": {
+    "name": "Olga Simulado Ana",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "74734-SIM",
+    "address": "Lugar de Vilar, n.º 65, 4000-000 Porto",
+    "policy": "SIM-RC-3029"
+   },
+   "diretor": {
+    "name": "Gonçalo Fictício Filipe",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "40870-SIM",
+    "address": "Travessa do Souto, n.º 8, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2397"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRPLAC"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Rua do Outeiro, n.º 241, Codeçoso, 4890-000 Celorico de Basto",
+    "TRPARQ": "Rua do Outeiro, n.º 23, Gagos, 4890-000 Celorico de Basto"
+   }
+  }
+ ],
+ "n_planted": 3,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

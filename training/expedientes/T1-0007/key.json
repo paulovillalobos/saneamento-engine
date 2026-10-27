@@ -1,0 +1,95 @@
+{
+ "expediente": "T1-0007",
+ "case": {
+  "id": "T1-0007",
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 870,
+  "impl": 166,
+  "built": 156,
+  "imperm": 324,
+  "perm": 546,
+  "volume": 483,
+  "height": 4.6,
+  "facade": 3.9,
+  "parking": 2,
+  "cost": 176200,
+  "submitted": "2026-12-12",
+  "site": "Caminho da Lameira, n.º 94, Britelo, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 14,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "João Fictício Helena",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "48246-SIM",
+    "address": "Caminho da Lameira, n.º 94, Britelo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1465"
+   },
+   "arquiteto": {
+    "name": "Pedro Simulado Vasco",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "85340-SIM",
+    "address": "Lugar da Devesa, n.º 30, 4800-000 Guimarães",
+    "policy": "SIM-RC-5027"
+   },
+   "engenheiro": {
+    "name": "Bruno de Teste Filipe",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "42515-SIM",
+    "address": "Caminho da Lameira, n.º 32, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1654"
+   },
+   "diretor": {
+    "name": "Teresa Modelo Vasco",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "79114-SIM",
+    "address": "Travessa do Souto, n.º 32, 4700-000 Braga",
+    "policy": "SIM-RC-0334"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "FOTO"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

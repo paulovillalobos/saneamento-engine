@@ -1,0 +1,116 @@
+{
+ "expediente": "T1-0014",
+ "case": {
+  "id": "T1-0014",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 1850,
+  "impl": 544,
+  "built": 481,
+  "imperm": 649,
+  "perm": 1201,
+  "volume": 1491,
+  "height": 3.9,
+  "facade": 3.2,
+  "parking": 2,
+  "cost": 349200,
+  "submitted": "2026-12-27",
+  "site": "Lugar da Devesa, n.º 240, Veade, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 9,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Filipe de Teste Teresa",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "36358-SIM",
+    "address": "Lugar da Devesa, n.º 240, Veade, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6432"
+   },
+   "arquiteto": {
+    "name": "Teresa Exemplo Filipe",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "64389-SIM",
+    "address": "Caminho da Lameira, n.º 111, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3643"
+   },
+   "engenheiro": {
+    "name": "Inês Modelo Helena",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "87617-SIM",
+    "address": "Rua da Escola, n.º 110, 4800-000 Guimarães",
+    "policy": "SIM-RC-5187"
+   },
+   "diretor": {
+    "name": "Olga Fictício Inês",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "25890-SIM",
+    "address": "Travessa do Souto, n.º 81, 4700-000 Braga",
+    "policy": "SIM-RC-9489"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDARQ"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRCP"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Lugar da Devesa, n.º 240, Veade, 4890-000 Celorico de Basto",
+    "TRPARQ": "Lugar de Carvalhal, n.º 270, Carvalho, 4890-000 Celorico de Basto"
+   }
+  }
+ ],
+ "n_planted": 3,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

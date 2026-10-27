@@ -1,0 +1,110 @@
+{
+ "expediente": "T1-0025",
+ "case": {
+  "id": "T1-0025",
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 1,
+  "plot": 3180,
+  "impl": 1100,
+  "built": 972,
+  "imperm": 1171,
+  "perm": 2009,
+  "volume": 3013,
+  "height": 4.2,
+  "facade": 3.5,
+  "parking": 2,
+  "cost": 937900,
+  "submitted": "2026-11-11",
+  "site": "Rua da Escola, n.º 11, Gagos, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 15,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Carla Amostra Helena",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "37722-SIM",
+    "address": "Rua da Escola, n.º 11, Gagos, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0379"
+   },
+   "arquiteto": {
+    "name": "Diogo de Teste Miguel",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "19276-SIM",
+    "address": "Travessa do Souto, n.º 33, 4700-000 Braga",
+    "policy": "SIM-RC-9405"
+   },
+   "engenheiro": {
+    "name": "Bruno de Teste Carla",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "13035-SIM",
+    "address": "Travessa do Souto, n.º 39, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4079"
+   },
+   "diretor": {
+    "name": "Inês Modelo Bruno",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "48416-SIM",
+    "address": "Rua da Escola, n.º 11, 4700-000 Braga",
+    "policy": "SIM-RC-6543"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "PLANT"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "972 m2",
+    "MDARQ": "856 m2"
+   }
+  }
+ ],
+ "n_planted": 2,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "expediente": "T1-0008",
+ "case": {
+  "id": "T1-0008",
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 1,
+  "plot": 680,
+  "impl": 224,
+  "built": 200,
+  "imperm": 335,
+  "perm": 345,
+  "volume": 620,
+  "height": 4.2,
+  "facade": 3.5,
+  "parking": 2,
+  "cost": 161400,
+  "submitted": "2026-10-17",
+  "site": "Lugar da Devesa, n.º 40, Veade, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 13,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Filipe Fictício Eva",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "42914-SIM",
+    "address": "Lugar da Devesa, n.º 40, Veade, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2070"
+   },
+   "arquiteto": {
+    "name": "Gonçalo Fictício Teresa",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "95716-SIM",
+    "address": "Rua da Escola, n.º 100, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9060"
+   },
+   "engenheiro": {
+    "name": "Gonçalo Fictício João",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "57706-SIM",
+    "address": "Lugar de Vilar, n.º 7, 4700-000 Braga",
+    "policy": "SIM-RC-4139"
+   },
+   "diretor": {
+    "name": "Carla Amostra Pedro",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "57383-SIM",
+    "address": "Caminho da Lameira, n.º 70, 4800-000 Guimarães",
+    "policy": "SIM-RC-8816"
+   }
+  }
+ },
+ "planted": [],
+ "n_planted": 0,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

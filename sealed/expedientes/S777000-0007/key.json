@@ -1,0 +1,106 @@
+{
+ "expediente": "S777000-0007",
+ "case": {
+  "id": "S777000-0007",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 2,
+  "plot": 2390,
+  "impl": 410,
+  "built": 733,
+  "imperm": 528,
+  "perm": 1862,
+  "volume": 2272,
+  "height": 7.0,
+  "facade": 6.3,
+  "parking": 2,
+  "cost": 789400,
+  "submitted": "2026-11-08",
+  "site": "Rua das Tílias, n.º 55, Vale de Bouro, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 13,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "João de Teste Miguel",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "07340-SIM",
+    "address": "Rua das Tílias, n.º 55, Vale de Bouro, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4316"
+   },
+   "arquiteto": {
+    "name": "Leonor Modelo Carla",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "90087-SIM",
+    "address": "Caminho da Lameira, n.º 78, 4000-000 Porto",
+    "policy": "SIM-RC-8064"
+   },
+   "engenheiro": {
+    "name": "Xavier Exemplo Filipe",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "45360-SIM",
+    "address": "Lugar de Carvalhal, n.º 46, 4800-000 Guimarães",
+    "policy": "SIM-RC-4349"
+   },
+   "diretor": {
+    "name": "Olga Exemplo Vasco",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "60507-SIM",
+    "address": "Caminho da Lameira, n.º 45, 4000-000 Porto",
+    "policy": "SIM-RC-0237"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TREECP"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Olga Exemplo Vasco",
+    "assinante": "Leonor Modelo Carla"
+   }
+  }
+ ],
+ "n_planted": 2,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

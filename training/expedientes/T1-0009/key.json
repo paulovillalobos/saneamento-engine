@@ -1,0 +1,84 @@
+{
+ "expediente": "T1-0009",
+ "case": {
+  "id": "T1-0009",
+  "work": "ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 1170,
+  "impl": 327,
+  "built": 633,
+  "imperm": 453,
+  "perm": 717,
+  "volume": 1962,
+  "height": 7.8,
+  "facade": 7.1,
+  "parking": 2,
+  "cost": 423400,
+  "submitted": "2026-10-23",
+  "site": "Lugar da Devesa, n.º 297, Canedo de Basto, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 12,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Eva de Teste Inês",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "53140-SIM",
+    "address": "Lugar da Devesa, n.º 297, Canedo de Basto, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3827"
+   },
+   "arquiteto": {
+    "name": "Rita Simulado Filipe",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "70297-SIM",
+    "address": "Lugar da Devesa, n.º 65, 4800-000 Guimarães",
+    "policy": "SIM-RC-3699"
+   },
+   "engenheiro": {
+    "name": "Helena de Teste Rita",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "91039-SIM",
+    "address": "Lugar de Carvalhal, n.º 29, 4800-000 Guimarães",
+    "policy": "SIM-RC-5521"
+   },
+   "diretor": {
+    "name": "Teresa Modelo Inês",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "85726-SIM",
+    "address": "Rua do Outeiro, n.º 7, 4000-000 Porto",
+    "policy": "SIM-RC-8384"
+   }
+  }
+ },
+ "planted": [],
+ "n_planted": 0,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

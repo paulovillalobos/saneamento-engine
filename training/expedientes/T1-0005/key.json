@@ -1,0 +1,105 @@
+{
+ "expediente": "T1-0005",
+ "case": {
+  "id": "T1-0005",
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 790,
+  "impl": 337,
+  "built": 607,
+  "imperm": 532,
+  "perm": 258,
+  "volume": 1881,
+  "height": 7.2,
+  "facade": 6.5,
+  "parking": 2,
+  "cost": 725300,
+  "submitted": "2026-10-03",
+  "site": "Rua da Escola, n.º 44, Canedo de Basto, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 13,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Filipe Modelo Gonçalo",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "36128-SIM",
+    "address": "Rua da Escola, n.º 44, Canedo de Basto, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6032"
+   },
+   "arquiteto": {
+    "name": "Leonor de Teste Diogo",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "39170-SIM",
+    "address": "Rua do Outeiro, n.º 112, 4800-000 Guimarães",
+    "policy": "SIM-RC-2218"
+   },
+   "engenheiro": {
+    "name": "Vasco Modelo Diogo",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "43038-SIM",
+    "address": "Rua da Escola, n.º 53, 4000-000 Porto",
+    "policy": "SIM-RC-6230"
+   },
+   "diretor": {
+    "name": "Eva Fictício Leonor",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "16032-SIM",
+    "address": "Rua das Tílias, n.º 10, 4700-000 Braga",
+    "policy": "SIM-RC-9273"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "CEO"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  }
+ ],
+ "n_planted": 2,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "expediente": "S777000-0012",
+ "case": {
+  "id": "S777000-0012",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 420,
+  "impl": 156,
+  "built": 154,
+  "imperm": 211,
+  "perm": 209,
+  "volume": 477,
+  "height": 4.6,
+  "facade": 3.9,
+  "parking": 2,
+  "cost": 133000,
+  "submitted": "2026-11-28",
+  "site": "Rua das Tílias, n.º 66, Arnoia, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 10,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Inês Amostra Xavier",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "22196-SIM",
+    "address": "Rua das Tílias, n.º 66, Arnoia, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7567"
+   },
+   "arquiteto": {
+    "name": "Vasco de Teste Carla",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "28585-SIM",
+    "address": "Rua da Escola, n.º 105, 4700-000 Braga",
+    "policy": "SIM-RC-4749"
+   },
+   "engenheiro": {
+    "name": "Miguel Simulado Gonçalo",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "11481-SIM",
+    "address": "Lugar de Vilar, n.º 38, 4700-000 Braga",
+    "policy": "SIM-RC-4925"
+   },
+   "diretor": {
+    "name": "Xavier Modelo Inês",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "59313-SIM",
+    "address": "Travessa do Souto, n.º 55, 4700-000 Braga",
+    "policy": "SIM-RC-6736"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRPLAC"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

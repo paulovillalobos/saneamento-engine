@@ -1,0 +1,100 @@
+{
+ "expediente": "T1-0000",
+ "case": {
+  "id": "T1-0000",
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 1,
+  "plot": 1600,
+  "impl": 453,
+  "built": 415,
+  "imperm": 639,
+  "perm": 961,
+  "volume": 1286,
+  "height": 4.1,
+  "facade": 3.4,
+  "parking": 2,
+  "cost": 358500,
+  "submitted": "2026-10-16",
+  "site": "Rua da Escola, n.º 200, Rego, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 8,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Pedro de Teste Helena",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "78483-SIM",
+    "address": "Rua da Escola, n.º 200, Rego, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0502"
+   },
+   "arquiteto": {
+    "name": "Ana Simulado Teresa",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "02206-SIM",
+    "address": "Rua das Tílias, n.º 88, 4700-000 Braga",
+    "policy": "SIM-RC-6916"
+   },
+   "engenheiro": {
+    "name": "Ana Modelo Helena",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "58394-SIM",
+    "address": "Lugar de Carvalhal, n.º 71, 4700-000 Braga",
+    "policy": "SIM-RC-5664"
+   },
+   "diretor": {
+    "name": "Helena Amostra Helena",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "61241-SIM",
+    "address": "Caminho da Lameira, n.º 119, 4000-000 Porto",
+    "policy": "SIM-RC-6819"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-10-16"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

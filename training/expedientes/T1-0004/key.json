@@ -1,0 +1,115 @@
+{
+ "expediente": "T1-0004",
+ "case": {
+  "id": "T1-0004",
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 1,
+  "plot": 1820,
+  "impl": 799,
+  "built": 784,
+  "imperm": 897,
+  "perm": 923,
+  "volume": 2430,
+  "height": 3.7,
+  "facade": 3.0,
+  "parking": 2,
+  "cost": 570700,
+  "submitted": "2026-11-10",
+  "site": "Lugar de Vilar, n.º 214, Molares, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 16,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Eva Simulado Teresa",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "05969-SIM",
+    "address": "Lugar de Vilar, n.º 214, Molares, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2811"
+   },
+   "arquiteto": {
+    "name": "Xavier Modelo Bruno",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "50541-SIM",
+    "address": "Rua do Outeiro, n.º 45, 4000-000 Porto",
+    "policy": "SIM-RC-3372"
+   },
+   "engenheiro": {
+    "name": "Vasco Amostra Olga",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "78517-SIM",
+    "address": "Rua do Outeiro, n.º 64, 4000-000 Porto",
+    "policy": "SIM-RC-6391"
+   },
+   "diretor": {
+    "name": "João Modelo Rita",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "03254-SIM",
+    "address": "Lugar da Devesa, n.º 79, 4800-000 Guimarães",
+    "policy": "SIM-RC-4610"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "LEVT"
+   },
+   "law": {
+    "ref": "V.7",
+    "quote": "7 - Levantamento topográfico georreferenciado, acompanhado por termo de responsabilidade, sempre que haja alteração da topografia ou da implantação das construções, à escala de 1:200, ou de 1:500 no caso de loteamentos, devidamente cotado, que identifique o prédio e a respetiva área, construções nela erigidas, assim como o espaço público envolvente (vias, passeios, estacionamentos, árvores e infraestruturas ou instalações aí localizadas, incluindo postes, tampas, sinalização e mobiliário urbano);"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "PLANT"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRCP"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  }
+ ],
+ "n_planted": 3,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

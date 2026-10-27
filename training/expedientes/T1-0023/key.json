@@ -1,0 +1,106 @@
+{
+ "expediente": "T1-0023",
+ "case": {
+  "id": "T1-0023",
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 540,
+  "impl": 185,
+  "built": 319,
+  "imperm": 304,
+  "perm": 236,
+  "volume": 988,
+  "height": 6.7,
+  "facade": 6.0,
+  "parking": 2,
+  "cost": 353400,
+  "submitted": "2026-11-22",
+  "site": "Lugar de Carvalhal, n.º 202, Caçarilhe, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 23,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Diogo Fictício Nuno",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "81430-SIM",
+    "address": "Lugar de Carvalhal, n.º 202, Caçarilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6826"
+   },
+   "arquiteto": {
+    "name": "Teresa de Teste Rita",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "84055-SIM",
+    "address": "Rua do Outeiro, n.º 101, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7963"
+   },
+   "engenheiro": {
+    "name": "Diogo Simulado Miguel",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "93903-SIM",
+    "address": "Caminho da Lameira, n.º 8, 4800-000 Guimarães",
+    "policy": "SIM-RC-4913"
+   },
+   "diretor": {
+    "name": "Diogo Fictício Sérgio",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "36987-SIM",
+    "address": "Caminho da Lameira, n.º 91, 4700-000 Braga",
+    "policy": "SIM-RC-6745"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRPLAC"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Diogo Fictício Sérgio",
+    "assinante": "Teresa de Teste Rita"
+   }
+  }
+ ],
+ "n_planted": 2,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

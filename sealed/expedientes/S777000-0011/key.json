@@ -1,0 +1,132 @@
+{
+ "expediente": "S777000-0011",
+ "case": {
+  "id": "S777000-0011",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 3,
+  "plot": 1510,
+  "impl": 466,
+  "built": 1196,
+  "imperm": 558,
+  "perm": 952,
+  "volume": 3707,
+  "height": 9.9,
+  "facade": 9.2,
+  "parking": 4,
+  "cost": 905300,
+  "submitted": "2026-10-19",
+  "site": "Lugar de Vilar, n.º 175, Codeçoso, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 20,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Vasco Exemplo Vasco",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "43764-SIM",
+    "address": "Lugar de Vilar, n.º 175, Codeçoso, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4630"
+   },
+   "arquiteto": {
+    "name": "Eva Exemplo Carla",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "44691-SIM",
+    "address": "Rua das Tílias, n.º 87, 4000-000 Porto",
+    "policy": "SIM-RC-5624"
+   },
+   "engenheiro": {
+    "name": "João Simulado Miguel",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "40251-SIM",
+    "address": "Lugar de Vilar, n.º 29, 4000-000 Porto",
+    "policy": "SIM-RC-0375"
+   },
+   "diretor": {
+    "name": "Filipe de Teste Filipe",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "54817-SIM",
+    "address": "Lugar de Vilar, n.º 97, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7192"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "1196 m2",
+    "MDARQ": "1252 m2"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Filipe de Teste Filipe",
+    "assinante": "Eva Exemplo Carla"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Lugar de Vilar, n.º 175, Codeçoso, 4890-000 Celorico de Basto",
+    "TRPARQ": "Lugar de Carvalhal, n.º 51, Molares, 4890-000 Celorico de Basto"
+   }
+  }
+ ],
+ "n_planted": 4,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

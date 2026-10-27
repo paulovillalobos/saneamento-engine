@@ -1,0 +1,95 @@
+{
+ "expediente": "T1-0026",
+ "case": {
+  "id": "T1-0026",
+  "work": "ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 870,
+  "impl": 369,
+  "built": 714,
+  "imperm": 421,
+  "perm": 449,
+  "volume": 2213,
+  "height": 7.3,
+  "facade": 6.6,
+  "parking": 2,
+  "cost": 661800,
+  "submitted": "2026-11-03",
+  "site": "Lugar de Carvalhal, n.º 289, Rego, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 20,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "João Fictício João",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "72974-SIM",
+    "address": "Lugar de Carvalhal, n.º 289, Rego, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2870"
+   },
+   "arquiteto": {
+    "name": "Helena Fictício Olga",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "36978-SIM",
+    "address": "Rua da Escola, n.º 33, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8686"
+   },
+   "engenheiro": {
+    "name": "Inês Exemplo Eva",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "53859-SIM",
+    "address": "Travessa do Souto, n.º 96, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1132"
+   },
+   "diretor": {
+    "name": "Teresa de Teste Teresa",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "73808-SIM",
+    "address": "Rua da Escola, n.º 80, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7299"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRCP"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

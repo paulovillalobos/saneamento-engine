@@ -1,0 +1,138 @@
+{
+ "expediente": "T1-0057",
+ "case": {
+  "id": "T1-0057",
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 2240,
+  "impl": 850,
+  "built": 1542,
+  "imperm": 1007,
+  "perm": 1233,
+  "volume": 4780,
+  "height": 7.6,
+  "facade": 6.9,
+  "parking": 2,
+  "cost": 1208900,
+  "submitted": "2026-10-28",
+  "site": "Lugar de Carvalhal, n.º 51, Gagos, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 21,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Gonçalo Modelo Leonor",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "13891-SIM",
+    "address": "Lugar de Carvalhal, n.º 51, Gagos, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9420"
+   },
+   "arquiteto": {
+    "name": "Diogo Fictício Rita",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "47987-SIM",
+    "address": "Rua das Tílias, n.º 52, 4800-000 Guimarães",
+    "policy": "SIM-RC-0391"
+   },
+   "engenheiro": {
+    "name": "Nuno Fictício Olga",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "17672-SIM",
+    "address": "Rua da Escola, n.º 38, 4800-000 Guimarães",
+    "policy": "SIM-RC-7046"
+   },
+   "diretor": {
+    "name": "Diogo Fictício Xavier",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "36575-SIM",
+    "address": "Lugar de Carvalhal, n.º 77, 4800-000 Guimarães",
+    "policy": "SIM-RC-4332"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-10-28"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "224 m2",
+    "area_implantacao": "850 m2",
+    "MDARQ": "2240 m2"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "1542 m2",
+    "MDARQ": "1441 m2"
+   }
+  }
+ ],
+ "n_planted": 4,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

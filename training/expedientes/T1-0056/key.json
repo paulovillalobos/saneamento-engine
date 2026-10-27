@@ -1,0 +1,121 @@
+{
+ "expediente": "T1-0056",
+ "case": {
+  "id": "T1-0056",
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 1660,
+  "impl": 355,
+  "built": 345,
+  "imperm": 392,
+  "perm": 1268,
+  "volume": 1069,
+  "height": 4.6,
+  "facade": 3.9,
+  "parking": 2,
+  "cost": 317700,
+  "submitted": "2026-10-01",
+  "site": "Rua das Tílias, n.º 145, Vale de Bouro, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 21,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Olga Simulado Filipe",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "29152-SIM",
+    "address": "Rua das Tílias, n.º 145, Vale de Bouro, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6792"
+   },
+   "arquiteto": {
+    "name": "Miguel de Teste Sérgio",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "20426-SIM",
+    "address": "Lugar de Vilar, n.º 102, 4700-000 Braga",
+    "policy": "SIM-RC-3760"
+   },
+   "engenheiro": {
+    "name": "Bruno de Teste Carla",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "59517-SIM",
+    "address": "Lugar da Devesa, n.º 105, 4700-000 Braga",
+    "policy": "SIM-RC-3590"
+   },
+   "diretor": {
+    "name": "Inês Fictício Sérgio",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "50995-SIM",
+    "address": "Travessa do Souto, n.º 62, 4000-000 Porto",
+    "policy": "SIM-RC-7736"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-10-01"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDARQ"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Inês Fictício Sérgio",
+    "assinante": "Miguel de Teste Sérgio"
+   }
+  }
+ ],
+ "n_planted": 3,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

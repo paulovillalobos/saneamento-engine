@@ -1,0 +1,95 @@
+{
+ "expediente": "S777000-0018",
+ "case": {
+  "id": "S777000-0018",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 3,
+  "plot": 950,
+  "impl": 380,
+  "built": 1000,
+  "imperm": 457,
+  "perm": 493,
+  "volume": 3100,
+  "height": 10.4,
+  "facade": 9.7,
+  "parking": 4,
+  "cost": 815000,
+  "submitted": "2026-11-27",
+  "site": "Caminho da Lameira, n.º 7, Molares, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 14,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Bruno Modelo Gonçalo",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "03180-SIM",
+    "address": "Caminho da Lameira, n.º 7, Molares, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2265"
+   },
+   "arquiteto": {
+    "name": "Filipe Simulado Gonçalo",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "26615-SIM",
+    "address": "Travessa do Souto, n.º 109, 4800-000 Guimarães",
+    "policy": "SIM-RC-9615"
+   },
+   "engenheiro": {
+    "name": "Miguel Modelo Ana",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "54064-SIM",
+    "address": "Lugar de Vilar, n.º 12, 4800-000 Guimarães",
+    "policy": "SIM-RC-7752"
+   },
+   "diretor": {
+    "name": "Miguel Fictício Bruno",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "72410-SIM",
+    "address": "Travessa do Souto, n.º 118, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2182"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "SRCCP"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "expediente": "T1-0042",
+ "case": {
+  "id": "T1-0042",
+  "work": "ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 1160,
+  "impl": 356,
+  "built": 698,
+  "imperm": 414,
+  "perm": 746,
+  "volume": 2163,
+  "height": 6.8,
+  "facade": 6.1,
+  "parking": 2,
+  "cost": 901800,
+  "submitted": "2026-10-05",
+  "site": "Lugar de Vilar, n.º 41, Agilde, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 16,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Helena de Teste Leonor",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "23484-SIM",
+    "address": "Lugar de Vilar, n.º 41, Agilde, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5075"
+   },
+   "arquiteto": {
+    "name": "Carla Exemplo Eva",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "73085-SIM",
+    "address": "Lugar da Devesa, n.º 114, 4800-000 Guimarães",
+    "policy": "SIM-RC-1761"
+   },
+   "engenheiro": {
+    "name": "Eva Amostra Leonor",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "10068-SIM",
+    "address": "Lugar de Vilar, n.º 62, 4000-000 Porto",
+    "policy": "SIM-RC-0768"
+   },
+   "diretor": {
+    "name": "Gonçalo Amostra Miguel",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "97387-SIM",
+    "address": "Lugar da Devesa, n.º 65, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8252"
+   }
+  }
+ },
+ "planted": [],
+ "n_planted": 0,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "expediente": "S777000-0013",
+ "case": {
+  "id": "S777000-0013",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 2,
+  "plot": 330,
+  "impl": 115,
+  "built": 209,
+  "imperm": 254,
+  "perm": 76,
+  "volume": 647,
+  "height": 6.7,
+  "facade": 6.0,
+  "parking": 4,
+  "cost": 228000,
+  "submitted": "2026-12-10",
+  "site": "Lugar de Carvalhal, n.º 1, Canedo de Basto, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 15,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Eva de Teste Bruno",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "74713-SIM",
+    "address": "Lugar de Carvalhal, n.º 1, Canedo de Basto, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1462"
+   },
+   "arquiteto": {
+    "name": "Leonor Amostra Miguel",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "34774-SIM",
+    "address": "Rua do Outeiro, n.º 114, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9062"
+   },
+   "engenheiro": {
+    "name": "Filipe Fictício Teresa",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "87208-SIM",
+    "address": "Rua do Outeiro, n.º 112, 4000-000 Porto",
+    "policy": "SIM-RC-9254"
+   },
+   "diretor": {
+    "name": "Sérgio Simulado Helena",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "75602-SIM",
+    "address": "Caminho da Lameira, n.º 6, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3537"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "ASAT"
+   },
+   "law": {
+    "ref": "V.27.n",
+    "quote": "n) Apólice de seguro que cubra a responsabilidade pela reparação dos danos emergentes de acidentes de trabalho, nos termos previstos na Lei n.º 98/2009, de 4 de setembro, na sua redação atual;"
+   }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDPAP"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 2,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

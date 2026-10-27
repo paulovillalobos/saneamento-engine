@@ -1,0 +1,121 @@
+{
+ "expediente": "S777000-0014",
+ "case": {
+  "id": "S777000-0014",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 2280,
+  "impl": 408,
+  "built": 380,
+  "imperm": 597,
+  "perm": 1683,
+  "volume": 1178,
+  "height": 4.3,
+  "facade": 3.6,
+  "parking": 2,
+  "cost": 456700,
+  "submitted": "2026-10-12",
+  "site": "Caminho da Lameira, n.º 182, Arnoia, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 23,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Sérgio Exemplo Eva",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "56593-SIM",
+    "address": "Caminho da Lameira, n.º 182, Arnoia, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6982"
+   },
+   "arquiteto": {
+    "name": "Sérgio Amostra Rita",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "76629-SIM",
+    "address": "Rua do Outeiro, n.º 59, 4800-000 Guimarães",
+    "policy": "SIM-RC-3398"
+   },
+   "engenheiro": {
+    "name": "Nuno de Teste Rita",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "73092-SIM",
+    "address": "Rua da Escola, n.º 20, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7284"
+   },
+   "diretor": {
+    "name": "Xavier Exemplo Sérgio",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "40248-SIM",
+    "address": "Rua da Escola, n.º 56, 4000-000 Porto",
+    "policy": "SIM-RC-9599"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "LEVT"
+   },
+   "law": {
+    "ref": "V.7",
+    "quote": "7 - Levantamento topográfico georreferenciado, acompanhado por termo de responsabilidade, sempre que haja alteração da topografia ou da implantação das construções, à escala de 1:200, ou de 1:500 no caso de loteamentos, devidamente cotado, que identifique o prédio e a respetiva área, construções nela erigidas, assim como o espaço público envolvente (vias, passeios, estacionamentos, árvores e infraestruturas ou instalações aí localizadas, incluindo postes, tampas, sinalização e mobiliário urbano);"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "380 m2",
+    "MDARQ": "320 m2"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Caminho da Lameira, n.º 182, Arnoia, 4890-000 Celorico de Basto",
+    "TRPARQ": "Caminho da Lameira, n.º 240, Borba de Montanha, 4890-000 Celorico de Basto"
+   }
+  }
+ ],
+ "n_planted": 3,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "expediente": "T1-0021",
+ "case": {
+  "id": "T1-0021",
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 1910,
+  "impl": 560,
+  "built": 1043,
+  "imperm": 712,
+  "perm": 1198,
+  "volume": 3233,
+  "height": 7.1,
+  "facade": 6.4,
+  "parking": 2,
+  "cost": 1350600,
+  "submitted": "2026-12-10",
+  "site": "Lugar de Carvalhal, n.º 155, Canedo de Basto, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 22,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Vasco Fictício Teresa",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "22360-SIM",
+    "address": "Lugar de Carvalhal, n.º 155, Canedo de Basto, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6950"
+   },
+   "arquiteto": {
+    "name": "Vasco Simulado Miguel",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "56164-SIM",
+    "address": "Rua das Tílias, n.º 37, 4000-000 Porto",
+    "policy": "SIM-RC-1483"
+   },
+   "engenheiro": {
+    "name": "Carla Simulado Nuno",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "36242-SIM",
+    "address": "Lugar de Carvalhal, n.º 35, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7888"
+   },
+   "diretor": {
+    "name": "Leonor Exemplo Pedro",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "16271-SIM",
+    "address": "Lugar de Carvalhal, n.º 46, 4700-000 Braga",
+    "policy": "SIM-RC-6803"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "EOCT"
+   },
+   "law": {
+    "ref": "V.27.f",
+    "quote": "f) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRCP"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  }
+ ],
+ "n_planted": 2,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

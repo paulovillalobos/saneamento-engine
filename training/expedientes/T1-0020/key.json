@@ -1,0 +1,115 @@
+{
+ "expediente": "T1-0020",
+ "case": {
+  "id": "T1-0020",
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 3090,
+  "impl": 1099,
+  "built": 1935,
+  "imperm": 1136,
+  "perm": 1954,
+  "volume": 5998,
+  "height": 7.4,
+  "facade": 6.7,
+  "parking": 2,
+  "cost": 2300700,
+  "submitted": "2026-12-03",
+  "site": "Travessa do Souto, n.º 112, Carvalho, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 21,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Ana Modelo Miguel",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "64789-SIM",
+    "address": "Travessa do Souto, n.º 112, Carvalho, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9799"
+   },
+   "arquiteto": {
+    "name": "Rita Fictício Olga",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "60269-SIM",
+    "address": "Lugar da Devesa, n.º 70, 4700-000 Braga",
+    "policy": "SIM-RC-7900"
+   },
+   "engenheiro": {
+    "name": "Carla de Teste Olga",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "27393-SIM",
+    "address": "Rua da Escola, n.º 96, 4800-000 Guimarães",
+    "policy": "SIM-RC-8427"
+   },
+   "diretor": {
+    "name": "Rita Simulado Nuno",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "81719-SIM",
+    "address": "Rua das Tílias, n.º 6, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7512"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "CRP"
+   },
+   "law": {
+    "ref": "V.5",
+    "quote": "5 - Indicação do código de acesso à certidão permanente do registo predial referente ao prédio ou prédios abrangidos pela operação urbanística ou, quando omisso, a respetiva certidão negativa do registo predial, acompanhada da caderneta predial da qual constem os correspondentes artigos matriciais;"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "CORTES"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "CEO"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 3,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

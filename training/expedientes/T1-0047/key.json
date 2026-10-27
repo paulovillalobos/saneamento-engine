@@ -1,0 +1,108 @@
+{
+ "expediente": "T1-0047",
+ "case": {
+  "id": "T1-0047",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 1890,
+  "impl": 551,
+  "built": 510,
+  "imperm": 650,
+  "perm": 1240,
+  "volume": 1581,
+  "height": 4.3,
+  "facade": 3.6,
+  "parking": 2,
+  "cost": 439100,
+  "submitted": "2026-11-22",
+  "site": "Lugar de Vilar, n.º 4, Infesta, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 11,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Olga Exemplo Sérgio",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "97285-SIM",
+    "address": "Lugar de Vilar, n.º 4, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7364"
+   },
+   "arquiteto": {
+    "name": "Teresa Exemplo Miguel",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "28055-SIM",
+    "address": "Rua da Escola, n.º 11, 4000-000 Porto",
+    "policy": "SIM-RC-1595"
+   },
+   "engenheiro": {
+    "name": "Teresa Exemplo Eva",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "59115-SIM",
+    "address": "Rua das Tílias, n.º 24, 4800-000 Guimarães",
+    "policy": "SIM-RC-7356"
+   },
+   "diretor": {
+    "name": "Sérgio Modelo Bruno",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "77959-SIM",
+    "address": "Rua do Outeiro, n.º 76, 4800-000 Guimarães",
+    "policy": "SIM-RC-8001"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "189 m2",
+    "area_implantacao": "551 m2",
+    "MDARQ": "1890 m2"
+   }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "CEO"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 2,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

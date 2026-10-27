@@ -1,0 +1,100 @@
+{
+ "expediente": "T1-0052",
+ "case": {
+  "id": "T1-0052",
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 2400,
+  "impl": 579,
+  "built": 539,
+  "imperm": 651,
+  "perm": 1749,
+  "volume": 1670,
+  "height": 3.8,
+  "facade": 3.1,
+  "parking": 2,
+  "cost": 430100,
+  "submitted": "2026-10-08",
+  "site": "Rua da Escola, n.º 124, Ourilhe, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 22,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Xavier Exemplo Vasco",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "13500-SIM",
+    "address": "Rua da Escola, n.º 124, Ourilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0727"
+   },
+   "arquiteto": {
+    "name": "Olga de Teste Olga",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "18405-SIM",
+    "address": "Rua do Outeiro, n.º 89, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6795"
+   },
+   "engenheiro": {
+    "name": "Leonor Modelo Bruno",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "67363-SIM",
+    "address": "Lugar de Carvalhal, n.º 17, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9581"
+   },
+   "diretor": {
+    "name": "Bruno de Teste Diogo",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "33170-SIM",
+    "address": "Travessa do Souto, n.º 56, 4700-000 Braga",
+    "policy": "SIM-RC-0313"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "539 m2",
+    "MDARQ": "490 m2"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

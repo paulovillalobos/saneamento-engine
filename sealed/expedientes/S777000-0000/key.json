@@ -1,0 +1,134 @@
+{
+ "expediente": "S777000-0000",
+ "case": {
+  "id": "S777000-0000",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 3520,
+  "impl": 702,
+  "built": 679,
+  "imperm": 886,
+  "perm": 2634,
+  "volume": 2104,
+  "height": 4.1,
+  "facade": 3.4,
+  "parking": 2,
+  "cost": 518700,
+  "submitted": "2026-10-24",
+  "site": "Lugar de Carvalhal, n.º 10, Caçarilhe, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 9,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Sérgio Simulado Ana",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "28178-SIM",
+    "address": "Lugar de Carvalhal, n.º 10, Caçarilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3330"
+   },
+   "arquiteto": {
+    "name": "Diogo de Teste Eva",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "86988-SIM",
+    "address": "Travessa do Souto, n.º 95, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3998"
+   },
+   "engenheiro": {
+    "name": "Diogo Modelo Rita",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "06459-SIM",
+    "address": "Rua da Escola, n.º 60, 4000-000 Porto",
+    "policy": "SIM-RC-3106"
+   },
+   "diretor": {
+    "name": "Teresa Fictício Diogo",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "89242-SIM",
+    "address": "Rua da Escola, n.º 54, 4700-000 Braga",
+    "policy": "SIM-RC-4000"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "352 m2",
+    "area_implantacao": "702 m2",
+    "MDARQ": "3520 m2"
+   }
+  },
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "TRCP"
+   },
+   "law": {
+    "ref": "V.12",
+    "quote": "12 - Termo de responsabilidade do coordenador de projeto quanto à garantia de compatibilidade entre os diversos projetos;"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "679 m2",
+    "MDARQ": "565 m2"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Lugar de Carvalhal, n.º 10, Caçarilhe, 4890-000 Celorico de Basto",
+    "TRPARQ": "Lugar da Devesa, n.º 18, Britelo, 4890-000 Celorico de Basto"
+   }
+  }
+ ],
+ "n_planted": 4,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

@@ -1,0 +1,135 @@
+{
+ "expediente": "T1-0048",
+ "case": {
+  "id": "T1-0048",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 2,
+  "plot": 440,
+  "impl": 168,
+  "built": 288,
+  "imperm": 328,
+  "perm": 112,
+  "volume": 892,
+  "height": 6.9,
+  "facade": 6.2,
+  "parking": 4,
+  "cost": 281000,
+  "submitted": "2026-11-11",
+  "site": "Travessa do Souto, n.º 199, Basto (São Clemente), 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 22,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Inês Exemplo Pedro",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "44420-SIM",
+    "address": "Travessa do Souto, n.º 199, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8865"
+   },
+   "arquiteto": {
+    "name": "Olga Modelo Rita",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "67260-SIM",
+    "address": "Lugar de Vilar, n.º 41, 4700-000 Braga",
+    "policy": "SIM-RC-5734"
+   },
+   "engenheiro": {
+    "name": "Eva Modelo Gonçalo",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "30487-SIM",
+    "address": "Rua do Outeiro, n.º 114, 4800-000 Guimarães",
+    "policy": "SIM-RC-2552"
+   },
+   "diretor": {
+    "name": "Diogo Amostra Diogo",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "56732-SIM",
+    "address": "Rua da Escola, n.º 59, 4700-000 Braga",
+    "policy": "SIM-RC-6137"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-11-11"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "FOTO"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "FSCI"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "288 m2",
+    "MDARQ": "209 m2"
+   }
+  }
+ ],
+ "n_planted": 4,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

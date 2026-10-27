@@ -1,0 +1,111 @@
+{
+ "expediente": "T1-0027",
+ "case": {
+  "id": "T1-0027",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 3,
+  "plot": 2770,
+  "impl": 666,
+  "built": 1785,
+  "imperm": 725,
+  "perm": 2045,
+  "volume": 5533,
+  "height": 10.6,
+  "facade": 9.9,
+  "parking": 4,
+  "cost": 1856400,
+  "submitted": "2026-11-13",
+  "site": "Travessa do Souto, n.º 75, Fervença, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 17,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Xavier Simulado Teresa",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "02271-SIM",
+    "address": "Travessa do Souto, n.º 75, Fervença, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7529"
+   },
+   "arquiteto": {
+    "name": "Ana Exemplo Xavier",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "90030-SIM",
+    "address": "Rua das Tílias, n.º 36, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6692"
+   },
+   "engenheiro": {
+    "name": "Nuno Modelo Pedro",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "07982-SIM",
+    "address": "Travessa do Souto, n.º 61, 4000-000 Porto",
+    "policy": "SIM-RC-0010"
+   },
+   "diretor": {
+    "name": "Bruno Simulado Vasco",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "19294-SIM",
+    "address": "Lugar da Devesa, n.º 71, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9310"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "1785 m2",
+    "MDARQ": "1676 m2"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Travessa do Souto, n.º 75, Fervença, 4890-000 Celorico de Basto",
+    "TRPARQ": "Rua do Outeiro, n.º 55, Britelo, 4890-000 Celorico de Basto"
+   }
+  }
+ ],
+ "n_planted": 2,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

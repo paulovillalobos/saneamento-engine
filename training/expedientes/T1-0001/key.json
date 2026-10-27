@@ -1,0 +1,120 @@
+{
+ "expediente": "T1-0001",
+ "case": {
+  "id": "T1-0001",
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 1810,
+  "impl": 661,
+  "built": 1301,
+  "imperm": 809,
+  "perm": 1001,
+  "volume": 4033,
+  "height": 7.7,
+  "facade": 7.0,
+  "parking": 2,
+  "cost": 1407600,
+  "submitted": "2026-12-27",
+  "site": "Rua do Outeiro, n.º 156, Gagos, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 23,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Sérgio Exemplo Vasco",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "05525-SIM",
+    "address": "Rua do Outeiro, n.º 156, Gagos, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6789"
+   },
+   "arquiteto": {
+    "name": "Filipe de Teste Teresa",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "93148-SIM",
+    "address": "Lugar da Devesa, n.º 12, 4800-000 Guimarães",
+    "policy": "SIM-RC-8331"
+   },
+   "engenheiro": {
+    "name": "Diogo Fictício Sérgio",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "52544-SIM",
+    "address": "Lugar da Devesa, n.º 63, 4000-000 Porto",
+    "policy": "SIM-RC-7690"
+   },
+   "diretor": {
+    "name": "Bruno de Teste Xavier",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "78749-SIM",
+    "address": "Rua das Tílias, n.º 83, 4700-000 Braga",
+    "policy": "SIM-RC-2763"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-27"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "IMPIC"
+   },
+   "law": {
+    "ref": "V.27.j",
+    "quote": "j) Número do alvará, ou do certificado, ou número de outro título habilitante emitido pelo IMPIC, I. P., que confira habilitações adequadas à natureza ou valor da obra;"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "ALC"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 3,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

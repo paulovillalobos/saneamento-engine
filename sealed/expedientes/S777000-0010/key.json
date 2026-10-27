@@ -1,0 +1,119 @@
+{
+ "expediente": "S777000-0010",
+ "case": {
+  "id": "S777000-0010",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 3,
+  "plot": 2980,
+  "impl": 359,
+  "built": 1071,
+  "imperm": 488,
+  "perm": 2492,
+  "volume": 3320,
+  "height": 10.0,
+  "facade": 9.3,
+  "parking": 2,
+  "cost": 1305500,
+  "submitted": "2026-11-05",
+  "site": "Travessa do Souto, n.º 60, Basto (São Clemente), 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 16,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "João de Teste João",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "96382-SIM",
+    "address": "Travessa do Souto, n.º 60, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5528"
+   },
+   "arquiteto": {
+    "name": "Filipe Fictício Olga",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "29519-SIM",
+    "address": "Lugar de Carvalhal, n.º 5, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7150"
+   },
+   "engenheiro": {
+    "name": "Vasco Simulado Diogo",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "67555-SIM",
+    "address": "Caminho da Lameira, n.º 34, 4800-000 Guimarães",
+    "policy": "SIM-RC-8588"
+   },
+   "diretor": {
+    "name": "Filipe Modelo Xavier",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "06453-SIM",
+    "address": "Travessa do Souto, n.º 96, 4700-000 Braga",
+    "policy": "SIM-RC-9357"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "298 m2",
+    "area_implantacao": "359 m2",
+    "MDARQ": "2980 m2"
+   }
+  },
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "PC"
+   },
+   "law": {
+    "ref": "V.27.b.iv",
+    "quote": "iv) Pormenores de construção, à escala adequada, esclarecendo a solução construtiva adotada para as paredes exteriores do edifício e sua articulação com a cobertura, vãos de iluminação/ventilação e de acesso, bem como com o pavimento exterior envolvente;"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Filipe Modelo Xavier",
+    "assinante": "Filipe Fictício Olga"
+   }
+  }
+ ],
+ "n_planted": 3,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "expediente": "T1-0012",
+ "case": {
+  "id": "T1-0012",
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 990,
+  "impl": 282,
+  "built": 527,
+  "imperm": 381,
+  "perm": 609,
+  "volume": 1633,
+  "height": 7.1,
+  "facade": 6.4,
+  "parking": 2,
+  "cost": 534900,
+  "submitted": "2026-12-11",
+  "site": "Rua da Escola, n.º 64, Ribas, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 22,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Miguel de Teste Teresa",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "53350-SIM",
+    "address": "Rua da Escola, n.º 64, Ribas, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1853"
+   },
+   "arquiteto": {
+    "name": "Nuno Exemplo Gonçalo",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "73992-SIM",
+    "address": "Rua da Escola, n.º 36, 4700-000 Braga",
+    "policy": "SIM-RC-7563"
+   },
+   "engenheiro": {
+    "name": "Xavier Modelo Olga",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "98600-SIM",
+    "address": "Caminho da Lameira, n.º 90, 4700-000 Braga",
+    "policy": "SIM-RC-7363"
+   },
+   "diretor": {
+    "name": "Xavier Amostra Sérgio",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "26868-SIM",
+    "address": "Lugar da Devesa, n.º 68, 4000-000 Porto",
+    "policy": "SIM-RC-6377"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-11"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "9900 m2",
+    "area_implantacao": "282 m2",
+    "MDARQ": "990 m2"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Xavier Amostra Sérgio",
+    "assinante": "Nuno Exemplo Gonçalo"
+   }
+  }
+ ],
+ "n_planted": 3,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

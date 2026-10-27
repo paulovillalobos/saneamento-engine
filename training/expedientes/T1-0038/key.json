@@ -1,0 +1,135 @@
+{
+ "expediente": "T1-0038",
+ "case": {
+  "id": "T1-0038",
+  "work": "ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 1480,
+  "impl": 279,
+  "built": 514,
+  "imperm": 384,
+  "perm": 1096,
+  "volume": 1593,
+  "height": 7.4,
+  "facade": 6.7,
+  "parking": 2,
+  "cost": 663000,
+  "submitted": "2026-10-13",
+  "site": "Rua das Tílias, n.º 28, Caçarilhe, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 19,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Ana de Teste Teresa",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "98261-SIM",
+    "address": "Rua das Tílias, n.º 28, Caçarilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0246"
+   },
+   "arquiteto": {
+    "name": "Leonor de Teste João",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "78225-SIM",
+    "address": "Rua da Escola, n.º 27, 4000-000 Porto",
+    "policy": "SIM-RC-5385"
+   },
+   "engenheiro": {
+    "name": "Diogo Amostra Carla",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "17825-SIM",
+    "address": "Caminho da Lameira, n.º 53, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3811"
+   },
+   "diretor": {
+    "name": "Ana Amostra Filipe",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "67083-SIM",
+    "address": "Lugar da Devesa, n.º 39, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6194"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-10-13"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "148 m2",
+    "area_implantacao": "279 m2",
+    "MDARQ": "1480 m2"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Ana Amostra Filipe",
+    "assinante": "Leonor de Teste João"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Rua das Tílias, n.º 28, Caçarilhe, 4890-000 Celorico de Basto",
+    "TRPARQ": "Travessa do Souto, n.º 102, Rego, 4890-000 Celorico de Basto"
+   }
+  }
+ ],
+ "n_planted": 4,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

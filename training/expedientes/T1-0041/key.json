@@ -1,0 +1,111 @@
+{
+ "expediente": "T1-0041",
+ "case": {
+  "id": "T1-0041",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 2,
+  "plot": 1460,
+  "impl": 232,
+  "built": 408,
+  "imperm": 281,
+  "perm": 1179,
+  "volume": 1264,
+  "height": 6.7,
+  "facade": 6.0,
+  "parking": 4,
+  "cost": 357000,
+  "submitted": "2026-11-23",
+  "site": "Caminho da Lameira, n.º 270, Rego, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 15,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Bruno Amostra Inês",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "26532-SIM",
+    "address": "Caminho da Lameira, n.º 270, Rego, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7443"
+   },
+   "arquiteto": {
+    "name": "Xavier Exemplo Nuno",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "12715-SIM",
+    "address": "Rua das Tílias, n.º 32, 4800-000 Guimarães",
+    "policy": "SIM-RC-5632"
+   },
+   "engenheiro": {
+    "name": "Filipe Modelo Diogo",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "32420-SIM",
+    "address": "Travessa do Souto, n.º 99, 4800-000 Guimarães",
+    "policy": "SIM-RC-4538"
+   },
+   "diretor": {
+    "name": "Teresa de Teste Leonor",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "99926-SIM",
+    "address": "Lugar da Devesa, n.º 53, 4800-000 Guimarães",
+    "policy": "SIM-RC-5970"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "408 m2",
+    "MDARQ": "498 m2"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Teresa de Teste Leonor",
+    "assinante": "Xavier Exemplo Nuno"
+   }
+  }
+ ],
+ "n_planted": 2,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

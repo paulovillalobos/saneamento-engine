@@ -1,0 +1,96 @@
+{
+ "expediente": "T1-0037",
+ "case": {
+  "id": "T1-0037",
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 670,
+  "impl": 211,
+  "built": 370,
+  "imperm": 390,
+  "perm": 280,
+  "volume": 1147,
+  "height": 7.0,
+  "facade": 6.3,
+  "parking": 2,
+  "cost": 460600,
+  "submitted": "2026-11-20",
+  "site": "Lugar de Carvalhal, n.º 187, Arnoia, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 23,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Ana Simulado Vasco",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "88103-SIM",
+    "address": "Lugar de Carvalhal, n.º 187, Arnoia, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5553"
+   },
+   "arquiteto": {
+    "name": "Carla Amostra Olga",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "26597-SIM",
+    "address": "Lugar de Carvalhal, n.º 108, 4800-000 Guimarães",
+    "policy": "SIM-RC-9830"
+   },
+   "engenheiro": {
+    "name": "Vasco Exemplo Xavier",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "62757-SIM",
+    "address": "Lugar de Vilar, n.º 107, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8593"
+   },
+   "diretor": {
+    "name": "João Modelo Nuno",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "80610-SIM",
+    "address": "Caminho da Lameira, n.º 33, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0241"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "João Modelo Nuno",
+    "assinante": "Carla Amostra Olga"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

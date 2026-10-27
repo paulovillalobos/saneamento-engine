@@ -1,0 +1,84 @@
+{
+ "expediente": "T1-0054",
+ "case": {
+  "id": "T1-0054",
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 1710,
+  "impl": 452,
+  "built": 804,
+  "imperm": 554,
+  "perm": 1156,
+  "volume": 2492,
+  "height": 7.5,
+  "facade": 6.8,
+  "parking": 2,
+  "cost": 915700,
+  "submitted": "2026-11-18",
+  "site": "Rua da Escola, n.º 138, Veade, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 13,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Pedro Exemplo João",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "77699-SIM",
+    "address": "Rua da Escola, n.º 138, Veade, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6780"
+   },
+   "arquiteto": {
+    "name": "Teresa Modelo Nuno",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "63574-SIM",
+    "address": "Rua do Outeiro, n.º 40, 4000-000 Porto",
+    "policy": "SIM-RC-1035"
+   },
+   "engenheiro": {
+    "name": "Eva Exemplo Diogo",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "48134-SIM",
+    "address": "Caminho da Lameira, n.º 109, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8868"
+   },
+   "diretor": {
+    "name": "João Fictício Diogo",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "66777-SIM",
+    "address": "Lugar de Vilar, n.º 59, 4000-000 Porto",
+    "policy": "SIM-RC-7304"
+   }
+  }
+ },
+ "planted": [],
+ "n_planted": 0,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

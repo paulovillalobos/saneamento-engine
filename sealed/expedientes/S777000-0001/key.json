@@ -1,0 +1,96 @@
+{
+ "expediente": "S777000-0001",
+ "case": {
+  "id": "S777000-0001",
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 3550,
+  "impl": 657,
+  "built": 1199,
+  "imperm": 777,
+  "perm": 2773,
+  "volume": 3716,
+  "height": 7.5,
+  "facade": 6.8,
+  "parking": 2,
+  "cost": 1508300,
+  "submitted": "2026-11-05",
+  "site": "Rua das Tílias, n.º 5, Ourilhe, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 23,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Eva Fictício Eva",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "68343-SIM",
+    "address": "Rua das Tílias, n.º 5, Ourilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9272"
+   },
+   "arquiteto": {
+    "name": "Miguel de Teste Ana",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "20388-SIM",
+    "address": "Rua da Escola, n.º 5, 4000-000 Porto",
+    "policy": "SIM-RC-7446"
+   },
+   "engenheiro": {
+    "name": "Leonor Simulado Gonçalo",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "20264-SIM",
+    "address": "Caminho da Lameira, n.º 93, 4800-000 Guimarães",
+    "policy": "SIM-RC-7119"
+   },
+   "diretor": {
+    "name": "Rita de Teste João",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "24439-SIM",
+    "address": "Lugar da Devesa, n.º 88, 4700-000 Braga",
+    "policy": "SIM-RC-4148"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Rua das Tílias, n.º 5, Ourilhe, 4890-000 Celorico de Basto",
+    "TRPARQ": "Lugar da Devesa, n.º 104, Canedo de Basto, 4890-000 Celorico de Basto"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

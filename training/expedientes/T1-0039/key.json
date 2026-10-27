@@ -1,0 +1,105 @@
+{
+ "expediente": "T1-0039",
+ "case": {
+  "id": "T1-0039",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 2,
+  "plot": 3520,
+  "impl": 705,
+  "built": 1281,
+  "imperm": 778,
+  "perm": 2742,
+  "volume": 3971,
+  "height": 7.3,
+  "facade": 6.6,
+  "parking": 4,
+  "cost": 1224600,
+  "submitted": "2026-12-24",
+  "site": "Lugar da Devesa, n.º 1, Gagos, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 22,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Rita Fictício Eva",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "05087-SIM",
+    "address": "Lugar da Devesa, n.º 1, Gagos, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8409"
+   },
+   "arquiteto": {
+    "name": "Rita de Teste Xavier",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "15616-SIM",
+    "address": "Caminho da Lameira, n.º 104, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7038"
+   },
+   "engenheiro": {
+    "name": "Ana de Teste Carla",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "84716-SIM",
+    "address": "Lugar de Carvalhal, n.º 15, 4700-000 Braga",
+    "policy": "SIM-RC-9923"
+   },
+   "diretor": {
+    "name": "Inês Exemplo Miguel",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "31219-SIM",
+    "address": "Rua da Escola, n.º 14, 4700-000 Braga",
+    "policy": "SIM-RC-2126"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "MDARQ"
+   },
+   "law": {
+    "ref": "V.9",
+    "quote": "9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:"
+   }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDPAP"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 2,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

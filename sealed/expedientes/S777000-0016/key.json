@@ -1,0 +1,131 @@
+{
+ "expediente": "S777000-0016",
+ "case": {
+  "id": "S777000-0016",
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 3530,
+  "impl": 1156,
+  "built": 2128,
+  "imperm": 1319,
+  "perm": 2211,
+  "volume": 6596,
+  "height": 7.3,
+  "facade": 6.6,
+  "parking": 2,
+  "cost": 2368400,
+  "submitted": "2026-12-26",
+  "site": "Caminho da Lameira, n.º 277, Molares, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 9,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Ana Simulado Pedro",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "21734-SIM",
+    "address": "Caminho da Lameira, n.º 277, Molares, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6061"
+   },
+   "arquiteto": {
+    "name": "Inês Modelo Filipe",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "70595-SIM",
+    "address": "Lugar de Vilar, n.º 33, 4700-000 Braga",
+    "policy": "SIM-RC-8335"
+   },
+   "engenheiro": {
+    "name": "Pedro Modelo Xavier",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "25315-SIM",
+    "address": "Travessa do Souto, n.º 14, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3521"
+   },
+   "diretor": {
+    "name": "Teresa Simulado Filipe",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "98453-SIM",
+    "address": "Travessa do Souto, n.º 43, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5991"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-26"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "ALC"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Caminho da Lameira, n.º 277, Molares, 4890-000 Celorico de Basto",
+    "TRPARQ": "Lugar de Vilar, n.º 10, Agilde, 4890-000 Celorico de Basto"
+   }
+  }
+ ],
+ "n_planted": 4,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

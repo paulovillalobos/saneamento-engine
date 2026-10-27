@@ -1,0 +1,100 @@
+{
+ "expediente": "T1-0045",
+ "case": {
+  "id": "T1-0045",
+  "work": "ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 1,
+  "plot": 540,
+  "impl": 141,
+  "built": 139,
+  "imperm": 216,
+  "perm": 324,
+  "volume": 430,
+  "height": 3.9,
+  "facade": 3.2,
+  "parking": 2,
+  "cost": 170800,
+  "submitted": "2026-11-19",
+  "site": "Caminho da Lameira, n.º 132, Carvalho, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 18,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Eva de Teste Diogo",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "53036-SIM",
+    "address": "Caminho da Lameira, n.º 132, Carvalho, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6486"
+   },
+   "arquiteto": {
+    "name": "Pedro Fictício Rita",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "92466-SIM",
+    "address": "Rua do Outeiro, n.º 5, 4700-000 Braga",
+    "policy": "SIM-RC-1295"
+   },
+   "engenheiro": {
+    "name": "Carla Simulado Sérgio",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "67470-SIM",
+    "address": "Lugar de Carvalhal, n.º 73, 4800-000 Guimarães",
+    "policy": "SIM-RC-5362"
+   },
+   "diretor": {
+    "name": "Sérgio Fictício Vasco",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "93829-SIM",
+    "address": "Lugar de Carvalhal, n.º 51, 4000-000 Porto",
+    "policy": "SIM-RC-6325"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-11-19"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

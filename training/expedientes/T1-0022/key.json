@@ -1,0 +1,95 @@
+{
+ "expediente": "T1-0022",
+ "case": {
+  "id": "T1-0022",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 2,
+  "plot": 1770,
+  "impl": 363,
+  "built": 673,
+  "imperm": 490,
+  "perm": 1280,
+  "volume": 2086,
+  "height": 7.4,
+  "facade": 6.7,
+  "parking": 2,
+  "cost": 735500,
+  "submitted": "2026-11-25",
+  "site": "Lugar de Carvalhal, n.º 111, Vale de Bouro, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 20,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Olga Simulado Carla",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "17969-SIM",
+    "address": "Lugar de Carvalhal, n.º 111, Vale de Bouro, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0429"
+   },
+   "arquiteto": {
+    "name": "Diogo de Teste Eva",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "63886-SIM",
+    "address": "Travessa do Souto, n.º 52, 4700-000 Braga",
+    "policy": "SIM-RC-0050"
+   },
+   "engenheiro": {
+    "name": "Carla Exemplo Xavier",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "07667-SIM",
+    "address": "Rua do Outeiro, n.º 69, 4800-000 Guimarães",
+    "policy": "SIM-RC-5681"
+   },
+   "diretor": {
+    "name": "Bruno Amostra Diogo",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "97275-SIM",
+    "address": "Rua das Tílias, n.º 107, 4000-000 Porto",
+    "policy": "SIM-RC-4348"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDARQ"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

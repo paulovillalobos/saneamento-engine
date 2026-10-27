@@ -1,0 +1,98 @@
+{
+ "expediente": "T1-0013",
+ "case": {
+  "id": "T1-0013",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 3,
+  "plot": 3880,
+  "impl": 552,
+  "built": 1652,
+  "imperm": 635,
+  "perm": 3245,
+  "volume": 5121,
+  "height": 10.4,
+  "facade": 9.7,
+  "parking": 2,
+  "cost": 1564400,
+  "submitted": "2026-12-01",
+  "site": "Rua das Tílias, n.º 80, Ourilhe, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 16,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Filipe Simulado Xavier",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "02327-SIM",
+    "address": "Rua das Tílias, n.º 80, Ourilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6737"
+   },
+   "arquiteto": {
+    "name": "Teresa de Teste Eva",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "61564-SIM",
+    "address": "Caminho da Lameira, n.º 63, 4700-000 Braga",
+    "policy": "SIM-RC-7654"
+   },
+   "engenheiro": {
+    "name": "Sérgio Simulado Inês",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "67883-SIM",
+    "address": "Travessa do Souto, n.º 96, 4800-000 Guimarães",
+    "policy": "SIM-RC-1143"
+   },
+   "diretor": {
+    "name": "Miguel Simulado Pedro",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "03587-SIM",
+    "address": "Lugar de Vilar, n.º 65, 4700-000 Braga",
+    "policy": "SIM-RC-1525"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "388 m2",
+    "area_implantacao": "552 m2",
+    "MDARQ": "3880 m2"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

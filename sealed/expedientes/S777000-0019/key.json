@@ -1,0 +1,95 @@
+{
+ "expediente": "S777000-0019",
+ "case": {
+  "id": "S777000-0019",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 2,
+  "plot": 1120,
+  "impl": 283,
+  "built": 495,
+  "imperm": 414,
+  "perm": 706,
+  "volume": 1534,
+  "height": 7.3,
+  "facade": 6.6,
+  "parking": 4,
+  "cost": 323200,
+  "submitted": "2026-10-23",
+  "site": "Rua da Escola, n.º 88, Codeçoso, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 14,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Bruno Fictício Diogo",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "47553-SIM",
+    "address": "Rua da Escola, n.º 88, Codeçoso, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3174"
+   },
+   "arquiteto": {
+    "name": "Leonor Amostra Eva",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "92739-SIM",
+    "address": "Rua das Tílias, n.º 27, 4000-000 Porto",
+    "policy": "SIM-RC-2584"
+   },
+   "engenheiro": {
+    "name": "Diogo de Teste Gonçalo",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "35696-SIM",
+    "address": "Rua da Escola, n.º 45, 4800-000 Guimarães",
+    "policy": "SIM-RC-5089"
+   },
+   "diretor": {
+    "name": "Olga Modelo Miguel",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "01537-SIM",
+    "address": "Rua da Escola, n.º 103, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6498"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDPAP"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}
