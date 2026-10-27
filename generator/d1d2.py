@@ -56,6 +56,32 @@ def extract(path, is_pdf):
         return None, 0
 
 
+def noisy(text, rng):
+    """OCR-like damage: dropped accents, broken words at line ends, a few swapped letters, double spaces."""
+    out = []
+    for ch in text:
+        r = rng.random()
+        if r < 0.004:
+            continue
+        if r < 0.012 and ch.isalpha():
+            out.append(rng.choice("aeiouxlnrs"))
+        elif r < 0.02 and ch == " ":
+            out.append("-\n" if rng.random() < 0.5 else "  ")
+        else:
+            out.append(ch)
+    t = "".join(out)
+    for a_, b_ in (("ç", "c"), ("ã", "a"), ("é", "e"), ("ó", "o"), ("í", "i")):
+        if rng.random() < 0.5:
+            t = t.replace(a_, b_)
+    return t
+
+
+def stranger_name(slot, stem, rng):
+    styles = [lambda: f"{slot}_{stem.replace('-', '_')}.pdf", lambda: f"{stem.replace('-', '')[:40]}.pdf", lambda: f"{rng.randrange(1, 60):02d}_{stem.replace('-', '_')[:30]}.pdf",
+              lambda: f"{slot.lower()}-{rng.randrange(100, 999)}.pdf", lambda: f"{stem.split('-')[0].upper()}_{rng.choice(['v1', 'final', 'rev2', 'assinado'])}.pdf"]
+    return rng.choice(styles)()
+
+
 def line_with(pages, page, value):
     for ln in pages[page - 1].splitlines():
         if value and value in ln:
@@ -67,7 +93,7 @@ def line_with(pages, page, value):
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--src", required=True); ap.add_argument("--out", required=True); ap.add_argument("--prefix", default="")
-    ap.add_argument("--seed", type=int, default=5)
+    ap.add_argument("--seed", type=int, default=5); ap.add_argument("--augment", action="store_true", help="training only: add noisy copies and stranger file names")
     a = ap.parse_args()
     rng = random.Random(a.seed)
     src = ROOT / a.src
@@ -86,6 +112,13 @@ def main():
                 ans = {"elemento": lab["element"], "citacao": PORT[lab["element"]]["text"], "tipo": "desenhado" if lab["kind"] == "drawn" else "escrito"}
             d1.append({"id": rid("d1", lab["expediente"], lab["file"]), "task": "d1_elemento", "prompt": D1_PROMPT.format(shortlist=SHORTLIST, name=lab["file"], pages=n or 0, text=text),
                        "answer": json.dumps(ans, ensure_ascii=False), "expediente": lab["expediente"]})
+            if a.augment and pages is not None and rng.random() < 0.35:
+                stem = lab["file"][len(lab["slot"]) + 1:-4]
+                sname = stranger_name(lab["slot"], stem, rng)
+                ntext = "\n".join(f"[página {i + 1}]\n{noisy(t, rng)}" for i, t in enumerate(pages))[:MAXCH]
+                d1.append({"id": rid("d1", lab["expediente"], lab["file"], "aug"), "task": "d1_elemento", "prompt": D1_PROMPT.format(shortlist=SHORTLIST, name=sname, pages=n, text=ntext),
+                           "answer": json.dumps(ans, ensure_ascii=False), "expediente": lab["expediente"]})
+                stats["augmented"] = stats.get("augmented", 0) + 1
             if pages is None:
                 continue
             # D2: every labelled fact, plus questions the document does not answer
