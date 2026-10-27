@@ -28,7 +28,7 @@ for name in ("training/data/d0/train.jsonl", "sealed/d0-test.jsonl"):
                 problems.append(f"{name}: unknown passage {a['passagem']}")
             elif a.get("citacao") != texts[a["passagem"]]:
                 problems.append(f"{name}: quote differs from the passage {a['passagem']}")
-        if len(r["prompt"]) > 1200 or len(r["answer"]) > 6000:
+        if len(r["prompt"]) > 6000 or len(r["answer"]) > 6000:
             problems.append(f"{name}: oversized row {r['id']}")
     print(f"{name}: {len(rows)} rows")
 prompts_train = {json.loads(l)["prompt"] for l in (ROOT / "training/data/d0/train.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()}

@@ -1,14 +1,14 @@
-# D0 report
+# D0 report (v3: candidates in the prompt)
 
-seed 20261027; passages covered 762 (every passage in training; the sealed set is one held-out phrasing per task plus nao_sei probes)
+seed 20261027; passages 552; prompt chars p95 3161
 
 | task | train | sealed |
 |---|---|---|
 | alinea_de | 203 | 203 |
-| elemento_doc | 184 | 92 |
+| elemento_doc | 182 | 91 |
 | exigencia | 232 | 116 |
-| localiza | 1183 | 539 |
+| localiza | 1078 | 539 |
 | proibido | 36 | 18 |
-| transcreve | 1813 | 604 |
+| transcreve | 1656 | 552 |
 
-total train 3651, sealed 1572; every `citacao` is a verbatim passage of structure/*.json (checked by generator/check_d0.py); nao_sei probes: train 262, sealed 52.
+total train 3387, sealed 1519; nao_sei (passage withheld): train 283, sealed 108.
