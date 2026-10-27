@@ -20,6 +20,8 @@ for name in ("training/data/d0/train.jsonl", "sealed/d0-test.jsonl"):
         if r["id"] in ids:
             problems.append(f"{name}: duplicate id {r['id']}")
         ids.add(r["id"])
+        if a.get("resposta") == "nao_sei":
+            continue
         if "passagem" in a:
             by_file[name].add(a["passagem"])
             if a["passagem"] not in texts:
@@ -29,8 +31,9 @@ for name in ("training/data/d0/train.jsonl", "sealed/d0-test.jsonl"):
         if len(r["prompt"]) > 1200 or len(r["answer"]) > 6000:
             problems.append(f"{name}: oversized row {r['id']}")
     print(f"{name}: {len(rows)} rows")
-both = by_file["training/data/d0/train.jsonl"] & by_file["sealed/d0-test.jsonl"]
-if both:
-    problems.append(f"{len(both)} passages in both train and sealed")
+prompts_train = {json.loads(l)["prompt"] for l in (ROOT / "training/data/d0/train.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()}
+dup = sum(1 for l in (ROOT / "sealed/d0-test.jsonl").read_text(encoding="utf-8").splitlines() if l.strip() and json.loads(l)["prompt"] in prompts_train)
+if dup:
+    problems.append(f"{dup} sealed prompts also in training")
 print(f"{len(problems)} problems" + ("".join("\n - " + p for p in problems[:20]) if problems else ""))
 sys.exit(1 if problems else 0)

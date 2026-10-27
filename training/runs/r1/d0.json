@@ -1,0 +1,2767 @@
+[
+ {
+  "meta": {
+   "model": "amalia-llm/AMALIA-9B-0626-DPO@c4614b9b5c7b",
+   "adapter": "amalia-saneamento-r1",
+   "runtime": "vllm 0.30.0, bf16, L40S, prefix caching, guided JSON per task",
+   "temperature": 0,
+   "max_tokens": 1200,
+   "load_seconds": 145.4,
+   "generate_seconds": 41.1,
+   "answered": 344,
+   "skipped": 0
+  }
+ },
+ {
+  "key": "transcreve:5ad5de5cc8300ab2",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 49,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.c.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:b7beb90802f32b1b",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 49,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.c.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:cfc5f6e46e50b3ab",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 79,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.c.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente e das características dos equipamentos elétricos, incluindo os destinados a utilização por pessoas com mobilidade condicionada;\"}"
+ },
+ {
+  "key": "transcreve:406a424c85e6703e",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 61,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.c.v\", \"citacao\": \"v) Projeto de instalações elétricas, quando exista, com indicação da potência instalada e da utilização dos equipamentos;\"}"
+ },
+ {
+  "key": "transcreve:3c9546f869fce3b4",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 82,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.c.v\", \"citacao\": \"v) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente e das características dos equipamentos elétricos, incluindo os destinados a utilização por pessoas com mobilidade condicionada, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:ebecbc8325d61583",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 82,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.c.v\", \"citacao\": \"v) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente e das características dos equipamentos elétricos, incluindo os destinados a utilização por pessoas com mobilidade condicionada, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:4e91021b8da1501b",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 49,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.d.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:3f97e4c41261fbf3",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 49,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.d.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:c9551abd666c6b6f",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 79,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.d.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente e das características dos equipamentos elétricos, incluindo os destinados a utilização por pessoas com mobilidade condicionada;\"}"
+ },
+ {
+  "key": "transcreve:f5d93accaba93f9c",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 49,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.d.iii\", \"citacao\": \"iii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:9a796f850a6f0cb1",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 49,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.d.iii\", \"citacao\": \"iii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:e9a91a17b42935fb",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 49,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.d.iii\", \"citacao\": \"iii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:c689678be9715bc9",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 107,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.g.v\", \"citacao\": \"v) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente com ligação à terra, quando esta seja obrigatória nos termos da Lei n.º 31/2009, de 3 de julho, em caso de obras de remodelação ou de alteração de utilização de espaços;\"}"
+ },
+ {
+  "key": "transcreve:c1203a43af3c6b25",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 82,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.g.v\", \"citacao\": \"v) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente e das características dos equipamentos elétricos, incluindo os destinados a utilização por pessoas com mobilidade condicionada, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:7078d3d206ea1bd9",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 82,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.g.v\", \"citacao\": \"v) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente e das características dos equipamentos elétricos, incluindo os destinados a utilização por pessoas com mobilidade condicionada, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:fb277feb9c0a8c19",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 49,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.i.v\", \"citacao\": \"v) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:2afd05a0454e6373",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 49,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.i.v\", \"citacao\": \"v) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:5694eed5a5eac366",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 61,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.9.i.v\", \"citacao\": \"v) Projeto de instalações elétricas, quando exista, com indicação da potência instalada e da utilização dos equipamentos;\"}"
+ },
+ {
+  "key": "transcreve:75ad599344fe6fae",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 51,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.10\", \"citacao\": \"10 - Termo de responsabilidade pela assunção de encargos:\"}"
+ },
+ {
+  "key": "transcreve:2fd750635d4e51be",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 1200,
+  "finish_reason": "length",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.10\", \"citacao\": \"10 - Termo de responsabilidade pela assunção de encargos urbanísticos e pela sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de alteração de uso ou de operação urbanística, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 77/2018, de 18 de agosto, quando se trate de operação urbanística que implique a alteração de uso ou de operação urbanística, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 77/2018, de 18 de agosto, quando se trate de operação urbanística que implique a alteração de uso ou de operação urbanística, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 77/2018, de 18 de agosto, quando se trate de operação urbanística que implique a alteração de uso ou de operação urbanística, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 77/2018, de 18 de agosto, quando se trate de operação urbanística que implique a alteração de uso ou de operação urbanística, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 77/2018, de 18 de agosto, quando se trate de operação urbanística que implique a alteração de uso ou de operação urbanística, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 77/2018, de 18 de agosto, quando se trate de operação urbanística que implique a alteração de uso ou de operação urbanística, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 77/2018, de 18 de agosto, quando se trate de operação urbanística que implique a alteração de uso ou de operação urbanística, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 77/2018, de 18 de agosto, quando se trate de operação urbanística que implique a alteração de uso ou de operação urbanística, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 77/2018, de 18 de agosto, quando se trate de operação urbanística que implique a alteração de uso ou de operação urbanística, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 77/2018, de 18 de agosto, quando se trate de operação urbanística que implique a alteração de uso ou de operação urbanística, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 77/2018, de 18 de agosto, quando se trate de operação urbanística que implique a alteração de uso ou de operação urbanística, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 77/2018, de 18 de agosto, quando se trate de operação urbanística que implique a alteração de uso ou de operação urbanística, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 77/2018, de 18 de agosto, quando se trate de operação urbanística que implique a alteração de uso ou de operação urbanística, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 77/2018, de 18 de agosto, quando se trate de operação urbanística que implique a alteração de uso ou de operação urbanística, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 77/2018, de 18 de agosto, quando se trate de operação urbanística que implique a alteração de uso ou de operação urbanística, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 77/2018, de 18 de agosto, quando se trate de operação urbanística que implique a alteração de uso ou de operação urbanística, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 77/2018, de 18 de agosto, quando se trate de operação urbanística"
+ },
+ {
+  "key": "transcreve:38f3ccc44a4eba69",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 201,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.10\", \"citacao\": \"10 - Termo de responsabilidade pela assunção de encargos urbanísticos e pela sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de alteração de uso ou de operação urbanística, quando o requerente não seja o titular dos direitos de utilização ou de construção, ou quando o requerente não seja o titular dos direitos de utilização ou de construção, mas pretenda assumir a responsabilidade pela assunção dos encargos urbanísticos e pela sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, e da Lei n.º 50/2013, de 10 de setembro, em caso de cedência de direitos:\"}"
+ },
+ {
+  "key": "transcreve:688a00067b656d03",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.18.a.vii\", \"citacao\": \"vii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:4a8b7b8e54b4e7c1",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.18.a.vii\", \"citacao\": \"vii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:7a0eed1c108ca190",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.18.a.vii\", \"citacao\": \"vii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:25381e231ca2a297",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.19.b.vi\", \"citacao\": \"vi) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:f4ce6fd6f20a0469",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.19.b.vi\", \"citacao\": \"vi) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:769965b58cf9db5f",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.19.b.vi\", \"citacao\": \"vi) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:e7c349dd3d77b367",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 66,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.19.b.viii.b\", \"citacao\": \"viii.b) Projeto de instalações elétricas, quando exista, com indicação dos elementos necessários à sua execução;\"}"
+ },
+ {
+  "key": "transcreve:5d00aaccf9fa9e3c",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 66,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.19.b.viii.b\", \"citacao\": \"viii.b) Projeto de instalações elétricas, quando exista, com indicação dos elementos necessários à sua execução;\"}"
+ },
+ {
+  "key": "transcreve:72c496f81dd08668",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 76,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.19.b.viii.b\", \"citacao\": \"viii.b) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente com ligação à terra, quando esta seja obrigatória;\"}"
+ },
+ {
+  "key": "transcreve:44417f4b6a707537",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 68,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.19.b.viii.c\", \"citacao\": \"viii.c) Projeto de instalações elétricas, quando exista, com indicação da potência instalada e da tensão de funcionamento;\"}"
+ },
+ {
+  "key": "transcreve:4d665fe9f96948cb",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 86,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.19.b.viii.c\", \"citacao\": \"viii.c) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente e das características dos equipamentos elétricos, incluindo os destinados a utilização por pessoas com mobilidade condicionada;\"}"
+ },
+ {
+  "key": "transcreve:2ad5053e335568ac",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 86,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.19.b.viii.c\", \"citacao\": \"viii.c) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente e das características dos equipamentos elétricos, incluindo os destinados a utilização por pessoas com mobilidade condicionada;\"}"
+ },
+ {
+  "key": "transcreve:5a7beb9d7cab8cf3",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.20.b.iii\", \"citacao\": \"iii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:e66a6bc99ebe8678",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.20.b.iii\", \"citacao\": \"iii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:97a1f71eec1cb517",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.20.b.iii\", \"citacao\": \"iii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:6850e3cadf510acd",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 52,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.20.b.viii\", \"citacao\": \"viii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:b4bf97837ea12ea1",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 52,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.20.b.viii\", \"citacao\": \"viii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:57ed996998a2807e",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 52,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.20.b.viii\", \"citacao\": \"viii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:282f808b57f03d52",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 64,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.21.d\", \"citacao\": \"d) Projeto de instalações elétricas, quando exista, devendo ser indicado o tipo de ligação à rede de distribuição de energia elétrica;\"}"
+ },
+ {
+  "key": "transcreve:fb01a3ef65ccaf75",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.21.d\", \"citacao\": \"d) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:b6a4be36c79b5d7e",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.21.d\", \"citacao\": \"d) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:222ba10406b87482",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.22.f\", \"citacao\": \"f) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:b190b76e2e1065ab",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.22.f\", \"citacao\": \"f) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:b81fad99cf4f635d",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.22.f\", \"citacao\": \"f) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:1af65d477fb93128",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 92,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.23.c\", \"citacao\": \"c) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente e das características dos equipamentos elétricos, incluindo os destinados a utilização por pessoas com mobilidade condicionada, quando exista, e que sejam necessários para a utilização da edificação;\"}"
+ },
+ {
+  "key": "transcreve:4ea80969ead03fd3",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.23.c\", \"citacao\": \"c) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:d67523468ae2174b",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.23.c\", \"citacao\": \"c) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:d59b85420f6d0a04",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 68,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.23.n\", \"citacao\": \"n) Projeto de instalações elétricas, quando exista, com indicação dos elementos necessários à sua execução e especificação das características técnicas dos materiais a utilizar;\"}"
+ },
+ {
+  "key": "transcreve:ba3d32dc11e0652e",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.23.n\", \"citacao\": \"n) Projeto de instalações elétricas, quando exista, com indicação dos elementos necessários à sua execução e especificação das características técnicas dos materiais e equipamentos a utilizar;\"}"
+ },
+ {
+  "key": "transcreve:bea79ade05a87c9d",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.23.n\", \"citacao\": \"n) Projeto de instalações elétricas, quando exista, com indicação dos elementos necessários à sua execução e especificação das características técnicas dos materiais e equipamentos a utilizar;\"}"
+ },
+ {
+  "key": "transcreve:23bc2bccb7b2645b",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.25.b.vi\", \"citacao\": \"vi) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:868f2e275e7abf46",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.25.b.vi\", \"citacao\": \"vi) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:10a73b2d3abacb54",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.25.b.vi\", \"citacao\": \"vi) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:f40d93340a4cbaac",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.25.h\", \"citacao\": \"h) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:5abd372a315797c6",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.25.h\", \"citacao\": \"h) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:d35524e6adbd1f0d",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.25.h\", \"citacao\": \"h) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:4bda935e89e78afb",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 60,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.25.i\", \"citacao\": \"i) Projeto de instalações elétricas, quando exista, com indicação da potência instalada e da utilização dos equipamentos;\"}"
+ },
+ {
+  "key": "transcreve:b50a766fb4957891",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 60,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.25.i\", \"citacao\": \"i) Projeto de instalações elétricas, quando exista, com indicação da potência instalada e da utilização dos equipamentos;\"}"
+ },
+ {
+  "key": "transcreve:1818453cf230190a",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 106,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.25.i\", \"citacao\": \"i) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente e das características dos equipamentos elétricos, incluindo os destinados a utilização por pessoas com mobilidade condicionada, quando exista, nos termos previstos na Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "transcreve:5af58741cee3ca8e",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.26.a.vii\", \"citacao\": \"vii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:5c75289f458ab930",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.26.a.vii\", \"citacao\": \"vii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:d8356e41c3d75f0b",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.26.a.vii\", \"citacao\": \"vii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:929c5012f9b7d443",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 52,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.26.a.xiii\", \"citacao\": \"xiii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:268354b2dad67188",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 52,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.26.a.xiii\", \"citacao\": \"xiii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:0de4a2ae442daa9e",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 52,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.26.a.xiii\", \"citacao\": \"xiii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:578fae8597c2f758",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.c.iii\", \"citacao\": \"iii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:902e4d38c5e13c23",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.c.iii\", \"citacao\": \"iii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:3385d4bd0cbc8a12",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.c.iii\", \"citacao\": \"iii) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:db57b04fbedd3e6e",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 60,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.i\", \"citacao\": \"i) Projeto de instalações elétricas, quando exista, com indicação da potência instalada e da utilização dos equipamentos;\"}"
+ },
+ {
+  "key": "transcreve:c59f5143f8126b02",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.i\", \"citacao\": \"i) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:8084d4c1424cdcc8",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 60,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.i\", \"citacao\": \"i) Projeto de instalações elétricas, quando exista, com indicação da potência instalada e da utilização dos equipamentos;\"}"
+ },
+ {
+  "key": "transcreve:0ee0a50768fe70c5",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 62,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.i.i\", \"citacao\": \"i) Projeto de instalações elétricas, quando exista, com indicação da potência instalada e da utilização dos equipamentos;\"}"
+ },
+ {
+  "key": "transcreve:b9102f035cd74686",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 62,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.i.i\", \"citacao\": \"i) Projeto de instalações elétricas, quando exista, com indicação da potência instalada e da utilização dos equipamentos;\"}"
+ },
+ {
+  "key": "transcreve:05627942b85854b6",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 62,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.i.i\", \"citacao\": \"i) Projeto de instalações elétricas, quando exista, com indicação da potência instalada e da utilização dos equipamentos;\"}"
+ },
+ {
+  "key": "transcreve:2b1694c1272421ee",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.i.iv\", \"citacao\": \"iv) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:6adf7088f9e7901b",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.i.iv\", \"citacao\": \"iv) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:609bf159c8715e02",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.i.iv\", \"citacao\": \"iv) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:9270b7790791636d",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.i.xiv\", \"citacao\": \"xiv) Projeto de instalações elétricas, quando exigível nos termos da lei;\"}"
+ },
+ {
+  "key": "transcreve:aa8eba88cc001ed6",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 52,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.i.xiv\", \"citacao\": \"xiv) Projeto de instalações elétricas, quando exista;\"}"
+ },
+ {
+  "key": "transcreve:bfe0c217f6fa3933",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.i.xiv\", \"citacao\": \"xiv) Projeto de instalações elétricas, quando exigível nos termos da lei;\"}"
+ },
+ {
+  "key": "transcreve:5fd5226da19fd6de",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 76,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.p\", \"citacao\": \"p) Projeto de instalações elétricas, quando exista, elaborado por técnico habilitado nos termos da Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "transcreve:d80f1e7f8e8c43af",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.p\", \"citacao\": \"p) Projeto de instalações elétricas, quando exista, com indicação dos elementos necessários à sua execução e especificação das características técnicas dos materiais e equipamentos a utilizar;\"}"
+ },
+ {
+  "key": "transcreve:f7229ab201692bb7",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.p\", \"citacao\": \"p) Projeto de instalações elétricas, quando exista, com indicação dos elementos necessários à sua execução e especificação das características técnicas dos materiais e equipamentos a utilizar;\"}"
+ },
+ {
+  "key": "transcreve:15e686fea7bb0a55",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 137,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.28\", \"citacao\": \"28 - Termo de responsabilidade pela assunção de encargos urbanísticos e pela sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de alteração de uso ou de operação urbanística, quando o requerente não seja o titular dos direitos de construção ou de utilização, ou quando o requerente não seja o titular dos direitos de construção ou de utilização e o termo de responsabilidade seja assinado por terceiro;\"}"
+ },
+ {
+  "key": "transcreve:d6d26e040c4e99ab",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 109,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.28\", \"citacao\": \"28 - Termo de responsabilidade pela assunção de encargos urbanísticos e pela sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de alteração de uso ou de operação urbanística, quando o requerente não seja o titular dos direitos de utilização ou de construção.\"}"
+ },
+ {
+  "key": "transcreve:e13568af74b99b77",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 1200,
+  "finish_reason": "length",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.28\", \"citacao\": \"28 - Termo de responsabilidade pela assunção de encargos urbanísticos e pela sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, nos casos em que o requerente não seja o titular dos direitos de construção ou de utilização, ou em que o requerente não seja o titular dos direitos de construção ou de utilização, mas pretenda assumir a responsabilidade pela assunção dos encargos urbanísticos e pela sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 1 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a informação prévia nos termos do n.º 1 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 1 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a informação prévia nos termos do n.º 1 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 1 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a informação prévia nos termos do n.º 1 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 1 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a informação prévia nos termos do n.º 1 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE"
+ },
+ {
+  "key": "transcreve:9978d37bed4eeb5d",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 143,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.28.c\", \"citacao\": \"c) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente e das características dos equipamentos elétricos, incluindo os destinados a utilização por pessoas com mobilidade condicionada, quando exista, e que sejam necessários à utilização dos espaços, devendo ser indicado o tipo de ligação à rede de baixa tensão, bem como a potência contratada, quando esta seja superior a 115 kW, nos termos do n.º 2 do artigo 14.º do RJUE;\"}"
+ },
+ {
+  "key": "transcreve:c6e05665ce8b5918",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.28.c\", \"citacao\": \"c) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:1d8ec1d77dac5cbf",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.28.c\", \"citacao\": \"c) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:4a8b79b8214d7735",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 53,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.29.g\", \"citacao\": \"g) Projeto de instalações elétricas, quando exigível nos termos da lei;\"}"
+ },
+ {
+  "key": "transcreve:4b57bcd43432c33e",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 53,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.29.g\", \"citacao\": \"g) Projeto de instalações elétricas, quando exigível nos termos da lei;\"}"
+ },
+ {
+  "key": "transcreve:a7344de6ea2cdb36",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 53,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.29.g\", \"citacao\": \"g) Projeto de instalações elétricas, quando exigível nos termos da lei;\"}"
+ },
+ {
+  "key": "transcreve:f4d7b8838dcac2f0",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 1200,
+  "finish_reason": "length",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.30\", \"citacao\": \"30 - Termo de responsabilidade pela assunção de encargos urbanísticos e pela sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, nos casos em que o requerente não seja o titular dos direitos de construção ou de utilização, ou em que o requerente não seja o titular dos direitos de construção ou de utilização, mas pretenda assumir a responsabilidade pela assunção dos encargos urbanísticos e pela sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 1 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE, quando se trate de operação urbanística sujeita a comunicação prévia nos termos do n.º 2 do artigo 14.º do RJUE, ou nos termos do n.º 2 do artigo 14.º do RJUE"
+ },
+ {
+  "key": "transcreve:e6ed2a6e249a466b",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 137,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.30\", \"citacao\": \"30 - Termo de responsabilidade pela assunção de encargos urbanísticos e pela sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de alteração de uso ou de operação urbanística, quando o requerente não seja o titular dos direitos de construção ou de utilização, ou quando o requerente não seja o titular dos direitos de construção ou de utilização e o termo de responsabilidade seja assinado por terceiro;\"}"
+ },
+ {
+  "key": "transcreve:b2ad916e8f58a78c",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 109,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.30\", \"citacao\": \"30 - Termo de responsabilidade pela assunção de encargos urbanísticos e pela sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de alteração de uso ou de operação urbanística, quando o requerente não seja o titular dos direitos de utilização ou de construção.\"}"
+ },
+ {
+  "key": "transcreve:5a71ab84d2e7aac4",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.30.f\", \"citacao\": \"f) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:5a483cb9d309c570",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.30.f\", \"citacao\": \"f) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:fe6982a32154da96",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.30.f\", \"citacao\": \"f) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:9e1d9a25c3465346",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 76,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.30.l\", \"citacao\": \"l) Projeto de instalações elétricas, quando exista, elaborado por técnico habilitado nos termos da Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "transcreve:02a40d252ff1c9de",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 76,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.30.l\", \"citacao\": \"l) Projeto de instalações elétricas, quando exista, elaborado por técnico habilitado nos termos da Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "transcreve:a8e34034d09d8d55",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 76,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.30.l\", \"citacao\": \"l) Projeto de instalações elétricas, quando exista, com indicação da potência instalada e da utilização dos equipamentos, bem como da sua conformidade com as normas e regulamentos técnicos em vigor;\"}"
+ },
+ {
+  "key": "transcreve:e4a0a9ce2aaeb711",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 64,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.31.d\", \"citacao\": \"d) Projeto de instalações elétricas, quando exista, devendo ser indicado o tipo de ligação à rede de distribuição de energia elétrica;\"}"
+ },
+ {
+  "key": "transcreve:43713fb18869823a",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 64,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.31.d\", \"citacao\": \"d) Projeto de instalações elétricas, quando exista, devendo ser indicado o tipo de ligação à rede de distribuição de energia elétrica;\"}"
+ },
+ {
+  "key": "transcreve:bba3e53c8ec72a11",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.31.d\", \"citacao\": \"d) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:37b9d299c9a412f6",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 1200,
+  "finish_reason": "length",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.32\", \"citacao\": \"32 - Termo de responsabilidade pela assunção de encargos urbanísticos e pela sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, nos casos em que o requerente não seja o titular dos direitos de construção ou de utilização, ou em que o requerente não seja o titular dos direitos de construção ou de utilização, mas pretenda assumir a responsabilidade pela assunção dos encargos urbanísticos e pela sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, ou nos casos em que o requerente pretenda a atribuição de um prazo para a assunção dos encargos urbanísticos e a sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, ou nos casos em que o requerente pretenda a atribuição de um prazo para a assunção dos encargos urbanísticos e a sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, e da Lei n.º 77/2018, de 3 de setembro, na sua redação atual, ou nos casos em que o requerente pretenda a atribuição de um prazo para a assunção dos encargos urbanísticos e a sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, e da Lei n.º 77/2018, de 3 de setembro, na sua redação atual, e da Lei n.º 12-A/2026, de 17 de maio, na sua redação atual, ou nos casos em que o requerente pretenda a atribuição de um prazo para a assunção dos encargos urbanísticos e a sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, e da Lei n.º 77/2018, de 3 de setembro, na sua redação atual, e da Lei n.º 12-A/2026, de 17 de maio, na sua redação atual, ou nos casos em que o requerente pretenda a atribuição de um prazo para a assunção dos encargos urbanísticos e a sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, e da Lei n.º 77/2018, de 3 de setembro, na sua redação atual, e da Lei n.º 12-A/2026, de 17 de maio, na sua redação atual, e da Lei n.º 12-A/2026, de 17 de maio, na sua redação atual, e da Lei n.º 12-A/2026, de 17 de maio, na sua redação atual, ou nos casos em que o requerente pretenda a atribuição de um prazo para a assunção dos encargos urbanísticos e a sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, e da Lei n.º 77/2018, de 3 de setembro, na sua redação atual, e da Lei n.º 12-A/2026, de 17 de maio, na sua redação atual, e da Lei n.º 12-A/2026, de 17 de maio, na sua redação atual, e da Lei n.º 12-A/2026, de 17 de maio, na sua redação atual, ou nos casos em que o requerente pretenda a atribuição de um prazo para a assunção dos encargos urbanísticos e a sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, e da Lei n.º 77/2018, de 3 de setembro, na sua redação atual, e da Lei n.º 12-A/2026, de 17 de maio, na sua redação atual, e da Lei n.º 12-A/2026, de 17 de maio, na sua redação atual, ou nos casos em que o requerente pretenda a atribuição de um prazo para a assunção dos encargos urbanísticos e a sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, e da Lei n.º 77/2018, de 3 de setembro, na sua redação atual, e da Lei n.º 12-A/2026, de 17 de maio, na sua redação atual, e da Lei n.º 12-A"
+ },
+ {
+  "key": "transcreve:06d02e7653405dd3",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 137,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.32\", \"citacao\": \"32 - Termo de responsabilidade pela assunção de encargos urbanísticos e pela sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de alteração de uso ou de operação urbanística, quando o requerente não seja o titular dos direitos de construção ou de utilização, ou quando o requerente não seja o titular dos direitos de construção ou de utilização e o termo de responsabilidade seja assinado por terceiro;\"}"
+ },
+ {
+  "key": "transcreve:1186c20edbdd1da3",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 88,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.32\", \"citacao\": \"32 - Termo de responsabilidade pela assunção de encargos urbanísticos e pela sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de obras de urbanização:\"}"
+ },
+ {
+  "key": "transcreve:94f10a40a50c1a61",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 76,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.32.b\", \"citacao\": \"b) Projeto de instalações elétricas, quando exista, elaborado por técnico habilitado nos termos da Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "transcreve:03faac7520ad07c5",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 83,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.32.b\", \"citacao\": \"b) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente, incluindo a sua localização e número, bem como a potência contratada, quando esta seja superior a 11 kVA;\"}"
+ },
+ {
+  "key": "transcreve:ec8f782875320c0e",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 83,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.32.b\", \"citacao\": \"b) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente, incluindo a sua localização e número, bem como a potência contratada, quando esta seja superior a 11 kVA;\"}"
+ },
+ {
+  "key": "transcreve:86b80c799c94729a",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.33.e\", \"citacao\": \"e) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:61583b11e503c973",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.33.e\", \"citacao\": \"e) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:adff3cc682f5fad4",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.33.e\", \"citacao\": \"e) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:b7bc7a7ea350383a",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 64,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.33.m\", \"citacao\": \"m) Projeto de instalações elétricas, quando exista, devendo ser indicado o tipo de ligação à rede de distribuição de energia elétrica;\"}"
+ },
+ {
+  "key": "transcreve:91736bbb5f1e3081",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 64,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.33.m\", \"citacao\": \"m) Projeto de instalações elétricas, quando exista, devendo ser indicado o tipo de ligação à rede de distribuição de energia elétrica;\"}"
+ },
+ {
+  "key": "transcreve:74eebc5d3dd857ee",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 64,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.33.m\", \"citacao\": \"m) Projeto de instalações elétricas, quando exista, devendo ser indicado o tipo de ligação à rede de distribuição de energia elétrica;\"}"
+ },
+ {
+  "key": "transcreve:a041e859e0180012",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.34.a\", \"citacao\": \"a) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:3c834b358ecfe042",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.34.a\", \"citacao\": \"a) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:f2aca825ee146062",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.34.a\", \"citacao\": \"a) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:3d5e5bfaa1c549c1",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 76,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.34.i\", \"citacao\": \"i) Projeto de instalações elétricas, quando exista, com indicação da potência instalada e da utilização dos equipamentos, bem como da sua conformidade com as normas e regulamentos técnicos em vigor;\"}"
+ },
+ {
+  "key": "transcreve:ef49cba95bd7292a",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 60,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.34.i\", \"citacao\": \"i) Projeto de instalações elétricas, quando exista, com indicação da potência instalada e da utilização dos equipamentos;\"}"
+ },
+ {
+  "key": "transcreve:75f76ec932e9f449",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 76,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.34.i\", \"citacao\": \"i) Projeto de instalações elétricas, quando exista, com indicação da potência instalada e da utilização dos equipamentos, bem como da sua conformidade com as normas e regulamentos técnicos em vigor;\"}"
+ },
+ {
+  "key": "transcreve:466cc55af5371e62",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.39.b\", \"citacao\": \"b) Projeto de instalações elétricas, quando exista, com indicação dos elementos necessários à sua execução e especificação das características técnicas dos materiais e equipamentos a utilizar;\"}"
+ },
+ {
+  "key": "transcreve:67a7045960bd5b27",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 106,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.39.b\", \"citacao\": \"b) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente e das características dos equipamentos elétricos, incluindo os destinados a utilização por pessoas com mobilidade condicionada, quando exista, nos termos previstos na Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "transcreve:f10ddb1fb176bdf5",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 83,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.39.b\", \"citacao\": \"b) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente, incluindo a sua localização e número, bem como a potência contratada, quando esta seja superior a 11 kVA;\"}"
+ },
+ {
+  "key": "transcreve:8faa4667d90be126",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.40.a\", \"citacao\": \"a) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:44bfdd1b0061c190",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.40.a\", \"citacao\": \"a) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:15111b3de67dda4c",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.40.a\", \"citacao\": \"a) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:819e7ceb4126c16b",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 95,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VI.2\", \"citacao\": \"2 - O termo de responsabilidade pela assunção da qualidade técnica dos projetos de arquitetura e de urbanismo é subscrito pelos autores dos projetos, nos termos do n.º 2 do artigo 14.º do RJUE, devendo ser apresentado em conjunto com os projetos:\"}"
+ },
+ {
+  "key": "transcreve:7e4011b9979682ad",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 101,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VI.2\", \"citacao\": \"2 - O termo de responsabilidade pela assunção da qualidade técnica dos projetos de arquitetura e de urbanismo é subscrito pelos autores dos projetos, nos termos do n.º 1 do artigo 14.º do RJUE, devendo ser apresentado em conjunto com os projetos de arquitetura e de urbanismo.\"}"
+ },
+ {
+  "key": "transcreve:7e669cbe7a7bc1a9",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 135,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VI.2\", \"citacao\": \"2 - O termo de responsabilidade pela assunção da qualidade de diretor de obra é subscrito pelo diretor de obra ou, na sua impossibilidade, por outro técnico legalmente habilitado, nos termos previstos na Lei n.º 31/2009, de 3 de julho, na sua redação atual, e é entregue com o pedido de informação prévia ou com o pedido de licença de utilização, nos prazos e condições estabelecidos na lei.\"}"
+ },
+ {
+  "key": "transcreve:f62671b56b1c939a",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 56,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VI.5.c\", \"citacao\": \"c) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:57a3b048dbcff38b",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 56,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VI.5.c\", \"citacao\": \"c) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:0ce8c0dc41ce1992",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 56,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VI.5.c\", \"citacao\": \"c) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "transcreve:f5f0d62ad50b614c",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 118,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-I.note-g\", \"citacao\": \"(g) Indicar o número do alvará, do certificado ou do outro título habilitante que confira habilitações profissionais adequadas à natureza da obra, quando exista, bem como o número do código de operação, quando exista, e o nome do titular do alvará, do certificado ou do outro título habilitante, quando o requerente seja pessoa coletiva.\"}"
+ },
+ {
+  "key": "transcreve:57074bee1e4db85a",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 1200,
+  "finish_reason": "length",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-I.note-g\", \"citacao\": \"(g) Indicar o número do alvará, do certificado ou do outro título habilitante que confira habilitação profissional para a realização da obra, quando exista, ou a qualificação profissional do diretor de obra e do diretor de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade de atribuição de alvará ou de outro título habilitante, ou da sua caducidade, nos termos da Lei n.º 31/2009, de 3 de julho, ou do n.º 2 do artigo 14.º do RJUE, quando exista contrato de prestação de serviços de direção de obra ou de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, ou do n.º 2 do artigo 14.º do RJUE, quando exista contrato de prestação de serviços de direção de obra ou de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, ou do n.º 2 do artigo 14.º do RJUE, quando exista contrato de prestação de serviços de direção de obra ou de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, ou do n.º 2 do artigo 14.º do RJUE, quando exista contrato de prestação de serviços de direção de obra ou de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, ou do n.º 2 do artigo 14.º do RJUE, quando exista contrato de prestação de serviços de direção de obra ou de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, ou do n.º 2 do artigo 14.º do RJUE, quando exista contrato de prestação de serviços de direção de obra ou de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, ou do n.º 2 do artigo 14.º do RJUE, quando exista contrato de prestação de serviços de direção de obra ou de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, ou do n.º 2 do artigo 14.º do RJUE, quando exista contrato de prestação de serviços de direção de obra ou de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, ou do n.º 2 do artigo 14.º do RJUE, quando exista contrato de prestação de serviços de direção de obra ou de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, ou do n.º 2 do artigo 14.º do RJUE, quando exista contrato de prestação de serviços de direção de obra ou de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, ou do n.º 2 do artigo 14.º do RJUE, quando exista contrato de prestação de serviços de direção de obra ou de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, ou do n.º 2 do artigo 14.º do RJUE, quando exista contrato de prestação de serviços de direção de obra ou de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, ou do n.º 2 do artigo 14.º do RJUE, quando exista contrato de prestação de serviços de direção de obra ou de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, ou do n.º 2 do artigo 14.º do RJUE, quando exista contrato de prestação de serviços de direção de obra ou de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, ou do n.º 2 do artigo 14.º do RJUE, quando exista contrato de prestação de serviços de direção de obra ou de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, ou do n.º 2 do artigo 14.º do RJUE, quando exista contrato de prestação de serviços de direção de obra ou de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, ou do n.º 2 do artigo 14.º do RJUE, quando exista contrato de prestação de serviços de direção de obra ou de fiscalização de obra, nos termos da Lei"
+ },
+ {
+  "key": "transcreve:2275a8584e4d5945",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 112,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-I.note-g\", \"citacao\": \"(g) Indicar o número do alvará, do certificado ou do outro título habilitante que confira habilitações profissionais adequadas à natureza da obra, quando exista, bem como o número do código de acesso ao portal dos serviços públicos, caso exista, para efeitos de comunicação prévia ou comunicação de início de obra, nos termos da lei.\"}"
+ },
+ {
+  "key": "transcreve:fa25cc5ba381816a",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 155,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-I.p41\", \"citacao\": \"41 - Indicar o número do alvará, quando exista, ou do certificado de habilitação profissional, quando o requerente seja detentor de qualificação profissional que lhe permita exercer a função de diretor de obra ou diretor de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade de atribuição de licença ou de comunicação prévia, nos termos do n.º 1 do artigo 14.º-A do RJUE.\"}"
+ },
+ {
+  "key": "transcreve:ce6c17b737bb7b1f",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 114,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-I.p41\", \"citacao\": \"41 - Termo de responsabilidade pela assunção de encargos urbanísticos e pela sua manutenção, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de alteração de uso ou de operação urbanística, quando o requerente não seja o titular dos direitos de utilização ou de construção.\"}"
+ },
+ {
+  "key": "transcreve:1eabe0043665f623",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 58,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-I.p41\", \"citacao\": \"41 - Termo de responsabilidade pela assunção de encargos urbanísticos:\"}"
+ },
+ {
+  "key": "transcreve:c453f12565e8b603",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 204,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-III.note-c\", \"citacao\": \"(c) Indicar o número do alvará, quando exista, ou o número do certificado de habilitação profissional, nos termos da Lei n.º 3 da Lei n.º 3 da Lei n.º 35/2013, de 20 de junho, ou, em caso de impossibilidade de atribuição de alvará ou certificado, a habilitação profissional que confere competência para a realização da obra, bem como o código da atividade económica, nos termos da Lei n.º 12/2004, de 28 de junho, na sua redação atual, e da Lei n.º 10/2009, de 14 de julho, na sua redação atual;\"}"
+ },
+ {
+  "key": "transcreve:294fe858e87bf705",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 74,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-III.note-c\", \"citacao\": \"(c) Indicar o número do alvará, quando exista, ou o número do código de operação urbanística, bem como a data da sua atribuição;\"}"
+ },
+ {
+  "key": "transcreve:a0a5f24f1e49fd4f",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 106,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-III.note-c\", \"citacao\": \"(c) Indicar o número do alvará, quando exista, ou o código de operação urbanística, caso não exista alvará, bem como o número do código de operação urbanística atribuído pelo município, quando exista, e o prazo de validade da licença ou comunicação prévia, quando aplicável;\"}"
+ },
+ {
+  "key": "transcreve:2b2d063b1b711d61",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 118,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-III.note-f\", \"citacao\": \"(f) Indicar o número do alvará, do certificado ou do outro título habilitante que confira habilitações profissionais adequadas à natureza da obra, quando exista, bem como o número do código de operação, quando exista, e o nome do titular do alvará, do certificado ou do outro título habilitante, quando o requerente seja pessoa coletiva.\"}"
+ },
+ {
+  "key": "transcreve:94d02e8fe85c2270",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 132,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-III.note-f\", \"citacao\": \"(f) Indicar o número do alvará, do certificado ou do outro título habilitante que confira habilitações profissionais adequadas à natureza da obra, quando exista, bem como o número do código de operação, quando exista, e o nome do titular do alvará, do certificado ou do outro título habilitante, quando o requerente não seja o titular do alvará, do certificado ou do outro título habilitante;\"}"
+ },
+ {
+  "key": "transcreve:95c50e665073bce2",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 100,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-III.note-f\", \"citacao\": \"(f) Indicar o número do alvará, do certificado ou do outro título habilitante que confira habilitações profissionais adequadas à natureza da obra, quando exista, bem como o número do código de operação, quando exista, e o nome e morada do respetivo titular;\"}"
+ },
+ {
+  "key": "transcreve:26c5355ab935199c",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 72,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-IV.p1\", \"citacao\": \"1 - O requerimento deve ser acompanhado dos elementos instrutórios que permitam a verificação do cumprimento dos requisitos legais e regulamentares aplicáveis, incluindo:\"}"
+ },
+ {
+  "key": "transcreve:17bcd4f316e6a037",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 105,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-IV.p1\", \"citacao\": \"1 - O termo de responsabilidade pela assunção da qualidade técnica dos projetos de arquitetura e de urbanismo é subscrito pelos autores dos projetos, nos termos do n.º 2 do artigo 14.º do RJUE, e é apresentado em conjunto com os projetos de arquitetura e de urbanismo.\"}"
+ },
+ {
+  "key": "transcreve:a4e58845b26270d5",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 105,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-IV.p1\", \"citacao\": \"1 - O termo de responsabilidade pela assunção da qualidade técnica dos projetos de arquitetura e de urbanismo é subscrito pelos autores dos projetos, nos termos do n.º 2 do artigo 14.º do RJUE, e é apresentado em conjunto com os projetos de arquitetura e de urbanismo.\"}"
+ },
+ {
+  "key": "transcreve:031ecdf963dad6da",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 135,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-IV.note-d\", \"citacao\": \"(d) Indicar o número do alvará, quando exista, ou do certificado de habilitação profissional, nos termos da Lei n.º 3 da Lei n.º 3 da Lei n.º 35/2013, de 20 de junho, ou do código de identificação fiscal, quando o requerente seja pessoa coletiva, ou do número de contribuinte individual, quando o requerente seja pessoa singular;\"}"
+ },
+ {
+  "key": "transcreve:7f80936eeb65859b",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 74,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-IV.note-d\", \"citacao\": \"(d) Indicar o número do alvará, quando exista, ou o número do código de operação urbanística, bem como a data da sua atribuição;\"}"
+ },
+ {
+  "key": "transcreve:f4497565da0e4a14",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 112,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-IV.note-d\", \"citacao\": \"(d) Indicar o número do alvará, do certificado ou do outro título habilitante que confira habilitações profissionais adequadas à natureza da obra, quando exista, bem como o número do código de acesso ao portal dos serviços públicos, caso exista, e o nome do titular dos poderes de representação, quando este não seja o requerente;\"}"
+ },
+ {
+  "key": "transcreve:c84b57f013001397",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 128,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-V.note-e\", \"citacao\": \"(e) Indicar o número do alvará, do certificado ou do outro título habilitante que confira habilitações profissionais adequadas à natureza da obra, quando exista, bem como o número do código de operação urbanística, quando exista, e o número do código de operação urbanística atribuído pelo município, quando este seja o órgão competente para a atribuição do alvará ou do certificado, nos termos da lei.\"}"
+ },
+ {
+  "key": "transcreve:ac420e7b5f07c5db",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 118,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-V.note-e\", \"citacao\": \"(e) Indicar o número do alvará, do certificado ou do outro título habilitante que confira habilitações profissionais adequadas à natureza da obra, quando exista, bem como o número do código de operação, quando exista, e o nome do titular do alvará, do certificado ou do outro título habilitante, quando o requerente seja pessoa coletiva.\"}"
+ },
+ {
+  "key": "transcreve:6da26ee8416578e8",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 188,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-V.note-e\", \"citacao\": \"(e) Indicar o número do alvará, do certificado ou do outro título habilitante que confira habilitações profissionais adequadas à natureza da obra ou do trabalho a realizar, quando exista, bem como o código do título habilitante, nos termos da Lei n.º 38/2007, de 8 de julho, em caso de impossibilidade de atribuição de alvará ou de obtenção de certificado ou outro título habilitante, nos termos da Lei n.º 38/2007, de 8 de julho, ou da Lei n.º 9/2009, de 4 de março, quando aplicável;\"}"
+ },
+ {
+  "key": "transcreve:35e1e7ff6621481b",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 121,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-VI.b.p7\", \"citacao\": \"b) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente, incluindo os destinados a equipamentos de utilização específica, e dos pontos de ligação à rede de gás, quando exista, com indicação dos pontos de ligação à rede de gás, bem como dos equipamentos de utilização específicos, devendo ser indicado o tipo de equipamento e a sua potência, quando aplicável;\"}"
+ },
+ {
+  "key": "transcreve:803c1baad6b04e2e",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 76,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-VI.b.p7\", \"citacao\": \"b) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente, incluindo a sua localização e número, bem como a potência contratada;\"}"
+ },
+ {
+  "key": "transcreve:86ff0d75db0575a1",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 121,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-VII.sec-VI.b.p7\", \"citacao\": \"b) Projeto de instalações elétricas, quando exista, com indicação dos pontos de tomada de corrente, incluindo os destinados a equipamentos de utilização específica, e dos pontos de ligação à rede de gás, quando exista, com indicação dos pontos de ligação à rede de gás, bem como dos equipamentos de utilização específicos, devendo ser indicado o tipo de equipamento e a sua potência, quando aplicável;\"}"
+ },
+ {
+  "key": "transcreve:2e1b521c75222d0b",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 148,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"decreto-lei-108-2026:anexo.art9.8\", \"citacao\": \"8 - O prazo para a apresentação do pedido de informação prévia ou do pedido de licença é de 15 dias úteis contados da data da receção do pedido, nos termos do n.º 1 do artigo 14.º do RJUE, aprovado pelo Decreto-Lei n.º 555/99, de 16 de dezembro, na redação dada pelo Decreto-Lei n.º 108/2026, de 10 de fevereiro.\"}"
+ },
+ {
+  "key": "transcreve:6e881a5dc217bec6",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 116,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"decreto-lei-108-2026:anexo.art9.8\", \"citacao\": \"8 - O prazo para a apresentação do pedido de informação prévia é de 20 dias, contados da data da receção do pedido, nos casos em que o interessado não seja obrigado a apresentar termo de responsabilidade pela qualidade do projeto de arquitetura e de engenharia, nos termos previstos na Lei n.º 31/2009, de 3 de julho.\"}"
+ },
+ {
+  "key": "transcreve:bd44a287767e527c",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 251,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"decreto-lei-108-2026:anexo.art9.8\", \"citacao\": \"8 - O prazo para a apresentação do pedido de informação prévia é de 20 dias, contados da data da receção do pedido, nos termos do n.º 1 do artigo 14.º do RJUE, aprovado pelo Decreto-Lei n.º 555/99, de 16 de dezembro, na sua redação atual, ou, em caso de impossibilidade de acesso ao pedido de informação prévia, nos termos do n.º 2 do artigo 14.º do RJUE, aprovado pelo Decreto-Lei n.º 555/99, de 16 de dezembro, na sua redação atual, ou, quando tal impossibilidade se verifique por força de lei, nos termos do n.º 3 do artigo 14.º do RJUE, aprovado pelo Decreto-Lei n.º 555/99, de 16 de dezembro, na sua redação atual.\"}"
+ },
+ {
+  "key": "transcreve:cd674c02de8f994a",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 86,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"decreto-lei-108-2026:anexo.art9.12.j\", \"citacao\": \"j) Termo de responsabilidade pela assunção da qualidade de diretor de obra e diretor de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "transcreve:7ea4d5efb79aef7f",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 79,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"decreto-lei-108-2026:anexo.art9.12.j\", \"citacao\": \"j) Termo de responsabilidade pela assunção da qualidade de diretor de obra, nos termos da Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "transcreve:73867020dfe36cb2",
+  "task": "transcreve",
+  "prompt_tokens": 2,
+  "completion_tokens": 79,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"decreto-lei-108-2026:anexo.art9.12.j\", \"citacao\": \"j) Termo de responsabilidade pela assunção da função de diretor de obra, nos termos da Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "localiza:bd5b5f7a600a3e23",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 54,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Demonstração do cumprimento dos parâmetros de dimensionamento;\"}"
+ },
+ {
+  "key": "localiza:b6c64578d3c5154e",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 54,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Demonstração do cumprimento dos parâmetros de dimensionamento;\"}"
+ },
+ {
+  "key": "localiza:abc32dd714c20264",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 110,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta à escala de 1:50.000 ou superior, adotada, especificando as áreas destinadas às vias de acesso, espaços verdes e estacionamento, bem como as áreas de implantação e cércea dos edifícios, quando o projeto não se enquadre no n.º 1 do presente anexo;\"}"
+ },
+ {
+  "key": "localiza:3c3081c2f83cb07f",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 153,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Estrutura viária adotada, especificando as áreas destinadas à circulação automóvel e pedonal, bem como as áreas de estacionamento, de acordo com o previsto no plano de loteamento ou, na sua ausência, com o previsto no Regulamento Geral do Plano de Pormenor ou, quando este não exista, com o previsto na Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade de aplicação do mesmo, devendo ser indicado o respetivo procedimento de aprovação;\"}"
+ },
+ {
+  "key": "localiza:5c4ceaa6fc20127d",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 48,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.c\", \"citacao\": \"c) Outras regras de uso do solo aplicáveis;\"}"
+ },
+ {
+  "key": "localiza:a9736ebb000d23d7",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 52,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.a.ii\", \"citacao\": \"ii) Projeto de loteamento, quando exista, contendo:\"}"
+ },
+ {
+  "key": "localiza:9ba438ecc17bb296",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 99,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Indicar os parâmetros, índices e outros critérios urbanísticos que fundamentam a operação urbanística, bem como a sua conformidade com o PDM, quando exista, ou com o plano setorial aplicável, ou, na sua ausência, justificar a sua inexistência;\"}"
+ },
+ {
+  "key": "localiza:ccac7f17a130f376",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 97,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista, devidamente fundamentada e circunstanciada do cumprimento das normas de segurança e de prevenção de riscos profissionais, nos termos previstos na Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "localiza:aaf7d85e75caaa38",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 1200,
+  "finish_reason": "length",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de loteamento, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento e urbanização, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alíase, ou, em caso de inexistência de qualquer um dos projetos mencionados na alíase, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alíase, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alíase, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alíase, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alíase, ou, em caso de inexistência de qualquer um dos projetos mencionados na alínea anterior, projeto de loteamento e urbanização, quando exista, ou projeto de urbanização, quando exista, ou projeto de loteamento, quando ambos existam, ou, em caso de inexistência de qualquer um dos projetos mencionados na alíase, ou, em caso de inexistência de qualquer um dos projetos mencionados"
+ },
+ {
+  "key": "localiza:25d81f7c99b3fb3c",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 122,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.c\", \"citacao\": \"c) Propondo o respetivo reforço através de obras, quando necessário, para garantir a acessibilidade e a utilização adequada dos espaços exteriores e das infraestruturas de apoio, bem como a sua integração na envolvente urbana, nos termos do n.º 2 do artigo 14.º do RJUE, quando exista, ou, na sua ausência, nos termos da lei municipal em vigor;\"}"
+ },
+ {
+  "key": "localiza:cb1fb9a4061b468e",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 147,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.a.ii\", \"citacao\": \"ii) Planta à escala de 1:50.000 ou superior, à escala de 1:1.000 ou superior, quando a área do terreno objeto da operação urbanística for inferior a 2.500 m2, contendo a indicação da via pública adotada, especificando as áreas destinadas às infraestruturas de loteamento, à rede viária e à rede de drenagem de águas pluviais, bem como a localização dos lotes e das edificações;\"}"
+ },
+ {
+  "key": "localiza:4a798bb514762387",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta de localização que permita a identificação das infraestruturas existentes e propostas, bem como das vias, acessos e estacionamentos de veículos;\"}"
+ },
+ {
+  "key": "localiza:270ddb60d63449fb",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 65,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.c\", \"citacao\": \"c) Pareceres, autorizações ou aprovações que não respeitem o prazo legal ou contratual para a sua emissão;\"}"
+ },
+ {
+  "key": "localiza:06679d5683f34d2c",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 91,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.c\", \"citacao\": \"c) Aprovações que não respeitem a aspetos relacionados com a segurança, higiene e saúde no trabalho, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de obras de urbanização;\"}"
+ },
+ {
+  "key": "localiza:9f7a1e563a65e1fc",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 120,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Projeto de arquitetura, quando exista, integrando peças escritas e desenhadas, permitindo evidenciar a sua integração na envolvente urbana e a sua adequação às normas legais e regulamentares aplicáveis, bem como a sua qualidade estética e funcional, permitindo evidenciar a sua integração na envolvente urbana e a sua adequação às normas legais e regulamentares aplicáveis, bem como a sua qualidade estética e funcional;\"}"
+ },
+ {
+  "key": "localiza:11b8db76872adf1b",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 89,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Desenhos, permitam evidenciar as opções de utilização e de valorização do imóvel, bem como as soluções adotadas para a sua integração na envolvente urbana, incluindo a sua relação com o espaço público e com os edifícios vizinhos;\"}"
+ },
+ {
+  "key": "localiza:357dbe3e2d04d124",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 81,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta à escala de 1:50 ou 1:100, com indicação dos espaços verdes e de utilização coletiva, com indicação da sua área e utilização prevista;\"}"
+ },
+ {
+  "key": "localiza:abe9ea7bf35628bd",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 78,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta de loteamento, à escala de 1:50 ou 1:100, com a divisão em lotes e sua descrição, quando exista;\"}"
+ },
+ {
+  "key": "localiza:8c152709c9664b12",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 150,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de loteamento, quando exista, contendo planta de loteamento à escala de 1:500 ou 1:1000, com a indicação dos lotes, áreas de implantação e construção, áreas verdes e de utilização coletiva, infraestruturas e acessibilidades, bem como a rede de infraestruturas existente e a rede de infraestruturas a criar, devendo ser indicado o destino dos lotes, nomeadamente para habitação a custos controlados ou para arrendamento acessível;\"}"
+ },
+ {
+  "key": "localiza:1c0a59ecde5b784a",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 52,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de loteamento, quando exista, contendo:\"}"
+ },
+ {
+  "key": "localiza:73092833ab5ef98b",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 93,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta do cadastro proposto, à escala de 1:1.000 ou superior, com indicação dos elementos necessários à sua identificação e qualificação, incluindo a sua área e confrontações, bem como a sua utilização atual e proposta;\"}"
+ },
+ {
+  "key": "localiza:d39a25da9d81a937",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 103,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta do cadastro proposto, à escala de 1:1.000 ou superior, com indicação da área e da localização do terreno, bem como da área e da localização da operação urbanística, quando esta se destine à construção de edifícios ou à realização de obras de urbanização;\"}"
+ },
+ {
+  "key": "localiza:ccff98a2b16e965e",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 107,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta à escala de 1:50 ou 1:100, com indicação das áreas de cedência destinadas à utilização pública, quando exista, e das áreas de implantação e de construção, bem como das áreas de estacionamento, devendo ser indicado o número de lugares de estacionamento previstos;\"}"
+ },
+ {
+  "key": "localiza:3f5d173bf879133c",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 60,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta com indicação das áreas de cedência, quando exista, nos termos da lei;\"}"
+ },
+ {
+  "key": "localiza:e49fd079e5a560fa",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 56,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Calendarização da execução da obra, com estimativa dos custos associados;\"}"
+ },
+ {
+  "key": "localiza:a3cae7ac11786351",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 58,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Estimativa do prazo de execução da obra, com previsão dos custos associados;\"}"
+ },
+ {
+  "key": "localiza:b152489783ee0c29",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Proposta de contrato de urbanização, quando exista;\"}"
+ },
+ {
+  "key": "localiza:8c8ee0e0accff73c",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 52,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Proposta de contrato de urbanização, quando exista;\"}"
+ },
+ {
+  "key": "localiza:e44a4fb24fd61dae",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 67,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta de urbanização e perfis transversais e longitudinais, bem como a planta de loteamento, quando exista;\"}"
+ },
+ {
+  "key": "localiza:97ec2bfed0262967",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 132,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta de síntese das obras de urbanização, à escala de 1:50.000 ou superior, que contenha a representação da área objeto da operação urbanística, bem como a sua envolvente, incluindo a rede viária e infraestruturas existentes e projetadas, e que permita a sua integração na área urbana, com indicação dos índices urbanísticos e das áreas destinadas a espaços verdes e de utilização coletiva;\"}"
+ },
+ {
+  "key": "localiza:655bcb043651732f",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.b\", \"citacao\": \"b) Comprovativo de contratação do diretor de obra.\"}"
+ },
+ {
+  "key": "localiza:7915cec3ba0eaecc",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.c\", \"citacao\": \"c) Comprovativo de contratação do diretor de obra.\"}"
+ },
+ {
+  "key": "localiza:0f40d1d8395a47ac",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 92,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de acessibilidades que, integrando peças escritas e desenhadas, assegure a utilização autónoma e segura de pessoas com mobilidade reduzida, incluindo a utilização de equipamentos de apoio à mobilidade, bem como a sua integração com os elementos existentes;\"}"
+ },
+ {
+  "key": "localiza:74c0d77b049b00f6",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 79,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista, devendo este permitir evidenciar as opções de projeto em termos de eficiência energética, nomeadamente quanto à utilização de energias renováveis;\"}"
+ },
+ {
+  "key": "localiza:030f66131c68268a",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 92,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Planta à escala de 1:50 ou 1:100, com indicação da área e do número do alvará, quando exista, ou do número do código de operação urbanística, quando não exista alvará, contendo:\"}"
+ },
+ {
+  "key": "localiza:e737e8cb23c12a95",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 61,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta à escala de 1:50 ou 1:100, contendo:\"}"
+ },
+ {
+  "key": "localiza:4188db869949859a",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 117,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.b\", \"citacao\": \"b) Planta de cadastro, à escala de 1:1.000 ou superior, que permita a identificação do loteamento, com indicação dos lotes, áreas verdes e infraestruturas urbanísticas, bem como a sua integração na rede de infraestruturas urbanísticas existente, atempadamente atualizada, atete que a execução das obras se inicie;\"}"
+ },
+ {
+  "key": "localiza:30befbc6112f3ab6",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 49,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, contendo:\"}"
+ },
+ {
+  "key": "localiza:75df5468827d4fc4",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 76,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta de implantação que permita a identificação da área de implantação da operação urbanística, com indicação da área destinada a estacionamento, quando exista logradouro privativo;\"}"
+ },
+ {
+  "key": "localiza:3138f6d9793f83c9",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 88,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta de implantação que permita a identificação dos espaços e áreas funcionais, bem como a sua distribuição pelos pisos, devendo ser indicado o número de fogos e a área de cada um, quando exista logradouro privativo;\"}"
+ },
+ {
+  "key": "localiza:c6f2989f4d592cde",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 61,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.b.i\", \"citacao\": \"i) Projeto de sistemas de aquecimento, ventilação e ar condicionado (AVAC), quando exista;\"}"
+ },
+ {
+  "key": "localiza:cb42d2361e221cd3",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 59,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.b.i\", \"citacao\": \"i) Projeto de instalações de aquecimento, ventilação e ar condicionado (AVAC);\"}"
+ },
+ {
+  "key": "localiza:602d181a8273ba95",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 49,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Planta e quadro de transformação fundiária;\"}"
+ },
+ {
+  "key": "localiza:df49a54485221a1e",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 49,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Planta e quadro de transformação fundiária;\"}"
+ },
+ {
+  "key": "localiza:39b15b8862a3bd13",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 84,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de especialidade a apresentar em função do tipo de operação urbanística, quando exista, nos termos previstos na Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "localiza:9b20fedc1f84ef34",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 97,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista, devendo ser apresentado em função do tipo de utilização dos espaços e da sua área, bem como da sua potência instalada, nos termos da Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "localiza:3dbc86cde447c0c8",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 56,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de estabilidade que inclua o projeto de fundações, quando exista;\"}"
+ },
+ {
+  "key": "localiza:ff29a47571a17ce1",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 56,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de estabilidade que inclua o projeto de fundações, quando exista;\"}"
+ },
+ {
+  "key": "localiza:e951f807de4df9c1",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 54,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.c\", \"citacao\": \"c) Projeto de instalações de gás, quando exigível, nos termos da lei;\"}"
+ },
+ {
+  "key": "localiza:5785eaacfe711e7e",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 88,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.b.i\", \"citacao\": \"i) Projeto de instalações de gás, quando exigível, nos termos da Portaria n.º 235/2007, de 25 de setembro, ou de outra portaria que lhe seja aplicável;\"}"
+ },
+ {
+  "key": "localiza:fd3670738fc330d7",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 72,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Projeto de loteamento, quando exigível, nos termos da Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "localiza:237d15494f3e2552",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 56,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exigível, nos termos da lei;\"}"
+ },
+ {
+  "key": "localiza:8a4060751d771b64",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 52,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.a.ii\", \"citacao\": \"ii) Comprovativo de contratação do diretor de obra;\"}"
+ },
+ {
+  "key": "localiza:0dc3f963eb7c62ac",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 52,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.a.ii\", \"citacao\": \"ii) Comprovativo de contratação do diretor de obra;\"}"
+ },
+ {
+  "key": "localiza:b6bc5d962d7ce252",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 110,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Projeto de instalações elétricas, quando exista, com indicação dos elementos necessários à sua execução e especificação das características técnicas dos materiais a utilizar, incluindo os de proteção contra riscos de incêndio, quando exigíveis nos termos do artigo 14.º do RJUE, para obras de alteração de uso ou de operação de loteamento;\"}"
+ },
+ {
+  "key": "localiza:9011aebff11ed00d",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 99,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista, com indicação da potência instalada e da utilização dos equipamentos, devendo ser indicado o valor da potência contratada, quando exista, e, quando for o caso, o valor da potência contratada para a utilização de energias renováveis;\"}"
+ },
+ {
+  "key": "localiza:733760ce124b1461",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 109,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.b\", \"citacao\": \"b) Projeto de execução dos trabalhos, incluindo o projeto de estabilidade e, quando exista, o projeto de fundações, bem como o projeto de instalações elétricas e de outros serviços existentes na edificação, quando estes não sejam objeto de comunicação prévia, nos termos do n.º 1 do artigo 14.º do RJUE;\"}"
+ },
+ {
+  "key": "localiza:369b6ae32f61733b",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 52,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de estabilidade ou de fundações, quando exista;\"}"
+ },
+ {
+  "key": "localiza:b497f43a5515a904",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 78,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.b.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista, nos termos previstos na Portaria n.º 235/2013, de 24 de agosto;\"}"
+ },
+ {
+  "key": "localiza:34bae816279e1d45",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 73,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013, de 24 de julho;\"}"
+ },
+ {
+  "key": "localiza:474d419871d37aff",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Comunicação prévia para obras de demolição:\"}"
+ },
+ {
+  "key": "localiza:fd5b8a566be85402",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 52,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Comunicação prévia para obras de demolição:\"}"
+ },
+ {
+  "key": "localiza:b77085e5280bfc89",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 80,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.a.ii\", \"citacao\": \"ii) Termo de responsabilidade pela assunção da função de diretor de obra, nos termos da Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "localiza:238bcc09e2cb7fef",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 94,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista, devendo ser indicado o tipo de ligação à rede de distribuição de energia elétrica, bem como a sua conformidade com as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;\"}"
+ },
+ {
+  "key": "localiza:605862790b46b530",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 78,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.b.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista, elaborado por técnico habilitado nos termos da Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "localiza:5b98892a2e5168a4",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 76,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista, nos termos da Portaria n.º 235/2013, de 24 de julho;\"}"
+ },
+ {
+  "key": "localiza:511f9d1e130a766b",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 88,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta à escala de 1:50 ou 1:100, com indicação dos elementos necessários à sua execução, devendo ser adotadas as normas de representação gráfica estabelecidas pela Ordem dos Arquitetos;\"}"
+ },
+ {
+  "key": "localiza:0c7e22dce8be12fd",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 94,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista, devendo ser indicado o tipo de ligação à rede de distribuição de energia elétrica, bem como a sua conformidade com as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;\"}"
+ },
+ {
+  "key": "localiza:d7c0cd67a68739e8",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Licença para trabalhos de remodelação de terrenos:;\"}"
+ },
+ {
+  "key": "localiza:72d237f219a3d957",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 51,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.i\", \"citacao\": \"i) Licença para trabalhos de remodelação de terrenos:\"}"
+ },
+ {
+  "key": "localiza:5bc4cd1c119393ee",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 49,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.a\", \"citacao\": \"a) Projeto de especialidades necessários à execução dos trabalhos;\"}"
+ },
+ {
+  "key": "localiza:b4e10b8cf68e28dc",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 125,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Termo de responsabilidade pela assunção da função de diretor de obra, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade de apresentação de habilitação profissional que permita o exercício da função de diretor de obra, nos termos do n.º 2 do artigo 14.º do RJUE, acompanhado de:\"}"
+ },
+ {
+  "key": "localiza:309a27166e3f851a",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 67,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de quantidades e estimativa do custo total da obra, baseado em quantidades, elaborado por técnico habilitado, contendo:\"}"
+ },
+ {
+  "key": "localiza:d07c85cbc39205f3",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 55,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Tipologias dos trabalhos necessários à sua execução, quando aplicável;\"}"
+ },
+ {
+  "key": "localiza:f2d02e3720caa7b3",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.b\", \"citacao\": \"b) Comprovativo de contratação do diretor de obra.\"}"
+ },
+ {
+  "key": "localiza:32fd9bb2676ed811",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.c\", \"citacao\": \"c) Comprovativo de contratação do diretor de obra.\"}"
+ },
+ {
+  "key": "localiza:8a30ac124c2271a8",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 99,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.c\", \"citacao\": \"c) Comprovativo da contratação de seguro de responsabilidade civil dos técnicos, nos termos da Lei n.º 31/2009, de 3 de julho, sempre que tal comprovação não resulte diretamente do n.º 2 do presente anexo;\"}"
+ },
+ {
+  "key": "localiza:ebba99299e6a52e6",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 66,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista, devendo ser indicado o tipo de ligação à rede de distribuição de energia elétrica;\"}"
+ },
+ {
+  "key": "localiza:acdf99b7adf8fb25",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 88,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Termos da Lei n.º 31/2009, de 3 de julho, que lhe confere habilitação profissional para o exercício da função de diretor de obra ou diretor de fiscalização de obra;\"}"
+ },
+ {
+  "key": "localiza:fdaedb0c1a241659",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 175,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.b.i\", \"citacao\": \"i) Comprovativo da habilitação profissional que permita a verificação das competências profissionais detidas, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade de atribuição de alvará, nos termos da Lei n.º 31/2009, de 3 de julho, ou do Código da Construção e do Imobiliário, aprovado pelo Decreto-Lei n.º 118/2009, de 10 de agosto, quando exista habilitação profissional que permita a verificação das competências profissionais detidas;\"}"
+ },
+ {
+  "key": "localiza:199c15234a6541cd",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 91,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Termo de responsabilidade pela assunção dos encargos e da atribuição dos poderes necessários para agir em nome do requerente, nos termos da Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "localiza:051a23103353948e",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 111,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.c\", \"citacao\": \"c) Comprovativo da contratação de seguro de responsabilidade civil dos técnicos, nos termos da Lei n.º 31/2009, de 3 de julho, que tal comprovação não resulte diretamente da atribuição de habilitação profissional que confira acesso à função de diretor de obra ou diretor de fiscalização de obra;\"}"
+ },
+ {
+  "key": "localiza:b1e7df089e8de330",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 71,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.a\", \"citacao\": \"a) Documento comprovativo da qualidade de titular ou titular de direito idêntico que confira habilitação legal para a realização da operação urbanística, quando exista;\"}"
+ },
+ {
+  "key": "localiza:b7edd2f4f567d85f",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 116,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.a.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista, contendo as peças desenhadas e escritas referentes ao prédio ou prédios abrangidos pela operação urbanística, bem como as peças desenhadas e escritas que permitam a sua execução, incluindo as peças escritas que contenham as especificações técnicas e os cálculos necessários à sua instalação e funcionamento, quando estes não constem do projeto de arquitetura;\"}"
+ },
+ {
+  "key": "localiza:a98b559d3655ac8d",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 87,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) As peças escritas devem respeitar o formato e as dimensões do modelo de preenchimento disponibilizado pela câmara municipal, salvo nos casos em que a natureza da operação urbanística justifique a utilização de outros formatos, devidamente fundamentados;\"}"
+ },
+ {
+  "key": "localiza:e24b6ba4dcaa35ff",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Peças escritas devem respeitar o formato A4.\"}"
+ },
+ {
+  "key": "localiza:693daf60e9a6a20b",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 102,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta de cadastro, à escala de 1:1.000 ou superior, com indicação dos elementos a manter, a demolir ou a construir, a cores, com exceção do elemento a que se refere a alínea anterior, a preto, para os elementos a manter;\"}"
+ },
+ {
+  "key": "localiza:b8f4c0d7b507f850",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista, com a indicação de \"\n}"
+ },
+ {
+  "key": "localiza:5720d959097b8755",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 76,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.a\", \"citacao\": \"a) Indicar o número do código por que foi «requerido» no caso de licenciamento, quando exista, e o número do código por que foi aprovado o projeto de arquitetura;\"}"
+ },
+ {
+  "key": "localiza:6dbfa665a15f2165",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 104,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista, acompanhado de termo de responsabilidade subscrito pelo técnico autor dos projetos de instalações, nos termos da Lei n.º 31/2009, de 3 de julho, ou «apresentado» no caso de comunicação prévia;\"}"
+ },
+ {
+  "key": "localiza:2ed57469d9cfd689",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.a.ii\", \"citacao\": \"ii) Equipamentos de utilização coletiva/habitação pública, de custos controlados;\"}"
+ },
+ {
+  "key": "localiza:da593e252c012b8e",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 54,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Áreas para equipamentos de utilização coletiva/habitação pública;\"}"
+ },
+ {
+  "key": "localiza:18f076378b988508",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 48,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.3.c\", \"citacao\": \"(c) Indicar o tipo da operação urbanística\"}"
+ },
+ {
+  "key": "localiza:745e41078ae72262",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 48,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) O tipo da operação urbanística a realizar;\"}"
+ },
+ {
+  "key": "localiza:509dc8111ab54299",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 48,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Projeto de loteamento, quando exista;\"}"
+ },
+ {
+  "key": "localiza:49c7c53490ec0ab6",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 73,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) No caso de licenciamento ou pedido de informação prévia, deve ser indicado o prazo de validade do alvará ou do certificado, quando aplicável;\"}"
+ },
+ {
+  "key": "localiza:d0a4e3111f819c72",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 58,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Informação prévia favorável n.º …/a\"}"
+ },
+ {
+  "key": "localiza:5cb5bed76d5f5de2",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 169,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Projeto de arquitetura e de estabilidade, quando exigíveis nos termos da lei, incluindo o projeto de especialidades que lhe seja inerente, devendo ser indicado o respetivo n.º do código de operação urbanística (portaria n.º 320/2026/1, de 23 de novembro, n.º 1, a), quando exista, e o prévio favorável n.º … (e) cujo titular é o requerente, nos termos do n.º 1 do artigo 14.º do RJUE, quando exista;\"}"
+ },
+ {
+  "key": "localiza:53fa4025b406e016",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 65,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.a\", \"citacao\": \"a) Identificar a localização da obra (rua, número e, quando exista, número da fração ou do lote);\"}"
+ },
+ {
+  "key": "localiza:224a4fe218fee545",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 54,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.a\", \"citacao\": \"a) Identificar a localização da obra (rua, número e freguesia);\"}"
+ },
+ {
+  "key": "localiza:84b8bd28cfd79d1e",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 72,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.a\", \"citacao\": \"a) Localização da obra (rua, número de polícia, freguesia, concelho e NIF do requerente ou número de processo de cadastro, quando exista);\"}"
+ },
+ {
+  "key": "localiza:71215bb9658d4643",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 76,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.e\", \"citacao\": \"e) Identificar a localização da obra (rua, número, artigo, freguesia, concelho, distrito e NIF do requerente ou do titular do direito de construção ou de utilização);\"}"
+ },
+ {
+  "key": "localiza:5e40f8fdf52f9ace",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 54,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.b\", \"citacao\": \"b) Número do código de verificação das competências profissionais, quando exista;\"}"
+ },
+ {
+  "key": "localiza:62ad11baeba30927",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 71,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.b.i\", \"citacao\": \"i) Número do código de verificação das competências profissionais, emitido pelo IMPIC, I. P., para efeitos do exercício da profissão;\"}"
+ },
+ {
+  "key": "localiza:88e63ac457039f3c",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 88,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Rejeição liminar do pedido, nos termos do n.º 1 do artigo 14.º do RJUE, quando o pedido não preenche os requisitos legais e regulamentares aplicáveis à sua admissibilidade;\"}"
+ },
+ {
+  "key": "localiza:9ab5b936a436e81a",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 94,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"decreto-lei-108-2026:anexo.art10.10\", \"citacao\": \"10 - 10. Pedido, nos termos do disposto no artigo 10.º do RJUE, para efeitos de reconhecimento de habilitações profissionais, quando o requerente não possua habilitação profissional portuguesa que lhe permita o exercício da profissão em Portugal.\"}"
+ },
+ {
+  "key": "localiza:0e425c205ec82595",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 78,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.3.b.i\", \"citacao\": \"i) Comprovativo de atribuição de número de identificação fiscal ou número de utente de segurança social, ou cartão do cidadão, bilhete de identidade ou outro documento comprovativo da sua identidade;\"}"
+ },
+ {
+  "key": "localiza:4890fbef49b3488f",
+  "task": "localiza",
+  "prompt_tokens": 2,
+  "completion_tokens": 67,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"decreto-lei-108-2026:anexo.art9.13.b\", \"citacao\": \"b) Comprovativo da qualidade de titular de qualquer dos seguintes documentos: do cidadão, bilhete de identidade ou cédulas profissionais.\"}"
+ },
+ {
+  "key": "elemento_doc:65cc717dac1b68ee",
+  "task": "elemento_doc",
+  "prompt_tokens": 2,
+  "completion_tokens": 120,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.37.b\", \"citacao\": \"b) Comprovativo de contratação do diretor de obra, nos termos da Lei n.º 31/2009, de 3 de julho;\" , \"tipo\": \"obrigatorio\", \"base_legal\": \"Portaria n.º 320/2026/1, Anexo V, n.º 37, b)\"}"
+ },
+ {
+  "key": "elemento_doc:989d2c86ae83c473",
+  "task": "elemento_doc",
+  "prompt_tokens": 2,
+  "completion_tokens": 140,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Comprovativo de contratação do diretor de obra, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade de contratação de diretor de obra nos termos previstos na alínea b);\", \"tipo\": \"condicional\", \"base_legal\": \"Portaria n.º 320/2026/1, Anexo V, n.º 27, a)\"}"
+ },
+ {
+  "key": "elemento_doc:f4bd8caaf0fe7635",
+  "task": "elemento_doc",
+  "prompt_tokens": 2,
+  "completion_tokens": 200,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de estabilidade, de fundações e de contenção periférica, quando exista, devendo ser apresentado em termos de estabilidade e de segurança, com as especificações técnicas adequadas, bem como em termos de execução, com as quantidades e tipologias dos materiais a utilizar, em termos de escavação e de contenção, quando exista, devendo ser apresentado em termos de estabilidade e de segurança, com as especificações técnicas adequadas, bem como em termos de execução, com as quantidades e tipologias dos materiais a utilizar;\" , \"tipo\": \"condicional\", \"base_legal\": \"Portaria n.º 320/2026/1, Anexo V, n.º 27, a), ii)\"}"
+ },
+ {
+  "key": "elemento_doc:082fd89d519751e3",
+  "task": "elemento_doc",
+  "prompt_tokens": 2,
+  "completion_tokens": 116,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de estabilidade, de escavação e contenção periférica, quando exista;\" , \"tipo\": \"condicional\", \"base_legal\": \"Portaria n.º 320/2026/1, Anexo V, n.º 27, a)\"}"
+ },
+ {
+  "key": "elemento_doc:f96dcc6d7f19d51f",
+  "task": "elemento_doc",
+  "prompt_tokens": 2,
+  "completion_tokens": 207,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Projeto de instalações térmicas, quando exista, ou projeto de instalações de gás, quando exista, ou certificado de instalação de gás, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica ou económica da sua elaboração, acompanhado de termo de responsabilidade subscrito por técnico legalmente habilitado, nos termos da Lei n.º 31-A/2009, de 3 de julho, que ateste a conformidade da instalação com os requisitos legais e regulamentares em vigor;\" , \"tipo\": \"condicional\", \"base_legal\": \"Portaria n.º 320/2026/1, Anexo V, n.º 27, a)\"}"
+ },
+ {
+  "key": "elemento_doc:5f37f1fcb151d7e4",
+  "task": "elemento_doc",
+  "prompt_tokens": 2,
+  "completion_tokens": 1200,
+  "finish_reason": "length",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de instalação de gás, quando exista, devendo ser apresentado o termo de responsabilidade do técnico autor do projeto de instalações térmicas e de gás, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade de atribuição de habilitação profissional legalmente reconhecida, nos termos previstos no n.º 2 do artigo 14.º do RJUE, ou nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos previstos no n.º 2 do artigo 14.º-A do RJUE, quando exista o termo de responsabilidade subscrito por técnico habilitado legalmente reconhecido, nos termos prev"
+ },
+ {
+  "key": "elemento_doc:8ea1cbd33e74dad6",
+  "task": "elemento_doc",
+  "prompt_tokens": 2,
+  "completion_tokens": 109,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.i.viii\", \"citacao\": \"viii) Projeto de sistemas de gestão técnica centralizada (SGTC), quando exista, contendo:\" , \"tipo\": \"condicional\", \"base_legal\": \"Portaria n.º 320/2026/1, Anexo V, n.º 27, i) viii)\"}"
+ },
+ {
+  "key": "elemento_doc:631b17c5de82d9b4",
+  "task": "elemento_doc",
+  "prompt_tokens": 2,
+  "completion_tokens": 153,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de sistemas de gestão técnica centralizada (MDSGTC), quando exista, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, com exceção das obras de urbanização;\" , \"tipo\": \"condicional\", \"base_legal\": \"Portaria n.º 320/2026/1, Anexo V, n.º 27, a)\"}"
+ },
+ {
+  "key": "elemento_doc:23528d8030495519",
+  "task": "elemento_doc",
+  "prompt_tokens": 2,
+  "completion_tokens": 102,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Projeto de estabilidade, de fundações e de contenção periférica, quando exista;\" , \"tipo\": \"condicional\", \"base_legal\": \"Portaria n.º 320/2026/1, Anexo V, n.º 27, a)\"}"
+ },
+ {
+  "key": "elemento_doc:221b0b91924c543d",
+  "task": "elemento_doc",
+  "prompt_tokens": 2,
+  "completion_tokens": 288,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Projeto de estabilidade, de escavação e contenção periférica, quando exista, devendo ser apresentado em escala de 1:50 ou superior, com indicação dos materiais utilizados e dos métodos de cálculo efetuados, bem como a sua execução, quando for caso disso, acompanhado de peças desenhadas do projeto de estabilidade, de escavação e contenção periférica, quando exista, devendo ser apresentado em escala de 1:50 ou superior, com indicação dos materiais utilizados e dos métodos de cálculo efetuados, bem como a sua execução, quando for caso disso, e ainda a ficha de segurança do produto de construção utilizado, quando exista, nos termos da Lei n.º 37/2000, de 14 de julho, na sua redação atual, e da Portaria n.º 235/2009, de 10 de julho, na sua redação atual, quando for caso disso;\" , \"tipo\": \"condicional\", \"base_legal\": \"Portaria n.º 320/2026/1, Anexo V, n.º 27, a)\"}"
+ },
+ {
+  "key": "elemento_doc:9b9a6115d8ac5f51",
+  "task": "elemento_doc",
+  "prompt_tokens": 2,
+  "completion_tokens": 1200,
+  "finish_reason": "length",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.b\", \"citacao\": \"b) Projeto de instalações interiores, incluindo, quando for o caso, projeto de instalações de gás, de telecomunicações e de eletricidade, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, quando estes não sejam objeto de comunicação prévia nos termos da Lei n.º 31/2009, de 3 de julho, ou de comunicação de informação prévia nos termos do n.º 2 do artigo 14."
+ },
+ {
+  "key": "elemento_doc:895a1bc17f221ace",
+  "task": "elemento_doc",
+  "prompt_tokens": 2,
+  "completion_tokens": 1200,
+  "finish_reason": "length",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Projeto de instalações térmicas, quando exista, elaborado nos termos da Portaria n.º 235/2007, de 25 de julho, ou, em caso de impossibilidade técnica de cumprimento da condição prevista na alínea anterior, termo de responsabilidade do técnico que ateste essa impossibilidade, nos termos da Lei n.º 31/2009, de 3 de julho, com indicação das razões técnicas que impossibilitam a sua execução, bem como das medidas mitigadoras adotadas para minimizar os inconvenientes decorrentes da impossibilidade de cumprimento da condição prevista na alínea anterior, quando exista termo de responsabilidade nos termos da Lei n.º 31/2009, de 3 de julho, nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, a), quando exista termo de responsabilidade nos termos da Lei n.º 31/2009, de 3 de julho, nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, b), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, c), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, d), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, e), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, f), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, g), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, h), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, i), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, j), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, k), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, l), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, m), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, n), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, o), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, p), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, q), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, r), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, s), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, t), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, u), quando exista termo de responsabilidade nos termos da Portaria n.º 320/2026/1, de 26 de outubro, n.º 27, v), quando exista termo de responsabilidade nos termos da Portaria n."
+ },
+ {
+  "key": "elemento_doc:3e9af91e70f12dad",
+  "task": "elemento_doc",
+  "prompt_tokens": 2,
+  "completion_tokens": 99,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Projeto de sistemas de gestão técnica centralizada, quando exista, contendo:\" , \"tipo\": \"condicional\", \"base_legal\": \"Portaria n.º 320/2026/1, Anexo V, n.º 27, a)\"}"
+ },
+ {
+  "key": "elemento_doc:f7a5084f4c2d4237",
+  "task": "elemento_doc",
+  "prompt_tokens": 2,
+  "completion_tokens": 103,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Projeto de sistemas de gestão técnica centralizada (PSGTC), quando exista, contendo:\" , \"tipo\": \"condicional\", \"base_legal\": \"Portaria n.º 320/2026/1, Anexo V, n.º 27, a)\"}"
+ },
+ {
+  "key": "elemento_doc:6c7730261f8d7a07",
+  "task": "elemento_doc",
+  "prompt_tokens": 2,
+  "completion_tokens": 116,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.a\", \"citacao\": \"a) Planta e quadro de transformação fundiária (quando se trate de operação urbanística que contemple a cedência de áreas para o município);\" , \"tipo\": \"condicional\", \"base_legal\": \"Portaria n.º 320/2026/1, Anexo V, n.º 27, a)\"}"
+ },
+ {
+  "key": "elemento_doc:c9783aacad5b3e7d",
+  "task": "elemento_doc",
+  "prompt_tokens": 2,
+  "completion_tokens": 115,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.c\", \"citacao\": \"c) Planta e quadro de transformação fundiária (quando se trate de operação urbanística que contemple a cedência de áreas para o município)\", \"tipo\": \"condicional\", \"base_legal\": \"Portaria n.º 320/2026/1, Anexo V, n.º 27, c)\"}"
+ },
+ {
+  "key": "exigencia:1defc123a9b0a592",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 85,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista, com indicação dos elementos necessários à verificação do cumprimento dos parâmetros de dimensionamento;\"}"
+ },
+ {
+  "key": "exigencia:06aca4fb9fa8b28f",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) A demonstração do cumprimento dos parâmetros de dimensionamento;\"}"
+ },
+ {
+  "key": "exigencia:1970bfc070f12606",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 109,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.b.ii\", \"citacao\": \"ii) Planta de localização que permita a identificação da operação urbanística, incluindo a sua inserção na rede viária e de serviços públicos, bem como a sua relação com as edificações existentes, incluindo as previstas em estrutura edificada, quando for o caso;\"}"
+ },
+ {
+  "key": "exigencia:4e49d7b2f875e2b6",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 87,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"condicional\", \"condicao\": \"se for exigível a sua apresentação\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta de viária adotada, especificando as áreas destinadas às vias, acessos e estacionamento;\"}"
+ },
+ {
+  "key": "exigencia:2c38281e3962cac7",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 121,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"condicional\", \"condicao\": \"quando exista\", \"passagem\": \"portaria-320-2026-1:anexo-V.9.b.ii\", \"citacao\": \"ii) Quando exista, devem ser indicados os termos e condições de utilização do solo previstos nas demais regras de uso do solo aplicáveis na área, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de alteração do uso do solo;\"}"
+ },
+ {
+  "key": "exigencia:a745623ede80f12b",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 80,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.9.b.ii\", \"citacao\": \"ii) Regras de uso do solo aplicáveis na área de enquadramento e na área objeto da operação, quando exista;\"}"
+ },
+ {
+  "key": "exigencia:2d12d86a85f2081c",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 86,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Previstos em plano territorial aplicável, bem como a demonstração da sua compatibilidade com o PDM, quando este o exija;\"}"
+ },
+ {
+  "key": "exigencia:eca7d3e5a7e9fb99",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 74,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.b.ii\", \"citacao\": \"ii) Indicar expressa ao artigo do regulamento em que o mesmo se baseia;\"}"
+ },
+ {
+  "key": "exigencia:b16b10220d18dd71",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 118,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.c.viii\", \"citacao\": \"viii) Planta de implantação que evidencie a utilização dos espaços exteriores e a sua integração na envolvente, evidenciando a suficiência destas para servir adequadamente as necessidades dos utilizadores, bem como a sua acessibilidade a todos os utilizadores, incluindo pessoas com mobilidade reduzida;\"}"
+ },
+ {
+  "key": "exigencia:c45268e9aef874dc",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 148,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"condicional\", \"condicao\": \"quando o estado de conservação do edifício ou fração não permita a sua utilização imediata\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.c.ii\", \"citacao\": \"ii) Projeto de reforço de estabilidade, quando o estado de conservação do edifício ou fração não permita a sua utilização imediata, ou propondo o respetivo reforço através de obras de reforço estrutural, quando tal reforço seja necessário para garantir a segurança dos ocupantes ou para permitir a utilização do edifício ou fração, nos termos previstos na lei;\"}"
+ },
+ {
+  "key": "exigencia:408d6e704a3d59e0",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 129,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.b.ii\", \"citacao\": \"ii) Planta de cadastro, à escala de 1:1.000 ou superior, que permita a identificação das áreas adjacentes, com indicação das áreas destinadas às vias, acessos e espaços exteriores de utilização coletiva, bem como das áreas de estacionamento, devendo ser indicado o número de lugares de estacionamento previstos;\"}"
+ },
+ {
+  "key": "exigencia:c34d7615e3e0d4eb",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 75,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"condicional\", \"condicao\": \"quando exista\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Áreas destinadas às vias, acessos e estacionamentos de veículos;\"}"
+ },
+ {
+  "key": "exigencia:28e326769258ff0f",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 98,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.b.ii\", \"citacao\": \"ii) Aprovações que não respeitem a aspetos relacionados com a segurança, higiene e saúde no trabalho, quando estas devam ser obtidas antes da emissão do alvará, nos termos da lei;\"}"
+ },
+ {
+  "key": "exigencia:e0a000fca628a45a",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 89,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.b.ii\", \"citacao\": \"ii) Documentos comprovativos de aprovações que não respeitem a aspetos relacionados com a segurança, higiene e saúde no trabalho, quando exigidas por lei;\"}"
+ },
+ {
+  "key": "exigencia:f033f8c342b90479",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 67,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta e quadro de transformação fundiária;\"}"
+ },
+ {
+  "key": "exigencia:5c4806aab3b7d374",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 1200,
+  "finish_reason": "length",
+  "text": "{\"exigido\": \"condicional\", \"condicao\": \"quando exista alteração da utilização ou da estrutura do edifício, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou da sua altura, ou da sua implantação em relação ao terreno ou à sua envolvente, ou da sua área de implantação ou de construção, ou"
+ },
+ {
+  "key": "exigencia:8082789027fd275a",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 78,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projeto de instalações elétricas, quando exista, com indicação da potência instalada e da utilização dos equipamentos;\"}"
+ },
+ {
+  "key": "exigencia:524b9922483287c9",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 78,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.b.ii\", \"citacao\": \"ii) Projetos de especialidade a apresentar em função do tipo de operação, quando exigidos por lei;\"}"
+ },
+ {
+  "key": "exigencia:833bf43fdd6e4d87",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 73,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.b.ii\", \"citacao\": \"ii) Projeto de estabilidade que inclua o projeto de escavação e contenção;\"}"
+ },
+ {
+  "key": "exigencia:59a830809a1aa378",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 156,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"condicional\", \"condicao\": \"se for exigível o cálculo de estabilidade que inclua o projeto de escavação e fundações, nos termos do n.º 2 do artigo 14.º do RJUE\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.c.ii\", \"citacao\": \"ii) Projeto de estabilidade que inclua o projeto de escavação e fundações, se for exigível o cálculo de estabilidade que inclua o projeto de escavação e fundações, nos termos do n.º 2 do artigo 14.º do RJUE;\"}"
+ },
+ {
+  "key": "exigencia:fd1ee2c908f9bf32",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 104,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"condicional\", \"condicao\": \"quando exigível\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.b.ii\", \"citacao\": \"ii) Projeto de instalações interiores, quando exigível, nos termos da Portaria n.º 235/2000, de 26 de julho, ou de outro diploma legal aplicável;\"}"
+ },
+ {
+  "key": "exigencia:88240b8da52b4b69",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 72,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.b.ii\", \"citacao\": \"ii) Projeto de instalação de gás, quando exigível, nos termos da lei;\"}"
+ },
+ {
+  "key": "exigencia:cc0c5b4e34950a06",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 74,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"condicional\", \"condicao\": \"quando exigível\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.b.ii\", \"citacao\": \"ii) Projeto de sistemas de gestão técnica centralizada, quando exigível;\"}"
+ },
+ {
+  "key": "exigencia:d0995a6758cf6ce3",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 1200,
+  "finish_reason": "length",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.b.ii\", \"citacao\": \"ii) Termo de responsabilidade pela assunção da função de diretor de obra, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, quando exista obrigatoriedade de contratação de diretor de obra nos termos do n.º 2 do artigo 14.º do RJUE, ou termo de responsabilidade pela assunção da função de diretor de obra de obra ou de fiscalização de obra, nos termos da Portaria n.º 320/2026/1, de 15 de dezembro, quando exigível, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, e nos termos da Portaria n.º 320/2026/1, de 15 de dezembro, quando exigível, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, quando exista obrigatoriedade de contratação de diretor de obra nos termos do n.º 2 do artigo 14.º do RJUE, ou termo de responsabilidade pela assunção da função de diretor de obra de obra ou de fiscalização de obra, nos termos da Portaria n.º 320/2026/1, de 15 de dezembro, quando exigível, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, e nos termos da Portaria n.º 320/2026/1, de 15 de dezembro, quando exigível, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, quando exista obrigatoriedade de contratação de diretor de obra nos termos do n.º 2 do artigo 14.º do RJUE, ou termo de responsabilidade pela assunção da função de diretor de obra de obra ou de fiscalização de obra, nos termos da Portaria n.º 320/2026/1, de 15 de dezembro, quando exigível, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, e nos termos da Portaria n.º 320/2026/1, de 15 de dezembro, quando exigível, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, quando exista obrigatoriedade de contratação de diretor de obra nos termos do n.º 2 do artigo 14.º do RJUE, ou termo de responsabilidade pela assunção da função de diretor de obra de obra ou de fiscalização de obra, nos termos da Portaria n.º 320/2026/1, de 15 de dezembro, quando exigível, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, e nos termos da Portaria n.º 320/2026/1, de 15 de dezembro, quando exigível, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, quando exista obrigatoriedade de contratação de diretor de obra nos termos do n.º 2 do artigo 14.º do RJUE, ou termo de responsabilidade pela assunção da função de diretor de obra de obra ou de fiscalização de obra, nos termos da Portaria n.º 320/2026/1, de 15 de dezembro, quando exigível, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, e nos termos da Portaria n.º 320/2026/1, de 15 de dezembro, quando exigível, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, quando exista obrigatoriedade de contratação de diretor de obra nos termos do n.º 2 do artigo 14.º do RJUE, ou termo de responsabilidade pela assunção da função de diretor de obra de obra ou de fiscalização de obra, nos termos da Portaria n.º 320/2026/1, de 15 de dezembro, quando exigível, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, e nos termos da Portaria n.º 320/2026/1, de 15 de dezembro, quando exigível, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, quando exista obrigatoriedade de contratação de diretor de obra nos termos do n.º "
+ },
+ {
+  "key": "exigencia:22d0e9901ec63d12",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 67,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.9.b.ii\", \"citacao\": \"ii) Comprovativo de contratação do diretor de obra;\"}"
+ },
+ {
+  "key": "exigencia:c58274b57b9c011f",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 68,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Comprovativo de contratação do diretor de obra;\"}"
+ },
+ {
+  "key": "exigencia:b4dba9883e316112",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 82,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013;\"}"
+ },
+ {
+  "key": "exigencia:2532749cba804547",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 147,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Projetos de arquitetura e de especialidades, quando exigidos para efeitos de informação prévia ou comunicação prévia de obras de edificação, pode o requerente entregar, desde logo, os projetos de arquitetura e de especialidades, quando estes sejam necessários para a verificação das condições de segurança, higiene e salubridade, de acessibilidade para pessoas com mobilidade reduzida e de eficiência energética, nos termos previstos na lei;\"}"
+ },
+ {
+  "key": "exigencia:8c63d89ddde85afb",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 82,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013;\"}"
+ },
+ {
+  "key": "exigencia:8e26cd95d83c702b",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 67,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.9.b.ii\", \"citacao\": \"ii) Comprovativo de contratação do diretor de obra.\"}"
+ },
+ {
+  "key": "exigencia:ea87d75913bbfcec",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 71,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.9.b.viii.b\", \"citacao\": \"viii.b) Infraestruturas, incluindo estacionamento;\"}"
+ },
+ {
+  "key": "exigencia:10719dc096133194",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 67,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.9.b.ii\", \"citacao\": \"ii) Comprovativo de contratação do diretor de obra.\"}"
+ },
+ {
+  "key": "exigencia:7a0e44ea4637c42f",
+  "task": "exigencia",
+  "prompt_tokens": 2,
+  "completion_tokens": 77,
+  "finish_reason": "stop",
+  "text": "{\"exigido\": \"sempre\", \"condicao\": \"\", \"passagem\": \"portaria-320-2026-1:anexo-V.27.a.ii\", \"citacao\": \"ii) Planta de cadastro proposto, à escala de 1:1000 ou superior;\"}"
+ },
+ {
+  "key": "proibido:e40f7dde7329c5a4",
+  "task": "proibido",
+  "prompt_tokens": 2,
+  "completion_tokens": 108,
+  "finish_reason": "stop",
+  "text": "{\"resposta\": \"sim\", \"passagem\": \"portaria-320-2026-1:anexo-V.9.b.i\", \"citacao\": \"i) Documento comprovativo da qualidade de titular de qualquer das faculdades ou habilitações legalmente exigidas para o exercício da função ou atividade, quando tal comprovação não resulte diretamente do n.º 2 do presente anexo, sob pena de ser recusada a pronúncia favorável;\"}"
+ },
+ {
+  "key": "proibido:aeb0b23f2e0be608",
+  "task": "proibido",
+  "prompt_tokens": 2,
+  "completion_tokens": 130,
+  "finish_reason": "stop",
+  "text": "{\"resposta\": \"sim\", \"passagem\": \"portaria-320-2026-1:anexo-V.9.b.ii.b.i\" , \"citacao\": \"ii.b) Documento comprovativo da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da operação ou de atribuição da faculdade de realização da operação, quando tal comprovação não resulte diretamente do n.º 1 do presente anexo, podendo ser exigida a apresentação de cópia do cartão do cidadão ou do bilhete de identidade;\"}"
+ },
+ {
+  "key": "alinea_de:25e75af946543bcd",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.21.c\", \"citacao\": \"c) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "alinea_de:33284a4a09d4a021",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.22.c\", \"citacao\": \"c) Proposta de contrato de urbanização, quando exista;\"}"
+ },
+ {
+  "key": "alinea_de:b69362fa2440797b",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 109,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.23.b\", \"citacao\": \"b) Planta de cadastro, com indicação dos lotes e áreas pertencentes ao requerente, bem como das áreas adjacentes, incluindo as de utilização coletiva, com a identificação dos respetivos proprietários ou titulares dos direitos reais ou de utilização, quando estes não sejam o requerente, acompanhada de informação sobre a sua titularidade;\"}"
+ },
+ {
+  "key": "alinea_de:b4c102201b2b4985",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 73,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.23.d\", \"citacao\": \"d) Comprovativo de contratação do diretor de obra, nos termos da Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "alinea_de:2c6db5b2d3f26079",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 156,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.25.c\", \"citacao\": \"c) Projeto de instalações elétricas, quando exista, acompanhado de termo de responsabilidade subscrito pelo técnico autor dos projetos de instalações, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade de entrega, desde logo, dos projetos de instalações elétricas, de telecomunicações e de segurança contra incêndios em edifícios, nos termos previstos na Lei n.º 31/2009, de 3 de julho, pode o requerente entregar, desde logo, os projetos:\"}"
+ },
+ {
+  "key": "alinea_de:916d937b2fe8b0b8",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.25.d\", \"citacao\": \"d) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "alinea_de:3b0c909825e4a444",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.c\", \"citacao\": \"c) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "alinea_de:9318a11d2dd1b31e",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.27.d\", \"citacao\": \"d) Comprovativo de contratação do diretor de obra;\"}"
+ },
+ {
+  "key": "alinea_de:bfc7db596f7e3b20",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 61,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.28.c\", \"citacao\": \"c) Projeto de estabilidade ou de contenção, quando exista risco de rutura ou de deslizamento de terrenos;\"}"
+ },
+ {
+  "key": "alinea_de:776ad570b816adac",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 181,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.29.c\", \"citacao\": \"c) Elementos estatísticos, prevista na Portaria n.º 235/2013, de 24 de julho, que permita a identificação do número de fogos e a sua tipologia, bem como a área de implantação e de construção, em termos comparativos com a área total do lote, quando exista, e a área de utilização, em termos comparativos com a área total do lote, quando exista, e a área de estacionamento, em termos comparativos com a área total do lote, quando exista, e a área de estacionamento destinada a pessoas com mobilidade reduzida, quando exista, e a área destinada a acessibilidades, quando exista;\"}"
+ },
+ {
+  "key": "alinea_de:f83a1cbe4857ef6a",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 71,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.30.c\", \"citacao\": \"c) As normas europeias e portuguesas em vigor, aplicáveis ao objeto da operação, devendo ser indicado o código da norma e o seu ano de aprovação;\"}"
+ },
+ {
+  "key": "alinea_de:085f1d3599f12c9c",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 72,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.30.d\", \"citacao\": \"d) Calendarização da execução da obra, prevista na Portaria n.º 235/2013, de 24 de agosto;\"}"
+ },
+ {
+  "key": "alinea_de:1979c009e63bc68d",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 231,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.31.d\", \"citacao\": \"d) Termo de responsabilidade pela assunção da função de diretor de obra, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, ou as especificações do Laboratório Nacional de Engenharia Civil, para efeitos do n.º 2 do artigo 14.º do RJUE, quando exista, ou, em caso de impossibilidade de atribuição de qualquer uma das responsabilidades referidas, termo de responsabilidade pela assunção da função de diretor de obra, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual, e termo de responsabilidade pela assunção da função de diretor de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, na sua redação atual;\"}"
+ },
+ {
+  "key": "alinea_de:3cd39e17e4d89289",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.32.c\", \"citacao\": \"c) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;\"}"
+ },
+ {
+  "key": "alinea_de:e92f3507b45128dc",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 97,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.33.d\", \"citacao\": \"d) Projeto de instalações elétricas, quando exista, devendo ser adotadas as normas técnicas e regulamentares em vigor, nomeadamente as normas da Direção-Geral de Energia e Geologia (DGEG), bem como as normas europeias e internacionais que lhes tenham sido adotadas;\"}"
+ },
+ {
+  "key": "alinea_de:1abdb8522a556109",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 73,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.33.d\", \"citacao\": \"d) Comprovativo de contratação do diretor de obra, nos termos da Lei n.º 31/2009, de 3 de julho;\"}"
+ },
+ {
+  "key": "alinea_de:59e86ea76442df36",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 76,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.34.c\", \"citacao\": \"c) Calendarização da execução da obra, sempre que tal comprovação não resulte diretamente da apresentação dos elementos instrutórios, devendo ser indicado o prazo de conclusão da obra;\"}"
+ },
+ {
+  "key": "alinea_de:32b43b83cfdf3c41",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 89,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.34.d\", \"citacao\": \"d) Projeto de instalações elétricas, quando exista, contendo as seguintes peças desenhadas à escala de 1:50 ou 1:100, conforme a dimensão da obra, devidamente identificadas e assinadas por técnico habilitado:\"}"
+ },
+ {
+  "key": "alinea_de:be110d427b05ad52",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 143,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.39.c\", \"citacao\": \"c) Projeto de instalações elétricas, quando exista, acompanhado de termo de responsabilidade subscrito pelo técnico autor dos projetos de instalações, nos termos da Lei n.º 31/2009, de 3 de julho, ou da atribuição dos poderes necessários para assinar o termo de responsabilidade nos termos do n.º 2 do artigo 4.º do RJUE, quando exista termo de responsabilidade subscrito pelo diretor de obra ou diretor de fiscalização de obra;\"}"
+ },
+ {
+  "key": "alinea_de:f076b9f87f937005",
+  "task": "alinea_de",
+  "prompt_tokens": 2,
+  "completion_tokens": 170,
+  "finish_reason": "stop",
+  "text": "{\"passagem\": \"portaria-320-2026-1:anexo-V.40.d\", \"citacao\": \"d) Certidão permanente negativa do registo predial, acompanhada de certidão permanente de registo de titularidade, quando exista, ou de certidão permanente de registo de ónus, quando exista, ou de certidão permanente de registo de licença de utilização, quando exista, emitida pela Câmara Municipal, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de alteração de uso ou de atribuição de nova utilização, quando esta seja diferente da licença de utilização existente, ou de qualquer outra informação relevante para a verificação da legalidade da operação urbanística;\"}"
+ }
+]

@@ -31,7 +31,8 @@ SYSTEM = ("És o leitor de saneamento de expedientes urbanísticos de um municí
           "sem texto antes nem depois. Toda a citação é copiada letra a letra da lei; se não sabes, respondes {\"resposta\": \"nao_sei\"}.")  # = modal/reader.py SYSTEM
 ADAPTER = "amalia-saneamento-r1"
 # rounds (docs/DECISIONS.md D4): each round retrains from the base on the cumulative mix of the sets it names; sealed/ never enters
-RUNS = {"r1": {"adapter": "amalia-saneamento-r1", "data": ["training/data"], "sets": ["d0"], "repeat": {}},
+RUNS = {"r1": {"adapter": "amalia-saneamento-r1", "data": ["training/data"], "sets": ["d0"], "repeat": {}},   # D0 v1 (10 % passages held out: measured memorisation of unseen text = nothing)
+        "r1b": {"adapter": "amalia-saneamento-r1b", "data": ["training/data"], "sets": ["d0"], "repeat": {}},  # D0 v2: every passage, held-out phrasings, nao_sei probes
         "r2": {"adapter": "amalia-saneamento-r2", "data": ["training/data"], "sets": ["d0", "d1"], "repeat": {}},
         "r3": {"adapter": "amalia-saneamento-r3", "data": ["training/data"], "sets": ["d0", "d1", "d2"], "repeat": {}}}
 HP = {"lora_r": 16, "lora_alpha": 32, "lora_dropout": 0.05, "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],

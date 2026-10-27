@@ -31,6 +31,9 @@ SCHEMAS = {
     "d2_facto": {"type": "object", "properties": {"valor": {"type": ["string", "null"]}, "pagina": {"type": ["integer", "null"]}, "citacao": S},
                  "required": ["valor", "pagina", "citacao"], "additionalProperties": False},
 }
+NS = {"type": "object", "properties": {"resposta": {"enum": ["nao_sei"]}}, "required": ["resposta"], "additionalProperties": False}
+for _t in ("transcreve", "localiza", "alinea_de", "elemento_doc", "exigencia", "proibido"):
+    SCHEMAS[_t] = {"anyOf": [SCHEMAS[_t], NS]}
 image = (modal.Image.from_registry("nvidia/cuda:12.9.1-devel-ubuntu22.04", add_python="3.12")
          .pip_install("vllm==0.30.0", "huggingface_hub[hf_transfer]").env({"HF_HUB_ENABLE_HF_TRANSFER": "1", "VLLM_USE_FLASHINFER_SAMPLER": "0"}))
 weights = modal.Volume.from_name("amalia-weights", create_if_missing=True)

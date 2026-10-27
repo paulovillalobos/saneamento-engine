@@ -1,0 +1,109 @@
+{
+ "adapter": "amalia-saneamento-r1",
+ "volume": "amalia-saneamento-lora",
+ "base": {
+  "model": "amalia-llm/AMALIA-9B-0626-DPO",
+  "revision": "c4614b9b5c7b4fe303fa20902e692fc7dface640"
+ },
+ "sets": [
+  "d0"
+ ],
+ "set_sha256": {
+  "d0": "18eb295dba4dcc908d3e2f20e2324831e21e423ea034c3057a8312cda9a08f1a"
+ },
+ "repeat": {},
+ "mixture": {
+  "d0": 3041
+ },
+ "examples_in_mix": 3041,
+ "hyperparameters": {
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj",
+   "gate_proj",
+   "up_proj",
+   "down_proj"
+  ],
+  "epochs": 2,
+  "lr": 0.0001,
+  "warmup_steps": 20,
+  "effective_batch": 16,
+  "tokens_per_batch": 24000,
+  "max_len": 8192,
+  "optimizer": "AdamW (weight_decay 0)",
+  "schedule": "linear warm-up, linear decay to 0",
+  "precision": "bf16",
+  "grad_clip": 1.0,
+  "seed": 0,
+  "gpu": "H100"
+ },
+ "repo_commit": "2c06a0c94c9fdd388d49f1c045e002942c266119",
+ "repo_dirty_training_or_law": false,
+ "started": "2026-10-27T20:33:32Z",
+ "finished": "2026-10-27T20:38:52Z",
+ "modal_app": "ap-nfqay4dXQdh0y6X97hgsWg",
+ "modal_function_call": "fc-01M5ZH2Y5J67N7V75PX9HT8DGS",
+ "result": {
+  "examples": 3041,
+  "dropped": 0,
+  "tokens": 645272,
+  "trainable_params": 50921472,
+  "steps": 56,
+  "seconds": 286.9,
+  "log": [
+   {
+    "step": 1,
+    "epoch": 1,
+    "loss": 3.437,
+    "seen": 136,
+    "seconds": 7.1
+   },
+   {
+    "step": 10,
+    "epoch": 1,
+    "loss": 2.3283,
+    "seen": 1016,
+    "seconds": 53.7
+   },
+   {
+    "step": 20,
+    "epoch": 1,
+    "loss": 0.9272,
+    "seen": 2219,
+    "seconds": 104.1
+   },
+   {
+    "step": 30,
+    "epoch": 2,
+    "loss": 0.5718,
+    "seen": 3245,
+    "seconds": 154.5
+   },
+   {
+    "step": 40,
+    "epoch": 2,
+    "loss": 0.5657,
+    "seen": 4309,
+    "seconds": 204.4
+   },
+   {
+    "step": 50,
+    "epoch": 2,
+    "loss": 0.5305,
+    "seen": 5436,
+    "seconds": 251.6
+   }
+  ],
+  "adapter_files": {
+   "README.md": "e884ecb21e8e49712a8ae49780938098a302d987f2269689d0b670f6bb21a101",
+   "adapter_config.json": "6e1ae24ca1b2821f30cbaf65f6b97ca3bee91000fa0e673a14020cb39041ef91",
+   "adapter_model.safetensors": "486315cc4208929f7363ef819412c5fa6821d027feba5f3a1324e44075878188"
+  }
+ },
+ "cost_usd": "see COST.json (modal billing report)"
+}

@@ -39,6 +39,8 @@ def main():
             p = json.loads(o["text"])
         except json.JSONDecodeError:
             c["malformed"] += 1; continue
+        if k.get("resposta") == "nao_sei":
+            c["probes"] += 1; c["absteve"] += p.get("resposta") == "nao_sei"; c["inventado"] += p.get("resposta") != "nao_sei"; c["n"] -= 1; continue
         if t in ("transcreve", "localiza", "alinea_de", "elemento_doc", "exigencia", "proibido"):
             c["passagem"] += p.get("passagem") == k.get("passagem")
             c["citacao"] += norm(p.get("citacao")) == norm(k.get("citacao"))
@@ -79,6 +81,8 @@ def main():
         for f in ("inventado", "perdido", "malformed", "skipped", "nao_sei"):
             if c.get(f):
                 parts.append(f"{f} {c[f]}")
+        if c.get("probes"):
+            parts.append(f"probes nao_sei {c['absteve']}/{c['probes']}")
         lines.append("- " + "; ".join(parts))
     text = "\n".join(lines)
     print(text)
