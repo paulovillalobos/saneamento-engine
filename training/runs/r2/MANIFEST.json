@@ -1,0 +1,353 @@
+{
+ "adapter": "amalia-saneamento-r2",
+ "volume": "amalia-saneamento-lora",
+ "base": {
+  "model": "amalia-llm/AMALIA-9B-0626-DPO",
+  "revision": "c4614b9b5c7b4fe303fa20902e692fc7dface640"
+ },
+ "sets": [
+  "d0",
+  "d1",
+  "d2"
+ ],
+ "set_sha256": {
+  "d0": "4a800fa6ade2ab48676d818b1fbd2953c536669d73f22262e23699cfaf950ee2",
+  "d1": "f82953f3a0833e688f445b708470474b181bcb9f6834a6c64e6e98f1ca87a280",
+  "d2": "ca7ca1b01db5f3b8967524a1ceba8fe63581cb57a92e49872d94182f27f63dde"
+ },
+ "repeat": {},
+ "mixture": {
+  "d0": 3651,
+  "d1": 3446,
+  "d2": 3472
+ },
+ "examples_in_mix": 10569,
+ "hyperparameters": {
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj",
+   "gate_proj",
+   "up_proj",
+   "down_proj"
+  ],
+  "epochs": 2,
+  "lr": 0.0001,
+  "warmup_steps": 20,
+  "effective_batch": 16,
+  "tokens_per_batch": 24000,
+  "max_len": 8192,
+  "optimizer": "AdamW (weight_decay 0)",
+  "schedule": "linear warm-up, linear decay to 0",
+  "precision": "bf16",
+  "grad_clip": 1.0,
+  "seed": 0,
+  "gpu": "H100"
+ },
+ "repo_commit": "0837a9bc4909a9747cea61cd7e1c706356165d51",
+ "repo_dirty_training_or_law": false,
+ "started": "2026-10-27T20:51:44Z",
+ "finished": "2026-10-27T21:25:51Z",
+ "modal_app": "ap-v2plMpkShQExj2J8doyo0B",
+ "modal_function_call": "fc-01M5ZJ4990HJ033NZA143K1AYG",
+ "result": {
+  "examples": 10569,
+  "dropped": 0,
+  "tokens": 4674183,
+  "trainable_params": 50921472,
+  "steps": 396,
+  "seconds": 2014.7,
+  "log": [
+   {
+    "step": 1,
+    "epoch": 1,
+    "loss": 2.3552,
+    "seen": 57,
+    "seconds": 7.4
+   },
+   {
+    "step": 10,
+    "epoch": 1,
+    "loss": 0.8206,
+    "seen": 446,
+    "seconds": 57.1
+   },
+   {
+    "step": 20,
+    "epoch": 1,
+    "loss": 0.7581,
+    "seen": 991,
+    "seconds": 108.8
+   },
+   {
+    "step": 30,
+    "epoch": 1,
+    "loss": 0.2211,
+    "seen": 1449,
+    "seconds": 159.8
+   },
+   {
+    "step": 40,
+    "epoch": 1,
+    "loss": 0.2186,
+    "seen": 1964,
+    "seconds": 210.4
+   },
+   {
+    "step": 50,
+    "epoch": 1,
+    "loss": 0.0453,
+    "seen": 2378,
+    "seconds": 261.5
+   },
+   {
+    "step": 60,
+    "epoch": 1,
+    "loss": 0.7776,
+    "seen": 3003,
+    "seconds": 311.6
+   },
+   {
+    "step": 70,
+    "epoch": 1,
+    "loss": 0.9713,
+    "seen": 3706,
+    "seconds": 362.6
+   },
+   {
+    "step": 80,
+    "epoch": 1,
+    "loss": 0.6977,
+    "seen": 4175,
+    "seconds": 413.9
+   },
+   {
+    "step": 90,
+    "epoch": 1,
+    "loss": 0.0627,
+    "seen": 4841,
+    "seconds": 464.7
+   },
+   {
+    "step": 100,
+    "epoch": 1,
+    "loss": 0.0117,
+    "seen": 5382,
+    "seconds": 515.8
+   },
+   {
+    "step": 110,
+    "epoch": 1,
+    "loss": 0.0653,
+    "seen": 5845,
+    "seconds": 566.7
+   },
+   {
+    "step": 120,
+    "epoch": 1,
+    "loss": 0.0631,
+    "seen": 6442,
+    "seconds": 617.4
+   },
+   {
+    "step": 130,
+    "epoch": 1,
+    "loss": 0.4824,
+    "seen": 7073,
+    "seconds": 668.3
+   },
+   {
+    "step": 140,
+    "epoch": 1,
+    "loss": 0.0379,
+    "seen": 7504,
+    "seconds": 719.1
+   },
+   {
+    "step": 150,
+    "epoch": 1,
+    "loss": 0.5334,
+    "seen": 8126,
+    "seconds": 769.9
+   },
+   {
+    "step": 160,
+    "epoch": 1,
+    "loss": 0.5056,
+    "seen": 8686,
+    "seconds": 820.9
+   },
+   {
+    "step": 170,
+    "epoch": 1,
+    "loss": 0.0076,
+    "seen": 9280,
+    "seconds": 871.2
+   },
+   {
+    "step": 180,
+    "epoch": 1,
+    "loss": 0.0018,
+    "seen": 9718,
+    "seconds": 922.7
+   },
+   {
+    "step": 190,
+    "epoch": 1,
+    "loss": 0.0139,
+    "seen": 10243,
+    "seconds": 973.8
+   },
+   {
+    "step": 200,
+    "epoch": 2,
+    "loss": 0.2185,
+    "seen": 10676,
+    "seconds": 1024.8
+   },
+   {
+    "step": 210,
+    "epoch": 2,
+    "loss": 0.0273,
+    "seen": 11274,
+    "seconds": 1075.0
+   },
+   {
+    "step": 220,
+    "epoch": 2,
+    "loss": 0.0409,
+    "seen": 11847,
+    "seconds": 1125.0
+   },
+   {
+    "step": 230,
+    "epoch": 2,
+    "loss": 0.0048,
+    "seen": 12363,
+    "seconds": 1175.5
+   },
+   {
+    "step": 240,
+    "epoch": 2,
+    "loss": 0.005,
+    "seen": 13003,
+    "seconds": 1225.4
+   },
+   {
+    "step": 250,
+    "epoch": 2,
+    "loss": 0.0065,
+    "seen": 13401,
+    "seconds": 1275.0
+   },
+   {
+    "step": 260,
+    "epoch": 2,
+    "loss": 0.0228,
+    "seen": 13975,
+    "seconds": 1325.2
+   },
+   {
+    "step": 270,
+    "epoch": 2,
+    "loss": 0.0065,
+    "seen": 14571,
+    "seconds": 1375.8
+   },
+   {
+    "step": 280,
+    "epoch": 2,
+    "loss": 0.3888,
+    "seen": 15134,
+    "seconds": 1426.2
+   },
+   {
+    "step": 290,
+    "epoch": 2,
+    "loss": 0.4341,
+    "seen": 15673,
+    "seconds": 1476.5
+   },
+   {
+    "step": 300,
+    "epoch": 2,
+    "loss": 0.0142,
+    "seen": 16113,
+    "seconds": 1526.9
+   },
+   {
+    "step": 310,
+    "epoch": 2,
+    "loss": 0.0004,
+    "seen": 16681,
+    "seconds": 1576.9
+   },
+   {
+    "step": 320,
+    "epoch": 2,
+    "loss": 0.1186,
+    "seen": 17156,
+    "seconds": 1627.1
+   },
+   {
+    "step": 330,
+    "epoch": 2,
+    "loss": 0.007,
+    "seen": 17612,
+    "seconds": 1677.9
+   },
+   {
+    "step": 340,
+    "epoch": 2,
+    "loss": 0.0113,
+    "seen": 18178,
+    "seconds": 1728.3
+   },
+   {
+    "step": 350,
+    "epoch": 2,
+    "loss": 0.0129,
+    "seen": 18625,
+    "seconds": 1778.8
+   },
+   {
+    "step": 360,
+    "epoch": 2,
+    "loss": 0.0185,
+    "seen": 19295,
+    "seconds": 1829.0
+   },
+   {
+    "step": 370,
+    "epoch": 2,
+    "loss": 0.0057,
+    "seen": 19722,
+    "seconds": 1879.8
+   },
+   {
+    "step": 380,
+    "epoch": 2,
+    "loss": 0.0293,
+    "seen": 20221,
+    "seconds": 1930.2
+   },
+   {
+    "step": 390,
+    "epoch": 2,
+    "loss": 0.0029,
+    "seen": 20611,
+    "seconds": 1980.7
+   }
+  ],
+  "adapter_files": {
+   "README.md": "e884ecb21e8e49712a8ae49780938098a302d987f2269689d0b670f6bb21a101",
+   "adapter_config.json": "dd335374d3f0ec826dd6862d3b49b8b38429907de0ce96e4b5778c1ad4862b50",
+   "adapter_model.safetensors": "4d0f2afce3c32a9ac93d5868580257666fe0fab9052502260ce8abe75a6bd10e"
+  }
+ },
+ "cost_usd": "see COST.json (modal billing report)"
+}
