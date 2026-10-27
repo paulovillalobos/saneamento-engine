@@ -1,0 +1,763 @@
+{
+ "version": "fees@1",
+ "municipality": "celorico-de-basto",
+ "subject": "web:celorico-de-basto:tabela-taxas-2026-20260311:d17865d82024",
+ "kind": "muni.web.document",
+ "extractor": "pdf-text@1",
+ "title": "Tabela de Taxas Municipais 2026 (anexo I do regulamento de taxas), parte II — gestão urbanística, and the items of part I an urban operation meets",
+ "proposed_by": "ai:claude-opus-5.5",
+ "review": "unreviewed",
+ "note": "Each item: the table's line (quote, checked word for word in the captured PDF text, with its amount), the unit and the stage of the procedure. The table still names the 'alvará' and the 'autorização de utilização'; the RJUE in force since 2026-10-01 titles a licence otherwise and turns use into a prior communication (arts. 4.º n.º 4 k), 62.º-A): reading those items as the fee of the title and of the use communication is an open reading (open: true), shown, never hidden.",
+ "items": [
+  {
+   "id": "1.27",
+   "quote": "Aviso de publicitação de obras particulares - por cada 7,40 €",
+   "amount": 7.4,
+   "unit": "each",
+   "stage": "titulo"
+  },
+  {
+   "id": "1.29",
+   "quote": "Aviso  de  publicitação  de  loteamento  e/ou  obras  de  urbanização  -  por  cada loteamento 6,90 €",
+   "amount": 6.9,
+   "unit": "each",
+   "stage": "titulo"
+  },
+  {
+   "id": "23.1",
+   "quote": "Por cada pedido de informação simples nos termos do artigo 110 do RJUE 37,00 €",
+   "amount": 37.0,
+   "unit": "each",
+   "stage": "apreciacao"
+  },
+  {
+   "id": "24.1.a",
+   "quote": "a) Nos termos do nº1 do artigo 14º do RJUE 172,67 €",
+   "amount": 172.67,
+   "unit": "each",
+   "stage": "apreciacao"
+  },
+  {
+   "id": "24.1.b",
+   "quote": "b) Nos termos do nº2 do RJUE 202,27 €",
+   "amount": 202.27,
+   "unit": "each",
+   "stage": "apreciacao"
+  },
+  {
+   "id": "24.1.c",
+   "quote": "nos termosdo nº3 do artigo 17º do RJUE 86,34 €",
+   "amount": 86.34,
+   "unit": "each",
+   "stage": "apreciacao"
+  },
+  {
+   "id": "24.1.d",
+   "quote": "d) Apresentação de elementos para aperfeiçoamento do pedido 86,34 €",
+   "amount": 86.34,
+   "unit": "each",
+   "stage": "aperfeicoamento"
+  },
+  {
+   "id": "25.1.a",
+   "quote": "a) Por pedido e apreciação 49,34 €",
+   "amount": 49.34,
+   "unit": "each",
+   "stage": "apreciacao"
+  },
+  {
+   "id": "25.1.b",
+   "quote": "b) Pela emissão da certidão 12,34 €",
+   "amount": 12.34,
+   "unit": "each",
+   "stage": "titulo"
+  },
+  {
+   "id": "25.2.a",
+   "quote": "a) Por pedido e apreciação 47,49 €",
+   "amount": 47.49,
+   "unit": "each",
+   "stage": "apreciacao"
+  },
+  {
+   "id": "26.1",
+   "quote": "1 Muros de suporte ou de vedação, ou outro tipo de vedações 61,67 €",
+   "amount": 61.67,
+   "unit": "each",
+   "stage": "apreciacao"
+  },
+  {
+   "id": "26.2",
+   "quote": "2 Anexos, garagens, telheiros, alpendres e outras construções congéneres 86,34 €",
+   "amount": 86.34,
+   "unit": "each",
+   "stage": "apreciacao"
+  },
+  {
+   "id": "26.3.a",
+   "quote": "a) Moradia unifamiliar ou bi-familiar 123,33 €",
+   "amount": 123.33,
+   "unit": "each",
+   "stage": "apreciacao"
+  },
+  {
+   "id": "26.3.b",
+   "quote": "b) Multifamiliar 148,01 €",
+   "amount": 148.01,
+   "unit": "each",
+   "stage": "apreciacao"
+  },
+  {
+   "id": "26.3.b.1",
+   "quote": "b.1) Acresce por fogo ou unidade de ocupação 12,34 €",
+   "amount": 12.34,
+   "unit": "per_unit",
+   "stage": "apreciacao"
+  },
+  {
+   "id": "26.9",
+   "quote": "9 Outros usos não previsto anteriormente 185,01 €",
+   "amount": 185.01,
+   "unit": "each",
+   "stage": "apreciacao"
+  },
+  {
+   "id": "26.10",
+   "quote": "10 Por cada pedido de alteração ao projeto inicial 22,80 €",
+   "amount": 22.8,
+   "unit": "each",
+   "stage": "alteracao"
+  },
+  {
+   "id": "26.11",
+   "quote": "11 Apresentação de elementos para juntar ao processo 9,13 €",
+   "amount": 9.13,
+   "unit": "each",
+   "stage": "aperfeicoamento"
+  },
+  {
+   "id": "26.12",
+   "quote": "12 Apresentação de elementos para aperfeiçoamento de pedido 9,13 €",
+   "amount": 9.13,
+   "unit": "each",
+   "stage": "aperfeicoamento"
+  },
+  {
+   "id": "27.1",
+   "quote": "1 Autorização de utilização de edifícios ou suas frações - Taxa geral e fixa 24,65 €",
+   "amount": 24.65,
+   "unit": "each",
+   "stage": "utilizacao",
+   "open": true
+  },
+  {
+   "id": "27.2",
+   "quote": "2 Autorização de alteração de utilização de edifícios ou suas frações - Taxa geral e fixa 24,65 €",
+   "amount": 24.65,
+   "unit": "each",
+   "stage": "utilizacao",
+   "open": true
+  },
+  {
+   "id": "27.6",
+   "quote": "6 Apreciação de licença de construção de obras de demolição de edifício ou outras construções 123,33 €",
+   "amount": 123.33,
+   "unit": "each",
+   "stage": "apreciacao"
+  },
+  {
+   "id": "27.8",
+   "quote": "8 Licença ou comunicação prévia de trabalhos de remodelação de terrenos 61,67 €",
+   "amount": 61.67,
+   "unit": "each",
+   "stage": "apreciacao"
+  },
+  {
+   "id": "28.1",
+   "quote": "1 Emissão de alvará de licença ou admissão de comunicação prévia 49,34 €",
+   "amount": 49.34,
+   "unit": "each",
+   "stage": "titulo",
+   "open": true
+  },
+  {
+   "id": "28.3.a",
+   "quote": "a) Por lote 48,10 €",
+   "amount": 48.1,
+   "unit": "per_lot",
+   "stage": "titulo"
+  },
+  {
+   "id": "28.3.b",
+   "quote": "b) Por fogo ou unidade de ocupação 48,10 €",
+   "amount": 48.1,
+   "unit": "per_unit",
+   "stage": "titulo"
+  },
+  {
+   "id": "28.4.a",
+   "quote": "a) Para habitação, por metro quadrado de área bruta de construção 0,30 €",
+   "amount": 0.3,
+   "unit": "per_m2",
+   "stage": "titulo"
+  },
+  {
+   "id": "29.1",
+   "quote": "1 Emissão de alvará de licença ou admissão de comunicação prévia 74,25 €",
+   "amount": 74.25,
+   "unit": "each",
+   "stage": "titulo",
+   "open": true
+  },
+  {
+   "id": "29.2",
+   "quote": "2 Por cada m2 de área de intervenção 0,36 €",
+   "amount": 0.36,
+   "unit": "per_m2",
+   "stage": "titulo"
+  },
+  {
+   "id": "29.3",
+   "quote": "3 Por cada mês ou fração fixado para execução das obras 36,22 €",
+   "amount": 36.22,
+   "unit": "per_month",
+   "stage": "titulo"
+  },
+  {
+   "id": "30.1",
+   "quote": "1 Emissão de alvará ou aditamento ao alvará de licença ou admissão de comunicação prévia 49,34 €",
+   "amount": 49.34,
+   "unit": "each",
+   "stage": "titulo",
+   "open": true
+  },
+  {
+   "id": "30.2",
+   "quote": "2 Acresce ao valor referido no número anterior para habitação, por metro quadrado 2,90 €",
+   "amount": 2.9,
+   "unit": "per_m2",
+   "stage": "titulo"
+  },
+  {
+   "id": "30.3",
+   "quote": "3 Para comércio, serviços, indústria e armazéns, por metro quadrado 2,59 €",
+   "amount": 2.59,
+   "unit": "per_m2",
+   "stage": "titulo"
+  },
+  {
+   "id": "30.5.a",
+   "quote": "a) Piscinas, por metro quadrado de construção 2,90 €",
+   "amount": 2.9,
+   "unit": "per_m2",
+   "stage": "titulo"
+  },
+  {
+   "id": "30.6",
+   "quote": "6 Muros de suporte ou de vedação, ou outro tipo de vedações, por metro linear 1,04 €",
+   "amount": 1.04,
+   "unit": "per_m",
+   "stage": "titulo"
+  },
+  {
+   "id": "30.7",
+   "quote": "7 Anexos, garagens, telheiros, alpendres e construções congéneres, por metro quadrado 1,62 €",
+   "amount": 1.62,
+   "unit": "per_m2",
+   "stage": "titulo"
+  },
+  {
+   "id": "30.8",
+   "quote": "8 Prazo de execução da obra, por cada mês 7,65 €",
+   "amount": 7.65,
+   "unit": "per_month",
+   "stage": "titulo"
+  },
+  {
+   "id": "33.1",
+   "quote": "1 Emissão de alvará de licença 49,34 €",
+   "amount": 49.34,
+   "unit": "each",
+   "stage": "titulo",
+   "open": true
+  },
+  {
+   "id": "33.2.a",
+   "quote": "a) Por cada m2 0,60 €",
+   "amount": 0.6,
+   "unit": "per_m2",
+   "stage": "titulo"
+  },
+  {
+   "id": "35.1",
+   "quote": "1 Emissão de autorização de utilização: 49,34 €",
+   "amount": 49.34,
+   "unit": "each",
+   "stage": "utilizacao",
+   "open": true
+  },
+  {
+   "id": "35.1.a",
+   "quote": "a) Para habitação por metro quadrado 0,32 €",
+   "amount": 0.32,
+   "unit": "per_m2",
+   "stage": "utilizacao"
+  },
+  {
+   "id": "37.1",
+   "quote": "1 Emissão de autorização de alteração de utilização 49,34 €",
+   "amount": 49.34,
+   "unit": "each",
+   "stage": "utilizacao",
+   "open": true
+  },
+  {
+   "id": "37.3",
+   "quote": "3 Para comércio e ou serviços, por metro quadrado 0,30 €",
+   "amount": 0.3,
+   "unit": "per_m2",
+   "stage": "utilizacao"
+  },
+  {
+   "id": "41.1",
+   "quote": "1 Taxa fixa para a realização de vistorias para efeitos de concessão de autorizaçãode utilização 185,01 €",
+   "amount": 185.01,
+   "unit": "each",
+   "stage": "vistoria",
+   "open": true
+  },
+  {
+   "id": "41.2.a.1",
+   "quote": "a.1) Habitação unifamiliar 37,00 €",
+   "amount": 37.0,
+   "unit": "each",
+   "stage": "vistoria"
+  },
+  {
+   "id": "42.2",
+   "quote": "2 Para alteração de utilização de edifícios ou suas frações 37,00 €",
+   "amount": 37.0,
+   "unit": "each",
+   "stage": "vistoria"
+  },
+  {
+   "id": "42.3",
+   "quote": "3 Para demolição de edifícios ou de outras construções 37,00 €",
+   "amount": 37.0,
+   "unit": "each",
+   "stage": "vistoria"
+  }
+ ],
+ "scenarios": [
+  {
+   "id": "moradia-licenca",
+   "title": "Moradia unifamiliar nova, 200 m² de área bruta, 12 meses de obra (licença ou comunicação prévia: a tabela usa os mesmos itens)",
+   "lines": [
+    [
+     "26.3.a",
+     1
+    ],
+    [
+     "30.1",
+     1
+    ],
+    [
+     "30.2",
+     200
+    ],
+    [
+     "30.8",
+     12
+    ],
+    [
+     "1.27",
+     1
+    ]
+   ],
+   "then": [
+    [
+     "27.1",
+     1
+    ],
+    [
+     "35.1",
+     1
+    ],
+    [
+     "35.1.a",
+     200
+    ]
+   ],
+   "if_inspected": [
+    [
+     "41.1",
+     1
+    ],
+    [
+     "41.2.a.1",
+     1
+    ]
+   ],
+   "tmi": {
+    "At": 200,
+    "I": 1.0,
+    "W": 0.2,
+    "Y": 1.0,
+    "Z": 0.01
+   }
+  },
+  {
+   "id": "anexo-isento",
+   "title": "Anexo de arrecadação de 20 m², isento (RMOU art. 4.º n.º 2.1 f))",
+   "lines": [],
+   "then": [],
+   "if_inspected": [],
+   "note": "the table has no item for the information on the start of exempt works"
+  },
+  {
+   "id": "anexo-licenca",
+   "title": "Anexo ou garagem de 30 m² sujeito a controlo, 6 meses",
+   "lines": [
+    [
+     "26.2",
+     1
+    ],
+    [
+     "30.1",
+     1
+    ],
+    [
+     "30.7",
+     30
+    ],
+    [
+     "30.8",
+     6
+    ],
+    [
+     "1.27",
+     1
+    ]
+   ],
+   "then": [],
+   "if_inspected": []
+  },
+  {
+   "id": "piscina",
+   "title": "Piscina de 32 m² (comunicação prévia), 4 meses",
+   "lines": [
+    [
+     "26.9",
+     1
+    ],
+    [
+     "30.1",
+     1
+    ],
+    [
+     "30.5.a",
+     32
+    ],
+    [
+     "30.8",
+     4
+    ],
+    [
+     "1.27",
+     1
+    ]
+   ],
+   "then": [],
+   "if_inspected": [],
+   "note": "the table has no apreciação item for a pool: 'Outros usos não previsto anteriormente' (26.9) is a reading"
+  },
+  {
+   "id": "muro",
+   "title": "Muro de vedação de 40 m, 2 meses",
+   "lines": [
+    [
+     "26.1",
+     1
+    ],
+    [
+     "30.1",
+     1
+    ],
+    [
+     "30.6",
+     40
+    ],
+    [
+     "30.8",
+     2
+    ],
+    [
+     "1.27",
+     1
+    ]
+   ],
+   "then": [],
+   "if_inspected": []
+  },
+  {
+   "id": "demolicao",
+   "title": "Demolição de 150 m²",
+   "lines": [
+    [
+     "27.6",
+     1
+    ],
+    [
+     "33.1",
+     1
+    ],
+    [
+     "33.2.a",
+     150
+    ]
+   ],
+   "then": [],
+   "if_inspected": [
+    [
+     "42.3",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "loteamento",
+   "title": "Loteamento de 10 lotes, 20 fogos, 3.000 m² de habitação (emissão do título)",
+   "lines": [
+    [
+     "28.1",
+     1
+    ],
+    [
+     "28.3.a",
+     10
+    ],
+    [
+     "28.3.b",
+     20
+    ],
+    [
+     "28.4.a",
+     3000
+    ],
+    [
+     "1.29",
+     1
+    ]
+   ],
+   "then": [],
+   "if_inspected": [],
+   "note": "the table has no apreciação item for an allotment request"
+  },
+  {
+   "id": "mudanca-uso",
+   "title": "Mudar 100 m² de habitação para comércio, sem obras (comunicação prévia com prazo)",
+   "lines": [
+    [
+     "27.2",
+     1
+    ],
+    [
+     "37.1",
+     1
+    ],
+    [
+     "37.3",
+     100
+    ]
+   ],
+   "then": [],
+   "if_inspected": [
+    [
+     "42.2",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "pip-1",
+   "title": "Informação prévia (art. 14.º n.º 1)",
+   "lines": [
+    [
+     "24.1.a",
+     1
+    ]
+   ],
+   "then": [],
+   "if_inspected": []
+  },
+  {
+   "id": "pip-2",
+   "title": "Informação prévia (art. 14.º n.º 2)",
+   "lines": [
+    [
+     "24.1.b",
+     1
+    ]
+   ],
+   "then": [],
+   "if_inspected": []
+  },
+  {
+   "id": "destaque",
+   "title": "Destaque de uma parcela",
+   "lines": [
+    [
+     "25.1.a",
+     1
+    ],
+    [
+     "25.1.b",
+     1
+    ]
+   ],
+   "then": [],
+   "if_inspected": []
+  },
+  {
+   "id": "loteamento-compensacao",
+   "title": "Compensação de um loteamento de 10.000 m² que não cede 1.000 m² de áreas verdes e equipamentos (Ac 6.000 m²), com 100 m de frente para arruamento pavimentado a 5 m do eixo e as três redes",
+   "lines": [],
+   "then": [],
+   "if_inspected": [],
+   "compensation": {
+    "Af": 1000,
+    "St": 10000,
+    "Ac": 6000,
+    "Fp_min": 0.15,
+    "Fp_max": 0.179,
+    "frontage_area_A": 500,
+    "L": 100,
+    "R": [
+     1,
+     1.4,
+     1.8
+    ]
+   }
+  }
+ ],
+ "formulas": [
+  {
+   "id": "TMI",
+   "what": "taxa pela realização, reforço e manutenção de infraestruturas urbanísticas (RMOU arts. 81.º–82.º): due with the title of a licence for construction or extension outside an allotment",
+   "act": "regulamento-extrato-323-2013",
+   "quotes": [
+    {
+     "passage": "art81.1.b",
+     "quote": "Licença ou autorização de obras de construção ou ampliação em área não abrangida por operação de loteamento"
+    },
+    {
+     "passage": "art82.p2",
+     "quote": "TMI = At x V x I x Fm"
+    },
+    {
+     "passage": "art82.a",
+     "quote": "I = 1,0 - quando, cumulativamente, disponha de ligação direta ou indireta à rede viária do concelho"
+    },
+    {
+     "passage": "art82.e.p2",
+     "quote": "Fm = W x Y x Z"
+    },
+    {
+     "passage": "art82.e.p3.a",
+     "quote": "W = 0,20 para todas as classes de espaços previstas no PDM à exceção dos espaços industriais"
+    },
+    {
+     "passage": "art82.e.p3.b.p1",
+     "quote": "Y = 1,0 para habitação"
+    },
+    {
+     "passage": "art82.e.p3.c.p1",
+     "quote": "Z = 0,01 para o ano 2013"
+    }
+   ],
+   "unknown": {
+    "V": "80 % of the 'preço da construção … para efeitos de cálculo das rendas condicionadas' fixed yearly by portaria: the series ended with Portaria 353/2013 (for 2014) when Lei 80/2014 revoked DL 329-A/2000 from 2015-01-01. The RMOU refers to a value no longer published: an extinct reference, its replacement not stated",
+    "Z": "set yearly by the municipality with its budget; the last value the RMOU states is 0,01 for 2013 (a later value not found)"
+   },
+   "evidence": [
+    {
+     "subject": "web:celorico-de-basto:tmi-v-renda-condicionada:f52750ea8803",
+     "kind": "muni.web.page",
+     "extractor": "web-html-text@1",
+     "quote": "2014 | 700,24€ | 634,41€ | Portaria n.º 353/2013, de 4 de dezembro",
+     "what": "IHRU table: last values, 2014 (zone II, zone III)"
+    },
+    {
+     "subject": "web:celorico-de-basto:tmi-v-renda-condicionada:f52750ea8803",
+     "kind": "muni.web.page",
+     "extractor": "web-html-text@1",
+     "quote": "Em 1 de janeiro de 2015, entrou em vigor a Lei n.º 80/2014",
+     "what": "why the series ended"
+    },
+    {
+     "subject": "dr:lei:80/2014",
+     "kind": "dr.act.detail",
+     "extractor": "dr-html-blocks@1",
+     "quote": "O Decreto-Lei n.º 329-A/2000, de 22 de dezembro",
+     "what": "the revocation (art. 7.º b))"
+    }
+   ],
+   "last_published_v": {
+    "zone_II": 560.19,
+    "zone_III": 507.53,
+    "note": "80 % of the 2014 values; Celorico's zone under Portaria 353/2013 not captured"
+   }
+  },
+  {
+   "id": "C",
+   "what": "compensation when a subdivision (or an operation of relevant impact) does not cede the green, collective-use or equipment areas, plus the share of existing infrastructure (RMOU arts. 85.º–86.º)",
+   "act": "regulamento-extrato-323-2013",
+   "quotes": [
+    {
+     "passage": "art86.1.p1",
+     "quote": "C = (C1 + C2) x 0,16"
+    },
+    {
+     "passage": "art86.2.p1",
+     "quote": "C1 = (Af x Fp x Ac x V)/St"
+    },
+    {
+     "passage": "art86.2.p5",
+     "quote": "compreendido entre 0,15 e 0,179"
+    },
+    {
+     "passage": "art86.2.p8",
+     "quote": "(ver documento original)"
+    },
+    {
+     "passage": "art86.3.p1",
+     "quote": "C2 = V x (F1 + F2)"
+    },
+    {
+     "passage": "art86.3.p5",
+     "quote": "F1 = 0.035 x A"
+    },
+    {
+     "passage": "art86.3.p9",
+     "quote": "F2 = 0.062 xL/2 x (R1 + R2 + R3)"
+    },
+    {
+     "passage": "art86.3.p14",
+     "quote": "R1 = 1, no caso de existir rede pública de abastecimento de água"
+    },
+    {
+     "passage": "art86.3.p15",
+     "quote": "R2 = 1.4, no caso de existir rede pública de drenagem de águas residuais"
+    },
+    {
+     "passage": "art86.3.p16",
+     "quote": "R3 = 1.8, no caso de existir rede pública de drenagem de águas pluviais"
+    }
+   ],
+   "unknown": {
+    "V": "the same extinct reference as in the TMI (last published: 2014)",
+    "Fp": "0,15 plus the sum of the infrastructure indices of a table the structured text gives as '(ver documento original)': an image in the DR edition, not read; the article bounds Fp between 0,15 and 0,179"
+   }
+  }
+ ]
+}

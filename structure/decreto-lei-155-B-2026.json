@@ -1,0 +1,300 @@
+{
+ "version": "dr-structure@1",
+ "subject": "dr:decreto-lei:155-B/2026",
+ "act": "decreto-lei-155-B-2026",
+ "text": "9d84a2b26b7c484ff21453cfe61b334b971abc2bacf0ad6d90c794123dcdf3c2",
+ "passages": [
+  {
+   "id": "decreto-lei-155-B-2026:title",
+   "path": "title",
+   "kind": "title",
+   "parent": null,
+   "line": 1,
+   "start": 0,
+   "end": 26,
+   "text": "Decreto-Lei n.º 155-B/2026"
+  },
+  {
+   "id": "decreto-lei-155-B-2026:date",
+   "path": "date",
+   "kind": "date",
+   "parent": null,
+   "line": 2,
+   "start": 27,
+   "end": 41,
+   "text": "de 31 de julho"
+  },
+  {
+   "id": "decreto-lei-155-B-2026:preamble.p1",
+   "path": "preamble.p1",
+   "kind": "preamble",
+   "parent": null,
+   "line": 3,
+   "start": 42,
+   "end": 444,
+   "text": "O Decreto-Lei n.º 108/2026, de 29 de maio, procedeu à revisão do regime jurídico da urbanização e da edificação (RJUE), aprovado pelo Decreto-Lei n.º 555/99, de 16 de dezembro, com o objetivo de flexibilizar procedimentos, agilizar prazos, clarificar conceitos, assegurar a existência de títulos juridicamente seguros e disciplinar as fases de instrução, saneamento e audiência prévia dos interessados."
+  },
+  {
+   "id": "decreto-lei-155-B-2026:preamble.p2",
+   "path": "preamble.p2",
+   "kind": "preamble",
+   "parent": null,
+   "line": 4,
+   "start": 445,
+   "end": 659,
+   "text": "Entre outras matérias, o RJUE remete para regulamentação, sob a forma de portaria, a aprovação dos modelos uniformizados de requerimento e de comunicação, bem como a definição dos respetivos elementos instrutórios."
+  },
+  {
+   "id": "decreto-lei-155-B-2026:preamble.p3",
+   "path": "preamble.p3",
+   "kind": "preamble",
+   "parent": null,
+   "line": 5,
+   "start": 660,
+   "end": 1060,
+   "text": "A regulamentação em causa revela-se imprescindível para a consolidação do quadro normativo resultante das alterações introduzidas pelo Decreto-Lei n.º 108/2026, de 29 de maio, ao RJUE. Contudo, a aplicação das novas regras pressupõe a adaptação e a parametrização prévias das plataformas informáticas próprias dos municípios, pelo que devem ser garantidos aos municípios prazos mínimos para o efeito."
+  },
+  {
+   "id": "decreto-lei-155-B-2026:preamble.p4",
+   "path": "preamble.p4",
+   "kind": "preamble",
+   "parent": null,
+   "line": 6,
+   "start": 1061,
+   "end": 1299,
+   "text": "Neste contexto, e por forma a garantir que a recente reforma do RJUE produz os efeitos desejados e necessários no seio da prática urbanística, justifica-se que seja prorrogada a entrada em vigor do Decreto-Lei n.º 108/2026, de 29 de maio."
+  },
+  {
+   "id": "decreto-lei-155-B-2026:preamble.p5",
+   "path": "preamble.p5",
+   "kind": "preamble",
+   "parent": null,
+   "line": 7,
+   "start": 1300,
+   "end": 1306,
+   "text": "Assim:"
+  },
+  {
+   "id": "decreto-lei-155-B-2026:preamble.p6",
+   "path": "preamble.p6",
+   "kind": "preamble",
+   "parent": null,
+   "line": 8,
+   "start": 1307,
+   "end": 1402,
+   "text": "Nos termos da alínea a) do n.º 1 do artigo 198.º da Constituição, o Governo decreta o seguinte:"
+  },
+  {
+   "id": "decreto-lei-155-B-2026:art1",
+   "path": "art1",
+   "kind": "article",
+   "parent": null,
+   "line": 9,
+   "start": 1403,
+   "end": 1413,
+   "text": "Artigo 1.º",
+   "label": "1"
+  },
+  {
+   "id": "decreto-lei-155-B-2026:art1.heading",
+   "path": "art1.heading",
+   "kind": "heading",
+   "parent": "decreto-lei-155-B-2026:art1",
+   "line": 10,
+   "start": 1414,
+   "end": 1420,
+   "text": "Objeto"
+  },
+  {
+   "id": "decreto-lei-155-B-2026:art1.p1",
+   "path": "art1.p1",
+   "kind": "body",
+   "parent": "decreto-lei-155-B-2026:art1",
+   "line": 11,
+   "start": 1421,
+   "end": 1584,
+   "text": "O presente decreto-lei procede à primeira alteração ao Decreto-Lei n.º 108/2026, de 29 de maio, tendo em vista a prorrogação da respetiva data de entrada em vigor."
+  },
+  {
+   "id": "decreto-lei-155-B-2026:art2",
+   "path": "art2",
+   "kind": "article",
+   "parent": null,
+   "line": 12,
+   "start": 1585,
+   "end": 1595,
+   "text": "Artigo 2.º",
+   "label": "2"
+  },
+  {
+   "id": "decreto-lei-155-B-2026:art2.heading",
+   "path": "art2.heading",
+   "kind": "heading",
+   "parent": "decreto-lei-155-B-2026:art2",
+   "line": 13,
+   "start": 1596,
+   "end": 1648,
+   "text": "Alteração ao Decreto-Lei n.º 108/2026, de 29 de maio"
+  },
+  {
+   "id": "decreto-lei-155-B-2026:art2.p1",
+   "path": "art2.p1",
+   "kind": "body",
+   "parent": "decreto-lei-155-B-2026:art2",
+   "line": 14,
+   "start": 1649,
+   "end": 1738,
+   "text": "O artigo 13.º do Decreto-Lei n.º 108/2026, de 29 de maio, passa a ter a seguinte redação:"
+  },
+  {
+   "id": "decreto-lei-155-B-2026:art2.q1.art13",
+   "path": "art2.q1.art13",
+   "kind": "article",
+   "parent": "decreto-lei-155-B-2026:art2",
+   "line": 15,
+   "start": 1739,
+   "end": 1751,
+   "text": "«Artigo 13.º",
+   "label": "13",
+   "quoted": true
+  },
+  {
+   "id": "decreto-lei-155-B-2026:art2.q1.art13.heading",
+   "path": "art2.q1.art13.heading",
+   "kind": "heading",
+   "parent": "decreto-lei-155-B-2026:art2.q1.art13",
+   "line": 16,
+   "start": 1752,
+   "end": 1757,
+   "text": "[...]",
+   "quoted": true,
+   "elided": true
+  },
+  {
+   "id": "decreto-lei-155-B-2026:art2.q1.art13.1",
+   "path": "art2.q1.art13.1",
+   "kind": "number",
+   "parent": "decreto-lei-155-B-2026:art2.q1.art13",
+   "line": 17,
+   "start": 1758,
+   "end": 1828,
+   "text": "1 - O presente decreto-lei entra em vigor no dia 1 de outubro de 2026.",
+   "label": "1",
+   "quoted": true
+  },
+  {
+   "id": "decreto-lei-155-B-2026:art2.q1.art13.2",
+   "path": "art2.q1.art13.2",
+   "kind": "number",
+   "parent": "decreto-lei-155-B-2026:art2.q1.art13",
+   "line": 18,
+   "start": 1829,
+   "end": 1839,
+   "text": "2 - [...]»",
+   "label": "2",
+   "quoted": true,
+   "elided": true
+  },
+  {
+   "id": "decreto-lei-155-B-2026:art3",
+   "path": "art3",
+   "kind": "article",
+   "parent": null,
+   "line": 19,
+   "start": 1840,
+   "end": 1850,
+   "text": "Artigo 3.º",
+   "label": "3"
+  },
+  {
+   "id": "decreto-lei-155-B-2026:art3.heading",
+   "path": "art3.heading",
+   "kind": "heading",
+   "parent": "decreto-lei-155-B-2026:art3",
+   "line": 20,
+   "start": 1851,
+   "end": 1867,
+   "text": "Entrada em vigor"
+  },
+  {
+   "id": "decreto-lei-155-B-2026:art3.p1",
+   "path": "art3.p1",
+   "kind": "body",
+   "parent": "decreto-lei-155-B-2026:art3",
+   "line": 21,
+   "start": 1868,
+   "end": 1943,
+   "text": "O presente decreto-lei entra em vigor no dia seguinte ao da sua publicação."
+  },
+  {
+   "id": "decreto-lei-155-B-2026:closing.p1",
+   "path": "closing.p1",
+   "kind": "closing",
+   "parent": null,
+   "line": 22,
+   "start": 1944,
+   "end": 2066,
+   "text": "Visto e aprovado em Conselho de Ministros de 23 de julho de 2026. - Luís Montenegro - Miguel Martinez de Castro Pinto Luz."
+  },
+  {
+   "id": "decreto-lei-155-B-2026:closing.p2",
+   "path": "closing.p2",
+   "kind": "closing",
+   "parent": null,
+   "line": 23,
+   "start": 2067,
+   "end": 2101,
+   "text": "Promulgado em 31 de julho de 2026."
+  },
+  {
+   "id": "decreto-lei-155-B-2026:closing.p3",
+   "path": "closing.p3",
+   "kind": "closing",
+   "parent": null,
+   "line": 24,
+   "start": 2102,
+   "end": 2114,
+   "text": "Publique-se."
+  },
+  {
+   "id": "decreto-lei-155-B-2026:closing.p4",
+   "path": "closing.p4",
+   "kind": "closing",
+   "parent": null,
+   "line": 25,
+   "start": 2115,
+   "end": 2170,
+   "text": "O Presidente da República, António José Martins Seguro."
+  },
+  {
+   "id": "decreto-lei-155-B-2026:closing.p5",
+   "path": "closing.p5",
+   "kind": "closing",
+   "parent": null,
+   "line": 26,
+   "start": 2171,
+   "end": 2206,
+   "text": "Referendado em 31 de julho de 2026."
+  },
+  {
+   "id": "decreto-lei-155-B-2026:closing.p6",
+   "path": "closing.p6",
+   "kind": "closing",
+   "parent": null,
+   "line": 27,
+   "start": 2207,
+   "end": 2244,
+   "text": "O Primeiro-Ministro, Luís Montenegro."
+  },
+  {
+   "id": "decreto-lei-155-B-2026:document_number",
+   "path": "document_number",
+   "kind": "document_number",
+   "parent": null,
+   "line": 28,
+   "start": 2245,
+   "end": 2254,
+   "text": "119949263"
+  }
+ ]
+}

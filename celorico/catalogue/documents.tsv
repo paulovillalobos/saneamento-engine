@@ -1,0 +1,298 @@
+code	labels	requests	mandatory_in	templates	help_norms
+REQ	Requerimento	202	202	01-GURB.LIC-R4.pdf,02-GURB.LEG-R4.pdf,03-GURB.CP-R4.pdf,04-GURB.IP-R4.pdf,05-GURB.ESP-R4.pdf,06-GURB.PTEL-R4.pdf,07-GURB.UTL-R4.pdf,08-GURB.APEL-R4.pdf,09-GURB.PROP-R4.pdf,10-GURB.LECOI-R4.pdf,11-GURB.AVER-R4.pdf,12-GURB.INOB-R4.pdf,13-GURB.ADEO-R4.pdf,14-GURB.COICP-R4.pdf,15-GURB.CONP-R4.pdf,16-GURB.PEDI-R4.pdf,17-GURB.INFS-R4.pdf,18-GURB.ILEG-R4.pdf,19-GURB.ALEG-R4.pdf,20-GURB.RECL-R4.pdf,21-GURB.ROUR-R4.pdf,22-GURB.LOVP-R4.pdf,23-GURB.CDEST-R4.pdf,24-GURB.CPH-R4.pdf,25-GURB.CCA51-R4.pdf,26-GURB.CPRUI-R4.pdf,27-GURB.CCOU-R4.pdf,28-GURB.CDIV-R4.pdf,29-GURB.COPIA-R4.pdf,30-GURB.ALMC-R4.pdf,31-GURB.RTL-R4.pdf,32-GURB.LER-R4.pdf,33-GURB.AIISER-R4.pdf,34-GURB.CINSL-R4.pdf,35-GURB.LSIC-R4.pdf,36-GURB.LIPC-R4.pdf,37-GURB.ELEPC-R4.pdf,38-GURB.CULSIC-R4.pdf,39-GURB.CCAPC-R4.pdf,40-GURB.DFTH-R4.pdf	
+OUTDOC	Outros Documentos	196	0		
+DCQT	Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da operação ou da atribuição dos poderes necessários para agir em sua representação	135	0		
+CRP	Código de acesso à certidão permanente do registo predial	80	58		
+P10000	Plantas de localização	56	45		
+PDPDF	Peças desenhadas em PDF/a	50	36		
+PPMOT	Extratos das plantas do plano municipal de ordenamento em vigor para a área (PDM, PU ou PP)/Planta de síntese loteamento	45	35		
+TRDO	Termo de responsabilidade do diretor de obra	37	24		
+SRCDO	Seguro de responsabilidade civil do diretor de obra	37	24		
+CCDO	Comprovativo de contratação do diretor de obra	35	23		
+TRCP	Termo de responsabilidade do coordenador de projeto	34	26		
+SRCCP	Seguro de responsabilidade civil do técnico coordenador de projeto	34	26		
+IMPIC	Número do alvará, ou do certificado, ou número de outro título habilitante emitido pelo IMPIC, I. P.	34	21		
+LEVT	Levantamento topográfico georreferenciado	33	28		
+TRDFO	Termo de responsabilidade do diretor de fiscalização de obra	33	24		
+SRCDFO	Seguro de responsabilidade civil do diretor de fiscalização de obra	33	24		
+ASAT	Apólice de seguro de acidentes de trabalho	32	20		
+DAC	Declaração dos autores e coordenador dos projetos de que a operação respeita os limites constantes da informação prévia favorável	30	0		
+FEE	Ficha de elementos estatísticos	26	19		
+TRPARQ	Termo de responsabilidade do autor do projeto de arquitetura	23	16		
+SRCARQ	Seguro de responsabilidade civil do técnico autor do projeto de arquitetura	23	16		
+CEO	Calendarização da execução da obra	23	15		
+PI	Planta de implantação, sobre o levantamento topográfico georreferenciado	22	17		
+ASC	Apólice de seguro de construção	21	0		
+FOTO	Fotografias do imóvel	19	8		
+MDARQ	Memória descritiva do projeto de arquitetura	18	15		
+EEU	Estimativa dos encargos urbanísticos	17	0		
+PAA	Pareceres, autorizações ou aprovações de entidades externas ao Município	17	0		
+TRPLAC	Termo de responsabilidade do autor do plano de acessibilidades	15	5		
+EOCT	Estimativa do custo total da obra	15	10		
+MDPLAC	Memória descritiva do plano de acessibilidades	15	5		
+PDPLAC	Peças desenhadas referentes ao plano de acessibilidades	15	5		
+SRCEST	Seguro de responsabilidade civil do técnico autor do projeto de estabilidade	15	0		
+PSINT	Planta de síntese, à escala de 1:1000 ou superior	15	8		
+TRUTLF	Termo de responsabilidade subscrito pelo diretor da obra ou pelo diretor de fiscalização da obra, nos termos do n.º 1 do artigo 62.º -A do RJUE	14	9		
+SRCUTL	Seguro de responsabilidade civil do diretor da obra ou do diretor de fiscalização da obra	14	9		
+TREECP	Termo de responsabilidade do autor do projeto de estabilidade, de escavação e contenção periférica	13	0		
+MDEECP	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de estabilidade, de escavação e contenção periférica	13	0		
+PDEECP	Peças desenhadas do projeto de estabilidade, de escavação e contenção periférica	13	0		
+TRPAP	Termo de responsabilidade do autor do projeto  de águas pluviais	13	0		
+SRCAP	Seguro de responsabilidade civil do técnico autor do projeto  de águas pluviais	13	0		
+MDPAP	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto  de águas pluviais	13	0		
+PDPAP	Peças desenhadas do projeto  de águas pluviais	13	0		
+TRPAE	Termo de responsabilidade subscrito pelo autor do projeto de arranjos exteriores, quando exista logradouro privativo não pavimentado	13	0		
+SRCAE	Seguro de responsabilidade civil do técnico autor do projeto de arranjos exteriores	13	0		
+MDPAE	Memória descritiva e justificativa do projeto de arranjos exteriores, quando exista logradouro privativo não pavimentado	13	0		
+PDPAE	Peças desenhadas do projeto de arranjos exteriores, quando exista logradouro privativo não pavimentado	13	0		
+CPC	Cálculo e a prestação de caução	13	0		
+CSCE	Certificado SCE	13	3		
+CTOU	Cópia do título da operação urbanística ao abrigo da qual foram realizadas as obras	13	6		
+SRCSCI	Seguro de responsabilidade civil do técnico autor da ficha ou do projeto de segurança contra incêndios	12	0		
+TRPSCI	Termo de responsabilidade do autor do projeto de segurança contra incêndios	12	0		
+MDPSCI	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de segurança contra incêndios	12	0		
+PDPSCI	Peças desenhadas do projeto de segurança contra incêndios	12	0		
+TROLOT	Termo de responsabilidade do autor do projeto de operação de loteamento	12	6		
+SRCLOT	Seguro de responsabilidade civil do técnico autor do projeto de operação de loteamento	12	6		
+TRATF	Termo de responsabilidade do autor das telas finais do projeto de arquitetura, quando tenham existido alterações do projeto	12	0		
+SRTFU	Seguro de responsabilidade civil do técnico autor das telas finais do projeto de arquitetura	12	0		
+TRPIE	Termo de responsabilidade pelo projeto de instalações elétricas de serviço particular	11	0		
+SRCIE	Seguro de responsabilidade civil do técnico autor do projeto de instalações elétricas de serviço particular	11	0		
+MDPIE	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de instalações elétricas de serviço particular	11	0		
+PDPIE	Peças desenhadas do projeto de instalações elétricas de serviço particular	11	0		
+TREIE	Termo de responsabilidade pela execução da instalação elétrica temporária	11	0		
+TRPIG	Termo de responsabilidade do autor do projeto de instalação de gás	11	0		
+SRCGAS	Seguro de responsabilidade civil do técnico autor do projeto de instalação de gás	11	0		
+MDPIG	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de instalação de gás	11	0		
+PDPIG	Peças desenhadas do projeto de instalação de gás	11	0		
+TRRPAE	Termo de responsabilidade do autor do projeto de redes prediais de água e esgotos	11	0		
+SRCPAE	Seguro de responsabilidade civil do técnico autor do projeto de redes prediais de água e esgotos	11	0		
+MDRPAE	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de redes prediais de água e esgotos	11	0		
+PDRPAE	Peças desenhadas do projeto de redes prediais de água e esgotos	11	0		
+TRITED	Termo de responsabilidade do autor do projeto ITED	11	0		
+SRITED	Seguro de responsabilidade civil do técnico autor do projeto ITED	11	0		
+MDITED	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto ITED	11	0		
+PDITED	Peças desenhadas do projeto ITED	11	0		
+TRPCT	Termo de responsabilidade do autor do projeto de comportamento térmico	11	0		
+SRCCT	Seguro de responsabilidade civil do técnico autor do projeto de comportamento térmico	11	0		
+MDPCT	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de comportamento térmico	11	0		
+PDPCT	Peças desenhadas do projeto de comportamento térmico	11	0		
+PCSCE	Pré-certificado do SCE	11	0		
+TRPIEM	Termo de responsabilidade do autor do projeto de instalações eletromecânicas	11	0		
+SRCIEM	Seguro de responsabilidade civil do técnico autor do projeto de instalações eletromecânicas	11	0		
+MDPIEM	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de instalações eletromecânicas	11	0		
+PDPIEM	Peças desenhadas do projeto de instalações eletromecânicas	11	0		
+TRFSCI	Termo de responsabilidade do autor da ficha de segurança contra incêndios	11	0		
+FSCI	Ficha de segurança contra incêndios	11	0		
+TRPCA	Termo de responsabilidade do autor do projeto de condicionamento acústico	11	0		
+SRCCA	Seguro de responsabilidade civil do técnico autor do projeto de condicionamento acústico	11	0		
+MDPCA	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de condicionamento acústico	11	0		
+PDPCA	Peças desenhadas do projeto de condicionamento acústico	11	0		
+TRAVAC	Termo de responsabilidade do autor do projeto AVAC	11	0		
+SRAVAC	Seguro de responsabilidade civil do técnico autor do projeto AVAC	11	0		
+MDAVAC	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto AVAC	11	0		
+PDAVAC	Peças desenhadas do projeto AVAC	11	0		
+TRSGTC	Termo de responsabilidade do autor do projeto de sistemas de gestão técnica centralizada	11	0		
+SRSGTC	Seguro de responsabilidade civil do técnico autor do projeto de sistemas de gestão técnica centralizada	11	0		
+MDSGTC	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de sistemas de gestão técnica centralizada	11	0		
+PDSGTC	Peças desenhadas do projeto de sistemas de gestão técnica centralizada	11	0		
+CORLOT	Perfis do loteamento	11	6		
+PCED	Planta de cedências, à escala 1:1000 ou superior	11	3		
+SVT	Imagens resultantes de simulação virtual tridimensional	11	0		
+PLANT	Plantas à escala de 1:50 ou de 1:100	10	4		
+ALC	Alçados à escala de 1:50 ou de 1:100	10	4		
+CORTES	Cortes longitudinais e transversais à escala de 1:50 ou de 1:100	10	4		
+PC	Pormenores de construção, à escala adequada	10	4		
+PLCED	Planta de cedências (quando se trate de operação urbanística que contemple a cedência de áreas para o município)	10	0		
+PCA	Planta de cadastro atual (quando se trate de operação urbanística que contemple a cedência de áreas para o município)	10	0		
+PQTF	Planta e quadro de transformação fundiária (quando se trate de operação urbanística que contemple a cedência de áreas para o município)	10	0		
+RAVS	Relatório de avaliação de vulnerabilidade sísmica, quando exigível, nos termos da lei	10	0		
+TRPRS	Termo de responsabilidade do autor do projeto de reforço sísmico	10	0		
+SRCRS	Seguro de responsabilidade civil do técnico autor do projeto de reforço sísmico	10	0		
+MDPRS	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de reforço sísmico	10	0		
+PDPRS	Peças desenhadas do projeto de reforço sísmico	10	0		
+TRIVSR	Termo de responsabilidade do autor do projeto de infraestruturas viárias e de sinalização rodoviária (horizontal e vertical)	10	1		
+SRIVSR	Seguro de responsabilidade civil do técnico autor do projeto de infraestruturas viárias	10	1		
+MDIVSR	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de infraestruturas viárias e de sinalização rodoviária (horizontal e vertical)	10	1		
+PDIVSR	Peças desenhadas do projeto de infraestruturas viárias, em escala tecnicamente adequada	10	1		
+TRIEIP	Termo de responsabilidade do autor do projeto de infraestruturas de eletricidade e de iluminação pública	10	1		
+SRIEIP	Seguro de responsabilidade civil do técnico autor do projeto de infraestruturas de eletricidade	10	1		
+MDIEIP	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de infraestruturas de eletricidade e de iluminação pública	10	1		
+PDIEIP	Peças desenhadas do projeto de infraestruturas de eletricidade, em escala tecnicamente adequada	10	1		
+TRPIAG	Termo de responsabilidade do autor do projeto de infraestruturas de abastecimento de gás	10	1		
+SRCIAG	Seguro de responsabilidade civil do técnico autor do projeto de infraestruturas de abastecimento de gás	10	1		
+MDPIAG	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de infraestruturas de abastecimento de gás	10	1		
+PDPIAG	Peças desenhadas do projeto de infraestruturas de abastecimento de gás, em escala tecnicamente adequada	10	1		
+TRPIAA	Termo de responsabilidade do autor do projeto de infraestruturas de abastecimento de água	10	1		
+SRCIAA	Seguro de responsabilidade civil do técnico autor do projeto de infraestruturas de abastecimento de água	10	1		
+MDPIAA	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de infraestruturas de abastecimento de água	10	1		
+PDPIAA	Peças desenhadas do projeto de infraestruturas de abastecimento de água, em escala tecnicamente adequada	10	1		
+TRIDAR	Termo de responsabilidade do autor do projeto de infraestruturas da rede de drenagem de águas residuais	10	1		
+SRIDAR	Seguro de responsabilidade civil do técnico autor do projeto de infraestruturas da rede de esgotos	10	1		
+MDIDAR	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de infraestruturas da rede de drenagem de águas residuais	10	1		
+PDIDAR	Peças desenhadas do projeto de infraestruturas da rede de esgotos, em escala tecnicamente adequada	10	1		
+TRIDAP	Termo de responsabilidade do autor do projeto de infraestruturas da rede de drenagem de águas pluviais	10	1		
+SRIDAP	Seguro de responsabilidade civil do técnico autor do projeto de infraestruturas da rede de drenagem de águas pluviais	10	1		
+MDIDAP	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de infraestruturas da rede de drenagem de águas pluviais	10	1		
+PDIDAP	Peças desenhadas do projeto de infraestruturas da rede de drenagem de águas pluviais, em escala tecnicamente adequada	10	1		
+TRITUR	Termo de responsabilidade do autor do projeto ITUR	10	1		
+SRITUR	Seguro de responsabilidade civil do técnico autor do projeto de infraestruturas de telecomunicações	10	1		
+MDITUR	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto ITUR	10	1		
+PDITUR	Peças desenhadas do de infraestruturas de telecomunicações, em escala tecnicamente adequada	10	1		
+TRAEUR	Termo de responsabilidade do autor do projeto de arranjos exteriores das obras de urbanização	10	1		
+SRCAEU	Seguro de responsabilidade civil do técnico autor do projeto de arranjos exteriores das obras de urbanização	10	1		
+MDAEUR	Memória descritiva e justificativa e respetivas folhas de cálculo do projeto de arranjos exteriores das obras de urbanização	10	1		
+PDAEUR	Peças desenhadas do projeto de arranjos exteriores das obras de urbanização, em escala tecnicamente adequada	10	1		
+TREIEU	Termo de responsabilidade pela execução da instalação elétrica acompanhado de ficha eletrotécnica	10	3		
+TEITED	Termo de responsabilidade de execução do projeto ITED	10	4		
+MDTF	Memória descritiva das telas finais, quando tenham existido alterações do projeto	10	0		
+DICE	Declaração de inspeção ou certificado de exploração, acompanhado de projeto ou ficha eletrotécnica	10	0		
+PIE	Planta de implantação do existente, sobre o levantamento topográfico georreferenciado	9	0		
+PLANTE	Plantas do existente à escala de 1:50 ou de 1:100	9	0		
+ALCE	Alçados do existente à escala de 1:50 ou de 1:100	9	0		
+CORE	Cortes longitudinais e transversais do existente à escala de 1:50 ou de 1:100	9	0		
+PICC	Planta de implantação de cores convencionais, desenhada sobre o levantamento topográfico georreferenciado	9	0		
+PLACC	Plantas de cores convencionais à escala de 1:50 ou de 1:100	9	0		
+ALCCC	Alçados de cores convencionais à escala de 1:50 ou de 1:100	9	0		
+CORCC	Cortes longitudinais e transversais de cores convencionais à escala de 1:50 ou de 1:100	9	0		
+ECORGR	Estudo que ateste da conformidade da operação com o Regulamento Geral do Ruído	9	3		
+PH	Propriedade Horizontal (caso pretenda)	9	0		
+TRLTOP	Termo de responsabilidade do levantamento topográfico	9	6		
+PSELOT	Planta da situação existente, à escala 1:1000 ou superior	9	3		
+PALOT	Planta de alterações, à escala de 1:1000 ou superior	9	3		
+IPLOT	Identificação de todos os proprietários dos lotes que integram o alvará de loteamento	9	0		
+EEORGR	Estudo que ateste da conformidade da operação/obra com o Regulamento Geral do Ruído	9	4		
+PAAEE	Pareceres, autorizações ou aprovações das entidades externas cuja consulta seja obrigatória nos termos da lei	9	0		
+MDIP	Memória descritiva e justificativa que descreva a informação prévia	9	8		
+TRPOU	Termo(s) de responsabilidade do(s) autor(es) dos projetos de obras de urbanização	8	3		
+SRCURB	Seguro de responsabilidade civil do técnico autor dos projetos de obras de urbanização	8	3		
+ESTRGR	Estudo que demonstre a conformidade com o Regulamento Geral do Ruído	8	3		
+PSEURB	Planta da situação existente, à escala de 1:1.000 ou superior	8	3		
+MDLCOI	Memória descritiva esclarecendo devidamente o pedido de licença especial para a conclusão de obras inacabadas	8	4		
+TFPARQ	Telas finais do projeto de arquitetura, quando tenham existido alterações do projeto	8	0		
+DCDA	Declaração de cedência dos direitos de autor do técnico	8	4		
+TRPH	Termo de responsabilidade do autor da propriedade horizontal	8	4		
+DPFA	Descrição do prédio e das frações autónomas	8	4		
+PDPH	Planta de implantação e plantas dos pisos à escala 1:100	8	4		
+TRPIP	Termo de responsabilidade do autor da informação prévia	8	7		
+SRCIP	Seguro de responsabilidade civil dos técnicos autores dos projetos (Informação prévia)	8	7		
+PLPDM	Plantas de localização à escala 1:2000 e 1:10000 e Plantas do PDM e/ou PU	8	6		
+IPA	Indicação do respetivo procedimento administrativo	7	0		
+EOURB	Estimativa do custo total da obra e custo por especialidades	7	3		
+PSURB	Planta de síntese das obras de urbanização	7	0		
+PTLURB	Perfis transversais e longitudinais das obras de urbanização	7	0		
+DCPC	Documento comprovativo da prestação de caução	7	3		
+TRPAIP	Termo de responsabilidade do autor do plano de acessibilidades	7	4		
+MDPAIP	Memória descritiva do plano de acessibilidades	7	4		
+PDPAIP	Peças desenhadas referentes ao plano de acessibilidades	7	4		
+DESUTL	Descrição da utilização futura do terreno	6	2		
+TRECCA	Termo de responsabilidade do autor do projeto de estabilidade ou contenção de construções adjacentes para obras de demolição	6	0		
+MDECCP	Peças escritas do projeto de estabilidade ou contenção de construções adjacentes para obras de demolição	6	0		
+PDECCA	Peças desenhadas referentes ao projeto de estabilidade ou contenção de construções adjacentes para obras de demolição	6	0		
+PPGRCD	Plano de Prevenção e Gestão de Resíduos de Construção e Demolição (PPGRCD)	6	3		
+CALTOL	Perfis das alterações	6	2		
+TRPEET	Termos de responsabilidade dos autores dos projetos de especialidades	6	0		
+SRCESP	Seguro de responsabilidade civil dos técnicos autores dos projetos de especialidades	6	0		
+MDPEET	Memória descritiva e justificativa e respetivas folhas de cálculo dos projetos de especialidades necessários à execução dos trabalhos	6	0		
+PDPEET	Peças desenhadas dos projetos de especialidades necessários à execução dos trabalhos	6	0		
+IDR	Cópia dos documentos de identificação do requerente	6	3		
+IDC	Cópia dos documentos de identificação do cônjuge	6	3		
+TFOU	Telas finais das obras de urbanização, quando tenham existido alterações do projeto	6	0		
+CNF	Certidão negativa das finanças	6	3		
+DEFPP	Declaração de que o edifício é para habitação própria e permanente	6	3		
+FTH	Ficha técnica de habitação	6	6		
+MDLEG	Memória descritiva do projeto de legalização	6	5		
+CEOLEG	Calendarização da execução da obra	6	1		
+TRUFP	Termo de responsabilidade de técnico habilitado a ser autor de projeto	6	4		
+SRCTAP	Seguro de responsabilidade civil do técnico habilitado a ser autor de projeto	6	4		
+PDAUTL	Telas finais, quando tenham sido executadas obras isentas de controlo prévio ou planta da situação existente quando não tenham sido realizadas obras	6	4		
+PSOOU	Planta de síntese de outras operações urbanísticas	5	1		
+PTLOOU	Perfis transversais e longitudinais de outras operações urbanísticas	5	1		
+PILLIG	Planta das infraestruturas locais e ligação às infraestruturas gerais	5	3		
+PACED	Planta com a definição das áreas de cedência	5	0		
+MDAUTL	Memória descritiva da alteração de utilização	5	2		
+IPLIDU	Identificação do proprietário, localização da instalação e direito à utilização do terreno	5	5		
+CREF	Certificados/relatórios das entidades fiscalizadoras sobre o estado dos trabalhos de infraestruturas	4	0		
+TRLEEC	Termo de responsabilidade elaborado por técnico com habilitação legal para a elaboração de projetos de estabilidade, escavação e contenção periférica	4	0		
+RECELE	Recibo atual da empresa responsável pela comercialização de eletricidade	4	0		
+TRLEGG	Termo de responsabilidade elaborado por técnico com habilitação legal para a elaboração de projeto de gás	4	0		
+DNAPG	Declaração a atestar que à data de execução da edificação não estava sujeita à apresentação de projeto de gás	4	0		
+TRLPAE	Termo de responsabilidade elaborado por técnico com habilitação legal para a elaboração de projetos de redes prediais de água e esgotos	4	0		
+TRLDAP	Termo de responsabilidade elaborado por técnico com habilitação legal para a elaboração de projetos de águas pluvais	4	0		
+TRLITE	Termo de responsabilidade elaborado por técnico com habilitação legal para a elaboração de projetos ITED	4	0		
+DAITED	Declaração a atestar que à data de execução da edificação a mesma não estava sujeita à apresentação de projeto de instalações telefónicas e de telecomunicações	4	0		
+RECRTT	Recibo atual da empresa responsável pela comercialização da rede telefónica e de telecomunicações	4	0		
+TRLCT	Termo de responsabilidade elaborado por técnico com habilitação legal para a elaboração de projetos de comportamento térmico	4	0		
+TRLIEM	Termo de responsabilidade elaborado por técnico com habilitação legal para a elaboração de projetos de instalações eletromecânicas	4	0		
+REIIEM	Recibo atual da empresa responsável pela inspeção de Instalações eletromecânicas, incluindo as de transporte de pessoas e ou mercadorias	4	0		
+TRLEGA	Termo de responsabilidade elaborado por técnico com habilitação legal para a elaboração de projetos de condicionamento acústico	4	0		
+DEPIP	Discriminação dos elementos apresentados em sede de pedido de informação prévia	4	0		
+DPL	Descrição pormenorizada dos lotes com indicação dos artigos matriciais de proveniência	4	2		
+FOTCER	Fotografias da construção	4	2		
+PET	Projeto de execução dos trabalhos	3	1		
+EOLEG	Estimativa do custo total da obra (aplicável quando estiver prevista a realização trabalhos de alteração/conclusão da obra)	3	0		
+PCAURB	Projeto de condicionamento acústico	3	1		
+PCURB	Projeto de contrato de urbanização	3	0		
+PLIP	Plantas à escala 1:500 ou superior	3	1		
+ALCIP	Alçados à escala 1:500 ou superior	3	1		
+CORIP	Cortes à escala de 1:500 ou superior	3	1		
+LDCAIP	Indicação da localização e dimensionamento das construções anexas	3	0		
+IRPA	Quando a edificação esteja abrangida por operação de loteamento, indicação do respetivo procedimento administrativo	3	0		
+PLTLOT	Perfis longitudinais e transversais do loteamento	3	2		
+PCAIP	Planta do cadastro atual, à escala de 1:1.000 ou superior	3	0		
+PTFIP	Planta de transformação fundiária	3	0		
+CPA	Caderneta Predial atualizada	3	2		
+CEJF	Certidão emitida pela respetiva junta de freguesia	3	0		
+IT	Identificação do Titular	3	1		
+DCPIOS	Documento comprovativo do pedido de instalação do operador à respectiva sociedade	3	0		
+DAIIS	Documento de que conste a autorização expressa dos proprietários dos terrenos para a instalação das infraestruturas de suporte das estações de radiocomunicações e respetivos acessórios	3	1		
+TRIIS	Termo de responsabilidade do autor do projeto de instalação de infraestruturas de suporte das estações de radiocomunicações e respetivos acessórios	3	1		
+SRCIIS	Seguro de responsabilidade civil do técnico autor do projeto	3	1		
+MDI	Memória descritiva da instalação (com indicação dos critérios adotados condicionantes, materiais empregues e métodos construtivos e de fixação)	3	1		
+LTIIS	Levantamento topográfico georreferenciado à escala de 1:200 ou de 1:500	3	1		
+PIIIS	Planta de implantação georreferenciada à escala de 1:200 ou de 1:500	3	1		
+PDISS	Peças desenhadas (plantas e alçados à escala de 1:100)	3	1		
+TREIIS	Termo de responsabilidade do autor do projeto de estabilidade	3	1		
+SRCEII	Seguro de responsabilidade civil do técnico autor do projeto de estabilidade	3	1		
+PEEIIS	Peças escritas referentes ao projeto de estabilidade	3	0		
+PDEIIS	Peças desenhadas referentes ao projeto de estabilidade	3	0		
+TRIEII	Termo de responsabilidade pelas instalações elétricas	3	1		
+SRCIEI	Seguro de responsabilidade civil do técnico autor das instalações elétricas	3	1		
+PEIEII	Peças escritas referentes as instalações elétricas	3	0		
+PDIEIS	Peças desenhadas referentes as instalações elétricas	3	0		
+ITICP	Identificação do título emitido pelo ICP - ANACOM, quando existente, nos termos do Decreto-Lei n.º 151-A/2000, de 20 de Julho	3	1		
+DEOCI	Declaração emitida pelo operador que garanta a conformidade da instalação em causa com os níveis de referência de radiação aplicáveis, de acordo com normativos nacionais ou internacionais em vigor	3	1		
+EJEE	Estudo justificativo da estabilidade das edificações sob o ponto de vista estrutural e da fixação das infraestruturas de suporte das estações de radiocomunicações ao edifício (quando aplicável)	3	0		
+DAEIP	Documento de que conste a autorização expressa para a instalação do proprietário ou dos condóminos, nos termos da lei aplicável (quando aplicável)	3	0		
+IEEI	Indicação da entidade exploradora das instalações reconhecida pela DGEG, quando exigível pelo Decreto-Lei n.º 125/97 de 23 de maio, na sua atual redação	3	0		
+CAI	Para o equipamento sob pressão, certificado de aprovação da instalação, nos termos do Decreto-Lei n.º 131/2019, de 30 de agosto, na sua atual redação	3	0		
+DSECI	Descrição sumária do estado de conservação do imóvel e da utilização futura do terreno	2	1		
+PDIPD	Peças desenhadas demonstrativas das técnicas de demolição e das estruturas de contenção	2	0		
+TRPLH	Termo de responsabilidade subscrito por pessoa legalmente habilitada a ser autor de projeto	2	1		
+SRCPLH	Seguro de responsabilidade civil do técnicos autor do projeto	2	1		
+DDCI	Demonstração e declaração de conformidade da utilização prevista com as normas legais e regulamentares e da idoneidade do edifício ou sua fração autónoma para o fim pretendido	2	1		
+PLIPAU	Planta do edifício ou da fração com identificação do respetivo prédio	2	1		
+PEOOU	Peças escritas de outras operações urbanísticas	2	1		
+PETO	Planta à escala de 1:1.000 ou superior contendo os elementos técnicos definidores da operação urbanística, nomeadamente da modelação do terreno	2	1		
+CDROU	Comprovativo da data de realização da operação urbanística	2	1		
+FOTLEG	Fotografias	2	1		
+MDDEST	Memória descritiva do destaque	2	1		
+LTDEST	Levantamento topográfico do prédio, georreferenciado	2	1		
+CCA51	Cópia da certidão que ateste que o prédio em causa é anterior a 1951	2	0		
+DSI	Descrição sumária da instalação	2	2		
+PDRTRD	Peças desenhas da implantação do(s) reservatório(s) e do traçado da rede de distribuição (se aplicável)	2	0		
+DCIICI	Documento comprovativo de inscrição no Instituto da Construção e do Imobiliário (INCI) da entidade executora do projeto	2	2		
+DCDGEG	Declaração de conformidade pelo projeto emitido por técnico projetista inscrito na DGEG	2	2		
+TREIC	Termo de responsabilidade pela execução das instalações, de acordo com o n.º 3 do artigo 6º do Decreto-Lei n.º 125/97 de 23 de maio, na sua atual redação	2	2		
+ASRCAE	Apólice de seguro de responsabilidade civil, destinado a cobrir os riscos associados à atividade de exploração de instalações de abastecimento de combustíveis, previsto no n.º 3 do artigo 14º ao abrigo do Decreto-Lei n.º 267/2002, de 26 de novembro, na atual redação,	2	2		
+MDOVP	Memória descritiva elucidativa da ocupação da via pública	1	1		
+FOTOVP	Fotografias	1	1		
+PLVP	Planta(s) com a indicação da ocupação pretendida delimitada	1	1		
+CARINS	Caracterização da instalação	1	1		
+CIIEI	Certificado de inspeção das instalações emitido por uma Entidade Inspetora (EI) reconhecida pela Direção Geral de Energia e Geologia (DGEG), respeitante ao cumprimento das regras de segurança	1	1		
+FTI	Ficha técnica da instalação com indicação da capacidade prevista, das regras de segurança previstas nas Portarias n.os 451/2001, de 5 de Maio, e 460/2001, de 8 de Maio.	1	1		
+SRLIPC	Seguro de responsabilidade civil do projetista, previsto no artigo 2º da Portaria 1188/03, de 10 de outubro, na sua atual redação	1	1		
+MDLIPC	Memória descritiva do projeto de instalação de Armazenamento de Produtos de Petróleo e de Postos de Abastecimento de Combustíveis	1	1		
+LTLIPC	Planta topográfica, à escala de 1:10000 ou outra adequada, mostrando a localização da instalação	1	1		
+PDLIPC	Peças desenhadas, incluindo planta geral da Instalação, em escala não inferior a 1:1000, definindo com rigor os seus limites e as suas confrontações numa faixa de 100 m onde se identifiquem, pelo menos, as ruas e, numa faixa de 50 m adjacente à instalação, os edifícios habitados, ocupados ou que recebem público, plantas, alçados e cortes, em escala não inferior a 1:100, que definam completamente a instalação e identifiquem todos os seus elementos relevantes (nomeadamente reservatórios, tubagens, válvulas, unidades de abastecimento, respiros e sistema de recuperação de gases, drenagens e sistemas de tratamento de águas residuais, conforme aplicável)	1	1		

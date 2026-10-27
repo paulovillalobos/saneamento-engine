@@ -1,0 +1,2652 @@
+{
+ "version": "mapping-rules@1",
+ "about": "A2: how a NoPaper slot label reads as an element of the law. Ordered rules; the first whose `when` holds decides. Features computed by engine/mapping_rules.py from the slot: label (normalised), family, drawn, specialty, group_project. Derived from the governance log (mapping_lexicon and mapping_rule assertions): never edit by hand; rebuild with `python engine/mapping_rules.py --build`.",
+ "lexicon": {
+  "drawn": "pecas desenhadas|desenh|plantas?\\b|alcados|cortes\\b|pormenores|levantamento topografico|implantacao\\b",
+  "drawn_family_except": "memoria|termo|seguro|declarac|ficha|folha|indice",
+  "generic": "^(pecas desenhadas|memoria descritiva( e justificativa)?|memoria justificativa|projeto|folhas? de calculo)\\.?$",
+  "not_item_27": "dominio publico|sinalizacao|recolha de rsu|\\brsu\\b|espacos verdes|rega\\b|iluminacao publica|rede viaria|remodelacao de terrenos|demolic",
+  "prefixes": [
+   [
+    "^tr\\b\\.?\\s*",
+    "termo de responsabilidade "
+   ],
+   [
+    "^md\\b\\.?\\s*",
+    "memoria descritiva "
+   ],
+   [
+    "^(pr|pe|proj)\\b\\.?\\s*",
+    "projeto "
+   ],
+   [
+    "^dcl\\b\\.?\\s*",
+    "declaracao de habilitacao "
+   ],
+   [
+    "^pd\\b\\.?\\s*",
+    "pecas desenhadas "
+   ],
+   [
+    "^ph\\b\\s*",
+    "propriedade horizontal "
+   ]
+  ],
+  "role": "diret|fiscaliz|coordenador|empreiteir|acessibil|arquitet|topograf",
+  "specialties": [
+   [
+    "reforco sismico",
+    "V.27.i.ii"
+   ],
+   [
+    "estabilidade|escavacao|contencao|(?<!infra)(?<!infra-)estrutur|betao armado|fundac",
+    "V.27.i.i"
+   ],
+   [
+    "gestao tecnica centralizada|gestao centralizada|\\bsgtc\\b|\\bgtc\\b|automatizacao e controlo|\\bsace\\b",
+    "V.27.i.xiv"
+   ],
+   [
+    "\\bavac\\b|climatizac|ventilac|exaustao de fumos",
+    "V.27.i.xiii"
+   ],
+   [
+    "acustic|ruido",
+    "V.27.i.xii"
+   ],
+   [
+    "seguranca contra incend|\\bscie\\b|incendio",
+    "V.27.i.xi"
+   ],
+   [
+    "eletromecanic|electromecanic|elevador|ascensor|transporte de pessoas|equipamentos mecanicos",
+    "V.27.i.x"
+   ],
+   [
+    "conforto termico|comportamento termico|termic|\\breh\\b|\\brecs\\b|desempenho energetico",
+    "V.27.i.ix"
+   ],
+   [
+    "\\bited\\b|telecomunica",
+    "V.27.i.viii"
+   ],
+   [
+    "arranjos? exterio",
+    "V.27.i.vii"
+   ],
+   [
+    "aguas pluviais|aguas residuais pluviais|pluvia",
+    "V.27.i.vi"
+   ],
+   [
+    "redes? prediais|redes? de aguas?\\b|abastecimento de agua|abastecimento aguas|aguas e esgotos|agua e esgotos|aguas residuais|esgoto|saneamento|distribuicao de agua|drenagem",
+    "V.27.i.v"
+   ],
+   [
+    "\\bgas\\b|redes interiores de gas|gases combust",
+    "V.27.i.iv"
+   ],
+   [
+    "instalac\\w* eletric|instalac\\w* electric|energia eletrica|eletric|electric|\\bite\\b",
+    "V.27.i.iii"
+   ]
+  ],
+  "spellings": [
+   [
+    "resp.",
+    "responsabilidade"
+   ],
+   [
+    "desctritiva",
+    "descritiva"
+   ],
+   [
+    "director",
+    "diretor"
+   ],
+   [
+    "direccao",
+    "direcao"
+   ],
+   [
+    "electr",
+    "eletr"
+   ],
+   [
+    "projecto",
+    "projeto"
+   ],
+   [
+    "arquitectura",
+    "arquitetura"
+   ],
+   [
+    "actual",
+    "atual"
+   ],
+   [
+    "seg. resp",
+    "seguro resp"
+   ],
+   [
+    "seg. de resp",
+    "seguro de resp"
+   ]
+  ],
+  "suffixes": [
+   [
+    "\\s-\\s*md$",
+    " - memoria descritiva"
+   ],
+   [
+    "\\s-\\s*(pd\\s*)?pdf$|\\s-\\s*pd$",
+    " - pecas desenhadas"
+   ],
+   [
+    "\\s-\\s*tr( autor)?$",
+    " - termo de responsabilidade do autor"
+   ],
+   [
+    "(?:(?<=contratacao)|(?<=contratacao de)|(?<=seguro)|(?<=termo)) do$",
+    " diretor de obra"
+   ]
+  ],
+  "termo": "(?<!nos )\\btermos? (de |do |da |dos |subscrito|pel)"
+ },
+ "rules": [
+  {
+   "id": "A2-001",
+   "order": 10,
+   "when": {
+    "all": [
+     {
+      "group_project": true
+     },
+     {
+      "label_match": "^(pecas desenhadas|memoria descritiva( e justificativa)?|memoria justificativa|projeto|folhas? de calculo)\\.?$"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "$group_project",
+    "relation": "part_of",
+    "why": "a generic label: the project is the one its NoPaper group names"
+   },
+   "assertion": "mapping_rule:A2-001",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-002",
+   "order": 20,
+   "when": {
+    "label": "plano de seguranca e saude|\\bpss\\b"
+   },
+   "then": {
+    "basis": "rjue:9.12.g",
+    "part": 0,
+    "passage": null,
+    "relation": "prohibited",
+    "why": "RJUE art. 9.º n.º 12 g): municipalities may not require the health and safety plan"
+   },
+   "assertion": "mapping_rule:A2-002",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-003",
+   "order": 30,
+   "when": {
+    "label": "relatorio de seguranca"
+   },
+   "then": {
+    "basis": "rjue:9.12.h",
+    "part": 0,
+    "passage": null,
+    "relation": "prohibited",
+    "why": "RJUE art. 9.º n.º 12 h): municipalities may not require the safety report"
+   },
+   "assertion": "mapping_rule:A2-003",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-004",
+   "order": 40,
+   "when": {
+    "label": "livro de obra"
+   },
+   "then": {
+    "basis": "rjue:9.12.i",
+    "part": 0,
+    "passage": null,
+    "relation": "prohibited",
+    "why": "RJUE art. 9.º n.º 12 i): municipalities may not require the digitised works book"
+   },
+   "assertion": "mapping_rule:A2-004",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-005",
+   "order": 50,
+   "when": {
+    "label": "caderneta"
+   },
+   "then": {
+    "basis": "rjue:9.12.c",
+    "part": 0,
+    "passage": null,
+    "relation": "prohibited",
+    "why": "RJUE art. 9.º n.º 12 c): municipalities may not require the caderneta predial"
+   },
+   "assertion": "mapping_rule:A2-005",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-006",
+   "order": 60,
+   "when": {
+    "all": [
+     {
+      "label": "ficha (de )?seguranca"
+     },
+     {
+      "not": {
+       "label": "projeto"
+      }
+     },
+     {
+      "label": "termo|seguro|apolice|habilitac|declarac"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": null,
+    "relation": "no_basis_found",
+    "why": "statement, insurance or qualification of the author of the SCIE ficha: V.11, V.13 and V.14 bind the authors of projects, and no express provision extends them to the ficha (ANEPC; Codex analysis B4, an AI)"
+   },
+   "assertion": "mapping_rule:A2-006",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-007",
+   "order": 70,
+   "when": {
+    "label": "cartao (de|do) cidadao|bilhete de identidade|cedula profissional"
+   },
+   "then": {
+    "basis": "rjue:9.12.j",
+    "part": 0,
+    "passage": null,
+    "relation": "prohibited",
+    "why": "RJUE art. 9.º n.º 12 j): municipalities may not require copies of identity cards or professional cards"
+   },
+   "assertion": "mapping_rule:A2-007",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-008",
+   "order": 80,
+   "when": {
+    "label": "notificac\\w* (da|de) (camara|aprovac)|copia da notificac|alvara de (licenca|utilizac)|titulo (da|de) (operac|licenc)"
+   },
+   "then": {
+    "basis": "rjue:9.12.b",
+    "part": 0,
+    "passage": null,
+    "relation": "prohibited",
+    "why": "RJUE art. 9.º n.º 12 b): municipalities may not require copies of documents the câmara already holds (titles of operations, registers)"
+   },
+   "assertion": "mapping_rule:A2-008",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-009",
+   "order": 90,
+   "when": {
+    "label": "documentos? (de )?identificac"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": null,
+    "relation": "no_basis_found",
+    "why": "identification documents: not in Annex V; if they are copies of identity cards, RJUE art. 9.º n.º 12 j) forbids requiring them, but the label does not say"
+   },
+   "assertion": "mapping_rule:A2-009",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-010",
+   "order": 100,
+   "when": {
+    "label": "legalidade da construc"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": null,
+    "relation": "no_basis_found",
+    "why": "proof that the building is legal: not in Annex V; it may be a document the câmara already holds (RJUE art. 9.º n.º 12 b)), but the label does not say"
+   },
+   "assertion": "mapping_rule:A2-010",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-011",
+   "order": 110,
+   "when": {
+    "label": "compromisso"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": null,
+    "relation": "no_basis_found",
+    "why": "a commitment (e.g. to requalify a road): not an instruction element of Annex V item 27"
+   },
+   "assertion": "mapping_rule:A2-011",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-012",
+   "order": 120,
+   "when": {
+    "all": [
+     {
+      "label_match": "(requerimento|comunicacao previa|informacao sobre (o )?inicio dos trabalhos)\\b"
+     },
+     {
+      "not": {
+       "label": "termo|seguro|apolice"
+      }
+     }
+    ]
+   },
+   "then": {
+    "basis": "art2.1",
+    "part": 0,
+    "passage": null,
+    "relation": "general_provision",
+    "why": "the request model (Annex I), art. 2.º n.º 1"
+   },
+   "assertion": "mapping_rule:A2-012",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-013",
+   "order": 130,
+   "when": {
+    "label": "anexo i-?e|identificacao dos projetos de especialidade"
+   },
+   "then": {
+    "basis": "art2.1",
+    "part": 0,
+    "passage": null,
+    "relation": "general_provision",
+    "why": "Annex I-E of the request models, art. 2.º n.º 1"
+   },
+   "assertion": "mapping_rule:A2-013",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-014",
+   "order": 140,
+   "when": {
+    "label": "(justificac|fundamentac)\\w* .*(nao apresentac|omiss)|omissao de elementos|nao apresentacao de (elementos|documentos)"
+   },
+   "then": {
+    "basis": "art2.6",
+    "part": 0,
+    "passage": null,
+    "relation": "general_provision",
+    "why": "justified omission, art. 2.º n.º 6"
+   },
+   "assertion": "mapping_rule:A2-014",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-015",
+   "order": 150,
+   "when": {
+    "label": "documentos exigidos pela legislacao especifica|legislacao especifica"
+   },
+   "then": {
+    "basis": "art2.3",
+    "part": 0,
+    "passage": null,
+    "relation": "general_provision",
+    "why": "elements of a special law, art. 2.º n.º 3 (the norm must be cited, n.º 4)"
+   },
+   "assertion": "mapping_rule:A2-015",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-016",
+   "order": 160,
+   "when": {
+    "label": "^outros? (documentos|elementos)|^documentos diversos|elementos? (adicionais|complementares)|documentos? (adicionais|complementares)"
+   },
+   "then": {
+    "basis": "art2.5",
+    "part": 0,
+    "passage": null,
+    "relation": "voluntary",
+    "why": "the applicant may add elements, art. 2.º n.º 5"
+   },
+   "assertion": "mapping_rule:A2-016",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-017",
+   "order": 170,
+   "when": {
+    "label": "^indice\\b"
+   },
+   "then": {
+    "basis": "VI.3",
+    "part": 0,
+    "passage": null,
+    "relation": "format_provision",
+    "why": "the index of the elements, Annex VI n.º 3"
+   },
+   "assertion": "mapping_rule:A2-017",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-018",
+   "order": 180,
+   "when": {
+    "all": [
+     {
+      "label": "cores convencionais|amarelos? e vermelhos?|revestimentos e cores"
+     },
+     {
+      "drawn": true
+     }
+    ]
+   },
+   "then": {
+    "basis": "VI.5",
+    "part": 0,
+    "passage": null,
+    "relation": "format_provision",
+    "why": "conventional colours, Annex VI n.º 5"
+   },
+   "assertion": "mapping_rule:A2-018",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-019",
+   "order": 190,
+   "when": {
+    "label": "pecas desenhadas (em|no formato) pdf|em formato pdf/?a|pdf/a$"
+   },
+   "then": {
+    "basis": "VI.1.a",
+    "part": 0,
+    "passage": null,
+    "relation": "format_provision",
+    "why": "drawn pieces in PDF/A, Annex VI n.º 1 a)"
+   },
+   "assertion": "mapping_rule:A2-019",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-020",
+   "order": 200,
+   "when": {
+    "label": "\\bbim\\b|\\bifc\\b"
+   },
+   "then": {
+    "basis": "VI.1.a",
+    "part": 0,
+    "passage": null,
+    "relation": "format_provision",
+    "why": "IFC, complementary format of Annex VI n.º 1 a)"
+   },
+   "assertion": "mapping_rule:A2-020",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-021",
+   "order": 210,
+   "when": {
+    "label": "implantac\\w* .*\\bsig\\b|\\bsig\\b .*implantac"
+   },
+   "then": {
+    "basis": "VI.1.b",
+    "part": 0,
+    "passage": null,
+    "relation": "format_provision",
+    "why": "the georeferenced DWG of the site plan, Annex VI n.º 1 b)"
+   },
+   "assertion": "mapping_rule:A2-021",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-022",
+   "order": 220,
+   "when": {
+    "label": "folha de calculo"
+   },
+   "then": {
+    "basis": "VI.1.c",
+    "part": 0,
+    "passage": null,
+    "relation": "format_provision",
+    "why": "the spreadsheet of the quadro sinóptico (ODS, XLS, XLSX), Annex VI n.º 1 c)"
+   },
+   "assertion": "mapping_rule:A2-022",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-023",
+   "order": 230,
+   "when": {
+    "all": [
+     {
+      "label": "seguro|apolice"
+     },
+     {
+      "label": "acidentes de trabalho"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.n",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-023",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-024",
+   "order": 240,
+   "when": {
+    "all": [
+     {
+      "label": "seguro|apolice"
+     },
+     {
+      "label": "fiscalizac"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 1,
+    "passage": "V.27.m",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-024",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-025",
+   "order": 250,
+   "when": {
+    "all": [
+     {
+      "label": "seguro|apolice"
+     },
+     {
+      "label": "diretor de obra|diretor tecnico|direcao (tecnica )?d[ae] obra"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.m",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-025",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-026",
+   "order": 260,
+   "when": {
+    "all": [
+     {
+      "label": "seguro|apolice"
+     },
+     {
+      "label": "responsabilidade civil|tecnico|autor|coordenador|acessibil|arquitet|projeto|especialidade"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.14",
+    "relation": "part_of",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-026",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-027",
+   "order": 270,
+   "when": {
+    "label": "seguro|apolice"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": null,
+    "relation": "no_basis_found",
+    "why": "insurance the Portaria does not list (e.g. construction insurance)"
+   },
+   "assertion": "mapping_rule:A2-027",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-028",
+   "order": 280,
+   "when": {
+    "all": [
+     {
+      "any": [
+       {
+        "label": "(?<!nos )\\btermos? (de |do |da |dos |subscrito|pel)"
+       },
+       {
+        "label_match": "termo\\b"
+       }
+      ]
+     },
+     {
+      "label": "fiscalizac"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 1,
+    "passage": "V.27.k",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-028",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-029",
+   "order": 290,
+   "when": {
+    "all": [
+     {
+      "any": [
+       {
+        "label": "(?<!nos )\\btermos? (de |do |da |dos |subscrito|pel)"
+       },
+       {
+        "label_match": "termo\\b"
+       }
+      ]
+     },
+     {
+      "label": "diretor de obra|diretor tecnico|direcao (tecnica )?d[ae] obra"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.k",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-029",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-030",
+   "order": 300,
+   "when": {
+    "all": [
+     {
+      "any": [
+       {
+        "label": "(?<!nos )\\btermos? (de |do |da |dos |subscrito|pel)"
+       },
+       {
+        "label_match": "termo\\b"
+       }
+      ]
+     },
+     {
+      "all": [
+       {
+        "label": "coordenador"
+       },
+       {
+        "not": {
+         "label": "autor"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.12",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-030",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-031",
+   "order": 310,
+   "when": {
+    "all": [
+     {
+      "any": [
+       {
+        "label": "(?<!nos )\\btermos? (de |do |da |dos |subscrito|pel)"
+       },
+       {
+        "label_match": "termo\\b"
+       }
+      ]
+     },
+     {
+      "label": "levantamento topografico|topografo"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.7",
+    "relation": "part_of",
+    "why": "the survey's own statement (V.7: acompanhado por termo de responsabilidade)"
+   },
+   "assertion": "mapping_rule:A2-031",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-032",
+   "order": 320,
+   "when": {
+    "all": [
+     {
+      "any": [
+       {
+        "label": "(?<!nos )\\btermos? (de |do |da |dos |subscrito|pel)"
+       },
+       {
+        "label_match": "termo\\b"
+       }
+      ]
+     },
+     {
+      "label": "instalac\\w* eletric\\w* (temporari|de estaleiro)|estaleiro"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": null,
+    "relation": "no_basis_found",
+    "why": "statement for a temporary electrical installation, not in Annex V"
+   },
+   "assertion": "mapping_rule:A2-032",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-033",
+   "order": 330,
+   "when": {
+    "all": [
+     {
+      "any": [
+       {
+        "label": "(?<!nos )\\btermos? (de |do |da |dos |subscrito|pel)"
+       },
+       {
+        "label_match": "termo\\b"
+       }
+      ]
+     },
+     {
+      "label": "informac\\w* previa|\\bpip\\b"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.17",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-033",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-034",
+   "order": 340,
+   "when": {
+    "all": [
+     {
+      "any": [
+       {
+        "label": "(?<!nos )\\btermos? (de |do |da |dos |subscrito|pel)"
+       },
+       {
+        "label_match": "termo\\b"
+       }
+      ]
+     },
+     {
+      "label": "dominio publico|sinalizacao|recolha de rsu|\\brsu\\b|espacos verdes|rega\\b|iluminacao publica|rede viaria|remodelacao de terrenos|demolic"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.11",
+    "relation": "part_of",
+    "why": "statement of the author of a project outside item 27: V.11, the lists of its operation decide"
+   },
+   "assertion": "mapping_rule:A2-034",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-035",
+   "order": 350,
+   "when": {
+    "all": [
+     {
+      "any": [
+       {
+        "label": "(?<!nos )\\btermos? (de |do |da |dos |subscrito|pel)"
+       },
+       {
+        "label_match": "termo\\b"
+       }
+      ]
+     },
+     {
+      "specialty": "V.27.i.viii"
+     }
+    ]
+   },
+   "then": {
+    "basis": "art2.2",
+    "part": 0,
+    "passage": null,
+    "relation": "general_provision",
+    "why": "ITED statements follow DL 123/2009 (Portaria art. 2.º n.º 2)"
+   },
+   "assertion": "mapping_rule:A2-035",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-036",
+   "order": 360,
+   "when": {
+    "any": [
+     {
+      "label": "(?<!nos )\\btermos? (de |do |da |dos |subscrito|pel)"
+     },
+     {
+      "label_match": "termo\\b"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.11",
+    "relation": "part_of",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-036",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-037",
+   "order": 370,
+   "when": {
+    "label": "declarac\\w* (dos|do) autor\\w* e (do )?coordenador|declarac\\w* .*informac\\w* previa"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.17",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-037",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-038",
+   "order": 380,
+   "when": {
+    "all": [
+     {
+      "label": "alvara|\\bimpic\\b|\\binci\\b|titulo habilitante|certificado de empreiteiro|empreiteiro|construtor"
+     },
+     {
+      "not": {
+       "label": "diretor|director|alvara de (licenca|utilizac)"
+      }
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.j",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-038",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-039",
+   "order": 390,
+   "when": {
+    "all": [
+     {
+      "any": [
+       {
+        "label": "habilitac|associacao publica de natureza profissional|declaracao da ordem|codigo de verificac"
+       },
+       {
+        "label_match": "declarac\\w* do (autor|coordenador)\\b"
+       }
+      ]
+     },
+     {
+      "label": "topografo"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.7",
+    "relation": "part_of",
+    "why": "the surveyor's declaration that accompanies the survey"
+   },
+   "assertion": "mapping_rule:A2-039",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-040",
+   "order": 400,
+   "when": {
+    "all": [
+     {
+      "any": [
+       {
+        "label": "habilitac|associacao publica de natureza profissional|declaracao da ordem|codigo de verificac"
+       },
+       {
+        "label_match": "declarac\\w* do (autor|coordenador)\\b"
+       }
+      ]
+     },
+     {
+      "label": "fiscalizac"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 1,
+    "passage": "V.27.l",
+    "relation": "same",
+    "why": "V.27.l component: the works-inspection director, quando exista"
+   },
+   "assertion": "mapping_rule:A2-040",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-041",
+   "order": 410,
+   "when": {
+    "all": [
+     {
+      "any": [
+       {
+        "label": "habilitac|associacao publica de natureza profissional|declaracao da ordem|codigo de verificac"
+       },
+       {
+        "label_match": "declarac\\w* do (autor|coordenador)\\b"
+       }
+      ]
+     },
+     {
+      "label": "diretor|director|direcao"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.l",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-041",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-042",
+   "order": 420,
+   "when": {
+    "any": [
+     {
+      "label": "habilitac|associacao publica de natureza profissional|declaracao da ordem|codigo de verificac"
+     },
+     {
+      "label_match": "declarac\\w* do (autor|coordenador)\\b"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.13",
+    "relation": "part_of",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-042",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-043",
+   "order": 430,
+   "when": {
+    "label": "topografo"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.7",
+    "relation": "part_of",
+    "why": "the surveyor's declaration that accompanies the survey"
+   },
+   "assertion": "mapping_rule:A2-043",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-044",
+   "order": 440,
+   "when": {
+    "label": "contrat\\w* .*(diretor|director|direcao) (tecnico )?(de |da )?obra|diretor de obra .*contratac|empresa de construcao e o diretor"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.p",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-044",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-045",
+   "order": 450,
+   "when": {
+    "label": "certidao (permanente|do registo predial)|registo predial|codigo de acesso a certidao|caderneta|matriz predial"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.5",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-045",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-046",
+   "order": 460,
+   "when": {
+    "all": [
+     {
+      "label": "(comprovativ|documento)\\w*.*(legitimidade|qualidade de titular|titularidade|qualidade de representante)|^declarac\\w* (de )?legitimidade|procurac|mandato|declarac\\w* de autorizac|registo comercial|identificacao do proprietario|titulares de qualquer|^representante\\b"
+     },
+     {
+      "label": "autorizac|mandato|registo comercial|procurac|representante"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.a",
+    "relation": "part_of",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-046",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-047",
+   "order": 470,
+   "when": {
+    "all": [
+     {
+      "label": "(comprovativ|documento)\\w*.*(legitimidade|qualidade de titular|titularidade|qualidade de representante)|^declarac\\w* (de )?legitimidade|procurac|mandato|declarac\\w* de autorizac|registo comercial|identificacao do proprietario|titulares de qualquer|^representante\\b"
+     },
+     {
+      "not": {
+       "label": "autorizac|mandato|registo comercial|procurac|representante"
+      }
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.a",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-047",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-048",
+   "order": 480,
+   "when": {
+    "label": "plano de prevencao e gestao de residuos|\\bppgrcd\\b"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.28.b",
+    "relation": "same",
+    "why": "the PPGRCD, an element of the demolition lists (V.28 b), V.29 c), V.30 c))"
+   },
+   "assertion": "mapping_rule:A2-048",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-049",
+   "order": 490,
+   "when": {
+    "label": "cadastr\\w* propost"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.20.b.iii",
+    "relation": "same",
+    "why": "the proposed cadastre plan of a subdivision (V.18 a) iii), V.19 b) iii), V.20 b) iii))"
+   },
+   "assertion": "mapping_rule:A2-049",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-050",
+   "order": 500,
+   "when": {
+    "label": "descric\\w* pormenorizada dos lotes|quadro de transformac"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.c.iii",
+    "relation": "same",
+    "why": "the plan and table of land transformation, with the detailed description of the lots"
+   },
+   "assertion": "mapping_rule:A2-050",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-051",
+   "order": 510,
+   "when": {
+    "label": "utilizacao futura do terreno"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.28.a",
+    "relation": "same",
+    "why": "the summary of the state of conservation and future use of the land (V.28 a), V.29 b), V.30 b))"
+   },
+   "assertion": "mapping_rule:A2-051",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-052",
+   "order": 520,
+   "when": {
+    "all": [
+     {
+      "label": "\\bperf(is|il)\\b"
+     },
+     {
+      "not": {
+       "label": "alcados|cortes"
+      }
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.20.b.v",
+    "relation": "same",
+    "why": "the profiles of a subdivision (V.18 a) v), V.19 b) v), V.20 b) v)); of urbanisation works they are part of V.22 c)"
+   },
+   "assertion": "mapping_rule:A2-052",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-053",
+   "order": 530,
+   "when": {
+    "label": "pecas desenhadas d[oa] (projeto de )?loteamento"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.20.b.i",
+    "relation": "part_of",
+    "why": "the drawings of the subdivision project (V.18 a), V.19 b), V.20 b) «Projeto de loteamento, incluindo:»)"
+   },
+   "assertion": "mapping_rule:A2-053",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-054",
+   "order": 540,
+   "when": {
+    "all": [
+     {
+      "label": "que permitam caracterizar a operac"
+     },
+     {
+      "label": "escrit"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.34.c",
+    "relation": "same",
+    "why": "written and drawn pieces characterising the operation (V.34 c))"
+   },
+   "assertion": "mapping_rule:A2-054",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-055",
+   "order": 550,
+   "when": {
+    "label": "que permitam caracterizar a operac"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.22.c",
+    "relation": "part_of",
+    "why": "drawings characterising urbanisation works (V.21 b), V.22 c), V.23 c))"
+   },
+   "assertion": "mapping_rule:A2-055",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-056",
+   "order": 560,
+   "when": {
+    "label": "orcamental|mapa (de )?(resumo )?orcament"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.f",
+    "relation": "same",
+    "why": "the cost estimate as a budget summary"
+   },
+   "assertion": "mapping_rule:A2-056",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-057",
+   "order": 570,
+   "when": {
+    "all": [
+     {
+      "label": "planta (da |de )?situacao( existente)?\\b"
+     },
+     {
+      "not": {
+       "label": "localizac"
+      }
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.20.b.i",
+    "relation": "same",
+    "why": "the plan of the existing situation of an allotment or of urbanisation works (V.18–23)"
+   },
+   "assertion": "mapping_rule:A2-057",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-058",
+   "order": 580,
+   "when": {
+    "all": [
+     {
+      "label": "plantas? (de )?sintese"
+     },
+     {
+      "not": {
+       "label": "extrato"
+      }
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.20.b.vi",
+    "relation": "same",
+    "why": "the synthesis plan of an allotment (V.18–20); of urbanisation works it is part of V.21 b), V.22 c), V.23 c)"
+   },
+   "assertion": "mapping_rule:A2-058",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-059",
+   "order": 590,
+   "when": {
+    "label": "\\bestudo\\b.*(ruido|\\brgr\\b)|(ruido|\\brgr\\b).*\\bestudo\\b|regulamento geral do ruido"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.18.f",
+    "relation": "same",
+    "why": "the study under the Regulamento Geral do Ruído (V.18 f), V.19 g), V.21 g), V.22 g), V.24 g), V.25 i))"
+   },
+   "assertion": "mapping_rule:A2-059",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-060",
+   "order": 600,
+   "when": {
+    "label": "estado de conservac"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.28.a",
+    "relation": "same",
+    "why": "the summary of the state of conservation (V.28 a), V.29 b), V.30 b))"
+   },
+   "assertion": "mapping_rule:A2-060",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-061",
+   "order": 610,
+   "when": {
+    "all": [
+     {
+      "label": "projeto (de )?execucao"
+     },
+     {
+      "not": {
+       "specialty": "any"
+      }
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.31.b",
+    "relation": "same",
+    "why": "the execution project of land remodelling works (V.31 b), V.33 c))"
+   },
+   "assertion": "mapping_rule:A2-061",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-062",
+   "order": 620,
+   "when": {
+    "label": "comprovativ\\w* (de |do )?pagamento|pagamento (das|de) taxas"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.35.e",
+    "relation": "same",
+    "why": "proof of payment of the fees, an element of the start-of-works information (V.35 e), V.36 c), V.37 e), V.38 e))"
+   },
+   "assertion": "mapping_rule:A2-062",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-063",
+   "order": 630,
+   "when": {
+    "label": "(comprovativ|calculo)\\w* .*caucao|prestacao de caucao"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.35.d",
+    "relation": "same",
+    "why": "the calculation and proof of the guarantee, an element of the start-of-works information (V.35 d), V.36 b), V.37 d))"
+   },
+   "assertion": "mapping_rule:A2-063",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-064",
+   "order": 640,
+   "when": {
+    "all": [
+     {
+      "label_match": "memoria descritiva"
+     },
+     {
+      "label": "demolic|urbanizac|loteament|remodelac"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.9",
+    "relation": "part_of",
+    "why": "the memória of the operation (V.9, common to section II)"
+   },
+   "assertion": "mapping_rule:A2-064",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-065",
+   "order": 650,
+   "when": {
+    "label": "extratos? .*plano|plantas? do (pdm|plano)|plano (diretor|municipal) .*(extrato|planta)|ordenamento .*(extrato|planta)|planta de sintese do loteamento"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": null,
+    "relation": "no_basis_found",
+    "why": "extracts of plan or allotment maps: Annex V asks the memória to frame the operation in the plans (V.9 d)), not for extracts"
+   },
+   "assertion": "mapping_rule:A2-065",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-066",
+   "order": 660,
+   "when": {
+    "label": "plantas? (de |das |da |do )?(destaque|infraestruturas|ocupacao do espaco publico|sintese)\\b|planta de sintese"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": null,
+    "relation": "no_basis_found",
+    "why": "a plan for another operation (allotment synthesis, infrastructure, parcel split, occupation of the public road): Annex V item 27 does not list it"
+   },
+   "assertion": "mapping_rule:A2-066",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-067",
+   "order": 670,
+   "when": {
+    "label": "plantas? de localizac|localizacao .*escala|extrato .*localizac|ortofotomapa|planta (dos )?sistemas? de informacao geografica"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.6",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-067",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-068",
+   "order": 680,
+   "when": {
+    "all": [
+     {
+      "label": "existente|a demolir"
+     },
+     {
+      "drawn": true
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": null,
+    "relation": "no_basis_found",
+    "why": "drawings of the existing building: Annex V item 27 does not list them"
+   },
+   "assertion": "mapping_rule:A2-068",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-069",
+   "order": 690,
+   "when": {
+    "label": "planta de implantac|^implantac|levantamento topografico e implantac"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.8",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-069",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-070",
+   "order": 700,
+   "when": {
+    "label": "levantamento topografico"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.7",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-070",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-071",
+   "order": 710,
+   "when": {
+    "label": "fotogra"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.15",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-071",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-072",
+   "order": 720,
+   "when": {
+    "all": [
+     {
+      "label": "alterac\\w* no espaco publico|alterac\\w* na via publica"
+     },
+     {
+      "label": "memoria"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": null,
+    "relation": "no_basis_found",
+    "why": "a memória of works in the public space: V.8 asks for the plan of the alterations (planta dessas alterações), not a memória"
+   },
+   "assertion": "mapping_rule:A2-072",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-073",
+   "order": 730,
+   "when": {
+    "label": "alterac\\w* no espaco publico|alterac\\w* na via publica"
+   },
+   "then": {
+    "basis": null,
+    "part": 3,
+    "passage": "V.8",
+    "relation": "part_of",
+    "why": "V.8 asks for the plan of the alterations to the public road, quando houver"
+   },
+   "assertion": "mapping_rule:A2-073",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-074",
+   "order": 740,
+   "when": {
+    "label": "informac\\w* previa|\\bpip\\b"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.16",
+    "relation": "same",
+    "why": "identification of the prior favourable information procedure"
+   },
+   "assertion": "mapping_rule:A2-074",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-075",
+   "order": 750,
+   "when": {
+    "label": "acessibilidade"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.b.vi",
+    "relation": "part_of",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-075",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-076",
+   "order": 760,
+   "when": {
+    "all": [
+     {
+      "label": "propriedade horizontal"
+     },
+     {
+      "drawn": true
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.b.v",
+    "relation": "part_of",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-076",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-077",
+   "order": 770,
+   "when": {
+    "all": [
+     {
+      "label": "propriedade horizontal"
+     },
+     {
+      "not": {
+       "drawn": true
+      }
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.b.v",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-077",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-078",
+   "order": 780,
+   "when": {
+    "label": "cadastr"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.c.ii",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-078",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-079",
+   "order": 790,
+   "when": {
+    "label": "transformac\\w* fundiaria"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.c.iii",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-079",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-080",
+   "order": 800,
+   "when": {
+    "label": "cedencia de responsabilidade"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": null,
+    "relation": "no_basis_found",
+    "why": "a declaration transferring a project's authorship: not in Annex V"
+   },
+   "assertion": "mapping_rule:A2-080",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-081",
+   "order": 810,
+   "when": {
+    "label": "cedenc"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.c.i",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-081",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-082",
+   "order": 820,
+   "when": {
+    "label": "vulnerabilidade sismica"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.d",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-082",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-083",
+   "order": 830,
+   "when": {
+    "label": "calendarizac|cronograma|prazo de execuc"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.e",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-083",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-084",
+   "order": 840,
+   "when": {
+    "label": "encargos urbanisticos|simulac\\w* .*(taxa|calculo)|calculo .*taxas"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.g",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-084",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-085",
+   "order": 850,
+   "when": {
+    "label": "(estimativa|orcamento) .*(custo|obra)"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.f",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-085",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-086",
+   "order": 860,
+   "when": {
+    "label": "ausencia de pronuncia|falta de pronuncia|prova da solicitac"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.h",
+    "relation": "part_of",
+    "why": "the alternative by silence of the consulted entity (RJUE art. 13.º-A n.º 15)"
+   },
+   "assertion": "mapping_rule:A2-086",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-087",
+   "order": 870,
+   "when": {
+    "all": [
+     {
+      "label": "revestimentos e cores|cores e (dos )?materiais"
+     },
+     {
+      "not": {
+       "drawn": true
+      }
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": null,
+    "relation": "no_basis_found",
+    "why": "a separate sheet of finishes and colours: Annex V asks the elevations themselves to indicate them (V.27.b.ii)"
+   },
+   "assertion": "mapping_rule:A2-087",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-088",
+   "order": 880,
+   "when": {
+    "label": "elementos entregues (na|a) entidade"
+   },
+   "then": {
+    "basis": null,
+    "part": 1,
+    "passage": "V.27.h",
+    "relation": "same",
+    "why": "V.27.h component: the copy of the elements sent to the consulted entity (RJUE art. 13.º-B n.º 4)"
+   },
+   "assertion": "mapping_rule:A2-088",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-089",
+   "order": 890,
+   "when": {
+    "label": "\\bren\\b|reserva ecologica"
+   },
+   "then": {
+    "basis": "special:DL 166/2008 (REN)",
+    "part": 0,
+    "passage": null,
+    "relation": "special_law",
+    "why": "elements to request a REN prior communication (a special regime): not the external opinion itself"
+   },
+   "assertion": "mapping_rule:A2-089",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-090",
+   "order": 900,
+   "when": {
+    "all": [
+     {
+      "label": "parecer|autorizac\\w* ou aprovac|entidades externas|consultas? (a|as) entidades|administracao central|aprovacao do projeto por entidade"
+     },
+     {
+      "label": "nao respeitem .*localizac"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.10",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-090",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-091",
+   "order": 910,
+   "when": {
+    "all": [
+     {
+      "label": "parecer|autorizac\\w* ou aprovac|entidades externas|consultas? (a|as) entidades|administracao central|aprovacao do projeto por entidade"
+     },
+     {
+      "label": "em razao da localizac"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 2,
+    "passage": "V.27.h",
+    "relation": "same",
+    "why": "opinions by location (RJUE art. 13.º-A n.º 15): V.27.h component 2"
+   },
+   "assertion": "mapping_rule:A2-091",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-092",
+   "order": 920,
+   "when": {
+    "all": [
+     {
+      "label": "parecer|autorizac\\w* ou aprovac|entidades externas|consultas? (a|as) entidades|administracao central|aprovacao do projeto por entidade"
+     },
+     {
+      "label": "gas|entidade credenciada|inspetora"
+     }
+    ]
+   },
+   "then": {
+    "basis": "special:DL 97/2017 art. 5.º n.º 4 (gás)",
+    "part": 0,
+    "passage": null,
+    "relation": "special_law",
+    "why": "the gas inspection entity's statement: a special law, not the Portaria (research decision 12)"
+   },
+   "assertion": "mapping_rule:A2-092",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-093",
+   "order": 930,
+   "when": {
+    "label": "parecer|autorizac\\w* ou aprovac|entidades externas|consultas? (a|as) entidades|administracao central|aprovacao do projeto por entidade"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.h",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-093",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-094",
+   "order": 940,
+   "when": {
+    "label": "alvara|\\bimpic\\b|titulo habilitante|certificado de empreiteiro|empreiteiro|construtor"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.j",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-094",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-095",
+   "order": 950,
+   "when": {
+    "label": "elementos estatisticos|estatistic|\\bine\\b"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.o",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-095",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-096",
+   "order": 960,
+   "when": {
+    "label": "marcacao ce|produtos de construcao"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.q",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-096",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-097",
+   "order": 970,
+   "when": {
+    "label": "pre-?certificado|certificado energetico|\\bsce\\b|ficha n\\.?o? ?1"
+   },
+   "then": {
+    "basis": "special:DL 101-D/2020 (SCE)",
+    "part": 0,
+    "passage": null,
+    "relation": "special_law",
+    "why": "energy pre-certificate or SCE form: not in Annex V; the SCE regime may require it (research decision 12)"
+   },
+   "assertion": "mapping_rule:A2-097",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-098",
+   "order": 980,
+   "when": {
+    "label": "ficha eletrotecnica|ficha electrotecnica"
+   },
+   "then": {
+    "basis": "special:DL 96/2017 (instalações elétricas)",
+    "part": 0,
+    "passage": null,
+    "relation": "special_law",
+    "why": "electrotechnical form: a special law, not the Portaria (research decision 12)"
+   },
+   "assertion": "mapping_rule:A2-098",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-099",
+   "order": 990,
+   "when": {
+    "label": "ficha tecnica (de )?telecomunica"
+   },
+   "then": {
+    "basis": "special:DL 123/2009 (ITED)",
+    "part": 0,
+    "passage": null,
+    "relation": "special_law",
+    "why": "telecommunications technical form: the ITED regime, not the Portaria"
+   },
+   "assertion": "mapping_rule:A2-099",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-100",
+   "order": 1000,
+   "when": {
+    "any": [
+     {
+      "label": "sgifr|fogos rurais|gestao integrada de fogos|faixa de gestao de combustivel|analise de risco|pmdfc?i|defesa da floresta"
+     },
+     {
+      "all": [
+       {
+        "family": "sgifr|defesa da floresta"
+       },
+       {
+        "not": {
+         "specialty": "any"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "then": {
+    "basis": "special:DL 82/2021 arts. 60.º–61.º (SGIFR)",
+    "part": 0,
+    "passage": null,
+    "relation": "special_law",
+    "why": "SGIFR: a special law, not the Portaria; art. 2.º n.º 4 requires the municipality to cite it"
+   },
+   "assertion": "mapping_rule:A2-100",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-101",
+   "order": 1010,
+   "when": {
+    "label": "\\brcd\\b|residuos|entulhos"
+   },
+   "then": {
+    "basis": "special:DL 102-D/2020 (RCD)",
+    "part": 0,
+    "passage": null,
+    "relation": "special_law",
+    "why": "construction and demolition waste: a special law, not an instruction element of the Portaria"
+   },
+   "assertion": "mapping_rule:A2-101",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-102",
+   "order": 1020,
+   "when": {
+    "label": "pagamento"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": null,
+    "relation": "no_basis_found",
+    "why": "financial element with a possible basis in the RJUE; check applicability (Codex analysis B3, an AI): no element of Annex V, but the proof of payment is part of the title (art. 4.º-A n.º 4) and of the start of works (art. 34.º n.º 2); it cannot be a general condition of submission (art. 34.º n.º 3), and an optional slot suits payments already made"
+   },
+   "assertion": "mapping_rule:A2-102",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-103",
+   "order": 1030,
+   "when": {
+    "label": "caucao"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": null,
+    "relation": "no_basis_found",
+    "why": "financial element with a possible basis in the RJUE; check applicability (Codex analysis B3, an AI): a caução may rest on the fractioned payment of the fees of art. 117.º n.º 2; it is not a general obligation of the building prior communication"
+   },
+   "assertion": "mapping_rule:A2-103",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-104",
+   "order": 1040,
+   "when": {
+    "label": "quadro sino[pt]?tico|ficha .*(caracterizac|sintese|descricao)|sintese urbanistica"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.9",
+    "relation": "part_of",
+    "why": "planning summary: V.9 h) (quadro sinóptico) and the Annex I-C summary"
+   },
+   "assertion": "mapping_rule:A2-104",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-105",
+   "order": 1050,
+   "when": {
+    "label": "equipa multidisciplinar"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": null,
+    "relation": "no_basis_found",
+    "why": "the project team composition: not in Annex V"
+   },
+   "assertion": "mapping_rule:A2-105",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-106",
+   "order": 1060,
+   "when": {
+    "label": "kmz|ficheiro em formato|tridimensional|simulacao vertical"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": null,
+    "relation": "no_basis_found",
+    "why": "a file format or 3D model Annex VI does not prescribe"
+   },
+   "assertion": "mapping_rule:A2-106",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-107",
+   "order": 1070,
+   "when": {
+    "label": "dominio publico|sinalizacao|recolha de rsu|\\brsu\\b|espacos verdes|rega\\b|iluminacao publica|rede viaria|remodelacao de terrenos|demolic"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": null,
+    "relation": "no_basis_found",
+    "why": "a project Annex V item 27 does not list (urbanisation works, public domain, demolition…)"
+   },
+   "assertion": "mapping_rule:A2-107",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-108",
+   "order": 1080,
+   "when": {
+    "label": "^plantas?\\b|plantas? (de|dos) pisos|plantas? a escala"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.b.i",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-108",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-109",
+   "order": 1090,
+   "when": {
+    "label": "alcados"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.b.ii",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-109",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-110",
+   "order": 1100,
+   "when": {
+    "label": "\\bcortes\\b"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.b.iii",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-110",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-111",
+   "order": 1110,
+   "when": {
+    "label": "pormenores"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.b.iv",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-111",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-112",
+   "order": 1120,
+   "when": {
+    "all": [
+     {
+      "specialty": "any"
+     },
+     {
+      "all": [
+       {
+        "specialty": "V.27.i.xi"
+       },
+       {
+        "label": "ficha"
+       },
+       {
+        "label": "projeto"
+       }
+      ]
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.i.xi",
+    "relation": "same",
+    "why": "the slot holds the project or the ficha de segurança, by the building's risk category (covers component 1)"
+   },
+   "assertion": "mapping_rule:A2-112",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-113",
+   "order": 1130,
+   "when": {
+    "all": [
+     {
+      "specialty": "any"
+     },
+     {
+      "label": "ficha (de )?seguranca"
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 1,
+    "passage": "V.27.i.xi",
+    "relation": "same",
+    "why": "the ficha de segurança: V.27.i.xi component 1 (1.ª categoria de risco)"
+   },
+   "assertion": "mapping_rule:A2-113",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-114",
+   "order": 1140,
+   "when": {
+    "all": [
+     {
+      "specialty": "any"
+     },
+     {
+      "any": [
+       {
+        "label": "memoria|pecas|desenh|calculo|folhas|parecer|ficha"
+       },
+       {
+        "all": [
+         {
+          "specialty": "V.27.i.v"
+         },
+         {
+          "not": {
+           "all": [
+            {
+             "label": "agua"
+            },
+            {
+             "label": "esgoto|residuais|saneamento"
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "all": [
+         {
+          "specialty": "V.27.i.i"
+         },
+         {
+          "label": "contencao|escavacao"
+         },
+         {
+          "not": {
+           "label": "estabilidade|estrutur"
+          }
+         }
+        ]
+       },
+       {
+        "all": [
+         {
+          "specialty": "V.27.i.xiii"
+         },
+         {
+          "not": {
+           "label": "aquecimento|ar condicionado|climatizac|\\bavac\\b"
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "$specialty",
+    "relation": "part_of",
+    "why": "one part of the project (a piece, or only part of its scope)"
+   },
+   "assertion": "mapping_rule:A2-114",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-115",
+   "order": 1150,
+   "when": {
+    "specialty": "any"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "$specialty",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-115",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-116",
+   "order": 1160,
+   "when": {
+    "label": "memoria descritiva|memoria justificativa"
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.9",
+    "relation": "same",
+    "why": ""
+   },
+   "assertion": "mapping_rule:A2-116",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-117",
+   "order": 1170,
+   "when": {
+    "all": [
+     {
+      "label": "projeto de arquitetura|arquitetura|^pecas desenhadas$"
+     },
+     {
+      "drawn": true
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.27.b.i",
+    "relation": "part_of",
+    "why": "drawings of the architecture project as a whole (V.27.b)"
+   },
+   "assertion": "mapping_rule:A2-117",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A2-118",
+   "order": 1180,
+   "when": {
+    "all": [
+     {
+      "label": "projeto de arquitetura|arquitetura|^pecas desenhadas$"
+     },
+     {
+      "not": {
+       "drawn": true
+      }
+     }
+    ]
+   },
+   "then": {
+    "basis": null,
+    "part": 0,
+    "passage": "V.9",
+    "relation": "part_of",
+    "why": "architecture project as a whole: memória (V.9) and drawings (V.27.b)"
+   },
+   "assertion": "mapping_rule:A2-118",
+   "revision": 1,
+   "state": "unreviewed"
+  }
+ ]
+}

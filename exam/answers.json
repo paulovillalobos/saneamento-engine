@@ -1,0 +1,370 @@
+{
+ "version": "rjue-exam-0.1",
+ "procedure": "cp-edificacao",
+ "law": "dr:portaria:320/2026/1",
+ "review": "proposed by claude-opus-5.5 from the AI-reviewed rule pack; not human-approved",
+ "statuses": {
+  "finding": "the engine must report it",
+  "not_assessed": "the engine must say it cannot decide, naming the missing fact",
+  "provisional": "not scored until a reference check exists"
+ },
+ "dossiers": {
+  "A": [
+   {
+    "id": "dwg-site-plan",
+    "status": "finding",
+    "certain": true,
+    "artifact": true,
+    "type": "missing_complement",
+    "target": {
+     "slot": "PI"
+    },
+    "law": {
+     "ref": "VI.1.b",
+     "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+    },
+    "note": "The site plan is delivered as PDF/A only; the generator cannot produce the DWG the law adds."
+   },
+   {
+    "id": "qualified-signatures",
+    "status": "not_assessed",
+    "certain": true,
+    "type": "signature_qualification",
+    "target": {
+     "all_signed_files": true
+    },
+    "law": {
+     "ref": "VI.1",
+     "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+    },
+    "note": "Signatures use test certificates: valid, but whether they are qualified cannot be assessed (they are not)."
+   },
+   {
+    "id": "external-opinions",
+    "status": "not_assessed",
+    "certain": true,
+    "type": "conditional_requirement",
+    "target": {
+     "slot": "PAAEE"
+    },
+    "law": {
+     "ref": "V.27.h",
+     "quote": "h) Pareceres, autorizações ou aprovações das entidades externas cuja consulta seja obrigatória nos termos da lei, exceto se estas já se pronunciaram favoravelmente no âmbito de procedimento de informação prévia ou de aprovação de plano de pormenor, nos termos do n.º 2 do artigo 13.º do RJUE, caso em que é indicado o procedimento e os termos em que tal pronúncia ocorreu;"
+    },
+    "note": "Whether consulting an external entity is mandatory depends on facts (servidões, restrictions) the case does not hold."
+   },
+   {
+    "id": "gas-project",
+    "status": "not_assessed",
+    "certain": true,
+    "type": "conditional_requirement",
+    "target": {
+     "slot": "TRPIG"
+    },
+    "law": {
+     "ref": "V.27.i.iv",
+     "quote": "iv) Projeto de instalação de gás, quando exigível, nos termos da lei;"
+    },
+    "note": "'quando exigível, nos termos da lei': whether the house needs a gas project is not stated."
+   },
+   {
+    "id": "pdfa-conformance",
+    "status": "provisional",
+    "certain": false,
+    "type": "pdfa_conformance",
+    "target": {
+     "files_claiming_pdfa": true
+    },
+    "law": {
+     "ref": "VI.1.a",
+     "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    },
+    "note": "Files carry PDF/A-2b identification and an sRGB output intent; conformance is unconfirmed until a reference validator runs."
+   }
+  ],
+  "B": [
+   {
+    "id": "dwg-site-plan",
+    "status": "finding",
+    "certain": true,
+    "artifact": true,
+    "type": "missing_complement",
+    "target": {
+     "slot": "PI"
+    },
+    "law": {
+     "ref": "VI.1.b",
+     "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+    },
+    "note": "The site plan is delivered as PDF/A only; the generator cannot produce the DWG the law adds."
+   },
+   {
+    "id": "qualified-signatures",
+    "status": "not_assessed",
+    "certain": true,
+    "type": "signature_qualification",
+    "target": {
+     "all_signed_files": true
+    },
+    "law": {
+     "ref": "VI.1",
+     "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+    },
+    "note": "Signatures use test certificates: valid, but whether they are qualified cannot be assessed (they are not)."
+   },
+   {
+    "id": "external-opinions",
+    "status": "not_assessed",
+    "certain": true,
+    "type": "conditional_requirement",
+    "target": {
+     "slot": "PAAEE"
+    },
+    "law": {
+     "ref": "V.27.h",
+     "quote": "h) Pareceres, autorizações ou aprovações das entidades externas cuja consulta seja obrigatória nos termos da lei, exceto se estas já se pronunciaram favoravelmente no âmbito de procedimento de informação prévia ou de aprovação de plano de pormenor, nos termos do n.º 2 do artigo 13.º do RJUE, caso em que é indicado o procedimento e os termos em que tal pronúncia ocorreu;"
+    },
+    "note": "Whether consulting an external entity is mandatory depends on facts (servidões, restrictions) the case does not hold."
+   },
+   {
+    "id": "gas-project",
+    "status": "not_assessed",
+    "certain": true,
+    "type": "conditional_requirement",
+    "target": {
+     "slot": "TRPIG"
+    },
+    "law": {
+     "ref": "V.27.i.iv",
+     "quote": "iv) Projeto de instalação de gás, quando exigível, nos termos da lei;"
+    },
+    "note": "'quando exigível, nos termos da lei': whether the house needs a gas project is not stated."
+   },
+   {
+    "id": "pdfa-conformance",
+    "status": "provisional",
+    "certain": false,
+    "type": "pdfa_conformance",
+    "target": {
+     "files_claiming_pdfa": true
+    },
+    "law": {
+     "ref": "VI.1.a",
+     "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    },
+    "note": "Files carry PDF/A-2b identification and an sRGB output intent; conformance is unconfirmed until a reference validator runs."
+   },
+   {
+    "id": "missing-charges-estimate",
+    "status": "finding",
+    "certain": true,
+    "type": "missing_required",
+    "target": {
+     "rule": "V.27.g"
+    },
+    "law": {
+     "ref": "V.27.g",
+     "quote": "g) Estimativa dos encargos urbanísticos, nomeadamente com o cálculo da taxa pela realização, manutenção e reforço de infraestruturas urbanísticas e das compensações urbanísticas, quando aplicável, ou junção de resultado de simulação do cálculo disponibilizado pelo município;"
+    }
+   },
+   {
+    "id": "missing-photographs",
+    "status": "finding",
+    "certain": true,
+    "type": "missing_required",
+    "target": {
+     "rule": "V.15",
+     "slot": "FOTO"
+    },
+    "law": {
+     "ref": "V.15",
+     "quote": "15 - Registo fotográfico da situação existente, abrangendo o imóvel e as edificações adjacentes, quando estas existam;"
+    }
+   }
+  ],
+  "C": [
+   {
+    "id": "dwg-site-plan",
+    "status": "finding",
+    "certain": true,
+    "artifact": true,
+    "type": "missing_complement",
+    "target": {
+     "slot": "PI"
+    },
+    "law": {
+     "ref": "VI.1.b",
+     "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+    },
+    "note": "The site plan is delivered as PDF/A only; the generator cannot produce the DWG the law adds."
+   },
+   {
+    "id": "qualified-signatures",
+    "status": "not_assessed",
+    "certain": true,
+    "type": "signature_qualification",
+    "target": {
+     "all_signed_files": true
+    },
+    "law": {
+     "ref": "VI.1",
+     "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+    },
+    "note": "Signatures use test certificates: valid, but whether they are qualified cannot be assessed (they are not)."
+   },
+   {
+    "id": "external-opinions",
+    "status": "not_assessed",
+    "certain": true,
+    "type": "conditional_requirement",
+    "target": {
+     "slot": "PAAEE"
+    },
+    "law": {
+     "ref": "V.27.h",
+     "quote": "h) Pareceres, autorizações ou aprovações das entidades externas cuja consulta seja obrigatória nos termos da lei, exceto se estas já se pronunciaram favoravelmente no âmbito de procedimento de informação prévia ou de aprovação de plano de pormenor, nos termos do n.º 2 do artigo 13.º do RJUE, caso em que é indicado o procedimento e os termos em que tal pronúncia ocorreu;"
+    },
+    "note": "Whether consulting an external entity is mandatory depends on facts (servidões, restrictions) the case does not hold."
+   },
+   {
+    "id": "gas-project",
+    "status": "not_assessed",
+    "certain": true,
+    "type": "conditional_requirement",
+    "target": {
+     "slot": "TRPIG"
+    },
+    "law": {
+     "ref": "V.27.i.iv",
+     "quote": "iv) Projeto de instalação de gás, quando exigível, nos termos da lei;"
+    },
+    "note": "'quando exigível, nos termos da lei': whether the house needs a gas project is not stated."
+   },
+   {
+    "id": "pdfa-conformance",
+    "status": "provisional",
+    "certain": false,
+    "type": "pdfa_conformance",
+    "target": {
+     "files_claiming_pdfa": true
+    },
+    "law": {
+     "ref": "VI.1.a",
+     "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    },
+    "note": "Files carry PDF/A-2b identification and an sRGB output intent; conformance is unconfirmed until a reference validator runs."
+   },
+   {
+    "id": "not-a-pdf",
+    "status": "finding",
+    "certain": true,
+    "type": "not_pdf",
+    "target": {
+     "slot": "CORTES",
+     "file": "CORTES-cortes.pdf"
+    },
+    "law": {
+     "ref": "VI.1.a",
+     "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    }
+   },
+   {
+    "id": "no-pdfa-identification",
+    "status": "finding",
+    "certain": true,
+    "type": "not_pdfa",
+    "target": {
+     "slot": "MDPAP",
+     "file": "MDPAP-memoria-pdpap.pdf"
+    },
+    "law": {
+     "ref": "VI.1.a",
+     "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    }
+   },
+   {
+    "id": "unsigned-declaration",
+    "status": "finding",
+    "certain": true,
+    "type": "unsigned",
+    "target": {
+     "slot": "TRDO",
+     "file": "TRDO-termo-diretor-obra.pdf"
+    },
+    "law": {
+     "ref": "VI.1",
+     "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+    }
+   },
+   {
+    "id": "declaration-wording",
+    "status": "finding",
+    "certain": true,
+    "type": "template_wording_missing",
+    "target": {
+     "slot": "TRPARQ",
+     "file": "TRPARQ-termo-arquitetura.pdf"
+    },
+    "law": {
+     "ref": "VII.I",
+     "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+    }
+   },
+   {
+    "id": "built-area-mismatch",
+    "status": "finding",
+    "certain": true,
+    "type": "value_mismatch",
+    "target": {
+     "field": "area_total_construcao",
+     "files": [
+      "REQ-requerimento.pdf",
+      "MDARQ-memoria-descritiva.pdf"
+     ]
+    },
+    "basis": "documents",
+    "values": {
+     "REQ-requerimento.pdf": "554 m2",
+     "MDARQ-memoria-descritiva.pdf": "610 m2"
+    }
+   },
+   {
+    "id": "plot-area-typo",
+    "status": "finding",
+    "certain": true,
+    "type": "impossible_value",
+    "target": {
+     "field": "area_parcela",
+     "file": "REQ-requerimento.pdf"
+    },
+    "basis": "documents",
+    "values": {
+     "area_parcela": "120 m2",
+     "area_implantacao": "277 m2",
+     "area_permeavel": "850 m2",
+     "area_impermeabilizacao": "350 m2",
+     "MDARQ-memoria-descritiva.pdf": "1200 m2"
+    },
+    "also_accept": [
+     {
+      "type": "impossible_value",
+      "field": "area_implantacao"
+     },
+     {
+      "type": "impossible_value",
+      "field": "area_permeavel"
+     },
+     {
+      "type": "impossible_value",
+      "field": "area_impermeabilizacao"
+     },
+     {
+      "type": "value_mismatch",
+      "field": "area_parcela"
+     }
+    ],
+    "note": "One typo (1200 typed as 120) with several symptoms; any of them counts, none is a false alarm."
+   }
+  ]
+ }
+}

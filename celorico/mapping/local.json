@@ -1,0 +1,310 @@
+{
+ "version": "local-links@1",
+ "municipality": "celorico-de-basto",
+ "proposed_by": "ai:claude-opus-5.5",
+ "review": "unreviewed",
+ "rules": "rules/local/celorico-de-basto-rmou.json",
+ "note": "Which RMOU rule a NoPaper document rests on, when the law alone does not ask for it as the form does. A link with requests applies only to those requests; without, to every request.",
+ "links": [
+  {
+   "code": "PPMOT",
+   "rules": [
+    "art13.1"
+   ],
+   "why": "RMOU art. 13.º n.º 1 regulates plan extracts as compulsorily authenticated: it presupposes asking for them"
+  },
+  {
+   "code": "PPMOT",
+   "requests": [
+    "COICP"
+   ],
+   "rules": [
+    "art4.3.g"
+   ],
+   "why": "RMOU art. 4.º n.º 3 g): plan extracts for exempt works"
+  },
+  {
+   "code": "P10000",
+   "requests": [
+    "COICP"
+   ],
+   "rules": [
+    "art4.3.e",
+    "art4.3.f"
+   ],
+   "why": "RMOU art. 4.º n.º 3 e) and f): plans at 1:2.000 and 1:10.000 for exempt works"
+  },
+  {
+   "code": "FOTO",
+   "rules": [
+    "art15.2.b"
+   ],
+   "why": "RMOU art. 15.º n.º 2 b): at least two photographs"
+  },
+  {
+   "code": "ALC",
+   "rules": [
+    "art15.2.c"
+   ],
+   "why": "RMOU art. 15.º n.º 2 c): elevations with 10 m of the adjoining façades"
+  },
+  {
+   "code": "PI",
+   "rules": [
+    "art15.2.a"
+   ],
+   "why": "RMOU art. 15.º n.º 2 a): site plan with contents a1–a9"
+  },
+  {
+   "code": "LEVT",
+   "rules": [
+    "art14.2",
+    "art14.4",
+    "art15.3.c"
+   ],
+   "why": "RMOU arts. 14.º (15 m strip, coordinate system) and 15.º n.º 3 c) (DWG/DXF)"
+  },
+  {
+   "code": "EOCT",
+   "rules": [
+    "art20.1"
+   ],
+   "why": "RMOU art. 20.º: cost estimate per floor on a price per m²"
+  },
+  {
+   "code": "TEITED",
+   "requests": [
+    "AUTUTL"
+   ],
+   "rules": [
+    "art31.2.i"
+   ],
+   "why": "RMOU art. 31.º n.º 2 i): ITED execution statement for use"
+  },
+  {
+   "code": "CSCE",
+   "requests": [
+    "AUTUTL"
+   ],
+   "rules": [
+    "art31.2.l"
+   ],
+   "why": "RMOU art. 31.º n.º 2 l): energy certificate for use"
+  },
+  {
+   "code": "TREIEU",
+   "requests": [
+    "AUTUTL"
+   ],
+   "rules": [
+    "art31.2.e"
+   ],
+   "why": "RMOU art. 31.º n.º 2 e): electrical installation certificate for use"
+  },
+  {
+   "code": "DICE",
+   "requests": [
+    "AUTUTL"
+   ],
+   "rules": [
+    "art31.2.e"
+   ],
+   "why": "RMOU art. 31.º n.º 2 e): electrical installation certificate for use"
+  },
+  {
+   "code": "TFPARQ",
+   "requests": [
+    "AUTUTL"
+   ],
+   "rules": [
+    "art31.2.b"
+   ],
+   "why": "RMOU art. 31.º n.º 2 b): final drawings of the architecture project"
+  },
+  {
+   "code": "TRATF",
+   "requests": [
+    "AUTUTL"
+   ],
+   "rules": [
+    "art31.2.b"
+   ],
+   "why": "RMOU art. 31.º n.º 2 b): statement of the author of the final drawings"
+  },
+  {
+   "code": "MDTF",
+   "requests": [
+    "AUTUTL"
+   ],
+   "rules": [
+    "art31.4"
+   ],
+   "why": "RMOU art. 31.º n.º 4: memória of the changes"
+  },
+  {
+   "code": "PDAUTL",
+   "requests": [
+    "ALTUTL",
+    "UTLICP"
+   ],
+   "rules": [
+    "art33.b"
+   ],
+   "why": "RMOU art. 33.º b): drawings in conventional colours when exempt works were done"
+  },
+  {
+   "code": "MDDEST",
+   "requests": [
+    "CDEST"
+   ],
+   "rules": [
+    "art53"
+   ],
+   "why": "RMOU art. 53.º: elements of the destaque request"
+  },
+  {
+   "code": "P10000",
+   "requests": [
+    "CDEST"
+   ],
+   "rules": [
+    "art53"
+   ],
+   "why": "RMOU art. 53.º d): location plan"
+  },
+  {
+   "code": "PPMOT",
+   "requests": [
+    "CDEST"
+   ],
+   "rules": [
+    "art53"
+   ],
+   "why": "RMOU art. 53.º e): plan extracts"
+  },
+  {
+   "code": "LTDEST",
+   "requests": [
+    "CDEST"
+   ],
+   "rules": [
+    "art53"
+   ],
+   "why": "RMOU art. 53.º f): topographic survey 1:500"
+  },
+  {
+   "code": "CPA",
+   "requests": [
+    "CCA51",
+    "CPRUI"
+   ],
+   "rules": [
+    "art54.1"
+   ],
+   "why": "RMOU art. 54.º n.º 1 a): certidão or caderneta (Note: RJUE art. 9.º n.º 12 c) forbids asking the caderneta in RJUE requests)"
+  },
+  {
+   "code": "FOTCER",
+   "requests": [
+    "CCA51",
+    "CPRUI"
+   ],
+   "rules": [
+    "art54.1"
+   ],
+   "why": "RMOU art. 54.º n.º 1 b): photographs"
+  },
+  {
+   "code": "P10000",
+   "requests": [
+    "CCA51",
+    "CPRUI"
+   ],
+   "rules": [
+    "art54.1"
+   ],
+   "why": "RMOU art. 54.º n.º 1 d): location plans"
+  },
+  {
+   "code": "CEJF",
+   "requests": [
+    "CCA51",
+    "CPRUI"
+   ],
+   "rules": [
+    "art54.1"
+   ],
+   "why": "RMOU art. 54.º n.º 1 c): certificate of the parish council"
+  },
+  {
+   "code": "TRPH",
+   "requests": [
+    "CPH"
+   ],
+   "rules": [
+    "art52"
+   ],
+   "why": "RMOU art. 52.º: elements of the horizontal property request"
+  },
+  {
+   "code": "DPFA",
+   "requests": [
+    "CPH"
+   ],
+   "rules": [
+    "art52"
+   ],
+   "why": "RMOU art. 52.º c): title description"
+  },
+  {
+   "code": "PDPH",
+   "requests": [
+    "CPH"
+   ],
+   "rules": [
+    "art52"
+   ],
+   "why": "RMOU art. 52.º d): plans of the fractions"
+  },
+  {
+   "code": "MDOVP",
+   "requests": [
+    "LOVP"
+   ],
+   "rules": [
+    "art56"
+   ],
+   "why": "RMOU art. 56.º: occupation request"
+  },
+  {
+   "code": "FOTOVP",
+   "requests": [
+    "LOVP"
+   ],
+   "rules": [
+    "art56"
+   ],
+   "why": "RMOU art. 56.º: occupation request"
+  },
+  {
+   "code": "PLVP",
+   "requests": [
+    "LOVP"
+   ],
+   "rules": [
+    "art56"
+   ],
+   "why": "RMOU art. 56.º n.º 3: occupation plan"
+  },
+  {
+   "code": "P10000",
+   "requests": [
+    "LOVP"
+   ],
+   "rules": [
+    "art56.3.b"
+   ],
+   "why": "RMOU art. 56.º n.º 3 b): official location plan bought at the Câmara"
+  }
+ ]
+}

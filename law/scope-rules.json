@@ -1,0 +1,758 @@
+{
+ "version": "scope-rules@1",
+ "about": "A1: which Annex V lists govern a NoPaper request, from its labels. Ordered rules over features computed by engine/scope_rules.py with the lexicon's patterns; the first rule whose `when` holds decides. Derived from the governance log (scope_lexicon and scope_rule assertions): never edit by hand; rebuild with `python engine/scope_rules.py --build`.",
+ "lexicon": {
+  "architecture": "arquitetura",
+  "change": "alterac",
+  "communication_or_works": "comunicac|\\bobras?\\b|controlo previo",
+  "deferrable_lists": [
+   "anexo-V.26"
+  ],
+  "deferrable_when": [
+   "licenca",
+   "edificacao"
+  ],
+  "demolition_before_licence": "demolic\\w*.{0,30}escavac|escavac\\w*.{0,30}contenc|contenc\\w* periferica",
+  "exempt": "isen[tc]",
+  "exempt_or_minor": "isen[tc]|escassa relevancia",
+  "follow_up": "aperfeic|aditament|apresentac\\w* (de )?elementos|resposta (a |à )?notificac|alterac\\w* (durante a execuc|no decorrer da obra)|elementos (adicionais|complementares|em falta)|junc\\w* de (novos )?elementos|entrega de elementos|substituic\\w* de (pecas|elementos)",
+  "follow_up_basis": "decreto-lei-108-2026:anexo.art11.2",
+  "hearing_group": "audiencia previa|reclamac|alegac",
+  "legal": "legaliza|reposicao da legalidade",
+  "legal_basis": "decreto-lei-108-2026:anexo.art102-A.1",
+  "licence": "licenc|legaliza|reposicao da legalidade",
+  "lists": {
+   "comunicacao|demolicao": [
+    "anexo-V.30"
+   ],
+   "comunicacao|edificacao": [
+    "anexo-V.27"
+   ],
+   "comunicacao|loteamento": [
+    "anexo-V.20"
+   ],
+   "comunicacao|outras": [
+    "anexo-V.34"
+   ],
+   "comunicacao|remodelacao": [
+    "anexo-V.33"
+   ],
+   "comunicacao|urbanizacao": [
+    "anexo-V.23"
+   ],
+   "licenca|demolicao": [
+    "anexo-V.29"
+   ],
+   "licenca|edificacao": [
+    "anexo-V.25",
+    "anexo-V.26"
+   ],
+   "licenca|loteamento": [
+    "anexo-V.19"
+   ],
+   "licenca|remodelacao": [
+    "anexo-V.32"
+   ],
+   "licenca|urbanizacao": [
+    "anexo-V.22"
+   ],
+   "pip|demolicao": [
+    "anexo-V.28"
+   ],
+   "pip|edificacao": [
+    "anexo-V.24"
+   ],
+   "pip|loteamento": [
+    "anexo-V.18"
+   ],
+   "pip|remodelacao": [
+    "anexo-V.31"
+   ],
+   "pip|urbanizacao": [
+    "anexo-V.21"
+   ]
+  },
+  "operation": [
+   [
+    "loteamento",
+    "loteament"
+   ],
+   [
+    "urbanizacao",
+    "urbaniza"
+   ],
+   [
+    "demolicao",
+    "demoli"
+   ],
+   [
+    "remodelacao",
+    "remodelac\\w* (de )?terren|moviment\\w* de terra"
+   ],
+   [
+    "outras",
+    "outras (operac|utilizac)|utilizac\\w* do solo|instalac\\w* tecnica"
+   ],
+   [
+    "edificacao",
+    "edifica|construc|ampliac|reconstruc|\\bmuros?\\b|obras de alterac|alterac\\w* de edif|alterac\\w* de fachada"
+   ]
+  ],
+  "other_act": "utiliza|comunicac|ocupac|exploracao|combust|petrol|autorizac|ruido|publicid|aditamento|aperfeic|prorrog|averb|substitu",
+  "outside_words": "(?<!\\bao )alvara|substituic|caucao|\\bpolicia\\b|toponimia|propriedade horizontal|revalidac|conclusao (de |das )?obras|\\bimi\\b|\\bimt\\b|prorroga|averbament|certid|informac\\w* simples|reclamac|alegac|audiencia|exposic|pedido de copia|copias?\\b|consulta|desistenc|recurso|rececao|recepcao|ocupac\\w* (da via|do espaco)|ruido|ficha tecnica|vistoria|isenc\\w* de taxa|reduc\\w* de taxa|pagamento|direito a informac|renovac|arquiv|alterac\\w* de conta|atendimento|^outros$|contenc\\w* periferica|via publica|dominio publico|esclarecimento|reapreciac",
+  "partial_licence": "licenca parcial",
+  "pip": "inform\\w*\\.? previa|\\bpip\\b|\\bart\\.?\\s*o?\\s*14o?\\b",
+  "pip_1": "n\\.?\\s*o?\\s*º?\\s*1\\b|numero 1\\b|14\\.?\\s*o?\\s*º?\\s*,?\\s*n\\.?\\s*o?\\s*º?\\s*1\\b|\\bpip-?1\\b",
+  "pip_2": "n\\.?\\s*o?\\s*º?\\s*2\\b|numero 2\\b|14\\.?\\s*o?\\s*º?\\s*,?\\s*n\\.?\\s*o?\\s*º?\\s*2\\b|\\bpip-?2\\b",
+  "pip_loose": "inform\\w*\\.? previa|\\bpip|\\bart\\.?\\s*o?\\s*14o?\\b",
+  "prior_communication": "comunicac\\w* previa",
+  "sec_i": [
+   "anexo-V.1",
+   "anexo-V.2",
+   "anexo-V.3",
+   "anexo-V.4"
+  ],
+  "sec_ii": [
+   "anexo-V.5",
+   "anexo-V.6",
+   "anexo-V.7",
+   "anexo-V.8",
+   "anexo-V.9",
+   "anexo-V.10",
+   "anexo-V.11",
+   "anexo-V.12",
+   "anexo-V.13",
+   "anexo-V.14",
+   "anexo-V.15",
+   "anexo-V.16",
+   "anexo-V.17"
+  ],
+  "special_regime_procedure": "combust|petrol|radiocomunic|instalac\\w* de (infra|armazen)",
+  "special_regime_request": "recinto|espetac|espacos? (de )?jogos?|jogos e recreio|diversao|ascensor|elevador|publicidad|publicitar|309/2002|telecomunic|radiocomunic|combust|armazenamento de (produtos|combust)|instalac\\w* desportiv|carregamento (para|de) veiculos|mobilidade eletrica",
+  "specialties": "especialidade",
+  "specialties_lists": {
+   "edificacao": [
+    "anexo-V.26"
+   ],
+   "urbanizacao": [
+    "anexo-V.22"
+   ]
+  },
+  "start": {
+   "comunicacao": "anexo-V.36",
+   "licenca": "anexo-V.35"
+  },
+  "start_pip_2": "n\\.?\\s*o?\\s*º?\\s*2\\b|\\bpip-?2\\b",
+  "start_word": "inicia",
+  "title_group": "^(licencas|alvaras?|emissao|titulos?)\\b",
+  "title_label": "^(req\\.? )?(licenca|alvara|titulo)s?\\b",
+  "title_not": "substitu|averb|empreiteiro|impic|titulo de registo|industrial|alterac",
+  "title_words": "emiss\\w* (d[aeo]s? )?(alvara|licenca|recibo|titulo)|\\balvara\\b|instrucao do titulo|\\brecibo\\b",
+  "unfinished_works": "inacaba|licenca especial (para|de) (acabamentos|conclusao)",
+  "use": "utiliza",
+  "use_62c": "62\\.?\\s*o?\\s*º?\\s*-\\s*c\\b",
+  "use_of_land": "utilizac\\w* do solo",
+  "use_with_deadline": "com prazo|sem obras?\\b|62\\.?\\s*o?\\s*º?\\s*-\\s*b\\b",
+  "with_deadline": "com prazo",
+  "works_start": "inicio (d[aoe]s? )?(trabalhos?|obras?)|comunicac\\w* d[eo] inicio|\\bisit\\b"
+ },
+ "rules": [
+  {
+   "id": "A1-001",
+   "order": 10,
+   "when": {
+    "unfinished_works": true
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [],
+    "note": "special licence to finish unfinished works (RJUE art. 88.º): no Annex V list",
+    "relation": "outside_annex"
+   },
+   "assertion": "scope_rule:A1-001",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-002",
+   "order": 20,
+   "when": {
+    "demolition_before_licence": true
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [],
+    "note": "demolition, excavation and peripheral containment before the licence (RJUE art. 81.º): no Annex V list",
+    "relation": "outside_annex"
+   },
+   "assertion": "scope_rule:A1-002",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-003",
+   "order": 30,
+   "when": {
+    "partial_licence": true
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [],
+    "note": "partial licence for the structure (RJUE art. 23.º n.º 6): no Annex V list",
+    "relation": "outside_annex"
+   },
+   "assertion": "scope_rule:A1-003",
+   "revision": 2,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-004",
+   "order": 40,
+   "when": {
+    "title_issuance": true
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [],
+    "note": "issuance of the title (the old alvará stage): no Annex V list",
+    "relation": "outside_annex"
+   },
+   "assertion": "scope_rule:A1-004",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-005",
+   "order": 50,
+   "when": {
+    "outside_words": true
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [],
+    "note": "label names a step with no Annex V list",
+    "relation": "outside_annex"
+   },
+   "assertion": "scope_rule:A1-005",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-006",
+   "order": 60,
+   "when": {
+    "hearing_group": true
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [],
+    "note": "group of a hearing or complaint step (CPA): no Annex V list",
+    "relation": "outside_annex"
+   },
+   "assertion": "scope_rule:A1-006",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-007",
+   "order": 70,
+   "when": {
+    "follow_up_label": true
+   },
+   "then": {
+    "basis": [
+     "$FOLLOW_UP"
+    ],
+    "common": [],
+    "deferrable": null,
+    "lists": null,
+    "note": "improvement or addition: any element of the procedure's initial lists",
+    "relation": "inherits"
+   },
+   "assertion": "scope_rule:A1-007",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-008",
+   "order": 80,
+   "when": {
+    "special_regime": true
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [],
+    "note": "a special regime's procedure (fuel, radio, venues, lifts, advertising): its own law, no Annex V list",
+    "relation": "outside_annex"
+   },
+   "assertion": "scope_rule:A1-008",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-009",
+   "order": 90,
+   "when": {
+    "all": [
+     {
+      "specialties_only": true
+     },
+     {
+      "op_specialty": true
+     }
+    ]
+   },
+   "then": {
+    "basis": "$LEGAL_BASIS",
+    "common": [],
+    "deferrable": null,
+    "lists": "$SPECIALTIES",
+    "note": "specialty projects (RJUE art. 20.º n.º 4)",
+    "relation": "$LEGAL_OR_LAW_LIST"
+   },
+   "assertion": "scope_rule:A1-009",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-010",
+   "order": 100,
+   "when": {
+    "all": [
+     {
+      "works_start": true
+     },
+     {
+      "exempt_pip_start": true
+     }
+    ]
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [
+     "anexo-V.37"
+    ],
+    "note": "start-of-works information of works exempt after a PIP under RJUE art. 14.º n.º 2 (V.37)",
+    "relation": "law_list"
+   },
+   "assertion": "scope_rule:A1-010",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-011",
+   "order": 110,
+   "when": {
+    "all": [
+     {
+      "works_start": true
+     },
+     {
+      "works_stage": "isentas"
+     }
+    ]
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [
+     "anexo-V.38"
+    ],
+    "note": "start-of-works information of exempt works (V.38)",
+    "relation": "law_list"
+   },
+   "assertion": "scope_rule:A1-011",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-012",
+   "order": 120,
+   "when": {
+    "all": [
+     {
+      "works_start": true
+     },
+     {
+      "works_stage_in": [
+       "licenca",
+       "comunicacao"
+      ]
+     }
+    ]
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": "$START",
+    "note": "start-of-works information ({start})",
+    "relation": "law_list"
+   },
+   "assertion": "scope_rule:A1-012",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-013",
+   "order": 130,
+   "when": {
+    "works_start": true
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [],
+    "note": "start of works: the label does not say licence or prior communication",
+    "relation": "outside_annex"
+   },
+   "assertion": "scope_rule:A1-013",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-014",
+   "order": 140,
+   "when": {
+    "all": [
+     {
+      "use": true
+     },
+     {
+      "use_62c": true
+     }
+    ]
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [],
+    "note": "use under RJUE art. 62.º-C: no Annex V item names it",
+    "relation": "outside_annex"
+   },
+   "assertion": "scope_rule:A1-014",
+   "revision": 2,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-015",
+   "order": 150,
+   "when": {
+    "all": [
+     {
+      "use": true
+     },
+     {
+      "use_with_deadline": true
+     }
+    ]
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [
+     "anexo-V.40"
+    ],
+    "note": "prior communication with deadline for use (V.40, RJUE art. 62.º-B: with a deadline, or not preceded by works)",
+    "relation": "law_list"
+   },
+   "assertion": "scope_rule:A1-015",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-016",
+   "order": 160,
+   "when": {
+    "all": [
+     {
+      "use": true
+     },
+     {
+      "use_change": true
+     }
+    ]
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [],
+    "note": "change of use: the label does not say art. 62.º-A or 62.º-B (V.39 or V.40)",
+    "relation": "outside_annex"
+   },
+   "assertion": "scope_rule:A1-016",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-017",
+   "order": 170,
+   "when": {
+    "use": true
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [
+     "anexo-V.39"
+    ],
+    "note": "prior communication for use (V.39, RJUE art. 62.º-A)",
+    "relation": "law_list"
+   },
+   "assertion": "scope_rule:A1-017",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-018",
+   "order": 180,
+   "when": {
+    "exempt_works": true
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [
+     "anexo-V.38"
+    ],
+    "note": "works exempt from prior control: start-of-works information (V.38)",
+    "relation": "law_list"
+   },
+   "assertion": "scope_rule:A1-018",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-019",
+   "order": 190,
+   "when": {
+    "follow_up_group": true
+   },
+   "then": {
+    "basis": [
+     "$FOLLOW_UP"
+    ],
+    "common": [],
+    "deferrable": null,
+    "lists": null,
+    "note": "improvement or addition (by its group): any element of the procedure's initial lists",
+    "relation": "inherits"
+   },
+   "assertion": "scope_rule:A1-019",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-020",
+   "order": 200,
+   "when": {
+    "any": [
+     {
+      "stage": null
+     },
+     {
+      "all": [
+       {
+        "op": null
+       },
+       {
+        "not": {
+         "stage": "pip"
+        }
+       }
+      ]
+     },
+     {
+      "all": [
+       {
+        "not": {
+         "stage": "pip"
+        }
+       },
+       {
+        "has_lists": false
+       }
+      ]
+     }
+    ]
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [],
+    "note": "not decidable from the labels (stage {stage}, operation {op})",
+    "relation": "outside_annex"
+   },
+   "assertion": "scope_rule:A1-020",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-021",
+   "order": 210,
+   "when": {
+    "all": [
+     {
+      "stage": "pip"
+     },
+     {
+      "op": null
+     },
+     {
+      "pip_named": false
+     }
+    ]
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [],
+    "note": "in a PIP procedure, a request that names neither an operation nor a PIP",
+    "relation": "outside_annex"
+   },
+   "assertion": "scope_rule:A1-021",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-022",
+   "order": 220,
+   "when": {
+    "all": [
+     {
+      "stage": "pip"
+     },
+     {
+      "n1": true
+     },
+     {
+      "n2": false
+     }
+    ]
+   },
+   "then": {
+    "basis": [],
+    "common": "$SEC_I",
+    "deferrable": null,
+    "lists": [],
+    "note": "PIP under RJUE art. 14.º n.º 1: section I",
+    "relation": "law_list"
+   },
+   "assertion": "scope_rule:A1-022",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-023",
+   "order": 230,
+   "when": {
+    "all": [
+     {
+      "stage": "pip"
+     },
+     {
+      "n2": true
+     },
+     {
+      "n1": false
+     },
+     {
+      "has_lists": true
+     }
+    ]
+   },
+   "then": {
+    "basis": [],
+    "common": "$SEC_II",
+    "deferrable": null,
+    "lists": "$LISTS",
+    "note": "PIP under RJUE art. 14.º n.º 2",
+    "relation": "law_list"
+   },
+   "assertion": "scope_rule:A1-023",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-024",
+   "order": 240,
+   "when": {
+    "stage": "pip"
+   },
+   "then": {
+    "basis": [],
+    "common": [],
+    "deferrable": null,
+    "lists": [],
+    "note": "PIP: the label does not say n.º 1 or n.º 2 of RJUE art. 14.º",
+    "relation": "outside_annex"
+   },
+   "assertion": "scope_rule:A1-024",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-025",
+   "order": 250,
+   "when": {
+    "legal": true
+   },
+   "then": {
+    "basis": [
+     "$LEGAL"
+    ],
+    "common": "$SEC_II",
+    "deferrable": "$DEFERRABLE",
+    "lists": "$LISTS",
+    "note": "legalisation follows the elements of the licence of the operation",
+    "relation": "via_rjue"
+   },
+   "assertion": "scope_rule:A1-025",
+   "revision": 1,
+   "state": "unreviewed"
+  },
+  {
+   "id": "A1-026",
+   "order": 260,
+   "when": {
+    "all": []
+   },
+   "then": {
+    "basis": [],
+    "common": "$SEC_II",
+    "deferrable": "$DEFERRABLE",
+    "lists": "$LISTS",
+    "note": null,
+    "relation": "law_list"
+   },
+   "assertion": "scope_rule:A1-026",
+   "revision": 1,
+   "state": "unreviewed"
+  }
+ ]
+}

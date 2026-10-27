@@ -1,0 +1,5158 @@
+{
+ "version": "law-decomposition@1",
+ "law": "dr:portaria:320/2026/1",
+ "law_text": "6360dab2a0f3447cc7069031fd0a55697323c2a0687e111db32d62ae85b4020c",
+ "law_source": {
+  "subject": "dr:portaria:320/2026/1",
+  "text": "6360dab2a0f3447cc7069031fd0a55697323c2a0687e111db32d62ae85b4020c",
+  "extractor": "dr-html-blocks@1",
+  "capture": "86f218f5c61cb5559cedce520b0da7d11deac2497b4b306a364b3eab63f928cd",
+  "kind": "dr.act.rendered",
+  "origin": "https://diariodarepublica.pt/dr/detalhe/portaria/320-2026-1153698591",
+  "retrieved": "2026-10-14T10:30:30+00:00"
+ },
+ "rules_of_scope": {
+  "section_II": {
+   "text": "II - Elementos comuns aos procedimentos de licença, comunicação prévia e pedido de informação prévia requerido nos termos do n.º 2 do artigo 14.º (não aplicável às comunicações prévias com e sem prazo para a utilização ou alteração de uso de edifícios ou frações)",
+   "applies_to": "PIP of art. 14.º n.º 2, licença and comunicação prévia (sections III–VII); not the use communications (section X, excluded by the heading); not section I, IX (início dos trabalhos)"
+  },
+  "n34": {
+   "text": "8 - As utilizações do solo ou instalações técnicas cujos formulários ou elementos instrutórios sejam remetidos para o RJUE por força de legislação especial, designadamente em matéria de instalação de centros eletroprodutores de fonte de energia renovável, instalações de armazenamento de energia ou pontos de carregamento de veículos elétricos, são instruídos com os elementos constantes do n.º 34, nas situações de comunicação prévia, e com os elementos comuns previstos no anexo v à presente portaria que lhes sejam aplicáveis, sem prejuízo do disposto na respetiva legislação especial.",
+   "applies_to": "n.º 34 plus «os elementos comuns ... que lhes sejam aplicáveis» (the text does not say which)"
+  }
+ },
+ "common_elements": [
+  {
+   "id": "V.5",
+   "path": "anexo-V.5",
+   "text": "5 - Indicação do código de acesso à certidão permanente do registo predial referente ao prédio ou prédios abrangidos pela operação urbanística ou, quando omisso, a respetiva certidão negativa do registo predial, acompanhada da caderneta predial da qual constem os correspondentes artigos matriciais;",
+   "depth": 0,
+   "start": 16106,
+   "end": 16405,
+   "words": [
+    "ou",
+    "ou",
+    "quando"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.6",
+   "path": "anexo-V.6",
+   "text": "6 - Delimitação da área objeto da operação urbanística e sua área de enquadramento em planta de localização fornecida pela câmara municipal ou planta de localização à escala 1:1.000, com indicação das coordenadas geográficas dos limites da área da operação urbanística, no sistema de coordenadas geográficas utilizado pelo município, podendo ser substituída por identificação da localização na plataforma eletrónica do Sistema de Informação Geográfica do município, ou equivalente;",
+   "depth": 0,
+   "start": 16406,
+   "end": 16887,
+   "words": [
+    "ou",
+    "podendo",
+    "ou"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.7",
+   "path": "anexo-V.7",
+   "text": "7 - Levantamento topográfico georreferenciado, acompanhado por termo de responsabilidade, sempre que haja alteração da topografia ou da implantação das construções, à escala de 1:200, ou de 1:500 no caso de loteamentos, devidamente cotado, que identifique o prédio e a respetiva área, construções nela erigidas, assim como o espaço público envolvente (vias, passeios, estacionamentos, árvores e infraestruturas ou instalações aí localizadas, incluindo postes, tampas, sinalização e mobiliário urbano);",
+   "depth": 0,
+   "start": 16888,
+   "end": 17389,
+   "words": [
+    "sempre que",
+    "ou",
+    "ou",
+    "caso",
+    "ou"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.8",
+   "path": "anexo-V.8",
+   "text": "8 - Planta de implantação, desenhada sobre o levantamento topográfico, quando este for exigível, indicando a construção, as áreas permeáveis e impermeabilizadas e os respetivos materiais e, quando houver alterações na via pública, planta dessas alterações;",
+   "depth": 0,
+   "start": 17390,
+   "end": 17646,
+   "words": [
+    "quando",
+    "quando"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9",
+   "path": "anexo-V.9",
+   "text": "9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:",
+   "depth": 0,
+   "start": 17647,
+   "end": 17889,
+   "words": [
+    "em função das"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.a",
+   "path": "anexo-V.9.a",
+   "text": "a) Identificação da área objeto do pedido e descrição do contexto territorial em que se insere;",
+   "depth": 1,
+   "start": 17890,
+   "end": 17985,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.b",
+   "path": "anexo-V.9.b",
+   "text": "b) Caracterização da operação urbanística que inclua:",
+   "depth": 1,
+   "start": 17986,
+   "end": 18039,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.b.i",
+   "path": "anexo-V.9.b.i",
+   "text": "i) Programa de utilização das edificações, quando for o caso, incluindo a área a afetar aos diversos usos;",
+   "depth": 2,
+   "start": 18040,
+   "end": 18146,
+   "words": [
+    "quando",
+    "caso"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.b.ii",
+   "path": "anexo-V.9.b.ii",
+   "text": "ii) Áreas destinadas a:",
+   "depth": 2,
+   "start": 18147,
+   "end": 18170,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.b.ii.a",
+   "path": "anexo-V.9.b.ii.a",
+   "text": "ii.a) Espaços verdes e de utilização coletiva;",
+   "depth": 3,
+   "start": 18171,
+   "end": 18217,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.b.ii.b",
+   "path": "anexo-V.9.b.ii.b",
+   "text": "ii.b) Infraestruturas, incluindo estacionamento;",
+   "depth": 3,
+   "start": 18218,
+   "end": 18266,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.b.ii.c",
+   "path": "anexo-V.9.b.ii.c",
+   "text": "ii.c)Equipamentos de utilização coletiva/habitação pública, a custos controlados ou para arrendamento acessível;",
+   "depth": 3,
+   "start": 18267,
+   "end": 18379,
+   "words": [
+    "ou"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.c",
+   "path": "anexo-V.9.c",
+   "text": "c) Quando estejam previstas as áreas referidas na subalínea ii) da alínea b) do presente número, a memória descritiva deve discriminar obrigatoriamente:",
+   "depth": 1,
+   "start": 18380,
+   "end": 18532,
+   "words": [
+    "Quando"
+   ],
+   "cites": [],
+   "internal": [
+    "alínea b) do presente número"
+   ]
+  },
+  {
+   "id": "V.9.c.i",
+   "path": "anexo-V.9.c.i",
+   "text": "i) Os critérios seguidos no dimensionamento das áreas;",
+   "depth": 2,
+   "start": 18533,
+   "end": 18587,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.c.ii",
+   "path": "anexo-V.9.c.ii",
+   "text": "ii) A demonstração do cumprimento dos parâmetros de dimensionamento;",
+   "depth": 2,
+   "start": 18588,
+   "end": 18656,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.c.iii",
+   "path": "anexo-V.9.c.iii",
+   "text": "iii) Quando for o caso, os fundamentos da dispensa total ou parcial de cedência para o domínio municipal das áreas destinadas às finalidades referidas na subalínea ii) da alínea b) do presente número, nos termos dos planos territoriais aplicáveis;",
+   "depth": 2,
+   "start": 18657,
+   "end": 18904,
+   "words": [
+    "Quando",
+    "caso",
+    "ou"
+   ],
+   "cites": [],
+   "internal": [
+    "alínea b) do presente número"
+   ]
+  },
+  {
+   "id": "V.9.c.iv",
+   "path": "anexo-V.9.c.iv",
+   "text": "iv) Solução adotada para o funcionamento das redes de abastecimento de água, de energia elétrica, de saneamento, de gás e de telecomunicações e suas ligações às redes gerais, quando for o caso;",
+   "depth": 2,
+   "start": 18905,
+   "end": 19098,
+   "words": [
+    "quando",
+    "caso"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.c.v",
+   "path": "anexo-V.9.c.v",
+   "text": "v) Estrutura viária adotada, especificando as áreas destinadas às vias, acessos e estacionamentos de veículos, incluindo as previstas em estrutura edificada, quando for o caso.",
+   "depth": 2,
+   "start": 19099,
+   "end": 19275,
+   "words": [
+    "quando",
+    "caso"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.d",
+   "path": "anexo-V.9.d",
+   "text": "d) Enquadramento da pretensão nos planos territoriais aplicáveis, discriminando:",
+   "depth": 1,
+   "start": 19276,
+   "end": 19356,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.d.i",
+   "path": "anexo-V.9.d.i",
+   "text": "i) As classes e as categorias de solo que ocorrem na área de intervenção;",
+   "depth": 2,
+   "start": 19357,
+   "end": 19430,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.d.ii",
+   "path": "anexo-V.9.d.ii",
+   "text": "ii) A identificação de outras regras de uso do solo aplicáveis na área de intervenção;",
+   "depth": 2,
+   "start": 19431,
+   "end": 19517,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.d.iii",
+   "path": "anexo-V.9.d.iii",
+   "text": "iii) A identificação de cada um dos parâmetros, índices e outros critérios urbanísticos previstos em plano territorial aplicável, bem como a demonstração devidamente fundamentada e circunstanciada do cumprimento de cada um dos mesmos, com menção expressa ao artigo do regulamento em que o mesmo se encontra previsto.",
+   "depth": 2,
+   "start": 19518,
+   "end": 19834,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.e",
+   "path": "anexo-V.9.e",
+   "text": "e) Enquadramento da pretensão no conjunto de servidões administrativas e restrições de utilidade pública que ocorrem na área de intervenção:",
+   "depth": 1,
+   "start": 19835,
+   "end": 19975,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.e.i",
+   "path": "anexo-V.9.e.i",
+   "text": "i) Identificação de cada uma das condicionantes que abrange a operação urbanística;",
+   "depth": 2,
+   "start": 19976,
+   "end": 20059,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.e.ii",
+   "path": "anexo-V.9.e.ii",
+   "text": "ii) Demonstração da adequação da operação urbanística relativamente ao regime de uso do solo resultante de cada uma das condicionantes que abrange a operação urbanística, com menção expressa ao diploma legal em que a mesma se encontra prevista;",
+   "depth": 2,
+   "start": 20060,
+   "end": 20304,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.f",
+   "path": "anexo-V.9.f",
+   "text": "f) Enquadramento da pretensão em outras normas legais e regulamentares aplicáveis, para efeitos dos artigos 20.º e 21.º do RJUE, bem como a expressa indicação das normas técnicas ou regulamentares em vigor que não foram observadas, fundamentando as razões da sua não observância, e evidenciando as respetivas medidas de mitigação, quando for o caso;",
+   "depth": 1,
+   "start": 20305,
+   "end": 20654,
+   "words": [
+    "ou",
+    "quando",
+    "caso"
+   ],
+   "cites": [
+    "RJUE"
+   ],
+   "internal": []
+  },
+  {
+   "id": "V.9.g",
+   "path": "anexo-V.9.g",
+   "text": "g) Justificação das opções técnicas e da integração urbana e paisagística da operação na envolvente da área de intervenção, incluindo obrigatoriamente a forma como a operação urbanística se articula:",
+   "depth": 1,
+   "start": 20655,
+   "end": 20854,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.g.i",
+   "path": "anexo-V.9.g.i",
+   "text": "i) Com a morfologia e tecido urbanos da envolvente;",
+   "depth": 2,
+   "start": 20855,
+   "end": 20906,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.g.ii",
+   "path": "anexo-V.9.g.ii",
+   "text": "ii) Com os elementos com relevância patrimonial, arqueológica, histórica e cultural que ocorram na envolvente;",
+   "depth": 2,
+   "start": 20907,
+   "end": 21017,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.g.iii",
+   "path": "anexo-V.9.g.iii",
+   "text": "iii) Com os espaços de uso público da envolvente;",
+   "depth": 2,
+   "start": 21018,
+   "end": 21067,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.g.iv",
+   "path": "anexo-V.9.g.iv",
+   "text": "iv) Com a via pública, as infraestruturas e os equipamentos existentes na envolvente e, quando se trate de operação de loteamento ou operação de impacto relevante ou semelhante a loteamento, a demonstração da suficiência da rede viária ou a proposta para o seu reforço através de obras de urbanização;",
+   "depth": 2,
+   "start": 21068,
+   "end": 21369,
+   "words": [
+    "quando",
+    "ou",
+    "ou",
+    "ou"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.g.v",
+   "path": "anexo-V.9.g.v",
+   "text": "v) Com o dimensionamento das redes de infraestruturas, evidenciando a suficiência destas para servir adequadamente as necessidades decorrentes da utilização dos edifícios previstos na operação urbanística ou a construir na sequência desta, ou propondo o respetivo reforço através de obras de urbanização;",
+   "depth": 2,
+   "start": 21370,
+   "end": 21674,
+   "words": [
+    "ou",
+    "ou"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.h",
+   "path": "anexo-V.9.h",
+   "text": "h) Quadro sinóptico que indique todos os elementos quantitativos necessários à demonstração do cumprimento dos parâmetros e índices urbanísticos constantes dos planos territoriais aplicáveis, incluindo obrigatoriamente a superfície total do terreno objeto da operação urbanística e, em função da operação urbanística em causa, os valores totais e parciais, desdobrados por edifício e por lote ou parcela, da área de implantação, da área de construção, da volumetria, do número de pisos, da altura da fachada, da altura da edificação, da área permeável, da área de impermeabilização, do número de fogos, com especificação dos destinados a habitação pública, de custos controlados ou para arrendamento acessível, do número de lugares de estacionamento, das áreas a afetar a cada um dos usos pretendidos, das áreas destinadas a espaços verdes e de utilização coletiva, infraestruturas viárias, equipamentos e habitação pública, de custos controlados ou para arrendamento acessível;",
+   "depth": 1,
+   "start": 21675,
+   "end": 22653,
+   "words": [
+    "em função da",
+    "ou",
+    "ou",
+    "ou"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.i",
+   "path": "anexo-V.9.i",
+   "text": "i) Quando se trate de operações de loteamento:",
+   "depth": 1,
+   "start": 22654,
+   "end": 22700,
+   "words": [
+    "Quando"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.i.i",
+   "path": "anexo-V.9.i.i",
+   "text": "i) Número de lotes e respetivas áreas, bem como as áreas e os condicionamentos relativos à implantação dos edifícios e construções anexas;",
+   "depth": 2,
+   "start": 22701,
+   "end": 22839,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.i.ii",
+   "path": "anexo-V.9.i.ii",
+   "text": "ii) Área de construção e volumetria dos edifícios, número de pisos e de fogos de cada um dos lotes, com especificação dos fogos destinados a habitações a custos controlados, quando previstos, e com indicação dos índices urbanísticos adotados, nomeadamente a distribuição percentual das diferentes ocupações propostas para o solo, os índices de implantação e de construção e a densidade habitacional, quando for o caso;",
+   "depth": 2,
+   "start": 22840,
+   "end": 23258,
+   "words": [
+    "quando",
+    "quando",
+    "caso"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.i.iii",
+   "path": "anexo-V.9.i.iii",
+   "text": "iii) Redes de infraestruturas e sobrecarga que a pretensão pode implicar, no caso de operações de loteamento em área não abrangida por plano de pormenor;",
+   "depth": 2,
+   "start": 23259,
+   "end": 23412,
+   "words": [
+    "caso"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.i.iv",
+   "path": "anexo-V.9.i.iv",
+   "text": "iv) Solução adotada para o funcionamento das redes de abastecimento de água, de energia elétrica, de saneamento, de gás e de telecomunicações e suas ligações às redes gerais, quando for o caso;",
+   "depth": 2,
+   "start": 23413,
+   "end": 23606,
+   "words": [
+    "quando",
+    "caso"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.9.i.v",
+   "path": "anexo-V.9.i.v",
+   "text": "v) Estrutura viária adotada, especificando as áreas destinadas às vias, acessos e estacionamentos de veículos, incluindo as previstas em estrutura edificada, quando for o caso;",
+   "depth": 2,
+   "start": 23607,
+   "end": 23783,
+   "words": [
+    "quando",
+    "caso"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.10",
+   "path": "anexo-V.10",
+   "text": "10 - Pareceres, autorizações ou aprovações que não respeitem a aspetos relacionados com a localização;",
+   "depth": 0,
+   "start": 23784,
+   "end": 23886,
+   "words": [
+    "ou"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.11",
+   "path": "anexo-V.11",
+   "text": "11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;",
+   "depth": 0,
+   "start": 23887,
+   "end": 24030,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.12",
+   "path": "anexo-V.12",
+   "text": "12 - Termo de responsabilidade do coordenador de projeto quanto à garantia de compatibilidade entre os diversos projetos;",
+   "depth": 0,
+   "start": 24031,
+   "end": 24152,
+   "words": [],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.13",
+   "path": "anexo-V.13",
+   "text": "13 - Declaração de habilitação profissional que permita a verificação das competências profissionais detidas pelos técnicos autores dos projetos e técnico coordenador, nos termos previstos nos n.os 3 e 4 do artigo 10.º do RJUE e da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional;",
+   "depth": 0,
+   "start": 24153,
+   "end": 24521,
+   "words": [
+    "em caso de"
+   ],
+   "cites": [
+    "Lei n.º 31/2009",
+    "artigo 10.º do RJUE"
+   ],
+   "internal": []
+  },
+  {
+   "id": "V.14",
+   "path": "anexo-V.14",
+   "text": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;",
+   "depth": 0,
+   "start": 24522,
+   "end": 24696,
+   "words": [],
+   "cites": [
+    "Lei n.º 31/2009"
+   ],
+   "internal": []
+  },
+  {
+   "id": "V.15",
+   "path": "anexo-V.15",
+   "text": "15 - Registo fotográfico da situação existente, abrangendo o imóvel e as edificações adjacentes, quando estas existam;",
+   "depth": 0,
+   "start": 24697,
+   "end": 24815,
+   "words": [
+    "quando"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.16",
+   "path": "anexo-V.16",
+   "text": "16 - Sempre que a operação urbanística tenha sido antecedida de uma informação prévia favorável, deve ser identificado o respetivo procedimento;",
+   "depth": 0,
+   "start": 24816,
+   "end": 24960,
+   "words": [
+    "Sempre que"
+   ],
+   "cites": [],
+   "internal": []
+  },
+  {
+   "id": "V.17",
+   "path": "anexo-V.17",
+   "text": "17 - Aplicando-se o ponto anterior, deve o termo de responsabilidade dos autores e coordenador dos projetos declarar que a operação respeita os termos e condições constantes daquela informação.",
+   "depth": 0,
+   "start": 24961,
+   "end": 25154,
+   "words": [
+    "Aplicando-se"
+   ],
+   "cites": [],
+   "internal": [
+    "ponto anterior"
+   ]
+  }
+ ],
+ "procedures": [
+  {
+   "id": "V.I",
+   "name": "Elementos instrutórios para pedido de informação prévia requerido nos termos do n.º 1 do artigo 14.º do RJUE",
+   "heading": "I - Elementos instrutórios para pedido de informação prévia requerido nos termos do n.º 1 do artigo 14.º do RJUE",
+   "section": "I - Elementos instrutórios para pedido de informação prévia requerido nos termos do n.º 1 do artigo 14.º do RJUE",
+   "common": "no",
+   "elements": [
+    {
+     "id": "V.1",
+     "path": "anexo-V.1",
+     "text": "1 - Indicação do código de acesso à certidão permanente do registo predial referente ao prédio ou prédios abrangidos pela operação urbanística ou, quando omisso, a respetiva certidão negativa do registo predial, acompanhada da caderneta predial da qual constem os correspondentes artigos matriciais;",
+     "depth": 0,
+     "start": 15050,
+     "end": 15349,
+     "words": [
+      "ou",
+      "ou",
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.2",
+     "path": "anexo-V.2",
+     "text": "2 - Delimitação da área objeto da operação urbanística e sua área de enquadramento em planta de localização fornecida pela câmara municipal ou planta de localização à escala 1:1.000;",
+     "depth": 0,
+     "start": 15350,
+     "end": 15532,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.3",
+     "path": "anexo-V.3",
+     "text": "3 - Memória descritiva e justificativa que descreva sucintamente a operação urbanística ou operações urbanísticas diretamente relacionadas;",
+     "depth": 0,
+     "start": 15533,
+     "end": 15672,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.4",
+     "path": "anexo-V.4",
+     "text": "4 - Facultativamente, o requerente pode apresentar as peças desenhadas necessárias à demonstração da pretensão, à escala 1:200 ou à escala 1:500 no caso de loteamentos.",
+     "depth": 0,
+     "start": 15673,
+     "end": 15841,
+     "words": [
+      "Facultativamente",
+      "ou",
+      "caso"
+     ],
+     "cites": [],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.18",
+   "name": "Pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, para operação de loteamento",
+   "heading": "18 - Pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, para operação de loteamento:",
+   "section": "III - Elementos instrutórios específicos aplicáveis à operação de loteamento",
+   "common": "yes",
+   "elements": [
+    {
+     "id": "V.18",
+     "path": "anexo-V.18",
+     "text": "18 - Pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, para operação de loteamento:",
+     "depth": 0,
+     "start": 25232,
+     "end": 25337,
+     "words": [],
+     "cites": [
+      "n.º 2 do artigo 14.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.18.a",
+     "path": "anexo-V.18.a",
+     "text": "a) Projeto de loteamento, incluindo:",
+     "depth": 1,
+     "start": 25338,
+     "end": 25374,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.18.a.i",
+     "path": "anexo-V.18.a.i",
+     "text": "i) Planta da situação existente, à escala de 1:1.000 ou superior, correspondente ao estado e uso atual do terreno e de uma faixa envolvente com dimensão adequada à avaliação da integração da operação na área em que se insere, com indicação dos valores naturais e construídos, de servidões administrativas e restrições de utilidade pública e infraestruturas existentes;",
+     "depth": 2,
+     "start": 25375,
+     "end": 25743,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.18.a.ii",
+     "path": "anexo-V.18.a.ii",
+     "text": "ii) Planta do cadastro atual, à escala de 1:1.000 ou superior;",
+     "depth": 2,
+     "start": 25744,
+     "end": 25806,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.18.a.iii",
+     "path": "anexo-V.18.a.iii",
+     "text": "iii) Planta do cadastro proposto, à escala de 1:1.000 ou superior;",
+     "depth": 2,
+     "start": 25807,
+     "end": 25873,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.18.a.iv",
+     "path": "anexo-V.18.a.iv",
+     "text": "iv) Planta e quadro de transformação fundiária, com a descrição pormenorizada dos lotes com a indicação dos artigos matriciais de proveniência e áreas de cedência;",
+     "depth": 2,
+     "start": 25874,
+     "end": 26037,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.18.a.v",
+     "path": "anexo-V.18.a.v",
+     "text": "v) Perfis longitudinais e transversais do loteamento, com representação da situação existente e proposta relativamente à modelação do terreno, ao edificado e ao espaço público, bem como da relação destes com a envolvente em termos que permitam demonstrar a sua integração, devidamente identificados em planta;",
+     "depth": 2,
+     "start": 26038,
+     "end": 26347,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.18.a.vi",
+     "path": "anexo-V.18.a.vi",
+     "text": "vi) Planta síntese do loteamento, à escala de 1:1.000 ou superior, podendo ser desdobrada por temas, indicando, nomeadamente, a modelação proposta para o terreno, a estrutura viária, as redes de abastecimento de água e de saneamento, de energia elétrica, de gás e de condutas destinadas à instalação de infraestruturas de telecomunicações e a respetiva ligação às infraestruturas existentes, bem como os resíduos sólidos urbanos e ainda a divisão em lotes e sua numeração, finalidade, áreas de implantação e de construção, número de pisos acima e abaixo da cota de soleira e número de fogos, com especificação dos destinados a habitação pública, a custos controlados ou para arrendamento acessível, quando previstos, e a localização dos equipamentos de utilização coletiva e das áreas que lhes sejam destinadas, bem como das áreas para espaços verdes e de utilização coletiva, com indicação das áreas sujeitas a ónus de utilização coletiva;",
+     "depth": 2,
+     "start": 26348,
+     "end": 27288,
+     "words": [
+      "ou",
+      "podendo",
+      "ou",
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.18.a.vii",
+     "path": "anexo-V.18.a.vii",
+     "text": "vii) Plano de acessibilidades, que integrando peças escritas e desenhadas, permita evidenciar as opções de projeto em matéria de garantia do acesso aos utilizadores com mobilidade reduzida, apresentando a rede de espaços e equipamentos acessíveis, existente ou proposta, para a área objeto da operação urbanística, comprovando que a execução da operação se conforma com o regime jurídico da acessibilidade;",
+     "depth": 2,
+     "start": 27289,
+     "end": 27695,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.18.a.viii",
+     "path": "anexo-V.18.a.viii",
+     "text": "viii) Planta com indicação das áreas de cedência destinadas a:",
+     "depth": 2,
+     "start": 27696,
+     "end": 27758,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.18.a.viii.a",
+     "path": "anexo-V.18.a.viii.a",
+     "text": "viii.a)Espaços verdes e de utilização coletiva;",
+     "depth": 3,
+     "start": 27759,
+     "end": 27806,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.18.a.viii.b",
+     "path": "anexo-V.18.a.viii.b",
+     "text": "viii.b)Infraestruturas, incluindo estacionamento;",
+     "depth": 3,
+     "start": 27807,
+     "end": 27856,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.18.a.viii.c",
+     "path": "anexo-V.18.a.viii.c",
+     "text": "viii.c)Equipamentos de utilização coletiva/habitação pública, a custos controlados ou para arrendamento acessível;",
+     "depth": 3,
+     "start": 27857,
+     "end": 27971,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.18.a.ix",
+     "path": "anexo-V.18.a.ix",
+     "text": "ix) Quadros com as medições das áreas identificadas no ponto anterior, exceto se não houver lugar a cedências para esses fins nos termos do n.º 5 do artigo 44.º do RJUE, caso em que deve ser indicado em memória descritiva o valor e a forma de pagamento da compensação;",
+     "depth": 2,
+     "start": 27972,
+     "end": 28240,
+     "words": [
+      "exceto",
+      "caso"
+     ],
+     "cites": [
+      "n.º 5 do artigo 44.º do RJUE"
+     ],
+     "internal": [
+      "ponto anterior"
+     ]
+    },
+    {
+     "id": "V.18.b",
+     "path": "anexo-V.18.b",
+     "text": "b) Estimativa dos encargos urbanísticos, nomeadamente com o cálculo da taxa pela realização, manutenção e reforço de infraestruturas urbanísticas e das compensações urbanísticas, quando aplicável, ou junção de resultado de simulação do cálculo disponibilizado pelo município;",
+     "depth": 1,
+     "start": 28241,
+     "end": 28516,
+     "words": [
+      "quando",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.18.c",
+     "path": "anexo-V.18.c",
+     "text": "c) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos, quando a operação de loteamento inclua obras de urbanização;",
+     "depth": 1,
+     "start": 28517,
+     "end": 28668,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.18.d",
+     "path": "anexo-V.18.d",
+     "text": "d) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil, quando a operação de loteamento inclua obras de urbanização;",
+     "depth": 1,
+     "start": 28669,
+     "end": 28975,
+     "words": [
+      "ou",
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.18.e",
+     "path": "anexo-V.18.e",
+     "text": "e) Imagens resultantes de simulação virtual tridimensional fidedigna, com enquadramento adequado, e que permitam compreender as características fundamentais da operação, nos casos em que seja exigida discussão pública;",
+     "depth": 1,
+     "start": 28976,
+     "end": 29194,
+     "words": [
+      "nos casos"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.18.f",
+     "path": "anexo-V.18.f",
+     "text": "f) Estudo que ateste que a execução da operação de loteamento se conforma com o Regulamento Geral do Ruído, aprovado pelo Decreto-Lei n.º 9/2007, de 17 de janeiro, contendo informação acústica relativa à situação atual e à decorrente da execução da operação, e termo de responsabilidade do respetivo técnico;",
+     "depth": 1,
+     "start": 29195,
+     "end": 29503,
+     "words": [],
+     "cites": [
+      "Decreto-Lei n.º 9/2007"
+     ],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.19",
+   "name": "Licença para operação de loteamento",
+   "heading": "19 - Licença para operação de loteamento:",
+   "section": "III - Elementos instrutórios específicos aplicáveis à operação de loteamento",
+   "common": "yes",
+   "elements": [
+    {
+     "id": "V.19",
+     "path": "anexo-V.19",
+     "text": "19 - Licença para operação de loteamento:",
+     "depth": 0,
+     "start": 29504,
+     "end": 29545,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.19.a",
+     "path": "anexo-V.19.a",
+     "text": "a) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da operação ou da atribuição dos poderes necessários para agir em sua representação, sempre que tal comprovação não resulte diretamente do n.º 5 do presente anexo;",
+     "depth": 1,
+     "start": 29546,
+     "end": 29823,
+     "words": [
+      "ou",
+      "sempre que"
+     ],
+     "cites": [],
+     "internal": [
+      "n.º 5 do presente anexo"
+     ]
+    },
+    {
+     "id": "V.19.b",
+     "path": "anexo-V.19.b",
+     "text": "b) Projeto de loteamento, incluindo:",
+     "depth": 1,
+     "start": 29824,
+     "end": 29860,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.19.b.i",
+     "path": "anexo-V.19.b.i",
+     "text": "i) Planta da situação existente, à escala de 1:1.000 ou superior, correspondente ao estado e uso atual do terreno e de uma faixa envolvente com dimensão adequada à avaliação da integração da operação na área em que se insere, com indicação dos valores naturais e construídos, de servidões administrativas e restrições de utilidade pública e infraestruturas existentes;",
+     "depth": 2,
+     "start": 29861,
+     "end": 30229,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.19.b.ii",
+     "path": "anexo-V.19.b.ii",
+     "text": "ii) Planta do cadastro atual, à escala de 1:1.000 ou superior;",
+     "depth": 2,
+     "start": 30230,
+     "end": 30292,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.19.b.iii",
+     "path": "anexo-V.19.b.iii",
+     "text": "iii) Planta do cadastro proposto, à escala de 1:1000 ou superior;",
+     "depth": 2,
+     "start": 30293,
+     "end": 30358,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.19.b.iv",
+     "path": "anexo-V.19.b.iv",
+     "text": "iv) Planta e quadro de transformação fundiária, com a descrição pormenorizada dos lotes com a indicação dos artigos matriciais de proveniência e áreas de cedência;",
+     "depth": 2,
+     "start": 30359,
+     "end": 30522,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.19.b.v",
+     "path": "anexo-V.19.b.v",
+     "text": "v) Perfis longitudinais e transversais do loteamento, com representação da situação existente e proposta relativamente à modelação do terreno, ao edificado e ao espaço público, bem como da relação destes com a envolvente em termos que permitam demonstrar a sua integração, devidamente identificados em planta;",
+     "depth": 2,
+     "start": 30523,
+     "end": 30832,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.19.b.vi",
+     "path": "anexo-V.19.b.vi",
+     "text": "vi) Planta síntese do loteamento, à escala de 1:1.000 ou superior, podendo ser desdobrada por temas, indicando, nomeadamente, a modelação proposta para o terreno, a estrutura viária, as redes de abastecimento de água e de saneamento, de energia elétrica, de gás e de condutas destinadas à instalação de infraestruturas de telecomunicações e a respetiva ligação às infraestruturas existentes, bem como os resíduos sólidos urbanos e ainda a divisão em lotes e sua numeração, finalidade, áreas de implantação e de construção, número de pisos acima e abaixo da cota de soleira e número de fogos, com especificação dos destinados a habitação pública, a custos controlados ou para arrendamento acessível, quando previstos, e a localização dos equipamentos de utilização coletiva e das áreas que lhes sejam destinadas, bem como das áreas para espaços verdes e de utilização coletiva, com indicação das áreas sujeitas a ónus de utilização coletiva;",
+     "depth": 2,
+     "start": 30833,
+     "end": 31773,
+     "words": [
+      "ou",
+      "podendo",
+      "ou",
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.19.b.vii",
+     "path": "anexo-V.19.b.vii",
+     "text": "vii) Plano de acessibilidades que, integrando peças escritas e desenhadas, permita evidenciar as opções de projeto em matéria de garantia do acesso aos utilizadores com mobilidade reduzida, apresentando a rede de espaços e equipamentos acessíveis, existente ou proposta, para a área objeto da operação urbanística, comprovando que a execução da operação se conforma com o regime jurídico da acessibilidade;",
+     "depth": 2,
+     "start": 31774,
+     "end": 32180,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.19.b.viii",
+     "path": "anexo-V.19.b.viii",
+     "text": "viii) Planta com indicação das áreas de cedência destinadas a:",
+     "depth": 2,
+     "start": 32181,
+     "end": 32243,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.19.b.viii.a",
+     "path": "anexo-V.19.b.viii.a",
+     "text": "viii.a)Espaços verdes e de utilização coletiva;",
+     "depth": 3,
+     "start": 32244,
+     "end": 32291,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.19.b.viii.b",
+     "path": "anexo-V.19.b.viii.b",
+     "text": "viii.b)Infraestruturas, incluindo estacionamento;",
+     "depth": 3,
+     "start": 32292,
+     "end": 32341,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.19.b.viii.c",
+     "path": "anexo-V.19.b.viii.c",
+     "text": "viii.c)Equipamentos de utilização coletiva/habitação pública, a custos controlados ou para arrendamento acessível;",
+     "depth": 3,
+     "start": 32342,
+     "end": 32456,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.19.b.ix",
+     "path": "anexo-V.19.b.ix",
+     "text": "ix) Quadros com as medições das áreas identificadas no ponto anterior, exceto se não houver lugar a cedências para esses fins nos termos do n.º 5 do artigo 44.º do RJUE, caso em que deve ser indicado em memória descritiva o valor e a forma de pagamento da compensação;",
+     "depth": 2,
+     "start": 32457,
+     "end": 32725,
+     "words": [
+      "exceto",
+      "caso"
+     ],
+     "cites": [
+      "n.º 5 do artigo 44.º do RJUE"
+     ],
+     "internal": [
+      "ponto anterior"
+     ]
+    },
+    {
+     "id": "V.19.c",
+     "path": "anexo-V.19.c",
+     "text": "c) Estimativa dos encargos urbanísticos, nomeadamente com o cálculo da taxa pela realização, manutenção e reforço de infraestruturas urbanísticas e das compensações urbanísticas, quando aplicável, ou junção de resultado de simulação do cálculo disponibilizado pelo município;",
+     "depth": 1,
+     "start": 32726,
+     "end": 33001,
+     "words": [
+      "quando",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.19.d",
+     "path": "anexo-V.19.d",
+     "text": "d) Calendarização da execução da obra, com estimativa do prazo para conclusão dos trabalhos, quando a operação de loteamento inclua obras de urbanização;",
+     "depth": 1,
+     "start": 33002,
+     "end": 33155,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.19.e",
+     "path": "anexo-V.19.e",
+     "text": "e) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil, quando a operação de loteamento inclua obras de urbanização;",
+     "depth": 1,
+     "start": 33156,
+     "end": 33462,
+     "words": [
+      "ou",
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.19.f",
+     "path": "anexo-V.19.f",
+     "text": "f) Imagens resultantes de simulação virtual tridimensional fidedigna, com enquadramento adequado, e que permitam compreender as características fundamentais da operação, nos casos em que seja exigida discussão pública;",
+     "depth": 1,
+     "start": 33463,
+     "end": 33681,
+     "words": [
+      "nos casos"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.19.g",
+     "path": "anexo-V.19.g",
+     "text": "g) Estudo que ateste que a execução da operação de loteamento se conforma com o Regulamento Geral do Ruído, aprovado pelo Decreto-Lei n.º 9/2007, de 17 de janeiro, contendo informação acústica relativa à situação atual e à decorrente da execução da operação e termo de responsabilidade do respetivo técnico;",
+     "depth": 1,
+     "start": 33682,
+     "end": 33989,
+     "words": [],
+     "cites": [
+      "Decreto-Lei n.º 9/2007"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.19.h",
+     "path": "anexo-V.19.h",
+     "text": "h) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013, de 24 julho;",
+     "depth": 1,
+     "start": 33990,
+     "end": 34073,
+     "words": [],
+     "cites": [
+      "Portaria n.º 235/2013"
+     ],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.20",
+   "name": "Comunicação prévia para operação de loteamento",
+   "heading": "20 - Comunicação prévia para operação de loteamento:",
+   "section": "III - Elementos instrutórios específicos aplicáveis à operação de loteamento",
+   "common": "yes",
+   "elements": [
+    {
+     "id": "V.20",
+     "path": "anexo-V.20",
+     "text": "20 - Comunicação prévia para operação de loteamento:",
+     "depth": 0,
+     "start": 34074,
+     "end": 34126,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.a",
+     "path": "anexo-V.20.a",
+     "text": "a) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da operação ou da atribuição dos poderes necessários para agir em sua representação, sempre que tal comprovação não resulte diretamente do n.º 5 do presente anexo;",
+     "depth": 1,
+     "start": 34127,
+     "end": 34404,
+     "words": [
+      "ou",
+      "sempre que"
+     ],
+     "cites": [],
+     "internal": [
+      "n.º 5 do presente anexo"
+     ]
+    },
+    {
+     "id": "V.20.b",
+     "path": "anexo-V.20.b",
+     "text": "b) Projeto de loteamento, incluindo:",
+     "depth": 1,
+     "start": 34405,
+     "end": 34441,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.b.i",
+     "path": "anexo-V.20.b.i",
+     "text": "i) Planta da situação existente, à escala de 1:1.000 ou superior, correspondente ao estado e uso atual do terreno e de uma faixa envolvente com dimensão adequada à avaliação da integração da operação na área em que se insere, com indicação dos valores naturais e construídos, de servidões administrativas e restrições de utilidade pública e infraestruturas existentes;",
+     "depth": 2,
+     "start": 34442,
+     "end": 34810,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.b.ii",
+     "path": "anexo-V.20.b.ii",
+     "text": "ii) Planta do cadastro atual, à escala de 1:1.000 ou superior;",
+     "depth": 2,
+     "start": 34811,
+     "end": 34873,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.b.iii",
+     "path": "anexo-V.20.b.iii",
+     "text": "iii) Planta do cadastro proposto, à escala de 1:1000 ou superior;",
+     "depth": 2,
+     "start": 34874,
+     "end": 34939,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.b.iv",
+     "path": "anexo-V.20.b.iv",
+     "text": "iv) Planta e quadro de transformação fundiária, com a descrição pormenorizada dos lotes com a indicação dos artigos matriciais de proveniência e áreas de cedência;",
+     "depth": 2,
+     "start": 34940,
+     "end": 35103,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.b.v",
+     "path": "anexo-V.20.b.v",
+     "text": "v) Perfis longitudinais e transversais do loteamento, com representação da situação existente e proposta relativamente à modelação do terreno, ao edificado e ao espaço público, bem como da relação destes com a envolvente em termos que permitam demonstrar a sua integração, devidamente identificados em planta;",
+     "depth": 2,
+     "start": 35104,
+     "end": 35413,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.b.vi",
+     "path": "anexo-V.20.b.vi",
+     "text": "vi) Planta síntese do loteamento, à escala de 1:1.000 ou superior, podendo ser desdobrada por temas, indicando, nomeadamente, a modelação proposta para o terreno, a estrutura viária, as redes de abastecimento de água e de saneamento, de energia elétrica, de gás e de condutas destinadas à instalação de infraestruturas de telecomunicações e a respetiva ligação às infraestruturas existentes, bem como os resíduos sólidos urbanos e ainda a divisão em lotes e sua numeração, finalidade, áreas de implantação e de construção, número de pisos acima e abaixo da cota de soleira e número de fogos, com especificação dos destinados a habitação pública, a custos controlados ou para arrendamento acessível, quando previstos, e a localização dos equipamentos de utilização coletiva e das áreas que lhes sejam destinadas, bem como das áreas para espaços verdes e de utilização coletiva, com indicação das áreas sujeitas a ónus de utilização coletiva;",
+     "depth": 2,
+     "start": 35414,
+     "end": 36354,
+     "words": [
+      "ou",
+      "podendo",
+      "ou",
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.b.vii",
+     "path": "anexo-V.20.b.vii",
+     "text": "vii) Plano de acessibilidades que, integrando peças escritas e desenhadas, permita evidenciar as opções de projeto em matéria de garantia do acesso aos utilizadores com mobilidade reduzida, apresentando a rede de espaços e equipamentos acessíveis, existente ou proposta, para a área objeto da operação urbanística, comprovando que a execução da operação se conforma com o regime jurídico da acessibilidade;",
+     "depth": 2,
+     "start": 36355,
+     "end": 36761,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.b.viii",
+     "path": "anexo-V.20.b.viii",
+     "text": "viii) Planta com indicação das áreas de cedência destinadas a:",
+     "depth": 2,
+     "start": 36762,
+     "end": 36824,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.b.viii.a",
+     "path": "anexo-V.20.b.viii.a",
+     "text": "viii.a) Espaços verdes e de utilização coletiva;",
+     "depth": 3,
+     "start": 36825,
+     "end": 36873,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.b.viii.b",
+     "path": "anexo-V.20.b.viii.b",
+     "text": "viii.b) Infraestruturas, incluindo estacionamento;",
+     "depth": 3,
+     "start": 36874,
+     "end": 36924,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.b.viii.c",
+     "path": "anexo-V.20.b.viii.c",
+     "text": "viii.c) Equipamentos de utilização coletiva/habitação pública, a custos controlados ou para arrendamento acessível;",
+     "depth": 3,
+     "start": 36925,
+     "end": 37040,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.b.ix",
+     "path": "anexo-V.20.b.ix",
+     "text": "ix) Quadros com as medições das áreas identificadas no ponto anterior, exceto se não houver lugar a cedências para esses fins nos termos do n.º 5 do artigo 44.º do RJUE, caso em que deve ser indicado em memória descritiva o valor e a forma de pagamento da compensação;",
+     "depth": 2,
+     "start": 37041,
+     "end": 37309,
+     "words": [
+      "exceto",
+      "caso"
+     ],
+     "cites": [
+      "n.º 5 do artigo 44.º do RJUE"
+     ],
+     "internal": [
+      "ponto anterior"
+     ]
+    },
+    {
+     "id": "V.20.c",
+     "path": "anexo-V.20.c",
+     "text": "c) Estimativa dos encargos urbanísticos, nomeadamente com o cálculo da taxa pela realização, manutenção e reforço de infraestruturas urbanísticas e das compensações urbanísticas, quando aplicável, ou junção de resultado de simulação do cálculo disponibilizado pelo município;",
+     "depth": 1,
+     "start": 37310,
+     "end": 37585,
+     "words": [
+      "quando",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.d",
+     "path": "anexo-V.20.d",
+     "text": "d) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos, quando a operação de loteamento inclua obras de urbanização;",
+     "depth": 1,
+     "start": 37586,
+     "end": 37737,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.e",
+     "path": "anexo-V.20.e",
+     "text": "e) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil, quando a operação de loteamento inclua obras de urbanização;",
+     "depth": 1,
+     "start": 37738,
+     "end": 38044,
+     "words": [
+      "ou",
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.f",
+     "path": "anexo-V.20.f",
+     "text": "f) Pareceres, autorizações ou aprovações das entidades externas, em razão da localização cuja consulta seja obrigatória nos termos da lei, exceto se estas já se pronunciaram favoravelmente no âmbito de procedimento de informação prévia ou de aprovação de plano de pormenor, nos termos do n.º 2 do artigo 13.º do RJUE, caso em que é indicado o procedimento em que tal pronúncia ocorreu e em que termos;",
+     "depth": 1,
+     "start": 38045,
+     "end": 38446,
+     "words": [
+      "ou",
+      "exceto",
+      "ou",
+      "caso"
+     ],
+     "cites": [
+      "n.º 2 do artigo 13.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.20.g",
+     "path": "anexo-V.20.g",
+     "text": "g) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013, de 24 julho;",
+     "depth": 1,
+     "start": 38447,
+     "end": 38530,
+     "words": [],
+     "cites": [
+      "Portaria n.º 235/2013"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.20.h",
+     "path": "anexo-V.20.h",
+     "text": "h) Número do alvará, ou do certificado, ou número de outro título habilitante emitido pelo Instituto dos Mercados Públicos, do Imobiliário e da Construção, I. P. (IMPIC, I. P.), que confira habilitações adequadas à natureza ou valor da obra, quando as operações de loteamento incluam obras de urbanização, demolição ou ambas;",
+     "depth": 1,
+     "start": 38531,
+     "end": 38856,
+     "words": [
+      "ou",
+      "ou",
+      "ou",
+      "quando",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.i",
+     "path": "anexo-V.20.i",
+     "text": "i) Termo de responsabilidade pela assunção da função de diretor de obra e, quando exista, de diretor de fiscalização de obra, para efeitos do início da sua execução;",
+     "depth": 1,
+     "start": 38857,
+     "end": 39022,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.20.j",
+     "path": "anexo-V.20.j",
+     "text": "j) Declaração de habilitação profissional que permita a verificação das competências profissionais detidas pelo diretor de obra e, quando exista, pelo diretor de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional;",
+     "depth": 1,
+     "start": 39023,
+     "end": 39357,
+     "words": [
+      "quando",
+      "em caso de"
+     ],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.20.k",
+     "path": "anexo-V.20.k",
+     "text": "k) Comprovativo da contratação de seguro de responsabilidade civil do diretor de obra e, quando exista, do diretor de fiscalização de obra nos termos da Lei n.º 31/2009 de 3 de julho;",
+     "depth": 1,
+     "start": 39358,
+     "end": 39541,
+     "words": [
+      "quando"
+     ],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.20.l",
+     "path": "anexo-V.20.l",
+     "text": "l) Apólice de seguro que cubra a responsabilidade pela reparação dos danos emergentes de acidentes de trabalho, nos termos previstos na Lei n.º 98/2009, de 4 de setembro, na sua redação atual;",
+     "depth": 1,
+     "start": 39542,
+     "end": 39734,
+     "words": [],
+     "cites": [
+      "Lei n.º 98/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.20.m",
+     "path": "anexo-V.20.m",
+     "text": "m) Comprovativo de contratação do diretor de obra.",
+     "depth": 1,
+     "start": 39735,
+     "end": 39785,
+     "words": [],
+     "cites": [],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.21",
+   "name": "Pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, para obras de urbanização",
+   "heading": "21 - Pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, para obras de urbanização:",
+   "section": "IV - Elementos instrutórios específicos aplicáveis às obras de urbanização",
+   "common": "yes",
+   "elements": [
+    {
+     "id": "V.21",
+     "path": "anexo-V.21",
+     "text": "21 - Pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, para obras de urbanização:",
+     "depth": 0,
+     "start": 39861,
+     "end": 39964,
+     "words": [],
+     "cites": [
+      "n.º 2 do artigo 14.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.21.a",
+     "path": "anexo-V.21.a",
+     "text": "a) Planta da situação existente, à escala de 1:1.000 ou superior, correspondente ao estado e uso atual do terreno e de uma faixa envolvente com dimensão adequada à avaliação da integração da operação na área em que se insere, com indicação dos valores naturais e construídos, de servidões administrativas e restrições de utilidade pública e infraestruturas existentes;",
+     "depth": 1,
+     "start": 39965,
+     "end": 40333,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.21.b",
+     "path": "anexo-V.21.b",
+     "text": "b) Peças desenhadas que permitam caracterizar a operação a realizar, nomeadamente planta de síntese das obras de urbanização e perfis transversais e longitudinais, bem como plano de acessibilidades que integrando peças escritas e desenhadas, permita evidenciar as opções de projeto em matéria de garantia do acesso aos utilizadores com mobilidade reduzida, apresentando a rede de espaços e equipamentos acessíveis, existente ou proposta, para a área objeto da operação urbanística, comprovando que a execução da operação se conforma com o regime jurídico da acessibilidade, quando esta operação não seja enquadrada por operação de loteamento;",
+     "depth": 1,
+     "start": 40334,
+     "end": 40976,
+     "words": [
+      "ou",
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.21.c",
+     "path": "anexo-V.21.c",
+     "text": "c) Projetos de especialidades que integrem a obra, designadamente infraestruturas viárias, redes de abastecimento de águas, esgotos e drenagem, de gás, de eletricidade, de telecomunicações e a respetiva ligação às infraestruturas existentes, assim como arranjos exteriores e resíduos sólidos urbanos, contendo cada projeto memória descritiva e justificativa, bem como os cálculos, se for caso disso, e as peças desenhadas, em escala tecnicamente adequada;",
+     "depth": 1,
+     "start": 40977,
+     "end": 41432,
+     "words": [
+      "caso"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.21.d",
+     "path": "anexo-V.21.d",
+     "text": "d) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;",
+     "depth": 1,
+     "start": 41433,
+     "end": 41523,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.21.e",
+     "path": "anexo-V.21.e",
+     "text": "e) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;",
+     "depth": 1,
+     "start": 41524,
+     "end": 41769,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.21.f",
+     "path": "anexo-V.21.f",
+     "text": "f) Proposta de contrato de urbanização, quando exista;",
+     "depth": 1,
+     "start": 41770,
+     "end": 41824,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.21.g",
+     "path": "anexo-V.21.g",
+     "text": "g) Estudo que ateste que a execução das obras se conforma com o Regulamento Geral do Ruído, aprovado pelo Decreto-Lei n.º 9/2007, de 17 de janeiro, contendo informação acústica relativa à situação atual e à decorrente da operação e termo de responsabilidade do respetivo técnico.",
+     "depth": 1,
+     "start": 41825,
+     "end": 42104,
+     "words": [],
+     "cites": [
+      "Decreto-Lei n.º 9/2007"
+     ],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.22",
+   "name": "Licença para obras de urbanização",
+   "heading": "22 - Licença para obras de urbanização:",
+   "section": "IV - Elementos instrutórios específicos aplicáveis às obras de urbanização",
+   "common": "yes",
+   "elements": [
+    {
+     "id": "V.22",
+     "path": "anexo-V.22",
+     "text": "22 - Licença para obras de urbanização:",
+     "depth": 0,
+     "start": 42105,
+     "end": 42144,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.22.a",
+     "path": "anexo-V.22.a",
+     "text": "a) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da operação ou da atribuição dos poderes necessários para agir em sua representação, sempre que tal comprovação não resulte diretamente do n.º 5 do presente anexo;",
+     "depth": 1,
+     "start": 42145,
+     "end": 42422,
+     "words": [
+      "ou",
+      "sempre que"
+     ],
+     "cites": [],
+     "internal": [
+      "n.º 5 do presente anexo"
+     ]
+    },
+    {
+     "id": "V.22.b",
+     "path": "anexo-V.22.b",
+     "text": "b) Planta da situação existente, à escala de 1:1.000 ou superior, correspondente ao estado e uso atual do terreno e de uma faixa envolvente com dimensão adequada à avaliação da integração da operação na área em que se insere, com indicação dos valores naturais e construídos, de servidões administrativas e restrições de utilidade pública e infraestruturas existentes;",
+     "depth": 1,
+     "start": 42423,
+     "end": 42791,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.22.c",
+     "path": "anexo-V.22.c",
+     "text": "c) Peças desenhadas que permitam caracterizar a operação a realizar, nomeadamente planta de síntese das obras de urbanização e perfis transversais e longitudinais, bem como plano de acessibilidades que, integrando peças escritas e desenhadas, permita evidenciar as opções de projeto em matéria de garantia do acesso aos utilizadores com mobilidade reduzida, apresentando a rede de espaços e equipamentos acessíveis, existente ou proposta, para a área objeto da operação urbanística, comprovando que a execução da operação se conforma com o regime jurídico da acessibilidade, quando esta operação não seja enquadrada por operação de loteamento;",
+     "depth": 1,
+     "start": 42792,
+     "end": 43435,
+     "words": [
+      "ou",
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.22.d",
+     "path": "anexo-V.22.d",
+     "text": "d) Projetos de especialidades que integrem a obra, designadamente infraestruturas viárias, redes de abastecimento de águas, esgotos e drenagem, de gás, de eletricidade, de telecomunicações e a respetiva ligação às infraestruturas existentes, assim como arranjos exteriores e resíduos sólidos urbanos, contendo cada projeto memória descritiva e justificativa, bem como os cálculos, se for caso disso, e as peças desenhadas, em escala tecnicamente adequada;",
+     "depth": 1,
+     "start": 43436,
+     "end": 43891,
+     "words": [
+      "caso"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.22.e",
+     "path": "anexo-V.22.e",
+     "text": "e) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;",
+     "depth": 1,
+     "start": 43892,
+     "end": 44137,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.22.f",
+     "path": "anexo-V.22.f",
+     "text": "f) Proposta de contrato de urbanização, quando exista;",
+     "depth": 1,
+     "start": 44138,
+     "end": 44192,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.22.g",
+     "path": "anexo-V.22.g",
+     "text": "g) Estudo que ateste que a execução das obras de urbanização se conforma com o Regulamento Geral do Ruído, aprovado pelo Decreto-Lei n.º 9/2007, de 17 de janeiro, contendo informação acústica relativa à situação atual e à decorrente da operação e termo de responsabilidade do respetivo técnico.",
+     "depth": 1,
+     "start": 44193,
+     "end": 44487,
+     "words": [],
+     "cites": [
+      "Decreto-Lei n.º 9/2007"
+     ],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.23",
+   "name": "Comunicação prévia para obras de urbanização",
+   "heading": "23 - Comunicação prévia para obras de urbanização:",
+   "section": "IV - Elementos instrutórios específicos aplicáveis às obras de urbanização",
+   "common": "yes",
+   "elements": [
+    {
+     "id": "V.23",
+     "path": "anexo-V.23",
+     "text": "23 - Comunicação prévia para obras de urbanização:",
+     "depth": 0,
+     "start": 44488,
+     "end": 44538,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.23.a",
+     "path": "anexo-V.23.a",
+     "text": "a) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da operação ou da atribuição dos poderes necessários para agir em sua representação, sempre que tal comprovação não resulte diretamente do n.º 5 do presente anexo;",
+     "depth": 1,
+     "start": 44539,
+     "end": 44816,
+     "words": [
+      "ou",
+      "sempre que"
+     ],
+     "cites": [],
+     "internal": [
+      "n.º 5 do presente anexo"
+     ]
+    },
+    {
+     "id": "V.23.b",
+     "path": "anexo-V.23.b",
+     "text": "b) Planta da situação existente, à escala de 1:1.000 ou superior, correspondente ao estado e uso atual do terreno e de uma faixa envolvente com dimensão adequada à avaliação da integração da operação na área em que se insere, com indicação dos valores naturais e construídos, de servidões administrativas e restrições de utilidade pública e infraestruturas existentes;",
+     "depth": 1,
+     "start": 44817,
+     "end": 45185,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.23.c",
+     "path": "anexo-V.23.c",
+     "text": "c) Peças desenhadas que permitam caracterizar a operação a realizar, nomeadamente planta de síntese das obras de urbanização e perfis transversais e longitudinais, bem como plano de acessibilidades que integrando peças escritas e desenhadas, permita evidenciar as opções de projeto em matéria de garantia do acesso aos utilizadores com mobilidade reduzida, apresentando a rede de espaços e equipamentos acessíveis, existente ou proposta, para a área objeto da operação urbanística, comprovando que a execução da operação se conforma com o regime jurídico da acessibilidade, quando esta operação não seja enquadrada por operação de loteamento;",
+     "depth": 1,
+     "start": 45186,
+     "end": 45828,
+     "words": [
+      "ou",
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.23.d",
+     "path": "anexo-V.23.d",
+     "text": "d) Projetos de especialidades que integrem a obra, designadamente infraestruturas viárias, redes de abastecimento de águas, esgotos e drenagem, de gás, de eletricidade, de telecomunicações e a respetiva ligação às infraestruturas existentes, assim como arranjos exteriores e resíduos sólidos urbanos, contendo cada projeto memória descritiva e justificativa, bem como os cálculos, se for caso disso, e as peças desenhadas, em escala tecnicamente adequada;",
+     "depth": 1,
+     "start": 45829,
+     "end": 46284,
+     "words": [
+      "caso"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.23.e",
+     "path": "anexo-V.23.e",
+     "text": "e) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;",
+     "depth": 1,
+     "start": 46285,
+     "end": 46375,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.23.f",
+     "path": "anexo-V.23.f",
+     "text": "f) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;",
+     "depth": 1,
+     "start": 46376,
+     "end": 46621,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.23.g",
+     "path": "anexo-V.23.g",
+     "text": "g) Proposta de contrato de urbanização, quando exista;",
+     "depth": 1,
+     "start": 46622,
+     "end": 46676,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.23.h",
+     "path": "anexo-V.23.h",
+     "text": "h) Pareceres, autorizações ou aprovações das entidades externas cuja consulta seja obrigatória nos termos da lei, exceto se estas já se pronunciaram favoravelmente no âmbito de procedimento de informação prévia ou de aprovação de plano de pormenor, nos termos do n.º 2 do artigo 13.º do RJUE, caso em que é indicado o procedimento e os termos em que tal pronúncia ocorreu;",
+     "depth": 1,
+     "start": 46677,
+     "end": 47049,
+     "words": [
+      "ou",
+      "exceto",
+      "ou",
+      "caso"
+     ],
+     "cites": [
+      "n.º 2 do artigo 13.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.23.i",
+     "path": "anexo-V.23.i",
+     "text": "i) Número do alvará, ou do certificado, ou número de outro título habilitante emitido pelo IMPIC, I. P., que confira habilitações adequadas à natureza ou valor da obra;",
+     "depth": 1,
+     "start": 47050,
+     "end": 47218,
+     "words": [
+      "ou",
+      "ou",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.23.j",
+     "path": "anexo-V.23.j",
+     "text": "j) Termo de responsabilidade pela assunção da função de diretor de obra e, quando exista, de diretor de fiscalização de obra, para efeitos do início da sua execução;",
+     "depth": 1,
+     "start": 47219,
+     "end": 47384,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.23.k",
+     "path": "anexo-V.23.k",
+     "text": "k) Declaração de habilitação profissional que permita a verificação das competências profissionais detidas pelo diretor de obra e, quando exista, pelo diretor de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional;",
+     "depth": 1,
+     "start": 47385,
+     "end": 47719,
+     "words": [
+      "quando",
+      "em caso de"
+     ],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.23.l",
+     "path": "anexo-V.23.l",
+     "text": "l) Comprovativo da contratação de seguro de responsabilidade civil do diretor de obra e, quando exista, do diretor de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho;",
+     "depth": 1,
+     "start": 47720,
+     "end": 47905,
+     "words": [
+      "quando"
+     ],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.23.m",
+     "path": "anexo-V.23.m",
+     "text": "m) Apólice de seguro que cubra a responsabilidade pela reparação dos danos emergentes de acidentes de trabalho, nos termos previstos na Lei n.º 98/2009, de 4 de setembro, na sua redação atual;",
+     "depth": 1,
+     "start": 47906,
+     "end": 48098,
+     "words": [],
+     "cites": [
+      "Lei n.º 98/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.23.n",
+     "path": "anexo-V.23.n",
+     "text": "n) Comprovativo de contratação do diretor de obra.",
+     "depth": 1,
+     "start": 48099,
+     "end": 48149,
+     "words": [],
+     "cites": [],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.24",
+   "name": "Pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, para obras de edificação",
+   "heading": "24 - Pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, para obras de edificação:",
+   "section": "V - Elementos instrutórios específicos aplicáveis às obras de edificação",
+   "common": "yes",
+   "elements": [
+    {
+     "id": "V.24",
+     "path": "anexo-V.24",
+     "text": "24 - Pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, para obras de edificação:",
+     "depth": 0,
+     "start": 48223,
+     "end": 48325,
+     "words": [],
+     "cites": [
+      "n.º 2 do artigo 14.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.24.a",
+     "path": "anexo-V.24.a",
+     "text": "a) Projeto de arquitetura, incluindo:",
+     "depth": 1,
+     "start": 48326,
+     "end": 48363,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.24.a.i",
+     "path": "anexo-V.24.a.i",
+     "text": "i) Plantas à escala de 1:50 ou de 1:100 contendo as dimensões e áreas e utilizações de todos os compartimentos, bem como a representação do mobiliário fixo e equipamento sanitário;",
+     "depth": 2,
+     "start": 48364,
+     "end": 48544,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.24.a.ii",
+     "path": "anexo-V.24.a.ii",
+     "text": "ii) Alçados à escala de 1:50 ou de 1:100 com a indicação das cores e dos materiais dos elementos que constituem as fachadas e a cobertura, bem como as construções adjacentes, quando existam;",
+     "depth": 2,
+     "start": 48545,
+     "end": 48735,
+     "words": [
+      "ou",
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.24.a.iii",
+     "path": "anexo-V.24.a.iii",
+     "text": "iii) Cortes longitudinais e transversais à escala de 1:50 ou de 1:100 abrangendo o terreno e o arranque dos terrenos vizinhos, com indicação do perfil existente e o proposto, bem como das cotas dos diversos pisos, da cota de soleira e dos acessos ao estacionamento;",
+     "depth": 2,
+     "start": 48736,
+     "end": 49001,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.24.a.iv",
+     "path": "anexo-V.24.a.iv",
+     "text": "iv) Pormenores de construção, à escala adequada, esclarecendo a solução construtiva adotada para as paredes exteriores do edifício e sua articulação com a cobertura, vãos de iluminação/ventilação e de acesso, bem como com o pavimento exterior envolvente;",
+     "depth": 2,
+     "start": 49002,
+     "end": 49256,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.24.a.v",
+     "path": "anexo-V.24.a.v",
+     "text": "v) Discriminação das partes do edifício correspondentes às várias frações e partes comuns, valor relativo de cada fração, expressa em percentagem ou permilagem, do valor total do prédio, caso se pretenda que o edifício fique sujeito ao regime da propriedade horizontal, acompanhada de peça desenhada;",
+     "depth": 2,
+     "start": 49257,
+     "end": 49557,
+     "words": [
+      "ou",
+      "caso"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.24.a.vi",
+     "path": "anexo-V.24.a.vi",
+     "text": "vi) Plano de acessibilidades que, integrando peças escritas e desenhadas, permita evidenciar as opções de projeto em matéria de garantia do acesso aos utilizadores com mobilidade reduzida, apresentando a rede de espaços e equipamentos acessíveis, existente ou proposta, para a área objeto da operação urbanística, comprovando que a execução da operação se conforma com o regime jurídico da acessibilidade;",
+     "depth": 2,
+     "start": 49558,
+     "end": 49963,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.24.b",
+     "path": "anexo-V.24.b",
+     "text": "b) Quando se trate de operação urbanística que contemple a cedência de áreas para o município, deve ser incluído:",
+     "depth": 1,
+     "start": 49964,
+     "end": 50077,
+     "words": [
+      "Quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.24.b.i",
+     "path": "anexo-V.24.b.i",
+     "text": "i) Planta de cedências;",
+     "depth": 2,
+     "start": 50078,
+     "end": 50101,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.24.b.ii",
+     "path": "anexo-V.24.b.ii",
+     "text": "ii) Planta de cadastro atual;",
+     "depth": 2,
+     "start": 50102,
+     "end": 50131,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.24.b.iii",
+     "path": "anexo-V.24.b.iii",
+     "text": "iii) Planta e quadro de transformação fundiária;",
+     "depth": 2,
+     "start": 50132,
+     "end": 50180,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.24.c",
+     "path": "anexo-V.24.c",
+     "text": "c) Relatório de avaliação de vulnerabilidade sísmica, quando exigível, nos termos da lei;",
+     "depth": 1,
+     "start": 50181,
+     "end": 50270,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.24.d",
+     "path": "anexo-V.24.d",
+     "text": "d) Calendarização da execução da obra, com estimativa do prazo de início e de conclusão dos trabalhos;",
+     "depth": 1,
+     "start": 50271,
+     "end": 50373,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.24.e",
+     "path": "anexo-V.24.e",
+     "text": "e) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução;",
+     "depth": 1,
+     "start": 50374,
+     "end": 50489,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.24.f",
+     "path": "anexo-V.24.f",
+     "text": "f) Estimativa dos encargos urbanísticos, nomeadamente com o cálculo da taxa pela realização, manutenção e reforço de infraestruturas urbanísticas e das compensações urbanísticas, quando aplicável, ou junção de resultado de simulação do cálculo disponibilizado pelo município;",
+     "depth": 1,
+     "start": 50490,
+     "end": 50765,
+     "words": [
+      "quando",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.24.g",
+     "path": "anexo-V.24.g",
+     "text": "g) Estudo que ateste que a execução das obras se conforma com o Regulamento Geral do Ruído, aprovado pelo Decreto-Lei n.º 9/2007, de 17 de janeiro, contendo informação acústica relativa à situação atual e à decorrente da operação e termo de responsabilidade do respetivo técnico;",
+     "depth": 1,
+     "start": 50766,
+     "end": 51045,
+     "words": [],
+     "cites": [
+      "Decreto-Lei n.º 9/2007"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.24.h",
+     "path": "anexo-V.24.h",
+     "text": "h) Em caso de utilização de produtos de construção não abrangidos por regras harmonizadas, sem marcação CE e sem declaração de desempenho e conformidade, e sem prejuízo do reconhecimento mútuo, deve ser apresentada declaração do projetista em como o produto não comporta risco para a satisfação de requisitos de desempenho e segurança, nos casos previstos para a sua aplicação, e em que não se justifica a solicitação de apreciação técnica ou de homologação.",
+     "depth": 1,
+     "start": 51046,
+     "end": 51504,
+     "words": [
+      "Em caso de",
+      "nos casos",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.25",
+   "name": "Licença para obras de edificação, para efeitos de aprovação do projeto de arquitetura",
+   "heading": "25 - Licença para obras de edificação, para efeitos de aprovação do projeto de arquitetura:",
+   "section": "V - Elementos instrutórios específicos aplicáveis às obras de edificação",
+   "common": "yes",
+   "elements": [
+    {
+     "id": "V.25",
+     "path": "anexo-V.25",
+     "text": "25 - Licença para obras de edificação, para efeitos de aprovação do projeto de arquitetura:",
+     "depth": 0,
+     "start": 51505,
+     "end": 51596,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.25.a",
+     "path": "anexo-V.25.a",
+     "text": "a) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da operação ou da atribuição dos poderes necessários para agir em sua representação, sempre que tal comprovação não resulte diretamente do n.º 5 do presente anexo;",
+     "depth": 1,
+     "start": 51597,
+     "end": 51874,
+     "words": [
+      "ou",
+      "sempre que"
+     ],
+     "cites": [],
+     "internal": [
+      "n.º 5 do presente anexo"
+     ]
+    },
+    {
+     "id": "V.25.b",
+     "path": "anexo-V.25.b",
+     "text": "b) Projeto de arquitetura, incluindo:",
+     "depth": 1,
+     "start": 51875,
+     "end": 51912,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.25.b.i",
+     "path": "anexo-V.25.b.i",
+     "text": "i) Plantas à escala de 1:50 ou de 1:100 contendo as dimensões e áreas e utilizações de todos os compartimentos, bem como a representação do mobiliário fixo e equipamento sanitário;",
+     "depth": 2,
+     "start": 51913,
+     "end": 52093,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.25.b.ii",
+     "path": "anexo-V.25.b.ii",
+     "text": "ii) Alçados à escala de 1:50 ou de 1:100 com a indicação das cores e dos materiais dos elementos que constituem as fachadas e a cobertura, bem como as construções adjacentes, quando existam;",
+     "depth": 2,
+     "start": 52094,
+     "end": 52284,
+     "words": [
+      "ou",
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.25.b.iii",
+     "path": "anexo-V.25.b.iii",
+     "text": "iii) Cortes longitudinais e transversais à escala de 1:50 ou de 1:100 abrangendo o terreno e o arranque dos terrenos vizinhos, com indicação do perfil existente e o proposto, bem como das cotas dos diversos pisos, da cota de soleira e dos acessos ao estacionamento;",
+     "depth": 2,
+     "start": 52285,
+     "end": 52550,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.25.b.iv",
+     "path": "anexo-V.25.b.iv",
+     "text": "iv) Pormenores de construção, à escala adequada, esclarecendo a solução construtiva adotada para as paredes exteriores do edifício e sua articulação com a cobertura, vãos de iluminação/ventilação e de acesso, bem como com o pavimento exterior envolvente;",
+     "depth": 2,
+     "start": 52551,
+     "end": 52805,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.25.b.v",
+     "path": "anexo-V.25.b.v",
+     "text": "v) Discriminação das partes do edifício correspondentes às várias frações e partes comuns, valor relativo de cada fração, expressa em percentagem ou permilagem, do valor total do prédio, caso se pretenda que o edifício fique sujeito ao regime da propriedade horizontal, acompanhada de peça desenhada;",
+     "depth": 2,
+     "start": 52806,
+     "end": 53106,
+     "words": [
+      "ou",
+      "caso"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.25.b.vi",
+     "path": "anexo-V.25.b.vi",
+     "text": "vi) Plano de acessibilidades que, integrando peças escritas e desenhadas, permita evidenciar as opções de projeto em matéria de garantia do acesso aos utilizadores com mobilidade reduzida, apresentando a rede de espaços e equipamentos acessíveis, existente ou proposta, para a área objeto da operação urbanística, comprovando que a execução da operação se conforma com o regime jurídico da acessibilidade;",
+     "depth": 2,
+     "start": 53107,
+     "end": 53512,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.25.c",
+     "path": "anexo-V.25.c",
+     "text": "c) Quando se trate de operação urbanística que contemple a cedência de áreas para o município, deve ser incluído:",
+     "depth": 1,
+     "start": 53513,
+     "end": 53626,
+     "words": [
+      "Quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.25.c.i",
+     "path": "anexo-V.25.c.i",
+     "text": "i) Planta de cedências;",
+     "depth": 2,
+     "start": 53627,
+     "end": 53650,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.25.c.ii",
+     "path": "anexo-V.25.c.ii",
+     "text": "ii) Planta de cadastro atual;",
+     "depth": 2,
+     "start": 53651,
+     "end": 53680,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.25.c.iii",
+     "path": "anexo-V.25.c.iii",
+     "text": "iii) Planta e quadro de transformação fundiária;",
+     "depth": 2,
+     "start": 53681,
+     "end": 53729,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.25.d",
+     "path": "anexo-V.25.d",
+     "text": "d) Relatório de avaliação de vulnerabilidade sísmica, quando exigível, nos termos da lei;",
+     "depth": 1,
+     "start": 53730,
+     "end": 53819,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.25.e",
+     "path": "anexo-V.25.e",
+     "text": "e) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;",
+     "depth": 1,
+     "start": 53820,
+     "end": 53910,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.25.f",
+     "path": "anexo-V.25.f",
+     "text": "f) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;",
+     "depth": 1,
+     "start": 53911,
+     "end": 54156,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.25.g",
+     "path": "anexo-V.25.g",
+     "text": "g) Estimativa dos encargos urbanísticos, nomeadamente com o cálculo da taxa pela realização, manutenção e reforço de infraestruturas urbanísticas e das compensações urbanísticas, quando aplicável, ou junção de resultado de simulação do cálculo disponibilizado pelo município;",
+     "depth": 1,
+     "start": 54157,
+     "end": 54432,
+     "words": [
+      "quando",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.25.h",
+     "path": "anexo-V.25.h",
+     "text": "h) Facultativamente, o requerente pode entregar, desde logo, os projetos de especialidades;",
+     "depth": 1,
+     "start": 54433,
+     "end": 54524,
+     "words": [
+      "Facultativamente"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.25.i",
+     "path": "anexo-V.25.i",
+     "text": "i) Estudo que ateste que a execução das obras se conforma com o Regulamento Geral do Ruído, aprovado pelo Decreto-Lei n.º 9/2007, de 17 de janeiro, contendo informação acústica relativa à situação atual e à decorrente da operação e termo de responsabilidade do respetivo técnico;",
+     "depth": 1,
+     "start": 54525,
+     "end": 54804,
+     "words": [],
+     "cites": [
+      "Decreto-Lei n.º 9/2007"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.25.j",
+     "path": "anexo-V.25.j",
+     "text": "j) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013, de 24 de julho;",
+     "depth": 1,
+     "start": 54805,
+     "end": 54891,
+     "words": [],
+     "cites": [
+      "Portaria n.º 235/2013"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.25.k",
+     "path": "anexo-V.25.k",
+     "text": "k) Em caso de utilização de produtos de construção não abrangidos por regras harmonizadas, sem marcação CE e sem declaração de desempenho e conformidade, e sem prejuízo do reconhecimento mútuo, deve ser apresentada declaração do projetista em como o produto não comporta risco para a satisfação de requisitos de desempenho e segurança, nos casos previstos para a sua aplicação, e em que não se justifica a solicitação de apreciação técnica ou de homologação.",
+     "depth": 1,
+     "start": 54892,
+     "end": 55350,
+     "words": [
+      "Em caso de",
+      "nos casos",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.26",
+   "name": "Licença para obras de edificação, a entregar com o pedido de licenciamento ou posteriormente à aprovação do projeto de arquitetura, nos termos do n.º 4 do artigo 20.º do RJUE",
+   "heading": "26 - Licença para obras de edificação, a entregar com o pedido de licenciamento ou posteriormente à aprovação do projeto de arquitetura, nos termos do n.º 4 do artigo 20.º do RJUE",
+   "section": "V - Elementos instrutórios específicos aplicáveis às obras de edificação",
+   "common": "yes",
+   "elements": [
+    {
+     "id": "V.26",
+     "path": "anexo-V.26",
+     "text": "26 - Licença para obras de edificação, a entregar com o pedido de licenciamento ou posteriormente à aprovação do projeto de arquitetura, nos termos do n.º 4 do artigo 20.º do RJUE",
+     "depth": 0,
+     "start": 55351,
+     "end": 55530,
+     "words": [
+      "ou"
+     ],
+     "cites": [
+      "n.º 4 do artigo 20.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.26.a",
+     "path": "anexo-V.26.a",
+     "text": "a) Projetos de especialidade a apresentar em função do tipo de obra a executar:",
+     "depth": 1,
+     "start": 55531,
+     "end": 55610,
+     "words": [
+      "em função do"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.26.a.i",
+     "path": "anexo-V.26.a.i",
+     "text": "i) Projeto de estabilidade que inclua o projeto de escavação e contenção periférica;",
+     "depth": 2,
+     "start": 55611,
+     "end": 55695,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.26.a.ii",
+     "path": "anexo-V.26.a.ii",
+     "text": "ii) Projeto de reforço sísmico, quando exigível, nos termos da lei;",
+     "depth": 2,
+     "start": 55696,
+     "end": 55763,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.26.a.iii",
+     "path": "anexo-V.26.a.iii",
+     "text": "iii) Projeto de instalações elétricas;",
+     "depth": 2,
+     "start": 55764,
+     "end": 55802,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.26.a.iv",
+     "path": "anexo-V.26.a.iv",
+     "text": "iv) Projeto de instalação de gás, quando exigível nos termos da lei;",
+     "depth": 2,
+     "start": 55803,
+     "end": 55871,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.26.a.v",
+     "path": "anexo-V.26.a.v",
+     "text": "v) Projeto de redes prediais de água e esgotos;",
+     "depth": 2,
+     "start": 55872,
+     "end": 55919,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.26.a.vi",
+     "path": "anexo-V.26.a.vi",
+     "text": "vi) Projeto de águas pluviais;",
+     "depth": 2,
+     "start": 55920,
+     "end": 55950,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.26.a.vii",
+     "path": "anexo-V.26.a.vii",
+     "text": "vii) Projeto de arranjos exteriores, quando exista logradouro privativo;",
+     "depth": 2,
+     "start": 55951,
+     "end": 56023,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.26.a.viii",
+     "path": "anexo-V.26.a.viii",
+     "text": "viii) Projeto de infraestruturas de telecomunicações",
+     "depth": 2,
+     "start": 56024,
+     "end": 56076,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.26.a.ix",
+     "path": "anexo-V.26.a.ix",
+     "text": "ix) Projeto de comportamento térmico;",
+     "depth": 2,
+     "start": 56077,
+     "end": 56114,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.26.a.x",
+     "path": "anexo-V.26.a.x",
+     "text": "x) Projeto de instalações eletromecânicas, incluindo as de transporte de pessoas e ou mercadorias;",
+     "depth": 2,
+     "start": 56115,
+     "end": 56213,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.26.a.xi",
+     "path": "anexo-V.26.a.xi",
+     "text": "xi) Projeto de segurança contra incêndios em edifícios ou ficha de segurança, de acordo com a categoria de risco do edifício;",
+     "depth": 2,
+     "start": 56214,
+     "end": 56339,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.26.a.xii",
+     "path": "anexo-V.26.a.xii",
+     "text": "xii) Projeto de condicionamento acústico;",
+     "depth": 2,
+     "start": 56340,
+     "end": 56381,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.26.a.xiii",
+     "path": "anexo-V.26.a.xiii",
+     "text": "xiii) Projeto de instalações, equipamentos e sistemas de aquecimento, ventilação e ar condicionado (AVAC);",
+     "depth": 2,
+     "start": 56382,
+     "end": 56488,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.26.a.xiv",
+     "path": "anexo-V.26.a.xiv",
+     "text": "xiv) Projeto de sistemas de gestão técnica centralizada, quando exigível, nos termos da lei.",
+     "depth": 2,
+     "start": 56489,
+     "end": 56581,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.27",
+   "name": "Comunicação prévia para obras de edificação",
+   "heading": "27 - Comunicação prévia para obras de edificação:",
+   "section": "V - Elementos instrutórios específicos aplicáveis às obras de edificação",
+   "common": "yes",
+   "elements": [
+    {
+     "id": "V.27",
+     "path": "anexo-V.27",
+     "text": "27 - Comunicação prévia para obras de edificação:",
+     "depth": 0,
+     "start": 56582,
+     "end": 56631,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.a",
+     "path": "anexo-V.27.a",
+     "text": "a) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da operação ou da atribuição dos poderes necessários para agir em sua representação, sempre que tal comprovação não resulte diretamente do n.º 5 do presente anexo;",
+     "depth": 1,
+     "start": 56632,
+     "end": 56909,
+     "words": [
+      "ou",
+      "sempre que"
+     ],
+     "cites": [],
+     "internal": [
+      "n.º 5 do presente anexo"
+     ]
+    },
+    {
+     "id": "V.27.b",
+     "path": "anexo-V.27.b",
+     "text": "b) Projeto de arquitetura, incluindo:",
+     "depth": 1,
+     "start": 56910,
+     "end": 56947,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.b.i",
+     "path": "anexo-V.27.b.i",
+     "text": "i) Plantas à escala de 1:50 ou de 1:100 contendo as dimensões e áreas e utilizações de todos os compartimentos, bem como a representação do mobiliário fixo e equipamento sanitário;",
+     "depth": 2,
+     "start": 56948,
+     "end": 57128,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.b.ii",
+     "path": "anexo-V.27.b.ii",
+     "text": "ii) Alçados à escala de 1:50 ou de 1:100 com a indicação das cores e dos materiais dos elementos que constituem as fachadas e a cobertura, bem como as construções adjacentes, quando existam;",
+     "depth": 2,
+     "start": 57129,
+     "end": 57319,
+     "words": [
+      "ou",
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.b.iii",
+     "path": "anexo-V.27.b.iii",
+     "text": "iii) Cortes longitudinais e transversais à escala de 1:50 ou de 1:100 abrangendo o terreno e o arranque dos terrenos vizinhos, com indicação do perfil existente e o proposto, bem como das cotas dos diversos pisos, da cota de soleira e dos acessos ao estacionamento;",
+     "depth": 2,
+     "start": 57320,
+     "end": 57585,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.b.iv",
+     "path": "anexo-V.27.b.iv",
+     "text": "iv) Pormenores de construção, à escala adequada, esclarecendo a solução construtiva adotada para as paredes exteriores do edifício e sua articulação com a cobertura, vãos de iluminação/ventilação e de acesso, bem como com o pavimento exterior envolvente;",
+     "depth": 2,
+     "start": 57586,
+     "end": 57840,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.b.v",
+     "path": "anexo-V.27.b.v",
+     "text": "v) Discriminação das partes do edifício correspondentes às várias frações e partes comuns, valor relativo de cada fração, expressa em percentagem ou permilagem, do valor total do prédio, caso se pretenda que o edifício fique sujeito ao regime da propriedade horizontal, acompanhada de peça desenhada;",
+     "depth": 2,
+     "start": 57841,
+     "end": 58141,
+     "words": [
+      "ou",
+      "caso"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.b.vi",
+     "path": "anexo-V.27.b.vi",
+     "text": "vi) Plano de acessibilidades, que integrando peças escritas e desenhadas, permita evidenciar as opções de projeto em matéria de garantia do acesso aos utilizadores com mobilidade reduzida, apresentando a rede de espaços e equipamentos acessíveis, existente ou proposta, para a área objeto da operação urbanística, comprovando que a execução da operação se conforma com o regime jurídico da acessibilidade;",
+     "depth": 2,
+     "start": 58142,
+     "end": 58547,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.c",
+     "path": "anexo-V.27.c",
+     "text": "c) Quando se trate de operação urbanística que contemple a cedência de áreas para o município, deve ser incluído:",
+     "depth": 1,
+     "start": 58548,
+     "end": 58661,
+     "words": [
+      "Quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.c.i",
+     "path": "anexo-V.27.c.i",
+     "text": "i) Planta de cedências;",
+     "depth": 2,
+     "start": 58662,
+     "end": 58685,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.c.ii",
+     "path": "anexo-V.27.c.ii",
+     "text": "ii) Planta de cadastro atual;",
+     "depth": 2,
+     "start": 58686,
+     "end": 58715,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.c.iii",
+     "path": "anexo-V.27.c.iii",
+     "text": "iii) Planta e quadro de transformação fundiária;",
+     "depth": 2,
+     "start": 58716,
+     "end": 58764,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.d",
+     "path": "anexo-V.27.d",
+     "text": "d) Relatório de avaliação de vulnerabilidade sísmica, quando exigível, nos termos da lei;",
+     "depth": 1,
+     "start": 58765,
+     "end": 58854,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.e",
+     "path": "anexo-V.27.e",
+     "text": "e) Calendarização da execução da obra, com estimativa do prazo de início e de conclusão dos trabalhos;",
+     "depth": 1,
+     "start": 58855,
+     "end": 58957,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.f",
+     "path": "anexo-V.27.f",
+     "text": "f) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;",
+     "depth": 1,
+     "start": 58958,
+     "end": 59203,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.g",
+     "path": "anexo-V.27.g",
+     "text": "g) Estimativa dos encargos urbanísticos, nomeadamente com o cálculo da taxa pela realização, manutenção e reforço de infraestruturas urbanísticas e das compensações urbanísticas, quando aplicável, ou junção de resultado de simulação do cálculo disponibilizado pelo município;",
+     "depth": 1,
+     "start": 59204,
+     "end": 59479,
+     "words": [
+      "quando",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.h",
+     "path": "anexo-V.27.h",
+     "text": "h) Pareceres, autorizações ou aprovações das entidades externas cuja consulta seja obrigatória nos termos da lei, exceto se estas já se pronunciaram favoravelmente no âmbito de procedimento de informação prévia ou de aprovação de plano de pormenor, nos termos do n.º 2 do artigo 13.º do RJUE, caso em que é indicado o procedimento e os termos em que tal pronúncia ocorreu;",
+     "depth": 1,
+     "start": 59480,
+     "end": 59852,
+     "words": [
+      "ou",
+      "exceto",
+      "ou",
+      "caso"
+     ],
+     "cites": [
+      "n.º 2 do artigo 13.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.27.i",
+     "path": "anexo-V.27.i",
+     "text": "i) Projetos de especialidade a apresentar em função do tipo de obra a executar:",
+     "depth": 1,
+     "start": 59853,
+     "end": 59932,
+     "words": [
+      "em função do"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.i.i",
+     "path": "anexo-V.27.i.i",
+     "text": "i) Projeto de estabilidade que inclua o projeto de escavação e contenção periférica;",
+     "depth": 2,
+     "start": 59933,
+     "end": 60017,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.i.ii",
+     "path": "anexo-V.27.i.ii",
+     "text": "ii) Projeto de reforço sísmico, quando exigível, nos termos da lei;",
+     "depth": 2,
+     "start": 60018,
+     "end": 60085,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.i.iii",
+     "path": "anexo-V.27.i.iii",
+     "text": "iii) Projeto de instalações elétricas;",
+     "depth": 2,
+     "start": 60086,
+     "end": 60124,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.i.iv",
+     "path": "anexo-V.27.i.iv",
+     "text": "iv) Projeto de instalação de gás, quando exigível, nos termos da lei;",
+     "depth": 2,
+     "start": 60125,
+     "end": 60194,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.i.v",
+     "path": "anexo-V.27.i.v",
+     "text": "v) Projeto de redes prediais de água e esgotos;",
+     "depth": 2,
+     "start": 60195,
+     "end": 60242,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.i.vi",
+     "path": "anexo-V.27.i.vi",
+     "text": "vi) Projeto de águas pluviais;",
+     "depth": 2,
+     "start": 60243,
+     "end": 60273,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.i.vii",
+     "path": "anexo-V.27.i.vii",
+     "text": "vii) Projeto de arranjos exteriores, quando exista logradouro privativo;",
+     "depth": 2,
+     "start": 60274,
+     "end": 60346,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.i.viii",
+     "path": "anexo-V.27.i.viii",
+     "text": "viii) Projeto de infraestruturas de telecomunicações;",
+     "depth": 2,
+     "start": 60347,
+     "end": 60400,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.i.ix",
+     "path": "anexo-V.27.i.ix",
+     "text": "ix) Projeto de conforto térmico;",
+     "depth": 2,
+     "start": 60401,
+     "end": 60433,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.i.x",
+     "path": "anexo-V.27.i.x",
+     "text": "x) Projeto de instalações eletromecânicas, incluindo as de transporte de pessoas e ou mercadorias;",
+     "depth": 2,
+     "start": 60434,
+     "end": 60532,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.i.xi",
+     "path": "anexo-V.27.i.xi",
+     "text": "xi) Projeto de segurança contra incêndios em edifícios ou ficha de segurança, de acordo com a categoria de risco do edifício;",
+     "depth": 2,
+     "start": 60533,
+     "end": 60658,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.i.xii",
+     "path": "anexo-V.27.i.xii",
+     "text": "xii) Projeto de condicionamento acústico;",
+     "depth": 2,
+     "start": 60659,
+     "end": 60700,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.i.xiii",
+     "path": "anexo-V.27.i.xiii",
+     "text": "xiii) Projeto de instalações, equipamentos e sistemas de aquecimento, ventilação e ar condicionado (AVAC);",
+     "depth": 2,
+     "start": 60701,
+     "end": 60807,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.i.xiv",
+     "path": "anexo-V.27.i.xiv",
+     "text": "xiv) Projeto de sistemas de gestão técnica centralizada, quando exigível, nos termos da lei;",
+     "depth": 2,
+     "start": 60808,
+     "end": 60900,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.j",
+     "path": "anexo-V.27.j",
+     "text": "j) Número do alvará, ou do certificado, ou número de outro título habilitante emitido pelo IMPIC, I. P., que confira habilitações adequadas à natureza ou valor da obra;",
+     "depth": 1,
+     "start": 60901,
+     "end": 61069,
+     "words": [
+      "ou",
+      "ou",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.k",
+     "path": "anexo-V.27.k",
+     "text": "k) Termo de responsabilidade pela assunção da função de diretor de obra e, quando exista, de diretor de fiscalização de obra para efeitos do início da sua execução;",
+     "depth": 1,
+     "start": 61070,
+     "end": 61234,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.l",
+     "path": "anexo-V.27.l",
+     "text": "l) Declaração de habilitação profissional que permita a verificação das competências profissionais detidas pelo diretor de obra e, quando exista, pelo diretor de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional;",
+     "depth": 1,
+     "start": 61235,
+     "end": 61569,
+     "words": [
+      "quando",
+      "em caso de"
+     ],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.27.m",
+     "path": "anexo-V.27.m",
+     "text": "m) Comprovativo da contratação de seguro de responsabilidade civil do diretor de obra e, quando exista, do diretor de fiscalização de obra, nos termos da Lei n.º 31/2009 de 3 de julho;",
+     "depth": 1,
+     "start": 61570,
+     "end": 61754,
+     "words": [
+      "quando"
+     ],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.27.n",
+     "path": "anexo-V.27.n",
+     "text": "n) Apólice de seguro que cubra a responsabilidade pela reparação dos danos emergentes de acidentes de trabalho, nos termos previstos na Lei n.º 98/2009, de 4 de setembro, na sua redação atual;",
+     "depth": 1,
+     "start": 61755,
+     "end": 61947,
+     "words": [],
+     "cites": [
+      "Lei n.º 98/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.27.o",
+     "path": "anexo-V.27.o",
+     "text": "o) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013, de 24 de julho;",
+     "depth": 1,
+     "start": 61948,
+     "end": 62034,
+     "words": [],
+     "cites": [
+      "Portaria n.º 235/2013"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.27.p",
+     "path": "anexo-V.27.p",
+     "text": "p) Comprovativo de contratação do diretor de obra;",
+     "depth": 1,
+     "start": 62035,
+     "end": 62085,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.27.q",
+     "path": "anexo-V.27.q",
+     "text": "q) Em caso de utilização de produtos de construção não abrangidos por regras harmonizadas, sem marcação CE e sem declaração de desempenho e conformidade, e sem prejuízo do reconhecimento mútuo, deve ser apresentada declaração do projetista em como o produto não comporta risco para a satisfação de requisitos de desempenho e segurança, nos casos previstos para a sua aplicação, e em que não se justifica a solicitação de apreciação técnica ou de homologação.",
+     "depth": 1,
+     "start": 62086,
+     "end": 62544,
+     "words": [
+      "Em caso de",
+      "nos casos",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.28",
+   "name": "Pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, para obras de demolição",
+   "heading": "28 - Pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, para obras de demolição:",
+   "section": "VI - Elementos instrutórios específicos aplicáveis às obras de demolição",
+   "common": "yes",
+   "elements": [
+    {
+     "id": "V.28",
+     "path": "anexo-V.28",
+     "text": "28 - Pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, para obras de demolição:",
+     "depth": 0,
+     "start": 62618,
+     "end": 62719,
+     "words": [],
+     "cites": [
+      "n.º 2 do artigo 14.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.28.a",
+     "path": "anexo-V.28.a",
+     "text": "a) Descrição sumária do estado de conservação do imóvel e da utilização futura do terreno;",
+     "depth": 1,
+     "start": 62720,
+     "end": 62810,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.28.b",
+     "path": "anexo-V.28.b",
+     "text": "b) Plano de Prevenção e Gestão de Resíduos de Construção e Demolição (PPGRCD);",
+     "depth": 1,
+     "start": 62811,
+     "end": 62889,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.28.c",
+     "path": "anexo-V.28.c",
+     "text": "c) Projetos de especialidades necessários à execução dos trabalhos, incluindo o projeto de estabilidade ou de contenção de construções adjacentes;",
+     "depth": 1,
+     "start": 62890,
+     "end": 63036,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.28.d",
+     "path": "anexo-V.28.d",
+     "text": "d) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;",
+     "depth": 1,
+     "start": 63037,
+     "end": 63127,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.28.e",
+     "path": "anexo-V.28.e",
+     "text": "e) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;",
+     "depth": 1,
+     "start": 63128,
+     "end": 63373,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.29",
+   "name": "Licença para obras de demolição",
+   "heading": "29 - Licença para obras de demolição:",
+   "section": "VI - Elementos instrutórios específicos aplicáveis às obras de demolição",
+   "common": "yes",
+   "elements": [
+    {
+     "id": "V.29",
+     "path": "anexo-V.29",
+     "text": "29 - Licença para obras de demolição:",
+     "depth": 0,
+     "start": 63374,
+     "end": 63411,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.29.a",
+     "path": "anexo-V.29.a",
+     "text": "a) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da operação ou da atribuição dos poderes necessários para agir em sua representação, sempre que tal comprovação não resulte diretamente do n.º 5 do presente anexo;",
+     "depth": 1,
+     "start": 63412,
+     "end": 63689,
+     "words": [
+      "ou",
+      "sempre que"
+     ],
+     "cites": [],
+     "internal": [
+      "n.º 5 do presente anexo"
+     ]
+    },
+    {
+     "id": "V.29.b",
+     "path": "anexo-V.29.b",
+     "text": "b) Descrição sumária do estado de conservação do imóvel e da utilização futura do terreno;",
+     "depth": 1,
+     "start": 63690,
+     "end": 63780,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.29.c",
+     "path": "anexo-V.29.c",
+     "text": "c) Plano de Prevenção e Gestão de Resíduos de Construção e Demolição (PPGRCD);",
+     "depth": 1,
+     "start": 63781,
+     "end": 63859,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.29.d",
+     "path": "anexo-V.29.d",
+     "text": "d) Projetos de especialidades necessários à execução dos trabalhos incluindo o projeto de estabilidade integrando o projeto de contenção de construções adjacentes;",
+     "depth": 1,
+     "start": 63860,
+     "end": 64023,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.29.e",
+     "path": "anexo-V.29.e",
+     "text": "e) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;",
+     "depth": 1,
+     "start": 64024,
+     "end": 64114,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.29.f",
+     "path": "anexo-V.29.f",
+     "text": "f) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;",
+     "depth": 1,
+     "start": 64115,
+     "end": 64360,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.29.g",
+     "path": "anexo-V.29.g",
+     "text": "g) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013, de 24 de julho.",
+     "depth": 1,
+     "start": 64361,
+     "end": 64447,
+     "words": [],
+     "cites": [
+      "Portaria n.º 235/2013"
+     ],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.30",
+   "name": "Comunicação prévia para obras de demolição",
+   "heading": "30 - Comunicação prévia para obras de demolição:",
+   "section": "VI - Elementos instrutórios específicos aplicáveis às obras de demolição",
+   "common": "yes",
+   "elements": [
+    {
+     "id": "V.30",
+     "path": "anexo-V.30",
+     "text": "30 - Comunicação prévia para obras de demolição:",
+     "depth": 0,
+     "start": 64448,
+     "end": 64496,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.30.a",
+     "path": "anexo-V.30.a",
+     "text": "a) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da operação ou da atribuição dos poderes necessários para agir em sua representação, sempre que tal comprovação não resulte diretamente do n.º 5 do presente anexo;",
+     "depth": 1,
+     "start": 64497,
+     "end": 64774,
+     "words": [
+      "ou",
+      "sempre que"
+     ],
+     "cites": [],
+     "internal": [
+      "n.º 5 do presente anexo"
+     ]
+    },
+    {
+     "id": "V.30.b",
+     "path": "anexo-V.30.b",
+     "text": "b) Descrição sumária do estado de conservação do imóvel e da utilização futura do terreno;",
+     "depth": 1,
+     "start": 64775,
+     "end": 64865,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.30.c",
+     "path": "anexo-V.30.c",
+     "text": "c) Plano de Prevenção e Gestão de Resíduos de Construção e Demolição (PPGRCD);",
+     "depth": 1,
+     "start": 64866,
+     "end": 64944,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.30.d",
+     "path": "anexo-V.30.d",
+     "text": "d) Projetos de especialidades necessários à execução dos trabalhos, incluindo o projeto de estabilidade ou de contenção de construções adjacentes;",
+     "depth": 1,
+     "start": 64945,
+     "end": 65091,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.30.e",
+     "path": "anexo-V.30.e",
+     "text": "e) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;",
+     "depth": 1,
+     "start": 65092,
+     "end": 65182,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.30.f",
+     "path": "anexo-V.30.f",
+     "text": "f) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;",
+     "depth": 1,
+     "start": 65183,
+     "end": 65428,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.30.g",
+     "path": "anexo-V.30.g",
+     "text": "g) Número do alvará, ou do certificado, ou número de outro título habilitante emitido pelo IMPIC, I. P., que confira habilitações adequadas à natureza ou valor da obra;",
+     "depth": 1,
+     "start": 65429,
+     "end": 65597,
+     "words": [
+      "ou",
+      "ou",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.30.h",
+     "path": "anexo-V.30.h",
+     "text": "h) Termo de responsabilidade pela assunção da função de diretor de obra e, quando exista, de diretor de fiscalização de obra, para efeitos do início da sua execução;",
+     "depth": 1,
+     "start": 65598,
+     "end": 65763,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.30.i",
+     "path": "anexo-V.30.i",
+     "text": "i) Declaração de habilitação profissional que permita a verificação das competências profissionais detidas pelo diretor de obra e, quando exista, pelo diretor de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional;",
+     "depth": 1,
+     "start": 65764,
+     "end": 66098,
+     "words": [
+      "quando",
+      "em caso de"
+     ],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.30.j",
+     "path": "anexo-V.30.j",
+     "text": "j) Comprovativo da contratação de seguro de responsabilidade civil do diretor de obra e, quando exista, do diretor de fiscalização de obra, nos termos da Lei n.º 31/2009 de 3 de julho;",
+     "depth": 1,
+     "start": 66099,
+     "end": 66283,
+     "words": [
+      "quando"
+     ],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.30.k",
+     "path": "anexo-V.30.k",
+     "text": "k) Pareceres, autorizações ou aprovações das entidades externas cuja consulta seja obrigatória nos termos da lei, exceto se estas já se pronunciaram favoravelmente no âmbito de procedimento de informação prévia ou de aprovação de plano de pormenor, nos termos do n.º 2 do artigo 13.º do RJUE, caso em que é indicado o procedimento e os termos em que tal pronúncia ocorreu;",
+     "depth": 1,
+     "start": 66284,
+     "end": 66656,
+     "words": [
+      "ou",
+      "exceto",
+      "ou",
+      "caso"
+     ],
+     "cites": [
+      "n.º 2 do artigo 13.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.30.l",
+     "path": "anexo-V.30.l",
+     "text": "l) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013, de 24 de julho;",
+     "depth": 1,
+     "start": 66657,
+     "end": 66743,
+     "words": [],
+     "cites": [
+      "Portaria n.º 235/2013"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.30.m",
+     "path": "anexo-V.30.m",
+     "text": "m) Apólice de seguro que cubra a responsabilidade pela reparação de danos emergentes de acidentes de trabalho, nos termos previstos da Lei n.º 98/2009, de 4 de setembro, na sua redação atual;",
+     "depth": 1,
+     "start": 66744,
+     "end": 66935,
+     "words": [],
+     "cites": [
+      "Lei n.º 98/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.30.n",
+     "path": "anexo-V.30.n",
+     "text": "n) Comprovativo de contratação do diretor de obra.",
+     "depth": 1,
+     "start": 66936,
+     "end": 66986,
+     "words": [],
+     "cites": [],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.31",
+   "name": "Pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, para trabalhos de remodelação de terrenos",
+   "heading": "31 - Pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, para trabalhos de remodelação de terrenos:",
+   "section": "VII - Elementos instrutórios específicos aplicáveis aos trabalhos de remodelação de terrenos",
+   "common": "yes",
+   "elements": [
+    {
+     "id": "V.31",
+     "path": "anexo-V.31",
+     "text": "31 - Pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE, para trabalhos de remodelação de terrenos:",
+     "depth": 0,
+     "start": 67080,
+     "end": 67199,
+     "words": [],
+     "cites": [
+      "n.º 2 do artigo 14.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.31.a",
+     "path": "anexo-V.31.a",
+     "text": "a) Projetos de especialidades necessários à execução dos trabalhos;",
+     "depth": 1,
+     "start": 67200,
+     "end": 67267,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.31.b",
+     "path": "anexo-V.31.b",
+     "text": "b) Projeto de execução dos trabalhos;",
+     "depth": 1,
+     "start": 67268,
+     "end": 67305,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.31.c",
+     "path": "anexo-V.31.c",
+     "text": "c) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;",
+     "depth": 1,
+     "start": 67306,
+     "end": 67396,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.31.d",
+     "path": "anexo-V.31.d",
+     "text": "d) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil.",
+     "depth": 1,
+     "start": 67397,
+     "end": 67642,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.32",
+   "name": "Licença para trabalhos de remodelação de terrenos",
+   "heading": "32 - Licença para trabalhos de remodelação de terrenos:",
+   "section": "VII - Elementos instrutórios específicos aplicáveis aos trabalhos de remodelação de terrenos",
+   "common": "yes",
+   "elements": [
+    {
+     "id": "V.32",
+     "path": "anexo-V.32",
+     "text": "32 - Licença para trabalhos de remodelação de terrenos:",
+     "depth": 0,
+     "start": 67643,
+     "end": 67698,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.32.a",
+     "path": "anexo-V.32.a",
+     "text": "a) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da operação ou da atribuição dos poderes necessários para agir em sua representação, sempre que tal comprovação não resulte diretamente do n.º 5;",
+     "depth": 1,
+     "start": 67699,
+     "end": 67958,
+     "words": [
+      "ou",
+      "sempre que"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.32.b",
+     "path": "anexo-V.32.b",
+     "text": "b) Projetos de especialidades necessários à execução dos trabalhos;",
+     "depth": 1,
+     "start": 67959,
+     "end": 68026,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.32.c",
+     "path": "anexo-V.32.c",
+     "text": "c) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;",
+     "depth": 1,
+     "start": 68027,
+     "end": 68117,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.32.d",
+     "path": "anexo-V.32.d",
+     "text": "d) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;",
+     "depth": 1,
+     "start": 68118,
+     "end": 68363,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.32.e",
+     "path": "anexo-V.32.e",
+     "text": "e) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013, de 24 de julho.",
+     "depth": 1,
+     "start": 68364,
+     "end": 68450,
+     "words": [],
+     "cites": [
+      "Portaria n.º 235/2013"
+     ],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.33",
+   "name": "Comunicação prévia para trabalhos de remodelação de terrenos",
+   "heading": "33 - Comunicação prévia para trabalhos de remodelação de terrenos:",
+   "section": "VII - Elementos instrutórios específicos aplicáveis aos trabalhos de remodelação de terrenos",
+   "common": "yes",
+   "elements": [
+    {
+     "id": "V.33",
+     "path": "anexo-V.33",
+     "text": "33 - Comunicação prévia para trabalhos de remodelação de terrenos:",
+     "depth": 0,
+     "start": 68451,
+     "end": 68517,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.33.a",
+     "path": "anexo-V.33.a",
+     "text": "a) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da operação ou da atribuição dos poderes necessários para agir em sua representação, sempre que tal comprovação não resulte diretamente do n.º 5;",
+     "depth": 1,
+     "start": 68518,
+     "end": 68777,
+     "words": [
+      "ou",
+      "sempre que"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.33.b",
+     "path": "anexo-V.33.b",
+     "text": "b) Projetos de especialidades necessários à execução dos trabalhos;",
+     "depth": 1,
+     "start": 68778,
+     "end": 68845,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.33.c",
+     "path": "anexo-V.33.c",
+     "text": "c) Projeto de execução dos trabalhos;",
+     "depth": 1,
+     "start": 68846,
+     "end": 68883,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.33.d",
+     "path": "anexo-V.33.d",
+     "text": "d) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;",
+     "depth": 1,
+     "start": 68884,
+     "end": 68974,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.33.e",
+     "path": "anexo-V.33.e",
+     "text": "e) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;",
+     "depth": 1,
+     "start": 68975,
+     "end": 69220,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.33.f",
+     "path": "anexo-V.33.f",
+     "text": "f) Pareceres, autorizações ou aprovações das entidades externas cuja consulta seja obrigatória nos termos da lei, exceto se estas já se pronunciaram favoravelmente no âmbito de procedimento de informação prévia ou de aprovação de plano de pormenor, nos termos do n.º 2 do artigo 13.º do RJUE, caso em que é indicado o procedimento e os termos em que tal pronúncia ocorreu;",
+     "depth": 1,
+     "start": 69221,
+     "end": 69593,
+     "words": [
+      "ou",
+      "exceto",
+      "ou",
+      "caso"
+     ],
+     "cites": [
+      "n.º 2 do artigo 13.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.33.g",
+     "path": "anexo-V.33.g",
+     "text": "g) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013, de 24 de julho;",
+     "depth": 1,
+     "start": 69594,
+     "end": 69680,
+     "words": [],
+     "cites": [
+      "Portaria n.º 235/2013"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.33.h",
+     "path": "anexo-V.33.h",
+     "text": "h) Número do alvará, ou do certificado, ou número de outro título habilitante emitido pelo IMPIC, I. P., que confira habilitações adequadas à natureza ou valor da obra;",
+     "depth": 1,
+     "start": 69681,
+     "end": 69849,
+     "words": [
+      "ou",
+      "ou",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.33.i",
+     "path": "anexo-V.33.i",
+     "text": "i) Termo de responsabilidade pela assunção da função de diretor de obra e, quando exista, de diretor de fiscalização de obra, para efeitos do início da sua execução;",
+     "depth": 1,
+     "start": 69850,
+     "end": 70015,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.33.j",
+     "path": "anexo-V.33.j",
+     "text": "j) Declaração de habilitação profissional que permita a verificação das competências profissionais detidas pelo diretor de obra e, quando exista, pelo diretor de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional;",
+     "depth": 1,
+     "start": 70016,
+     "end": 70350,
+     "words": [
+      "quando",
+      "em caso de"
+     ],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.33.k",
+     "path": "anexo-V.33.k",
+     "text": "k) Comprovativo da contratação de seguro de responsabilidade civil do diretor de obra e, quando exista, do diretor de fiscalização de obra, nos termos da Lei n.º 31/2009 de 3 de julho;",
+     "depth": 1,
+     "start": 70351,
+     "end": 70535,
+     "words": [
+      "quando"
+     ],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.33.l",
+     "path": "anexo-V.33.l",
+     "text": "l) Apólice de seguro que cubra a responsabilidade pela reparação dos danos emergentes de acidentes de trabalho, nos termos previstos na Lei n.º 98/2009, de 4 de setembro, na sua redação atual;",
+     "depth": 1,
+     "start": 70536,
+     "end": 70728,
+     "words": [],
+     "cites": [
+      "Lei n.º 98/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.33.m",
+     "path": "anexo-V.33.m",
+     "text": "m) Comprovativo de contratação do diretor de obra.",
+     "depth": 1,
+     "start": 70729,
+     "end": 70779,
+     "words": [],
+     "cites": [],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.34",
+   "name": "Elementos instrutórios aplicáveis à comunicação prévia de utilizações do solo ou instalações técnicas, por força de legislação especial",
+   "heading": "34 - Elementos instrutórios aplicáveis à comunicação prévia de utilizações do solo ou instalações técnicas, por força de legislação especial:",
+   "section": "VIII - Elementos instrutórios específicos aplicáveis a outras utilizações do solo, quando sujeitas a tal procedimento por força de lei especial",
+   "common": "applicable",
+   "elements": [
+    {
+     "id": "V.34",
+     "path": "anexo-V.34",
+     "text": "34 - Elementos instrutórios aplicáveis à comunicação prévia de utilizações do solo ou instalações técnicas, por força de legislação especial:",
+     "depth": 0,
+     "start": 70924,
+     "end": 71065,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.34.a",
+     "path": "anexo-V.34.a",
+     "text": "a) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da operação ou da atribuição dos poderes necessários para agir em sua representação, sempre que tal comprovação não resulte diretamente do n.º 5;",
+     "depth": 1,
+     "start": 71066,
+     "end": 71325,
+     "words": [
+      "ou",
+      "sempre que"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.34.b",
+     "path": "anexo-V.34.b",
+     "text": "b) Pareceres, autorizações ou aprovações das entidades externas cuja consulta seja obrigatória nos termos da lei, exceto se estas já se pronunciaram favoravelmente no âmbito de procedimento de informação prévia ou de aprovação de plano de pormenor, nos termos do n.º 2 do artigo 13.º do RJUE, caso em que é indicado o procedimento e os termos em que tal pronúncia ocorreu;",
+     "depth": 1,
+     "start": 71326,
+     "end": 71698,
+     "words": [
+      "ou",
+      "exceto",
+      "ou",
+      "caso"
+     ],
+     "cites": [
+      "n.º 2 do artigo 13.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.34.c",
+     "path": "anexo-V.34.c",
+     "text": "c) Peças desenhadas e escritas que permitam caracterizar a operação a realizar, nomeadamente planta de síntese e perfis transversais e longitudinais, cujos conteúdos devem permitir caracterizar adequadamente a operação a realizar, bem como a identificação das normas legais e regulamentares aplicáveis e a comprovação do seu cumprimento, atendendo à finalidade da operação;",
+     "depth": 1,
+     "start": 71699,
+     "end": 72072,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.34.d",
+     "path": "anexo-V.34.d",
+     "text": "d) Projetos das especialidades que integrem a obra, devendo cada projeto conter memória descritiva e justificativa, bem como os cálculos, se for caso disso, e as peças desenhadas, em escala tecnicamente adequada, com os respetivos termos de responsabilidade dos técnicos autores dos projetos quanto ao cumprimento das normas legais e regulamentares aplicáveis;",
+     "depth": 1,
+     "start": 72073,
+     "end": 72433,
+     "words": [
+      "caso"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.34.e",
+     "path": "anexo-V.34.e",
+     "text": "e) Calendarização da execução da obra, com estimativa do prazo de conclusão dos trabalhos;",
+     "depth": 1,
+     "start": 72434,
+     "end": 72524,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.34.f",
+     "path": "anexo-V.34.f",
+     "text": "f) Estimativa do custo total da obra;",
+     "depth": 1,
+     "start": 72525,
+     "end": 72562,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.34.g",
+     "path": "anexo-V.34.g",
+     "text": "g) Número do alvará, ou do certificado, ou número de outro título habilitante emitido pelo IMPIC, I. P., que confira habilitações adequadas à natureza ou valor da obra;",
+     "depth": 1,
+     "start": 72563,
+     "end": 72731,
+     "words": [
+      "ou",
+      "ou",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.34.h",
+     "path": "anexo-V.34.h",
+     "text": "h) Termo de responsabilidade pela assunção da função de diretor de obra e, quando exista, de diretor de fiscalização de obra, para efeitos do início da sua execução;",
+     "depth": 1,
+     "start": 72732,
+     "end": 72897,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.34.i",
+     "path": "anexo-V.34.i",
+     "text": "i) Declaração de habilitação profissional que permita a verificação das competências profissionais detidas pelo diretor de obra e, quando exista, pelo diretor de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional;",
+     "depth": 1,
+     "start": 72898,
+     "end": 73232,
+     "words": [
+      "quando",
+      "em caso de"
+     ],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.34.j",
+     "path": "anexo-V.34.j",
+     "text": "j) Comprovativo da contratação de seguro de responsabilidade civil dos técnicos, nos termos da Lei n.º 31/2009, de 3 de julho;",
+     "depth": 1,
+     "start": 73233,
+     "end": 73359,
+     "words": [],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.34.k",
+     "path": "anexo-V.34.k",
+     "text": "k) Apólice de seguro que cubra a responsabilidade pela reparação dos danos emergentes de acidentes de trabalho, nos termos previstos na Lei n.º 98/2009, de 4 de setembro, na sua redação atual.",
+     "depth": 1,
+     "start": 73360,
+     "end": 73552,
+     "words": [],
+     "cites": [
+      "Lei n.º 98/2009"
+     ],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.35",
+   "name": "Informação sobre o início dos trabalhos relativos a operações submetidas a procedimento de licenciamento",
+   "heading": "35 - Informação sobre o início dos trabalhos relativos a operações submetidas a procedimento de licenciamento:",
+   "section": "IX - Elementos instrutórios da informação sobre o início dos trabalhos",
+   "common": "no",
+   "elements": [
+    {
+     "id": "V.35",
+     "path": "anexo-V.35",
+     "text": "35 - Informação sobre o início dos trabalhos relativos a operações submetidas a procedimento de licenciamento:",
+     "depth": 0,
+     "start": 73624,
+     "end": 73734,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.35.a",
+     "path": "anexo-V.35.a",
+     "text": "a) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da obra ou da atribuição dos poderes necessários para agir em sua representação;",
+     "depth": 1,
+     "start": 73735,
+     "end": 73929,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.35.b",
+     "path": "anexo-V.35.b",
+     "text": "b) Número do alvará, ou do certificado, ou número de outro título habilitante emitido pelo IMPIC, I. P., que confira habilitações adequadas à natureza ou valor da obra;",
+     "depth": 1,
+     "start": 73930,
+     "end": 74098,
+     "words": [
+      "ou",
+      "ou",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.35.c",
+     "path": "anexo-V.35.c",
+     "text": "c) Apólice de seguro que cubra a responsabilidade pela reparação dos danos emergentes de acidentes de trabalho, nos termos previstos na Lei n.º 98/2009, de 4 de setembro, na sua redação atual;",
+     "depth": 1,
+     "start": 74099,
+     "end": 74291,
+     "words": [],
+     "cites": [
+      "Lei n.º 98/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.35.d",
+     "path": "anexo-V.35.d",
+     "text": "d) O cálculo e o comprovativo da prestação de caução, quando esta seja exigível, efetuados nos termos do regulamento municipal de urbanização e de edificação;",
+     "depth": 1,
+     "start": 74292,
+     "end": 74450,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.35.e",
+     "path": "anexo-V.35.e",
+     "text": "e) Documento comprovativo de pagamento das taxas e demais encargos devidos;",
+     "depth": 1,
+     "start": 74451,
+     "end": 74526,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.35.f",
+     "path": "anexo-V.35.f",
+     "text": "f) Comprovativo de contratação do diretor de obra;",
+     "depth": 1,
+     "start": 74527,
+     "end": 74577,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.35.g",
+     "path": "anexo-V.35.g",
+     "text": "g) Termo de responsabilidade pela assunção da função de diretor de obra e, quando exista, de diretor de fiscalização de obra, para efeitos do início da sua execução;",
+     "depth": 1,
+     "start": 74578,
+     "end": 74743,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.35.h",
+     "path": "anexo-V.35.h",
+     "text": "h) Declaração de habilitação profissional que permita a verificação das competências profissionais detidas pelo diretor de obra e, quando exista, pelo diretor de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional;",
+     "depth": 1,
+     "start": 74744,
+     "end": 75078,
+     "words": [
+      "quando",
+      "em caso de"
+     ],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.35.i",
+     "path": "anexo-V.35.i",
+     "text": "i) Comprovativo da contratação de seguro de responsabilidade civil dos técnicos, nos termos da Lei n.º 31/2009, de 3 de julho;",
+     "depth": 1,
+     "start": 75079,
+     "end": 75205,
+     "words": [],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.36",
+   "name": "Informação sobre o início dos trabalhos relativos a operações sujeitas a comunicação prévia",
+   "heading": "36 - Informação sobre o início dos trabalhos relativos a operações sujeitas a comunicação prévia:",
+   "section": "IX - Elementos instrutórios da informação sobre o início dos trabalhos",
+   "common": "no",
+   "elements": [
+    {
+     "id": "V.36",
+     "path": "anexo-V.36",
+     "text": "36 - Informação sobre o início dos trabalhos relativos a operações sujeitas a comunicação prévia:",
+     "depth": 0,
+     "start": 75206,
+     "end": 75303,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.36.a",
+     "path": "anexo-V.36.a",
+     "text": "a) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da obra ou da atribuição dos poderes necessários para agir em sua representação;",
+     "depth": 1,
+     "start": 75304,
+     "end": 75498,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.36.b",
+     "path": "anexo-V.36.b",
+     "text": "b) O cálculo e o comprovativo da prestação de caução, quando esta seja exigível, efetuados nos termos do regulamento municipal de urbanização e de edificação;",
+     "depth": 1,
+     "start": 75499,
+     "end": 75657,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.36.c",
+     "path": "anexo-V.36.c",
+     "text": "c) Documento comprovativo de pagamento das taxas e demais encargos devidos.",
+     "depth": 1,
+     "start": 75658,
+     "end": 75733,
+     "words": [],
+     "cites": [],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.37",
+   "name": "Informação sobre o início dos trabalhos relativos a operações isentas na sequência de pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE",
+   "heading": "37 - Informação sobre o início dos trabalhos relativos a operações isentas na sequência de pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE:",
+   "section": "IX - Elementos instrutórios da informação sobre o início dos trabalhos",
+   "common": "no",
+   "elements": [
+    {
+     "id": "V.37",
+     "path": "anexo-V.37",
+     "text": "37 - Informação sobre o início dos trabalhos relativos a operações isentas na sequência de pedido de informação prévia nos termos do n.º 2 do artigo 14.º do RJUE:",
+     "depth": 0,
+     "start": 75734,
+     "end": 75896,
+     "words": [],
+     "cites": [
+      "n.º 2 do artigo 14.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.37.a",
+     "path": "anexo-V.37.a",
+     "text": "a) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da obra ou da atribuição dos poderes necessários para agir em sua representação;",
+     "depth": 1,
+     "start": 75897,
+     "end": 76091,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.37.b",
+     "path": "anexo-V.37.b",
+     "text": "b) Número do alvará, ou do certificado, ou número de outro título habilitante emitido pelo IMPIC, I. P., que confira habilitações adequadas à natureza ou valor da obra;",
+     "depth": 1,
+     "start": 76092,
+     "end": 76260,
+     "words": [
+      "ou",
+      "ou",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.37.c",
+     "path": "anexo-V.37.c",
+     "text": "c) Apólice de seguro que cubra a responsabilidade pela reparação dos danos emergentes de acidentes de trabalho, nos termos previstos na Lei n.º 98/2009, de 4 de setembro, na sua redação atual;",
+     "depth": 1,
+     "start": 76261,
+     "end": 76453,
+     "words": [],
+     "cites": [
+      "Lei n.º 98/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.37.d",
+     "path": "anexo-V.37.d",
+     "text": "d) O cálculo e o comprovativo da prestação de caução, quando esta seja exigível, efetuados nos termos do regulamento municipal de urbanização e de edificação;",
+     "depth": 1,
+     "start": 76454,
+     "end": 76612,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.37.e",
+     "path": "anexo-V.37.e",
+     "text": "e) Documento comprovativo de pagamento das taxas e demais encargos devidos;",
+     "depth": 1,
+     "start": 76613,
+     "end": 76688,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.37.f",
+     "path": "anexo-V.37.f",
+     "text": "f) Documento comprovativo da realização de cedências, caso aplicável, nos termos do n.º 3 do artigo 44.º do RJUE;",
+     "depth": 1,
+     "start": 76689,
+     "end": 76802,
+     "words": [
+      "caso"
+     ],
+     "cites": [
+      "n.º 3 do artigo 44.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.37.g",
+     "path": "anexo-V.37.g",
+     "text": "g) Comprovativo de contratação do diretor de obra;",
+     "depth": 1,
+     "start": 76803,
+     "end": 76853,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.37.h",
+     "path": "anexo-V.37.h",
+     "text": "h) Termo de responsabilidade pela assunção da função de diretor de obra e, quando exista, de diretor de fiscalização de obra, para efeitos do início da sua execução;",
+     "depth": 1,
+     "start": 76854,
+     "end": 77019,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.37.i",
+     "path": "anexo-V.37.i",
+     "text": "i) Declaração de habilitação profissional que permita a verificação das competências profissionais detidas pelo diretor de obra e, quando exista, pelo diretor de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional;",
+     "depth": 1,
+     "start": 77020,
+     "end": 77354,
+     "words": [
+      "quando",
+      "em caso de"
+     ],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.37.j",
+     "path": "anexo-V.37.j",
+     "text": "j) Comprovativo da contratação de seguro de responsabilidade civil dos técnicos, nos termos da Lei n.º 31/2009, de 3 de julho;",
+     "depth": 1,
+     "start": 77355,
+     "end": 77481,
+     "words": [],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.37.k",
+     "path": "anexo-V.37.k",
+     "text": "k) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013, de 24 de julho;",
+     "depth": 1,
+     "start": 77482,
+     "end": 77568,
+     "words": [],
+     "cites": [
+      "Portaria n.º 235/2013"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.37.l",
+     "path": "anexo-V.37.l",
+     "text": "l) Projetos de especialidades, a apresentar em função do tipo de obra a executar, acompanhados de:",
+     "depth": 1,
+     "start": 77569,
+     "end": 77667,
+     "words": [
+      "em função do"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.37.l.i",
+     "path": "anexo-V.37.l.i",
+     "text": "i) Termo(s) de responsabilidade do(s) técnico(s) autor(es), nos termos previstos no n.º 4 do artigo 80.º-A do RJUE;",
+     "depth": 2,
+     "start": 77668,
+     "end": 77783,
+     "words": [],
+     "cites": [
+      "n.º 4 do artigo 80.º-A do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.37.l.ii",
+     "path": "anexo-V.37.l.ii",
+     "text": "ii) Termo de responsabilidade do coordenador dos projetos, nos termos previstos no n.º 4 do artigo 80.º-A do RJUE;",
+     "depth": 2,
+     "start": 77784,
+     "end": 77898,
+     "words": [],
+     "cites": [
+      "n.º 4 do artigo 80.º-A do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.37.l.iii",
+     "path": "anexo-V.37.l.iii",
+     "text": "iii) Declaração de habilitação profissional que permita a verificação das competências profissionais detidas pelos técnicos autores dos projetos e técnico coordenador, nos termos previstos no n.º 4 do artigo 80.º-A do RJUE e da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional;",
+     "depth": 2,
+     "start": 77899,
+     "end": 78263,
+     "words": [
+      "em caso de"
+     ],
+     "cites": [
+      "Lei n.º 31/2009",
+      "n.º 4 do artigo 80.º-A do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.37.l.iv",
+     "path": "anexo-V.37.l.iv",
+     "text": "iv) Comprovativo da contratação de seguro de responsabilidade civil dos técnicos, nos termos da Lei n.º 31/2009, de 3 de julho.",
+     "depth": 2,
+     "start": 78264,
+     "end": 78391,
+     "words": [],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.38",
+   "name": "Informação sobre o início dos trabalhos relativos a operações isentas de licença ou comunicação prévia, com exceção das previstas na alínea h), n.º 1, do artigo 6.º",
+   "heading": "38 - Informação sobre o início dos trabalhos relativos a operações isentas de licença ou comunicação prévia, com exceção das previstas na alínea h), n.º 1, do artigo 6.º",
+   "section": "IX - Elementos instrutórios da informação sobre o início dos trabalhos",
+   "common": "no",
+   "elements": [
+    {
+     "id": "V.38",
+     "path": "anexo-V.38",
+     "text": "38 - Informação sobre o início dos trabalhos relativos a operações isentas de licença ou comunicação prévia, com exceção das previstas na alínea h), n.º 1, do artigo 6.º",
+     "depth": 0,
+     "start": 78392,
+     "end": 78561,
+     "words": [
+      "ou"
+     ],
+     "cites": [
+      "artigo 6.º"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.38.a",
+     "path": "anexo-V.38.a",
+     "text": "a) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da obra ou da atribuição dos poderes necessários para agir em sua representação;",
+     "depth": 1,
+     "start": 78562,
+     "end": 78756,
+     "words": [
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.38.b",
+     "path": "anexo-V.38.b",
+     "text": "b) Quando as obras de alteração no interior dos edifícios impliquem uma alteração à estabilidade, deve ser apresentado:",
+     "depth": 1,
+     "start": 78757,
+     "end": 78876,
+     "words": [
+      "Quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.38.b.i",
+     "path": "anexo-V.38.b.i",
+     "text": "i) Projeto de estabilidade, para efeitos de mero depósito, acompanhado por termo de responsabilidade elaborado por técnico habilitado;",
+     "depth": 2,
+     "start": 78877,
+     "end": 79011,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.38.b.ii",
+     "path": "anexo-V.38.b.ii",
+     "text": "ii) Projeto de reforço sísmico, quando exigível nos termos da lei, para efeitos de mero depósito, acompanhado por termo de responsabilidade elaborado por técnico habilitado;",
+     "depth": 2,
+     "start": 79012,
+     "end": 79185,
+     "words": [
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.38.b.iii",
+     "path": "anexo-V.38.b.iii",
+     "text": "iii) Declaração de habilitação profissional que permita a verificação das competências profissionais detidas pelo técnico autor do projeto, nos termos previstos nos n.os 3 e 4 do artigo 10.º do RJUE e da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional;",
+     "depth": 2,
+     "start": 79186,
+     "end": 79526,
+     "words": [
+      "em caso de"
+     ],
+     "cites": [
+      "Lei n.º 31/2009",
+      "artigo 10.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.38.b.iv",
+     "path": "anexo-V.38.b.iv",
+     "text": "iv) Comprovativo da contratação de seguro de responsabilidade civil dos técnicos, nos termos da Lei n.º 31/2009, de 3 de julho.",
+     "depth": 2,
+     "start": 79527,
+     "end": 79654,
+     "words": [],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.38.c",
+     "path": "anexo-V.38.c",
+     "text": "c) Em caso de obras de reconstrução de edifícios ou frações, previstas na alínea e) do n.º 1 do artigo 6.º do RJUE, devem ser apresentados os elementos gráficos comprovativos do último antecedente válido, tais como plantas, cortes e alçados, quando existam, elementos fotográficos ou outros elementos comprovativos da existência de direitos adquiridos, devendo ainda ser apresentados os elementos previstos na alínea anterior, quando a obra implique uma alteração à estabilidade.",
+     "depth": 1,
+     "start": 79655,
+     "end": 80134,
+     "words": [
+      "Em caso de",
+      "ou",
+      "quando",
+      "ou",
+      "quando"
+     ],
+     "cites": [
+      "n.º 1 do artigo 6.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.38.d",
+     "path": "anexo-V.38.d",
+     "text": "d) Parecer favorável da entidade competente ao abrigo da legislação do património cultural (em caso de obras de conservação de imóveis classificados ou em vias de classificação, bem como de imóveis integrados em conjuntos ou sítios classificados ou em vias de classificação, nos termos da alínea k) do n.º 1 do artigo 6.º do RJUE);",
+     "depth": 1,
+     "start": 80135,
+     "end": 80466,
+     "words": [
+      "em caso de",
+      "ou",
+      "ou",
+      "ou"
+     ],
+     "cites": [
+      "n.º 1 do artigo 6.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.38.e",
+     "path": "anexo-V.38.e",
+     "text": "e) Documento comprovativo de pagamento das taxas e demais encargos devidos, se aplicável;",
+     "depth": 1,
+     "start": 80467,
+     "end": 80556,
+     "words": [
+      "se aplicável"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.38.f",
+     "path": "anexo-V.38.f",
+     "text": "f) Documento comprovativo da realização de cedências, caso aplicável, nos termos do n.º 3 do artigo 44.º do RJUE.",
+     "depth": 1,
+     "start": 80557,
+     "end": 80670,
+     "words": [
+      "caso"
+     ],
+     "cites": [
+      "n.º 3 do artigo 44.º do RJUE"
+     ],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.39",
+   "name": "Comunicação prévia no caso de utilização ou alteração de uso de edifício ou fração ao abrigo do artigo 62.º-A do RJUE",
+   "heading": "39 - Comunicação prévia no caso de utilização ou alteração de uso de edifício ou fração ao abrigo do artigo 62.º-A do RJUE",
+   "section": "X - Elementos instrutórios aplicáveis à utilização e alteração de uso",
+   "common": "no",
+   "elements": [
+    {
+     "id": "V.39",
+     "path": "anexo-V.39",
+     "text": "39 - Comunicação prévia no caso de utilização ou alteração de uso de edifício ou fração ao abrigo do artigo 62.º-A do RJUE",
+     "depth": 0,
+     "start": 80741,
+     "end": 80863,
+     "words": [
+      "caso",
+      "ou",
+      "ou"
+     ],
+     "cites": [
+      "artigo 62.º-A do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.39.a",
+     "path": "anexo-V.39.a",
+     "text": "a) Indicação do código de acesso à certidão permanente do registo predial referente ao prédio ou prédios abrangidos pela operação urbanística ou, quando omisso, a respetiva certidão negativa do registo predial, acompanhada da caderneta predial da qual constem os correspondentes artigos matriciais;",
+     "depth": 1,
+     "start": 80864,
+     "end": 81162,
+     "words": [
+      "ou",
+      "ou",
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.39.b",
+     "path": "anexo-V.39.b",
+     "text": "b) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da operação ou da atribuição dos poderes necessários para agir em sua representação, sempre que tal comprovação não resulte diretamente da alínea anterior;",
+     "depth": 1,
+     "start": 81163,
+     "end": 81432,
+     "words": [
+      "ou",
+      "sempre que"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.39.c",
+     "path": "anexo-V.39.c",
+     "text": "c) Telas finais, quando tenham existido alterações isentas de licença ou comunicação prévia, devendo as mesmas ser devidamente assinaladas;",
+     "depth": 1,
+     "start": 81433,
+     "end": 81572,
+     "words": [
+      "quando",
+      "ou"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.39.d",
+     "path": "anexo-V.39.d",
+     "text": "d) Fotografias do imóvel;",
+     "depth": 1,
+     "start": 81573,
+     "end": 81598,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.39.e",
+     "path": "anexo-V.39.e",
+     "text": "e) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013, de 24 de julho;",
+     "depth": 1,
+     "start": 81599,
+     "end": 81685,
+     "words": [],
+     "cites": [
+      "Portaria n.º 235/2013"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.39.f",
+     "path": "anexo-V.39.f",
+     "text": "f) Termo de responsabilidade subscrito pelo diretor da obra ou pelo diretor de fiscalização da obra, ou, em caso de impossibilidade destes, em que já não seja possível proceder à sua substituição, por técnico legalmente habilitado ao exercício daquelas funções, declarando que a obra se encontra concluída e que foi executada de acordo com os projetos de arquitetura e arranjos exteriores aprovados, bem como com as condições estabelecidas no âmbito do respetivo procedimento;",
+     "depth": 1,
+     "start": 81686,
+     "end": 82162,
+     "words": [
+      "ou",
+      "ou",
+      "em caso de"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.39.g",
+     "path": "anexo-V.39.g",
+     "text": "g) Declaração de habilitação profissional que permita a verificação das competências profissionais detidas pelo diretor de obra ou pelo diretor de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional;",
+     "depth": 1,
+     "start": 82163,
+     "end": 82482,
+     "words": [
+      "ou",
+      "em caso de"
+     ],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.39.h",
+     "path": "anexo-V.39.h",
+     "text": "h) Comprovativo da contratação de seguro de responsabilidade civil dos técnicos, nos termos da Lei n.º 31/2009, de 3 de julho.",
+     "depth": 1,
+     "start": 82483,
+     "end": 82609,
+     "words": [],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    }
+   ]
+  },
+  {
+   "id": "V.40",
+   "name": "Comunicação prévia com prazo, no caso de utilização ou alteração de uso de edifício ou fração ao abrigo do artigo 62.º-B do RJUE",
+   "heading": "40 - Comunicação prévia com prazo, no caso de utilização ou alteração de uso de edifício ou fração ao abrigo do artigo 62.º-B do RJUE",
+   "section": "X - Elementos instrutórios aplicáveis à utilização e alteração de uso",
+   "common": "no",
+   "elements": [
+    {
+     "id": "V.40",
+     "path": "anexo-V.40",
+     "text": "40 - Comunicação prévia com prazo, no caso de utilização ou alteração de uso de edifício ou fração ao abrigo do artigo 62.º-B do RJUE",
+     "depth": 0,
+     "start": 82610,
+     "end": 82743,
+     "words": [
+      "caso",
+      "ou",
+      "ou"
+     ],
+     "cites": [
+      "artigo 62.º-B do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.40.a",
+     "path": "anexo-V.40.a",
+     "text": "a) Indicação do código de acesso à certidão permanente do registo predial referente ao prédio ou prédios abrangidos pela operação urbanística ou, quando omisso, a respetiva certidão negativa do registo predial, acompanhada da caderneta predial da qual constem os correspondentes artigos matriciais;",
+     "depth": 1,
+     "start": 82744,
+     "end": 83042,
+     "words": [
+      "ou",
+      "ou",
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.40.b",
+     "path": "anexo-V.40.b",
+     "text": "b) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da operação ou da atribuição dos poderes necessários para agir em sua representação, sempre que tal comprovação não resulte diretamente da alínea anterior;",
+     "depth": 1,
+     "start": 83043,
+     "end": 83312,
+     "words": [
+      "ou",
+      "sempre que"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.40.c",
+     "path": "anexo-V.40.c",
+     "text": "c) Termo de responsabilidade subscrito por pessoa legalmente habilitada a ser autor de projeto de arquitetura, a atestar a conformidade da utilização prevista com as normas legais e regulamentares que fixam os usos e utilizações admissíveis e a idoneidade do edifício ou fração autónoma para o fim pretendido, nos termos previstos no artigo 63.º do RJUE;",
+     "depth": 1,
+     "start": 83313,
+     "end": 83667,
+     "words": [
+      "ou"
+     ],
+     "cites": [
+      "artigo 63.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.40.d",
+     "path": "anexo-V.40.d",
+     "text": "d) Declaração de habilitação profissional que permita a verificação das competências profissionais detidas pelo técnico legalmente habilitado a ser autor de projeto de arquitetura, nos termos previstos nos n.os 3 e 4 do artigo 10.º do RJUE e da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional;",
+     "depth": 1,
+     "start": 83668,
+     "end": 84049,
+     "words": [
+      "em caso de"
+     ],
+     "cites": [
+      "Lei n.º 31/2009",
+      "artigo 10.º do RJUE"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.40.e",
+     "path": "anexo-V.40.e",
+     "text": "e) Comprovativo da contratação de seguro de responsabilidade civil dos técnicos, nos termos da Lei n.º 31/2009, de 3 de julho;",
+     "depth": 1,
+     "start": 84050,
+     "end": 84176,
+     "words": [],
+     "cites": [
+      "Lei n.º 31/2009"
+     ],
+     "internal": []
+    },
+    {
+     "id": "V.40.f",
+     "path": "anexo-V.40.f",
+     "text": "f) Telas finais, quando tenham sido executadas obras isentas de licença ou comunicação prévia, devendo as mesmas estar devidamente assinaladas, ou planta da situação existente quando não tenham sido realizadas obras;",
+     "depth": 1,
+     "start": 84177,
+     "end": 84393,
+     "words": [
+      "quando",
+      "ou",
+      "ou",
+      "quando"
+     ],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.40.g",
+     "path": "anexo-V.40.g",
+     "text": "g) Fotografias do imóvel;",
+     "depth": 1,
+     "start": 84394,
+     "end": 84419,
+     "words": [],
+     "cites": [],
+     "internal": []
+    },
+    {
+     "id": "V.40.h",
+     "path": "anexo-V.40.h",
+     "text": "h) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013 de 24 de julho.",
+     "depth": 1,
+     "start": 84420,
+     "end": 84505,
+     "words": [],
+     "cites": [
+      "Portaria n.º 235/2013"
+     ],
+     "internal": []
+    }
+   ]
+  }
+ ],
+ "rjue_art9_12_cannot_be_asked": [
+  {
+   "id": "anexo.art9.12",
+   "text": "12 - A portaria prevista no n.º 4 não pode prever como elementos instrutórios que devam acompanhar o pedido ou comunicação nem os municípios podem determinar a apresentação de:"
+  },
+  {
+   "id": "anexo.art9.12.a",
+   "text": "a) Formas de autenticação, de reconhecimento ou de certificação das assinaturas de qualquer documento;"
+  },
+  {
+   "id": "anexo.art9.12.b",
+   "text": "b) Cópias de documentos na posse da câmara como, designadamente títulos de operações ou registos;"
+  },
+  {
+   "id": "anexo.art9.12.c",
+   "text": "c) A caderneta predial;"
+  },
+  {
+   "id": "anexo.art9.12.d",
+   "text": "d) Cópias de certidões permanentes, bastando, neste caso, a indicação do número da certidão permanente;"
+  },
+  {
+   "id": "anexo.art9.12.e",
+   "text": "e) Reenvio ou envio de certidão permanente ou do seu código por o seu prazo de validade ter expirado, quando o mesmo era válido no momento da apresentação do pedido;"
+  },
+  {
+   "id": "anexo.art9.12.f",
+   "text": "f) Reenvio ou envio de qualquer certidão, documento ou certificado por a validade do mesmo ter expirado, quando o mesmo seja válido no momento da apresentação do pedido;"
+  },
+  {
+   "id": "anexo.art9.12.g",
+   "text": "g) O plano de segurança e saúde, podendo ser solicitada a exibição do mesmo em sede de fiscalização, quando aplicável;"
+  },
+  {
+   "id": "anexo.art9.12.h",
+   "text": "h) O relatório de segurança;"
+  },
+  {
+   "id": "anexo.art9.12.i",
+   "text": "i) O livro de obra digitalizado;"
+  },
+  {
+   "id": "anexo.art9.12.j",
+   "text": "j) Cópias de cartão do cidadão, bilhete de identidade ou cédulas profissionais;"
+  },
+  {
+   "id": "anexo.art9.12.k",
+   "text": "k) [Revogada.]"
+  },
+  {
+   "id": "anexo.art9.12.l",
+   "text": "l) Termo de responsabilidade de técnico responsável que ateste que a execução da operação se conforma com o Regulamento Geral do Ruído."
+  }
+ ],
+ "portaria_art2_general_rules": [
+  {
+   "id": "art2.heading",
+   "text": "Âmbito"
+  },
+  {
+   "id": "art2.1",
+   "text": "1 - Os modelos previstos nas alíneas a), c) e d) do n.º 1 do artigo anterior são de utilização obrigatória, sem prejuízo das adaptações que sejam exigidas por lei, designadamente no âmbito da aplicação das normas relativas à proteção de dados pessoais."
+  },
+  {
+   "id": "art2.2",
+   "text": "2 - Os termos de responsabilidade dos autores dos projetos de especialidades de infraestruturas de telecomunicações regem-se pelo disposto no Decreto-Lei n.º 123/2009, de 21 de maio, na sua redação atual."
+  },
+  {
+   "id": "art2.3",
+   "text": "3 - Apenas podem ser exigidos elementos não constantes dos anexos à presente portaria quando expressamente previstos no RJUE, em lei especial, ou quando se revelem estritamente indispensáveis à verificação do cumprimento das disposições constantes de programas e planos de ordenamento do território."
+  },
+  {
+   "id": "art2.4",
+   "text": "4 - A exigência de elementos indispensáveis referidos no número anterior é devidamente fundamentada pelo município, com indicação da norma concreta a que se reporta."
+  },
+  {
+   "id": "art2.5",
+   "text": "5 - Podem ser, adicionalmente, apresentados pelo interessado outros elementos não previstos nos anexos à presente portaria, que se entendam ser pertinentes para a completa caracterização da operação urbanística e para a demonstração da sua compatibilidade com as normas legais e regulamentares que lhe são aplicáveis."
+  },
+  {
+   "id": "art2.6",
+   "text": "6 - Podem não ser apresentados alguns elementos instrutórios constantes dos anexos à presente portaria, que se entendam ser desnecessários face à pretensão em concreto, devendo tal entendimento ser justificado pelo coordenador dos projetos, de forma circunstanciada em documento próprio, no qual deve ser evidenciada a sua irrelevância para a verificação do cumprimento das normas legais e regulamentares aplicáveis."
+  },
+  {
+   "id": "art2.7",
+   "text": "7 - A admissibilidade da não apresentação de elementos instrutórios a que se refere o número anterior é aferida em sede de apreciação liminar, quando aplicável."
+  },
+  {
+   "id": "art2.8",
+   "text": "8 - As utilizações do solo ou instalações técnicas cujos formulários ou elementos instrutórios sejam remetidos para o RJUE por força de legislação especial, designadamente em matéria de instalação de centros eletroprodutores de fonte de energia renovável, instalações de armazenamento de energia ou pontos de carregamento de veículos elétricos, são instruídos com os elementos constantes do n.º 34, nas situações de comunicação prévia, e com os elementos comuns previstos no anexo v à presente portaria que lhes sejam aplicáveis, sem prejuízo do disposto na respetiva legislação especial."
+  },
+  {
+   "id": "art2.9",
+   "text": "9 - O código emitido por associação pública de natureza profissional, que permita a verificação das competências profissionais detidas pelos técnicos, pode, em caso de impossibilidade técnica, quer por inexistência transitória dessa solução digital, quer por indisponibilidade temporária do sistema informático existente, ser substituído pela declaração de habilitação profissional, emitida pela respetiva associação pública, ao abrigo do disposto nos n.os 3 e 4 do artigo 10.º do RJUE."
+  }
+ ]
+}

@@ -1,0 +1,3113 @@
+{
+ "version": "request-lists@1",
+ "municipality": "celorico-de-basto",
+ "proposed_by": "ai:claude-opus-5.5",
+ "review": "unreviewed",
+ "catalogue": "research/nopaper-municipios/snapshots/celorico-de-basto/2026-10-16-completo/catalogue.json",
+ "requests": [
+  {
+   "procedure": "LIC",
+   "group": "Iniciais",
+   "request": "LICEDI",
+   "label": "Licenciamento de obras de edificação",
+   "folder": "r-000",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.25",
+    "anexo-V.26"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": null,
+   "deferrable": [
+    "anexo-V.26"
+   ]
+  },
+  {
+   "procedure": "LIC",
+   "group": "Iniciais",
+   "request": "LICMV",
+   "label": "Licenciamento de obras de edificação de muros",
+   "folder": "r-001",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.25",
+    "anexo-V.26"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": "walls are construction works: obras de edificação",
+   "deferrable": [
+    "anexo-V.26"
+   ]
+  },
+  {
+   "procedure": "LIC",
+   "group": "Iniciais",
+   "request": "LICDEM",
+   "label": "Licenciamento de obras de demolição",
+   "folder": "r-002",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.29"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "LIC",
+   "group": "Iniciais",
+   "request": "LICLOT",
+   "label": "Licenciamento de operações de loteamento",
+   "folder": "r-003",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.19"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "LIC",
+   "group": "Iniciais",
+   "request": "LICALOT",
+   "label": "Licenciamento de alteração ao alvará de loteamento",
+   "folder": "r-004",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.19"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": "change of a subdivision licence (RJUE art. 27.º): the subdivision licence list, as applicable"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Iniciais",
+   "request": "LICURB",
+   "label": "Licenciamento de obras de urbanização",
+   "folder": "r-005",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.22"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "LIC",
+   "group": "Iniciais",
+   "request": "LICTRT",
+   "label": "Licenciamento de trabalhos de remodelação de terrenos",
+   "folder": "r-006",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.32"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "LIC",
+   "group": "Especialidades",
+   "request": "ESPEDI",
+   "label": "Projetos de especialidade de obras de edificação",
+   "folder": "r-007",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.26"
+   ],
+   "common": [],
+   "basis": [],
+   "note": "specialty projects of a building licence (V.26, RJUE art. 20.º n.º 4); the common elements went with the architecture request"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Especialidades",
+   "request": "ESPMV",
+   "label": "Projetos de especialidade de obras de edificação de muros",
+   "folder": "r-008",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.26"
+   ],
+   "common": [],
+   "basis": [],
+   "note": "specialty projects of a building licence (V.26)"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Especialidades",
+   "request": "ESPURB",
+   "label": "Projetos de especialidade de obras de urbanização",
+   "folder": "r-009",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.22"
+   ],
+   "common": [],
+   "basis": [],
+   "note": "specialty projects of an urbanisation licence are part of V.22"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Aperfeiçoamento / Aditamento",
+   "request": "APEL",
+   "label": "Apresentação de Elementos",
+   "folder": "r-010",
+   "relation": "inherits",
+   "lists": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17",
+    "anexo-V.19",
+    "anexo-V.22",
+    "anexo-V.25",
+    "anexo-V.26",
+    "anexo-V.29",
+    "anexo-V.32",
+    "anexo-V.39"
+   ],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art11.2"
+   ],
+   "note": "improvement or addition: no list of its own; any element of the procedure's initial lists"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Aperfeiçoamento / Aditamento",
+   "request": "ADEO",
+   "label": "Alterações durante a execução da obra",
+   "folder": "r-011",
+   "relation": "inherits",
+   "lists": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17",
+    "anexo-V.19",
+    "anexo-V.22",
+    "anexo-V.25",
+    "anexo-V.26",
+    "anexo-V.29",
+    "anexo-V.32",
+    "anexo-V.39"
+   ],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art11.2"
+   ],
+   "note": "improvement or addition: no list of its own; any element of the procedure's initial lists"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Prorrogações",
+   "request": "PROPRA",
+   "label": "Prorrogação de prazo",
+   "folder": "r-012",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art58.5"
+   ],
+   "note": "extension of the execution period (RJUE art. 58.º n.º 5): no Annex V list"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Prorrogações",
+   "request": "LECOI",
+   "label": "Licença especial para a conclusão de obras inacabadas",
+   "folder": "r-013",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art88.1"
+   ],
+   "note": "special licence to finish unfinished works (RJUE art. 88.º): no Annex V list"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Averbamentos",
+   "request": "AVERNT",
+   "label": "Averbamento de novo titular",
+   "folder": "r-014",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Averbamentos",
+   "request": "AVERPA",
+   "label": "Averbamento do técnico autor do projeto de arquitetura",
+   "folder": "r-015",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Averbamentos",
+   "request": "AVERCP",
+   "label": "Averbamento do coordenador de projeto",
+   "folder": "r-016",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Averbamentos",
+   "request": "AVERDO",
+   "label": "Averbamento do diretor de obra",
+   "folder": "r-017",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Averbamentos",
+   "request": "AVERDFO",
+   "label": "Averbamento do diretor de fiscalização de obra",
+   "folder": "r-018",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Averbamentos",
+   "request": "AVEREOP",
+   "label": "Averbamento do empreiteiro de obras particulares",
+   "folder": "r-019",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Licenças",
+   "request": "ALVEDI",
+   "label": "Licença de obras de edificação/Aditamento",
+   "folder": "r-020",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "issuance of the old alvará: the stage no longer exists; licence or start-of-works information (V.35), not decidable from the law"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Licenças",
+   "request": "ALVMV",
+   "label": "Licença de obras de edificação de muros",
+   "folder": "r-021",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "issuance of the old alvará: the stage no longer exists; licence or start-of-works information (V.35), not decidable from the law"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Licenças",
+   "request": "ALVDEM",
+   "label": "Licença de obras de demolição",
+   "folder": "r-022",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "issuance of the old alvará: the stage no longer exists; licence or start-of-works information (V.35), not decidable from the law"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Licenças",
+   "request": "ALVLOT",
+   "label": "Licença de operações de loteamento/Aditamento",
+   "folder": "r-023",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "issuance of the old alvará: the stage no longer exists; licence or start-of-works information (V.35), not decidable from the law"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Licenças",
+   "request": "ALVURB",
+   "label": "Licença de obras de urbanização",
+   "folder": "r-024",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "issuance of the old alvará: the stage no longer exists; licence or start-of-works information (V.35), not decidable from the law"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Licenças",
+   "request": "ALVTRT",
+   "label": "Licença de trabalhos de remodelação de terrenos",
+   "folder": "r-025",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "issuance of the old alvará: the stage no longer exists; licence or start-of-works information (V.35), not decidable from the law"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Utilização",
+   "request": "AUTUTL",
+   "label": "Comunicação de utilização, após operação urbanística sujeita a controlo prévio",
+   "folder": "r-026",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.39"
+   ],
+   "common": [],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "LIC",
+   "group": "Taxas / Cauções",
+   "request": "RPOUR",
+   "label": "Receção provisória de obras de urbanização",
+   "folder": "r-027",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art87.1"
+   ],
+   "note": "provisional reception of urbanisation works (RJUE art. 87.º): no Annex V list"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Taxas / Cauções",
+   "request": "RDOUR",
+   "label": "Receção definitiva de obras de urbanização",
+   "folder": "r-028",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art87.1"
+   ],
+   "note": "final reception of urbanisation works (RJUE art. 87.º): no Annex V list"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Taxas / Cauções",
+   "request": "RTL",
+   "label": "Redução de 50% das taxas de licenciamento",
+   "folder": "r-029",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "reduction of fees: the municipal fee regulation (2017), not structured yet"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Outros",
+   "request": "INOB",
+   "label": "Comunicação de início de obras sujeitas a controlo prévio",
+   "folder": "r-030",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.35"
+   ],
+   "common": [],
+   "basis": [],
+   "note": "start-of-works information of a licensed (V.35) or communicated (V.36) operation"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Outros",
+   "request": "CONP",
+   "label": "Consulta de Processos",
+   "folder": "r-031",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "consultation of a file: not modelled"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Outros",
+   "request": "PEDI",
+   "label": "Petições diversas",
+   "folder": "r-032",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "petitions: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Outros",
+   "request": "ALEG",
+   "label": "Alegação",
+   "folder": "r-033",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "allegations: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Outros",
+   "request": "RECL",
+   "label": "Reclamação",
+   "folder": "r-034",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "complaints: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Outros",
+   "request": "COPIA",
+   "label": "Cópias simples/autenticadas",
+   "folder": "r-035",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "copies of documents: not modelled"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Outros",
+   "request": "ALMC",
+   "label": "Alteração de morada/contacto",
+   "folder": "r-036",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "change of contact details: not modelled"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Outros",
+   "request": "LER",
+   "label": "Licença especial de ruído",
+   "folder": "r-037",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "special noise licence: Regulamento Geral do Ruído, not captured"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Outros",
+   "request": "DFTH",
+   "label": "Depósito da Ficha Técnica de Habitação",
+   "folder": "r-038",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "deposit of the housing technical file: Decreto-Lei 68/2004, not captured"
+  },
+  {
+   "procedure": "LIC",
+   "group": "Outros",
+   "request": "CPH",
+   "label": "Certidão de propriedade horizontal",
+   "folder": "r-039",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "dr:decreto-lei:47344/1966"
+   ],
+   "note": "horizontal property certificate: Código Civil arts. 1415.º and 1418.º; no Annex V list"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Iniciais",
+   "request": "LEGEDI",
+   "label": "Legalização de obras de edificação",
+   "folder": "r-040",
+   "relation": "via_rjue",
+   "lists": [
+    "anexo-V.25",
+    "anexo-V.26"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art102-A.1"
+   ],
+   "note": "legalisation follows the elements of the licence of the operation",
+   "deferrable": [
+    "anexo-V.26"
+   ]
+  },
+  {
+   "procedure": "LEG",
+   "group": "Iniciais",
+   "request": "LEGLOT",
+   "label": "Legalização de operações de loteamento (sem obras de urbanização)",
+   "folder": "r-041",
+   "relation": "via_rjue",
+   "lists": [
+    "anexo-V.19"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art102-A.1"
+   ],
+   "note": "legalisation follows the elements of the licence of the operation"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Iniciais",
+   "request": "LEGALOT",
+   "label": "Legalização de alteração ao alvará de loteamento (sem obras de urbanização)",
+   "folder": "r-042",
+   "relation": "via_rjue",
+   "lists": [
+    "anexo-V.19"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art102-A.1"
+   ],
+   "note": "legalisation follows the elements of the licence of the operation"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Iniciais",
+   "request": "LEGTRT",
+   "label": "Legalização de trabalhos de remodelação de terrenos",
+   "folder": "r-043",
+   "relation": "via_rjue",
+   "lists": [
+    "anexo-V.32"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art102-A.1"
+   ],
+   "note": "legalisation follows the elements of the licence of the operation"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Especialidades",
+   "request": "ESPLEGEDI",
+   "label": "Projetos de especialidade de legalização de obras de edificação",
+   "folder": "r-044",
+   "relation": "via_rjue",
+   "lists": [
+    "anexo-V.26"
+   ],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art102-A.1"
+   ],
+   "note": "specialty projects of a legalisation: V.26 (the common elements went with the legalisation request)"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Aperfeiçoamento / Aditamento",
+   "request": "APEL",
+   "label": "Apresentação de Elementos",
+   "folder": "r-045",
+   "relation": "inherits",
+   "lists": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17",
+    "anexo-V.19",
+    "anexo-V.25",
+    "anexo-V.26",
+    "anexo-V.32",
+    "anexo-V.39"
+   ],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art11.2"
+   ],
+   "note": "improvement or addition: no list of its own; any element of the procedure's initial lists"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Aperfeiçoamento / Aditamento",
+   "request": "ADEO",
+   "label": "Alterações durante a execução da obra",
+   "folder": "r-046",
+   "relation": "inherits",
+   "lists": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17",
+    "anexo-V.19",
+    "anexo-V.25",
+    "anexo-V.26",
+    "anexo-V.32",
+    "anexo-V.39"
+   ],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art11.2"
+   ],
+   "note": "improvement or addition: no list of its own; any element of the procedure's initial lists"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Prorrogações",
+   "request": "PROPRA",
+   "label": "Prorrogação de prazo",
+   "folder": "r-047",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art58.5"
+   ],
+   "note": "extension of the execution period (RJUE art. 58.º n.º 5): no Annex V list"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Prorrogações",
+   "request": "LECOI",
+   "label": "Licença especial para a conclusão de obras inacabadas",
+   "folder": "r-048",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art88.1"
+   ],
+   "note": "special licence to finish unfinished works (RJUE art. 88.º): no Annex V list"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Averbamentos",
+   "request": "AVERNT",
+   "label": "Averbamento de novo titular",
+   "folder": "r-049",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Averbamentos",
+   "request": "AVERPA",
+   "label": "Averbamento do técnico autor do projeto de arquitetura",
+   "folder": "r-050",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Averbamentos",
+   "request": "AVERCP",
+   "label": "Averbamento do coordenador de projeto",
+   "folder": "r-051",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Averbamentos",
+   "request": "AVERDO",
+   "label": "Averbamento do diretor de obra",
+   "folder": "r-052",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Averbamentos",
+   "request": "AVERDFO",
+   "label": "Averbamento do diretor de fiscalização de obra",
+   "folder": "r-053",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Averbamentos",
+   "request": "AVEREOP",
+   "label": "Averbamento do empreiteiro de obras particulares",
+   "folder": "r-054",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Licenças",
+   "request": "ALVEDI",
+   "label": "Licença de obras de edificação/Aditamento",
+   "folder": "r-055",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "issuance of the old alvará: the stage no longer exists; licence or start-of-works information (V.35), not decidable from the law"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Licenças",
+   "request": "ALVLOT",
+   "label": "Licença de operações de loteamento/Aditamento",
+   "folder": "r-056",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "issuance of the old alvará: the stage no longer exists; licence or start-of-works information (V.35), not decidable from the law"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Licenças",
+   "request": "ALVTRT",
+   "label": "Licença de trabalhos de remodelação de terrenos",
+   "folder": "r-057",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "issuance of the old alvará: the stage no longer exists; licence or start-of-works information (V.35), not decidable from the law"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Utilização",
+   "request": "AUTUTL",
+   "label": "Comunicação de utilização, após operação urbanística sujeita a controlo prévio",
+   "folder": "r-058",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.39"
+   ],
+   "common": [],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "LEG",
+   "group": "Taxas / Cauções",
+   "request": "RTL",
+   "label": "Redução de 50% das taxas de licenciamento",
+   "folder": "r-059",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "reduction of fees: the municipal fee regulation (2017), not structured yet"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Outros",
+   "request": "INOB",
+   "label": "Comunicação de início de obras sujeitas a controlo prévio",
+   "folder": "r-060",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.35"
+   ],
+   "common": [],
+   "basis": [],
+   "note": "start-of-works information of a licensed (V.35) or communicated (V.36) operation"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Outros",
+   "request": "CONP",
+   "label": "Consulta de Processos",
+   "folder": "r-061",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "consultation of a file: not modelled"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Outros",
+   "request": "PEDI",
+   "label": "Petições diversas",
+   "folder": "r-062",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "petitions: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Outros",
+   "request": "ALEG",
+   "label": "Alegação",
+   "folder": "r-063",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "allegations: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Outros",
+   "request": "RECL",
+   "label": "Reclamação",
+   "folder": "r-064",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "complaints: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Outros",
+   "request": "COPIA",
+   "label": "Cópias simples/autenticadas",
+   "folder": "r-065",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "copies of documents: not modelled"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Outros",
+   "request": "ALMC",
+   "label": "Alteração de morada/contacto",
+   "folder": "r-066",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "change of contact details: not modelled"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Outros",
+   "request": "LER",
+   "label": "Licença especial de ruído",
+   "folder": "r-067",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "special noise licence: Regulamento Geral do Ruído, not captured"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Outros",
+   "request": "DFTH",
+   "label": "Depósito da Ficha Técnica de Habitação",
+   "folder": "r-068",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "deposit of the housing technical file: Decreto-Lei 68/2004, not captured"
+  },
+  {
+   "procedure": "LEG",
+   "group": "Outros",
+   "request": "CPH",
+   "label": "Certidão de propriedade horizontal",
+   "folder": "r-069",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "dr:decreto-lei:47344/1966"
+   ],
+   "note": "horizontal property certificate: Código Civil arts. 1415.º and 1418.º; no Annex V list"
+  },
+  {
+   "procedure": "CP",
+   "group": "Iniciais",
+   "request": "CPEDI",
+   "label": "Comunicação Prévia de obras de edificação",
+   "folder": "r-070",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.27"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "CP",
+   "group": "Iniciais",
+   "request": "CPDEM",
+   "label": "Comunicação Prévia de obras de demolição",
+   "folder": "r-071",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.30"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "CP",
+   "group": "Iniciais",
+   "request": "CPLOT",
+   "label": "Comunicação Prévia de operações de loteamento",
+   "folder": "r-072",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.20"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "CP",
+   "group": "Iniciais",
+   "request": "CPALOT",
+   "label": "Comunicação Prévia de alteração ao alvará de loteamento",
+   "folder": "r-073",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.20"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": "change of a subdivision by prior communication: the V.20 list, as applicable"
+  },
+  {
+   "procedure": "CP",
+   "group": "Iniciais",
+   "request": "CPURB",
+   "label": "Comunicação Prévia de obras de urbanização",
+   "folder": "r-074",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.23"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "CP",
+   "group": "Iniciais",
+   "request": "CPTRT",
+   "label": "Comunicação Prévia de trabalhos de remodelação de terrenos",
+   "folder": "r-075",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.33"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "CP",
+   "group": "Iniciais",
+   "request": "CPOOU",
+   "label": "Comunicação Prévia de outras operações urbanísticas",
+   "folder": "r-076",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.34"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": "other urban operations by prior communication: V.34 (uses of the soil and technical installations under special law)"
+  },
+  {
+   "procedure": "CP",
+   "group": "Aperfeiçoamento / Aditamento",
+   "request": "APEL",
+   "label": "Apresentação de Elementos",
+   "folder": "r-077",
+   "relation": "inherits",
+   "lists": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17",
+    "anexo-V.20",
+    "anexo-V.23",
+    "anexo-V.27",
+    "anexo-V.30",
+    "anexo-V.33",
+    "anexo-V.34",
+    "anexo-V.39"
+   ],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art11.2"
+   ],
+   "note": "improvement or addition: no list of its own; any element of the procedure's initial lists"
+  },
+  {
+   "procedure": "CP",
+   "group": "Aperfeiçoamento / Aditamento",
+   "request": "ADEO",
+   "label": "Alterações durante a execução da obra",
+   "folder": "r-078",
+   "relation": "inherits",
+   "lists": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17",
+    "anexo-V.20",
+    "anexo-V.23",
+    "anexo-V.27",
+    "anexo-V.30",
+    "anexo-V.33",
+    "anexo-V.34",
+    "anexo-V.39"
+   ],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art11.2"
+   ],
+   "note": "improvement or addition: no list of its own; any element of the procedure's initial lists"
+  },
+  {
+   "procedure": "CP",
+   "group": "Prorrogações",
+   "request": "PROPRA",
+   "label": "Prorrogação de prazo",
+   "folder": "r-079",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art58.5"
+   ],
+   "note": "extension of the execution period (RJUE art. 58.º n.º 5): no Annex V list"
+  },
+  {
+   "procedure": "CP",
+   "group": "Prorrogações",
+   "request": "LECOI",
+   "label": "Licença especial para a conclusão de obras inacabadas",
+   "folder": "r-080",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art88.1"
+   ],
+   "note": "special licence to finish unfinished works (RJUE art. 88.º): no Annex V list"
+  },
+  {
+   "procedure": "CP",
+   "group": "Averbamentos",
+   "request": "AVERNT",
+   "label": "Averbamento de novo titular",
+   "folder": "r-081",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "CP",
+   "group": "Averbamentos",
+   "request": "AVERPA",
+   "label": "Averbamento do técnico autor do projeto de arquitetura",
+   "folder": "r-082",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "CP",
+   "group": "Averbamentos",
+   "request": "AVERCP",
+   "label": "Averbamento do coordenador de projeto",
+   "folder": "r-083",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "CP",
+   "group": "Averbamentos",
+   "request": "AVERDO",
+   "label": "Averbamento do diretor de obra",
+   "folder": "r-084",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "CP",
+   "group": "Averbamentos",
+   "request": "AVERDFO",
+   "label": "Averbamento do diretor de fiscalização de obra",
+   "folder": "r-085",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "CP",
+   "group": "Averbamentos",
+   "request": "AVEREOP",
+   "label": "Averbamento do empreiteiro de obras particulares",
+   "folder": "r-086",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "CP",
+   "group": "Utilização",
+   "request": "AUTUTL",
+   "label": "Comunicação de utilização, após operação urbanística sujeita a controlo prévio",
+   "folder": "r-087",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.39"
+   ],
+   "common": [],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "CP",
+   "group": "Taxas / Cauções",
+   "request": "RPOUR",
+   "label": "Receção provisória de obras de urbanização",
+   "folder": "r-088",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art87.1"
+   ],
+   "note": "provisional reception of urbanisation works (RJUE art. 87.º): no Annex V list"
+  },
+  {
+   "procedure": "CP",
+   "group": "Taxas / Cauções",
+   "request": "RDOUR",
+   "label": "Receção definitiva de obras de urbanização",
+   "folder": "r-089",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art87.1"
+   ],
+   "note": "final reception of urbanisation works (RJUE art. 87.º): no Annex V list"
+  },
+  {
+   "procedure": "CP",
+   "group": "Taxas / Cauções",
+   "request": "RTL",
+   "label": "Redução de 50% das taxas de licenciamento",
+   "folder": "r-090",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "reduction of fees: the municipal fee regulation (2017), not structured yet"
+  },
+  {
+   "procedure": "CP",
+   "group": "Outros",
+   "request": "INOB",
+   "label": "Comunicação de início de obras sujeitas a controlo prévio",
+   "folder": "r-091",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.36"
+   ],
+   "common": [],
+   "basis": [],
+   "note": "start-of-works information of a licensed (V.35) or communicated (V.36) operation"
+  },
+  {
+   "procedure": "CP",
+   "group": "Outros",
+   "request": "CONP",
+   "label": "Consulta de Processos",
+   "folder": "r-092",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "consultation of a file: not modelled"
+  },
+  {
+   "procedure": "CP",
+   "group": "Outros",
+   "request": "PEDI",
+   "label": "Petições diversas",
+   "folder": "r-093",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "petitions: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "CP",
+   "group": "Outros",
+   "request": "ALEG",
+   "label": "Alegação",
+   "folder": "r-094",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "allegations: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "CP",
+   "group": "Outros",
+   "request": "RECL",
+   "label": "Reclamação",
+   "folder": "r-095",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "complaints: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "CP",
+   "group": "Outros",
+   "request": "COPIA",
+   "label": "Cópias simples/autenticadas",
+   "folder": "r-096",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "copies of documents: not modelled"
+  },
+  {
+   "procedure": "CP",
+   "group": "Outros",
+   "request": "ALMC",
+   "label": "Alteração de morada/contacto",
+   "folder": "r-097",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "change of contact details: not modelled"
+  },
+  {
+   "procedure": "CP",
+   "group": "Outros",
+   "request": "LER",
+   "label": "Licença especial de ruído",
+   "folder": "r-098",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "special noise licence: Regulamento Geral do Ruído, not captured"
+  },
+  {
+   "procedure": "CP",
+   "group": "Outros",
+   "request": "DFTH",
+   "label": "Depósito da Ficha Técnica de Habitação",
+   "folder": "r-099",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "deposit of the housing technical file: Decreto-Lei 68/2004, not captured"
+  },
+  {
+   "procedure": "CP",
+   "group": "Outros",
+   "request": "CPH",
+   "label": "Certidão de propriedade horizontal",
+   "folder": "r-100",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "dr:decreto-lei:47344/1966"
+   ],
+   "note": "horizontal property certificate: Código Civil arts. 1415.º and 1418.º; no Annex V list"
+  },
+  {
+   "procedure": "IP",
+   "group": "Iniciais",
+   "request": "IPEDI",
+   "label": "Informação Prévia de obras de edificação (n.º 1 do artigo 14º do RJUE)",
+   "folder": "r-101",
+   "relation": "law_list",
+   "lists": [],
+   "common": [
+    "anexo-V.1",
+    "anexo-V.2",
+    "anexo-V.3",
+    "anexo-V.4"
+   ],
+   "basis": [],
+   "note": "PIP under RJUE art. 14.º n.º 1: section I"
+  },
+  {
+   "procedure": "IP",
+   "group": "Iniciais",
+   "request": "IPEDI2",
+   "label": "Informação Prévia de obras de edificação (n.º 2 do artigo 14º do RJUE)",
+   "folder": "r-102",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.24"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "IP",
+   "group": "Iniciais",
+   "request": "IPDEM",
+   "label": "Informação Prévia de obras de demolição ",
+   "folder": "r-103",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.28"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": "the label does not say n.º 1 or 2; its slots (demolition techniques, contention) are those of V.28 (n.º 2)"
+  },
+  {
+   "procedure": "IP",
+   "group": "Iniciais",
+   "request": "IPLOT",
+   "label": "Informação Prévia de operações de loteamento (n.º 1 do artigo 14º do RJUE)",
+   "folder": "r-104",
+   "relation": "law_list",
+   "lists": [],
+   "common": [
+    "anexo-V.1",
+    "anexo-V.2",
+    "anexo-V.3",
+    "anexo-V.4"
+   ],
+   "basis": [],
+   "note": "PIP under RJUE art. 14.º n.º 1: section I"
+  },
+  {
+   "procedure": "IP",
+   "group": "Iniciais",
+   "request": "IPLOT2",
+   "label": "Informação Prévia de operações de loteamento (n.º 2 do artigo 14º do RJUE)",
+   "folder": "r-105",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.18"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "IP",
+   "group": "Iniciais",
+   "request": "IPURB",
+   "label": "Informação Prévia de obras de urbanização",
+   "folder": "r-106",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.21"
+   ],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": "the label does not say n.º 1 or 2; its slots (synthesis plan, profiles) are those of V.21 (n.º 2)"
+  },
+  {
+   "procedure": "IP",
+   "group": "Iniciais",
+   "request": "IPAUTL",
+   "label": "Informação Prévia de alteração de utilização",
+   "folder": "r-107",
+   "relation": "law_list",
+   "lists": [],
+   "common": [
+    "anexo-V.1",
+    "anexo-V.2",
+    "anexo-V.3",
+    "anexo-V.4"
+   ],
+   "basis": [],
+   "note": "no Annex V list for a PIP on change of use: section I, the PIP of any operation"
+  },
+  {
+   "procedure": "IP",
+   "group": "Iniciais",
+   "request": "IPOOU",
+   "label": "Informação Prévia de obras de outras operações urbanísticas",
+   "folder": "r-108",
+   "relation": "law_list",
+   "lists": [],
+   "common": [
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17"
+   ],
+   "basis": [],
+   "note": "no Annex V list for a PIP on other operations; its slots (memória, specialty projects and their statements) are those of a PIP under RJUE art. 14.º n.º 2: section II"
+  },
+  {
+   "procedure": "IP",
+   "group": "Iniciais",
+   "request": "DMPDF",
+   "label": "Declaração de que se mantêm os pressupostos da anterior decisão favorável",
+   "folder": "r-109",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art17.3"
+   ],
+   "note": "statement that the premises of a favourable PIP still hold: no Annex V list"
+  },
+  {
+   "procedure": "IP",
+   "group": "Aperfeiçoamento / Aditamento",
+   "request": "APEL",
+   "label": "Apresentação de Elementos",
+   "folder": "r-110",
+   "relation": "inherits",
+   "lists": [
+    "anexo-V.1",
+    "anexo-V.2",
+    "anexo-V.3",
+    "anexo-V.4",
+    "anexo-V.5",
+    "anexo-V.6",
+    "anexo-V.7",
+    "anexo-V.8",
+    "anexo-V.9",
+    "anexo-V.10",
+    "anexo-V.11",
+    "anexo-V.12",
+    "anexo-V.13",
+    "anexo-V.14",
+    "anexo-V.15",
+    "anexo-V.16",
+    "anexo-V.17",
+    "anexo-V.18",
+    "anexo-V.21",
+    "anexo-V.24",
+    "anexo-V.28"
+   ],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art11.2"
+   ],
+   "note": "improvement or addition: no list of its own; any element of the procedure's initial lists"
+  },
+  {
+   "procedure": "IP",
+   "group": "Outros",
+   "request": "CONP",
+   "label": "Consulta de Processos",
+   "folder": "r-111",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "consultation of a file: not modelled"
+  },
+  {
+   "procedure": "IP",
+   "group": "Outros",
+   "request": "PEDI",
+   "label": "Petições diversas",
+   "folder": "r-112",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "petitions: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "IP",
+   "group": "Outros",
+   "request": "ALEG",
+   "label": "Alegação",
+   "folder": "r-113",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "allegations: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "IP",
+   "group": "Outros",
+   "request": "COPIA",
+   "label": "Cópias simples/autenticadas",
+   "folder": "r-114",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "copies of documents: not modelled"
+  },
+  {
+   "procedure": "IP",
+   "group": "Outros",
+   "request": "ALMC",
+   "label": "Alteração de morada/contacto",
+   "folder": "r-115",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "change of contact details: not modelled"
+  },
+  {
+   "procedure": "UTL",
+   "group": "Iniciais",
+   "request": "AUTUTL",
+   "label": "Comunicação de utilização, após operação urbanística sujeita a controlo prévio",
+   "folder": "r-116",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.39"
+   ],
+   "common": [],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "UTL",
+   "group": "Iniciais",
+   "request": "ALTUTL",
+   "label": "Comunicação Prévia com prazo para alteração de utilização, sem operação urbanística prévia",
+   "folder": "r-117",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.40"
+   ],
+   "common": [],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "UTL",
+   "group": "Iniciais",
+   "request": "UTLICP",
+   "label": "Comunicação Prévia com prazo para utilização, na sequência de obras isentas de controlo prévio",
+   "folder": "r-118",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.40"
+   ],
+   "common": [],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "UTL",
+   "group": "Aperfeiçoamento / Aditamento",
+   "request": "APEL",
+   "label": "Apresentação de Elementos",
+   "folder": "r-119",
+   "relation": "inherits",
+   "lists": [
+    "anexo-V.39",
+    "anexo-V.40"
+   ],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art11.2"
+   ],
+   "note": "improvement or addition: no list of its own; any element of the procedure's initial lists"
+  },
+  {
+   "procedure": "UTL",
+   "group": "Prorrogações",
+   "request": "PROPRA",
+   "label": "Prorrogação de prazo",
+   "folder": "r-120",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art58.5"
+   ],
+   "note": "extension of the execution period (RJUE art. 58.º n.º 5): no Annex V list"
+  },
+  {
+   "procedure": "UTL",
+   "group": "Outros",
+   "request": "CONP",
+   "label": "Consulta de Processos",
+   "folder": "r-121",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "consultation of a file: not modelled"
+  },
+  {
+   "procedure": "UTL",
+   "group": "Outros",
+   "request": "PEDI",
+   "label": "Petições diversas",
+   "folder": "r-122",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "petitions: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "UTL",
+   "group": "Outros",
+   "request": "ALEG",
+   "label": "Alegação",
+   "folder": "r-123",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "allegations: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "UTL",
+   "group": "Outros",
+   "request": "RECL",
+   "label": "Reclamação",
+   "folder": "r-124",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "complaints: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "UTL",
+   "group": "Outros",
+   "request": "COPIA",
+   "label": "Cópias simples/autenticadas",
+   "folder": "r-125",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "copies of documents: not modelled"
+  },
+  {
+   "procedure": "UTL",
+   "group": "Outros",
+   "request": "ALMC",
+   "label": "Alteração de morada/contacto",
+   "folder": "r-126",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "change of contact details: not modelled"
+  },
+  {
+   "procedure": "UTL",
+   "group": "Outros",
+   "request": "DFTH",
+   "label": "Depósito da Ficha Técnica de Habitação",
+   "folder": "r-127",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "deposit of the housing technical file: Decreto-Lei 68/2004, not captured"
+  },
+  {
+   "procedure": "OICP",
+   "group": "Iniciais",
+   "request": "COICP",
+   "label": "Comunicação de início de obras isentas de controlo prévio",
+   "folder": "r-128",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.38"
+   ],
+   "common": [],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "OICP",
+   "group": "Aperfeiçoamento / Aditamento",
+   "request": "APEL",
+   "label": "Apresentação de Elementos",
+   "folder": "r-129",
+   "relation": "inherits",
+   "lists": [
+    "anexo-V.38",
+    "anexo-V.40"
+   ],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art11.2"
+   ],
+   "note": "improvement or addition: no list of its own; any element of the procedure's initial lists"
+  },
+  {
+   "procedure": "OICP",
+   "group": "Utilização",
+   "request": "UTLICP",
+   "label": "Comunicação Prévia com prazo para utilização, na sequência de obras isentas de controlo prévio",
+   "folder": "r-130",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.40"
+   ],
+   "common": [],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "OICP",
+   "group": "Utilização",
+   "request": "ALTUTL",
+   "label": "Comunicação Prévia com prazo para alteração de utilização, sem operação urbanística prévia",
+   "folder": "r-131",
+   "relation": "law_list",
+   "lists": [
+    "anexo-V.40"
+   ],
+   "common": [],
+   "basis": [],
+   "note": null
+  },
+  {
+   "procedure": "OICP",
+   "group": "Outros",
+   "request": "DFTH",
+   "label": "Depósito da Ficha Técnica de Habitação",
+   "folder": "r-132",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "deposit of the housing technical file: Decreto-Lei 68/2004, not captured"
+  },
+  {
+   "procedure": "OICP",
+   "group": "Outros",
+   "request": "CONP",
+   "label": "Consulta de Processos",
+   "folder": "r-133",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "consultation of a file: not modelled"
+  },
+  {
+   "procedure": "OICP",
+   "group": "Outros",
+   "request": "PEDI",
+   "label": "Petições diversas",
+   "folder": "r-134",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "petitions: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "OICP",
+   "group": "Outros",
+   "request": "ALEG",
+   "label": "Alegação",
+   "folder": "r-135",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "allegations: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "OICP",
+   "group": "Outros",
+   "request": "RECL",
+   "label": "Reclamação",
+   "folder": "r-136",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "complaints: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "OICP",
+   "group": "Outros",
+   "request": "COPIA",
+   "label": "Cópias simples/autenticadas",
+   "folder": "r-137",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "copies of documents: not modelled"
+  },
+  {
+   "procedure": "OICP",
+   "group": "Outros",
+   "request": "ALMC",
+   "label": "Alteração de morada/contacto",
+   "folder": "r-138",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "change of contact details: not modelled"
+  },
+  {
+   "procedure": "OICP",
+   "group": "Outros",
+   "request": "LER",
+   "label": "Licença especial de ruído",
+   "folder": "r-139",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "special noise licence: Regulamento Geral do Ruído, not captured"
+  },
+  {
+   "procedure": "INF",
+   "group": "Iniciais",
+   "request": "INFS",
+   "label": "Informação simples",
+   "folder": "r-140",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art110.1"
+   ],
+   "note": "simple information (RJUE art. 110.º): no Annex V list"
+  },
+  {
+   "procedure": "INF",
+   "group": "Iniciais",
+   "request": "ILEG",
+   "label": "Informação de viabilidade de legalização",
+   "folder": "r-141",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "information on whether a legalisation is viable: no Annex V list"
+  },
+  {
+   "procedure": "INF",
+   "group": "Aperfeiçoamento / Aditamento",
+   "request": "APEL",
+   "label": "Apresentação de Elementos",
+   "folder": "r-142",
+   "relation": "inherits",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art11.2"
+   ],
+   "note": "improvement or addition: no list of its own; any element of the procedure's initial lists"
+  },
+  {
+   "procedure": "INF",
+   "group": "Outros",
+   "request": "CONP",
+   "label": "Consulta de Processos",
+   "folder": "r-143",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "consultation of a file: not modelled"
+  },
+  {
+   "procedure": "INF",
+   "group": "Outros",
+   "request": "PEDI",
+   "label": "Petições diversas",
+   "folder": "r-144",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "petitions: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "INF",
+   "group": "Outros",
+   "request": "ALEG",
+   "label": "Alegação",
+   "folder": "r-145",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "allegations: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "INF",
+   "group": "Outros",
+   "request": "COPIA",
+   "label": "Cópias simples/autenticadas",
+   "folder": "r-146",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "copies of documents: not modelled"
+  },
+  {
+   "procedure": "INF",
+   "group": "Outros",
+   "request": "ALMC",
+   "label": "Alteração de morada/contacto",
+   "folder": "r-147",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "change of contact details: not modelled"
+  },
+  {
+   "procedure": "CERT",
+   "group": "Iniciais",
+   "request": "CDEST",
+   "label": "Certidão de destaque",
+   "folder": "r-148",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art6.4",
+    "decreto-lei-108-2026:anexo.art6.9"
+   ],
+   "note": "destaque certificate (RJUE art. 6.º n.os 4 and 9): no Annex V list"
+  },
+  {
+   "procedure": "CERT",
+   "group": "Iniciais",
+   "request": "CPH",
+   "label": "Certidão de propriedade horizontal",
+   "folder": "r-149",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "dr:decreto-lei:47344/1966"
+   ],
+   "note": "horizontal property certificate: Código Civil arts. 1415.º and 1418.º; no Annex V list"
+  },
+  {
+   "procedure": "CERT",
+   "group": "Iniciais",
+   "request": "CCA51",
+   "label": "Certidão de construção anterior a 1951",
+   "folder": "r-150",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "local:celorico-de-basto-rmou:art54.1"
+   ],
+   "note": "certificate of construction before 1951: RMOU art. 54.º"
+  },
+  {
+   "procedure": "CERT",
+   "group": "Iniciais",
+   "request": "CPRUI",
+   "label": "Certidão de prédio em ruína",
+   "folder": "r-151",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "local:celorico-de-basto-rmou:art54.1"
+   ],
+   "note": "certificate of a building in ruin: RMOU art. 54.º n.º 4"
+  },
+  {
+   "procedure": "CERT",
+   "group": "Iniciais",
+   "request": "CCOU",
+   "label": "Certidão comprovativa das obras de urbanização",
+   "folder": "r-152",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "certificate that urbanisation works are done: no Annex V list"
+  },
+  {
+   "procedure": "CERT",
+   "group": "Iniciais",
+   "request": "CDIV",
+   "label": "Certidões diversas",
+   "folder": "r-153",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "other certificates: no Annex V list"
+  },
+  {
+   "procedure": "CERT",
+   "group": "Aperfeiçoamento / Aditamento",
+   "request": "APEL",
+   "label": "Apresentação de Elementos",
+   "folder": "r-154",
+   "relation": "inherits",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art11.2"
+   ],
+   "note": "improvement or addition: no list of its own; any element of the procedure's initial lists"
+  },
+  {
+   "procedure": "CERT",
+   "group": "Outros",
+   "request": "CONP",
+   "label": "Consulta de Processos",
+   "folder": "r-155",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "consultation of a file: not modelled"
+  },
+  {
+   "procedure": "CERT",
+   "group": "Outros",
+   "request": "PEDI",
+   "label": "Petições diversas",
+   "folder": "r-156",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "petitions: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "CERT",
+   "group": "Outros",
+   "request": "ALEG",
+   "label": "Alegação",
+   "folder": "r-157",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "allegations: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "CERT",
+   "group": "Outros",
+   "request": "COPIA",
+   "label": "Cópias simples/autenticadas",
+   "folder": "r-158",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "copies of documents: not modelled"
+  },
+  {
+   "procedure": "CERT",
+   "group": "Outros",
+   "request": "ALMC",
+   "label": "Alteração de morada/contacto",
+   "folder": "r-159",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "change of contact details: not modelled"
+  },
+  {
+   "procedure": "DIV",
+   "group": "Iniciais",
+   "request": "PEDI",
+   "label": "Petições diversas",
+   "folder": "r-160",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "petitions: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "DIV",
+   "group": "Iniciais",
+   "request": "ALEG",
+   "label": "Alegação",
+   "folder": "r-161",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "allegations: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "DIV",
+   "group": "Iniciais",
+   "request": "RECL",
+   "label": "Reclamação",
+   "folder": "r-162",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "complaints: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "DIV",
+   "group": "Iniciais",
+   "request": "LOVP",
+   "label": "Licença de ocupação da via pública (processos anteriores a 4 de março de 2024)",
+   "folder": "r-163",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "local:celorico-de-basto-rmou:art56"
+   ],
+   "note": "licence to occupy the public road: RMOU art. 56.º and Lei 75/2013"
+  },
+  {
+   "procedure": "DIV",
+   "group": "Iniciais",
+   "request": "COPIA",
+   "label": "Cópias simples/autenticadas",
+   "folder": "r-164",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "copies of documents: not modelled"
+  },
+  {
+   "procedure": "DIV",
+   "group": "Iniciais",
+   "request": "LER",
+   "label": "Licença especial de ruído",
+   "folder": "r-165",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "special noise licence: Regulamento Geral do Ruído, not captured"
+  },
+  {
+   "procedure": "DIV",
+   "group": "Iniciais",
+   "request": "DFTH",
+   "label": "Depósito da Ficha Técnica de Habitação",
+   "folder": "r-166",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "deposit of the housing technical file: Decreto-Lei 68/2004, not captured"
+  },
+  {
+   "procedure": "DIV",
+   "group": "Aperfeiçoamento / Aditamento",
+   "request": "APEL",
+   "label": "Apresentação de Elementos",
+   "folder": "r-167",
+   "relation": "inherits",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art11.2"
+   ],
+   "note": "improvement or addition: no list of its own; any element of the procedure's initial lists"
+  },
+  {
+   "procedure": "DIV",
+   "group": "Prorrogações",
+   "request": "LECOI",
+   "label": "Licença especial para a conclusão de obras inacabadas",
+   "folder": "r-168",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art88.1"
+   ],
+   "note": "special licence to finish unfinished works (RJUE art. 88.º): no Annex V list"
+  },
+  {
+   "procedure": "DIV",
+   "group": "Averbamentos",
+   "request": "AVERNT",
+   "label": "Averbamento de novo titular",
+   "folder": "r-169",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "DIV",
+   "group": "Averbamentos",
+   "request": "AVERPA",
+   "label": "Averbamento do técnico autor do projeto de arquitetura",
+   "folder": "r-170",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "DIV",
+   "group": "Averbamentos",
+   "request": "AVERCP",
+   "label": "Averbamento do coordenador de projeto",
+   "folder": "r-171",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "DIV",
+   "group": "Averbamentos",
+   "request": "AVERDO",
+   "label": "Averbamento do diretor de obra",
+   "folder": "r-172",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "DIV",
+   "group": "Averbamentos",
+   "request": "AVERDFO",
+   "label": "Averbamento do diretor de fiscalização de obra",
+   "folder": "r-173",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "DIV",
+   "group": "Averbamentos",
+   "request": "AVEREOP",
+   "label": "Averbamento do empreiteiro de obras particulares",
+   "folder": "r-174",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "registration of a change (holder, works director, contractor…) on an existing title: no Annex V list"
+  },
+  {
+   "procedure": "DIV",
+   "group": "Taxas / Cauções",
+   "request": "RPOUR",
+   "label": "Receção provisória de obras de urbanização",
+   "folder": "r-175",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art87.1"
+   ],
+   "note": "provisional reception of urbanisation works (RJUE art. 87.º): no Annex V list"
+  },
+  {
+   "procedure": "DIV",
+   "group": "Taxas / Cauções",
+   "request": "RDOUR",
+   "label": "Receção definitiva de obras de urbanização",
+   "folder": "r-176",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art87.1"
+   ],
+   "note": "final reception of urbanisation works (RJUE art. 87.º): no Annex V list"
+  },
+  {
+   "procedure": "AI",
+   "group": "Iniciais",
+   "request": "AIISER",
+   "label": "Autorização de instalação de infraestruturas de suporte das estações de radiocomunicações e respetivos acessórios",
+   "folder": "r-177",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "dr:decreto-lei:11/2003"
+   ],
+   "note": "radio infrastructures: elements of Decreto-Lei 11/2003 art. 5.º"
+  },
+  {
+   "procedure": "AI",
+   "group": "Aperfeiçoamento / Aditamento",
+   "request": "APEL",
+   "label": "Apresentação de Elementos",
+   "folder": "r-178",
+   "relation": "inherits",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art11.2"
+   ],
+   "note": "improvement or addition: no list of its own; any element of the procedure's initial lists"
+  },
+  {
+   "procedure": "AI",
+   "group": "Aperfeiçoamento / Aditamento",
+   "request": "ADEO",
+   "label": "Alterações durante a execução da obra",
+   "folder": "r-179",
+   "relation": "inherits",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "decreto-lei-108-2026:anexo.art11.2"
+   ],
+   "note": "improvement or addition: no list of its own; any element of the procedure's initial lists"
+  },
+  {
+   "procedure": "AI",
+   "group": "Outros",
+   "request": "INOB",
+   "label": "Comunicação de início de obras sujeitas a controlo prévio",
+   "folder": "r-180",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "not modelled"
+  },
+  {
+   "procedure": "AI",
+   "group": "Outros",
+   "request": "CONP",
+   "label": "Consulta de Processos",
+   "folder": "r-181",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "consultation of a file: not modelled"
+  },
+  {
+   "procedure": "AI",
+   "group": "Outros",
+   "request": "PEDI",
+   "label": "Petições diversas",
+   "folder": "r-182",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "petitions: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "AI",
+   "group": "Outros",
+   "request": "ALEG",
+   "label": "Alegação",
+   "folder": "r-183",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "allegations: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "AI",
+   "group": "Outros",
+   "request": "RECL",
+   "label": "Reclamação",
+   "folder": "r-184",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "complaints: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "AI",
+   "group": "Outros",
+   "request": "COPIA",
+   "label": "Cópias simples/autenticadas",
+   "folder": "r-185",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "copies of documents: not modelled"
+  },
+  {
+   "procedure": "AI",
+   "group": "Outros",
+   "request": "LER",
+   "label": "Licença especial de ruído",
+   "folder": "r-186",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "special noise licence: Regulamento Geral do Ruído, not captured"
+  },
+  {
+   "procedure": "APAC",
+   "group": "Iniciais",
+   "request": "CINSL",
+   "label": "Comunicação de Instalação Não Sujeita a Licenciamento de Armazenamento de Produtos de Petróleo e de Postos de Abastecimento de Combustíveis – Instalações de Classe B2",
+   "folder": "r-187",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "dr:decreto-lei:267/2002"
+   ],
+   "note": "fuel installations: Decreto-Lei 267/2002"
+  },
+  {
+   "procedure": "APAC",
+   "group": "Iniciais",
+   "request": "LSICA1",
+   "label": "Licenciamento Simplificado de Instalação de Armazenamento de Produtos de Petróleo e de Postos de Abastecimento de Combustíveis – Classe A1",
+   "folder": "r-188",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "dr:decreto-lei:267/2002"
+   ],
+   "note": "fuel installations: Decreto-Lei 267/2002"
+  },
+  {
+   "procedure": "APAC",
+   "group": "Iniciais",
+   "request": "LSICA2",
+   "label": "Licenciamento Simplificado de Instalação de Armazenamento de Produtos de Petróleo e de Postos de Abastecimento de Combustíveis – Classe A2",
+   "folder": "r-189",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "dr:decreto-lei:267/2002"
+   ],
+   "note": "fuel installations: Decreto-Lei 267/2002"
+  },
+  {
+   "procedure": "APAC",
+   "group": "Iniciais",
+   "request": "LSICA3",
+   "label": "Licenciamento Simplificado de Instalação de Armazenamento de Produtos de Petróleo e de Postos de Abastecimento de Combustíveis – Classe A3",
+   "folder": "r-190",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "dr:decreto-lei:267/2002"
+   ],
+   "note": "fuel installations: Decreto-Lei 267/2002"
+  },
+  {
+   "procedure": "APAC",
+   "group": "Iniciais",
+   "request": "LIPC",
+   "label": "Licenciamento de Instalação de Armazenamento de Produtos de Petróleo e de Postos de Abastecimento de Combustíveis",
+   "folder": "r-191",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "dr:decreto-lei:267/2002"
+   ],
+   "note": "fuel installations: Decreto-Lei 267/2002"
+  },
+  {
+   "procedure": "APAC",
+   "group": "Utilização",
+   "request": "ELEPC",
+   "label": "Emissão de Licença de Exploração de Armazenamento de produtos de Petróleo e de Postos de Abastecimento de Combustíveis",
+   "folder": "r-192",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "dr:decreto-lei:267/2002"
+   ],
+   "note": "fuel installations: Decreto-Lei 267/2002"
+  },
+  {
+   "procedure": "APAC",
+   "group": "Utilização",
+   "request": "CULSIC",
+   "label": "Comunicação de Utilização -  Licenciamento Simplificado de Instalação de Armazenamento de Produtos de Petróleo e de Postos de Abastecimento de Combustíveis",
+   "folder": "r-193",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "dr:decreto-lei:267/2002"
+   ],
+   "note": "fuel installations: Decreto-Lei 267/2002"
+  },
+  {
+   "procedure": "APAC",
+   "group": "Outros",
+   "request": "CCAPC",
+   "label": "Comunicação de Cessação de Atividade de Armazenamento de Produtos de Petróleo e de Postos de Abastecimento de Combustíveis",
+   "folder": "r-194",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [
+    "dr:decreto-lei:267/2002"
+   ],
+   "note": "fuel installations: Decreto-Lei 267/2002"
+  },
+  {
+   "procedure": "APAC",
+   "group": "Outros",
+   "request": "INOB",
+   "label": "Comunicação de início de obras sujeitas a controlo prévio",
+   "folder": "r-195",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "not modelled"
+  },
+  {
+   "procedure": "APAC",
+   "group": "Outros",
+   "request": "CONP",
+   "label": "Consulta de Processos",
+   "folder": "r-196",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "consultation of a file: not modelled"
+  },
+  {
+   "procedure": "APAC",
+   "group": "Outros",
+   "request": "PEDI",
+   "label": "Petições diversas",
+   "folder": "r-197",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "petitions: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "APAC",
+   "group": "Outros",
+   "request": "ALEG",
+   "label": "Alegação",
+   "folder": "r-198",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "allegations: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "APAC",
+   "group": "Outros",
+   "request": "RECL",
+   "label": "Reclamação",
+   "folder": "r-199",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "complaints: Código do Procedimento Administrativo, not modelled"
+  },
+  {
+   "procedure": "APAC",
+   "group": "Outros",
+   "request": "COPIA",
+   "label": "Cópias simples/autenticadas",
+   "folder": "r-200",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "copies of documents: not modelled"
+  },
+  {
+   "procedure": "APAC",
+   "group": "Outros",
+   "request": "LER",
+   "label": "Licença especial de ruído",
+   "folder": "r-201",
+   "relation": "outside_annex",
+   "lists": [],
+   "common": [],
+   "basis": [],
+   "note": "special noise licence: Regulamento Geral do Ruído, not captured"
+  }
+ ]
+}

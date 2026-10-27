@@ -1,0 +1,388 @@
+{
+ "version": "pdm@1",
+ "municipality": "celorico-de-basto",
+ "subject": "dr:aviso:14352/2025/2",
+ "kind": "municipal.regulation.pdf",
+ "extractor": "pdf-text@1",
+ "title": "PDM de Celorico de Basto, 2.ª revisão (Aviso n.º 14352/2025/2, DR 2.ª série n.º 108, 2025-06-05): what can be built on a parcel, by category of space",
+ "proposed_by": "ai:claude-opus-5.5",
+ "review": "unreviewed",
+ "note": "Quotes are checked word for word against the official PDF's text, with the page headers removed and words broken at line ends joined. The category of a parcel comes from the planta de ordenamento (DGT's CRUS service gives it by coordinates, engine/geo.py): it is an input here. IUL applies to the part of the parcel within 50 m of the public road (80 m in economic-activity spaces), IUB beyond it (art. 54.º n.º 2); the abstract buildability is the IUL figure unless the câmara accepts the IUB part (n.º 3).",
+ "general": [
+  {
+   "id": "art51.1",
+   "what": "new buildings in urban soil need the parcel to be served by the infrastructures and to front an enabling public road (or be in a licensed allotment)",
+   "quote": "A construção de novos edifícios em solo urbano só pode ser viabilizada"
+  },
+  {
+   "id": "art52.4",
+   "what": "impermeabilised area ≤ twice the building footprint and ≤ 90 % of the parcel",
+   "quote": "não pode ultrapassar o dobro da área de implantação total dos referidos edifícios nem 90 % da área total do prédio",
+   "max_impermeable_ratio": 0.9,
+   "max_impermeable_vs_footprint": 2
+  },
+  {
+   "id": "art53.1",
+   "what": "in a consolidated urban front, the index is the starting reference and integration with the surroundings may prevail (cércea = the most frequent of the front)",
+   "quote": "constitui o referencial de princípio para a edificabilidade a viabilizar"
+  },
+  {
+   "id": "art54.2",
+   "what": "IUL within 50 m of the public road (80 m in economic-activity spaces), IUB beyond",
+   "quote": "O IUL aplica-se à parte da área do prédio abrangida pela referida categoria ou subcategoria"
+  },
+  {
+   "id": "art57.1",
+   "what": "occupation of the parcel with buildings, including basements and annexes: 75 % if the parcel has 333,3 m² or more, else 250 m²",
+   "quote": "o limite máximo de ocupação de uma parcela com edifícios, incluindo caves e anexos, é de",
+   "max_occupation_ratio": 0.75,
+   "max_occupation_small_m2": 250,
+   "small_below_m2": 333.3
+  },
+  {
+   "id": "art21.5",
+   "what": "outside rural settlements and dispersed-building areas, housing in rural soil only with demonstrated strict need tied to a productive farm",
+   "quote": "Fora dos aglomerados rurais e das áreas de edificação dispersa, em solo rústico só é admissível destinar edifícios ao uso habitacional"
+  }
+ ],
+ "categories": [
+  {
+   "id": "central-principal-a",
+   "name": "Espaços centrais — área central principal A (núcleo da Vila)",
+   "soil": "urbano",
+   "iul": 1.7,
+   "iub": 0.8,
+   "floors": 4,
+   "occupation": "art57.1",
+   "quotes": [
+    {
+     "article": "art56.1.a.i",
+     "quote": "Na área central principal: IUL = 1,7 m²/m²"
+    },
+    {
+     "article": "art56.1.b.i",
+     "quote": "Na área central principal: IUB = 0,8 m²/m²"
+    },
+    {
+     "article": "art56.1.c.i",
+     "quote": "Na área central principal A: 4 pisos"
+    }
+   ]
+  },
+  {
+   "id": "central-principal-b",
+   "name": "Espaços centrais — área central principal B",
+   "soil": "urbano",
+   "iul": 1.7,
+   "iub": 0.8,
+   "floors": 3,
+   "occupation": "art57.1",
+   "quotes": [
+    {
+     "article": "art56.1.a.i",
+     "quote": "Na área central principal: IUL = 1,7 m²/m²"
+    },
+    {
+     "article": "art56.1.b.i",
+     "quote": "Na área central principal: IUB = 0,8 m²/m²"
+    },
+    {
+     "article": "art56.1.c.ii",
+     "quote": "Na área central principal B e nas áreas centrais complementares: 3 pisos"
+    }
+   ]
+  },
+  {
+   "id": "central-complementar",
+   "name": "Espaços centrais — áreas centrais complementares (Fermil, Gandarela, Mota…)",
+   "soil": "urbano",
+   "iul": 1.2,
+   "iub": 0.65,
+   "floors": 3,
+   "occupation": "art57.1",
+   "quotes": [
+    {
+     "article": "art56.1.a.ii",
+     "quote": "Nas áreas centrais complementares: IUL = 1,2 m²/m²"
+    },
+    {
+     "article": "art56.1.b.ii",
+     "quote": "Nas áreas centrais complementares: IUB = 0,65 m²/m²"
+    },
+    {
+     "article": "art56.1.c.ii",
+     "quote": "Na área central principal B e nas áreas centrais complementares: 3 pisos"
+    }
+   ]
+  },
+  {
+   "id": "habitacional",
+   "name": "Espaços habitacionais",
+   "soil": "urbano",
+   "iul": 0.6,
+   "iub": 0.45,
+   "floors": 2,
+   "facade_m": 9,
+   "basements": 1,
+   "occupation": "art57.1",
+   "quotes": [
+    {
+     "article": "art59.1.a",
+     "quote": "IUL = 0,6 m²/m², aplicado nos termos do disposto na alínea a) do n.º 2 do artigo 54.º"
+    },
+    {
+     "article": "art59.1.b",
+     "quote": "IUB = 0,45 m²/m², aplicado nos termos do disposto na alínea b) do n.º 2 do artigo 54.º"
+    },
+    {
+     "article": "art59.1.c",
+     "quote": "2 pisos acima da cota de soleira totalmente desafogados, com dimensão vertical de qualquer fachada não superior a 9 metros"
+    },
+    {
+     "article": "art59.1.d",
+     "quote": "Número máximo de pisos total ou parcialmente em cave: um"
+    }
+   ]
+  },
+  {
+   "id": "baixa-densidade",
+   "name": "Espaços urbanos de baixa densidade",
+   "soil": "urbano",
+   "iul": 0.6,
+   "iub": 0.45,
+   "floors": 2,
+   "dwellings": 2,
+   "occupation": "art57.1",
+   "quotes": [
+    {
+     "article": "art62.1.c",
+     "quote": "Número máximo de 2 pisos acima da cota de soleira"
+    },
+    {
+     "article": "art62.2.b",
+     "quote": "Cada edifício com componente habitacional só pode albergar um máximo de dois fogos"
+    },
+    {
+     "article": "art62.1.a",
+     "quote": "IUL = 0,6 m²/m², aplicado nos termos do disposto na alínea a) do n.º 2 do artigo 54.º"
+    }
+   ]
+  },
+  {
+   "id": "aglomerado-rural",
+   "name": "Aglomerados rurais",
+   "soil": "rustico",
+   "iu": 0.6,
+   "floors": 2,
+   "facade_m": 9,
+   "dwellings": 2,
+   "quotes": [
+    {
+     "article": "art48.1.a",
+     "quote": "Índice de utilização do solo (IU) máximo de 0,6 m²/m² aplicado à área da parte do prédio inserida na categoria de aglomerados rurais"
+    },
+    {
+     "article": "art48.1.d",
+     "quote": "Nos edifícios com componente habitacional, máximo de dois fogos por edifício"
+    }
+   ]
+  },
+  {
+   "id": "edificacao-dispersa",
+   "name": "Áreas de edificação dispersa (moradia uni ou bifamiliar)",
+   "soil": "rustico",
+   "iu": 0.4,
+   "floors": 2,
+   "facade_m": 9,
+   "dwellings": 2,
+   "quotes": [
+    {
+     "article": "art49.3.b",
+     "quote": "A construção de edifícios destinados a habitação unifamiliar ou bifamiliar"
+    },
+    {
+     "article": "art50.a",
+     "quote": "Índice de utilização do solo (IU) máximo de 0,4 m²/m² aplicado à área da parcela"
+    }
+   ]
+  },
+  {
+   "id": "rustico-habitacao",
+   "name": "Espaços agrícolas, florestais ou naturais — habitação (só com necessidade demonstrada, art. 21.º n.º 5)",
+   "soil": "rustico",
+   "iu": 0.02,
+   "floors": 2,
+   "facade_m": 9,
+   "basements": 1,
+   "condition": "art21.5",
+   "quotes": [
+    {
+     "article": "art36.1.a",
+     "quote": "Índice máximo de utilização do solo (IU) de 0,02 m²/m² aplicado à área total da parcela"
+    }
+   ]
+  },
+  {
+   "id": "rustico-apoio-agricola",
+   "name": "Espaços agrícolas, florestais ou naturais — edifício de apoio agrícola, pecuário ou florestal",
+   "soil": "rustico",
+   "iu_steps": [
+    [
+     500,
+     0.6,
+     0
+    ],
+    [
+     10000,
+     0.25,
+     175
+    ],
+    [
+     null,
+     0.15,
+     1175
+    ]
+   ],
+   "floors": 2,
+   "facade_m": 9,
+   "quotes": [
+    {
+     "article": "art31.1.a.i",
+     "quote": "IU = 0,60 m²/m² e Abc = 0,60 x A, se A não exceder 500 m²"
+    },
+    {
+     "article": "art31.1.a.ii",
+     "quote": "IU = 0,25 m²/m² e Abc = 175 m² + 0,25 x A, se A for superior a 500 m² e não exceder 10.000 m²"
+    },
+    {
+     "article": "art31.1.a.iii",
+     "quote": "IU = 0,15 m²/m² e Abc = 1 175 m² + 0,15 x A, se A for superior a 10.000 m²"
+    }
+   ]
+  },
+  {
+   "id": "atividades-economicas",
+   "name": "Espaços de atividades económicas — unidade empresarial avulsa",
+   "soil": "urbano",
+   "iul": 0.9,
+   "io": 0.7,
+   "setbacks": {
+    "sides_m": 5,
+    "rear_m": 10
+   },
+   "quotes": [
+    {
+     "article": "art65.1.b.iv",
+     "quote": "IUL = 0,9 m²/m², aplicado nos termos do disposto na alínea a) do n.º 2 do artigo 54.º"
+    },
+    {
+     "article": "art65.1.b.iv",
+     "quote": "Índice de ocupação do solo = 0,7 aplicado à mesma área a que se aplica o IUL"
+    },
+    {
+     "article": "art65.1.b.iii",
+     "quote": "Manter afastamentos mínimos de 5 metros às estremas laterais da parcela e de 10 metros"
+    }
+   ]
+  },
+  {
+   "id": "equipamentos",
+   "name": "Espaços de uso especial de equipamentos",
+   "soil": "urbano",
+   "iu": 1.0,
+   "io": 0.75,
+   "quotes": [
+    {
+     "article": "art68.5.a",
+     "quote": "Índice de utilização não superior a 1,0 m²/m²"
+    },
+    {
+     "article": "art68.5.b",
+     "quote": "Índice de ocupação do solo máximo de 0,75"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "category": "habitacional",
+   "parcel_m2": 800,
+   "road_band_m2": 800,
+   "use": "habitacao_unifamiliar",
+   "dwellings": 1
+  },
+  {
+   "category": "baixa-densidade",
+   "parcel_m2": 1200,
+   "road_band_m2": 1000,
+   "use": "habitacao_unifamiliar",
+   "dwellings": 2
+  },
+  {
+   "category": "central-complementar",
+   "parcel_m2": 400,
+   "road_band_m2": 400,
+   "use": "habitacao_coletiva",
+   "dwellings": 6
+  },
+  {
+   "category": "aglomerado-rural",
+   "parcel_m2": 600,
+   "use": "habitacao_unifamiliar",
+   "dwellings": 1
+  },
+  {
+   "category": "edificacao-dispersa",
+   "parcel_m2": 1500,
+   "use": "habitacao_unifamiliar",
+   "dwellings": 1
+  },
+  {
+   "category": "rustico-habitacao",
+   "parcel_m2": 10000,
+   "use": "habitacao_unifamiliar",
+   "dwellings": 1
+  },
+  {
+   "category": "rustico-apoio-agricola",
+   "parcel_m2": 5000
+  },
+  {
+   "category": "atividades-economicas",
+   "parcel_m2": 3000,
+   "road_band_m2": 3000,
+   "use": "industria"
+  },
+  {
+   "category": "equipamentos",
+   "parcel_m2": 2000
+  }
+ ],
+ "parking": {
+  "article": "art111.1",
+  "rules": {
+   "habitacao_unifamiliar": {
+    "per_m2": 100,
+    "min": 1,
+    "quote": "Um lugar por cada 100 m² de área de construção destinada a habitação unifamiliar, com o mínimo de um lugar"
+   },
+   "habitacao_coletiva": {
+    "per_m2": 80,
+    "min_per_dwelling": 1,
+    "quote": "Um lugar por cada 80 m² de área de construção destinada a habitação coletiva, com um mínimo de um lugar por cada fogo"
+   },
+   "comercio_servicos": {
+    "per_m2": 100,
+    "quote": "Um lugar por cada 100 m² de área de construção destinada a comércio ou atividades terciárias"
+   },
+   "industria": {
+    "per_m2": 100,
+    "heavy_per_m2": 400,
+    "quote": "Um lugar de veículo ligeiro por cada 100 m² acrescido de um lugar de veículo pesado por cada"
+   }
+  },
+  "rounding": {
+   "quote": "ao arredondamento para o número inteiro mais próximo dos valores numéricos encontrados"
+  }
+ }
+}

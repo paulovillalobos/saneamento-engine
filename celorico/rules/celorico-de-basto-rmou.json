@@ -1,0 +1,3103 @@
+{
+ "version": "local-rules@1",
+ "municipality": "celorico-de-basto",
+ "act": "dr:regulamento-extrato:323/2013",
+ "structure": "structure/regulamento-extrato-323-2013.json",
+ "proposed_by": "ai:claude-opus-5.5",
+ "proposed_at": "2026-10-16",
+ "review": "unreviewed",
+ "scope": "Every article of the RMOU (86): each is covered by at least one rule or listed in not_rules with its reason.",
+ "note": "Each rule records what the text says (a quote checked against the passage), which national passages it is measured against and with what role, and the readings an AI made (adds, references). It stores no state: engine/local_rules.py computes the state with the interpretation rules written there. An AI proposal is not a review.",
+ "facts": {
+  "online_submission_service": {
+   "statement": "Celorico de Basto offers an online service to build and submit urban-planning applications (NoPaper).",
+   "evidence": [
+    {
+     "subject_prefix": "web:celorico-de-basto:nopaper:",
+     "quote": "Este serviço permite a construção e a submissão dos processos urbanísticos em suporte digital"
+    }
+   ]
+  }
+ },
+ "rules": [
+  {
+   "id": "art1.1",
+   "passage": "art1.1",
+   "kind": "objeto",
+   "quote": "tem por objeto a fixação suplementar de regras relativas à urbanização e à edificação",
+   "what": "Objeto del reglamento: reglas complementarias de urbanización y edificación.",
+   "adds": false,
+   "adds_reading": "Declara el objeto; no impone nada por sí.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art1.3",
+   "passage": "art1.3",
+   "kind": "objeto",
+   "quote": "Em áreas sujeitas a PMOT'S, prevalecem as disposições dos respetivos planos",
+   "what": "Donde hay plan municipal, prevalece el plan; el RMOU es subsidiario.",
+   "adds": false,
+   "adds_reading": "Regla de prelación que el propio RMOU se da; coherente con la jerarquía plan > reglamento.",
+   "national": [
+    {
+     "subject": "dr:aviso:14352/2025/2",
+     "quote": "estabelece, em conjunto com a planta de ordenamento e a planta de condicionantes, as regras para o uso, ocupação e transformação do uso do solo em todo o território do concelho de Celorico de Basto",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art2.1",
+   "passage": "art2.1",
+   "kind": "definicao",
+   "quote": "Os conceitos utilizados são os estabelecidos na legislação em vigor",
+   "what": "Remite los conceptos al RJUE, al Decreto Regulamentar 9/2009 y al vocabulario de la DGOTDU.",
+   "adds": false,
+   "adds_reading": "Remisión a definiciones legales; no crea obligaciones.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art2",
+     "role": "regula"
+    },
+    {
+     "named": "Decreto Regulamentar 9/2009",
+     "role": "regula"
+    }
+   ],
+   "references": [
+    {
+     "quote": "Decreto Regulamentar 9/2009, de 29 de maio",
+     "to": "decreto-lei-108-2026",
+     "status": "named_not_captured",
+     "reading": "Conceptos técnicos del ordenamiento; el acto no está capturado."
+    }
+   ]
+  },
+  {
+   "id": "art2.2",
+   "passage": "art2.2",
+   "kind": "definicao",
+   "quote": "são também estabelecidas as seguintes, no âmbito da interpretação do presente Regulamento",
+   "what": "Definiciones propias (colmatação, construção ligeira, corpo saliente, obra, telas finais…).",
+   "adds": false,
+   "adds_reading": "Definen términos del propio reglamento; por sí no exigen nada.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.j",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art3.1",
+   "passage": "art3.1",
+   "kind": "remissao",
+   "quote": "as operações urbanísticas expressamente previstas no artigo 4.º do RJUE",
+   "what": "Sujeción a control previo: remite al art. 4.º RJUE.",
+   "adds": false,
+   "adds_reading": "Remisión al RJUE.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art4.1",
+     "role": "regula"
+    }
+   ],
+   "notes": [
+    {
+     "quote": "Estão dependentes de licença, comunicação prévia e autorização utilização",
+     "text": "La «autorização de utilização» ya no es la figura general: la utilización se comunica (RJUE arts. 62.º-A y 62.º-B)."
+    }
+   ]
+  },
+  {
+   "id": "art3.2",
+   "passage": "art3.2",
+   "kind": "execucao",
+   "quote": "com obrigatoriedade de menção da identidade da pessoa encarregada da execução dos trabalhos",
+   "what": "Deber de informar el inicio de todas las obras con la identidad de quien las ejecuta y la fecha de inicio.",
+   "adds": false,
+   "adds_reading": "El art. 80.º-A n.º 1 RJUE ya impone informar el inicio y la identidad de quien ejecuta.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art80-A.1",
+     "role": "regula"
+    }
+   ],
+   "references": [
+    {
+     "quote": "n.º 4 do artigo 80.º do RJUE",
+     "to": "decreto-lei-108-2026:anexo.art80.4",
+     "status": "renumbered",
+     "reading": "El n.º 4 del art. 80.º trata hoy de las obras isentas tras información previa favorable, no de la fecha de inicio."
+    }
+   ]
+  },
+  {
+   "id": "art3.3",
+   "passage": "art3.3",
+   "kind": "objeto",
+   "quote": "não ficam dispensadas do cumprimento de todas as normas legais e regulamentares aplicáveis",
+   "what": "Las obras isentas siguen sujetas a las normas y a la tutela de la legalidad.",
+   "adds": false,
+   "adds_reading": "Declarativa: repite lo que resulta del RJUE.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art6.1",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art4.2",
+   "passage": "art4.2",
+   "kind": "escassa_relevancia",
+   "quote": "São obras de escassa relevância urbanística, para além das definidas no artigo 6.º-A, do RJUE",
+   "what": "Añade supuestos de obras de escassa relevância (tanques, alpendres, anexos ≤ 10 m², estufas…) a los del art. 6.º-A RJUE.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.a",
+     "role": "habilita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art6-A.1.i",
+     "role": "habilita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art6-A.3",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art4.3.a",
+   "passage": "art4.3.a",
+   "kind": "instrucao",
+   "applies_to": "obras isentas (art. 80.º-A RJUE)",
+   "quote": "Cópia de documento que permita verificar a identidade do requerente",
+   "what": "Exige copia del documento de identidad en la comunicación de obras isentas.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art9.12.j",
+     "role": "prohibe"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.38",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art4.3.b",
+   "passage": "art4.3.b",
+   "kind": "instrucao",
+   "applies_to": "obras isentas (art. 80.º-A RJUE)",
+   "quote": "Cópia da certidão da descrição e de todas as inscrições em vigor emitida pela conservatória do registo predial",
+   "what": "Exige copia de la certidão del registo predial (o de la certidão matricial).",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art9.12.d",
+     "role": "prohibe"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.38",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art4.3.c",
+   "passage": "art4.3.c",
+   "kind": "instrucao",
+   "applies_to": "obras isentas (art. 80.º-A RJUE)",
+   "quote": "Ata do condomínio da qual conste, de forma explícita, deliberação relativa à autorização da realização da obra",
+   "what": "Acta del condominio que autorice la obra, si aplica.",
+   "touches": [
+    "portaria-320-2026-1:anexo-V.38.a"
+   ],
+   "adds": false,
+   "adds_reading": "Es una prueba de los poderes para realizar la obra en partes comunes: la forma concreta del documento que pide V.38 a).",
+   "national": [
+    {
+     "passage": "portaria-320-2026-1:anexo-V.38.a",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art4.3.d",
+   "passage": "art4.3.d",
+   "kind": "instrucao",
+   "applies_to": "obras isentas (art. 80.º-A RJUE)",
+   "quote": "Levantamento fotográfico do exterior e interior da edificação",
+   "what": "Fotos del exterior e interior antes de las obras isentas.",
+   "touches": [
+    "portaria-320-2026-1:anexo-V.38"
+   ],
+   "adds": true,
+   "adds_reading": "V.38 no incluye registo fotográfico para las obras isentas.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.38",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art4.3.e",
+   "passage": "art4.3.e",
+   "kind": "instrucao",
+   "applies_to": "obras isentas (art. 80.º-A RJUE)",
+   "quote": "Planta à escala 1:2.000",
+   "what": "Planta a 1:2.000 con los límites del terreno y la obra.",
+   "touches": [
+    "portaria-320-2026-1:anexo-V.38"
+   ],
+   "adds": true,
+   "adds_reading": "V.38 no incluye plantas para las obras isentas.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.38",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art4.3.f",
+   "passage": "art4.3.f",
+   "kind": "instrucao",
+   "applies_to": "obras isentas (art. 80.º-A RJUE)",
+   "quote": "Planta de localização e enquadramento à escala 1:10.000",
+   "what": "Planta de localización a 1:10.000.",
+   "touches": [
+    "portaria-320-2026-1:anexo-V.38"
+   ],
+   "adds": true,
+   "adds_reading": "V.38 no incluye planta de localização para las obras isentas.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.38",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art4.3.g",
+   "passage": "art4.3.g",
+   "kind": "instrucao",
+   "applies_to": "obras isentas (art. 80.º-A RJUE)",
+   "quote": "Extratos das plantas do plano municipal de ordenamento em vigor para a área",
+   "what": "Extractos de las plantas del plan municipal (PDM/PU/PP) o del loteamento.",
+   "touches": [
+    "portaria-320-2026-1:anexo-V.38"
+   ],
+   "adds": true,
+   "adds_reading": "V.38 no los incluye; pueden caber en la excepción del art. 2.º n.º 3 de la Portaria (elementos indispensables para verificar planes).",
+   "exception": "portaria-320-2026-1:art2.3",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:art2.3",
+     "role": "excepcion"
+    },
+    {
+     "passage": "portaria-320-2026-1:art2.4",
+     "role": "excepcion"
+    }
+   ]
+  },
+  {
+   "id": "art4.3.h",
+   "passage": "art4.3.h",
+   "kind": "instrucao",
+   "applies_to": "obras isentas (art. 80.º-A RJUE)",
+   "quote": "Descrição sucinta dos trabalhos a executar",
+   "what": "Descripción de los trabajos, materiales, colores y sistemas constructivos.",
+   "touches": [
+    "portaria-320-2026-1:anexo-V.38"
+   ],
+   "adds": true,
+   "adds_reading": "V.38 no incluye memoria ni descripción de los trabajos para las obras isentas.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.38",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art4.3.i",
+   "passage": "art4.3.i",
+   "kind": "instrucao",
+   "applies_to": "obras isentas (art. 80.º-A RJUE)",
+   "quote": "Peça gráfica que caracterize a obra de forma sucinta e esclarecedora",
+   "what": "Pieza gráfica con implantación, dimensiones y retranqueos.",
+   "touches": [
+    "portaria-320-2026-1:anexo-V.38"
+   ],
+   "adds": true,
+   "adds_reading": "V.38 solo pide elementos gráficos del último antecedente en reconstrucciones (V.38 c), no una pieza gráfica de la obra.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.38",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art4.3.j",
+   "passage": "art4.3.j",
+   "kind": "instrucao",
+   "applies_to": "obras isentas (art. 80.º-A RJUE)",
+   "quote": "Informação sobre a identidade da pessoa, singular ou coletiva, encarregada da execução dos trabalhos",
+   "what": "Identidad de quien ejecuta los trabajos.",
+   "touches": [
+    "decreto-lei-108-2026:anexo.art80-A.1"
+   ],
+   "adds": false,
+   "adds_reading": "El art. 80.º-A n.º 1 RJUE pide comunicar «a identidade da pessoa, singular ou coletiva, encarregada da execução».",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art80-A.1",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art5",
+   "passage": "art5.p1",
+   "kind": "remissao",
+   "quote": "são dispensados de apresentação de projeto de execução",
+   "what": "Dispensa de projeto de execução para las obras isentas del art. 4.º.",
+   "superseded": {
+    "passage": "decreto-lei-108-2026:anexo.art80.4",
+    "reading": "El RJUE vigente ya no exige entregar projeto de execução para obras de edificación; el n.º 4 del art. 80.º trata hoy de otra cosa."
+   }
+  },
+  {
+   "id": "art6",
+   "passage": "art6.p1",
+   "kind": "procedimento",
+   "quote": "São dispensadas de discussão pública as operações de loteamento",
+   "what": "Sin discusión pública los loteamentos de vivienda ≤ 1 ha, ≤ 10 fogos y ≤ 10 % de la población.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.i",
+     "role": "habilita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art22.1",
+     "role": "habilita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art22.2",
+     "role": "limita"
+    }
+   ],
+   "notes": [
+    {
+     "passage": "art6.a",
+     "quote": "1 ha",
+     "text": "Por encima de 4 ha, 100 fogos o 10 % la consulta es siempre obligatoria (RJUE art. 22.º n.º 2); los umbrales del RMOU son más bajos, así que no la dispensan donde la ley la impone."
+    }
+   ]
+  },
+  {
+   "id": "art7",
+   "passage": "art7.1",
+   "kind": "procedimento",
+   "quote": "é precedida de um período de consulta pública",
+   "what": "Consulta pública de loteamentos: objeto, anuncio (portal, edital, prensa), 15 días, alegaciones.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.i",
+     "role": "habilita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art22.1",
+     "role": "habilita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art27.2",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art8.1",
+   "passage": "art8.1",
+   "kind": "impacte",
+   "quote": "considera-se no Município de Celorico de Basto operação urbanística geradora de um impacte semelhante a um loteamento",
+   "what": "Define impacte semelhante a loteamento (≥ 2 cajas de escalera comunes, ≥ 3 fracciones, ≥ 750 m² comercio/servicios, turismo…): activa arts. 43.º–44.º RJUE (cedencias y compensaciones).",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.l",
+     "role": "habilita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art57.5",
+     "role": "habilita"
+    }
+   ],
+   "references": [
+    {
+     "quote": "n.º 5 do artigo 57.º do RJUE",
+     "to": "decreto-lei-108-2026:anexo.art57.5",
+     "status": "same_number",
+     "reading": "El n.º 5 del art. 57.º sigue remitiendo a regulamento municipal los «impactes semelhantes a uma operação de loteamento»."
+    }
+   ]
+  },
+  {
+   "id": "art8.3",
+   "passage": "art8.3",
+   "kind": "impacte",
+   "quote": "é ainda aplicável o disposto no n.º 4 do artigo 44.º do RJUE",
+   "what": "Si se crean vías, espacios verdes o equipamiento de uso privativo, aplica la compensación del art. 44.º RJUE.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art57.6",
+     "role": "habilita"
+    }
+   ],
+   "references": [
+    {
+     "quote": "n.º 4 do artigo 44.º do RJUE",
+     "to": "decreto-lei-108-2026:anexo.art44.5",
+     "status": "renumbered",
+     "reading": "En 2013 el n.º 4 del art. 44.º era la compensación por falta de cedencias; hoy es el n.º 5 (el n.º 4 trata de parcelas para vivienda pública)."
+    }
+   ]
+  },
+  {
+   "id": "art9.1",
+   "passage": "art9.1",
+   "kind": "impacte",
+   "quote": "consideram-se de impacte urbanístico relevante as operações urbanísticas",
+   "what": "Define impacte urbanístico relevante (≥ 12 unidades de comercio/servicios, gasolineras, > 1.500 m² comercio/servicios): sujeta a cedencias y compensaciones de loteamento.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.l",
+     "role": "habilita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art44.6",
+     "role": "habilita"
+    }
+   ],
+   "references": [
+    {
+     "quote": "n.º 5 do artigo 44.º do RJUE",
+     "to": "decreto-lei-108-2026:anexo.art44.6",
+     "status": "renumbered",
+     "reading": "Lo que el RMOU cita como n.º 5 (impacte relevante remitido a regulamento municipal) es hoy el n.º 6 del art. 44.º."
+    }
+   ]
+  },
+  {
+   "id": "art10.1",
+   "passage": "art10.1",
+   "kind": "caucao",
+   "quote": "a Câmara Municipal pode exigir a prestação de caução destinada a garantir o levantamento do estaleiro",
+   "what": "Caución para retirar el estaleiro, limpiar y reparar daños en bienes públicos.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art86.2",
+     "role": "habilita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.f",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art10.2",
+   "passage": "art10.2",
+   "kind": "caucao",
+   "quote": "a Câmara Municipal pode exigir a prestação de caução destinada a garantir o cumprimento de quaisquer obrigações",
+   "what": "Caución para cualquier obligación impuesta al titular, de valor fijado caso a caso (n.º 3).",
+   "adds": "open",
+   "readings": [
+    {
+     "id": "habilitada",
+     "adds": false,
+     "text": "El art. 3.º n.º 2 f) RJUE habilita al reglamento a fijar cauciones."
+    },
+    {
+     "id": "anade",
+     "adds": true,
+     "text": "El art. 3.º n.º 2 f) habla de la caución «para garantia da obra» con valor o fórmula en el reglamento; una caución para «quaisquer obrigações» con valor caso a caso va más allá."
+    }
+   ],
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.f",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art11.1",
+   "passage": "art11.1",
+   "kind": "procedimento",
+   "quote": "as queixas e denúncias particulares",
+   "what": "Forma y contenido de quejas y denuncias, con copia de documentos de identidad (n.º 2).",
+   "adds": "open",
+   "readings": [
+    {
+     "id": "organiza",
+     "adds": false,
+     "text": "El art. 101.º-A RJUE no regula la forma de la denuncia; el municipio puede organizarla."
+    },
+    {
+     "id": "procedimental",
+     "adds": true,
+     "text": "Es una regla procedimental no remitida al reglamento (RJUE art. 3.º n.º 3 a)); la copia de identificación choca con el criterio del art. 9.º n.º 12 j)."
+    }
+   ],
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art101-A.1",
+     "role": "regula"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.a",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art11.5",
+   "passage": "art11.5",
+   "kind": "procedimento",
+   "quote": "Não são admitidas as denúncias anónimas nos termos do artigo 101.º-A do RJUE",
+   "what": "No se admiten denuncias anónimas.",
+   "adds": false,
+   "adds_reading": "Repite el art. 101.º-A n.º 2 RJUE.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art101-A.2",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art12.1",
+   "passage": "art12.1",
+   "kind": "remissao",
+   "quote": "acompanhado dos documentos e projetos definidos naquele regime jurídico e na Portaria n.º 232/2008, de 11 de março, ou na que lhe suceder",
+   "what": "La instrucción se hace con los documentos del RJUE y de la portaria de elementos instructorios vigente.",
+   "adds": false,
+   "adds_reading": "Remite a la ley y a la portaria vigente; no crea elementos.",
+   "national": [
+    {
+     "passage": "portaria-320-2026-1:art4.p1",
+     "role": "regula"
+    }
+   ],
+   "references": [
+    {
+     "quote": "Portaria n.º 232/2008, de 11 de março, ou na que lhe suceder",
+     "to": "portaria-320-2026-1",
+     "status": "dynamic",
+     "chain": [
+      "Portaria 232/2008",
+      "Portaria 113/2015",
+      "Portaria 71-A/2024",
+      "Portaria 320/2026/1"
+     ],
+     "chain_captured": [
+      "Portaria 320/2026/1"
+     ],
+     "reading": "La remisión es dinámica («ou na que lhe suceder»): hoy lleva a la Portaria 320/2026/1, que revoga la 71-A/2024 (art. 4.º). Los eslabones 232/2008 → 113/2015 → 71-A/2024 no están capturados."
+    }
+   ]
+  },
+  {
+   "id": "art12.2",
+   "passage": "art12.2",
+   "kind": "instrucao",
+   "quote": "das demais normas de instrução dos procedimentos que vierem a ser aprovadas pela Câmara Municipal",
+   "what": "Permite a la Câmara aprobar más normas de instrucción.",
+   "adds": true,
+   "adds_reading": "Abre la puerta a reglas instructorias municipales más allá de la ley y de la portaria.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.b",
+     "role": "limita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art12.3",
+   "passage": "art12.3",
+   "kind": "instrucao",
+   "quote": "aplicando -se, com as necessárias adaptações, o disposto no n.º 2 do artigo 11.º do RJUE",
+   "what": "Elementos complementares para comprender el pedido, por la vía del despacho de aperfeiçoamento del art. 11.º RJUE.",
+   "adds": false,
+   "adds_reading": "No crea elementos: remite al mecanismo del art. 11.º n.º 2 RJUE.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art11.2",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art13.1",
+   "passage": "art13.1",
+   "kind": "forma",
+   "quote": "são obrigatoriamente autenticados através de carimbo, com data e identificação do requerente, e sujeitos ao pagamento da respetiva taxa",
+   "what": "Los extractos de plantas (localización, RAN, REN, ruido, PMOT, loteamento) tienen que ir autenticados por la Câmara, con sello y tasa.",
+   "touches": [
+    "portaria-320-2026-1:anexo-V.2",
+    "portaria-320-2026-1:anexo-V.6"
+   ],
+   "adds": true,
+   "adds_reading": "La Portaria admite planta de localização fornecida pela câmara «ou planta de localização à escala 1:1.000» del propio solicitante; exigir autenticación municipal es una regla instructoria añadida.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.b",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.6",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art14.2",
+   "passage": "art14.2",
+   "kind": "instrucao",
+   "quote": "numa faixa de 15 m para além dos limites do terreno",
+   "what": "El levantamiento topográfico debe cubrir 15 m más allá del terreno.",
+   "touches": [
+    "portaria-320-2026-1:anexo-V.7"
+   ],
+   "adds": true,
+   "adds_reading": "V.7 pide «o espaço público envolvente»; una franja fija de 15 m es un parámetro añadido.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.b",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.7",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art14.4",
+   "passage": "art14.4",
+   "kind": "instrucao",
+   "quote": "devem ser interligados à rede geodésica nacional",
+   "what": "Sistema de coordenadas del levantamiento (Hayford-Gauss Datum Lisboa o PT-TM06/ETRS89).",
+   "touches": [
+    "portaria-320-2026-1:anexo-V.7"
+   ],
+   "adds": "open",
+   "readings": [
+    {
+     "id": "concreta",
+     "adds": false,
+     "text": "Concreta qué significa «georreferenciado» en V.7: no añade un elemento."
+    },
+    {
+     "id": "anade",
+     "adds": true,
+     "text": "Fija un requisito técnico que V.7 no fija: regla instructoria añadida (RJUE art. 3.º n.º 3 b)."
+    }
+   ],
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.b",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.7",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art15.1",
+   "passage": "art15.1",
+   "kind": "instrucao",
+   "quote": "e as fichas de instrução do processo aprovadas pela Câmara Municipal",
+   "what": "Las piezas deben seguir también las fichas de instrução aprobadas por la Câmara (no publicadas).",
+   "adds": true,
+   "adds_reading": "Elementos definidos por la Câmara además de la portaria.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art15.1.a",
+   "passage": "art15.1.a",
+   "kind": "forma",
+   "quote": "Todas as peças escritas devem ser apresentadas no formato A4",
+   "what": "Piezas escritas en A4.",
+   "touches": [
+    "portaria-320-2026-1:anexo-VI.2"
+   ],
+   "adds": false,
+   "adds_reading": "El Anexo VI n.º 2 pide lo mismo: «As peças escritas devem respeitar o formato A4».",
+   "national": [
+    {
+     "passage": "portaria-320-2026-1:anexo-VI.2",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art15.1.b",
+   "passage": "art15.1.b",
+   "kind": "suporte",
+   "quote": "Todas as peças desenhadas devem ser dobradas nas dimensões 0,210 m x 0,297 m",
+   "what": "Planos doblados en A4 (papel).",
+   "national": [
+    {
+     "passage": "portaria-320-2026-1:anexo-VI.1",
+     "role": "limita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art8-A.2",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art15.1.c",
+   "passage": "art15.1.c",
+   "kind": "prazo",
+   "quote": "só serão aceites se tiverem uma data sobre a qual não tenha ainda decorrido o prazo de seis meses",
+   "what": "Las piezas escritas y dibujadas caducan a los seis meses de su fecha.",
+   "adds": true,
+   "adds_reading": "Ni el RJUE ni la Portaria fijan una antigüedad máxima de las piezas del proyecto.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.b",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art15.2.a",
+   "passage": "art15.2.a",
+   "kind": "instrucao",
+   "quote": "Planta de implantação da operação urbanística, à escala 1/200 ou superior, a qual deverá indicar",
+   "what": "Planta de implantación con nueve contenidos (a1–a9): orientación, fosa séptica, aparcamiento, georreferencia…",
+   "touches": [
+    "portaria-320-2026-1:anexo-V.8"
+   ],
+   "adds": true,
+   "adds_reading": "V.8 fija el contenido de la planta de implantação; a1–a9 añaden contenidos (orientación, fosa séptica y captación, aparcamiento exterior).",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.b",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.8",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art15.2.b",
+   "passage": "art15.2.b",
+   "kind": "instrucao",
+   "quote": "Fotografias, com um mínimo de duas, obtidas de ângulos opostos",
+   "what": "Mínimo dos fotos desde ángulos opuestos.",
+   "touches": [
+    "portaria-320-2026-1:anexo-V.15"
+   ],
+   "adds": true,
+   "adds_reading": "V.15 pide registo fotográfico del inmueble y adyacentes; el mínimo de dos y los ángulos opuestos son parámetros añadidos.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.b",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.15",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art15.2.c",
+   "passage": "art15.2.c",
+   "kind": "instrucao",
+   "quote": "na extensão mínima de 10 m",
+   "what": "Alzados con 10 m de las fachadas o vallas contiguas.",
+   "touches": [
+    "portaria-320-2026-1:anexo-V.27.b.ii"
+   ],
+   "adds": true,
+   "adds_reading": "V.27 b) ii) pide «as construções adjacentes, quando existam»; la extensión mínima de 10 m es un parámetro añadido.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.b",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.27.b.ii",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art15.3",
+   "passage": "art15.3",
+   "kind": "suporte",
+   "quote": "enquanto não estiver disponibilizado serviço on-line para submissão de requerimentos relativos a operações urbanísticas",
+   "what": "Copia digital en CD junto al original en papel, con sus reglas de formato.",
+   "condition": {
+    "quote": "enquanto não estiver disponibilizado serviço on-line para submissão de requerimentos relativos a operações urbanísticas",
+    "fact": "online_submission_service",
+    "applies_while": false
+   },
+   "national": [
+    {
+     "passage": "portaria-320-2026-1:anexo-VI.1",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art15.3.b",
+   "passage": "art15.3.b",
+   "kind": "formato",
+   "quote": "em formato DWF para as peças desenhadas",
+   "what": "Planos en DWF (dentro de la copia en CD).",
+   "condition": {
+    "quote": "enquanto não estiver disponibilizado serviço on-line para submissão de requerimentos relativos a operações urbanísticas",
+    "fact": "online_submission_service",
+    "applies_while": false,
+    "inherited_from": "art15.3"
+   },
+   "national": [
+    {
+     "passage": "portaria-320-2026-1:anexo-VI.1.a",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art15.3.c",
+   "passage": "art15.3.c",
+   "kind": "formato",
+   "quote": "devem ser apresentados também em formato vetorizado para permitir a sua edição (DWG ou DXF)",
+   "what": "Levantamiento y planta de implantación también en DWG/DXF (dentro de la copia en CD).",
+   "condition": {
+    "quote": "enquanto não estiver disponibilizado serviço on-line para submissão de requerimentos relativos a operações urbanísticas",
+    "fact": "online_submission_service",
+    "applies_while": false,
+    "inherited_from": "art15.3"
+   },
+   "national": [
+    {
+     "passage": "portaria-320-2026-1:anexo-VI.1.b",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art15.5",
+   "passage": "art15.5",
+   "kind": "suporte",
+   "quote": "Os originais dos documentos comprovativos da legitimidade, bem como os extratos das plantas autenticadas pela Câmara Municipal",
+   "what": "Originales en papel de la legitimidad y de los extractos autenticados.",
+   "national": [
+    {
+     "passage": "portaria-320-2026-1:anexo-VI.1",
+     "role": "limita"
+    }
+   ],
+   "references": [
+    {
+     "quote": "Portaria n.º 232/2008, de 11 de março, ou na que lhe suceder",
+     "to": "portaria-320-2026-1",
+     "status": "dynamic",
+     "reading": "Remisión dinámica: hoy, la Portaria 320/2026/1."
+    }
+   ]
+  },
+  {
+   "id": "art15.6",
+   "passage": "art15.6",
+   "kind": "instrucao",
+   "quote": "devem ser capeados com a ficha de instrução do processo, de modelo aprovado pela Câmara Municipal",
+   "what": "Portada con la ficha de instrução de modelo municipal.",
+   "adds": true,
+   "adds_reading": "El Anexo VI n.º 3 pide un índice; un modelo municipal de ficha es un elemento añadido.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-VI.3",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art16.2",
+   "passage": "art16.2",
+   "kind": "forma",
+   "quote": "A assinatura do requerente será conferida pelos serviços municipais pela exibição do cartão do cidadão ou bilhete de identidade",
+   "what": "Los servicios municipales comprueban la firma del requerente con el documento de identidad.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art9.12.a",
+     "role": "prohibe"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.b",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art17",
+   "passage": "art17.1",
+   "kind": "suporte",
+   "quote": "Os documentos autênticos apresentados pelos requerentes para comprovar afirmações ou factos de interesse poderão ser devolvidos quando dispensáveis",
+   "what": "Devolución de documentos originales en papel, con fotocopias y tasa.",
+   "national": [
+    {
+     "passage": "portaria-320-2026-1:anexo-VI.1",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art18.2.abc",
+   "passage": "art18.2",
+   "kind": "forma",
+   "quote": "Em desenhos de alteração e sobreposição (plantas, cortes e alçados), devem ser representados",
+   "what": "Colores: conservar en negro, construir en rojo, demoler en amarillo.",
+   "touches": [
+    "portaria-320-2026-1:anexo-VI.5"
+   ],
+   "adds": false,
+   "adds_reading": "Coincide con el Anexo VI n.º 5 a)–c).",
+   "national": [
+    {
+     "passage": "portaria-320-2026-1:anexo-VI.5",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art18.2.d",
+   "passage": "art18.2.d",
+   "kind": "forma",
+   "quote": "Os elementos a reconstruir após demolição - a azul",
+   "what": "Azul para lo que se reconstruye tras demolición.",
+   "conflict": {
+    "passage": "portaria-320-2026-1:anexo-VI.5.d",
+    "quote": "Azul, para os elementos a legalizar.",
+    "reading": "El mismo color con otro significado: la Portaria reserva el azul a los elementos a legalizar."
+   },
+   "national": [
+    {
+     "passage": "portaria-320-2026-1:anexo-VI.5.d",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art19.1",
+   "passage": "art19.1",
+   "kind": "suporte",
+   "quote": "devem ser instruídos em duplicado, acrescidos de mais um exemplar por cada entidade exterior a consultar",
+   "what": "Pedidos en papel por duplicado más un ejemplar por entidad externa.",
+   "national": [
+    {
+     "passage": "portaria-320-2026-1:anexo-VI.1",
+     "role": "limita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art8-A.2",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art19.2",
+   "passage": "art19.2",
+   "kind": "suporte",
+   "quote": "não obstante a sua tramitação em papel",
+   "what": "Tramitación en papel con copia informática.",
+   "national": [
+    {
+     "passage": "portaria-320-2026-1:anexo-VI.1",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art20.1",
+   "passage": "art20.1",
+   "kind": "instrucao",
+   "quote": "devem ser elaboradas de forma parcelar piso a piso",
+   "what": "Estimación del coste de la obra piso a piso sobre un precio por m² (arts. 20.º n.os 1–3).",
+   "touches": [
+    "portaria-320-2026-1:anexo-V.27.f"
+   ],
+   "conflict": {
+    "passage": "portaria-320-2026-1:anexo-V.27.f",
+    "quote": "Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução",
+    "reading": "La Portaria basa la estimación en cantidades y tipologías de los trabajos; el RMOU, en áreas por piso y un precio por m² de una portaria anual: otro método."
+   },
+   "national": [
+    {
+     "passage": "portaria-320-2026-1:anexo-V.27.f",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art21",
+   "passage": "art21.1",
+   "kind": "urbanistica",
+   "quote": "Não serão autorizadas ou licenciadas edificações provisórias",
+   "what": "Prohíbe edificaciones provisionales salvo emergencia (≤ 2 años) o apoyo a obra.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.d",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art22",
+   "passage": "art22.p1",
+   "kind": "urbanistica",
+   "quote": "Apenas são de admitir em solo urbano as atividades pecuárias da classe 3 e de detenção caseira",
+   "what": "Solo urbano: solo pecuaria de clase 3 y doméstica, a ≥ 10 m de los linderos.",
+   "adds": "open",
+   "readings": [
+    {
+     "id": "uso_do_solo",
+     "adds": true,
+     "text": "Es una regla de uso del suelo, reservada a los planes (RJUE art. 3.º n.º 2 j)): la decide el PDM."
+    },
+    {
+     "id": "edificacao",
+     "adds": false,
+     "text": "Es una condición de las instalaciones (distancias, salubridad) que el art. 3.º n.º 2 d) RJUE habilita."
+    }
+   ],
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.j",
+     "role": "limita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.d",
+     "role": "regula"
+    },
+    {
+     "named": "Decreto-Lei 214/2008 (REAP; sustituido por el Decreto-Lei 81/2013)",
+     "role": "regula"
+    }
+   ],
+   "references": [
+    {
+     "quote": "Decreto-Lei n.º 214/2008, de 10 de novembro",
+     "to": "decreto-lei-108-2026",
+     "status": "named_not_captured",
+     "reading": "El régimen de actividad pecuaria de 2008 fue sustituido (NREAP, DL 81/2013); no capturado."
+    }
+   ]
+  },
+  {
+   "id": "art23",
+   "passage": "art23.1",
+   "kind": "urbanistica",
+   "quote": "É da responsabilidade do proprietário da estufa a reposição do terreno no seu estado originário",
+   "what": "Estufas: reposición del terreno al abandonarlas, residuos, integración paisajística.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.d",
+     "role": "habilita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.c",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art23.3",
+   "passage": "art23.3",
+   "kind": "instrucao",
+   "quote": "deve ser elaborado um projeto de arranjos exteriores",
+   "what": "Estufa con puesto de venta: proyecto de arranjos exteriores.",
+   "adds": true,
+   "adds_reading": "Ningún elemento de la Portaria exige un proyecto de arranjos exteriores para este caso.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art24.1",
+   "passage": "art24.1",
+   "kind": "execucao",
+   "quote": "o prazo de execução das obras de urbanização e edificação não pode ultrapassar os 5 anos",
+   "what": "Plazo máximo de ejecución: 5 años.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art58.2",
+     "role": "habilita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art53.1",
+     "role": "habilita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.k",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art24.2",
+   "passage": "art24.2",
+   "kind": "procedimento",
+   "quote": "Quando se trata de regularização de operação urbanística já efetuada",
+   "what": "Regularización: pedir el título en 30 días o pagar las tasas en 30 días tras la aceptación.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.m",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art24.3",
+   "passage": "art24.3",
+   "kind": "execucao",
+   "quote": "Na execução das obras deverá ser assegurado o cumprimento das normas previstas no Capítulo VIII",
+   "what": "En la ejecución se cumplen las normas de ocupación del espacio público.",
+   "adds": false,
+   "adds_reading": "Remisión interna."
+  },
+  {
+   "id": "art25",
+   "passage": "art25.1",
+   "kind": "execucao",
+   "quote": "A Câmara Municipal poderá suspender as autorizações e licenças administrativas de obras concedidas",
+   "what": "Suspensión de la obra por hallazgos arqueológicos.",
+   "national": [
+    {
+     "subject": "dr:lei:107/2001",
+     "quote": "Os serviços da administração do património cultural condicionarão a prossecução de quaisquer obras",
+     "role": "regula"
+    }
+   ],
+   "adds": "open",
+   "readings": [
+    {
+     "id": "articula",
+     "adds": false,
+     "text": "La Câmara suspende para que la administración del patrimonio estudie el hallazgo, como prevé el art. 79.º n.º 2 Lei 107/2001."
+    },
+    {
+     "id": "competencia",
+     "adds": true,
+     "text": "La ley atribuye a los servicios del patrimonio, no a la Câmara, condicionar la prosecución de las obras."
+    }
+   ]
+  },
+  {
+   "id": "art26",
+   "passage": "art26.1",
+   "kind": "execucao",
+   "quote": "As obras deverão ser realizadas em conformidade com o requerimento ou projeto submetido a apreciação e aprovado",
+   "what": "Las obras se ejecutan conforme al proyecto; lo que no, se trata como obra sin título.",
+   "adds": false,
+   "adds_reading": "Repite el deber de conformidad y su consecuencia en la tutela de la legalidad del RJUE.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art98.1",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art27",
+   "passage": "art27.p1",
+   "kind": "instrucao",
+   "quote": "o projeto de execução deverá ser instruído com pelo menos os seguintes elementos",
+   "what": "Contenido mínimo del projeto de execução (cuaderno de encargos, mapas, plantas 1:50, detalles 1:10).",
+   "superseded": {
+    "passage": "decreto-lei-108-2026:anexo.art80.4",
+    "reading": "El RJUE vigente ya no exige entregar projeto de execução al municipio; además, exigir elementos no previstos en la ley lo prohíbe el art. 3.º n.º 3 d)."
+   },
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.d",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art28",
+   "passage": "art28.1",
+   "kind": "execucao",
+   "quote": "deverão ser previamente implantadas, de acordo com o projeto",
+   "what": "Replanteo previo, aviso de inicio con 5 días e inspección de la implantación.",
+   "adds": false,
+   "adds_reading": "El aviso con 5 días es el del art. 80.º-A n.º 1 RJUE; marcar la implantación es una condición de ejecución.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art80-A.1",
+     "role": "regula"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.k",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art28.4",
+   "passage": "art28.4",
+   "kind": "taxa",
+   "quote": "será objeto de pagamento de taxa suplementar",
+   "what": "Nueva inspección con tasa suplementaria si no está marcada la implantación.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.f",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art29",
+   "passage": "art29.1",
+   "kind": "execucao",
+   "quote": "considera-se a respetiva licença ou comunicação prévia suspensa",
+   "what": "Si el director de obra o de fiscalización renuncia, se suspende el título y la obra hasta nombrar otro.",
+   "adds": "open",
+   "readings": [
+    {
+     "id": "condicao",
+     "adds": false,
+     "text": "Es una condición de ejecución (art. 3.º n.º 2 k) RJUE): sin técnico responsable no se ejecuta."
+    },
+    {
+     "id": "efeito",
+     "adds": true,
+     "text": "Suspender un título es un efecto que la ley no prevé; el reglamento no puede crearlo."
+    }
+   ],
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.k",
+     "role": "regula"
+    },
+    {
+     "subject": "dr:lei:31/2009",
+     "quote": "a cessação de funções enquanto coordenador de projecto",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art30.1",
+   "passage": "art30.1",
+   "kind": "definicao",
+   "quote": "Considera-se que uma obra está concluída quando",
+   "what": "Qué es obra concluida (trabajos, retirada de vallas y escombros, reposición de pavimentos…).",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.k",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art30.2",
+   "passage": "art30.2",
+   "kind": "instrucao",
+   "quote": "deverá ser entregue na Câmara Municipal o livro de obra",
+   "what": "En 30 días tras acabar: entregar el livro de obra y pedir la apreciación del proyecto definitivo.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art9.12.i",
+     "role": "prohibe"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.d",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art31.1",
+   "passage": "art31.1",
+   "kind": "utilizacao",
+   "quote": "carece de autorização municipal",
+   "what": "Toda utilización de edificio nuevo o alterado necesita autorização municipal.",
+   "conflict": {
+    "passage": "decreto-lei-108-2026:anexo.art62-A.2",
+    "quote": "podem ser utilizados para a finalidade pretendida imediatamente após a submissão da comunicação prevista no n.º 1",
+    "reading": "La ley sustituyó la autorização por una comunicação: se usa el edificio desde que se comunica."
+   },
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art62-A.1",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art31.10",
+   "passage": "art31.10",
+   "kind": "utilizacao",
+   "quote": "a autorização de utilização pode ser concedida para uma ou mais frações autónomas",
+   "what": "Utilización por fracciones cuando las partes comunes estén listas.",
+   "adds": false,
+   "adds_reading": "Permite la utilización parcial; no impone elementos.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art62-A.1",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art31.2.a",
+   "passage": "art31.2.a",
+   "kind": "instrucao",
+   "quote": "Cópia do título constitutivo de Propriedade Horizontal",
+   "what": "Copia del título de propiedad horizontal.",
+   "applies_to": "utilização (RMOU art. 31.º n.º 2)",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.39",
+     "role": "regula"
+    }
+   ],
+   "adds": true,
+   "adds_reading": "No está entre los elementos de V.39 ni de V.40."
+  },
+  {
+   "id": "art31.2.b",
+   "passage": "art31.2.b",
+   "kind": "instrucao",
+   "quote": "Telas finais do projeto de arquitetura acompanhadas de termo de responsabilidade",
+   "what": "Telas finales de arquitectura con término de responsabilidad.",
+   "applies_to": "utilização (RMOU art. 31.º n.º 2)",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.d",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.39.c",
+     "role": "regula"
+    }
+   ],
+   "adds": true,
+   "adds_reading": "V.39 c) solo pide telas finales cuando hubo alteraciones isentas; el art. 3.º n.º 3 d) RJUE prohíbe exigirlas fuera de los casos legales."
+  },
+  {
+   "id": "art31.2.c",
+   "passage": "art31.2.c",
+   "kind": "instrucao",
+   "quote": "Livro de Obra deve ser subscrito pelo autor do projeto ITED",
+   "what": "Livro de obra firmado por el autor del proyecto ITED.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art9.12.i",
+     "role": "prohibe"
+    }
+   ]
+  },
+  {
+   "id": "art31.2.d",
+   "passage": "art31.2.d",
+   "kind": "instrucao",
+   "quote": "Termo de responsabilidade subscrito por técnico habilitado, no qual seja declarada a conformidade de situações especificas de ruído",
+   "what": "Término de responsabilidad acústico con ensayo (RGR).",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art9.12.l",
+     "role": "prohibe"
+    }
+   ]
+  },
+  {
+   "id": "art31.2.e",
+   "passage": "art31.2.e",
+   "kind": "instrucao",
+   "quote": "Cópia do certificado de exploração emitido pela associação inspetora das instalações elétricas",
+   "what": "Certificado de explotación de la instalación eléctrica.",
+   "applies_to": "utilização (RMOU art. 31.º n.º 2)",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.39",
+     "role": "regula"
+    }
+   ],
+   "adds": true,
+   "adds_reading": "No está en V.39/V.40; el DL 272/92 que cita fue sustituido."
+  },
+  {
+   "id": "art31.2.f",
+   "passage": "art31.2.f",
+   "kind": "instrucao",
+   "quote": "Comprovativo do pagamento à EDP - Distribuição de Energia S. A.",
+   "what": "Justificante de pago del ramal eléctrico a EDP.",
+   "applies_to": "utilização (RMOU art. 31.º n.º 2)",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.39",
+     "role": "regula"
+    }
+   ],
+   "adds": true,
+   "adds_reading": "No es un elemento de la Portaria; es una relación privada con la distribuidora."
+  },
+  {
+   "id": "art31.2.g",
+   "passage": "art31.2.g",
+   "kind": "instrucao",
+   "quote": "Cópia do certificado de inspeção emitido pela entidade inspetora da rede de gás",
+   "what": "Certificado de inspección de gas.",
+   "applies_to": "utilização (RMOU art. 31.º n.º 2)",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.39",
+     "role": "regula"
+    }
+   ],
+   "adds": true,
+   "adds_reading": "No está en V.39/V.40."
+  },
+  {
+   "id": "art31.2.h",
+   "passage": "art31.2.h",
+   "kind": "instrucao",
+   "quote": "Cópia do termo de responsabilidade emitido pela entidade instaladora da rede de gás",
+   "what": "Término del instalador de gas.",
+   "applies_to": "utilização (RMOU art. 31.º n.º 2)",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.39",
+     "role": "regula"
+    }
+   ],
+   "adds": true,
+   "adds_reading": "No está en V.39/V.40."
+  },
+  {
+   "id": "art31.2.i",
+   "passage": "art31.2.i",
+   "kind": "instrucao",
+   "quote": "Cópia do termo de responsabilidade de execução do projeto ITED",
+   "what": "Término de ejecución ITED.",
+   "applies_to": "utilização (RMOU art. 31.º n.º 2)",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:art2.3",
+     "role": "excepcion"
+    },
+    {
+     "named": "Decreto-Lei 123/2009 (ITED)",
+     "role": "regula"
+    }
+   ],
+   "adds": true,
+   "adds_reading": "No está en V.39/V.40; puede caber en «lei especial» (Portaria art. 2.º n.º 3) si el DL 123/2009 lo exige al municipio.",
+   "exception": "portaria-320-2026-1:art2.3"
+  },
+  {
+   "id": "art31.2.j",
+   "passage": "art31.2.j",
+   "kind": "instrucao",
+   "quote": "no qual seja declarado que se encontram cumpridas as condições de SCIE",
+   "what": "Término de cumplimiento de seguridad contra incendios (SCIE).",
+   "applies_to": "utilização (RMOU art. 31.º n.º 2)",
+   "national": [
+    {
+     "subject": "dr:decreto-lei:220/2008",
+     "quote": "deve ser instruído com termo de responsabilidade subscrito",
+     "role": "habilita"
+    }
+   ],
+   "adds": false,
+   "adds_reading": "Lo exige expresamente una lei especial (DL 220/2008, art. 18.º n.º 1), como admite el art. 2.º n.º 3 de la Portaria."
+  },
+  {
+   "id": "art31.2.k",
+   "passage": "art31.2.k",
+   "kind": "instrucao",
+   "quote": "Documento comprovativo da existência de entidade responsável pela manutenção da instalação de ascensores",
+   "what": "Contrato de mantenimiento de ascensores.",
+   "applies_to": "utilização (RMOU art. 31.º n.º 2)",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.39",
+     "role": "regula"
+    }
+   ],
+   "adds": true,
+   "adds_reading": "No está en V.39/V.40; lo pide otro reglamento municipal."
+  },
+  {
+   "id": "art31.2.l",
+   "passage": "art31.2.l",
+   "kind": "instrucao",
+   "quote": "Certificado energético, emitido por perito qualificado",
+   "what": "Certificado energético.",
+   "applies_to": "utilização (RMOU art. 31.º n.º 2)",
+   "national": [
+    {
+     "subject": "dr:decreto-lei:101-D/2020",
+     "quote": "antes da obtenção da licença ou autorização de utilização",
+     "role": "habilita"
+    }
+   ],
+   "adds": false,
+   "adds_reading": "El régimen SCE (DL 101-D/2020) exige el certificado antes de la utilización; lei especial (Portaria art. 2.º n.º 3). Los decretos que cita el RMOU están revocados."
+  },
+  {
+   "id": "art31.4",
+   "passage": "art31.4",
+   "kind": "instrucao",
+   "quote": "Em memória descritiva, deverão indicar-se minuciosamente todas as alterações",
+   "what": "Memoria con todas las alteraciones respecto al proyecto (con las telas finales, n.os 3 y 8).",
+   "adds": true,
+   "adds_reading": "V.39/V.40 no piden memoria de alteraciones; el art. 3.º n.º 3 d) RJUE prohíbe exigir telas finales u otros documentos no previstos.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.d",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art31.5",
+   "passage": "art31.5",
+   "kind": "utilizacao",
+   "quote": "será passada a autorização de utilização",
+   "what": "La autorização se expide tras vistoria o declaración del director técnico; solo con la obra totalmente acabada (n.º 6).",
+   "conflict": {
+    "passage": "decreto-lei-108-2026:anexo.art62-A.2",
+    "quote": "podem ser utilizados para a finalidade pretendida imediatamente após a submissão da comunicação prevista no n.º 1",
+    "reading": "No hay acto de autorização que expedir: la utilización se comunica."
+   }
+  },
+  {
+   "id": "art31.7",
+   "passage": "art31.7",
+   "kind": "utilizacao",
+   "quote": "As alterações de utilização existentes ou aprovadas deverão, igualmente ser precedidas de licença municipal",
+   "what": "El cambio de uso sin obras necesita licencia municipal.",
+   "conflict": {
+    "passage": "decreto-lei-108-2026:anexo.art62-B.1",
+    "quote": "está sujeita a comunicação prévia com prazo quando não tenha sido precedida de obra sujeita a licença",
+    "reading": "La ley somete el cambio de uso sin obra a comunicação prévia com prazo, no a licencia."
+   }
+  },
+  {
+   "id": "art31.8",
+   "passage": "art31.8",
+   "kind": "instrucao",
+   "quote": "Não pode ser emitida qualquer autorização de utilização sem que tenha sido apresentado as telas finais",
+   "what": "Sin telas finales y memoria no hay utilización.",
+   "adds": true,
+   "adds_reading": "Convierte en obligatorias siempre las telas finales que V.39 c) pide solo en un caso.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.d",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art31.9",
+   "passage": "art31.9",
+   "kind": "procedimento",
+   "quote": "sem que previamente tenha sido confirmada pelos serviços de fiscalização",
+   "what": "Antes de la utilización, la fiscalización confirma arranjos, retirada de residuos y el art. 67.º.",
+   "adds": "open",
+   "readings": [
+    {
+     "id": "concreta",
+     "adds": false,
+     "text": "Concreta la condición del art. 86.º n.º 2 RJUE (limpieza y reparación como condición de la utilización)."
+    },
+    {
+     "id": "paso_nuevo",
+     "adds": true,
+     "text": "Añade una verificación previa que la ley no prevé: con la comunicação del art. 62.º-A el edificio se usa al comunicar."
+    }
+   ],
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art86.2",
+     "role": "regula"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art62-A.2",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art32",
+   "passage": "art32.p1",
+   "kind": "procedimento",
+   "quote": "no prazo de 30 dias a contar da data da conclusão dos trabalhos",
+   "what": "Pedir la utilización en 30 días tras acabar la obra.",
+   "adds": true,
+   "adds_reading": "La ley no fija ese plazo ni lo remite al reglamento.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.a",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art33.a",
+   "passage": "art33.a",
+   "kind": "instrucao",
+   "quote": "Telas finais do projeto incluindo, termo de responsabilidade do autor, memória descritiva e peças desenhadas",
+   "what": "Cambio de uso: telas finales siempre.",
+   "adds": true,
+   "adds_reading": "V.40 f) pide telas finales solo cuando hubo obras isentas (o planta de la situación existente).",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.d",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.40.f",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art33.b",
+   "passage": "art33.b",
+   "kind": "instrucao",
+   "quote": "Peças desenhadas de acordo com o n.º 2 do artigo 18.º do presente regulamento quando haja lugar a realização de obras isentas",
+   "what": "Con obras isentas: piezas en colores convencionales.",
+   "adds": false,
+   "adds_reading": "Coincide con V.40 f) (telas finales «devidamente assinaladas»).",
+   "national": [
+    {
+     "passage": "portaria-320-2026-1:anexo-V.40.f",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art33.c",
+   "passage": "art33.c",
+   "kind": "instrucao",
+   "quote": "Pareceres, autorizações ou aprovações exigíveis por força de legislação específica",
+   "what": "Pareceres exigidos por ley específica.",
+   "adds": false,
+   "adds_reading": "Remite a lo que ya exige la ley.",
+   "national": [
+    {
+     "passage": "portaria-320-2026-1:art2.3",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art33.d",
+   "passage": "art33.d",
+   "kind": "instrucao",
+   "quote": "Certificados descritos nas alíneas do n.º 2 do artigo 31.º, quando aplicáveis",
+   "what": "Los certificados del art. 31.º n.º 2.",
+   "adds": true,
+   "adds_reading": "Hereda la lista del art. 31.º n.º 2, que va más allá de V.40.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art34.1.a",
+   "passage": "art34.1.a",
+   "kind": "vistoria",
+   "quote": "Quando se verifique algumas das situações previstas no n.º 2 do artigo 64.º do RJUE",
+   "what": "Vistoria en los casos del art. 64.º n.º 2 RJUE.",
+   "adds": false,
+   "adds_reading": "Remite a la ley.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art64.2",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art34.1.b",
+   "passage": "art34.1.b",
+   "kind": "procedimento",
+   "quote": "Quando se trate de edificações construídas antes da entrada em vigor do RGEU",
+   "what": "Vistoria obligatoria para edificios anteriores al RGEU sin licencia.",
+   "adds": true,
+   "adds_reading": "Añade un caso de vistoria a los del art. 64.º n.º 2 RJUE.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.a",
+     "role": "limita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art64.2",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art34.1.c",
+   "passage": "art34.1.c",
+   "kind": "procedimento",
+   "quote": "não for possível ao requerente apresentar o livro de obra",
+   "what": "Vistoria si no se presenta el livro de obra.",
+   "adds": true,
+   "adds_reading": "Parte de exigir el livro de obra, que el municipio no puede pedir (art. 9.º n.º 12 i)), y añade un caso de vistoria.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.a",
+     "role": "limita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art9.12.i",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art34.2",
+   "passage": "art34.2",
+   "kind": "vistoria",
+   "quote": "Podem participar na vistoria o requerente, os autores dos projetos",
+   "what": "Participan en la vistoria el requerente y los técnicos, sin voto.",
+   "adds": false,
+   "adds_reading": "Coincide con el art. 65.º n.º 3 RJUE.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art65.3",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art34.3",
+   "passage": "art34.3",
+   "kind": "instrucao",
+   "quote": "quer através da respetiva caderneta predial",
+   "what": "Probar el año de construcción con la caderneta predial o un atestado de la Junta.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art9.12.c",
+     "role": "prohibe"
+    }
+   ]
+  },
+  {
+   "id": "art35",
+   "passage": "art35.p1",
+   "kind": "vistoria",
+   "quote": "são realizadas por uma comissão composta por três técnicos da Câmara Municipal",
+   "what": "Comisión de vistorias: tres técnicos, dos habilitados.",
+   "adds": false,
+   "adds_reading": "Coincide con el art. 65.º n.º 2 RJUE.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art65.2",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art36",
+   "passage": "art36.1",
+   "kind": "vistoria",
+   "quote": "determinar a execução de obras de conservação necessárias à correção de más condições de segurança ou de salubridade",
+   "what": "Obras de conservación y demolición ordenadas, precedidas de vistoria por tres técnicos (n.os 1–4).",
+   "adds": false,
+   "adds_reading": "Repite los arts. 89.º y 90.º n.º 1 RJUE.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art89.2",
+     "role": "regula"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art90.1",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art36.5",
+   "passage": "art36.5",
+   "kind": "vistoria",
+   "quote": "por uma comissão composta por dois técnicos da Divisão de Gestão Urbanística e Fiscalização",
+   "what": "Vistoria de ruina: dos técnicos y el delegado de salud.",
+   "conflict": {
+    "passage": "decreto-lei-108-2026:anexo.art90.1",
+    "quote": "por três técnicos a nomear pela câmara municipal",
+    "reading": "La ley pide tres técnicos nombrados por la Câmara; el RMOU pone dos y el delegado de salud."
+   }
+  },
+  {
+   "id": "art37",
+   "passage": "art37.p1",
+   "kind": "definicao",
+   "quote": "Resíduos da construção e de demolição são todos os resíduos provenientes de obras",
+   "what": "Definición de residuos de construcción y demolición.",
+   "adds": false,
+   "adds_reading": "Definición del régimen general.",
+   "national": [
+    {
+     "named": "Decreto-Lei 102-D/2020 (gestão de resíduos)",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art38",
+   "passage": "art38.1",
+   "kind": "residuos",
+   "quote": "É da responsabilidade do promotor da operação urbanística a deposição dos resíduos",
+   "what": "Deberes de gestión de residuos de obra.",
+   "adds": false,
+   "adds_reading": "Repite deberes del régimen de residuos.",
+   "national": [
+    {
+     "named": "Decreto-Lei 102-D/2020 (gestão de resíduos)",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art38.4",
+   "passage": "art38.4",
+   "kind": "residuos",
+   "quote": "sendo o cumprimento destas obrigações condição da emissão do alvará de autorização de utilização",
+   "what": "Retirar el estaleiro y limpiar es condición de la utilización.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art86.2",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art39",
+   "passage": "art39.1",
+   "kind": "regime_especial",
+   "quote": "Compete à Câmara Municipal",
+   "what": "Competencias y tramitación de instalaciones de combustibles.",
+   "national": [
+    {
+     "subject": "dr:decreto-lei:267/2002",
+     "quote": "É da competência das câmaras municipais",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art40",
+   "passage": "art40.1",
+   "kind": "regime_especial",
+   "quote": "que constitui o título bastante de exploração das instalações",
+   "what": "Combustibles: utilización y vistoria como título de explotación.",
+   "national": [
+    {
+     "subject": "dr:decreto-lei:267/2002",
+     "quote": "assumindo as formas de alvará de autorização de utilização ou licença de exploração, consoante sejam concedidos pela câmara municipal ou pela administração central",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art41",
+   "passage": "art41.1",
+   "kind": "regime_especial",
+   "quote": "assume a forma de alvará de autorização de utilização a que se refere o n.º 3 do artigo 74.º do RJUE",
+   "what": "Licencia de explotación de combustibles como alvará de utilización; validez 20 años.",
+   "superseded": {
+    "passage": "decreto-lei-108-2026:anexo.art74.3",
+    "reading": "El art. 74.º n.º 3 RJUE al que remite está revogado."
+   },
+   "national": [
+    {
+     "subject": "dr:decreto-lei:267/2002",
+     "quote": "assumindo as formas de alvará de autorização de utilização ou licença de exploração",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art42",
+   "passage": "art42.1",
+   "kind": "regime_especial",
+   "quote": "devem comprovar a existência de seguro de responsabilidade civil",
+   "what": "Seguros de responsabilidad civil para instalaciones de combustibles (importes).",
+   "national": [
+    {
+     "subject": "dr:decreto-lei:267/2002",
+     "quote": "dispõe de seguro de responsabilidade civil destinado a cobrir os riscos associados à respetiva atividade, em montante a definir pela entidade licenciadora",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art43",
+   "passage": "art43.1",
+   "kind": "regime_especial",
+   "quote": "está sujeita a autorização municipal",
+   "what": "Infraestructuras de estaciones de radiocomunicaciones: autorización municipal.",
+   "national": [
+    {
+     "subject": "dr:decreto-lei:11/2003",
+     "quote": "está sujeita a autorização municipal, com excepção",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art44",
+   "passage": "art44.2",
+   "kind": "procedimento",
+   "quote": "A autorização de instalação é titulada por alvará",
+   "what": "Radiocomunicaciones: alvará en 3 meses; no se instala sin él.",
+   "national": [
+    {
+     "subject": "dr:decreto-lei:11/2003",
+     "quote": "O acto de deferimento do pedido consubstancia a autorização para a instalação",
+     "role": "regula"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.a",
+     "role": "limita"
+    }
+   ],
+   "adds": true,
+   "adds_reading": "El DL 11/2003 hace del deferimiento la autorización (art. 6.º n.º 9) y no prevé alvará ni plazo de tres meses: paso añadido."
+  },
+  {
+   "id": "art45",
+   "passage": "art45.1",
+   "kind": "regime_especial",
+   "quote": "Pode ser autorizada a instalação de estabelecimento industrial",
+   "what": "Industria tipo SIR en edificios de comercio o vivienda, con criterios (condóminos, efluentes, ruido, incendios).",
+   "national": [
+    {
+     "subject": "dr:decreto-lei:169/2012",
+     "quote": "Ao uso de habitação, no caso de se tratar de estabelecimento abrangido pela parte 2-A do anexo i ao SIR",
+     "role": "regula"
+    }
+   ],
+   "adds": "open",
+   "readings": [
+    {
+     "id": "concreta",
+     "adds": false,
+     "text": "Concreta el «impacto relevante» que la compatibilidad de uso del SIR deja a la apreciación municipal."
+    },
+    {
+     "id": "anade",
+     "adds": true,
+     "text": "Añade requisitos (autorización de todos los condóminos, efluentes, residuos, ruido) que el SIR no fija para la declaración de compatibilidad."
+    }
+   ]
+  },
+  {
+   "id": "art46",
+   "passage": "art46.1",
+   "kind": "regime_especial",
+   "quote": "está sujeita ao regime de mera comunicação prévia",
+   "what": "Industria tipo 3: mera comunicação prévia.",
+   "national": [
+    {
+     "subject": "dr:decreto-lei:169/2012",
+     "quote": "O procedimento de mera comunicação prévia consiste na inserção, no «Balcão do empreendedor»",
+     "role": "regula"
+    }
+   ],
+   "adds": false,
+   "adds_reading": "Repite el régimen del SIR para el tipo 3."
+  },
+  {
+   "id": "art47",
+   "passage": "art47.p1",
+   "kind": "regime_especial",
+   "quote": "constituem título bastante para o exercício da atividade",
+   "what": "Industria tipo 3: el comprobante electrónico es título.",
+   "national": [
+    {
+     "subject": "dr:decreto-lei:169/2012",
+     "quote": "O procedimento de mera comunicação prévia consiste na inserção, no «Balcão do empreendedor»",
+     "role": "regula"
+    }
+   ],
+   "adds": false,
+   "adds_reading": "Repite el régimen del SIR para el tipo 3."
+  },
+  {
+   "id": "art48.b",
+   "passage": "art48.b",
+   "kind": "instrucao",
+   "quote": "Certidão do registo predial atualizada",
+   "what": "Construcciones ligeras: certidão del registo predial.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art9.12.d",
+     "role": "prohibe"
+    }
+   ]
+  },
+  {
+   "id": "art48.d",
+   "passage": "art48.d",
+   "kind": "forma",
+   "quote": "a fornecer pelos serviços camarários",
+   "what": "Construcciones ligeras: plantas suministradas por la Câmara.",
+   "adds": true,
+   "adds_reading": "La Portaria admite planta de localização propia a 1:1.000 (V.2, V.6).",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.b",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.6",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art48",
+   "passage": "art48.p1",
+   "kind": "instrucao",
+   "quote": "relativo a construções ligeiras ou amovíveis deve ser instruído com os seguintes elementos",
+   "what": "Construcciones ligeras: requerimiento, memoria, planta de implantación con perfiles y volumetría, fotos.",
+   "adds": "open",
+   "readings": [
+    {
+     "id": "concreta",
+     "adds": false,
+     "text": "Concreta, para este tipo de obra, elementos que la Portaria ya pide (memoria, planta de implantação, registo fotográfico)."
+    },
+    {
+     "id": "lista_propia",
+     "adds": true,
+     "text": "Es una lista propia para un tipo de pedido; el art. 3.º n.º 3 c) RJUE no permite listas fuera de la portaria."
+    }
+   ],
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    },
+    {
+     "passage": "portaria-320-2026-1:anexo-V.8",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art49",
+   "passage": "art49.2",
+   "kind": "regime_especial",
+   "quote": "A mera comunicação prévia para registo de estabelecimentos de alojamento local",
+   "what": "Alojamiento local: elementos de la mera comunicação prévia y vistorias.",
+   "national": [
+    {
+     "subject": "dr:decreto-lei:128/2014",
+     "quote": "A comunicação prévia com prazo é realizada exclusivamente através do Balcão Único Eletrónico",
+     "role": "regula"
+    }
+   ],
+   "conflict": {
+    "subject": "dr:decreto-lei:128/2014",
+    "quote": "A comunicação prévia com prazo deve obrigatoriamente ser instruída com os seguintes documentos",
+    "reading": "El régimen vigente es una comunicação prévia com prazo (con oposición municipal) con su propia lista de documentos; el RMOU regula una mera comunicação prévia ya sustituida."
+   }
+  },
+  {
+   "id": "art50",
+   "passage": "art50.1",
+   "kind": "regime_especial",
+   "quote": "só pode ocorrer em edifícios ou frações autónomas possuidoras de alvará de utilização válido",
+   "what": "Restauración y comercio: solo en edificios con título de utilización; si no, por el RJUE.",
+   "adds": false,
+   "adds_reading": "Repite el régimen nacional y remite al RJUE.",
+   "national": [
+    {
+     "named": "Decreto-Lei 10/2015 (RJACSR)",
+     "role": "regula"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art62-A.1",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art51.1",
+   "passage": "art51.1",
+   "kind": "certidao",
+   "quote": "Só poderão ser emitidas certidões comprovativas de divisão em propriedade horizontal, quando essa divisão esteja de acordo com o projeto aprovado",
+   "what": "Certidão de PH solo si la división coincide con el proyecto aprobado.",
+   "adds": false,
+   "adds_reading": "La certidão atestigua los requisitos del Código Civil sobre el proyecto aprobado.",
+   "national": [
+    {
+     "subject": "dr:decreto-lei:47344/1966",
+     "quote": "Só podem ser objecto de propriedade horizontal as fracções autónomas que, além de constituírem unidades independentes, sejam distintas e isoladas entre si",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art51.2",
+   "passage": "art51.2",
+   "kind": "certidao",
+   "quote": "Não podem considerar-se como frações autónomas as dependências destinadas a arrumos",
+   "what": "Arrumos y sótanos no pueden ser fracciones; aparcamiento cubierto no se vende aparte (n.º 3).",
+   "national": [
+    {
+     "subject": "dr:decreto-lei:47344/1966",
+     "quote": "Só podem ser objecto de propriedade horizontal as fracções autónomas que, além de constituírem unidades independentes, sejam distintas e isoladas entre si",
+     "role": "regula"
+    }
+   ],
+   "adds": "open",
+   "readings": [
+    {
+     "id": "concreta",
+     "adds": false,
+     "text": "Arrumos y sótanos no son unidades independientes con salida propia (CC art. 1415.º): el RMOU lo concreta."
+    },
+    {
+     "id": "anade",
+     "adds": true,
+     "text": "Excluir siempre arrumos y fijar que el aparcamiento no se vende aparte son restricciones de derecho privado que el CC no impone."
+    }
+   ]
+  },
+  {
+   "id": "art51.4",
+   "passage": "art51.4",
+   "kind": "instrucao",
+   "quote": "as peças desenhadas devem ser ilustradas com um corte que evidencie os pés-direitos dos diferentes andares",
+   "what": "Sin proyecto en archivo: corte con los pies derechos.",
+   "national": [
+    {
+     "subject": "dr:decreto-lei:47344/1966",
+     "quote": "No título constitutivo serão especificadas as partes do edifício correspondentes às várias fracções",
+     "role": "regula"
+    }
+   ],
+   "adds": "open",
+   "readings": [
+    {
+     "id": "necesario",
+     "adds": false,
+     "text": "Sin proyecto en archivo, el corte es la forma de verificar las fracciones que la certidão atestigua."
+    },
+    {
+     "id": "anade",
+     "adds": true,
+     "text": "Ninguna norma fija elementos para el pedido de certidão de PH; el reglamento los crea."
+    }
+   ]
+  },
+  {
+   "id": "art52",
+   "passage": "art52.p1",
+   "kind": "certidao",
+   "quote": "A emissão de certidão camarária para a constituição de regime de propriedade horizontal",
+   "what": "Elementos del pedido de certidão de PH (requerimiento, certidão predial, título, plantas en dos ejemplares, digital editable).",
+   "national": [
+    {
+     "subject": "dr:decreto-lei:47344/1966",
+     "quote": "No título constitutivo serão especificadas as partes do edifício correspondentes às várias fracções",
+     "role": "regula"
+    }
+   ],
+   "adds": "open",
+   "readings": [
+    {
+     "id": "concreta",
+     "adds": false,
+     "text": "La certidão verifica los requisitos de los arts. 1415.º y 1418.º CC: título, plantas y certidão predial son lo que necesita."
+    },
+    {
+     "id": "anade",
+     "adds": true,
+     "text": "Ninguna norma fija la lista; exige copia de certidão predial y dos ejemplares en papel, que el criterio del art. 9.º n.º 12 RJUE rechaza."
+    }
+   ]
+  },
+  {
+   "id": "art53.c",
+   "passage": "art53.c",
+   "kind": "instrucao",
+   "quote": "Certidão da descrição predial e de todas as inscrições em vigor emitida pela Conservatória do Registo Predial",
+   "what": "Destaque: copia de la certidão predial.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art9.12.d",
+     "role": "prohibe"
+    }
+   ]
+  },
+  {
+   "id": "art53.d",
+   "passage": "art53.d",
+   "kind": "forma",
+   "quote": "Planta de localização, autenticada pela Câmara Municipal",
+   "what": "Destaque: planta de localización autenticada por la Câmara (también los extractos, e)).",
+   "adds": true,
+   "adds_reading": "Exigir autenticación municipal es una regla instructoria añadida.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.b",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art53",
+   "passage": "art53.p1",
+   "kind": "certidao",
+   "quote": "Os pedidos de emissão de certidão de destaque de uma única parcela de prédio com descrição predial",
+   "what": "Elementos del pedido de certidão de destaque.",
+   "adds": "open",
+   "readings": [
+    {
+     "id": "concreta",
+     "adds": false,
+     "text": "El RJUE no fija elementos para la certidão de destaque (art. 6.º n.os 4 y 9); el municipio los concreta."
+    },
+    {
+     "id": "anade",
+     "adds": true,
+     "text": "Es un pedido del RJUE: sin elementos en la portaria, el reglamento no puede crearlos (art. 3.º n.º 3 c))."
+    }
+   ],
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art6.4",
+     "role": "regula"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art6.9",
+     "role": "regula"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.c",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art53.suporte",
+   "passage": "art53.p1",
+   "kind": "suporte",
+   "quote": "são instruídos, em duplicado",
+   "what": "Destaque: en papel por duplicado.",
+   "national": [
+    {
+     "passage": "portaria-320-2026-1:anexo-VI.1",
+     "role": "limita"
+    }
+   ]
+  },
+  {
+   "id": "art54.1",
+   "passage": "art54.1",
+   "kind": "certidao",
+   "quote": "deverá prová-lo pela exibição dos documentos que tiver ao seu dispor",
+   "what": "Edificio anterior al RGEU: se prueba con los documentos disponibles (certidões, fotos, Junta, plantas).",
+   "adds": "open",
+   "readings": [
+    {
+     "id": "prueba_libre",
+     "adds": false,
+     "text": "Lista abierta («designadamente») de medios de prueba; no exige ninguno en concreto."
+    },
+    {
+     "id": "lista",
+     "adds": true,
+     "text": "En la práctica es una lista de elementos (con certidões y plantas a 1:2.000/1:10.000) que ninguna norma nacional fija."
+    }
+   ],
+   "national": [
+    {
+     "subject": "dr:decreto-lei:38382/1951",
+     "quote": "É aprovado o Regulamento Geral das Edificações Urbanas",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art54.2",
+   "passage": "art54.2",
+   "kind": "certidao",
+   "quote": "poderá emitir certidão que ateste que o imóvel foi construído em data anterior à publicação do RGEU",
+   "what": "Certidão de construcción anterior al RGEU; no si hay obras posteriores sujetas a control (n.º 3); ruina (n.º 4).",
+   "national": [
+    {
+     "subject": "dr:decreto-lei:38382/1951",
+     "quote": "É aprovado o Regulamento Geral das Edificações Urbanas",
+     "role": "regula"
+    }
+   ],
+   "adds": false,
+   "adds_reading": "Certifica un hecho (anterioridad al RGEU) a pedido del interesado; no impone nada."
+  },
+  {
+   "id": "art55",
+   "passage": "art55.p1",
+   "kind": "certidao",
+   "quote": "Os pedidos de emissão de certidão de parecer favorável, nos termos do artigo 54.º da Lei n.º 91/95",
+   "what": "Parecer para constituir compropriedad de prédio rústico: elementos.",
+   "national": [
+    {
+     "subject": "dr:lei:91/1995",
+     "quote": "carece de parecer favorável da câmara municipal do local da situação dos prédios",
+     "role": "regula"
+    }
+   ],
+   "adds": "open",
+   "readings": [
+    {
+     "id": "concreta",
+     "adds": false,
+     "text": "La ley exige el parecer (art. 54.º Lei 91/95) sin fijar elementos; el municipio pide lo necesario para emitirlo."
+    },
+    {
+     "id": "anade",
+     "adds": true,
+     "text": "Plantas autenticadas, certidões y duplicado en papel van más allá de lo necesario para el parecer, cuyo único motivo de denegación es el parcelamento ilegal (n.º 2)."
+    }
+   ]
+  },
+  {
+   "id": "art56",
+   "passage": "art56.1",
+   "kind": "ocupacao",
+   "quote": "O pedido de ocupação do espaço público decorrente direta ou indiretamente da execução de obras",
+   "what": "Licencia de ocupación del espacio público por obras: pedido, plan de ocupación, plazos, editales.",
+   "national": [
+    {
+     "subject": "dr:lei:75/2013",
+     "quote": "Conceder licenças de ocupação da via pública por motivo de obras",
+     "role": "habilita"
+    },
+    {
+     "subject": "dr:lei:53-E/2006",
+     "quote": "Pela utilização e aproveitamento de bens do domínio público e privado municipal",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art56.3.b",
+   "passage": "art56.3.b",
+   "kind": "forma",
+   "quote": "Planta de localização oficial, a adquirir na Câmara Municipal",
+   "what": "Ocupación: planta oficial comprada en la Câmara.",
+   "national": [
+    {
+     "subject": "dr:lei:75/2013",
+     "quote": "Conceder licenças de ocupação da via pública por motivo de obras",
+     "role": "habilita"
+    },
+    {
+     "subject": "dr:lei:53-E/2006",
+     "quote": "Pela utilização e aproveitamento de bens do domínio público e privado municipal",
+     "role": "regula"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.3.b",
+     "role": "limita"
+    }
+   ],
+   "adds": "open",
+   "readings": [
+    {
+     "id": "propia",
+     "adds": false,
+     "text": "Es una forma del procedimiento de ocupación del espacio público, que no es un procedimiento del RJUE."
+    },
+    {
+     "id": "anade",
+     "adds": true,
+     "text": "El RMOU es reglamento del art. 3.º RJUE: exigir comprar la planta en la Câmara es una regla instructoria añadida."
+    }
+   ]
+  },
+  {
+   "id": "art56.5",
+   "passage": "art56.5",
+   "kind": "procedimento",
+   "quote": "o respetivo pedido deve acompanhar a informação sobre o início dos trabalhos",
+   "what": "Obras isentas: el pedido de ocupación va con la información de inicio (art. 80.º-A).",
+   "adds": false,
+   "adds_reading": "Encaja la ocupación en el aviso de inicio del art. 80.º-A RJUE.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art80-A.1",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art57",
+   "passage": "art57.2",
+   "kind": "ocupacao",
+   "quote": "a ocupação da via pública implica a observância das seguintes condicionantes",
+   "what": "Condiciones de la ocupación (señalización, instrucciones, reposición, reparación).",
+   "national": [
+    {
+     "subject": "dr:lei:75/2013",
+     "quote": "Conceder licenças de ocupação da via pública por motivo de obras",
+     "role": "habilita"
+    },
+    {
+     "subject": "dr:lei:53-E/2006",
+     "quote": "Pela utilização e aproveitamento de bens do domínio público e privado municipal",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art58",
+   "passage": "art58.p1",
+   "kind": "ocupacao",
+   "quote": "O prazo de validade da licença de ocupação do espaço público pode ser prorrogado",
+   "what": "Prórroga de la licencia de ocupación.",
+   "national": [
+    {
+     "subject": "dr:lei:75/2013",
+     "quote": "Conceder licenças de ocupação da via pública por motivo de obras",
+     "role": "habilita"
+    },
+    {
+     "subject": "dr:lei:53-E/2006",
+     "quote": "Pela utilização e aproveitamento de bens do domínio público e privado municipal",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art59",
+   "passage": "art59.p1",
+   "kind": "ocupacao",
+   "quote": "pode ser recusado o licenciamento sempre que",
+   "what": "Motivos de denegación de la ocupación.",
+   "national": [
+    {
+     "subject": "dr:lei:75/2013",
+     "quote": "Conceder licenças de ocupação da via pública por motivo de obras",
+     "role": "habilita"
+    },
+    {
+     "subject": "dr:lei:53-E/2006",
+     "quote": "Pela utilização e aproveitamento de bens do domínio público e privado municipal",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art60",
+   "passage": "art60.p1",
+   "kind": "ocupacao",
+   "quote": "é sempre concedida com carácter precário",
+   "what": "Carácter precario de la ocupación, sin indemnización.",
+   "national": [
+    {
+     "subject": "dr:lei:75/2013",
+     "quote": "Conceder licenças de ocupação da via pública por motivo de obras",
+     "role": "habilita"
+    },
+    {
+     "subject": "dr:lei:53-E/2006",
+     "quote": "Pela utilização e aproveitamento de bens do domínio público e privado municipal",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art61",
+   "passage": "art61.1",
+   "kind": "execucao",
+   "quote": "é obrigatória a construção de tapumes",
+   "what": "Vallas de obra, balizas y pasos de peatones: dimensiones y condiciones.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.k",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art62",
+   "passage": "art62.3",
+   "kind": "execucao",
+   "quote": "Os andaimes devem ser fixados ao terreno ou às paredes dos edifícios",
+   "what": "Amasaderos, escombros y andamios: dentro de la valla; andamios fijos con red.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.k",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art63",
+   "passage": "art63.1",
+   "kind": "ocupacao",
+   "quote": "A Câmara Municipal pode proceder à remoção e apreensão de quaisquer objetos ou materiais",
+   "what": "Retirada y aprehensión de lo que ocupe el espacio público sin licencia.",
+   "national": [
+    {
+     "subject": "dr:lei:75/2013",
+     "quote": "Conceder licenças de ocupação da via pública por motivo de obras",
+     "role": "habilita"
+    },
+    {
+     "subject": "dr:lei:53-E/2006",
+     "quote": "Pela utilização e aproveitamento de bens do domínio público e privado municipal",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art64",
+   "passage": "art64.2",
+   "kind": "utilizacao",
+   "quote": "A concessão da autorização de utilização dos edifícios para cuja construção foi efetuada a ocupação do espaço público está dependente do cumprimento",
+   "what": "Reponer el espacio público es condición de la utilización.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art86.2",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art65",
+   "passage": "art65.1",
+   "kind": "sancao",
+   "quote": "constituem contraordenações",
+   "what": "Contraordenaciones por ocupación sin licencia o incumplimiento de condiciones, con coimas.",
+   "national": [
+    {
+     "subject": "dr:lei:75/2013",
+     "quote": "Determinar a instrução dos processos de contraordenação e aplicar as coimas",
+     "role": "regula"
+    },
+    {
+     "named": "regime geral das contraordenações (Decreto-Lei 433/82) e base legal para coimas municipais",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art66",
+   "passage": "art66.p1",
+   "kind": "objeto",
+   "quote": "Na ausência de previsão de normas similares pelos PMOT em vigor",
+   "what": "Las condiciones arquitectónicas solo rigen si el plan no regula lo mismo.",
+   "adds": false,
+   "adds_reading": "Regla de subsidiariedad frente al plan.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.c",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art67",
+   "passage": "art67.1",
+   "kind": "urbanistica",
+   "quote": "A profundidade das edificações em banda não poderá exceder 15 m",
+   "what": "Profundidad máxima de edificios en banda: 15 m (cave hasta 2/3 del terreno, máx. 30 m).",
+   "conflict": {
+    "subject": "dr:aviso:14352/2025/2",
+    "quote": "nos novos edifícios em banda contínua a profundidade máxima da construção não pode exceder",
+    "reading": "El PDM de 2025 fija 30 m en planta baja y caves y 17,5 m en pisos superiores: el plan regula lo mismo y prevalece (RMOU art. 66.º; jerarquía)."
+   },
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.c",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art68",
+   "passage": "art68.p1",
+   "kind": "urbanistica",
+   "quote": "a construção de pequenos edifícios (anexos)",
+   "what": "Anexos: con o tras el edificio principal, una planta, pé-direito 2,40 m, altura 3,50 m, ≤ 50 m² o 5 % del logradouro (máx. 100 m²).",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.c",
+     "role": "habilita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.d",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art69",
+   "passage": "art69.1",
+   "kind": "urbanistica",
+   "quote": "as zonas destinadas a comércio serão exclusivamente admitidas em rés do chão",
+   "what": "Edificios mixtos: comercio solo en planta baja; sin accesos verticales comunes.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.d",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art70",
+   "passage": "art70.1",
+   "kind": "urbanistica",
+   "quote": "será obrigatoriamente coberto, e o espaço individual de estacionamento deverá ter as dimensões mínimas de 2,40 x 4,50 m",
+   "what": "El aparcamiento exigido es cubierto y de 2,40 × 4,50 m como mínimo; rampas de cave ≤ 15°.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.d",
+     "role": "habilita"
+    },
+    {
+     "subject": "dr:aviso:14352/2025/2",
+     "quote": "Todas os novos edifícios terão de dispor, dentro do perímetro do respetivo lote ou parcela",
+     "role": "regula"
+    }
+   ],
+   "notes": [
+    {
+     "quote": "O estacionamento automóvel exigido por instrumentos de gestão territorial",
+     "text": "El PDM de 2025 (arts. 110.º–112.º) fija cuántas plazas; no regula cubierta ni dimensiones, que quedan al RMOU."
+    }
+   ]
+  },
+  {
+   "id": "art71",
+   "passage": "art71.1",
+   "kind": "urbanistica",
+   "quote": "não podem, em caso algum, ter desenvolvimento nas vias",
+   "what": "Rampas de acceso dentro de la parcela, con zona de espera horizontal.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.d",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art72",
+   "passage": "art72.2",
+   "kind": "urbanistica",
+   "quote": "as respetivas guardas não poderão ter uma altura inferior a 1,10 m",
+   "what": "Cubiertas y terrazas: barandillas ≥ 1,10 m; no terrazas sobre anexos.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.d",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art73",
+   "passage": "art73.p1",
+   "kind": "urbanistica",
+   "quote": "será obrigatório prever uma área específica para o tratamento e secagem de roupas",
+   "what": "Vivienda colectiva: espacio para tender ropa.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.d",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art74",
+   "passage": "art74.1",
+   "kind": "urbanistica",
+   "quote": "será obrigatório prever uma área específica para o armazenamento e depósito diário de lixos",
+   "what": "Vivienda colectiva o mixta: cuarto de basuras.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.d",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art75",
+   "passage": "art75.1",
+   "kind": "urbanistica",
+   "quote": "Não são permitidas saliências de construção nas fachadas confinantes com arruamentos que não possuam passeios",
+   "what": "Salientes y balcones sobre la vía pública: condiciones y medidas.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.c",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art76",
+   "passage": "art76.1",
+   "kind": "urbanistica",
+   "quote": "Os muros de vedação confinantes com via pública não poderão exceder a altura de 1,10 m",
+   "what": "Muros: 1,10 m a la vía (1,80 m con seto o calado), 2 m los demás.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.c",
+     "role": "habilita"
+    },
+    {
+     "subject": "dr:aviso:14352/2025/2",
+     "quote": "designadamente quanto à altura dos muros divisórios",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art77.1",
+   "passage": "art77.1",
+   "kind": "urbanistica",
+   "quote": "Só dispõem de capacidade construtiva os terrenos confrontantes com via pública",
+   "what": "Solo tienen edificabilidad los terrenos con frente a vía apta (SCIE).",
+   "adds": "open",
+   "readings": [
+    {
+     "id": "edificabilidade",
+     "adds": true,
+     "text": "La edificabilidad es materia del plan (RJUE art. 3.º n.º 2 j)); el reglamento no puede negarla."
+    },
+    {
+     "id": "seguranca",
+     "adds": false,
+     "text": "Concreta una condición de seguridad (acceso de bomberos, DL 220/2008) habilitada por el art. 3.º n.º 2 d)."
+    }
+   ],
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.j",
+     "role": "limita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.d",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art77.2",
+   "passage": "art77.2",
+   "kind": "urbanistica",
+   "quote": "os alinhamentos obrigatórios serão os seguintes",
+   "what": "Alineaciones obligatorias: 4,85 m al eje en vías < 9,70 m con acera de 1,60 m; 4 m / 6 m fuera de perímetro.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.c",
+     "role": "habilita"
+    },
+    {
+     "subject": "dr:aviso:14352/2025/2",
+     "quote": "devem ser cumpridos os recuos e alinhamentos, imperativos ou mínimos, especificamente estabelecidos no presente Plano",
+     "role": "habilita"
+    }
+   ],
+   "notes": [
+    {
+     "passage": "art77.2.c",
+     "quote": "não sendo emitida licença de utilização sem que o mesmo esteja devidamente pavimentado",
+     "text": "El PDM remite los recuos y alineaciones, subsidiariamente, al reglamento municipal; la «licença de utilização» hoy es una comunicação (RJUE art. 62.º-A)."
+    }
+   ]
+  },
+  {
+   "id": "art78",
+   "passage": "art78.2",
+   "kind": "urbanistica",
+   "quote": "É unicamente permitida a combinação de até três cores na mesma construção",
+   "what": "Materiales y colores: armonía, máx. tres colores, fibrocemento solo fuera del perímetro urbano.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.c",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art79",
+   "passage": "art79.1",
+   "kind": "urbanistica",
+   "quote": "Não é permitido o fecho de varandas ou terraços acessíveis em fachadas principais",
+   "what": "Cerramiento de balcones (marquises): prohibido en fachadas principales.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.c",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art80",
+   "passage": "art80.1",
+   "kind": "urbanistica",
+   "quote": "não é permitida a instalação de antenas individuais sendo obrigatório a instalação de antenas coletivas",
+   "what": "Antenas colectivas en PH, ubicaciones ocultas; climatización sin afectar a la estética.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.c",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art81.1",
+   "passage": "art81.1",
+   "kind": "taxa",
+   "quote": "A taxa pela realização, manutenção e reforço de infraestruturas urbanísticas é devida pela emissão do alvará de",
+   "what": "Hechos que generan la TMU: alvará de loteamento/urbanización y de construcción o ampliación fuera de loteamento.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.f",
+     "role": "habilita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art116.4",
+     "role": "habilita"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art116.5",
+     "role": "habilita"
+    }
+   ],
+   "notes": [
+    {
+     "passage": "art81.1.b",
+     "quote": "Licença ou autorização de obras de construção ou ampliação em área não abrangida por operação de loteamento",
+     "text": "Habla de «licença ou autorização» y no menciona la comunicação prévia, que el art. 116.º n.º 5 RJUE sujeta a la misma tasa; la figura «autorização» ya no existe para obras."
+    }
+   ]
+  },
+  {
+   "id": "art82",
+   "passage": "art82.p2",
+   "kind": "taxa",
+   "quote": "TMI = At x V x I x Fm",
+   "what": "Fórmula de la TMU.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.f",
+     "role": "habilita"
+    }
+   ],
+   "notes": [
+    {
+     "passage": "art82.e.p3.c.p1",
+     "quote": "Z = 0,01 para o ano 2013.",
+     "text": "Z es un parámetro anual («a definir anualmente pelo município»); el único valor publicado es el de 2013."
+    }
+   ]
+  },
+  {
+   "id": "art83",
+   "passage": "art83.p1",
+   "kind": "compensacao",
+   "quote": "devem prever áreas destinadas à implantação de espaços verdes e de utilização coletiva, infraestruturas viárias e equipamentos",
+   "what": "Loteamentos e impacte semelhante: prever áreas verdes, viarias y de equipamiento.",
+   "adds": false,
+   "adds_reading": "Repite los arts. 43.º y 57.º n.º 5 RJUE.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art43.1",
+     "role": "regula"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art57.5",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art84",
+   "passage": "art84.1",
+   "kind": "compensacao",
+   "quote": "cedem gratuitamente à Câmara Municipal as parcelas de terreno",
+   "what": "Cesiones gratuitas en loteamentos y en los casos del art. 57.º RJUE.",
+   "adds": false,
+   "adds_reading": "Repite los arts. 44.º n.º 1 y 57.º RJUE.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art44.1",
+     "role": "regula"
+    },
+    {
+     "passage": "decreto-lei-108-2026:anexo.art57.5",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art85.1",
+   "passage": "art85.1",
+   "kind": "compensacao",
+   "quote": "não há lugar a cedência para esses fins, ficando, no entanto, o proprietário obrigado ao pagamento de uma compensação",
+   "what": "Sin cesión, compensación al municipio.",
+   "adds": false,
+   "adds_reading": "Repite el art. 44.º n.º 5 RJUE.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art44.5",
+     "role": "regula"
+    }
+   ]
+  },
+  {
+   "id": "art85.2",
+   "passage": "art85.2",
+   "kind": "compensacao",
+   "quote": "A compensação deverá ser paga em numerário.",
+   "what": "La compensación se paga en dinero.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art44.5",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art86.1",
+   "passage": "art86.1",
+   "kind": "compensacao",
+   "quote": "O valor da compensação a pagar ao município será determinado de acordo com a seguinte fórmula",
+   "what": "Fórmula de la compensación C = (C1 + C2) × 0,16.",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.f",
+     "role": "habilita"
+    }
+   ]
+  },
+  {
+   "id": "art86.2",
+   "passage": "art86.2",
+   "kind": "compensacao",
+   "quote": "O cálculo do valor de C1 resulta da aplicação da seguinte fórmula",
+   "what": "Fórmulas de C1 (falta de cesión) y C2 (vías ya infraestructuradas, n.º 3).",
+   "national": [
+    {
+     "passage": "decreto-lei-108-2026:anexo.art3.2.f",
+     "role": "habilita"
+    }
+   ],
+   "notes": [
+    {
+     "passage": "art86.2.p8",
+     "quote": "(ver documento original)",
+     "text": "El cuadro de índices de infraestructura (Σi) está como imagen en el DR: el texto no lo trae."
+    }
+   ]
+  }
+ ],
+ "not_rules": {}
+}

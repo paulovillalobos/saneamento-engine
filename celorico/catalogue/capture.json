@@ -1,0 +1,17 @@
+{
+ "slug": "celorico-de-basto",
+ "url": "https://nopaper.mun-celoricodebasto.pt/NOPAPERAPPS/Construtor/",
+ "started_at": "2026-10-15T23:49:29+00:00",
+ "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36",
+ "tool": "nopaper_walk.py",
+ "tool_sha256": "2972d4ce60870262655be0e0c01eebb4ff7c08635a3e1b837d51b16fe5009908",
+ "errors": [],
+ "clicks": 1622,
+ "http_status": 200,
+ "index": {
+  "procedures": 11,
+  "groups": 53,
+  "requests": 202
+ },
+ "finished_at": "2026-10-16T00:58:32+00:00"
+}
