@@ -2,89 +2,108 @@
  "expediente": "T1-0058",
  "case": {
   "id": "T1-0058",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 3760,
-  "impl": 1147,
-  "built": 2202,
-  "imperm": 1191,
-  "perm": 2569,
-  "volume": 6826,
-  "height": 7.5,
-  "facade": 6.8,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 720,
+  "impl": 231,
+  "built": 208,
+  "imperm": 261,
+  "perm": 459,
+  "volume": 644,
+  "height": 3.7,
+  "facade": 3.0,
   "parking": 2,
-  "cost": 2455200,
-  "submitted": "2026-11-25",
-  "site": "Travessa do Souto, n.º 146, Canedo de Basto, 4890-000 Celorico de Basto",
+  "cost": 144700,
+  "submitted": "2026-12-10",
+  "site": "Lugar da Devesa, n.º 158, Borba de Montanha, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 10,
+  "months": 23,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Olga Amostra Nuno",
+    "name": "Xavier de Teste Leonor",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "04655-SIM",
-    "address": "Travessa do Souto, n.º 146, Canedo de Basto, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9177"
+    "number": "23430-SIM",
+    "address": "Lugar da Devesa, n.º 158, Borba de Montanha, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5363"
    },
    "arquiteto": {
-    "name": "Nuno Exemplo Helena",
+    "name": "Xavier Fictício Helena",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "67766-SIM",
-    "address": "Rua da Escola, n.º 49, 4000-000 Porto",
-    "policy": "SIM-RC-6727"
+    "number": "84150-SIM",
+    "address": "Rua do Outeiro, n.º 40, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8787"
    },
    "engenheiro": {
-    "name": "Xavier Simulado Helena",
+    "name": "Leonor Amostra João",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "89179-SIM",
-    "address": "Rua da Escola, n.º 116, 4800-000 Guimarães",
-    "policy": "SIM-RC-1373"
+    "number": "78045-SIM",
+    "address": "Rua da Escola, n.º 85, 4800-000 Guimarães",
+    "policy": "SIM-RC-4141"
    },
    "diretor": {
-    "name": "João Modelo Bruno",
+    "name": "Helena Fictício Helena",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "46562-SIM",
-    "address": "Rua da Escola, n.º 9, 4000-000 Porto",
-    "policy": "SIM-RC-0743"
+    "number": "22133-SIM",
+    "address": "Travessa do Souto, n.º 34, 4800-000 Guimarães",
+    "policy": "SIM-RC-3320"
    }
   }
  },
  "planted": [
   {
-   "type": "not_pdfa",
+   "type": "expired_insurance",
    "target": {
-    "slot": "CEO"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
+    "slot": "SRCARQ"
    },
    "basis": "documents",
    "values": {
-    "declarante": "João Modelo Bruno",
-    "assinante": "Nuno Exemplo Helena"
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-10"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "208 m2",
+    "MDARQ": "265 m2"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

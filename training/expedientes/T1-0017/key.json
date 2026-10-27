@@ -2,79 +2,67 @@
  "expediente": "T1-0017",
  "case": {
   "id": "T1-0017",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 1,
-  "plot": 3580,
-  "impl": 719,
-  "built": 674,
-  "imperm": 890,
-  "perm": 2690,
-  "volume": 2089,
-  "height": 3.8,
-  "facade": 3.1,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 3,
+  "plot": 2700,
+  "impl": 653,
+  "built": 1954,
+  "imperm": 683,
+  "perm": 2017,
+  "volume": 6057,
+  "height": 9.8,
+  "facade": 9.1,
   "parking": 2,
-  "cost": 733300,
-  "submitted": "2026-12-23",
-  "site": "Rua da Escola, n.º 181, Britelo, 4890-000 Celorico de Basto",
+  "cost": 1334500,
+  "submitted": "2026-11-22",
+  "site": "Lugar de Vilar, n.º 203, Ribas, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 21,
+  "months": 8,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Teresa Fictício Teresa",
+    "name": "Sérgio de Teste Carla",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "56590-SIM",
-    "address": "Rua da Escola, n.º 181, Britelo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1185"
+    "number": "33769-SIM",
+    "address": "Lugar de Vilar, n.º 203, Ribas, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0561"
    },
    "arquiteto": {
-    "name": "Inês Fictício Diogo",
+    "name": "Nuno Simulado Inês",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "20793-SIM",
-    "address": "Rua da Escola, n.º 118, 4700-000 Braga",
-    "policy": "SIM-RC-7015"
+    "number": "42052-SIM",
+    "address": "Lugar de Vilar, n.º 34, 4800-000 Guimarães",
+    "policy": "SIM-RC-1920"
    },
    "engenheiro": {
-    "name": "Bruno Simulado Carla",
+    "name": "João Simulado Olga",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "68218-SIM",
-    "address": "Lugar de Carvalhal, n.º 65, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1627"
+    "number": "33163-SIM",
+    "address": "Rua do Outeiro, n.º 43, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8345"
    },
    "diretor": {
-    "name": "Leonor Simulado Eva",
+    "name": "Nuno Modelo Rita",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "70660-SIM",
-    "address": "Rua da Escola, n.º 57, 4700-000 Braga",
-    "policy": "SIM-RC-6475"
+    "number": "14721-SIM",
+    "address": "Lugar de Vilar, n.º 84, 4800-000 Guimarães",
+    "policy": "SIM-RC-8582"
    }
   }
  },
- "planted": [
-  {
-   "type": "wrong_site",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "Rua da Escola, n.º 181, Britelo, 4890-000 Celorico de Basto",
-    "TRPARQ": "Rua da Escola, n.º 269, Fervença, 4890-000 Celorico de Basto"
-   }
-  }
- ],
- "n_planted": 1,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

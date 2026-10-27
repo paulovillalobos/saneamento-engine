@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Xavier Exemplo Vasco",
+  "name": "João Simulado Rita",
   "nif": "999999990"
  },
- "site": "Rua da Escola, n.º 124, Ourilhe, 4890-000 Celorico de Basto",
- "operation": "construção de armazém agrícola",
- "submitted_at": "2026-10-08",
+ "site": "Rua da Escola, n.º 188, Canedo de Basto, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de habitação bifamiliar",
+ "submitted_at": "2026-11-05",
  "files": [
   {
    "slot": "REQ",
@@ -411,6 +411,13 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "OUTDOC-curriculo.pdf",
+   "title": "Curriculum vitae",
+   "kind": "written",
+   "signed_by": "requerente"
   }
  ]
 }

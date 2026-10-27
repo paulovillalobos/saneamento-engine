@@ -2,79 +2,113 @@
  "expediente": "T1-0037",
  "case": {
   "id": "T1-0037",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 670,
-  "impl": 211,
-  "built": 370,
-  "imperm": 390,
-  "perm": 280,
-  "volume": 1147,
-  "height": 7.0,
-  "facade": 6.3,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 3,
+  "plot": 3180,
+  "impl": 959,
+  "built": 2661,
+  "imperm": 1101,
+  "perm": 2079,
+  "volume": 8249,
+  "height": 10.3,
+  "facade": 9.6,
   "parking": 2,
-  "cost": 460600,
+  "cost": 3296900,
   "submitted": "2026-11-20",
-  "site": "Lugar de Carvalhal, n.º 187, Arnoia, 4890-000 Celorico de Basto",
+  "site": "Lugar de Carvalhal, n.º 85, Fervença, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 23,
+  "months": 17,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Ana Simulado Vasco",
+    "name": "Vasco Exemplo Xavier",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "88103-SIM",
-    "address": "Lugar de Carvalhal, n.º 187, Arnoia, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5553"
+    "number": "71740-SIM",
+    "address": "Lugar de Carvalhal, n.º 85, Fervença, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0241"
    },
    "arquiteto": {
-    "name": "Carla Amostra Olga",
+    "name": "Xavier Simulado Pedro",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "26597-SIM",
-    "address": "Lugar de Carvalhal, n.º 108, 4800-000 Guimarães",
-    "policy": "SIM-RC-9830"
+    "number": "60970-SIM",
+    "address": "Lugar da Devesa, n.º 30, 4800-000 Guimarães",
+    "policy": "SIM-RC-3427"
    },
    "engenheiro": {
-    "name": "Vasco Exemplo Xavier",
+    "name": "Rita de Teste Eva",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "62757-SIM",
-    "address": "Lugar de Vilar, n.º 107, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8593"
+    "number": "51317-SIM",
+    "address": "Rua das Tílias, n.º 7, 4000-000 Porto",
+    "policy": "SIM-RC-5838"
    },
    "diretor": {
-    "name": "João Modelo Nuno",
+    "name": "Ana de Teste Teresa",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "80610-SIM",
-    "address": "Caminho da Lameira, n.º 33, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0241"
+    "number": "98261-SIM",
+    "address": "Rua da Escola, n.º 40, 4800-000 Guimarães",
+    "policy": "SIM-RC-0246"
    }
   }
  },
  "planted": [
   {
-   "type": "wrong_signer",
+   "type": "missing_required",
    "target": {
-    "slot": "TRDO"
+    "slot": "LEVT"
+   },
+   "law": {
+    "ref": "V.7",
+    "quote": "7 - Levantamento topográfico georreferenciado, acompanhado por termo de responsabilidade, sempre que haja alteração da topografia ou da implantação das construções, à escala de 1:200, ou de 1:500 no caso de loteamentos, devidamente cotado, que identifique o prédio e a respetiva área, construções nela erigidas, assim como o espaço público envolvente (vias, passeios, estacionamentos, árvores e infraestruturas ou instalações aí localizadas, incluindo postes, tampas, sinalização e mobiliário urbano);"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "CORTES"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDPAP"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
    },
    "basis": "documents",
    "values": {
-    "declarante": "João Modelo Nuno",
-    "assinante": "Carla Amostra Olga"
+    "REQ": "2661 m2",
+    "MDARQ": "2615 m2"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

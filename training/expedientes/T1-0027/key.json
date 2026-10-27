@@ -2,66 +2,76 @@
  "expediente": "T1-0027",
  "case": {
   "id": "T1-0027",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 3,
-  "plot": 2770,
-  "impl": 666,
-  "built": 1785,
-  "imperm": 725,
-  "perm": 2045,
-  "volume": 5533,
-  "height": 10.6,
-  "facade": 9.9,
-  "parking": 4,
-  "cost": 1856400,
-  "submitted": "2026-11-13",
-  "site": "Travessa do Souto, n.º 75, Fervença, 4890-000 Celorico de Basto",
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 3360,
+  "impl": 709,
+  "built": 642,
+  "imperm": 832,
+  "perm": 2528,
+  "volume": 1990,
+  "height": 4.3,
+  "facade": 3.6,
+  "parking": 2,
+  "cost": 451900,
+  "submitted": "2026-10-16",
+  "site": "Rua da Escola, n.º 1, Basto (São Clemente), 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 17,
+  "months": 11,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Xavier Simulado Teresa",
+    "name": "Vasco Fictício Sérgio",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "02271-SIM",
-    "address": "Travessa do Souto, n.º 75, Fervença, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7529"
+    "number": "67594-SIM",
+    "address": "Rua da Escola, n.º 1, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9310"
    },
    "arquiteto": {
-    "name": "Ana Exemplo Xavier",
+    "name": "Miguel Exemplo Helena",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "90030-SIM",
-    "address": "Rua das Tílias, n.º 36, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6692"
+    "number": "82499-SIM",
+    "address": "Rua do Outeiro, n.º 14, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2600"
    },
    "engenheiro": {
-    "name": "Nuno Modelo Pedro",
+    "name": "Diogo Simulado Leonor",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "07982-SIM",
-    "address": "Travessa do Souto, n.º 61, 4000-000 Porto",
-    "policy": "SIM-RC-0010"
+    "number": "56364-SIM",
+    "address": "Lugar da Devesa, n.º 33, 4000-000 Porto",
+    "policy": "SIM-RC-7125"
    },
    "diretor": {
-    "name": "Bruno Simulado Vasco",
+    "name": "Olga Exemplo Miguel",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "19294-SIM",
-    "address": "Lugar da Devesa, n.º 71, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9310"
+    "number": "39526-SIM",
+    "address": "Lugar da Devesa, n.º 57, 4700-000 Braga",
+    "policy": "SIM-RC-9989"
    }
   }
  },
  "planted": [
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "TRCP"
+   },
+   "law": {
+    "ref": "V.12",
+    "quote": "12 - Termo de responsabilidade do coordenador de projeto quanto à garantia de compatibilidade entre os diversos projetos;"
+   }
+  },
   {
    "type": "value_mismatch",
    "target": {
@@ -73,19 +83,8 @@
    },
    "basis": "documents",
    "values": {
-    "REQ": "1785 m2",
-    "MDARQ": "1676 m2"
-   }
-  },
-  {
-   "type": "wrong_site",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "Travessa do Souto, n.º 75, Fervença, 4890-000 Celorico de Basto",
-    "TRPARQ": "Rua do Outeiro, n.º 55, Britelo, 4890-000 Celorico de Basto"
+    "REQ": "642 m2",
+    "MDARQ": "543 m2"
    }
   }
  ],

@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Pedro Fictício Filipe",
+  "name": "Bruno Modelo Filipe",
   "nif": "999999990"
  },
- "site": "Travessa do Souto, n.º 40, Basto (São Clemente), 4890-000 Celorico de Basto",
+ "site": "Travessa do Souto, n.º 175, Basto (São Clemente), 4890-000 Celorico de Basto",
  "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-11-08",
+ "submitted_at": "2026-12-19",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCDO",
@@ -399,18 +399,18 @@
    "signed_by": "requerente"
   },
   {
-   "slot": "ASAT",
-   "file": "ASAT-apolice-acidentes.pdf",
-   "title": "Apólice de seguro de acidentes de trabalho",
-   "kind": "written",
-   "signed_by": "seguradora"
-  },
-  {
    "slot": "IMPIC",
    "file": "IMPIC-alvara-impic.pdf",
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "OUTDOC-regulamento-extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
+   "kind": "written",
+   "signed_by": "requerente"
   }
  ]
 }

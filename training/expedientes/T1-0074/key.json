@@ -1,0 +1,127 @@
+{
+ "expediente": "T1-0074",
+ "case": {
+  "id": "T1-0074",
+  "work": "ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 1,
+  "plot": 3520,
+  "impl": 473,
+  "built": 437,
+  "imperm": 631,
+  "perm": 2889,
+  "volume": 1354,
+  "height": 4.4,
+  "facade": 3.7,
+  "parking": 2,
+  "cost": 333800,
+  "submitted": "2026-11-10",
+  "site": "Rua das Tílias, n.º 26, Corgo, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 18,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Olga Modelo Vasco",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "64822-SIM",
+    "address": "Rua das Tílias, n.º 26, Corgo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5515"
+   },
+   "arquiteto": {
+    "name": "Nuno Amostra Filipe",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "31860-SIM",
+    "address": "Lugar de Carvalhal, n.º 111, 4000-000 Porto",
+    "policy": "SIM-RC-6866"
+   },
+   "engenheiro": {
+    "name": "Nuno Fictício Inês",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "01204-SIM",
+    "address": "Caminho da Lameira, n.º 5, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1398"
+   },
+   "diretor": {
+    "name": "Filipe Modelo Inês",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "59830-SIM",
+    "address": "Rua das Tílias, n.º 40, 4000-000 Porto",
+    "policy": "SIM-RC-4871"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDPAP"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TREECP"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Filipe Modelo Inês",
+    "assinante": "Nuno Amostra Filipe"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Rua das Tílias, n.º 26, Corgo, 4890-000 Celorico de Basto",
+    "TRPARQ": "Rua do Outeiro, n.º 65, Basto (São Clemente), 4890-000 Celorico de Basto"
+   }
+  }
+ ],
+ "n_planted": 4,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

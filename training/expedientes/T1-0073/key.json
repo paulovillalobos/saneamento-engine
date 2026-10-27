@@ -1,0 +1,96 @@
+{
+ "expediente": "T1-0073",
+ "case": {
+  "id": "T1-0073",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 2,
+  "plot": 3240,
+  "impl": 920,
+  "built": 1636,
+  "imperm": 1014,
+  "perm": 2226,
+  "volume": 5071,
+  "height": 6.9,
+  "facade": 6.2,
+  "parking": 2,
+  "cost": 1622900,
+  "submitted": "2026-10-09",
+  "site": "Rua das Tílias, n.º 227, Vale de Bouro, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 13,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Nuno Simulado Carla",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "77393-SIM",
+    "address": "Rua das Tílias, n.º 227, Vale de Bouro, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8568"
+   },
+   "arquiteto": {
+    "name": "João Simulado Olga",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "15261-SIM",
+    "address": "Lugar da Devesa, n.º 17, 4000-000 Porto",
+    "policy": "SIM-RC-5643"
+   },
+   "engenheiro": {
+    "name": "Helena Modelo Miguel",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "69042-SIM",
+    "address": "Rua das Tílias, n.º 92, 4700-000 Braga",
+    "policy": "SIM-RC-8525"
+   },
+   "diretor": {
+    "name": "Carla Simulado Leonor",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "03493-SIM",
+    "address": "Lugar de Carvalhal, n.º 4, 4700-000 Braga",
+    "policy": "SIM-RC-4605"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Carla Simulado Leonor",
+    "assinante": "João Simulado Olga"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

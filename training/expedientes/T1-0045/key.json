@@ -2,62 +2,62 @@
  "expediente": "T1-0045",
  "case": {
   "id": "T1-0045",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 1,
-  "plot": 540,
-  "impl": 141,
-  "built": 139,
-  "imperm": 216,
-  "perm": 324,
-  "volume": 430,
-  "height": 3.9,
-  "facade": 3.2,
-  "parking": 2,
-  "cost": 170800,
-  "submitted": "2026-11-19",
-  "site": "Caminho da Lameira, n.º 132, Carvalho, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 3,
+  "plot": 2320,
+  "impl": 393,
+  "built": 1087,
+  "imperm": 591,
+  "perm": 1729,
+  "volume": 3369,
+  "height": 9.9,
+  "facade": 9.2,
+  "parking": 4,
+  "cost": 981500,
+  "submitted": "2026-10-24",
+  "site": "Travessa do Souto, n.º 20, Veade, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 18,
+  "months": 23,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Eva de Teste Diogo",
+    "name": "Vasco Exemplo Leonor",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "53036-SIM",
-    "address": "Caminho da Lameira, n.º 132, Carvalho, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6486"
+    "number": "69210-SIM",
+    "address": "Travessa do Souto, n.º 20, Veade, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6516"
    },
    "arquiteto": {
-    "name": "Pedro Fictício Rita",
+    "name": "Ana Exemplo Teresa",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "92466-SIM",
-    "address": "Rua do Outeiro, n.º 5, 4700-000 Braga",
-    "policy": "SIM-RC-1295"
+    "number": "95956-SIM",
+    "address": "Lugar de Carvalhal, n.º 22, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0846"
    },
    "engenheiro": {
-    "name": "Carla Simulado Sérgio",
+    "name": "Miguel de Teste Pedro",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "67470-SIM",
-    "address": "Lugar de Carvalhal, n.º 73, 4800-000 Guimarães",
-    "policy": "SIM-RC-5362"
+    "number": "32128-SIM",
+    "address": "Caminho da Lameira, n.º 109, 4000-000 Porto",
+    "policy": "SIM-RC-7240"
    },
    "diretor": {
-    "name": "Sérgio Fictício Vasco",
+    "name": "Miguel Fictício Filipe",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "93829-SIM",
-    "address": "Lugar de Carvalhal, n.º 51, 4000-000 Porto",
-    "policy": "SIM-RC-6325"
+    "number": "18649-SIM",
+    "address": "Lugar de Carvalhal, n.º 107, 4000-000 Porto",
+    "policy": "SIM-RC-5965"
    }
   }
  },
@@ -70,15 +70,36 @@
    "basis": "documents",
    "values": {
     "validade_fim": "2026-09-30",
-    "submetido": "2026-11-19"
+    "submetido": "2026-10-24"
    },
    "law": {
     "ref": "V.14",
     "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
    }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRDO"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Travessa do Souto, n.º 20, Veade, 4890-000 Celorico de Basto",
+    "TRPARQ": "Rua do Outeiro, n.º 31, Ribas, 4890-000 Celorico de Basto"
+   }
   }
  ],
- "n_planted": 1,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

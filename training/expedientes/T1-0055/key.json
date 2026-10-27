@@ -2,88 +2,67 @@
  "expediente": "T1-0055",
  "case": {
   "id": "T1-0055",
-  "work": "ampliação de moradia unifamiliar",
+  "work": "construção de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 3070,
-  "impl": 495,
-  "built": 986,
-  "imperm": 652,
-  "perm": 2418,
-  "volume": 3056,
+  "plot": 900,
+  "impl": 331,
+  "built": 582,
+  "imperm": 487,
+  "perm": 413,
+  "volume": 1804,
   "height": 6.8,
   "facade": 6.1,
   "parking": 2,
-  "cost": 912000,
-  "submitted": "2026-12-26",
-  "site": "Travessa do Souto, n.º 237, Gagos, 4890-000 Celorico de Basto",
+  "cost": 507500,
+  "submitted": "2026-10-17",
+  "site": "Lugar da Devesa, n.º 289, Rego, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 8,
+  "months": 16,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Inês Amostra Sérgio",
+    "name": "Xavier Fictício João",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "91631-SIM",
-    "address": "Travessa do Souto, n.º 237, Gagos, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1836"
+    "number": "76725-SIM",
+    "address": "Lugar da Devesa, n.º 289, Rego, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0932"
    },
    "arquiteto": {
-    "name": "Diogo Amostra Leonor",
+    "name": "Ana Exemplo Xavier",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "80356-SIM",
-    "address": "Lugar de Carvalhal, n.º 12, 4800-000 Guimarães",
-    "policy": "SIM-RC-8680"
+    "number": "38006-SIM",
+    "address": "Lugar de Carvalhal, n.º 55, 4800-000 Guimarães",
+    "policy": "SIM-RC-1113"
    },
    "engenheiro": {
-    "name": "Leonor Modelo Bruno",
+    "name": "Filipe Fictício Bruno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "25636-SIM",
-    "address": "Lugar de Vilar, n.º 8, 4000-000 Porto",
-    "policy": "SIM-RC-0700"
+    "number": "84458-SIM",
+    "address": "Rua das Tílias, n.º 109, 4800-000 Guimarães",
+    "policy": "SIM-RC-5813"
    },
    "diretor": {
-    "name": "Diogo Modelo Sérgio",
+    "name": "Miguel Modelo Eva",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "40991-SIM",
-    "address": "Rua do Outeiro, n.º 21, 4700-000 Braga",
-    "policy": "SIM-RC-3735"
+    "number": "24448-SIM",
+    "address": "Rua do Outeiro, n.º 30, 4000-000 Porto",
+    "policy": "SIM-RC-5989"
    }
   }
  },
- "planted": [
-  {
-   "type": "not_pdf",
-   "target": {
-    "slot": "PLANT"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
-   "type": "template_wording_missing",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
-   }
-  }
- ],
- "n_planted": 2,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

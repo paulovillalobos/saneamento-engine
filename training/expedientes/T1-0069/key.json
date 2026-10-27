@@ -1,0 +1,95 @@
+{
+ "expediente": "T1-0069",
+ "case": {
+  "id": "T1-0069",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 2,
+  "plot": 510,
+  "impl": 74,
+  "built": 143,
+  "imperm": 118,
+  "perm": 392,
+  "volume": 443,
+  "height": 7.5,
+  "facade": 6.8,
+  "parking": 4,
+  "cost": 177600,
+  "submitted": "2026-12-04",
+  "site": "Rua da Escola, n.º 130, Rego, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 12,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Miguel Simulado Bruno",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "52056-SIM",
+    "address": "Rua da Escola, n.º 130, Rego, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2812"
+   },
+   "arquiteto": {
+    "name": "Miguel Modelo Nuno",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "68171-SIM",
+    "address": "Lugar de Vilar, n.º 42, 4000-000 Porto",
+    "policy": "SIM-RC-0816"
+   },
+   "engenheiro": {
+    "name": "Ana Modelo João",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "14031-SIM",
+    "address": "Lugar de Carvalhal, n.º 12, 4000-000 Porto",
+    "policy": "SIM-RC-0780"
+   },
+   "diretor": {
+    "name": "Inês Modelo João",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "78513-SIM",
+    "address": "Caminho da Lameira, n.º 59, 4800-000 Guimarães",
+    "policy": "SIM-RC-1921"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "PLANT"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

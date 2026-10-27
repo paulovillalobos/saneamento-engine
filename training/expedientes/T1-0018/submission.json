@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Olga Fictício Sérgio",
+  "name": "Eva Modelo Carla",
   "nif": "999999990"
  },
- "site": "Rua das Tílias, n.º 60, Gagos, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-11-26",
+ "site": "Lugar da Devesa, n.º 50, Rego, 4890-000 Celorico de Basto",
+ "operation": "alteração e ampliação de moradia unifamiliar",
+ "submitted_at": "2026-11-13",
  "files": [
   {
    "slot": "REQ",
@@ -186,7 +186,7 @@
    "file": "TREECP-termo-pdeecp.pdf",
    "title": "Termo de responsabilidade do autor do projeto de estabilidade, de escavação e contenção periférica",
    "kind": "written",
-   "signed_by": "engenheiro"
+   "signed_by": null
   },
   {
    "slot": "SRCEST",
@@ -392,13 +392,6 @@
    "signed_by": "engenheiro"
   },
   {
-   "slot": "FEE",
-   "file": "FEE-ficha-estatistica.pdf",
-   "title": "Ficha de elementos estatísticos",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
    "slot": "ASAT",
    "file": "ASAT-apolice-acidentes.pdf",
    "title": "Apólice de seguro de acidentes de trabalho",
@@ -411,13 +404,6 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "OUTDOC-fatura-agua.pdf",
-   "title": "Fatura de água",
-   "kind": "written",
-   "signed_by": "requerente"
   }
  ]
 }

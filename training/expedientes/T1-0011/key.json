@@ -6,63 +6,74 @@
   "use": "Comércio e serviços",
   "fogos": 0,
   "pisos": 1,
-  "plot": 2390,
-  "impl": 807,
-  "built": 719,
-  "imperm": 923,
-  "perm": 1467,
-  "volume": 2228,
-  "height": 4.5,
-  "facade": 3.8,
+  "plot": 400,
+  "impl": 130,
+  "built": 122,
+  "imperm": 216,
+  "perm": 184,
+  "volume": 378,
+  "height": 3.8,
+  "facade": 3.1,
   "parking": 2,
-  "cost": 470200,
-  "submitted": "2026-10-17",
-  "site": "Lugar de Carvalhal, n.º 297, Arnoia, 4890-000 Celorico de Basto",
+  "cost": 114800,
+  "submitted": "2026-10-18",
+  "site": "Rua do Outeiro, n.º 140, Gagos, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 8,
+  "months": 16,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Xavier Fictício Inês",
+    "name": "Pedro Fictício Teresa",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "28080-SIM",
-    "address": "Lugar de Carvalhal, n.º 297, Arnoia, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8886"
+    "number": "47786-SIM",
+    "address": "Rua do Outeiro, n.º 140, Gagos, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3424"
    },
    "arquiteto": {
-    "name": "Gonçalo de Teste João",
+    "name": "Vasco Exemplo Gonçalo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "77773-SIM",
-    "address": "Caminho da Lameira, n.º 107, 4800-000 Guimarães",
-    "policy": "SIM-RC-2753"
+    "number": "38230-SIM",
+    "address": "Travessa do Souto, n.º 116, 4000-000 Porto",
+    "policy": "SIM-RC-1935"
    },
    "engenheiro": {
-    "name": "Teresa de Teste Rita",
+    "name": "Vasco Amostra Ana",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "56045-SIM",
-    "address": "Travessa do Souto, n.º 99, 4700-000 Braga",
-    "policy": "SIM-RC-9348"
+    "number": "72471-SIM",
+    "address": "Caminho da Lameira, n.º 87, 4700-000 Braga",
+    "policy": "SIM-RC-1232"
    },
    "diretor": {
-    "name": "Nuno Fictício João",
+    "name": "Sérgio de Teste Vasco",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "15174-SIM",
-    "address": "Rua da Escola, n.º 16, 4000-000 Porto",
-    "policy": "SIM-RC-8934"
+    "number": "41796-SIM",
+    "address": "Rua das Tílias, n.º 65, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8658"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  }
+ ],
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

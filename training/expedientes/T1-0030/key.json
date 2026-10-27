@@ -2,92 +2,90 @@
  "expediente": "T1-0030",
  "case": {
   "id": "T1-0030",
-  "work": "construção de moradia unifamiliar",
+  "work": "ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 1,
-  "plot": 3200,
-  "impl": 792,
-  "built": 739,
-  "imperm": 976,
-  "perm": 2224,
-  "volume": 2290,
-  "height": 4.6,
-  "facade": 3.9,
+  "pisos": 2,
+  "plot": 3030,
+  "impl": 1355,
+  "built": 2629,
+  "imperm": 1516,
+  "perm": 1514,
+  "volume": 8149,
+  "height": 6.8,
+  "facade": 6.1,
   "parking": 2,
-  "cost": 514300,
-  "submitted": "2026-12-08",
-  "site": "Rua da Escola, n.º 11, Gagos, 4890-000 Celorico de Basto",
+  "cost": 2770900,
+  "submitted": "2026-12-13",
+  "site": "Rua do Outeiro, n.º 254, Fervença, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 22,
+  "months": 19,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Inês Amostra Olga",
+    "name": "Eva de Teste Vasco",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "22849-SIM",
-    "address": "Rua da Escola, n.º 11, Gagos, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8761"
+    "number": "37633-SIM",
+    "address": "Rua do Outeiro, n.º 254, Fervença, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5907"
    },
    "arquiteto": {
-    "name": "Pedro Modelo Olga",
+    "name": "Leonor Fictício Inês",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "73590-SIM",
-    "address": "Lugar de Vilar, n.º 90, 4800-000 Guimarães",
-    "policy": "SIM-RC-6375"
+    "number": "34424-SIM",
+    "address": "Caminho da Lameira, n.º 45, 4800-000 Guimarães",
+    "policy": "SIM-RC-4574"
    },
    "engenheiro": {
-    "name": "Gonçalo Exemplo Inês",
+    "name": "Vasco Exemplo Ana",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "48184-SIM",
-    "address": "Lugar de Vilar, n.º 34, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2870"
+    "number": "20533-SIM",
+    "address": "Lugar de Vilar, n.º 33, 4700-000 Braga",
+    "policy": "SIM-RC-3220"
    },
    "diretor": {
-    "name": "Xavier Simulado Miguel",
+    "name": "Carla Modelo Teresa",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "45055-SIM",
-    "address": "Lugar de Vilar, n.º 34, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4134"
+    "number": "82058-SIM",
+    "address": "Rua do Outeiro, n.º 70, 4800-000 Guimarães",
+    "policy": "SIM-RC-3930"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "expired_insurance",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "slot": "SRCARQ"
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "320 m2",
-    "area_implantacao": "792 m2",
-    "MDARQ": "3200 m2"
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-13"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
    }
   },
   {
-   "type": "value_mismatch",
+   "type": "wrong_site",
    "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
+    "slot": "TRPARQ"
    },
    "basis": "documents",
    "values": {
-    "REQ": "739 m2",
-    "MDARQ": "841 m2"
+    "REQ": "Rua do Outeiro, n.º 254, Fervença, 4890-000 Celorico de Basto",
+    "TRPARQ": "Rua das Tílias, n.º 101, Borba de Montanha, 4890-000 Celorico de Basto"
    }
   }
  ],

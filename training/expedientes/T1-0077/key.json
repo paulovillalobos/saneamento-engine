@@ -1,0 +1,105 @@
+{
+ "expediente": "T1-0077",
+ "case": {
+  "id": "T1-0077",
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 2510,
+  "impl": 540,
+  "built": 933,
+  "imperm": 601,
+  "perm": 1909,
+  "volume": 2892,
+  "height": 7.4,
+  "facade": 6.7,
+  "parking": 2,
+  "cost": 955300,
+  "submitted": "2026-12-14",
+  "site": "Rua das Tílias, n.º 64, Ourilhe, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 9,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Olga Modelo Gonçalo",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "15769-SIM",
+    "address": "Rua das Tílias, n.º 64, Ourilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6286"
+   },
+   "arquiteto": {
+    "name": "Filipe Amostra Eva",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "29849-SIM",
+    "address": "Travessa do Souto, n.º 89, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5295"
+   },
+   "engenheiro": {
+    "name": "Sérgio Exemplo Filipe",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "50598-SIM",
+    "address": "Lugar de Carvalhal, n.º 73, 4700-000 Braga",
+    "policy": "SIM-RC-0613"
+   },
+   "diretor": {
+    "name": "Sérgio Fictício Helena",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "18215-SIM",
+    "address": "Travessa do Souto, n.º 36, 4000-000 Porto",
+    "policy": "SIM-RC-0081"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "SRCCP"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "PLANT"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 2,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

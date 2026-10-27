@@ -2,121 +2,99 @@
  "expediente": "T1-0057",
  "case": {
   "id": "T1-0057",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 2240,
-  "impl": 850,
-  "built": 1542,
-  "imperm": 1007,
-  "perm": 1233,
-  "volume": 4780,
-  "height": 7.6,
-  "facade": 6.9,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 2340,
+  "impl": 927,
+  "built": 791,
+  "imperm": 1049,
+  "perm": 1291,
+  "volume": 2452,
+  "height": 4.7,
+  "facade": 4.0,
   "parking": 2,
-  "cost": 1208900,
-  "submitted": "2026-10-28",
-  "site": "Lugar de Carvalhal, n.º 51, Gagos, 4890-000 Celorico de Basto",
+  "cost": 628000,
+  "submitted": "2026-11-05",
+  "site": "Rua da Escola, n.º 150, Ourilhe, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
   "months": 21,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Gonçalo Modelo Leonor",
+    "name": "Diogo Fictício Xavier",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "13891-SIM",
-    "address": "Lugar de Carvalhal, n.º 51, Gagos, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9420"
+    "number": "36575-SIM",
+    "address": "Rua da Escola, n.º 150, Ourilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4332"
    },
    "arquiteto": {
-    "name": "Diogo Fictício Rita",
+    "name": "Sérgio Simulado Leonor",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "47987-SIM",
-    "address": "Rua das Tílias, n.º 52, 4800-000 Guimarães",
-    "policy": "SIM-RC-0391"
+    "number": "21057-SIM",
+    "address": "Caminho da Lameira, n.º 87, 4000-000 Porto",
+    "policy": "SIM-RC-9201"
    },
    "engenheiro": {
-    "name": "Nuno Fictício Olga",
+    "name": "Diogo de Teste Pedro",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "17672-SIM",
-    "address": "Rua da Escola, n.º 38, 4800-000 Guimarães",
-    "policy": "SIM-RC-7046"
+    "number": "35723-SIM",
+    "address": "Travessa do Souto, n.º 37, 4700-000 Braga",
+    "policy": "SIM-RC-1388"
    },
    "diretor": {
-    "name": "Diogo Fictício Xavier",
+    "name": "Olga Amostra Nuno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "36575-SIM",
-    "address": "Lugar de Carvalhal, n.º 77, 4800-000 Guimarães",
-    "policy": "SIM-RC-4332"
+    "number": "04655-SIM",
+    "address": "Lugar de Carvalhal, n.º 75, 4700-000 Braga",
+    "policy": "SIM-RC-9177"
    }
   }
  },
  "planted": [
   {
-   "type": "expired_insurance",
+   "type": "missing_required",
    "target": {
-    "slot": "SRCARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-10-28"
+    "slot": "CEO"
    },
    "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+    "ref": "V.27.e",
+    "quote": "e) Calendarização da execução da obra, com estimativa do prazo de início e de conclusão dos trabalhos;"
    }
   },
   {
-   "type": "impossible_value",
+   "type": "not_pdf",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "slot": "CORTES"
    },
-   "basis": "documents",
-   "values": {
-    "area_parcela": "224 m2",
-    "area_implantacao": "850 m2",
-    "MDARQ": "2240 m2"
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   },
   {
-   "type": "template_wording_missing",
+   "type": "wrong_site",
    "target": {
     "slot": "TRPARQ"
    },
-   "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
-   }
-  },
-  {
-   "type": "value_mismatch",
-   "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
-   },
    "basis": "documents",
    "values": {
-    "REQ": "1542 m2",
-    "MDARQ": "1441 m2"
+    "REQ": "Rua da Escola, n.º 150, Ourilhe, 4890-000 Celorico de Basto",
+    "TRPARQ": "Rua das Tílias, n.º 32, Rego, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 4,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

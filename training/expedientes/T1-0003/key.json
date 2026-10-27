@@ -2,75 +2,74 @@
  "expediente": "T1-0003",
  "case": {
   "id": "T1-0003",
-  "work": "construção de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 1,
-  "plot": 1150,
-  "impl": 234,
-  "built": 232,
-  "imperm": 422,
-  "perm": 728,
-  "volume": 719,
-  "height": 3.9,
-  "facade": 3.2,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 2,
+  "plot": 1240,
+  "impl": 267,
+  "built": 467,
+  "imperm": 352,
+  "perm": 888,
+  "volume": 1447,
+  "height": 7.2,
+  "facade": 6.5,
   "parking": 2,
-  "cost": 220600,
-  "submitted": "2026-11-23",
-  "site": "Lugar da Devesa, n.º 255, Vale de Bouro, 4890-000 Celorico de Basto",
+  "cost": 383800,
+  "submitted": "2026-12-09",
+  "site": "Caminho da Lameira, n.º 233, Infesta, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 11,
+  "months": 23,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Ana de Teste Nuno",
+    "name": "Rita Simulado Ana",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "46002-SIM",
-    "address": "Lugar da Devesa, n.º 255, Vale de Bouro, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4234"
+    "number": "41895-SIM",
+    "address": "Caminho da Lameira, n.º 233, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3081"
    },
    "arquiteto": {
-    "name": "Diogo de Teste Sérgio",
+    "name": "Inês Simulado Inês",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "28405-SIM",
-    "address": "Rua das Tílias, n.º 105, 4000-000 Porto",
-    "policy": "SIM-RC-3693"
+    "number": "96702-SIM",
+    "address": "Rua do Outeiro, n.º 78, 4800-000 Guimarães",
+    "policy": "SIM-RC-0342"
    },
    "engenheiro": {
-    "name": "Ana Exemplo Eva",
+    "name": "Helena Simulado Nuno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "05630-SIM",
-    "address": "Lugar de Vilar, n.º 58, 4800-000 Guimarães",
-    "policy": "SIM-RC-8925"
+    "number": "20197-SIM",
+    "address": "Rua da Escola, n.º 93, 4700-000 Braga",
+    "policy": "SIM-RC-7302"
    },
    "diretor": {
-    "name": "Helena Amostra Sérgio",
+    "name": "Sérgio Amostra Olga",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "60093-SIM",
-    "address": "Rua do Outeiro, n.º 68, 4000-000 Porto",
-    "policy": "SIM-RC-6471"
+    "number": "72395-SIM",
+    "address": "Rua do Outeiro, n.º 81, 4800-000 Guimarães",
+    "policy": "SIM-RC-3657"
    }
   }
  },
  "planted": [
   {
-   "type": "wrong_signer",
+   "type": "missing_required",
    "target": {
-    "slot": "TRDO"
+    "slot": "PLANT"
    },
-   "basis": "documents",
-   "values": {
-    "declarante": "Helena Amostra Sérgio",
-    "assinante": "Diogo de Teste Sérgio"
+   "law": {
+    "ref": "V.27.b.i",
+    "quote": "i) Plantas à escala de 1:50 ou de 1:100 contendo as dimensões e áreas e utilizações de todos os compartimentos, bem como a representação do mobiliário fixo e equipamento sanitário;"
    }
   }
  ],

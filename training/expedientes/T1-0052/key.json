@@ -2,83 +2,67 @@
  "expediente": "T1-0052",
  "case": {
   "id": "T1-0052",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
-  "fogos": 0,
-  "pisos": 1,
-  "plot": 2400,
-  "impl": 579,
-  "built": 539,
-  "imperm": 651,
-  "perm": 1749,
-  "volume": 1670,
-  "height": 3.8,
-  "facade": 3.1,
-  "parking": 2,
-  "cost": 430100,
-  "submitted": "2026-10-08",
-  "site": "Rua da Escola, n.º 124, Ourilhe, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 3,
+  "plot": 3820,
+  "impl": 1195,
+  "built": 3235,
+  "imperm": 1277,
+  "perm": 2543,
+  "volume": 10028,
+  "height": 10.4,
+  "facade": 9.7,
+  "parking": 4,
+  "cost": 2513500,
+  "submitted": "2026-11-05",
+  "site": "Rua da Escola, n.º 188, Canedo de Basto, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 22,
+  "months": 12,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Xavier Exemplo Vasco",
+    "name": "João Simulado Rita",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "13500-SIM",
-    "address": "Rua da Escola, n.º 124, Ourilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0727"
+    "number": "84608-SIM",
+    "address": "Rua da Escola, n.º 188, Canedo de Basto, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9661"
    },
    "arquiteto": {
-    "name": "Olga de Teste Olga",
+    "name": "Olga Simulado Rita",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "18405-SIM",
-    "address": "Rua do Outeiro, n.º 89, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6795"
+    "number": "72316-SIM",
+    "address": "Travessa do Souto, n.º 17, 4800-000 Guimarães",
+    "policy": "SIM-RC-9864"
    },
    "engenheiro": {
-    "name": "Leonor Modelo Bruno",
+    "name": "Teresa Exemplo Helena",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "67363-SIM",
-    "address": "Lugar de Carvalhal, n.º 17, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9581"
+    "number": "69596-SIM",
+    "address": "Rua das Tílias, n.º 62, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7174"
    },
    "diretor": {
-    "name": "Bruno de Teste Diogo",
+    "name": "Diogo Simulado Gonçalo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "33170-SIM",
-    "address": "Travessa do Souto, n.º 56, 4700-000 Braga",
-    "policy": "SIM-RC-0313"
+    "number": "78572-SIM",
+    "address": "Lugar da Devesa, n.º 14, 4000-000 Porto",
+    "policy": "SIM-RC-5815"
    }
   }
  },
- "planted": [
-  {
-   "type": "value_mismatch",
-   "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "539 m2",
-    "MDARQ": "490 m2"
-   }
-  }
- ],
- "n_planted": 1,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

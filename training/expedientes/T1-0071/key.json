@@ -1,0 +1,95 @@
+{
+ "expediente": "T1-0071",
+ "case": {
+  "id": "T1-0071",
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 1020,
+  "impl": 346,
+  "built": 336,
+  "imperm": 536,
+  "perm": 484,
+  "volume": 1041,
+  "height": 4.7,
+  "facade": 4.0,
+  "parking": 2,
+  "cost": 292600,
+  "submitted": "2026-10-07",
+  "site": "Caminho da Lameira, n.º 188, Infesta, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 19,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Inês Modelo Eva",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "05067-SIM",
+    "address": "Caminho da Lameira, n.º 188, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9765"
+   },
+   "arquiteto": {
+    "name": "Teresa Simulado Leonor",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "03199-SIM",
+    "address": "Lugar de Vilar, n.º 90, 4700-000 Braga",
+    "policy": "SIM-RC-4253"
+   },
+   "engenheiro": {
+    "name": "Helena Simulado Olga",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "91181-SIM",
+    "address": "Lugar da Devesa, n.º 89, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3106"
+   },
+   "diretor": {
+    "name": "Diogo Simulado Nuno",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "45440-SIM",
+    "address": "Lugar da Devesa, n.º 88, 4800-000 Guimarães",
+    "policy": "SIM-RC-5621"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "FSCI"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

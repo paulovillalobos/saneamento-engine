@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Teresa de Teste Leonor",
+  "name": "Helena de Teste Nuno",
   "nif": "999999990"
  },
- "site": "Lugar de Carvalhal, n.º 55, Britelo, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-11-05",
+ "site": "Lugar da Devesa, n.º 210, Codeçoso, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
+ "submitted_at": "2026-11-12",
  "files": [
   {
    "slot": "REQ",
@@ -411,6 +411,13 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "OUTDOC-curriculo.pdf",
+   "title": "Curriculum vitae",
+   "kind": "written",
+   "signed_by": "requerente"
   }
  ]
 }

@@ -165,7 +165,7 @@
    "file": "ALC-alcados.pdf",
    "title": "Alçados",
    "kind": "drawn",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "CORTES",
@@ -406,9 +406,16 @@
    "signed_by": "seguradora"
   },
   {
+   "slot": "IMPIC",
+   "file": "IMPIC-alvara-impic.pdf",
+   "title": "Número do alvará emitido pelo IMPIC, I. P.",
+   "kind": "written",
+   "signed_by": "diretor"
+  },
+  {
    "slot": "OUTDOC",
-   "file": "OUTDOC-carta.pdf",
-   "title": "Carta",
+   "file": "OUTDOC-fatura-agua.pdf",
+   "title": "Fatura de água",
    "kind": "written",
    "signed_by": "requerente"
   }

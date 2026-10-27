@@ -63,13 +63,16 @@
  },
  "planted": [
   {
-   "type": "not_pdf",
+   "type": "impossible_value",
    "target": {
-    "slot": "FOTO"
+    "field": "area_parcela",
+    "slot": "REQ"
    },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   "basis": "documents",
+   "values": {
+    "area_parcela": "8700 m2",
+    "area_implantacao": "166 m2",
+    "MDARQ": "870 m2"
    }
   }
  ],

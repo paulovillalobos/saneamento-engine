@@ -6,63 +6,110 @@
   "use": "Habitação bifamiliar",
   "fogos": 2,
   "pisos": 2,
-  "plot": 1250,
-  "impl": 337,
-  "built": 577,
-  "imperm": 411,
-  "perm": 839,
-  "volume": 1788,
-  "height": 7.1,
-  "facade": 6.4,
+  "plot": 3340,
+  "impl": 1334,
+  "built": 2421,
+  "imperm": 1446,
+  "perm": 1894,
+  "volume": 7505,
+  "height": 6.8,
+  "facade": 6.1,
   "parking": 4,
-  "cost": 692900,
-  "submitted": "2026-11-08",
-  "site": "Travessa do Souto, n.º 40, Basto (São Clemente), 4890-000 Celorico de Basto",
+  "cost": 2464500,
+  "submitted": "2026-12-19",
+  "site": "Travessa do Souto, n.º 175, Basto (São Clemente), 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 21,
+  "months": 22,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Pedro Fictício Filipe",
+    "name": "Bruno Modelo Filipe",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "79029-SIM",
-    "address": "Travessa do Souto, n.º 40, Basto (São Clemente), 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8550"
+    "number": "20357-SIM",
+    "address": "Travessa do Souto, n.º 175, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9558"
    },
    "arquiteto": {
-    "name": "Miguel Fictício Helena",
+    "name": "Sérgio Simulado Vasco",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "48150-SIM",
-    "address": "Travessa do Souto, n.º 44, 4000-000 Porto",
-    "policy": "SIM-RC-7512"
-   },
-   "engenheiro": {
-    "name": "Bruno Modelo Filipe",
-    "role": "engenheira",
-    "title": "engenheira civil",
-    "body": "Ordem dos Engenheiros",
-    "number": "20357-SIM",
-    "address": "Caminho da Lameira, n.º 61, 4000-000 Porto",
-    "policy": "SIM-RC-9558"
-   },
-   "diretor": {
-    "name": "Sérgio Simulado Vasco",
-    "role": "diretor de obra",
-    "title": "engenheiro civil",
-    "body": "Ordem dos Engenheiros",
     "number": "52943-SIM",
     "address": "Travessa do Souto, n.º 52, 4890-000 Celorico de Basto",
     "policy": "SIM-RC-6462"
+   },
+   "engenheiro": {
+    "name": "Inês de Teste Rita",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "07433-SIM",
+    "address": "Lugar de Carvalhal, n.º 3, 4800-000 Guimarães",
+    "policy": "SIM-RC-4991"
+   },
+   "diretor": {
+    "name": "Vasco Amostra Leonor",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "20581-SIM",
+    "address": "Caminho da Lameira, n.º 9, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6802"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-19"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "ASAT"
+   },
+   "law": {
+    "ref": "V.27.n",
+    "quote": "n) Apólice de seguro que cubra a responsabilidade pela reparação dos danos emergentes de acidentes de trabalho, nos termos previstos na Lei n.º 98/2009, de 4 de setembro, na sua redação atual;"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Vasco Amostra Leonor",
+    "assinante": "Sérgio Simulado Vasco"
+   }
+  }
+ ],
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

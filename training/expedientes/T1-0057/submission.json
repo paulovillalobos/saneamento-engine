@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Gonçalo Modelo Leonor",
+  "name": "Diogo Fictício Xavier",
   "nif": "999999990"
  },
- "site": "Lugar de Carvalhal, n.º 51, Gagos, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-28",
+ "site": "Rua da Escola, n.º 150, Ourilhe, 4890-000 Celorico de Basto",
+ "operation": "construção de armazém agrícola",
+ "submitted_at": "2026-11-05",
  "files": [
   {
    "slot": "REQ",
@@ -98,13 +98,6 @@
    "signed_by": "arquiteto"
   },
   {
-   "slot": "CEO",
-   "file": "CEO-calendarizacao.pdf",
-   "title": "Calendarização da execução da obra",
-   "kind": "written",
-   "signed_by": "arquiteto"
-  },
-  {
    "slot": "EOCT",
    "file": "EOCT-estimativa-custo.pdf",
    "title": "Estimativa do custo total da obra",
@@ -172,7 +165,7 @@
    "file": "CORTES-cortes.pdf",
    "title": "Cortes",
    "kind": "drawn",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "PC",
@@ -411,13 +404,6 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "OUTDOC-carta.pdf",
-   "title": "Carta",
-   "kind": "written",
-   "signed_by": "requerente"
   }
  ]
 }

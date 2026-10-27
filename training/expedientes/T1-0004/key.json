@@ -2,62 +2,62 @@
  "expediente": "T1-0004",
  "case": {
   "id": "T1-0004",
-  "work": "construção de moradia unifamiliar",
+  "work": "alteração e ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 1,
-  "plot": 1820,
-  "impl": 799,
-  "built": 784,
-  "imperm": 897,
-  "perm": 923,
-  "volume": 2430,
-  "height": 3.7,
-  "facade": 3.0,
+  "pisos": 2,
+  "plot": 3530,
+  "impl": 492,
+  "built": 880,
+  "imperm": 566,
+  "perm": 2964,
+  "volume": 2728,
+  "height": 7.7,
+  "facade": 7.0,
   "parking": 2,
-  "cost": 570700,
-  "submitted": "2026-11-10",
-  "site": "Lugar de Vilar, n.º 214, Molares, 4890-000 Celorico de Basto",
+  "cost": 847400,
+  "submitted": "2026-10-28",
+  "site": "Travessa do Souto, n.º 159, Gagos, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 16,
+  "months": 13,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Eva Simulado Teresa",
+    "name": "Olga Modelo Inês",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "05969-SIM",
-    "address": "Lugar de Vilar, n.º 214, Molares, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2811"
+    "number": "18090-SIM",
+    "address": "Travessa do Souto, n.º 159, Gagos, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9677"
    },
    "arquiteto": {
-    "name": "Xavier Modelo Bruno",
+    "name": "Gonçalo Modelo Pedro",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "50541-SIM",
-    "address": "Rua do Outeiro, n.º 45, 4000-000 Porto",
-    "policy": "SIM-RC-3372"
+    "number": "23481-SIM",
+    "address": "Rua da Escola, n.º 49, 4700-000 Braga",
+    "policy": "SIM-RC-5685"
    },
    "engenheiro": {
-    "name": "Vasco Amostra Olga",
+    "name": "Diogo Fictício Vasco",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "78517-SIM",
-    "address": "Rua do Outeiro, n.º 64, 4000-000 Porto",
-    "policy": "SIM-RC-6391"
+    "number": "89362-SIM",
+    "address": "Rua das Tílias, n.º 76, 4700-000 Braga",
+    "policy": "SIM-RC-8067"
    },
    "diretor": {
-    "name": "João Modelo Rita",
+    "name": "Diogo Amostra Nuno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "03254-SIM",
-    "address": "Lugar da Devesa, n.º 79, 4800-000 Guimarães",
-    "policy": "SIM-RC-4610"
+    "number": "39806-SIM",
+    "address": "Lugar de Carvalhal, n.º 3, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6592"
    }
   }
  },
@@ -65,27 +65,17 @@
   {
    "type": "missing_required",
    "target": {
-    "slot": "LEVT"
+    "slot": "MDARQ"
    },
    "law": {
-    "ref": "V.7",
-    "quote": "7 - Levantamento topográfico georreferenciado, acompanhado por termo de responsabilidade, sempre que haja alteração da topografia ou da implantação das construções, à escala de 1:200, ou de 1:500 no caso de loteamentos, devidamente cotado, que identifique o prédio e a respetiva área, construções nela erigidas, assim como o espaço público envolvente (vias, passeios, estacionamentos, árvores e infraestruturas ou instalações aí localizadas, incluindo postes, tampas, sinalização e mobiliário urbano);"
-   }
-  },
-  {
-   "type": "not_pdf",
-   "target": {
-    "slot": "PLANT"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    "ref": "V.9",
+    "quote": "9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:"
    }
   },
   {
    "type": "unsigned",
    "target": {
-    "slot": "TRCP"
+    "slot": "TRPLAC"
    },
    "law": {
     "ref": "VI.1",
@@ -93,7 +83,7 @@
    }
   }
  ],
- "n_planted": 3,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

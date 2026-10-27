@@ -1,0 +1,100 @@
+{
+ "expediente": "T1-0064",
+ "case": {
+  "id": "T1-0064",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 2,
+  "plot": 1480,
+  "impl": 370,
+  "built": 648,
+  "imperm": 391,
+  "perm": 1089,
+  "volume": 2008,
+  "height": 7.1,
+  "facade": 6.4,
+  "parking": 4,
+  "cost": 832000,
+  "submitted": "2026-12-06",
+  "site": "Rua da Escola, n.º 217, Corgo, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 16,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Sérgio Exemplo Gonçalo",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "06319-SIM",
+    "address": "Rua da Escola, n.º 217, Corgo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8379"
+   },
+   "arquiteto": {
+    "name": "Olga de Teste Pedro",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "45171-SIM",
+    "address": "Rua da Escola, n.º 11, 4800-000 Guimarães",
+    "policy": "SIM-RC-6871"
+   },
+   "engenheiro": {
+    "name": "Filipe Exemplo Filipe",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "72212-SIM",
+    "address": "Lugar de Vilar, n.º 35, 4800-000 Guimarães",
+    "policy": "SIM-RC-7886"
+   },
+   "diretor": {
+    "name": "João de Teste Pedro",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "53109-SIM",
+    "address": "Rua das Tílias, n.º 37, 4700-000 Braga",
+    "policy": "SIM-RC-5880"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-06"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

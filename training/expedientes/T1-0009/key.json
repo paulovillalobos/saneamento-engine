@@ -5,64 +5,115 @@
   "work": "ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 2,
-  "plot": 1170,
-  "impl": 327,
-  "built": 633,
-  "imperm": 453,
-  "perm": 717,
-  "volume": 1962,
-  "height": 7.8,
-  "facade": 7.1,
+  "pisos": 1,
+  "plot": 2780,
+  "impl": 1061,
+  "built": 1050,
+  "imperm": 1227,
+  "perm": 1553,
+  "volume": 3255,
+  "height": 3.6,
+  "facade": 2.9,
   "parking": 2,
-  "cost": 423400,
-  "submitted": "2026-10-23",
-  "site": "Lugar da Devesa, n.º 297, Canedo de Basto, 4890-000 Celorico de Basto",
+  "cost": 1063600,
+  "submitted": "2026-12-05",
+  "site": "Lugar de Vilar, n.º 71, Fervença, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 12,
+  "months": 16,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Eva de Teste Inês",
+    "name": "Nuno Modelo Nuno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "53140-SIM",
-    "address": "Lugar da Devesa, n.º 297, Canedo de Basto, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-3827"
+    "number": "23567-SIM",
+    "address": "Lugar de Vilar, n.º 71, Fervença, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0123"
    },
    "arquiteto": {
-    "name": "Rita Simulado Filipe",
+    "name": "Filipe Modelo Leonor",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "70297-SIM",
-    "address": "Lugar da Devesa, n.º 65, 4800-000 Guimarães",
-    "policy": "SIM-RC-3699"
+    "number": "66653-SIM",
+    "address": "Lugar de Carvalhal, n.º 88, 4700-000 Braga",
+    "policy": "SIM-RC-3906"
    },
    "engenheiro": {
-    "name": "Helena de Teste Rita",
+    "name": "Leonor Exemplo Rita",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "91039-SIM",
-    "address": "Lugar de Carvalhal, n.º 29, 4800-000 Guimarães",
-    "policy": "SIM-RC-5521"
+    "number": "30499-SIM",
+    "address": "Rua das Tílias, n.º 44, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3596"
    },
    "diretor": {
-    "name": "Teresa Modelo Inês",
+    "name": "Bruno Simulado Sérgio",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "85726-SIM",
-    "address": "Rua do Outeiro, n.º 7, 4000-000 Porto",
-    "policy": "SIM-RC-8384"
+    "number": "85579-SIM",
+    "address": "Lugar da Devesa, n.º 21, 4700-000 Braga",
+    "policy": "SIM-RC-5109"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-05"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "FSCI"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "1050 m2",
+    "MDARQ": "1005 m2"
+   }
+  }
+ ],
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

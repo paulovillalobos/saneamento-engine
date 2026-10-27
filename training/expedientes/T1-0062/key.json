@@ -1,0 +1,84 @@
+{
+ "expediente": "T1-0062",
+ "case": {
+  "id": "T1-0062",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 2,
+  "plot": 2730,
+  "impl": 789,
+  "built": 1428,
+  "imperm": 958,
+  "perm": 1772,
+  "volume": 4426,
+  "height": 6.9,
+  "facade": 6.2,
+  "parking": 2,
+  "cost": 1575000,
+  "submitted": "2026-11-13",
+  "site": "Lugar da Devesa, n.º 198, Molares, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 15,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Nuno Modelo Diogo",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "24706-SIM",
+    "address": "Lugar da Devesa, n.º 198, Molares, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6873"
+   },
+   "arquiteto": {
+    "name": "Vasco Exemplo Bruno",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "61332-SIM",
+    "address": "Travessa do Souto, n.º 81, 4700-000 Braga",
+    "policy": "SIM-RC-7450"
+   },
+   "engenheiro": {
+    "name": "Miguel Modelo Carla",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "44935-SIM",
+    "address": "Rua da Escola, n.º 36, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2127"
+   },
+   "diretor": {
+    "name": "Vasco Fictício Olga",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "91107-SIM",
+    "address": "Caminho da Lameira, n.º 92, 4800-000 Guimarães",
+    "policy": "SIM-RC-3987"
+   }
+  }
+ },
+ "planted": [],
+ "n_planted": 0,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

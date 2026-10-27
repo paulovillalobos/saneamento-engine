@@ -2,67 +2,114 @@
  "expediente": "T1-0042",
  "case": {
   "id": "T1-0042",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 1160,
-  "impl": 356,
-  "built": 698,
-  "imperm": 414,
-  "perm": 746,
-  "volume": 2163,
-  "height": 6.8,
-  "facade": 6.1,
-  "parking": 2,
-  "cost": 901800,
-  "submitted": "2026-10-05",
-  "site": "Lugar de Vilar, n.º 41, Agilde, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 3,
+  "plot": 2120,
+  "impl": 374,
+  "built": 1097,
+  "imperm": 473,
+  "perm": 1647,
+  "volume": 3400,
+  "height": 9.7,
+  "facade": 9.0,
+  "parking": 4,
+  "cost": 885200,
+  "submitted": "2026-12-12",
+  "site": "Lugar de Carvalhal, n.º 56, Canedo de Basto, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 16,
+  "months": 18,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Helena de Teste Leonor",
+    "name": "Carla Amostra Filipe",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "23484-SIM",
-    "address": "Lugar de Vilar, n.º 41, Agilde, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5075"
+    "number": "63859-SIM",
+    "address": "Lugar de Carvalhal, n.º 56, Canedo de Basto, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5833"
    },
    "arquiteto": {
-    "name": "Carla Exemplo Eva",
+    "name": "Miguel Modelo Miguel",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "73085-SIM",
-    "address": "Lugar da Devesa, n.º 114, 4800-000 Guimarães",
-    "policy": "SIM-RC-1761"
+    "number": "67008-SIM",
+    "address": "Lugar da Devesa, n.º 44, 4000-000 Porto",
+    "policy": "SIM-RC-3026"
    },
    "engenheiro": {
-    "name": "Eva Amostra Leonor",
+    "name": "Nuno Simulado Inês",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "10068-SIM",
-    "address": "Lugar de Vilar, n.º 62, 4000-000 Porto",
-    "policy": "SIM-RC-0768"
+    "number": "81464-SIM",
+    "address": "Rua do Outeiro, n.º 8, 4700-000 Braga",
+    "policy": "SIM-RC-4988"
    },
    "diretor": {
-    "name": "Gonçalo Amostra Miguel",
+    "name": "Leonor Modelo Nuno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "97387-SIM",
-    "address": "Lugar da Devesa, n.º 65, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8252"
+    "number": "33026-SIM",
+    "address": "Lugar da Devesa, n.º 99, 4000-000 Porto",
+    "policy": "SIM-RC-3798"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-12"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "SRCCP"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "ALC"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Leonor Modelo Nuno",
+    "assinante": "Miguel Modelo Miguel"
+   }
+  }
+ ],
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

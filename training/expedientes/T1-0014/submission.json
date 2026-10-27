@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Filipe de Teste Teresa",
+  "name": "Carla Amostra Filipe",
   "nif": "999999990"
  },
- "site": "Lugar da Devesa, n.º 240, Veade, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-12-27",
+ "site": "Rua das Tílias, n.º 128, Fervença, 4890-000 Celorico de Basto",
+ "operation": "alteração e ampliação de moradia unifamiliar",
+ "submitted_at": "2026-11-11",
  "files": [
   {
    "slot": "REQ",
@@ -28,13 +28,6 @@
    "signed_by": "requerente"
   },
   {
-   "slot": "TRPARQ",
-   "file": "TRPARQ-termo-arquitetura.pdf",
-   "title": "Termo de responsabilidade do autor do projeto de arquitetura",
-   "kind": "written",
-   "signed_by": "arquiteto"
-  },
-  {
    "slot": "SRCARQ",
    "file": "SRCARQ-seguro-arquiteto.pdf",
    "title": "Comprovativo de seguro de responsabilidade civil do autor do projeto de arquitetura",
@@ -46,7 +39,7 @@
    "file": "TRCP-termo-coordenador.pdf",
    "title": "Termo de responsabilidade do coordenador de projeto",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCCP",
@@ -67,7 +60,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCDO",
@@ -88,7 +81,7 @@
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "MDARQ",
@@ -411,6 +404,13 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "OUTDOC-lista-elementos.pdf",
+   "title": "Lista de elementos instrutórios",
+   "kind": "written",
+   "signed_by": "requerente"
   }
  ]
 }

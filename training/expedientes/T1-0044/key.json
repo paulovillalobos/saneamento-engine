@@ -5,94 +5,71 @@
   "work": "construção de edifício de habitação bifamiliar",
   "use": "Habitação bifamiliar",
   "fogos": 2,
-  "pisos": 3,
-  "plot": 2780,
-  "impl": 502,
-  "built": 1457,
-  "imperm": 543,
-  "perm": 2237,
-  "volume": 4516,
-  "height": 10.3,
-  "facade": 9.6,
+  "pisos": 2,
+  "plot": 2790,
+  "impl": 805,
+  "built": 1528,
+  "imperm": 970,
+  "perm": 1820,
+  "volume": 4736,
+  "height": 7.4,
+  "facade": 6.7,
   "parking": 4,
-  "cost": 1261700,
-  "submitted": "2026-10-15",
-  "site": "Rua do Outeiro, n.º 176, Carvalho, 4890-000 Celorico de Basto",
+  "cost": 1480600,
+  "submitted": "2026-12-11",
+  "site": "Travessa do Souto, n.º 247, Infesta, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 8,
+  "months": 21,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Gonçalo de Teste Rita",
+    "name": "Carla de Teste Carla",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "73364-SIM",
-    "address": "Rua do Outeiro, n.º 176, Carvalho, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6010"
+    "number": "87298-SIM",
+    "address": "Travessa do Souto, n.º 247, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5366"
    },
    "arquiteto": {
-    "name": "Rita Modelo Miguel",
+    "name": "Helena de Teste Inês",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "18762-SIM",
-    "address": "Lugar de Carvalhal, n.º 9, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9293"
+    "number": "34082-SIM",
+    "address": "Caminho da Lameira, n.º 63, 4800-000 Guimarães",
+    "policy": "SIM-RC-0197"
    },
    "engenheiro": {
-    "name": "João Modelo Leonor",
+    "name": "João Fictício João",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "76089-SIM",
-    "address": "Travessa do Souto, n.º 62, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6809"
+    "number": "07370-SIM",
+    "address": "Travessa do Souto, n.º 56, 4800-000 Guimarães",
+    "policy": "SIM-RC-3562"
    },
    "diretor": {
-    "name": "Carla de Teste Carla",
+    "name": "Inês de Teste Vasco",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "87298-SIM",
-    "address": "Lugar da Devesa, n.º 3, 4700-000 Braga",
-    "policy": "SIM-RC-5366"
+    "number": "65769-SIM",
+    "address": "Caminho da Lameira, n.º 78, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2825"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "template_wording_missing",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
-   },
-   "basis": "documents",
-   "values": {
-    "area_parcela": "278 m2",
-    "area_implantacao": "502 m2",
-    "MDARQ": "2780 m2"
-   }
-  },
-  {
-   "type": "not_pdf",
-   "target": {
-    "slot": "PLANT"
+    "slot": "TRPARQ"
    },
    "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
-   "type": "not_pdfa",
-   "target": {
-    "slot": "FSCI"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
   },
   {
@@ -106,12 +83,12 @@
    },
    "basis": "documents",
    "values": {
-    "REQ": "1457 m2",
-    "MDARQ": "1549 m2"
+    "REQ": "1528 m2",
+    "MDARQ": "1603 m2"
    }
   }
  ],
- "n_planted": 4,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

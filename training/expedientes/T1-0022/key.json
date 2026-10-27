@@ -2,74 +2,77 @@
  "expediente": "T1-0022",
  "case": {
   "id": "T1-0022",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
   "pisos": 2,
-  "plot": 1770,
-  "impl": 363,
-  "built": 673,
-  "imperm": 490,
-  "perm": 1280,
-  "volume": 2086,
-  "height": 7.4,
-  "facade": 6.7,
-  "parking": 2,
-  "cost": 735500,
-  "submitted": "2026-11-25",
-  "site": "Lugar de Carvalhal, n.º 111, Vale de Bouro, 4890-000 Celorico de Basto",
+  "plot": 1470,
+  "impl": 226,
+  "built": 394,
+  "imperm": 271,
+  "perm": 1199,
+  "volume": 1221,
+  "height": 7.1,
+  "facade": 6.4,
+  "parking": 4,
+  "cost": 331300,
+  "submitted": "2026-10-03",
+  "site": "Rua das Tílias, n.º 27, Britelo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 20,
+  "months": 14,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Olga Simulado Carla",
+    "name": "Teresa Exemplo Miguel",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "17969-SIM",
-    "address": "Lugar de Carvalhal, n.º 111, Vale de Bouro, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0429"
+    "number": "07164-SIM",
+    "address": "Rua das Tílias, n.º 27, Britelo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1944"
    },
    "arquiteto": {
-    "name": "Diogo de Teste Eva",
+    "name": "Inês Amostra Inês",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "63886-SIM",
-    "address": "Travessa do Souto, n.º 52, 4700-000 Braga",
-    "policy": "SIM-RC-0050"
+    "number": "24467-SIM",
+    "address": "Lugar de Carvalhal, n.º 104, 4000-000 Porto",
+    "policy": "SIM-RC-3510"
    },
    "engenheiro": {
-    "name": "Carla Exemplo Xavier",
+    "name": "Carla Exemplo Diogo",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "07667-SIM",
-    "address": "Rua do Outeiro, n.º 69, 4800-000 Guimarães",
-    "policy": "SIM-RC-5681"
+    "number": "88648-SIM",
+    "address": "Lugar de Carvalhal, n.º 38, 4800-000 Guimarães",
+    "policy": "SIM-RC-6441"
    },
    "diretor": {
-    "name": "Bruno Amostra Diogo",
+    "name": "Diogo Modelo Rita",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "97275-SIM",
-    "address": "Rua das Tílias, n.º 107, 4000-000 Porto",
-    "policy": "SIM-RC-4348"
+    "number": "14871-SIM",
+    "address": "Lugar de Vilar, n.º 50, 4700-000 Braga",
+    "policy": "SIM-RC-2739"
    }
   }
  },
  "planted": [
   {
-   "type": "not_pdfa",
+   "type": "impossible_value",
    "target": {
-    "slot": "MDARQ"
+    "field": "area_parcela",
+    "slot": "REQ"
    },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   "basis": "documents",
+   "values": {
+    "area_parcela": "147 m2",
+    "area_implantacao": "226 m2",
+    "MDARQ": "1470 m2"
    }
   }
  ],

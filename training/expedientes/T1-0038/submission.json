@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Ana de Teste Teresa",
+  "name": "Olga Modelo Pedro",
   "nif": "999999990"
  },
- "site": "Rua das Tílias, n.º 28, Caçarilhe, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-13",
+ "site": "Lugar da Devesa, n.º 155, Gagos, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
+ "submitted_at": "2026-12-19",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -411,13 +411,6 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "OUTDOC-fatura-agua.pdf",
-   "title": "Fatura de água",
-   "kind": "written",
-   "signed_by": "requerente"
   }
  ]
 }

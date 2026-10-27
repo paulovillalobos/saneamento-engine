@@ -2,62 +2,62 @@
  "expediente": "T1-0015",
  "case": {
   "id": "T1-0015",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
   "pisos": 1,
-  "plot": 2350,
-  "impl": 371,
-  "built": 326,
-  "imperm": 565,
-  "perm": 1785,
-  "volume": 1010,
-  "height": 4.0,
-  "facade": 3.3,
+  "plot": 3840,
+  "impl": 581,
+  "built": 528,
+  "imperm": 727,
+  "perm": 3113,
+  "volume": 1636,
+  "height": 4.1,
+  "facade": 3.4,
   "parking": 2,
-  "cost": 247100,
-  "submitted": "2026-10-13",
-  "site": "Lugar da Devesa, n.º 253, Caçarilhe, 4890-000 Celorico de Basto",
+  "cost": 434000,
+  "submitted": "2026-10-08",
+  "site": "Caminho da Lameira, n.º 237, Britelo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 13,
+  "months": 20,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Bruno Simulado Xavier",
+    "name": "Gonçalo Exemplo Inês",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "04051-SIM",
-    "address": "Lugar da Devesa, n.º 253, Caçarilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8102"
+    "number": "44269-SIM",
+    "address": "Caminho da Lameira, n.º 237, Britelo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3504"
    },
    "arquiteto": {
-    "name": "Sérgio Amostra Xavier",
+    "name": "Carla Simulado Ana",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "58971-SIM",
-    "address": "Lugar da Devesa, n.º 85, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1935"
+    "number": "01685-SIM",
+    "address": "Lugar de Carvalhal, n.º 41, 4800-000 Guimarães",
+    "policy": "SIM-RC-9507"
    },
    "engenheiro": {
-    "name": "Xavier Amostra Filipe",
+    "name": "João Fictício Nuno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "13482-SIM",
-    "address": "Rua do Outeiro, n.º 52, 4700-000 Braga",
-    "policy": "SIM-RC-8111"
+    "number": "21980-SIM",
+    "address": "Lugar de Vilar, n.º 102, 4000-000 Porto",
+    "policy": "SIM-RC-0249"
    },
    "diretor": {
-    "name": "Pedro Exemplo Filipe",
+    "name": "Nuno Fictício Teresa",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "31371-SIM",
-    "address": "Rua do Outeiro, n.º 105, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7579"
+    "number": "08486-SIM",
+    "address": "Rua das Tílias, n.º 33, 4700-000 Braga",
+    "policy": "SIM-RC-1303"
    }
   }
  },
@@ -70,7 +70,7 @@
    "basis": "documents",
    "values": {
     "validade_fim": "2026-09-30",
-    "submetido": "2026-10-13"
+    "submetido": "2026-10-08"
    },
    "law": {
     "ref": "V.14",
@@ -78,30 +78,38 @@
    }
   },
   {
-   "type": "impossible_value",
+   "type": "missing_required",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "slot": "FEE"
    },
-   "basis": "documents",
-   "values": {
-    "area_parcela": "235 m2",
-    "area_implantacao": "371 m2",
-    "MDARQ": "2350 m2"
+   "law": {
+    "ref": "V.27.o",
+    "quote": "o) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013, de 24 de julho;"
    }
   },
   {
-   "type": "not_pdf",
+   "type": "not_pdfa",
    "target": {
-    "slot": "FOTO"
+    "slot": "MDPAP"
    },
    "law": {
     "ref": "VI.1.a",
     "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Nuno Fictício Teresa",
+    "assinante": "Carla Simulado Ana"
+   }
   }
  ],
- "n_planted": 3,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

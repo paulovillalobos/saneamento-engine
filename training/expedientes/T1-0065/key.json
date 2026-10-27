@@ -1,0 +1,98 @@
+{
+ "expediente": "T1-0065",
+ "case": {
+  "id": "T1-0065",
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 670,
+  "impl": 237,
+  "built": 430,
+  "imperm": 324,
+  "perm": 346,
+  "volume": 1333,
+  "height": 7.8,
+  "facade": 7.1,
+  "parking": 2,
+  "cost": 538300,
+  "submitted": "2026-11-16",
+  "site": "Rua da Escola, n.º 82, Vale de Bouro, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 11,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Helena Fictício Diogo",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "51379-SIM",
+    "address": "Rua da Escola, n.º 82, Vale de Bouro, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1554"
+   },
+   "arquiteto": {
+    "name": "Pedro Modelo Pedro",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "04274-SIM",
+    "address": "Rua da Escola, n.º 35, 4000-000 Porto",
+    "policy": "SIM-RC-8672"
+   },
+   "engenheiro": {
+    "name": "Rita Amostra Gonçalo",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "47629-SIM",
+    "address": "Lugar de Carvalhal, n.º 15, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5218"
+   },
+   "diretor": {
+    "name": "Nuno Amostra Nuno",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "39016-SIM",
+    "address": "Travessa do Souto, n.º 30, 4800-000 Guimarães",
+    "policy": "SIM-RC-9192"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "6700 m2",
+    "area_implantacao": "237 m2",
+    "MDARQ": "670 m2"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

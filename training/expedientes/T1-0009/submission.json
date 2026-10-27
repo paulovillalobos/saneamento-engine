@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Eva de Teste Inês",
+  "name": "Nuno Modelo Nuno",
   "nif": "999999990"
  },
- "site": "Lugar da Devesa, n.º 297, Canedo de Basto, 4890-000 Celorico de Basto",
+ "site": "Lugar de Vilar, n.º 71, Fervença, 4890-000 Celorico de Basto",
  "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-23",
+ "submitted_at": "2026-12-05",
  "files": [
   {
    "slot": "REQ",
@@ -414,8 +414,8 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-carta.pdf",
-   "title": "Carta",
+   "file": "OUTDOC-regulamento-extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
    "kind": "written",
    "signed_by": "requerente"
   }

@@ -6,87 +6,75 @@
   "use": "Comércio e serviços",
   "fogos": 0,
   "pisos": 1,
-  "plot": 1890,
-  "impl": 551,
-  "built": 510,
-  "imperm": 650,
-  "perm": 1240,
-  "volume": 1581,
-  "height": 4.3,
-  "facade": 3.6,
+  "plot": 3330,
+  "impl": 1044,
+  "built": 1035,
+  "imperm": 1215,
+  "perm": 2115,
+  "volume": 3208,
+  "height": 4.1,
+  "facade": 3.4,
   "parking": 2,
-  "cost": 439100,
-  "submitted": "2026-11-22",
-  "site": "Lugar de Vilar, n.º 4, Infesta, 4890-000 Celorico de Basto",
+  "cost": 1085700,
+  "submitted": "2026-11-12",
+  "site": "Lugar de Vilar, n.º 140, Carvalho, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 11,
+  "months": 8,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Olga Exemplo Sérgio",
+    "name": "Teresa Simulado Carla",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "97285-SIM",
-    "address": "Lugar de Vilar, n.º 4, Infesta, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7364"
+    "number": "73100-SIM",
+    "address": "Lugar de Vilar, n.º 140, Carvalho, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7236"
    },
    "arquiteto": {
-    "name": "Teresa Exemplo Miguel",
+    "name": "Leonor Amostra Diogo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "28055-SIM",
-    "address": "Rua da Escola, n.º 11, 4000-000 Porto",
-    "policy": "SIM-RC-1595"
+    "number": "51898-SIM",
+    "address": "Rua da Escola, n.º 96, 4800-000 Guimarães",
+    "policy": "SIM-RC-4559"
    },
    "engenheiro": {
-    "name": "Teresa Exemplo Eva",
+    "name": "Olga Exemplo Leonor",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "59115-SIM",
-    "address": "Rua das Tílias, n.º 24, 4800-000 Guimarães",
-    "policy": "SIM-RC-7356"
+    "number": "67515-SIM",
+    "address": "Travessa do Souto, n.º 22, 4800-000 Guimarães",
+    "policy": "SIM-RC-8865"
    },
    "diretor": {
-    "name": "Sérgio Modelo Bruno",
+    "name": "Olga Modelo Rita",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "77959-SIM",
-    "address": "Rua do Outeiro, n.º 76, 4800-000 Guimarães",
-    "policy": "SIM-RC-8001"
+    "number": "67260-SIM",
+    "address": "Lugar de Vilar, n.º 41, 4700-000 Braga",
+    "policy": "SIM-RC-5734"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "wrong_signer",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "slot": "TRDO"
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "189 m2",
-    "area_implantacao": "551 m2",
-    "MDARQ": "1890 m2"
-   }
-  },
-  {
-   "type": "not_pdfa",
-   "target": {
-    "slot": "CEO"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    "declarante": "Olga Modelo Rita",
+    "assinante": "Leonor Amostra Diogo"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

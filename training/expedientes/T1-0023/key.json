@@ -2,62 +2,62 @@
  "expediente": "T1-0023",
  "case": {
   "id": "T1-0023",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 540,
-  "impl": 185,
-  "built": 319,
-  "imperm": 304,
-  "perm": 236,
-  "volume": 988,
-  "height": 6.7,
-  "facade": 6.0,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 3540,
+  "impl": 1346,
+  "built": 1269,
+  "imperm": 1490,
+  "perm": 2050,
+  "volume": 3933,
+  "height": 3.7,
+  "facade": 3.0,
   "parking": 2,
-  "cost": 353400,
-  "submitted": "2026-11-22",
-  "site": "Lugar de Carvalhal, n.º 202, Caçarilhe, 4890-000 Celorico de Basto",
+  "cost": 1275300,
+  "submitted": "2026-12-09",
+  "site": "Rua da Escola, n.º 277, Ribas, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 23,
+  "months": 17,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Diogo Fictício Nuno",
+    "name": "Diogo Fictício Sérgio",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "81430-SIM",
-    "address": "Lugar de Carvalhal, n.º 202, Caçarilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6826"
+    "number": "36987-SIM",
+    "address": "Rua da Escola, n.º 277, Ribas, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6745"
    },
    "arquiteto": {
-    "name": "Teresa de Teste Rita",
+    "name": "Eva Fictício Inês",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "84055-SIM",
-    "address": "Rua do Outeiro, n.º 101, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7963"
+    "number": "26599-SIM",
+    "address": "Rua das Tílias, n.º 72, 4000-000 Porto",
+    "policy": "SIM-RC-8730"
    },
    "engenheiro": {
-    "name": "Diogo Simulado Miguel",
+    "name": "Xavier Modelo Eva",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "93903-SIM",
-    "address": "Caminho da Lameira, n.º 8, 4800-000 Guimarães",
-    "policy": "SIM-RC-4913"
+    "number": "55237-SIM",
+    "address": "Caminho da Lameira, n.º 36, 4800-000 Guimarães",
+    "policy": "SIM-RC-5011"
    },
    "diretor": {
-    "name": "Diogo Fictício Sérgio",
+    "name": "Inês Exemplo Gonçalo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "36987-SIM",
-    "address": "Caminho da Lameira, n.º 91, 4700-000 Braga",
-    "policy": "SIM-RC-6745"
+    "number": "66373-SIM",
+    "address": "Lugar da Devesa, n.º 77, 4800-000 Guimarães",
+    "policy": "SIM-RC-3960"
    }
   }
  },
@@ -65,7 +65,7 @@
   {
    "type": "unsigned",
    "target": {
-    "slot": "TRPLAC"
+    "slot": "TREECP"
    },
    "law": {
     "ref": "VI.1",
@@ -79,8 +79,8 @@
    },
    "basis": "documents",
    "values": {
-    "declarante": "Diogo Fictício Sérgio",
-    "assinante": "Teresa de Teste Rita"
+    "declarante": "Inês Exemplo Gonçalo",
+    "assinante": "Eva Fictício Inês"
    }
   }
  ],

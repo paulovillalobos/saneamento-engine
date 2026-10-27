@@ -2,120 +2,67 @@
  "expediente": "T1-0051",
  "case": {
   "id": "T1-0051",
-  "work": "alteração e ampliação de moradia unifamiliar",
+  "work": "construção de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 1920,
-  "impl": 243,
-  "built": 469,
-  "imperm": 320,
-  "perm": 1600,
-  "volume": 1453,
-  "height": 6.9,
-  "facade": 6.2,
+  "plot": 2340,
+  "impl": 361,
+  "built": 691,
+  "imperm": 528,
+  "perm": 1812,
+  "volume": 2142,
+  "height": 7.2,
+  "facade": 6.5,
   "parking": 2,
-  "cost": 543100,
-  "submitted": "2026-12-16",
-  "site": "Rua da Escola, n.º 46, Canedo de Basto, 4890-000 Celorico de Basto",
+  "cost": 790500,
+  "submitted": "2026-12-09",
+  "site": "Lugar de Vilar, n.º 221, Moreira do Castelo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 23,
+  "months": 19,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Vasco Fictício Gonçalo",
+    "name": "Nuno Exemplo Olga",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "48253-SIM",
-    "address": "Rua da Escola, n.º 46, Canedo de Basto, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1063"
+    "number": "49240-SIM",
+    "address": "Lugar de Vilar, n.º 221, Moreira do Castelo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2373"
    },
    "arquiteto": {
-    "name": "Nuno Exemplo Ana",
+    "name": "Helena Fictício Ana",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "70341-SIM",
-    "address": "Lugar de Carvalhal, n.º 114, 4700-000 Braga",
-    "policy": "SIM-RC-3947"
+    "number": "32592-SIM",
+    "address": "Rua das Tílias, n.º 59, 4800-000 Guimarães",
+    "policy": "SIM-RC-9303"
    },
    "engenheiro": {
-    "name": "Gonçalo Amostra Ana",
+    "name": "Diogo Simulado Filipe",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "95695-SIM",
-    "address": "Caminho da Lameira, n.º 6, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8503"
+    "number": "70111-SIM",
+    "address": "Rua da Escola, n.º 6, 4800-000 Guimarães",
+    "policy": "SIM-RC-4563"
    },
    "diretor": {
-    "name": "Gonçalo Simulado Diogo",
+    "name": "Olga Fictício Helena",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "15437-SIM",
-    "address": "Rua das Tílias, n.º 43, 4000-000 Porto",
-    "policy": "SIM-RC-7298"
+    "number": "92121-SIM",
+    "address": "Lugar da Devesa, n.º 116, 4800-000 Guimarães",
+    "policy": "SIM-RC-5601"
    }
   }
  },
- "planted": [
-  {
-   "type": "expired_insurance",
-   "target": {
-    "slot": "SRCARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-12-16"
-   },
-   "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
-   }
-  },
-  {
-   "type": "value_mismatch",
-   "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "469 m2",
-    "MDARQ": "581 m2"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
-   },
-   "basis": "documents",
-   "values": {
-    "declarante": "Gonçalo Simulado Diogo",
-    "assinante": "Nuno Exemplo Ana"
-   }
-  },
-  {
-   "type": "wrong_site",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "Rua da Escola, n.º 46, Canedo de Basto, 4890-000 Celorico de Basto",
-    "TRPARQ": "Caminho da Lameira, n.º 74, Rego, 4890-000 Celorico de Basto"
-   }
-  }
- ],
- "n_planted": 4,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

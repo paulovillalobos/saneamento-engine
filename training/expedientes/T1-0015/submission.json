@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Bruno Simulado Xavier",
+  "name": "Gonçalo Exemplo Inês",
   "nif": "999999990"
  },
- "site": "Lugar da Devesa, n.º 253, Caçarilhe, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-13",
+ "site": "Caminho da Lameira, n.º 237, Britelo, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
+ "submitted_at": "2026-10-08",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCDO",
@@ -88,7 +88,7 @@
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "MDARQ",
@@ -392,13 +392,6 @@
    "signed_by": "engenheiro"
   },
   {
-   "slot": "FEE",
-   "file": "FEE-ficha-estatistica.pdf",
-   "title": "Ficha de elementos estatísticos",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
    "slot": "ASAT",
    "file": "ASAT-apolice-acidentes.pdf",
    "title": "Apólice de seguro de acidentes de trabalho",
@@ -414,8 +407,8 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-carta.pdf",
-   "title": "Carta",
+   "file": "OUTDOC-curriculo.pdf",
+   "title": "Curriculum vitae",
    "kind": "written",
    "signed_by": "requerente"
   }

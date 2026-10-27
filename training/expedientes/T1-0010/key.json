@@ -6,74 +6,92 @@
   "use": "Habitação bifamiliar",
   "fogos": 2,
   "pisos": 3,
-  "plot": 1890,
-  "impl": 658,
-  "built": 1929,
-  "imperm": 773,
-  "perm": 1117,
-  "volume": 5979,
-  "height": 9.8,
-  "facade": 9.1,
+  "plot": 1090,
+  "impl": 284,
+  "built": 844,
+  "imperm": 317,
+  "perm": 773,
+  "volume": 2616,
+  "height": 10.2,
+  "facade": 9.5,
   "parking": 4,
-  "cost": 2170100,
-  "submitted": "2026-12-03",
-  "site": "Travessa do Souto, n.º 264, Molares, 4890-000 Celorico de Basto",
+  "cost": 888700,
+  "submitted": "2026-12-21",
+  "site": "Lugar da Devesa, n.º 197, Veade, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 20,
+  "months": 13,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Filipe Fictício Inês",
+    "name": "Teresa Amostra Bruno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "56935-SIM",
-    "address": "Travessa do Souto, n.º 264, Molares, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8111"
+    "number": "69704-SIM",
+    "address": "Lugar da Devesa, n.º 197, Veade, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1656"
    },
    "arquiteto": {
-    "name": "Nuno Amostra Miguel",
+    "name": "Inês Amostra Carla",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "51328-SIM",
-    "address": "Lugar de Vilar, n.º 70, 4000-000 Porto",
-    "policy": "SIM-RC-8589"
+    "number": "19235-SIM",
+    "address": "Travessa do Souto, n.º 57, 4700-000 Braga",
+    "policy": "SIM-RC-6265"
    },
    "engenheiro": {
-    "name": "Carla de Teste Diogo",
+    "name": "Olga Exemplo Filipe",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "36065-SIM",
-    "address": "Travessa do Souto, n.º 18, 4000-000 Porto",
-    "policy": "SIM-RC-7292"
+    "number": "43659-SIM",
+    "address": "Lugar de Carvalhal, n.º 17, 4800-000 Guimarães",
+    "policy": "SIM-RC-3474"
    },
    "diretor": {
-    "name": "Helena Exemplo Olga",
+    "name": "Diogo Exemplo Xavier",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "53067-SIM",
-    "address": "Lugar de Vilar, n.º 117, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7179"
+    "number": "70999-SIM",
+    "address": "Rua das Tílias, n.º 117, 4000-000 Porto",
+    "policy": "SIM-RC-4842"
    }
   }
  },
  "planted": [
   {
-   "type": "unsigned",
+   "type": "expired_insurance",
    "target": {
-    "slot": "TREECP"
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-21"
    },
    "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "109 m2",
+    "area_implantacao": "284 m2",
+    "MDARQ": "1090 m2"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

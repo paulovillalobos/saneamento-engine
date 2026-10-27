@@ -2,91 +2,66 @@
  "expediente": "T1-0056",
  "case": {
   "id": "T1-0056",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
-  "fogos": 0,
-  "pisos": 1,
-  "plot": 1660,
-  "impl": 355,
-  "built": 345,
-  "imperm": 392,
-  "perm": 1268,
-  "volume": 1069,
-  "height": 4.6,
-  "facade": 3.9,
-  "parking": 2,
-  "cost": 317700,
-  "submitted": "2026-10-01",
-  "site": "Rua das Tílias, n.º 145, Vale de Bouro, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 2,
+  "plot": 1610,
+  "impl": 560,
+  "built": 1116,
+  "imperm": 713,
+  "perm": 897,
+  "volume": 3459,
+  "height": 7.1,
+  "facade": 6.4,
+  "parking": 4,
+  "cost": 1271100,
+  "submitted": "2026-12-24",
+  "site": "Rua da Escola, n.º 242, Gagos, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 21,
+  "months": 16,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Olga Simulado Filipe",
+    "name": "João Fictício Eva",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "29152-SIM",
-    "address": "Rua das Tílias, n.º 145, Vale de Bouro, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6792"
+    "number": "91380-SIM",
+    "address": "Rua da Escola, n.º 242, Gagos, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6268"
    },
    "arquiteto": {
-    "name": "Miguel de Teste Sérgio",
+    "name": "Pedro Modelo Ana",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "20426-SIM",
-    "address": "Lugar de Vilar, n.º 102, 4700-000 Braga",
-    "policy": "SIM-RC-3760"
+    "number": "18272-SIM",
+    "address": "Rua do Outeiro, n.º 110, 4800-000 Guimarães",
+    "policy": "SIM-RC-1624"
    },
    "engenheiro": {
-    "name": "Bruno de Teste Carla",
+    "name": "João Amostra Xavier",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "59517-SIM",
-    "address": "Lugar da Devesa, n.º 105, 4700-000 Braga",
-    "policy": "SIM-RC-3590"
+    "number": "58167-SIM",
+    "address": "Rua do Outeiro, n.º 67, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1612"
    },
    "diretor": {
-    "name": "Inês Fictício Sérgio",
+    "name": "Helena Fictício Rita",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "50995-SIM",
-    "address": "Travessa do Souto, n.º 62, 4000-000 Porto",
-    "policy": "SIM-RC-7736"
+    "number": "76358-SIM",
+    "address": "Travessa do Souto, n.º 23, 4800-000 Guimarães",
+    "policy": "SIM-RC-5874"
    }
   }
  },
  "planted": [
-  {
-   "type": "expired_insurance",
-   "target": {
-    "slot": "SRCARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-10-01"
-   },
-   "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
-   }
-  },
-  {
-   "type": "not_pdfa",
-   "target": {
-    "slot": "MDARQ"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
   {
    "type": "wrong_signer",
    "target": {
@@ -94,12 +69,12 @@
    },
    "basis": "documents",
    "values": {
-    "declarante": "Inês Fictício Sérgio",
-    "assinante": "Miguel de Teste Sérgio"
+    "declarante": "Helena Fictício Rita",
+    "assinante": "Pedro Modelo Ana"
    }
   }
  ],
- "n_planted": 3,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

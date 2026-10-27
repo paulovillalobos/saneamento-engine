@@ -2,98 +2,89 @@
  "expediente": "T1-0020",
  "case": {
   "id": "T1-0020",
-  "work": "construção de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
   "pisos": 2,
-  "plot": 3090,
-  "impl": 1099,
-  "built": 1935,
-  "imperm": 1136,
-  "perm": 1954,
-  "volume": 5998,
-  "height": 7.4,
-  "facade": 6.7,
-  "parking": 2,
-  "cost": 2300700,
-  "submitted": "2026-12-03",
-  "site": "Travessa do Souto, n.º 112, Carvalho, 4890-000 Celorico de Basto",
+  "plot": 2760,
+  "impl": 1072,
+  "built": 2143,
+  "imperm": 1157,
+  "perm": 1603,
+  "volume": 6643,
+  "height": 7.1,
+  "facade": 6.4,
+  "parking": 4,
+  "cost": 1410000,
+  "submitted": "2026-12-18",
+  "site": "Rua das Tílias, n.º 264, Vale de Bouro, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 21,
+  "months": 10,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Ana Modelo Miguel",
+    "name": "Nuno Modelo Sérgio",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "64789-SIM",
-    "address": "Travessa do Souto, n.º 112, Carvalho, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9799"
+    "number": "76796-SIM",
+    "address": "Rua das Tílias, n.º 264, Vale de Bouro, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7512"
    },
    "arquiteto": {
-    "name": "Rita Fictício Olga",
+    "name": "Ana Fictício João",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "60269-SIM",
-    "address": "Lugar da Devesa, n.º 70, 4700-000 Braga",
-    "policy": "SIM-RC-7900"
+    "number": "92225-SIM",
+    "address": "Rua da Escola, n.º 70, 4000-000 Porto",
+    "policy": "SIM-RC-4959"
    },
    "engenheiro": {
-    "name": "Carla de Teste Olga",
+    "name": "Sérgio Amostra Leonor",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "27393-SIM",
-    "address": "Rua da Escola, n.º 96, 4800-000 Guimarães",
-    "policy": "SIM-RC-8427"
+    "number": "72175-SIM",
+    "address": "Caminho da Lameira, n.º 68, 4800-000 Guimarães",
+    "policy": "SIM-RC-8881"
    },
    "diretor": {
-    "name": "Rita Simulado Nuno",
+    "name": "Sérgio Exemplo Xavier",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "81719-SIM",
-    "address": "Rua das Tílias, n.º 6, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7512"
+    "number": "83570-SIM",
+    "address": "Caminho da Lameira, n.º 58, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2146"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "unsigned",
    "target": {
-    "slot": "CRP"
+    "slot": "TRCP"
    },
    "law": {
-    "ref": "V.5",
-    "quote": "5 - Indicação do código de acesso à certidão permanente do registo predial referente ao prédio ou prédios abrangidos pela operação urbanística ou, quando omisso, a respetiva certidão negativa do registo predial, acompanhada da caderneta predial da qual constem os correspondentes artigos matriciais;"
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
    }
   },
   {
-   "type": "not_pdf",
+   "type": "wrong_signer",
    "target": {
-    "slot": "CORTES"
+    "slot": "TRDO"
    },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
-   "type": "not_pdfa",
-   "target": {
-    "slot": "CEO"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   "basis": "documents",
+   "values": {
+    "declarante": "Sérgio Exemplo Xavier",
+    "assinante": "Ana Fictício João"
    }
   }
  ],
- "n_planted": 3,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

@@ -6,74 +6,63 @@
   "use": "Armazém agrícola",
   "fogos": 0,
   "pisos": 1,
-  "plot": 3470,
-  "impl": 1390,
-  "built": 1360,
-  "imperm": 1453,
-  "perm": 2017,
-  "volume": 4216,
-  "height": 4.7,
-  "facade": 4.0,
+  "plot": 870,
+  "impl": 326,
+  "built": 312,
+  "imperm": 420,
+  "perm": 450,
+  "volume": 967,
+  "height": 4.2,
+  "facade": 3.5,
   "parking": 2,
-  "cost": 1377600,
-  "submitted": "2026-12-08",
-  "site": "Lugar da Devesa, n.º 120, Corgo, 4890-000 Celorico de Basto",
+  "cost": 345000,
+  "submitted": "2026-11-03",
+  "site": "Travessa do Souto, n.º 37, Corgo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 14,
+  "months": 11,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "João de Teste Teresa",
+    "name": "Sérgio Exemplo Teresa",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "43304-SIM",
-    "address": "Lugar da Devesa, n.º 120, Corgo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7884"
+    "number": "61080-SIM",
+    "address": "Travessa do Souto, n.º 37, Corgo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7507"
    },
    "arquiteto": {
-    "name": "Inês Amostra Helena",
+    "name": "Olga Modelo Diogo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "20340-SIM",
-    "address": "Rua do Outeiro, n.º 111, 4700-000 Braga",
-    "policy": "SIM-RC-1385"
+    "number": "26193-SIM",
+    "address": "Rua da Escola, n.º 32, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3510"
    },
    "engenheiro": {
-    "name": "Inês Exemplo Gonçalo",
+    "name": "Sérgio Modelo João",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "19052-SIM",
-    "address": "Lugar de Vilar, n.º 105, 4000-000 Porto",
-    "policy": "SIM-RC-5181"
+    "number": "41372-SIM",
+    "address": "Caminho da Lameira, n.º 118, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4353"
    },
    "diretor": {
-    "name": "Nuno Amostra Gonçalo",
+    "name": "João Simulado Ana",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "21752-SIM",
-    "address": "Rua da Escola, n.º 58, 4700-000 Braga",
-    "policy": "SIM-RC-6566"
+    "number": "02376-SIM",
+    "address": "Lugar de Carvalhal, n.º 6, 4700-000 Braga",
+    "policy": "SIM-RC-1261"
    }
   }
  },
- "planted": [
-  {
-   "type": "template_wording_missing",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
-   }
-  }
- ],
- "n_planted": 1,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

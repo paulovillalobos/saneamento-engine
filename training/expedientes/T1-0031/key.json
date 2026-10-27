@@ -6,58 +6,58 @@
   "use": "Habitação bifamiliar",
   "fogos": 2,
   "pisos": 2,
-  "plot": 1590,
-  "impl": 293,
-  "built": 568,
-  "imperm": 450,
-  "perm": 1140,
-  "volume": 1760,
-  "height": 7.3,
-  "facade": 6.6,
+  "plot": 3710,
+  "impl": 482,
+  "built": 878,
+  "imperm": 608,
+  "perm": 3102,
+  "volume": 2721,
+  "height": 7.4,
+  "facade": 6.7,
   "parking": 4,
-  "cost": 685000,
-  "submitted": "2026-11-23",
-  "site": "Rua do Outeiro, n.º 296, Canedo de Basto, 4890-000 Celorico de Basto",
+  "cost": 1101800,
+  "submitted": "2026-12-05",
+  "site": "Travessa do Souto, n.º 124, Ourilhe, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 22,
+  "months": 12,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Nuno Amostra Gonçalo",
+    "name": "João Fictício Nuno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "11822-SIM",
-    "address": "Rua do Outeiro, n.º 296, Canedo de Basto, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0496"
+    "number": "47774-SIM",
+    "address": "Travessa do Souto, n.º 124, Ourilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2357"
    },
    "arquiteto": {
-    "name": "Nuno Exemplo Olga",
+    "name": "Miguel Exemplo Teresa",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "90445-SIM",
-    "address": "Lugar de Vilar, n.º 76, 4700-000 Braga",
-    "policy": "SIM-RC-8823"
+    "number": "39242-SIM",
+    "address": "Travessa do Souto, n.º 66, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3422"
    },
    "engenheiro": {
-    "name": "Teresa Simulado Helena",
+    "name": "Pedro Simulado João",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "51026-SIM",
-    "address": "Lugar de Vilar, n.º 37, 4700-000 Braga",
-    "policy": "SIM-RC-6508"
+    "number": "82536-SIM",
+    "address": "Travessa do Souto, n.º 79, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7268"
    },
    "diretor": {
-    "name": "Miguel Amostra Filipe",
+    "name": "Inês Modelo Bruno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "30504-SIM",
-    "address": "Caminho da Lameira, n.º 91, 4700-000 Braga",
-    "policy": "SIM-RC-5698"
+    "number": "07824-SIM",
+    "address": "Lugar da Devesa, n.º 21, 4700-000 Braga",
+    "policy": "SIM-RC-1693"
    }
   }
  },
@@ -70,7 +70,7 @@
    "basis": "documents",
    "values": {
     "validade_fim": "2026-09-30",
-    "submetido": "2026-11-23"
+    "submetido": "2026-12-05"
    },
    "law": {
     "ref": "V.14",
@@ -78,18 +78,30 @@
    }
   },
   {
-   "type": "wrong_site",
+   "type": "impossible_value",
    "target": {
-    "slot": "TRPARQ"
+    "field": "area_parcela",
+    "slot": "REQ"
    },
    "basis": "documents",
    "values": {
-    "REQ": "Rua do Outeiro, n.º 296, Canedo de Basto, 4890-000 Celorico de Basto",
-    "TRPARQ": "Caminho da Lameira, n.º 46, Veade, 4890-000 Celorico de Basto"
+    "area_parcela": "371 m2",
+    "area_implantacao": "482 m2",
+    "MDARQ": "3710 m2"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "FOTO"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

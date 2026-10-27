@@ -2,94 +2,78 @@
  "expediente": "T1-0041",
  "case": {
   "id": "T1-0041",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
+  "work": "ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
   "pisos": 2,
-  "plot": 1460,
-  "impl": 232,
-  "built": 408,
-  "imperm": 281,
-  "perm": 1179,
-  "volume": 1264,
-  "height": 6.7,
-  "facade": 6.0,
-  "parking": 4,
-  "cost": 357000,
-  "submitted": "2026-11-23",
-  "site": "Caminho da Lameira, n.º 270, Rego, 4890-000 Celorico de Basto",
+  "plot": 2090,
+  "impl": 564,
+  "built": 1106,
+  "imperm": 752,
+  "perm": 1338,
+  "volume": 3428,
+  "height": 7.6,
+  "facade": 6.9,
+  "parking": 2,
+  "cost": 1151300,
+  "submitted": "2026-12-13",
+  "site": "Travessa do Souto, n.º 219, Corgo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 15,
+  "months": 23,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Bruno Amostra Inês",
+    "name": "Leonor Fictício Xavier",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "26532-SIM",
-    "address": "Caminho da Lameira, n.º 270, Rego, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7443"
+    "number": "86082-SIM",
+    "address": "Travessa do Souto, n.º 219, Corgo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7154"
    },
    "arquiteto": {
-    "name": "Xavier Exemplo Nuno",
+    "name": "Inês Modelo João",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "12715-SIM",
-    "address": "Rua das Tílias, n.º 32, 4800-000 Guimarães",
-    "policy": "SIM-RC-5632"
+    "number": "44914-SIM",
+    "address": "Lugar da Devesa, n.º 53, 4800-000 Guimarães",
+    "policy": "SIM-RC-5970"
    },
    "engenheiro": {
-    "name": "Filipe Modelo Diogo",
+    "name": "Miguel de Teste Nuno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "32420-SIM",
-    "address": "Travessa do Souto, n.º 99, 4800-000 Guimarães",
-    "policy": "SIM-RC-4538"
+    "number": "62776-SIM",
+    "address": "Rua da Escola, n.º 48, 4700-000 Braga",
+    "policy": "SIM-RC-4955"
    },
    "diretor": {
-    "name": "Teresa de Teste Leonor",
+    "name": "Filipe de Teste Vasco",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "99926-SIM",
-    "address": "Lugar da Devesa, n.º 53, 4800-000 Guimarães",
-    "policy": "SIM-RC-5970"
+    "number": "17614-SIM",
+    "address": "Lugar de Vilar, n.º 22, 4800-000 Guimarães",
+    "policy": "SIM-RC-2495"
    }
   }
  },
  "planted": [
   {
-   "type": "value_mismatch",
+   "type": "template_wording_missing",
    "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
+    "slot": "TRPARQ"
    },
-   "basis": "documents",
-   "values": {
-    "REQ": "408 m2",
-    "MDARQ": "498 m2"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
-   },
-   "basis": "documents",
-   "values": {
-    "declarante": "Teresa de Teste Leonor",
-    "assinante": "Xavier Exemplo Nuno"
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

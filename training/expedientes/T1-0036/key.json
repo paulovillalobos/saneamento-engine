@@ -2,78 +2,67 @@
  "expediente": "T1-0036",
  "case": {
   "id": "T1-0036",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 2,
-  "plot": 3150,
-  "impl": 1112,
-  "built": 2124,
-  "imperm": 1293,
-  "perm": 1857,
-  "volume": 6584,
-  "height": 7.6,
-  "facade": 6.9,
-  "parking": 4,
-  "cost": 2302400,
-  "submitted": "2026-10-07",
-  "site": "Rua do Outeiro, n.º 59, Molares, 4890-000 Celorico de Basto",
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 460,
+  "impl": 93,
+  "built": 86,
+  "imperm": 115,
+  "perm": 345,
+  "volume": 266,
+  "height": 3.9,
+  "facade": 3.2,
+  "parking": 2,
+  "cost": 63200,
+  "submitted": "2026-12-27",
+  "site": "Lugar de Vilar, n.º 18, Veade, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 12,
+  "months": 14,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Vasco Modelo Diogo",
+    "name": "Gonçalo Exemplo João",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "95574-SIM",
-    "address": "Rua do Outeiro, n.º 59, Molares, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0906"
+    "number": "32853-SIM",
+    "address": "Lugar de Vilar, n.º 18, Veade, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5324"
    },
    "arquiteto": {
-    "name": "Miguel Exemplo Leonor",
+    "name": "Nuno Amostra Carla",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "81543-SIM",
-    "address": "Lugar da Devesa, n.º 29, 4000-000 Porto",
-    "policy": "SIM-RC-0229"
+    "number": "26590-SIM",
+    "address": "Lugar de Vilar, n.º 25, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9524"
    },
    "engenheiro": {
-    "name": "Rita Simulado Filipe",
+    "name": "Olga Modelo Rita",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "34202-SIM",
-    "address": "Rua da Escola, n.º 2, 4700-000 Braga",
-    "policy": "SIM-RC-1387"
+    "number": "48641-SIM",
+    "address": "Rua da Escola, n.º 63, 4000-000 Porto",
+    "policy": "SIM-RC-1717"
    },
    "diretor": {
-    "name": "Sérgio Fictício Bruno",
+    "name": "Vasco Amostra Xavier",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "70226-SIM",
-    "address": "Rua do Outeiro, n.º 27, 4800-000 Guimarães",
-    "policy": "SIM-RC-4732"
+    "number": "57684-SIM",
+    "address": "Lugar da Devesa, n.º 44, 4000-000 Porto",
+    "policy": "SIM-RC-6885"
    }
   }
  },
- "planted": [
-  {
-   "type": "not_pdf",
-   "target": {
-    "slot": "FOTO"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  }
- ],
- "n_planted": 1,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

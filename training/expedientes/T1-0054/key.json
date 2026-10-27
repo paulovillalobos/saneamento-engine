@@ -2,67 +2,78 @@
  "expediente": "T1-0054",
  "case": {
   "id": "T1-0054",
-  "work": "construção de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
   "pisos": 2,
-  "plot": 1710,
-  "impl": 452,
-  "built": 804,
-  "imperm": 554,
-  "perm": 1156,
-  "volume": 2492,
+  "plot": 2820,
+  "impl": 1108,
+  "built": 1969,
+  "imperm": 1207,
+  "perm": 1613,
+  "volume": 6103,
   "height": 7.5,
   "facade": 6.8,
-  "parking": 2,
-  "cost": 915700,
-  "submitted": "2026-11-18",
-  "site": "Rua da Escola, n.º 138, Veade, 4890-000 Celorico de Basto",
+  "parking": 4,
+  "cost": 2370600,
+  "submitted": "2026-11-05",
+  "site": "Travessa do Souto, n.º 257, Canedo de Basto, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 13,
+  "months": 22,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Pedro Exemplo João",
+    "name": "Bruno Exemplo Rita",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "77699-SIM",
-    "address": "Rua da Escola, n.º 138, Veade, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6780"
+    "number": "96635-SIM",
+    "address": "Travessa do Souto, n.º 257, Canedo de Basto, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2051"
    },
    "arquiteto": {
-    "name": "Teresa Modelo Nuno",
+    "name": "Ana Modelo Gonçalo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "63574-SIM",
-    "address": "Rua do Outeiro, n.º 40, 4000-000 Porto",
-    "policy": "SIM-RC-1035"
+    "number": "36215-SIM",
+    "address": "Travessa do Souto, n.º 101, 4800-000 Guimarães",
+    "policy": "SIM-RC-4642"
    },
    "engenheiro": {
-    "name": "Eva Exemplo Diogo",
+    "name": "Ana Amostra Inês",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "48134-SIM",
-    "address": "Caminho da Lameira, n.º 109, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8868"
+    "number": "96010-SIM",
+    "address": "Rua da Escola, n.º 73, 4800-000 Guimarães",
+    "policy": "SIM-RC-1836"
    },
    "diretor": {
-    "name": "João Fictício Diogo",
+    "name": "Diogo Amostra Leonor",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "66777-SIM",
-    "address": "Lugar de Vilar, n.º 59, 4000-000 Porto",
-    "policy": "SIM-RC-7304"
+    "number": "80356-SIM",
+    "address": "Lugar de Carvalhal, n.º 12, 4800-000 Guimarães",
+    "policy": "SIM-RC-8680"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "MDARQ"
+   },
+   "law": {
+    "ref": "V.9",
+    "quote": "9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:"
+   }
+  }
+ ],
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

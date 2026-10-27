@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Nuno Amostra Gonçalo",
+  "name": "João Fictício Nuno",
   "nif": "999999990"
  },
- "site": "Rua do Outeiro, n.º 296, Canedo de Basto, 4890-000 Celorico de Basto",
+ "site": "Travessa do Souto, n.º 124, Ourilhe, 4890-000 Celorico de Basto",
  "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-11-23",
+ "submitted_at": "2026-12-05",
  "files": [
   {
    "slot": "REQ",
@@ -88,7 +88,7 @@
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "MDARQ",
@@ -411,13 +411,6 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "OUTDOC-curriculo.pdf",
-   "title": "Curriculum vitae",
-   "kind": "written",
-   "signed_by": "requerente"
   }
  ]
 }

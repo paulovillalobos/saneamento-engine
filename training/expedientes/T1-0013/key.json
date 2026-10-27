@@ -2,77 +2,74 @@
  "expediente": "T1-0013",
  "case": {
   "id": "T1-0013",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 3,
-  "plot": 3880,
-  "impl": 552,
-  "built": 1652,
-  "imperm": 635,
-  "perm": 3245,
-  "volume": 5121,
-  "height": 10.4,
-  "facade": 9.7,
+  "work": "ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 1,
+  "plot": 2780,
+  "impl": 762,
+  "built": 652,
+  "imperm": 912,
+  "perm": 1868,
+  "volume": 2021,
+  "height": 3.7,
+  "facade": 3.0,
   "parking": 2,
-  "cost": 1564400,
-  "submitted": "2026-12-01",
-  "site": "Rua das Tílias, n.º 80, Ourilhe, 4890-000 Celorico de Basto",
+  "cost": 817600,
+  "submitted": "2026-11-03",
+  "site": "Lugar da Devesa, n.º 35, Ribas, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 16,
+  "months": 8,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Filipe Simulado Xavier",
+    "name": "Filipe Modelo Filipe",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "02327-SIM",
-    "address": "Rua das Tílias, n.º 80, Ourilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6737"
+    "number": "91498-SIM",
+    "address": "Lugar da Devesa, n.º 35, Ribas, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9913"
    },
    "arquiteto": {
-    "name": "Teresa de Teste Eva",
+    "name": "João Fictício Sérgio",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "61564-SIM",
-    "address": "Caminho da Lameira, n.º 63, 4700-000 Braga",
-    "policy": "SIM-RC-7654"
+    "number": "28224-SIM",
+    "address": "Rua do Outeiro, n.º 114, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4409"
    },
    "engenheiro": {
-    "name": "Sérgio Simulado Inês",
+    "name": "Carla Simulado Sérgio",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "67883-SIM",
-    "address": "Travessa do Souto, n.º 96, 4800-000 Guimarães",
-    "policy": "SIM-RC-1143"
+    "number": "87348-SIM",
+    "address": "Lugar da Devesa, n.º 60, 4000-000 Porto",
+    "policy": "SIM-RC-2762"
    },
    "diretor": {
-    "name": "Miguel Simulado Pedro",
+    "name": "João Amostra Teresa",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "03587-SIM",
-    "address": "Lugar de Vilar, n.º 65, 4700-000 Braga",
-    "policy": "SIM-RC-1525"
+    "number": "36358-SIM",
+    "address": "Lugar da Devesa, n.º 79, 4700-000 Braga",
+    "policy": "SIM-RC-6432"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "unsigned",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "slot": "TREECP"
    },
-   "basis": "documents",
-   "values": {
-    "area_parcela": "388 m2",
-    "area_implantacao": "552 m2",
-    "MDARQ": "3880 m2"
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
    }
   }
  ],

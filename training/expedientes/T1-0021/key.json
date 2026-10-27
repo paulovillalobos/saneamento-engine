@@ -2,88 +2,78 @@
  "expediente": "T1-0021",
  "case": {
   "id": "T1-0021",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 1910,
-  "impl": 560,
-  "built": 1043,
-  "imperm": 712,
-  "perm": 1198,
-  "volume": 3233,
-  "height": 7.1,
-  "facade": 6.4,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 3680,
+  "impl": 888,
+  "built": 808,
+  "imperm": 1076,
+  "perm": 2604,
+  "volume": 2504,
+  "height": 4.7,
+  "facade": 4.0,
   "parking": 2,
-  "cost": 1350600,
-  "submitted": "2026-12-10",
-  "site": "Lugar de Carvalhal, n.º 155, Canedo de Basto, 4890-000 Celorico de Basto",
+  "cost": 539700,
+  "submitted": "2026-10-03",
+  "site": "Rua da Escola, n.º 197, Fervença, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
   "months": 22,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Vasco Fictício Teresa",
+    "name": "Inês de Teste Rita",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "22360-SIM",
-    "address": "Lugar de Carvalhal, n.º 155, Canedo de Basto, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6950"
+    "number": "45111-SIM",
+    "address": "Rua da Escola, n.º 197, Fervença, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7926"
    },
    "arquiteto": {
-    "name": "Vasco Simulado Miguel",
+    "name": "Miguel Fictício Olga",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "56164-SIM",
-    "address": "Rua das Tílias, n.º 37, 4000-000 Porto",
-    "policy": "SIM-RC-1483"
+    "number": "20432-SIM",
+    "address": "Rua da Escola, n.º 23, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6026"
    },
    "engenheiro": {
-    "name": "Carla Simulado Nuno",
+    "name": "Eva Modelo João",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "36242-SIM",
-    "address": "Lugar de Carvalhal, n.º 35, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7888"
+    "number": "55121-SIM",
+    "address": "Caminho da Lameira, n.º 66, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6894"
    },
    "diretor": {
-    "name": "Leonor Exemplo Pedro",
+    "name": "Inês Exemplo Leonor",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "16271-SIM",
-    "address": "Lugar de Carvalhal, n.º 46, 4700-000 Braga",
-    "policy": "SIM-RC-6803"
+    "number": "64674-SIM",
+    "address": "Rua do Outeiro, n.º 92, 4800-000 Guimarães",
+    "policy": "SIM-RC-6585"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "template_wording_missing",
    "target": {
-    "slot": "EOCT"
+    "slot": "TRPARQ"
    },
    "law": {
-    "ref": "V.27.f",
-    "quote": "f) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;"
-   }
-  },
-  {
-   "type": "unsigned",
-   "target": {
-    "slot": "TRCP"
-   },
-   "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

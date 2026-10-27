@@ -6,11 +6,11 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Ana Simulado Vasco",
+  "name": "Vasco Exemplo Xavier",
   "nif": "999999990"
  },
- "site": "Lugar de Carvalhal, n.º 187, Arnoia, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
+ "site": "Lugar de Carvalhal, n.º 85, Fervença, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
  "submitted_at": "2026-11-20",
  "files": [
   {
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -140,13 +140,6 @@
    "signed_by": "arquiteto"
   },
   {
-   "slot": "LEVT",
-   "file": "LEVT-levantamento-topografico.pdf",
-   "title": "Levantamento topográfico georreferenciado",
-   "kind": "drawn",
-   "signed_by": "engenheiro"
-  },
-  {
    "slot": "PI",
    "file": "PI-planta-implantacao.pdf",
    "title": "Planta de implantação",
@@ -172,7 +165,7 @@
    "file": "CORTES-cortes.pdf",
    "title": "Cortes",
    "kind": "drawn",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "PC",
@@ -414,8 +407,8 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-fatura-agua.pdf",
-   "title": "Fatura de água",
+   "file": "OUTDOC-lista-elementos.pdf",
+   "title": "Lista de elementos instrutórios",
    "kind": "written",
    "signed_by": "requerente"
   }

@@ -2,83 +2,67 @@
  "expediente": "T1-0034",
  "case": {
   "id": "T1-0034",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
-  "fogos": 0,
-  "pisos": 1,
-  "plot": 550,
-  "impl": 69,
-  "built": 61,
-  "imperm": 170,
-  "perm": 380,
-  "volume": 189,
-  "height": 4.6,
-  "facade": 3.9,
+  "work": "ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 2020,
+  "impl": 742,
+  "built": 1269,
+  "imperm": 856,
+  "perm": 1164,
+  "volume": 3933,
+  "height": 7.3,
+  "facade": 6.6,
   "parking": 2,
-  "cost": 76800,
-  "submitted": "2026-12-18",
-  "site": "Caminho da Lameira, n.º 34, Agilde, 4890-000 Celorico de Basto",
+  "cost": 1454200,
+  "submitted": "2026-12-03",
+  "site": "Lugar de Carvalhal, n.º 172, Veade, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 19,
+  "months": 8,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Olga Exemplo Sérgio",
+    "name": "Filipe de Teste Miguel",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "04097-SIM",
-    "address": "Caminho da Lameira, n.º 34, Agilde, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1654"
+    "number": "29041-SIM",
+    "address": "Lugar de Carvalhal, n.º 172, Veade, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9660"
    },
    "arquiteto": {
-    "name": "Leonor de Teste Miguel",
+    "name": "Diogo Exemplo Leonor",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "99341-SIM",
-    "address": "Rua da Escola, n.º 82, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9548"
+    "number": "67668-SIM",
+    "address": "Rua das Tílias, n.º 106, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5594"
    },
    "engenheiro": {
-    "name": "Carla Exemplo Carla",
+    "name": "Inês Modelo Miguel",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "71724-SIM",
-    "address": "Lugar de Carvalhal, n.º 43, 4000-000 Porto",
-    "policy": "SIM-RC-2634"
+    "number": "05928-SIM",
+    "address": "Travessa do Souto, n.º 99, 4700-000 Braga",
+    "policy": "SIM-RC-4351"
    },
    "diretor": {
-    "name": "Leonor de Teste Gonçalo",
+    "name": "Nuno Modelo João",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "20155-SIM",
-    "address": "Lugar de Vilar, n.º 76, 4000-000 Porto",
-    "policy": "SIM-RC-6619"
+    "number": "76205-SIM",
+    "address": "Travessa do Souto, n.º 10, 4700-000 Braga",
+    "policy": "SIM-RC-4380"
    }
   }
  },
- "planted": [
-  {
-   "type": "value_mismatch",
-   "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "61 m2",
-    "MDARQ": "137 m2"
-   }
-  }
- ],
- "n_planted": 1,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

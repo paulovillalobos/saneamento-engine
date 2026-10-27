@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Vasco Fictício Teresa",
+  "name": "Inês de Teste Rita",
   "nif": "999999990"
  },
- "site": "Lugar de Carvalhal, n.º 155, Canedo de Basto, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-12-10",
+ "site": "Rua da Escola, n.º 197, Fervença, 4890-000 Celorico de Basto",
+ "operation": "construção de armazém agrícola",
+ "submitted_at": "2026-10-03",
  "files": [
   {
    "slot": "REQ",
@@ -46,7 +46,7 @@
    "file": "TRCP-termo-coordenador.pdf",
    "title": "Termo de responsabilidade do coordenador de projeto",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCCP",
@@ -101,6 +101,13 @@
    "slot": "CEO",
    "file": "CEO-calendarizacao.pdf",
    "title": "Calendarização da execução da obra",
+   "kind": "written",
+   "signed_by": "arquiteto"
+  },
+  {
+   "slot": "EOCT",
+   "file": "EOCT-estimativa-custo.pdf",
+   "title": "Estimativa do custo total da obra",
    "kind": "written",
    "signed_by": "arquiteto"
   },
@@ -404,6 +411,13 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "OUTDOC-fatura-agua.pdf",
+   "title": "Fatura de água",
+   "kind": "written",
+   "signed_by": "requerente"
   }
  ]
 }

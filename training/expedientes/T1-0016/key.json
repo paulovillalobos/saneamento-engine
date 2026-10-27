@@ -2,78 +2,67 @@
  "expediente": "T1-0016",
  "case": {
   "id": "T1-0016",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
   "pisos": 1,
-  "plot": 860,
-  "impl": 385,
-  "built": 329,
-  "imperm": 406,
-  "perm": 454,
-  "volume": 1019,
-  "height": 4.6,
-  "facade": 3.9,
+  "plot": 2510,
+  "impl": 458,
+  "built": 423,
+  "imperm": 511,
+  "perm": 1999,
+  "volume": 1311,
+  "height": 4.5,
+  "facade": 3.8,
   "parking": 2,
-  "cost": 321400,
-  "submitted": "2026-11-28",
-  "site": "Caminho da Lameira, n.º 101, Ourilhe, 4890-000 Celorico de Basto",
+  "cost": 357800,
+  "submitted": "2026-12-15",
+  "site": "Rua das Tílias, n.º 169, Fervença, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 13,
+  "months": 16,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Eva Simulado Ana",
+    "name": "Helena Fictício Bruno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "51760-SIM",
-    "address": "Caminho da Lameira, n.º 101, Ourilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9253"
+    "number": "78060-SIM",
+    "address": "Rua das Tílias, n.º 169, Fervença, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9919"
    },
    "arquiteto": {
-    "name": "Nuno de Teste Eva",
+    "name": "Teresa Amostra Sérgio",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "11422-SIM",
-    "address": "Lugar de Carvalhal, n.º 84, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0237"
+    "number": "08969-SIM",
+    "address": "Lugar da Devesa, n.º 71, 4800-000 Guimarães",
+    "policy": "SIM-RC-8817"
    },
    "engenheiro": {
-    "name": "Bruno Modelo Bruno",
+    "name": "Gonçalo Amostra Teresa",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "69800-SIM",
-    "address": "Lugar de Vilar, n.º 6, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1925"
+    "number": "56590-SIM",
+    "address": "Travessa do Souto, n.º 92, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1185"
    },
    "diretor": {
-    "name": "Olga Simulado Gonçalo",
+    "name": "Inês Fictício Diogo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "04620-SIM",
-    "address": "Lugar de Carvalhal, n.º 82, 4700-000 Braga",
-    "policy": "SIM-RC-4576"
+    "number": "20793-SIM",
+    "address": "Rua da Escola, n.º 118, 4700-000 Braga",
+    "policy": "SIM-RC-7015"
    }
   }
  },
- "planted": [
-  {
-   "type": "not_pdf",
-   "target": {
-    "slot": "FOTO"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  }
- ],
- "n_planted": 1,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

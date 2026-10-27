@@ -1,0 +1,96 @@
+{
+ "expediente": "T1-0060",
+ "case": {
+  "id": "T1-0060",
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 860,
+  "impl": 111,
+  "built": 209,
+  "imperm": 165,
+  "perm": 695,
+  "volume": 647,
+  "height": 7.3,
+  "facade": 6.6,
+  "parking": 2,
+  "cost": 141200,
+  "submitted": "2026-11-24",
+  "site": "Rua da Escola, n.º 287, Corgo, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 23,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Filipe Modelo Ana",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "30356-SIM",
+    "address": "Rua da Escola, n.º 287, Corgo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2247"
+   },
+   "arquiteto": {
+    "name": "Leonor Modelo Carla",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "68823-SIM",
+    "address": "Caminho da Lameira, n.º 25, 4800-000 Guimarães",
+    "policy": "SIM-RC-0130"
+   },
+   "engenheiro": {
+    "name": "Teresa de Teste Miguel",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "34939-SIM",
+    "address": "Rua das Tílias, n.º 112, 4800-000 Guimarães",
+    "policy": "SIM-RC-8686"
+   },
+   "diretor": {
+    "name": "Sérgio Modelo Pedro",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "37561-SIM",
+    "address": "Travessa do Souto, n.º 24, 4800-000 Guimarães",
+    "policy": "SIM-RC-9221"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Sérgio Modelo Pedro",
+    "assinante": "Leonor Modelo Carla"
+   }
+  }
+ ],
+ "n_planted": 1,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}

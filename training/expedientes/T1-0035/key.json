@@ -2,74 +2,79 @@
  "expediente": "T1-0035",
  "case": {
   "id": "T1-0035",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 1,
-  "plot": 2180,
-  "impl": 773,
-  "built": 746,
-  "imperm": 856,
-  "perm": 1324,
-  "volume": 2312,
-  "height": 4.6,
-  "facade": 3.9,
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 1640,
+  "impl": 310,
+  "built": 552,
+  "imperm": 452,
+  "perm": 1188,
+  "volume": 1711,
+  "height": 6.7,
+  "facade": 6.0,
   "parking": 2,
-  "cost": 687000,
-  "submitted": "2026-11-18",
-  "site": "Caminho da Lameira, n.º 294, Agilde, 4890-000 Celorico de Basto",
+  "cost": 648000,
+  "submitted": "2026-11-26",
+  "site": "Rua do Outeiro, n.º 279, Borba de Montanha, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 10,
+  "months": 18,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Carla Amostra Filipe",
+    "name": "Leonor de Teste Sérgio",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "36034-SIM",
-    "address": "Caminho da Lameira, n.º 294, Agilde, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4628"
+    "number": "18465-SIM",
+    "address": "Rua do Outeiro, n.º 279, Borba de Montanha, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0611"
    },
    "arquiteto": {
-    "name": "Teresa Amostra Inês",
+    "name": "Ana de Teste Olga",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "31782-SIM",
-    "address": "Rua do Outeiro, n.º 13, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7872"
+    "number": "99275-SIM",
+    "address": "Lugar de Vilar, n.º 114, 4000-000 Porto",
+    "policy": "SIM-RC-9640"
    },
    "engenheiro": {
-    "name": "Bruno Amostra Sérgio",
+    "name": "Sérgio Exemplo Filipe",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "40495-SIM",
-    "address": "Rua do Outeiro, n.º 106, 4000-000 Porto",
-    "policy": "SIM-RC-9023"
+    "number": "26876-SIM",
+    "address": "Rua do Outeiro, n.º 15, 4700-000 Braga",
+    "policy": "SIM-RC-9613"
    },
    "diretor": {
-    "name": "Leonor de Teste João",
+    "name": "Sérgio Simulado Inês",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "68655-SIM",
-    "address": "Lugar de Vilar, n.º 5, 4800-000 Guimarães",
-    "policy": "SIM-RC-5963"
+    "number": "61074-SIM",
+    "address": "Rua do Outeiro, n.º 101, 4000-000 Porto",
+    "policy": "SIM-RC-5920"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "value_mismatch",
    "target": {
-    "slot": "CRP"
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
    },
-   "law": {
-    "ref": "V.5",
-    "quote": "5 - Indicação do código de acesso à certidão permanente do registo predial referente ao prédio ou prédios abrangidos pela operação urbanística ou, quando omisso, a respetiva certidão negativa do registo predial, acompanhada da caderneta predial da qual constem os correspondentes artigos matriciais;"
+   "basis": "documents",
+   "values": {
+    "REQ": "552 m2",
+    "MDARQ": "610 m2"
    }
   }
  ],

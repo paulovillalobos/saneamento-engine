@@ -2,74 +2,79 @@
  "expediente": "T1-0050",
  "case": {
   "id": "T1-0050",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 2260,
-  "impl": 277,
-  "built": 525,
-  "imperm": 386,
-  "perm": 1874,
-  "volume": 1627,
-  "height": 7.3,
-  "facade": 6.6,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 1120,
+  "impl": 178,
+  "built": 166,
+  "imperm": 231,
+  "perm": 889,
+  "volume": 514,
+  "height": 4.1,
+  "facade": 3.4,
   "parking": 2,
-  "cost": 672000,
-  "submitted": "2026-10-08",
-  "site": "Travessa do Souto, n.º 164, Ourilhe, 4890-000 Celorico de Basto",
+  "cost": 164500,
+  "submitted": "2026-12-26",
+  "site": "Lugar da Devesa, n.º 71, Arnoia, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 14,
+  "months": 19,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "João Simulado Olga",
+    "name": "Filipe Fictício Helena",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "01518-SIM",
-    "address": "Travessa do Souto, n.º 164, Ourilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2511"
+    "number": "91837-SIM",
+    "address": "Lugar da Devesa, n.º 71, Arnoia, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0562"
    },
    "arquiteto": {
-    "name": "Diogo Modelo Filipe",
+    "name": "Carla Fictício Teresa",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "99758-SIM",
-    "address": "Lugar da Devesa, n.º 19, 4800-000 Guimarães",
-    "policy": "SIM-RC-7160"
+    "number": "62457-SIM",
+    "address": "Lugar de Vilar, n.º 27, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2259"
    },
    "engenheiro": {
-    "name": "Leonor Modelo Sérgio",
+    "name": "Inês Amostra Miguel",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "37331-SIM",
-    "address": "Rua do Outeiro, n.º 25, 4700-000 Braga",
-    "policy": "SIM-RC-2700"
+    "number": "09500-SIM",
+    "address": "Rua das Tílias, n.º 61, 4000-000 Porto",
+    "policy": "SIM-RC-8668"
    },
    "diretor": {
-    "name": "Teresa Fictício Eva",
+    "name": "Pedro Fictício Helena",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "16707-SIM",
-    "address": "Lugar de Carvalhal, n.º 75, 4700-000 Braga",
-    "policy": "SIM-RC-7067"
+    "number": "28018-SIM",
+    "address": "Rua da Escola, n.º 93, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0691"
    }
   }
  },
  "planted": [
   {
-   "type": "unsigned",
+   "type": "expired_insurance",
    "target": {
-    "slot": "TRPLAC"
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-26"
    },
    "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
    }
   }
  ],

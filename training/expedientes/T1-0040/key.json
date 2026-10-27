@@ -2,99 +2,78 @@
  "expediente": "T1-0040",
  "case": {
   "id": "T1-0040",
-  "work": "alteração e ampliação de moradia unifamiliar",
+  "work": "construção de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 3960,
-  "impl": 561,
-  "built": 955,
-  "imperm": 718,
-  "perm": 3242,
-  "volume": 2960,
-  "height": 7.0,
-  "facade": 6.3,
+  "plot": 1520,
+  "impl": 200,
+  "built": 359,
+  "imperm": 250,
+  "perm": 1270,
+  "volume": 1112,
+  "height": 6.6,
+  "facade": 5.9,
   "parking": 2,
-  "cost": 638800,
-  "submitted": "2026-12-01",
-  "site": "Rua do Outeiro, n.º 241, Codeçoso, 4890-000 Celorico de Basto",
+  "cost": 301200,
+  "submitted": "2026-12-21",
+  "site": "Travessa do Souto, n.º 95, Codeçoso, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 16,
+  "months": 15,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "João Modelo Teresa",
+    "name": "Filipe de Teste Diogo",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "69356-SIM",
-    "address": "Rua do Outeiro, n.º 241, Codeçoso, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2993"
+    "number": "08706-SIM",
+    "address": "Travessa do Souto, n.º 95, Codeçoso, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1030"
    },
    "arquiteto": {
-    "name": "Gonçalo Exemplo Bruno",
+    "name": "Pedro Fictício Helena",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "32272-SIM",
-    "address": "Lugar de Carvalhal, n.º 5, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5353"
+    "number": "06650-SIM",
+    "address": "Caminho da Lameira, n.º 45, 4000-000 Porto",
+    "policy": "SIM-RC-9660"
    },
    "engenheiro": {
-    "name": "Olga Simulado Ana",
+    "name": "Carla Exemplo Gonçalo",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "74734-SIM",
-    "address": "Lugar de Vilar, n.º 65, 4000-000 Porto",
-    "policy": "SIM-RC-3029"
+    "number": "30859-SIM",
+    "address": "Lugar de Vilar, n.º 16, 4000-000 Porto",
+    "policy": "SIM-RC-3316"
    },
    "diretor": {
-    "name": "Gonçalo Fictício Filipe",
+    "name": "Bruno Amostra Diogo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "40870-SIM",
-    "address": "Travessa do Souto, n.º 8, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2397"
+    "number": "12458-SIM",
+    "address": "Rua do Outeiro, n.º 37, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8638"
    }
   }
  },
  "planted": [
   {
-   "type": "template_wording_missing",
+   "type": "not_pdf",
    "target": {
-    "slot": "TRPARQ"
+    "slot": "CORTES"
    },
    "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
-   }
-  },
-  {
-   "type": "unsigned",
-   "target": {
-    "slot": "TRPLAC"
-   },
-   "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
-   }
-  },
-  {
-   "type": "wrong_site",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "Rua do Outeiro, n.º 241, Codeçoso, 4890-000 Celorico de Basto",
-    "TRPARQ": "Rua do Outeiro, n.º 23, Gagos, 4890-000 Celorico de Basto"
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   }
  ],
- "n_planted": 3,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

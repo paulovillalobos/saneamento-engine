@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Xavier Fictício Inês",
+  "name": "Pedro Fictício Teresa",
   "nif": "999999990"
  },
- "site": "Lugar de Carvalhal, n.º 297, Arnoia, 4890-000 Celorico de Basto",
+ "site": "Rua do Outeiro, n.º 140, Gagos, 4890-000 Celorico de Basto",
  "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-10-17",
+ "submitted_at": "2026-10-18",
  "files": [
   {
    "slot": "REQ",
@@ -414,8 +414,8 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-curriculo.pdf",
-   "title": "Curriculum vitae",
+   "file": "OUTDOC-ficha-verificacao.pdf",
+   "title": "Ficha de verificação",
    "kind": "written",
    "signed_by": "requerente"
   }

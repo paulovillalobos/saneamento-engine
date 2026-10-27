@@ -2,74 +2,79 @@
  "expediente": "T1-0049",
  "case": {
   "id": "T1-0049",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 3590,
-  "impl": 801,
-  "built": 1542,
-  "imperm": 865,
-  "perm": 2725,
-  "volume": 4780,
-  "height": 6.7,
-  "facade": 6.0,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 1550,
+  "impl": 585,
+  "built": 576,
+  "imperm": 620,
+  "perm": 930,
+  "volume": 1785,
+  "height": 4.0,
+  "facade": 3.3,
   "parking": 2,
-  "cost": 1286000,
-  "submitted": "2026-11-05",
-  "site": "Lugar de Carvalhal, n.º 55, Britelo, 4890-000 Celorico de Basto",
+  "cost": 391600,
+  "submitted": "2026-11-12",
+  "site": "Lugar da Devesa, n.º 210, Codeçoso, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 11,
+  "months": 17,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Teresa de Teste Leonor",
+    "name": "Helena de Teste Nuno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "65784-SIM",
-    "address": "Lugar de Carvalhal, n.º 55, Britelo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9214"
+    "number": "92567-SIM",
+    "address": "Lugar da Devesa, n.º 210, Codeçoso, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0138"
    },
    "arquiteto": {
-    "name": "Vasco Exemplo Leonor",
+    "name": "Nuno Amostra Miguel",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "64495-SIM",
-    "address": "Rua das Tílias, n.º 106, 4700-000 Braga",
-    "policy": "SIM-RC-2722"
+    "number": "80196-SIM",
+    "address": "Rua do Outeiro, n.º 30, 4000-000 Porto",
+    "policy": "SIM-RC-5248"
    },
    "engenheiro": {
-    "name": "Helena Modelo Gonçalo",
+    "name": "Nuno Fictício João",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "78920-SIM",
-    "address": "Rua do Outeiro, n.º 7, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1009"
+    "number": "13549-SIM",
+    "address": "Rua das Tílias, n.º 1, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1528"
    },
    "diretor": {
-    "name": "Leonor Exemplo Ana",
+    "name": "Olga Fictício Diogo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "46125-SIM",
-    "address": "Lugar da Devesa, n.º 47, 4800-000 Guimarães",
-    "policy": "SIM-RC-3427"
+    "number": "70941-SIM",
+    "address": "Lugar de Vilar, n.º 97, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2364"
    }
   }
  },
  "planted": [
   {
-   "type": "not_pdfa",
+   "type": "value_mismatch",
    "target": {
-    "slot": "MDARQ"
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
    },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   "basis": "documents",
+   "values": {
+    "REQ": "576 m2",
+    "MDARQ": "632 m2"
    }
   }
  ],

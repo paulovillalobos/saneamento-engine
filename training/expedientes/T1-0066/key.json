@@ -1,0 +1,115 @@
+{
+ "expediente": "T1-0066",
+ "case": {
+  "id": "T1-0066",
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 2530,
+  "impl": 459,
+  "built": 898,
+  "imperm": 563,
+  "perm": 1967,
+  "volume": 2783,
+  "height": 7.8,
+  "facade": 7.1,
+  "parking": 2,
+  "cost": 929400,
+  "submitted": "2026-10-21",
+  "site": "Lugar da Devesa, n.º 295, Carvalho, 4890-000 Celorico de Basto",
+  "start": "janeiro de 2027",
+  "months": 12,
+  "insurance_from": "2026-01-01",
+  "insurance_to": "2026-12-31",
+  "people": {
+   "requerente": {
+    "name": "Diogo Modelo Gonçalo",
+    "role": "requerente",
+    "title": null,
+    "body": null,
+    "number": "63555-SIM",
+    "address": "Lugar da Devesa, n.º 295, Carvalho, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3332"
+   },
+   "arquiteto": {
+    "name": "João Fictício Eva",
+    "role": "arquiteto",
+    "title": "arquiteto",
+    "body": "Ordem dos Arquitectos",
+    "number": "85769-SIM",
+    "address": "Rua das Tílias, n.º 55, 4800-000 Guimarães",
+    "policy": "SIM-RC-5749"
+   },
+   "engenheiro": {
+    "name": "Bruno Modelo Carla",
+    "role": "engenheira",
+    "title": "engenheira civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "04193-SIM",
+    "address": "Lugar da Devesa, n.º 32, 4700-000 Braga",
+    "policy": "SIM-RC-3498"
+   },
+   "diretor": {
+    "name": "Nuno Exemplo Sérgio",
+    "role": "diretor de obra",
+    "title": "engenheiro civil",
+    "body": "Ordem dos Engenheiros",
+    "number": "78233-SIM",
+    "address": "Caminho da Lameira, n.º 55, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7897"
+   }
+  }
+ },
+ "planted": [
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "IMPIC"
+   },
+   "law": {
+    "ref": "V.27.j",
+    "quote": "j) Número do alvará, ou do certificado, ou número de outro título habilitante emitido pelo IMPIC, I. P., que confira habilitações adequadas à natureza ou valor da obra;"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TREECP"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  }
+ ],
+ "n_planted": 3,
+ "always": [
+  {
+   "type": "missing_complement",
+   "target": {
+    "slot": "PI"
+   },
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "note": "no DWG can be produced here"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "note": "test certificates"
+  }
+ ]
+}
