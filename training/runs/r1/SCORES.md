@@ -15,3 +15,9 @@ model amalia-llm/AMALIA-9B-0626-DPO@c4614b9b5c7b adapter amalia-saneamento-r1 an
 
 - **d2_facto** n=1148; valor 658/1148 (57%); pagina 1034/1035 (100%); valor_e_pagina 657/1035 (63%); citacao_contem 867/1035 (84%); inventado 112; malformed 1
 
+# training/runs/r1/d1.json
+
+model amalia-llm/AMALIA-9B-0626-DPO@c4614b9b5c7b adapter amalia-saneamento-r1 answered 1145 skipped 0 load 105.2s gen 489.9s
+
+- **d1_elemento** n=1145; citacao 0/367 (0%); elemento 0/1145 (0%); tipo 305/1145 (27%); inventado 50; malformed 728
+
