@@ -1,0 +1,116 @@
+{
+ "adapter": "amalia-saneamento-r1b",
+ "volume": "amalia-saneamento-lora",
+ "base": {
+  "model": "amalia-llm/AMALIA-9B-0626-DPO",
+  "revision": "c4614b9b5c7b4fe303fa20902e692fc7dface640"
+ },
+ "sets": [
+  "d0"
+ ],
+ "set_sha256": {
+  "d0": "4a800fa6ade2ab48676d818b1fbd2953c536669d73f22262e23699cfaf950ee2"
+ },
+ "repeat": {},
+ "mixture": {
+  "d0": 3651
+ },
+ "examples_in_mix": 3651,
+ "hyperparameters": {
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj",
+   "gate_proj",
+   "up_proj",
+   "down_proj"
+  ],
+  "epochs": 2,
+  "lr": 0.0001,
+  "warmup_steps": 20,
+  "effective_batch": 16,
+  "tokens_per_batch": 24000,
+  "max_len": 8192,
+  "optimizer": "AdamW (weight_decay 0)",
+  "schedule": "linear warm-up, linear decay to 0",
+  "precision": "bf16",
+  "grad_clip": 1.0,
+  "seed": 0,
+  "gpu": "H100"
+ },
+ "repo_commit": "453ab1560a45a7425405827b5887980f2c9d4795",
+ "repo_dirty_training_or_law": false,
+ "started": "2026-10-27T20:45:18Z",
+ "finished": "2026-10-27T20:51:23Z",
+ "modal_app": "ap-gIUejJpJ4bJrd7U64GPuSr",
+ "modal_function_call": "fc-01M5ZHRFVZPVQ96BFQAMRX3TBB",
+ "result": {
+  "examples": 3651,
+  "dropped": 0,
+  "tokens": 752540,
+  "trainable_params": 50921472,
+  "steps": 64,
+  "seconds": 336.7,
+  "log": [
+   {
+    "step": 1,
+    "epoch": 1,
+    "loss": 2.7619,
+    "seen": 104,
+    "seconds": 7.6
+   },
+   {
+    "step": 10,
+    "epoch": 1,
+    "loss": 2.1841,
+    "seen": 1180,
+    "seconds": 58.4
+   },
+   {
+    "step": 20,
+    "epoch": 1,
+    "loss": 1.4686,
+    "seen": 2271,
+    "seconds": 110.5
+   },
+   {
+    "step": 30,
+    "epoch": 1,
+    "loss": 0.7329,
+    "seen": 3482,
+    "seconds": 161.4
+   },
+   {
+    "step": 40,
+    "epoch": 2,
+    "loss": 0.492,
+    "seen": 4676,
+    "seconds": 211.7
+   },
+   {
+    "step": 50,
+    "epoch": 2,
+    "loss": 0.943,
+    "seen": 5799,
+    "seconds": 261.5
+   },
+   {
+    "step": 60,
+    "epoch": 2,
+    "loss": 0.2911,
+    "seen": 6908,
+    "seconds": 311.9
+   }
+  ],
+  "adapter_files": {
+   "README.md": "e884ecb21e8e49712a8ae49780938098a302d987f2269689d0b670f6bb21a101",
+   "adapter_config.json": "aa71fd70585bfa8d16cdece52bae509859e379280f84c830db1a549babf5e214",
+   "adapter_model.safetensors": "360ebd8e3e1ebbb38ba664cbb7c6ce30f4e9af77e2d8ec89d1a628b82cfb50de"
+  }
+ },
+ "cost_usd": "see COST.json (modal billing report)"
+}
