@@ -41,6 +41,26 @@ SPECIALTIES = [("TREECP", "SRCEST", "MDEECP", "PDEECP", "estabilidade, de escava
                ("TRPIE", "SRCIE", "MDPIE", "PDPIE", "instalações elétricas"), ("TRRPAE", "SRCPAE", "MDRPAE", "PDRPAE", "redes prediais de água e esgotos"),
                ("TRPAP", "SRCAP", "MDPAP", "PDPAP", "águas pluviais"), ("TRITED", "SRITED", "MDITED", "PDITED", "infraestruturas de telecomunicações (ITED)"),
                ("TRPCT", "SRCCT", "MDPCT", "PDPCT", "comportamento térmico"), ("TRPCA", "SRCCA", "MDPCA", "PDPCA", "condicionamento acústico")]
+def _real_sentences():
+    """Sentences of the real public memórias (sources/real/memorias), texture for long generated memórias; loaded once, no PDF text reused as a key."""
+    try:
+        from pypdf import PdfReader
+    except ImportError:
+        return []
+    out = []
+    for f in sorted((ROOT / "sources" / "real" / "memorias").glob("*.pdf")):
+        try:
+            t = " ".join((pg.extract_text() or "") for pg in PdfReader(str(f)).pages)
+        except Exception:
+            continue
+        for sent in re.split(r"(?<=[.;])\s+", " ".join(t.split())):
+            if 60 <= len(sent) <= 260 and len(sent.split()) >= 8 and sum(ch.isupper() for ch in sent) < 0.2 * sum(ch.isalpha() for ch in sent) \
+                    and not re.search(r"\d{2,}\s?m2|m²|fogos|€|\.{4,}|www\.|@|\|", sent):
+                out.append(sent.strip())
+    return out
+
+
+REAL = _real_sentences()
 REQUIRED_ALWAYS = ["REQ", "CRP", "TRPARQ", "SRCARQ", "TRCP", "SRCCP", "FOTO", "MDARQ", "CEO", "EOCT", "OUTDOC", "P10000", "LEVT", "PI", "PLANT", "ALC", "CORTES", "PC", "FEE", "IMPIC", "ASAT"]
 ERRORS = ["missing_required", "template_wording_missing", "unsigned", "not_pdf", "not_pdfa", "value_mismatch", "impossible_value", "wrong_site", "expired_insurance", "wrong_signer"]
 
@@ -115,10 +135,19 @@ def doc_request(c, override=None):
     return d, facts
 
 
-def doc_memory(c, override=None):
+def doc_memory(c, override=None, long=False, rng=None):
     o = override or {}
     a = c["people"]["arquiteto"]
     d = G.Doc("Memória descritiva e justificativa")
+    if long and REAL and rng:
+        d.text(f"Requerente: {c['people']['requerente']['name']}    Operação: {c['work']}    Local: {c['site']}", size=9)
+        d.text("ÍNDICE", bold=True)
+        for i, h in enumerate(["INTRODUÇÃO", "ÁREA DE INTERVENÇÃO", "ENQUADRAMENTO", "ENQUADRAMENTO JURÍDICO", "ENQUADRAMENTO URBANÍSTICO", "PROGRAMA DE INTERVENÇÃO", "QUADRO SINÓPTICO"], 1):
+            d.text(f"{i}. {h} ........ {i + 2}", size=9)
+        d.text("1. INTRODUÇÃO", bold=True)
+        for _ in range(rng.randrange(2, 5)):
+            d.text(rng.choice(REAL))
+        d.text("2. ÁREA DE INTERVENÇÃO", bold=True)
     d.text(f"A presente memória descritiva e justificativa respeita à {c['work']}, localizada em {c['site']}, concelho de Celorico de Basto, "
            f"em prédio com a área de {o.get('plot', c['plot'])} m2.")
     d.text("A pretensão insere-se em Solo Urbano, conforme a Planta de Ordenamento do Plano Diretor Municipal de Celorico de Basto "
@@ -129,6 +158,12 @@ def doc_memory(c, override=None):
     d.text("Enquadramento urbanístico: a operação cumpre os parâmetros de edificabilidade do PDM para a categoria de solo em causa, nomeadamente o índice de "
            "ocupação, o número máximo de pisos e a altura da fachada, e respeita os afastamentos regulamentares. O arranjo exterior prevê a manutenção da "
            "permeabilidade do solo na parte não edificada da parcela.")
+    if long and REAL and rng:
+        for h in ("3. ENQUADRAMENTO", "3.1. ENQUADRAMENTO JURÍDICO", "3.2. ENQUADRAMENTO URBANÍSTICO", "4. PROGRAMA DE INTERVENÇÃO"):
+            d.text(h, bold=True)
+            for _ in range(rng.randrange(2, 6)):
+                d.text(rng.choice(REAL))
+        d.text("5. QUADRO SINÓPTICO", bold=True)
     pg_q = d.text(f"Quadro sinóptico: superfície do terreno {o.get('plot', c['plot'])} m2; área de implantação {c['impl']} m2; área total de construção "
                   f"{o.get('built', c['built'])} m2; área permeável {c['perm']} m2; área impermeabilizada {c['imperm']} m2; volume {c['volume']} m3; "
                   f"altura da edificação {str(c['height']).replace('.', ',')} m; altura da fachada {str(c['facade']).replace('.', ',')} m.", tag="quadro")
@@ -246,7 +281,7 @@ def documents(c, plan):
             ("CCDO", "contrato-diretor-obra", "Comprovativo de contratação do diretor de obra", "written", "requerente",
              *doc_plain(c, "Comprovativo de contratação do diretor de obra", req, f"Declara-se que {dire['name']} foi contratado para exercer a função de diretor de obra da {c['work']}, por contrato de 1 de outubro de 2026 (fictício).")),
             ("FOTO", "registo-fotografico", "Registo fotográfico da situação existente", "written", "arquiteto", *doc_photo(c, arq)),
-            ("MDARQ", "memoria-descritiva", "Memória descritiva e justificativa", "written", "arquiteto", *doc_memory(c, ov_mem)),
+            ("MDARQ", "memoria-descritiva", "Memória descritiva e justificativa", "written", "arquiteto", *doc_memory(c, ov_mem, long=plan.get("long_memoria", False), rng=random.Random(c["id"] + "m"))),
             ("CEO", "calendarizacao", "Calendarização da execução da obra", "written", "arquiteto",
              *doc_plain(c, "Calendarização da execução da obra", arq, f"Início previsto dos trabalhos: {c['start']}. Duração prevista: {c['months']} meses.", facts=[("prazo_meses", str(c["months"]), "meses", 0)])),
             ("EOCT", "estimativa-custo", "Estimativa do custo total da obra", "written", "arquiteto",
@@ -281,9 +316,31 @@ def documents(c, plan):
 
 
 def noise_doc(c, rng):
-    """A file that is no element at all (the reader must say so)."""
-    kind = rng.choice(["fatura", "cv", "carta"])
+    """A file that is no element at all (the reader must say so): invoice, CV, letter, a municipal checklist, a regulation extract, a file-naming list."""
+    kind = rng.choice(["fatura", "cv", "carta", "ficha", "regulamento", "lista"])
     p = c["people"]["requerente"]
+    if kind == "ficha":
+        d = G.Doc("Ficha de verificação de elementos instrutórios")
+        d.text("Conjuntamente com o requerimento, o pedido deve ser instruído com os seguintes elementos (assinale):")
+        for i, el in enumerate(["Certidão da descrição e de todas as inscrições em vigor", "Delimitação da área objeto da operação em planta de localização", "Memória descritiva e justificativa",
+                                "Termos de responsabilidade dos autores dos projetos", "Levantamento topográfico", "Estimativa do custo total da obra", "Calendarização da execução"], 1):
+            d.text(f"{i}) {el}   Sim [ ]  Não [ ]")
+        return ("OUTDOC", "ficha-verificacao", "Ficha de verificação", d)
+    if kind == "regulamento":
+        d = G.Doc("Regulamento municipal de instrução de processos em formato digital (extrato)")
+        for i, t in enumerate(["A apresentação de pedidos é realizada informaticamente através de plataforma eletrónica disponibilizada na página do município.",
+                               "Os elementos são apresentados sob a forma de ficheiros em formato digital nos termos do presente regulamento.",
+                               "O nome dos ficheiros não pode ter mais de 40 caracteres alfanuméricos, sem espaços nem caracteres especiais.",
+                               "Os ficheiros individuais que constituem o processo não podem ultrapassar os tamanhos máximos fixados no anexo."], 1):
+            d.text(f"Artigo {i}.º", bold=True); d.text(t)
+        return ("OUTDOC", "regulamento-extrato", "Regulamento municipal (extrato)", d)
+    if kind == "lista":
+        d = G.Doc("Lista de elementos instrutórios com nomeação dos ficheiros")
+        d.text("Designação do elemento instrutório | Nome do ficheiro | Formato", bold=True)
+        for el, nm in [("Requerimento", "01_requerimento.pdf"), ("Memória descritiva e justificativa", "02_memoria.pdf"), ("Planta de localização", "03_planta_loc.pdf"),
+                       ("Projeto de arquitetura - plantas", "04_plantas.dwfx"), ("Termo de responsabilidade do autor do projeto de arquitetura", "05_tr_arq.pdf")]:
+            d.text(f"{el} | {nm} | PDF/A")
+        return ("OUTDOC", "lista-elementos", "Lista de elementos instrutórios", d)
     if kind == "fatura":
         return ("OUTDOC", "fatura-agua", "Fatura de água", doc_plain(c, "Fatura", p, f"Águas de Basto (fictícia). Consumidor {p['name']}. Período 2026-08. Consumo 23 m3. Total 31,40 €.")[0])
     if kind == "cv":
@@ -293,6 +350,8 @@ def noise_doc(c, rng):
 
 def plant(rng, c, n_err):
     plan, findings = {}, []
+    if rng.random() < 0.35:
+        plan["long_memoria"] = True
     choices = rng.sample(ERRORS, n_err)
     for e in choices:
         if e == "missing_required":
@@ -359,11 +418,12 @@ def build_one(rng, cid, out_dir, n_err, with_noise):
         (folder / fname).write_bytes(data)
         signed_by = None if code in plan.get("unsigned", set()) or code in plan.get("not_pdf", set()) else signer
         files.append({"slot": code, "file": fname, "title": title, "kind": kind, "signed_by": signed_by})
-        passages = DOCS.get(code, {}).get("passages", []) if stem not in ("fatura-agua", "curriculo", "carta") else []
+        NOISE = ("fatura-agua", "curriculo", "carta", "ficha-verificacao", "regulamento-extrato", "lista-elementos")
+        passages = DOCS.get(code, {}).get("passages", []) if stem not in NOISE else []
         labels.append({"expediente": cid, "file": fname, "slot": code, "title": title, "kind": kind, "pages": len(d.pages), "is_pdf": code not in plan.get("not_pdf", set()),
                        "pdfa": code not in plan.get("no_pdfa", set()) and code not in plan.get("not_pdf", set()), "signed": signed_by is not None, "signer": signed_by,
                        "element": (f"portaria-320-2026-1:{passages[0]}" if passages else None), "elements": [f"portaria-320-2026-1:{p}" for p in passages],
-                       "noise": stem in ("fatura-agua", "curriculo", "carta"),
+                       "noise": stem in NOISE,
                        "facts": [{"field": f, "value": v, "unit": u, "page": pg, "line": ln} for f, v, u, pg, ln in facts]})
     submission = {"expediente": cid, "simulated": True, "procedure": "cp-edificacao", "request": "CPEDI", "municipality": "Celorico de Basto",
                   "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI", "applicant": {"name": c["people"]["requerente"]["name"], "nif": NIF},
@@ -392,7 +452,7 @@ def main():
     for i in range(a.n):
         cid = f"{tag}{seed}-{i:04d}"
         n_err = rng.choice([0, 1, 1, 2, 2, 3, a.max_errors])
-        nf, ne = build_one(rng, cid, out, n_err, with_noise=rng.random() < 0.5)
+        nf, ne = build_one(rng, cid, out, n_err, with_noise=rng.random() < 0.7)
         tot_files += nf; tot_err += ne
         print(f"{cid}: {nf} files, {ne} planted")
     print(f"{a.n} expedientes in {out.relative_to(ROOT)}: {tot_files} files, {tot_err} planted errors")

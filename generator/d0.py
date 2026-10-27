@@ -148,12 +148,14 @@ def main():
         if pid not in allp:
             continue
         a = ajuda_by_doc.get(d["code"])
-        ans = {"passagem": pid, "citacao": allp[pid]["text"], "tipo": a["tipo"] if a else "previsto", "base_legal": a["base_legal"] if a else f"{PORTARIA}, {label_of(d['passages'][0])}"}
+        ans = {"passagem": pid, "citacao": allp[pid]["text"], "tipo": a["tipo"] if a else "previsto"}
         for i, tpl in enumerate(T3):
             rows.append(row("elemento_doc", block(candidates(pid, rng.randrange(6, 12))) + tpl.format(code=d["code"], label=d["label"], act=PORTARIA), ans, pid, "sealed" if i == 2 else "train"))
     # 4. exigencia (CPEDI lists; negatives from other lists)
     cpedi_lists = ["anexo-V.27"] + [f"anexo-V.{n}" for n in range(5, 18)]
     cond_words = re.compile(r"\b(quando|caso|se |sempre que|nos casos|desde que|salvo|exceto|aplicando-se)\b", re.I)
+    SCOPE = ("Nota: para a comunicação prévia de obras de edificação contam o Anexo V n.º 27 e os elementos comuns n.os 5 a 17; um elemento de outra lista "
+             "(loteamento, PIP, licença, utilização) não é exigido neste pedido. «Condicional» quando a própria passagem põe uma condição (quando, caso, sempre que, nos casos). ")
     T4 = ["A comunicação prévia de obras de edificação exige «{ex}»? Responde se é exigido sempre, só em certa condição, ou não, e cita a passagem.",
           "Num pedido CPEDI em Celorico de Basto, é obrigatório entregar «{ex}»? Em que condição?",
           "Para uma comunicação prévia de obras de edificação, «{ex}» entra sempre, só às vezes, ou nunca? Diz a condição e a passagem."]
@@ -164,20 +166,21 @@ def main():
         txt = strip_label(p["text"]); m = cond_words.search(txt)
         exig, cond = ("condicional", txt[m.start():].rstrip(";:.")) if m else ("sempre", "")
         for i, tpl in enumerate(T4):
-            rows.append(row("exigencia", block(candidates(pid, rng.randrange(5, 10))) + tpl.format(ex=excerpt(p["text"], rng, 9)), {"exigido": exig, "condicao": cond, "passagem": pid, "citacao": p["text"]}, pid, "sealed" if i == 2 else "train"))
+            rows.append(row("exigencia", block(candidates(pid, rng.randrange(5, 10))) + SCOPE + tpl.format(ex=excerpt(p["text"], rng, 9)), {"exigido": exig, "condicao": cond, "passagem": pid, "citacao": p["text"]}, pid, "sealed" if i == 2 else "train"))
     others = [p for p in pv.values() if p["path"].startswith("anexo-V.") and not in_cpedi(p) and re.match(r"anexo-V\.(1|2|3|4|18|19|2\d|3[0-4])(\.|$)", p["path"])]
     for j, p in enumerate(rng.sample(others, min(90, len(others)))):
-        rows.append(row("exigencia", block(candidates(p["id"], rng.randrange(5, 10))) + T4[j % 3].format(ex=excerpt(p["text"], rng, 9)),
+        rows.append(row("exigencia", block(candidates(p["id"], rng.randrange(5, 10))) + SCOPE + T4[j % 3].format(ex=excerpt(p["text"], rng, 9)),
                         {"exigido": "nao", "condicao": "", "passagem": p["id"], "citacao": p["text"], "nota": "elemento de outra lista do Anexo V, não da comunicação prévia de obras de edificação"}, p["id"], "sealed" if j % 3 == 2 else "train"))
     # 5. proibido
+    RULE = "Regra: «nao» só quando uma passagem do RJUE artigo 9.º n.º 12 proíbe pedir esse elemento; se o elemento consta do Anexo V da Portaria, «sim». "
     T5 = ["Pode um município exigir, como elemento instrutório, «{ex}»? Cita a passagem que decide.", "É lícito pedir ao requerente «{ex}»? Responde sim ou não com a passagem.",
           "Um município pode pedir «{ex}» num procedimento urbanístico? Sim ou não, e a passagem."]
     proib = [p for p in pr.values() if re.match(r"anexo\.art9\.12\.[a-z]", p["path"])]
     for p in proib:
         for i, tpl in enumerate(T5):
-            rows.append(row("proibido", block(candidates(p["id"], rng.randrange(5, 10))) + tpl.format(ex=excerpt(p["text"], rng, 8)), {"resposta": "nao", "passagem": p["id"], "citacao": p["text"]}, p["id"], "sealed" if i == 2 else "train"))
-    for j, p in enumerate(rng.sample([p for p in pv.values() if p["path"].startswith("anexo-V.27.")], 24)):
-        rows.append(row("proibido", block(candidates(p["id"], rng.randrange(5, 10))) + T5[j % 3].format(ex=excerpt(p["text"], rng, 8)), {"resposta": "sim", "passagem": p["id"], "citacao": p["text"]}, p["id"], "sealed" if j % 3 == 2 else "train"))
+            rows.append(row("proibido", block(candidates(p["id"], rng.randrange(5, 10))) + RULE + tpl.format(ex=excerpt(p["text"], rng, 8)), {"resposta": "nao", "passagem": p["id"], "citacao": p["text"]}, p["id"], "sealed" if i == 2 else "train"))
+    for j, p in enumerate(rng.sample([p for p in pv.values() if p["path"].startswith("anexo-V.")], 60)):
+        rows.append(row("proibido", block(candidates(p["id"], rng.randrange(5, 10))) + RULE + T5[j % 3].format(ex=excerpt(p["text"], rng, 8)), {"resposta": "sim", "passagem": p["id"], "citacao": p["text"]}, p["id"], "sealed" if j % 3 == 2 else "train"))
     # 6. alinea_de (all alíneas of the number as candidates)
     for parent, ps in kids.items():
         sibs = [allp[s] for s in ps if re.match(r"anexo-V\.\d+\.[a-z]+$", allp[s]["path"])]
