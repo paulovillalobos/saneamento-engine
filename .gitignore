@@ -3,3 +3,6 @@ __pycache__/
 training/runs/*/weights/
 *.zip
 .env
+training/expedientes/*/*.pdf
+sealed/expedientes/*/*.pdf
+training/runs/*/*.log

@@ -1,7 +1,8 @@
-"""LoRA v1 of the reader (leitor:a2): AMALIA-9B-0626-DPO base + an adapter trained on training/data/*/train.jsonl, which
-tools/make_training.py generates from law/ by code (no model answer inside). Runs on Modal, never on the Mac.
+"""LoRA rounds of the saneamento reader: AMALIA-9B-0626-DPO base + an adapter trained on the data sets of the round
+(training/data/<set>/train.jsonl, written by generator/*.py from the law and the generated expedientes; no model answer inside).
+Copied from ccp-engine/training/train_lora.py; only the app, the volume, the rounds and the system prompt are ours.
 
-    <a Python 3.12 venv with modal>/bin/modal run training/train_lora.py --run v1
+    ~/Downloads/foaap-core/.venv-modal/bin/modal run modal/train_lora.py --run r1
 
 Mixture (proportional per task, capped): every train example of every task, except escolha_passagem, which is cut to at
 most the sum of the other tasks (so it is never more than 50 % of the mix); the cut is deterministic (sha256 of the
@@ -11,7 +12,7 @@ projection is applied only at those positions. Micro-batches of length-sorted ex
 padding), gradient accumulation to EFFECTIVE_BATCH examples, AdamW, linear warm-up then linear decay, bf16, gradient
 checkpointing, LoRA r=16 / alpha 32 / dropout 0.05 on every projection (q, k, v, o, gate, up, down).
 
-Writes the adapter to the Modal volume amalia-lora as amalia-ccp-lei-v1 (never touches any other adapter there) and
+Writes the adapter to the Modal volume amalia-saneamento-lora as amalia-saneamento-<run> (never touches any other adapter there) and
 training/runs/<run>/MANIFEST.json here: sha256 of training/data/INDEX.json, the mixture, the hyper-parameters, the repo
 commit, start and end instants, the loss log, the adapter files' sha256 and the Modal app id (the cost in USD is read
 from Modal's billing report afterwards: training/runs/<run>/COST.json, `modal billing report`).
@@ -26,27 +27,13 @@ import modal
 
 MODEL = "amalia-llm/AMALIA-9B-0626-DPO"
 REVISION = "c4614b9b5c7b4fe303fa20902e692fc7dface640"
-SYSTEM = "Responde unicamente com o objeto JSON pedido, sem texto antes nem depois."  # = readers/leitor_a_modal.py SYSTEM
-ADAPTER = "amalia-ccp-lei-v1"
-# phase 5 (DECISIONS D46): v2 adds training/data-v2 (condicoes_texto, generated from law/ by code), counted twice in the mix
-RUNS = {"v1": {"adapter": "amalia-ccp-lei-v1", "data": ["training/data"], "repeat": {}},
-        "v2": {"adapter": "amalia-ccp-lei-v2", "data": ["training/data", "training/data-v2"], "repeat": {"condicoes_texto": 2}},
-        # phase 6 (D47): v3 = v2's mix plus training/data-v3 (entrada_em_vigor, periodos_vigencia)
-        "v3": {"adapter": "amalia-ccp-lei-v3", "data": ["training/data", "training/data-v2", "training/data-v3"], "repeat": {"condicoes_texto": 2}},
-        # phase 7 (D49): v4 = v3's mix plus training/data-v4 (condicoes_pergunta)
-        "v4": {"adapter": "amalia-ccp-lei-v4", "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4"],
-               "repeat": {"condicoes_texto": 2}},
-        # phase 8 (D50): v5 = v4's mix plus training/data-v5 (factos_utilizador: a person's question -> facts)
-        "v5": {"adapter": "amalia-ccp-lei-v5", "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v5"],
-               "repeat": {"condicoes_texto": 2}},
-        # phase 9 (D52): v6 = v4's mix (the law) plus training/data-v6 (written questions, their noisy copies, D50 templates relabelled)
-        "v6": {"adapter": "amalia-ccp-lei-v6", "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v6"],
-               "repeat": {"condicoes_texto": 2}},
-        # phase 10 (D53): v7 = v4's mix plus training/data-v7 (1 000 written questions); the same mix at LoRA rank 16 and 64
-        "v7": {"adapter": "amalia-ccp-lei-v7", "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v7"],
-               "repeat": {"condicoes_texto": 2}},
-        "v7r64": {"adapter": "amalia-ccp-lei-v7r64", "data": ["training/data", "training/data-v2", "training/data-v3", "training/data-v4", "training/data-v7"],
-                  "repeat": {"condicoes_texto": 2}, "hp": {"lora_r": 64, "lora_alpha": 128}}}
+SYSTEM = ("És o leitor de saneamento de expedientes urbanísticos de um município português. Respondes só com o objeto JSON pedido, "
+          "sem texto antes nem depois. Toda a citação é copiada letra a letra da lei; se não sabes, respondes {\"resposta\": \"nao_sei\"}.")  # = modal/reader.py SYSTEM
+ADAPTER = "amalia-saneamento-r1"
+# rounds (docs/DECISIONS.md D4): each round retrains from the base on the cumulative mix of the sets it names; sealed/ never enters
+RUNS = {"r1": {"adapter": "amalia-saneamento-r1", "data": ["training/data"], "sets": ["d0"], "repeat": {}},
+        "r2": {"adapter": "amalia-saneamento-r2", "data": ["training/data"], "sets": ["d0", "d1"], "repeat": {}},
+        "r3": {"adapter": "amalia-saneamento-r3", "data": ["training/data"], "sets": ["d0", "d1", "d2"], "repeat": {}}}
 HP = {"lora_r": 16, "lora_alpha": 32, "lora_dropout": 0.05, "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
       "epochs": 2, "lr": 1e-4, "warmup_steps": 20, "effective_batch": 16, "tokens_per_batch": 24000, "max_len": 8192,
       "optimizer": "AdamW (weight_decay 0)", "schedule": "linear warm-up, linear decay to 0", "precision": "bf16", "grad_clip": 1.0, "seed": 0,
@@ -58,19 +45,18 @@ image = (modal.Image.from_registry("nvidia/cuda:12.9.1-devel-ubuntu22.04", add_p
          .pip_install("vllm==0.30.0", "huggingface_hub[hf_transfer]", "peft==0.21.2")
          .env({"HF_HUB_ENABLE_HF_TRANSFER": "1", "VLLM_USE_FLASHINFER_SAMPLER": "0"}))
 weights = modal.Volume.from_name("amalia-weights", create_if_missing=True)
-adapters = modal.Volume.from_name("amalia-lora", create_if_missing=True)
-app = modal.App("ccp-train-leitor-a2", image=image)
+adapters = modal.Volume.from_name("amalia-saneamento-lora", create_if_missing=True)
+app = modal.App("saneamento-train", image=image)
 
 
-def mixture(run="v1"):
+def mixture(run="r1"):
     by_task = {}
     for d in RUNS[run]["data"]:
         for f in sorted((ROOT / d).glob("*/train.jsonl")):
+            if f.parent.name not in RUNS[run]["sets"]:
+                continue
             rows = [json.loads(l) for l in f.read_text(encoding="utf-8").splitlines() if l.strip()]
             by_task[f.parent.name] = rows * RUNS[run]["repeat"].get(f.parent.name, 1)
-    others = sum(len(v) for k, v in by_task.items() if k != "escolha_passagem")
-    esc = sorted(by_task.get("escolha_passagem", []), key=lambda r: hashlib.sha256(r["id"].encode()).hexdigest())
-    by_task["escolha_passagem"] = esc[:others]
     mix = [{"id": r["id"], "task": r["task"], "prompt": r["prompt"], "answer": r["answer"]} for k in sorted(by_task) for r in by_task[k]]
     return mix, {k: len(v) for k, v in sorted(by_task.items())}
 
@@ -174,16 +160,15 @@ def train_remote(rows: list[dict], hp: dict, adapter: str = ADAPTER) -> dict:
 
 
 @app.local_entrypoint()
-def main(run: str = "v1"):
+def main(run: str = "r1"):
     out = ROOT / "training/runs" / run
     if (out / "MANIFEST.json").exists():
         raise SystemExit(f"{out}/MANIFEST.json exists: a run is never redone in place")
     rows, mix = mixture(run)
     adapter = RUNS[run]["adapter"]
-    index = DATA / "INDEX.json"
-    indexes = {d: hashlib.sha256((ROOT / d / "INDEX.json").read_bytes()).hexdigest() for d in RUNS[run]["data"]}
+    indexes = {st: hashlib.sha256((DATA / st / "train.jsonl").read_bytes()).hexdigest() for st in RUNS[run]["sets"]}
     commit = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip()
-    dirty = bool(subprocess.run(["git", "status", "--porcelain", *RUNS[run]["data"], "law"], cwd=ROOT, capture_output=True, text=True).stdout.strip())
+    dirty = bool(subprocess.run(["git", "status", "--porcelain", "training/data", "law", "generator"], cwd=ROOT, capture_output=True, text=True).stdout.strip())
     started = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     hp = {**HP, **RUNS[run].get("hp", {})}  # a run may change hyper-parameters (D53: rank 64)
     call = train_remote.spawn(rows, hp, adapter)
@@ -191,8 +176,8 @@ def main(run: str = "v1"):
     res = call.get()
     finished = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     out.mkdir(parents=True, exist_ok=True)
-    manifest = {"adapter": adapter, "volume": "amalia-lora", "base": {"model": MODEL, "revision": REVISION},
-                "training_index_sha256": hashlib.sha256(index.read_bytes()).hexdigest(), "data_index_sha256": indexes,
+    manifest = {"adapter": adapter, "volume": "amalia-saneamento-lora", "base": {"model": MODEL, "revision": REVISION},
+                "sets": RUNS[run]["sets"], "set_sha256": indexes,
                 "repeat": RUNS[run]["repeat"], "mixture": mix, "examples_in_mix": len(rows),
                 "hyperparameters": hp, "repo_commit": commit, "repo_dirty_training_or_law": dirty, "started": started, "finished": finished,
                 "modal_app": app.app_id, "modal_function_call": call.object_id, "result": res, "cost_usd": "see COST.json (modal billing report)"}

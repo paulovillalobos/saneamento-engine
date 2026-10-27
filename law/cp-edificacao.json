@@ -1,0 +1,1695 @@
+{
+ "version": "rjue-rulepack-0.2",
+ "procedure": "cp-edificacao",
+ "title": "Comunicação prévia para obras de edificação",
+ "source": {
+  "subject": "dr:portaria:320/2026/1",
+  "text": "6360dab2a0f3447cc7069031fd0a55697323c2a0687e111db32d62ae85b4020c",
+  "extractor": "dr-html-blocks@1",
+  "capture": "86f218f5c61cb5559cedce520b0da7d11deac2497b4b306a364b3eab63f928cd",
+  "kind": "dr.act.rendered",
+  "origin": "https://diariodarepublica.pt/dr/detalhe/portaria/320-2026-1153698591",
+  "retrieved": "2026-10-14T10:30:30+00:00"
+ },
+ "annex_v_items": [
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "27"
+ ],
+ "general_provisions": {
+  "art2.1": {
+   "quote": "1 - Os modelos previstos nas alíneas a), c) e d) do n.º 1 do artigo anterior são de utilização obrigatória, sem prejuízo das adaptações que sejam exigidas por lei, designadamente no âmbito da aplicação das normas relativas à proteção de dados pessoais.",
+   "start": 9234,
+   "end": 9486
+  },
+  "art2.2": {
+   "quote": "2 - Os termos de responsabilidade dos autores dos projetos de especialidades de infraestruturas de telecomunicações regem-se pelo disposto no Decreto-Lei n.º 123/2009, de 21 de maio, na sua redação atual.",
+   "start": 9487,
+   "end": 9691
+  },
+  "art2.3": {
+   "quote": "3 - Apenas podem ser exigidos elementos não constantes dos anexos à presente portaria quando expressamente previstos no RJUE, em lei especial, ou quando se revelem estritamente indispensáveis à verificação do cumprimento das disposições constantes de programas e planos de ordenamento do território.",
+   "start": 9692,
+   "end": 9991
+  },
+  "art2.4": {
+   "quote": "4 - A exigência de elementos indispensáveis referidos no número anterior é devidamente fundamentada pelo município, com indicação da norma concreta a que se reporta.",
+   "start": 9992,
+   "end": 10157
+  },
+  "art2.5": {
+   "quote": "5 - Podem ser, adicionalmente, apresentados pelo interessado outros elementos não previstos nos anexos à presente portaria, que se entendam ser pertinentes para a completa caracterização da operação urbanística e para a demonstração da sua compatibilidade com as normas legais e regulamentares que lhe são aplicáveis.",
+   "start": 10158,
+   "end": 10475
+  },
+  "art2.6": {
+   "quote": "6 - Podem não ser apresentados alguns elementos instrutórios constantes dos anexos à presente portaria, que se entendam ser desnecessários face à pretensão em concreto, devendo tal entendimento ser justificado pelo coordenador dos projetos, de forma circunstanciada em documento próprio, no qual deve ser evidenciada a sua irrelevância para a verificação do cumprimento das normas legais e regulamentares aplicáveis.",
+   "start": 10476,
+   "end": 10892
+  },
+  "art4.body": {
+   "quote": "São revogadas as Portarias n.º 71-A/2024 e n.º 71-B/2024, de 27 de fevereiro.",
+   "start": 13285,
+   "end": 13362
+  },
+  "VI.1": {
+   "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:",
+   "start": 84568,
+   "end": 84886
+  },
+  "VI.1.a": {
+   "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);",
+   "start": 84887,
+   "end": 85164
+  },
+  "VI.1.b": {
+   "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;",
+   "start": 85165,
+   "end": 85304
+  },
+  "VI.1.c": {
+   "quote": "c) A folha de cálculo de índices e parâmetros urbanísticos contidos no quadro sinóptico, quando seja exigível, são ainda entregues em formato ODS, XLS ou XLSX.",
+   "start": 85305,
+   "end": 85464
+  },
+  "VI.3": {
+   "quote": "3 - Os elementos instrutórios devem incluir um índice que indique os documentos apresentados, devidamente paginados.",
+   "start": 85517,
+   "end": 85633
+  },
+  "VI.5": {
+   "quote": "5 - Sempre que a operação urbanística a apreciar compreenda alterações ou demolições e/ou afetar a via pública, devem ser utilizadas para a sua representação as seguintes cores convencionais:",
+   "start": 85895,
+   "end": 86086
+  }
+ },
+ "rules": [
+  {
+   "id": "cp-edificacao/V.5",
+   "passage": "V.5",
+   "parent": "V.II",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "5 - Indicação do código de acesso à certidão permanente do registo predial referente ao prédio ou prédios abrangidos pela operação urbanística ou, quando omisso, a respetiva certidão negativa do registo predial, acompanhada da caderneta predial da qual constem os correspondentes artigos matriciais;",
+   "start": 16106,
+   "end": 16405,
+   "quote_sha256": "cd785848ed50819e623a2345bbc7a7d76052d6f41fb396e6b080965c1b1077e4",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.6",
+   "passage": "V.6",
+   "parent": "V.II",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "6 - Delimitação da área objeto da operação urbanística e sua área de enquadramento em planta de localização fornecida pela câmara municipal ou planta de localização à escala 1:1.000, com indicação das coordenadas geográficas dos limites da área da operação urbanística, no sistema de coordenadas geográficas utilizado pelo município, podendo ser substituída por identificação da localização na plataforma eletrónica do Sistema de Informação Geográfica do município, ou equivalente;",
+   "start": 16406,
+   "end": 16887,
+   "quote_sha256": "958c9f06a16b874fa477b1714076fda5c07a7e982061f6c6aed67d5dda144fc3",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.7",
+   "passage": "V.7",
+   "parent": "V.II",
+   "role": "document",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "sempre que haja alteração da topografia ou da implantação das construções",
+     "start": 16978,
+     "end": 17051
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "7 - Levantamento topográfico georreferenciado, acompanhado por termo de responsabilidade, sempre que haja alteração da topografia ou da implantação das construções, à escala de 1:200, ou de 1:500 no caso de loteamentos, devidamente cotado, que identifique o prédio e a respetiva área, construções nela erigidas, assim como o espaço público envolvente (vias, passeios, estacionamentos, árvores e infraestruturas ou instalações aí localizadas, incluindo postes, tampas, sinalização e mobiliário urbano);",
+   "start": 16888,
+   "end": 17389,
+   "quote_sha256": "97755e14aa73c7691aa3f420a8ad6ac1b10db9546fe92ef0c738aac87fd61856",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.8",
+   "passage": "V.8",
+   "parent": "V.II",
+   "role": "document",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando este for exigível",
+     "start": 17461,
+     "end": 17485
+    },
+    {
+     "id": "c2",
+     "marker": "conditional",
+     "phrase": "quando houver alterações na via pública",
+     "start": 17580,
+     "end": 17619
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1",
+    "c2"
+   ],
+   "quote": "8 - Planta de implantação, desenhada sobre o levantamento topográfico, quando este for exigível, indicando a construção, as áreas permeáveis e impermeabilizadas e os respetivos materiais e, quando houver alterações na via pública, planta dessas alterações;",
+   "start": 17390,
+   "end": 17646,
+   "quote_sha256": "b56640f6e6931a9cfc4dd34f32dddcda6053bcb56604f7ae5a001500a4d7e9f3",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9",
+   "passage": "V.9",
+   "parent": "V.II",
+   "role": "group",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:",
+   "start": 17647,
+   "end": 17889,
+   "quote_sha256": "63be7ff36231fdc313120bfc7dfadf1c661edfbd884b3f6efa32ac32cc9dce26",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.a",
+   "passage": "V.9.a",
+   "parent": "V.9",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "a) Identificação da área objeto do pedido e descrição do contexto territorial em que se insere;",
+   "start": 17890,
+   "end": 17985,
+   "quote_sha256": "af0adb530ac7182fa257c85f8a9d876686a9d1e9458c44239ee415f8ed9e711e",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.b",
+   "passage": "V.9.b",
+   "parent": "V.9",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "b) Caracterização da operação urbanística que inclua:",
+   "start": 17986,
+   "end": 18039,
+   "quote_sha256": "f6f9001fb071770eef8cec7ba868db275a297cad1f68ea7a1fb3b7e448a5771a",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.b.i",
+   "passage": "V.9.b.i",
+   "parent": "V.9.b",
+   "role": "content",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando for o caso",
+     "start": 18083,
+     "end": 18100
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "i) Programa de utilização das edificações, quando for o caso, incluindo a área a afetar aos diversos usos;",
+   "start": 18040,
+   "end": 18146,
+   "quote_sha256": "447fc5beb0fda0ac1bb0fe74406f43a66051576a872db6fa589aec4eb8581ffb",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.b.ii",
+   "passage": "V.9.b.ii",
+   "parent": "V.9.b",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "ii) Áreas destinadas a:",
+   "start": 18147,
+   "end": 18170,
+   "quote_sha256": "771ffe9b57899c2c60d9fd066e0d6a17eb3632be033590ef616c52d16ab19fdf",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.b.ii.a",
+   "passage": "V.9.b.ii.a",
+   "parent": "V.9.b.ii",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "ii.a) Espaços verdes e de utilização coletiva;",
+   "start": 18171,
+   "end": 18217,
+   "quote_sha256": "59b59ea35c43c2850fde8d6b76e2fe8272d522c42404ca785d6e102b242c0acd",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.b.ii.b",
+   "passage": "V.9.b.ii.b",
+   "parent": "V.9.b.ii",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "ii.b) Infraestruturas, incluindo estacionamento;",
+   "start": 18218,
+   "end": 18266,
+   "quote_sha256": "5a22a7d15c3d73e0389a8be41d660aaa2fbef7ca09d13ce3e3be422173f02a30",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.b.ii.c",
+   "passage": "V.9.b.ii.c",
+   "parent": "V.9.b.ii",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "ii.c)Equipamentos de utilização coletiva/habitação pública, a custos controlados ou para arrendamento acessível;",
+   "start": 18267,
+   "end": 18379,
+   "quote_sha256": "38aeb842bb10f91a93dde866da0fce2d85f3d8f6db643674e0b86831c50382b8",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.c",
+   "passage": "V.9.c",
+   "parent": "V.9",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "c) Quando estejam previstas as áreas referidas na subalínea ii) da alínea b) do presente número, a memória descritiva deve discriminar obrigatoriamente:",
+   "start": 18380,
+   "end": 18532,
+   "quote_sha256": "19f6401025e82aad71886b8aac7a768d1460a45a1e34c38fd87948b64d8ea51b",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.c.i",
+   "passage": "V.9.c.i",
+   "parent": "V.9.c",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "i) Os critérios seguidos no dimensionamento das áreas;",
+   "start": 18533,
+   "end": 18587,
+   "quote_sha256": "346a053fef40fd78a5174679f78cacee853d923dd2cb08d4790d6282c040de63",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.c.ii",
+   "passage": "V.9.c.ii",
+   "parent": "V.9.c",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "ii) A demonstração do cumprimento dos parâmetros de dimensionamento;",
+   "start": 18588,
+   "end": 18656,
+   "quote_sha256": "26d057a8f9f4faf7b1d50cff8b85709e1f9b8fab292c1c18f3616bb7d545f6d6",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.c.iii",
+   "passage": "V.9.c.iii",
+   "parent": "V.9.c",
+   "role": "content",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "Quando for o caso",
+     "start": 18662,
+     "end": 18679
+    }
+   ],
+   "core_conditions": [
+    {
+     "id": "c1",
+     "because": "opens the passage"
+    }
+   ],
+   "unresolved": [],
+   "quote": "iii) Quando for o caso, os fundamentos da dispensa total ou parcial de cedência para o domínio municipal das áreas destinadas às finalidades referidas na subalínea ii) da alínea b) do presente número, nos termos dos planos territoriais aplicáveis;",
+   "start": 18657,
+   "end": 18904,
+   "quote_sha256": "d351fa6bc399d7ca3d009c08f941b38f8c2806675b3f0c5c5cc4798dfa4faa34",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.c.iv",
+   "passage": "V.9.c.iv",
+   "parent": "V.9.c",
+   "role": "content",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando for o caso",
+     "start": 19080,
+     "end": 19097
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "iv) Solução adotada para o funcionamento das redes de abastecimento de água, de energia elétrica, de saneamento, de gás e de telecomunicações e suas ligações às redes gerais, quando for o caso;",
+   "start": 18905,
+   "end": 19098,
+   "quote_sha256": "32ea37bebb0af092ec2d78cafa8b3fb07c20f20ff811d6c8218f258d20fca7fd",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.c.v",
+   "passage": "V.9.c.v",
+   "parent": "V.9.c",
+   "role": "content",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando for o caso",
+     "start": 19257,
+     "end": 19274
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "v) Estrutura viária adotada, especificando as áreas destinadas às vias, acessos e estacionamentos de veículos, incluindo as previstas em estrutura edificada, quando for o caso.",
+   "start": 19099,
+   "end": 19275,
+   "quote_sha256": "484d98bbc8ac3e9eb2615da3a52fdfadd543f9d1f526901d8bf916f02a47440e",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.d",
+   "passage": "V.9.d",
+   "parent": "V.9",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "d) Enquadramento da pretensão nos planos territoriais aplicáveis, discriminando:",
+   "start": 19276,
+   "end": 19356,
+   "quote_sha256": "d3dd1478892ee268c40f6b1b20a2c9b9aaa3510958939bf277111feb6a656f72",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.d.i",
+   "passage": "V.9.d.i",
+   "parent": "V.9.d",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "i) As classes e as categorias de solo que ocorrem na área de intervenção;",
+   "start": 19357,
+   "end": 19430,
+   "quote_sha256": "8d9acb424277b7a766d9d2901763fd28d695c96f37699e8c56046950a673d3b3",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.d.ii",
+   "passage": "V.9.d.ii",
+   "parent": "V.9.d",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "ii) A identificação de outras regras de uso do solo aplicáveis na área de intervenção;",
+   "start": 19431,
+   "end": 19517,
+   "quote_sha256": "c1ed52a73e53aafc0a4a16360f511cb6722421f8b1cd755582ddd3eb06fa4e7c",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.d.iii",
+   "passage": "V.9.d.iii",
+   "parent": "V.9.d",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "iii) A identificação de cada um dos parâmetros, índices e outros critérios urbanísticos previstos em plano territorial aplicável, bem como a demonstração devidamente fundamentada e circunstanciada do cumprimento de cada um dos mesmos, com menção expressa ao artigo do regulamento em que o mesmo se encontra previsto.",
+   "start": 19518,
+   "end": 19834,
+   "quote_sha256": "2e04ac5498ee80667f2dc21ce70f7b2d9d12f5c5febb3be865b4cc0f5a93bfd9",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.e",
+   "passage": "V.9.e",
+   "parent": "V.9",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "e) Enquadramento da pretensão no conjunto de servidões administrativas e restrições de utilidade pública que ocorrem na área de intervenção:",
+   "start": 19835,
+   "end": 19975,
+   "quote_sha256": "5961e74afdd15a873fce00eace5d54c3e04d33cc06641197f430af7d775eecb2",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.e.i",
+   "passage": "V.9.e.i",
+   "parent": "V.9.e",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "i) Identificação de cada uma das condicionantes que abrange a operação urbanística;",
+   "start": 19976,
+   "end": 20059,
+   "quote_sha256": "49e8e7a60a602de06a0dfd9ca4b248a6cd1696639a5dfe4a9f4d0a149563532d",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.e.ii",
+   "passage": "V.9.e.ii",
+   "parent": "V.9.e",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "ii) Demonstração da adequação da operação urbanística relativamente ao regime de uso do solo resultante de cada uma das condicionantes que abrange a operação urbanística, com menção expressa ao diploma legal em que a mesma se encontra prevista;",
+   "start": 20060,
+   "end": 20304,
+   "quote_sha256": "2e75826601a7b3eedcac22b4c8319ee8d51e9d154da9bad0e426d73ebe5d8f5a",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.f",
+   "passage": "V.9.f",
+   "parent": "V.9",
+   "role": "content",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando for o caso",
+     "start": 20636,
+     "end": 20653
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "f) Enquadramento da pretensão em outras normas legais e regulamentares aplicáveis, para efeitos dos artigos 20.º e 21.º do RJUE, bem como a expressa indicação das normas técnicas ou regulamentares em vigor que não foram observadas, fundamentando as razões da sua não observância, e evidenciando as respetivas medidas de mitigação, quando for o caso;",
+   "start": 20305,
+   "end": 20654,
+   "quote_sha256": "a029245564e6d74b0f6ea39334a823a7a07c90377725bc45b8aa6b2cd2c8c19f",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.g",
+   "passage": "V.9.g",
+   "parent": "V.9",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "g) Justificação das opções técnicas e da integração urbana e paisagística da operação na envolvente da área de intervenção, incluindo obrigatoriamente a forma como a operação urbanística se articula:",
+   "start": 20655,
+   "end": 20854,
+   "quote_sha256": "5a9bcecd50f51d57ee96a9ce5541463df3675f19d0f4ebb5bf99588c38b996d4",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.g.i",
+   "passage": "V.9.g.i",
+   "parent": "V.9.g",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "i) Com a morfologia e tecido urbanos da envolvente;",
+   "start": 20855,
+   "end": 20906,
+   "quote_sha256": "14770bdd28b7c4c52251486fc5841f768b85a13faac1df5c3281d72c793ffcc2",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.g.ii",
+   "passage": "V.9.g.ii",
+   "parent": "V.9.g",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "ii) Com os elementos com relevância patrimonial, arqueológica, histórica e cultural que ocorram na envolvente;",
+   "start": 20907,
+   "end": 21017,
+   "quote_sha256": "05b8e1260e2534147bfe76bc75e6537597e7468b8825d31ac46f1801b48ded65",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.g.iii",
+   "passage": "V.9.g.iii",
+   "parent": "V.9.g",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "iii) Com os espaços de uso público da envolvente;",
+   "start": 21018,
+   "end": 21067,
+   "quote_sha256": "960bd1adec2c765df207b5a46ff744d21197b2a4bf8f68b81c21287aee6cf950",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.g.iv",
+   "passage": "V.9.g.iv",
+   "parent": "V.9.g",
+   "role": "content",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando se trate de operação de loteamento ou operação de impacto relevante ou semelhante a loteamento",
+     "start": 21156,
+     "end": 21257
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "iv) Com a via pública, as infraestruturas e os equipamentos existentes na envolvente e, quando se trate de operação de loteamento ou operação de impacto relevante ou semelhante a loteamento, a demonstração da suficiência da rede viária ou a proposta para o seu reforço através de obras de urbanização;",
+   "start": 21068,
+   "end": 21369,
+   "quote_sha256": "da972a67699f0bc19c34615c8b181e10d4f3785d98a998479b214447e57c7c96",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.g.v",
+   "passage": "V.9.g.v",
+   "parent": "V.9.g",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "v) Com o dimensionamento das redes de infraestruturas, evidenciando a suficiência destas para servir adequadamente as necessidades decorrentes da utilização dos edifícios previstos na operação urbanística ou a construir na sequência desta, ou propondo o respetivo reforço através de obras de urbanização;",
+   "start": 21370,
+   "end": 21674,
+   "quote_sha256": "71ee65d8410acd9e45ce4a5e317994da62bd93b68f207275aa41517b414e8b05",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.h",
+   "passage": "V.9.h",
+   "parent": "V.9",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "h) Quadro sinóptico que indique todos os elementos quantitativos necessários à demonstração do cumprimento dos parâmetros e índices urbanísticos constantes dos planos territoriais aplicáveis, incluindo obrigatoriamente a superfície total do terreno objeto da operação urbanística e, em função da operação urbanística em causa, os valores totais e parciais, desdobrados por edifício e por lote ou parcela, da área de implantação, da área de construção, da volumetria, do número de pisos, da altura da fachada, da altura da edificação, da área permeável, da área de impermeabilização, do número de fogos, com especificação dos destinados a habitação pública, de custos controlados ou para arrendamento acessível, do número de lugares de estacionamento, das áreas a afetar a cada um dos usos pretendidos, das áreas destinadas a espaços verdes e de utilização coletiva, infraestruturas viárias, equipamentos e habitação pública, de custos controlados ou para arrendamento acessível;",
+   "start": 21675,
+   "end": 22653,
+   "quote_sha256": "11511c94bddee44a114747bb044abfe6de85a213ca84956c92550445c205c40f",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.i",
+   "passage": "V.9.i",
+   "parent": "V.9",
+   "role": "content",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "Quando se trate de operações de loteamento",
+     "start": 22657,
+     "end": 22699
+    }
+   ],
+   "core_conditions": [
+    {
+     "id": "c1",
+     "because": "opens the passage"
+    }
+   ],
+   "unresolved": [],
+   "quote": "i) Quando se trate de operações de loteamento:",
+   "start": 22654,
+   "end": 22700,
+   "quote_sha256": "59e02aeedbbca7c70270c2af43a04583a4536375667c2934f3f4ffc31e89a7b8",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.i.i",
+   "passage": "V.9.i.i",
+   "parent": "V.9.i",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "i) Número de lotes e respetivas áreas, bem como as áreas e os condicionamentos relativos à implantação dos edifícios e construções anexas;",
+   "start": 22701,
+   "end": 22839,
+   "quote_sha256": "cb4cf3a45469f1b9a9bb2152505523a2ea6abafa1c33bbb52cba5020082254f1",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.i.ii",
+   "passage": "V.9.i.ii",
+   "parent": "V.9.i",
+   "role": "content",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando previstos",
+     "start": 23014,
+     "end": 23030
+    },
+    {
+     "id": "c2",
+     "marker": "conditional",
+     "phrase": "quando for o caso",
+     "start": 23240,
+     "end": 23257
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1",
+    "c2"
+   ],
+   "quote": "ii) Área de construção e volumetria dos edifícios, número de pisos e de fogos de cada um dos lotes, com especificação dos fogos destinados a habitações a custos controlados, quando previstos, e com indicação dos índices urbanísticos adotados, nomeadamente a distribuição percentual das diferentes ocupações propostas para o solo, os índices de implantação e de construção e a densidade habitacional, quando for o caso;",
+   "start": 22840,
+   "end": 23258,
+   "quote_sha256": "fe22bf2206862ead8fc274e52225d63eb6fc957a878e373cf689bf4b81d27c0f",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.i.iii",
+   "passage": "V.9.i.iii",
+   "parent": "V.9.i",
+   "role": "content",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "iii) Redes de infraestruturas e sobrecarga que a pretensão pode implicar, no caso de operações de loteamento em área não abrangida por plano de pormenor;",
+   "start": 23259,
+   "end": 23412,
+   "quote_sha256": "ece04ec81ac953cf8be368d24520ccf1e0b00951f88d55e811f5d32cb5d5a36c",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.i.iv",
+   "passage": "V.9.i.iv",
+   "parent": "V.9.i",
+   "role": "content",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando for o caso",
+     "start": 23588,
+     "end": 23605
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "iv) Solução adotada para o funcionamento das redes de abastecimento de água, de energia elétrica, de saneamento, de gás e de telecomunicações e suas ligações às redes gerais, quando for o caso;",
+   "start": 23413,
+   "end": 23606,
+   "quote_sha256": "32ea37bebb0af092ec2d78cafa8b3fb07c20f20ff811d6c8218f258d20fca7fd",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.9.i.v",
+   "passage": "V.9.i.v",
+   "parent": "V.9.i",
+   "role": "content",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando for o caso",
+     "start": 23765,
+     "end": 23782
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "v) Estrutura viária adotada, especificando as áreas destinadas às vias, acessos e estacionamentos de veículos, incluindo as previstas em estrutura edificada, quando for o caso;",
+   "start": 23607,
+   "end": 23783,
+   "quote_sha256": "582a9015fff50e575374507a8b4df450330930432283ddea30427bdda343d440",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.10",
+   "passage": "V.10",
+   "parent": "V.II",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "10 - Pareceres, autorizações ou aprovações que não respeitem a aspetos relacionados com a localização;",
+   "start": 23784,
+   "end": 23886,
+   "quote_sha256": "022c0156f225cb2a9cb70524799c942f7e562a08c872a71064e812cd4f3695ab",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.11",
+   "passage": "V.11",
+   "parent": "V.II",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;",
+   "start": 23887,
+   "end": 24030,
+   "quote_sha256": "9544d2de49897c3cbd6f6e49d9e38f6e3424409705491624a411cc61ebfef7e9",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.12",
+   "passage": "V.12",
+   "parent": "V.II",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "12 - Termo de responsabilidade do coordenador de projeto quanto à garantia de compatibilidade entre os diversos projetos;",
+   "start": 24031,
+   "end": 24152,
+   "quote_sha256": "ecdb3e67079005fe777fe2fa7d14f15152fecaace09e3e754daf155418fafa1c",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.13",
+   "passage": "V.13",
+   "parent": "V.II",
+   "role": "document",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional",
+     "start": 24417,
+     "end": 24520
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "13 - Declaração de habilitação profissional que permita a verificação das competências profissionais detidas pelos técnicos autores dos projetos e técnico coordenador, nos termos previstos nos n.os 3 e 4 do artigo 10.º do RJUE e da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional;",
+   "start": 24153,
+   "end": 24521,
+   "quote_sha256": "29bd83c02b15b6add7282cab6d95a079afb3e42e909aebdd568489913175f658",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.14",
+   "passage": "V.14",
+   "parent": "V.II",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;",
+   "start": 24522,
+   "end": 24696,
+   "quote_sha256": "e36f3af321861328e6a29c25457d2935f86f911e603893050e95698a2baef170",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.15",
+   "passage": "V.15",
+   "parent": "V.II",
+   "role": "document",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando estas existam",
+     "start": 24794,
+     "end": 24814
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "15 - Registo fotográfico da situação existente, abrangendo o imóvel e as edificações adjacentes, quando estas existam;",
+   "start": 24697,
+   "end": 24815,
+   "quote_sha256": "a87af63875a2cbdd6e1b9c38f762cf33221b1c70bb894051fa54d7022ce871ba",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.16",
+   "passage": "V.16",
+   "parent": "V.II",
+   "role": "instruction",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "Sempre que a operação urbanística tenha sido antecedida de uma informação prévia favorável",
+     "start": 24821,
+     "end": 24911
+    }
+   ],
+   "core_conditions": [
+    {
+     "id": "c1",
+     "because": "opens the passage"
+    }
+   ],
+   "unresolved": [],
+   "quote": "16 - Sempre que a operação urbanística tenha sido antecedida de uma informação prévia favorável, deve ser identificado o respetivo procedimento;",
+   "start": 24816,
+   "end": 24960,
+   "quote_sha256": "9ad9fe5507254ef708999f8a4ecdff99adf13fceb24d36a73b239e04c2211ca1",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.17",
+   "passage": "V.17",
+   "parent": "V.II",
+   "role": "instruction",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "Aplicando-se o ponto anterior",
+     "start": 24966,
+     "end": 24995
+    }
+   ],
+   "core_conditions": [
+    {
+     "id": "c1",
+     "because": "opens the passage"
+    }
+   ],
+   "unresolved": [],
+   "quote": "17 - Aplicando-se o ponto anterior, deve o termo de responsabilidade dos autores e coordenador dos projetos declarar que a operação respeita os termos e condições constantes daquela informação.",
+   "start": 24961,
+   "end": 25154,
+   "quote_sha256": "ce45768d6ccc0a5b5c81f90ea2dc830f04c378408e89a331e4baad2f2de3cb91",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27",
+   "passage": "V.27",
+   "parent": "V.V",
+   "role": "group",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "27 - Comunicação prévia para obras de edificação:",
+   "start": 56582,
+   "end": 56631,
+   "quote_sha256": "310c9043a59a05c1ae6c43e250e7096ac203541ae152e66032d1ea79c7f8df09",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.a",
+   "passage": "V.27.a",
+   "parent": "V.27",
+   "role": "document",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "sempre que tal comprovação não resulte diretamente do n.º 5 do presente anexo",
+     "start": 56831,
+     "end": 56908
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "a) Documentos comprovativos da qualidade de titular de qualquer direito que lhe confira a faculdade de realização da operação ou da atribuição dos poderes necessários para agir em sua representação, sempre que tal comprovação não resulte diretamente do n.º 5 do presente anexo;",
+   "start": 56632,
+   "end": 56909,
+   "quote_sha256": "27110e155241fede31ec9742171c5b8054eeae47ba515471f71d3187235f9e8c",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.b",
+   "passage": "V.27.b",
+   "parent": "V.27",
+   "role": "group",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "b) Projeto de arquitetura, incluindo:",
+   "start": 56910,
+   "end": 56947,
+   "quote_sha256": "91aaf9edd8c82e65dad198cd391ae5c1623cf0070ac40597b730a32563dd1c05",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.b.i",
+   "passage": "V.27.b.i",
+   "parent": "V.27.b",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "i) Plantas à escala de 1:50 ou de 1:100 contendo as dimensões e áreas e utilizações de todos os compartimentos, bem como a representação do mobiliário fixo e equipamento sanitário;",
+   "start": 56948,
+   "end": 57128,
+   "quote_sha256": "bedba5e9645d7c0d99090df890b6590f93d133dc45747a7016d3b57812255565",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.b.ii",
+   "passage": "V.27.b.ii",
+   "parent": "V.27.b",
+   "role": "document",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando existam",
+     "start": 57304,
+     "end": 57318
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "ii) Alçados à escala de 1:50 ou de 1:100 com a indicação das cores e dos materiais dos elementos que constituem as fachadas e a cobertura, bem como as construções adjacentes, quando existam;",
+   "start": 57129,
+   "end": 57319,
+   "quote_sha256": "0fc906ba48232b39edf012bd1cfec98c80c42c26f0e203906ddede71162aa19e",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.b.iii",
+   "passage": "V.27.b.iii",
+   "parent": "V.27.b",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "iii) Cortes longitudinais e transversais à escala de 1:50 ou de 1:100 abrangendo o terreno e o arranque dos terrenos vizinhos, com indicação do perfil existente e o proposto, bem como das cotas dos diversos pisos, da cota de soleira e dos acessos ao estacionamento;",
+   "start": 57320,
+   "end": 57585,
+   "quote_sha256": "82c684cff237d5d34134620f1b692cddb1b4fcaca375b18c9c6aa88b996df56f",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.b.iv",
+   "passage": "V.27.b.iv",
+   "parent": "V.27.b",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "iv) Pormenores de construção, à escala adequada, esclarecendo a solução construtiva adotada para as paredes exteriores do edifício e sua articulação com a cobertura, vãos de iluminação/ventilação e de acesso, bem como com o pavimento exterior envolvente;",
+   "start": 57586,
+   "end": 57840,
+   "quote_sha256": "1871fb039cd101c3d615c9aacb0461546131ba49d5286107b6e2e7f535894d46",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.b.v",
+   "passage": "V.27.b.v",
+   "parent": "V.27.b",
+   "role": "document",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "optional",
+     "phrase": "caso se pretenda que o edifício fique sujeito ao regime da propriedade horizontal",
+     "start": 58028,
+     "end": 58109
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "v) Discriminação das partes do edifício correspondentes às várias frações e partes comuns, valor relativo de cada fração, expressa em percentagem ou permilagem, do valor total do prédio, caso se pretenda que o edifício fique sujeito ao regime da propriedade horizontal, acompanhada de peça desenhada;",
+   "start": 57841,
+   "end": 58141,
+   "quote_sha256": "51522049164531213d528db8c0e4af9340f399db753d1296bbe6299cb5d80062",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.b.vi",
+   "passage": "V.27.b.vi",
+   "parent": "V.27.b",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "vi) Plano de acessibilidades, que integrando peças escritas e desenhadas, permita evidenciar as opções de projeto em matéria de garantia do acesso aos utilizadores com mobilidade reduzida, apresentando a rede de espaços e equipamentos acessíveis, existente ou proposta, para a área objeto da operação urbanística, comprovando que a execução da operação se conforma com o regime jurídico da acessibilidade;",
+   "start": 58142,
+   "end": 58547,
+   "quote_sha256": "e323b0c7a332bf831ac94dd555d305e4ea72761b836631ea80d6d6f63e767cc8",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.c",
+   "passage": "V.27.c",
+   "parent": "V.27",
+   "role": "group",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "Quando se trate de operação urbanística que contemple a cedência de áreas para o município",
+     "start": 58551,
+     "end": 58641
+    }
+   ],
+   "core_conditions": [
+    {
+     "id": "c1",
+     "because": "opens the passage"
+    }
+   ],
+   "unresolved": [],
+   "quote": "c) Quando se trate de operação urbanística que contemple a cedência de áreas para o município, deve ser incluído:",
+   "start": 58548,
+   "end": 58661,
+   "quote_sha256": "5d08043a2e8930164b43891a3ef2a089b7abbf5be62b73f537dbb8893d7f28a3",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.c.i",
+   "passage": "V.27.c.i",
+   "parent": "V.27.c",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "i) Planta de cedências;",
+   "start": 58662,
+   "end": 58685,
+   "quote_sha256": "4af590e9a9bf9ed75af3a945810f36d1f9a39f971c1bd52d444da0246f9177ce",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.c.ii",
+   "passage": "V.27.c.ii",
+   "parent": "V.27.c",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "ii) Planta de cadastro atual;",
+   "start": 58686,
+   "end": 58715,
+   "quote_sha256": "62f4ff2ecf2dbd368d26b27170adb030251dcdafdb59d9821fe67aee182bf42f",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.c.iii",
+   "passage": "V.27.c.iii",
+   "parent": "V.27.c",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "iii) Planta e quadro de transformação fundiária;",
+   "start": 58716,
+   "end": 58764,
+   "quote_sha256": "eb11bdb82174fafc68048cc84298ed1d5ec77c6e68d7ffd9dabc95c42783a11d",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.d",
+   "passage": "V.27.d",
+   "parent": "V.27",
+   "role": "document",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando exigível",
+     "start": 58819,
+     "end": 58834
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "d) Relatório de avaliação de vulnerabilidade sísmica, quando exigível, nos termos da lei;",
+   "start": 58765,
+   "end": 58854,
+   "quote_sha256": "195b71b6539385a97be81753dbf38146152e5ad814daa3a9631ce554792a4e44",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.e",
+   "passage": "V.27.e",
+   "parent": "V.27",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "e) Calendarização da execução da obra, com estimativa do prazo de início e de conclusão dos trabalhos;",
+   "start": 58855,
+   "end": 58957,
+   "quote_sha256": "a9e401267248ac37f51b44869bbf00adbc9bb82be84481d6331eb2d22c85d32e",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.f",
+   "passage": "V.27.f",
+   "parent": "V.27",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "f) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;",
+   "start": 58958,
+   "end": 59203,
+   "quote_sha256": "be6454b37049a2137d4523e76a9b80af6c5ef587877841ca78eeaae1e350e7a0",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.g",
+   "passage": "V.27.g",
+   "parent": "V.27",
+   "role": "document",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando aplicável",
+     "start": 59383,
+     "end": 59399
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "g) Estimativa dos encargos urbanísticos, nomeadamente com o cálculo da taxa pela realização, manutenção e reforço de infraestruturas urbanísticas e das compensações urbanísticas, quando aplicável, ou junção de resultado de simulação do cálculo disponibilizado pelo município;",
+   "start": 59204,
+   "end": 59479,
+   "quote_sha256": "98bf554b408bae2b23ea70d812b0369897ae19ecb3a9443fad5728199f9dde62",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.h",
+   "passage": "V.27.h",
+   "parent": "V.27",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "h) Pareceres, autorizações ou aprovações das entidades externas cuja consulta seja obrigatória nos termos da lei, exceto se estas já se pronunciaram favoravelmente no âmbito de procedimento de informação prévia ou de aprovação de plano de pormenor, nos termos do n.º 2 do artigo 13.º do RJUE, caso em que é indicado o procedimento e os termos em que tal pronúncia ocorreu;",
+   "start": 59480,
+   "end": 59852,
+   "quote_sha256": "eaefec1d8f0b30fb5189a7dc4740f310322abf826e6bb14c3d7306d52585ed99",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.i",
+   "passage": "V.27.i",
+   "parent": "V.27",
+   "role": "group",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "em função do tipo de obra a executar",
+     "start": 59895,
+     "end": 59931
+    }
+   ],
+   "core_conditions": [
+    {
+     "id": "c1",
+     "because": "heading of a list"
+    }
+   ],
+   "unresolved": [],
+   "quote": "i) Projetos de especialidade a apresentar em função do tipo de obra a executar:",
+   "start": 59853,
+   "end": 59932,
+   "quote_sha256": "5f74667e7971ed3b20a0383885c970129029cd465af253eb73a242caf494ef66",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.i.i",
+   "passage": "V.27.i.i",
+   "parent": "V.27.i",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "i) Projeto de estabilidade que inclua o projeto de escavação e contenção periférica;",
+   "start": 59933,
+   "end": 60017,
+   "quote_sha256": "f00fce4f131e3d281078a4808f6be50fc7f602344f7993f5250bb8667f7c944c",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.i.ii",
+   "passage": "V.27.i.ii",
+   "parent": "V.27.i",
+   "role": "document",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando exigível",
+     "start": 60050,
+     "end": 60065
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "ii) Projeto de reforço sísmico, quando exigível, nos termos da lei;",
+   "start": 60018,
+   "end": 60085,
+   "quote_sha256": "9fb2f204c7cc388ef03f75e9d318979abfbf20c9978be2d82ba227f13825e867",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.i.iii",
+   "passage": "V.27.i.iii",
+   "parent": "V.27.i",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "iii) Projeto de instalações elétricas;",
+   "start": 60086,
+   "end": 60124,
+   "quote_sha256": "865d054dd49e2881496638d5250abe4a44fc3975bd881456a72a16cb0834d976",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.i.iv",
+   "passage": "V.27.i.iv",
+   "parent": "V.27.i",
+   "role": "document",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando exigível",
+     "start": 60159,
+     "end": 60174
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "iv) Projeto de instalação de gás, quando exigível, nos termos da lei;",
+   "start": 60125,
+   "end": 60194,
+   "quote_sha256": "1187d1bbac028e437a5227321f5b540b172fac12ffb3e4520a189c3f11310313",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.i.v",
+   "passage": "V.27.i.v",
+   "parent": "V.27.i",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "v) Projeto de redes prediais de água e esgotos;",
+   "start": 60195,
+   "end": 60242,
+   "quote_sha256": "5af60771845be0778a2ad9739b7d9b66e45137d29f9c62e12106de8b0d2d829c",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.i.vi",
+   "passage": "V.27.i.vi",
+   "parent": "V.27.i",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "vi) Projeto de águas pluviais;",
+   "start": 60243,
+   "end": 60273,
+   "quote_sha256": "13b19ede2f151ee02484c306daa81e6a03ee419b9fb136ca47251b227c00bb62",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.i.vii",
+   "passage": "V.27.i.vii",
+   "parent": "V.27.i",
+   "role": "document",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando exista logradouro privativo",
+     "start": 60311,
+     "end": 60345
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "vii) Projeto de arranjos exteriores, quando exista logradouro privativo;",
+   "start": 60274,
+   "end": 60346,
+   "quote_sha256": "195609d9cf36df730235f3605abf8facba331fef2b9521ffefc61dc9b1da57f6",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.i.viii",
+   "passage": "V.27.i.viii",
+   "parent": "V.27.i",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "viii) Projeto de infraestruturas de telecomunicações;",
+   "start": 60347,
+   "end": 60400,
+   "quote_sha256": "5a8c1f45e58b6267e9404a85d60aacd23aef20888e4b9e43211fd8fc9636a3f9",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.i.ix",
+   "passage": "V.27.i.ix",
+   "parent": "V.27.i",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "ix) Projeto de conforto térmico;",
+   "start": 60401,
+   "end": 60433,
+   "quote_sha256": "a7473fb783697c0ff5d089e779ecde942ae621e22848efcee169c3b294b1198d",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.i.x",
+   "passage": "V.27.i.x",
+   "parent": "V.27.i",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "x) Projeto de instalações eletromecânicas, incluindo as de transporte de pessoas e ou mercadorias;",
+   "start": 60434,
+   "end": 60532,
+   "quote_sha256": "ea2abe9eea68497a3e019b63a6ccd7781e07208b831bf8e11da6a54843314945",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.i.xi",
+   "passage": "V.27.i.xi",
+   "parent": "V.27.i",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "xi) Projeto de segurança contra incêndios em edifícios ou ficha de segurança, de acordo com a categoria de risco do edifício;",
+   "start": 60533,
+   "end": 60658,
+   "quote_sha256": "71fa39fe4c6371a5560cc984ad6bf49edd98626375d19c2fe6e277cb0a141514",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.i.xii",
+   "passage": "V.27.i.xii",
+   "parent": "V.27.i",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "xii) Projeto de condicionamento acústico;",
+   "start": 60659,
+   "end": 60700,
+   "quote_sha256": "11af36b6f46b14bd9196c51ce4c8432c6cf1f74258409f00f98cda72ca5ba01e",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.i.xiii",
+   "passage": "V.27.i.xiii",
+   "parent": "V.27.i",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "xiii) Projeto de instalações, equipamentos e sistemas de aquecimento, ventilação e ar condicionado (AVAC);",
+   "start": 60701,
+   "end": 60807,
+   "quote_sha256": "9351c5100ef6a9c621aae584f76bb7bf92697a9d033490f1409cf34079936d67",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.i.xiv",
+   "passage": "V.27.i.xiv",
+   "parent": "V.27.i",
+   "role": "document",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando exigível",
+     "start": 60865,
+     "end": 60880
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "xiv) Projeto de sistemas de gestão técnica centralizada, quando exigível, nos termos da lei;",
+   "start": 60808,
+   "end": 60900,
+   "quote_sha256": "4fdb57cdbbec03f5af1e222b2d5796b0bb17aa9aba6750ff9cc1d916a49e92df",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.j",
+   "passage": "V.27.j",
+   "parent": "V.27",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "j) Número do alvará, ou do certificado, ou número de outro título habilitante emitido pelo IMPIC, I. P., que confira habilitações adequadas à natureza ou valor da obra;",
+   "start": 60901,
+   "end": 61069,
+   "quote_sha256": "b362a6051f4056b4477707b0157f6cf4446b4ae880304d11550f4a644df61bf9",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.k",
+   "passage": "V.27.k",
+   "parent": "V.27",
+   "role": "document",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando exista",
+     "start": 61145,
+     "end": 61158
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "k) Termo de responsabilidade pela assunção da função de diretor de obra e, quando exista, de diretor de fiscalização de obra para efeitos do início da sua execução;",
+   "start": 61070,
+   "end": 61234,
+   "quote_sha256": "949cd81e7615897771186bbc75a4ac240cd74e171a0eec0a9049b1648c5e0ae9",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.l",
+   "passage": "V.27.l",
+   "parent": "V.27",
+   "role": "document",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando exista",
+     "start": 61366,
+     "end": 61379
+    },
+    {
+     "id": "c2",
+     "marker": "conditional",
+     "phrase": "em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional",
+     "start": 61465,
+     "end": 61568
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1",
+    "c2"
+   ],
+   "quote": "l) Declaração de habilitação profissional que permita a verificação das competências profissionais detidas pelo diretor de obra e, quando exista, pelo diretor de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional;",
+   "start": 61235,
+   "end": 61569,
+   "quote_sha256": "3119c8c93800c590db72e9fef55e2bc55329b9f3acfc2c50c1d3635124bb0bc0",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.m",
+   "passage": "V.27.m",
+   "parent": "V.27",
+   "role": "document",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "quando exista",
+     "start": 61659,
+     "end": 61672
+    }
+   ],
+   "core_conditions": [],
+   "unresolved": [
+    "c1"
+   ],
+   "quote": "m) Comprovativo da contratação de seguro de responsabilidade civil do diretor de obra e, quando exista, do diretor de fiscalização de obra, nos termos da Lei n.º 31/2009 de 3 de julho;",
+   "start": 61570,
+   "end": 61754,
+   "quote_sha256": "4f415d80ed2687dad25837a9ee9379ddd23375bb0f1301bcd249dbdda0963063",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.n",
+   "passage": "V.27.n",
+   "parent": "V.27",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "n) Apólice de seguro que cubra a responsabilidade pela reparação dos danos emergentes de acidentes de trabalho, nos termos previstos na Lei n.º 98/2009, de 4 de setembro, na sua redação atual;",
+   "start": 61755,
+   "end": 61947,
+   "quote_sha256": "1836c55a7e451acf73516faf75a3c34d0a548e9aac9700d35b60b1ea572eae74",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.o",
+   "passage": "V.27.o",
+   "parent": "V.27",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "o) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013, de 24 de julho;",
+   "start": 61948,
+   "end": 62034,
+   "quote_sha256": "579cf01b5d479b737bb060bc09630dcb69b37042d1ba00d2fcf18ebd26514cf9",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.p",
+   "passage": "V.27.p",
+   "parent": "V.27",
+   "role": "document",
+   "conditions": [],
+   "core_conditions": [],
+   "unresolved": [],
+   "quote": "p) Comprovativo de contratação do diretor de obra;",
+   "start": 62035,
+   "end": 62085,
+   "quote_sha256": "22a7aa3ca38e415911da9dd8c06b027ef0bb44084cfc9196c35b93a12f823532",
+   "proposed_by": "annex-v-parser-0.2"
+  },
+  {
+   "id": "cp-edificacao/V.27.q",
+   "passage": "V.27.q",
+   "parent": "V.27",
+   "role": "document",
+   "conditions": [
+    {
+     "id": "c1",
+     "marker": "conditional",
+     "phrase": "Em caso de utilização de produtos de construção não abrangidos por regras harmonizadas",
+     "start": 62089,
+     "end": 62175
+    },
+    {
+     "id": "c2",
+     "marker": "conditional",
+     "phrase": "nos casos previstos para a sua aplicação",
+     "start": 62422,
+     "end": 62462
+    }
+   ],
+   "core_conditions": [
+    {
+     "id": "c1",
+     "because": "opens the passage"
+    }
+   ],
+   "unresolved": [
+    "c2"
+   ],
+   "quote": "q) Em caso de utilização de produtos de construção não abrangidos por regras harmonizadas, sem marcação CE e sem declaração de desempenho e conformidade, e sem prejuízo do reconhecimento mútuo, deve ser apresentada declaração do projetista em como o produto não comporta risco para a satisfação de requisitos de desempenho e segurança, nos casos previstos para a sua aplicação, e em que não se justifica a solicitação de apreciação técnica ou de homologação.",
+   "start": 62086,
+   "end": 62544,
+   "quote_sha256": "976a973a548d330eb11d416093d8381fb45e00cbc11369cad839e4d50ed340f2",
+   "proposed_by": "annex-v-parser-0.2"
+  }
+ ]
+}
