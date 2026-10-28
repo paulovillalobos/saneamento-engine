@@ -16,7 +16,8 @@ spec = importlib.util.spec_from_file_location("d1d2", ROOT / "generator" / "d1d2
 from pypdf import PdfReader  # noqa: E402
 
 R = "sources/real"
-V9, V11, V12 = "portaria-320-2026-1:anexo-V.9", "portaria-320-2026-1:anexo-V.11", "portaria-320-2026-1:anexo-V.12"
+V9, V11, V12, V27K = "portaria-320-2026-1:anexo-V.9", "portaria-320-2026-1:anexo-V.11", "portaria-320-2026-1:anexo-V.12", "portaria-320-2026-1:anexo-V.27.k"
+W = "sources/real/wave2"
 # (file, D1 element or None, D1 tipo, [D2 (field, value or None)], note)
 KEYS = [
     (f"{R}/memorias/valongo_74l2023_md.pdf", V9, "escrito", [("area_parcela", "49 977,00"), ("custo_total", None)], "real memória descritiva e justificativa (loteamento, Valongo 2025)"),
@@ -31,6 +32,41 @@ KEYS = [
     (f"{R}/normas/alcacer_lista_elementos_nomeacao_ficheiros_2026.pdf", None, "nao_e_elemento", [], "a municipal file-naming list"),
     (f"{R}/normas/torresvedras_regulamento_instrucao_digital.pdf", None, "nao_e_elemento", [], "a municipal regulation"),
     (f"{R}/normas/torresvedras_manual_construtor_eurb2023.pdf", None, "nao_e_elemento", [], "a platform manual"),
+    # ---- wave 2 (2026-10-28): 33 more public files, real names kept; sources in sources/real/PROVENANCE.md ----
+    (f"{R}/modelos/OA_TR_dir_obra_fisc.pdf", None, "nao_e_elemento", [("apolice", None)], "OA minuta of the termo signed at the CONCLUSION of the works (art. 63): not the item k termo (assumption of the function)"),
+    (f"{W}/OA_TR_dir_obra_inicio.pdf", V27K, "escrito", [("apolice", None)], "OASRN minuta, termo do diretor de obra for the START of works = item k"),
+    (f"{W}/valpacos_memoria_pr_1678_22.pdf", "portaria-320-2026-1:anexo-V.27.i.xi", "escrito", [("uso", "ESTRUTURA RESIDENCIAL PARA PESSOAS IDOSAS"), ("custo_total", None)], "real SCIE project memória (ERPI, Valpaços 2022)"),
+    (f"{W}/uminho_memoria_estabilidade_braga.pdf", "portaria-320-2026-1:anexo-V.27.i.i", "escrito", [("custo_total", None)], "real memória of a stability project (UMinho, Centro de Solidariedade de Braga)"),
+    (f"{W}/anadia_memoria_acessibilidades.pdf", "portaria-320-2026-1:anexo-V.27.b.vi", "escrito", [("fogos", None)], "real memória of a plano de acessibilidades (Anadia)"),
+    (f"{W}/viladoconde_memoria_pluviais.pdf", "portaria-320-2026-1:anexo-V.27.i.vi", "escrito", [("area_parcela", None)], "real memória of a stormwater project (Vila do Conde 2017)"),
+    (f"{W}/valpacos_memoria_ited.pdf", "portaria-320-2026-1:anexo-V.27.i.viii", "escrito", [("custo_total", None)], "real ITED project memória (Valpaços 2024)"),
+    (f"{W}/viladoconde_estimativa.pdf", "portaria-320-2026-1:anexo-V.27.f", "escrito", [], "real estimativa orçamental (Caxinas community centre, SPMR 2016)"),
+    (f"{W}/ipcb_memoria_reabilitacao_escola.pdf", V9, "escrito", [("custo_total", None)], "memória descritiva e justificativa of a rehabilitation project (IPCB 2023, student work in the real format)"),
+    (f"{W}/dgt_planta_localizacao.pdf", "portaria-320-2026-1:anexo-V.2", "desenhado", [], "DGT planta de localização printed from SNIT (ortofoto, PT-TM06)"),
+    (f"{W}/loures_PDF20241114175831728.pdf", None, "nao_e_elemento", [("apolice", None)], "Loures termo for utilização sem operação urbanística prévia (art. 63): not an Annex V item"),
+    (f"{W}/pontedelima_mod_166.pdf", None, "nao_e_elemento", [], "termo diretor de obra, receção provisória de obras de urbanização (loteamento): not a CPEDI item"),
+    (f"{W}/pontedelima_mod_167.pdf", None, "nao_e_elemento", [], "termo diretor de obra, receção definitiva (loteamento): not a CPEDI item"),
+    (f"{W}/funchal_minuta_memoria_viveiro_lojas.pdf", None, "nao_e_elemento", [("area_total_construcao", None)], "a business-incubator applicant memo called 'memória descritiva': not the project memória"),
+    (f"{W}/alfandegadafe_competencia_tecnicos.pdf", None, "nao_e_elemento", [], "an internal municipal information note"),
+    (f"{W}/alijo_ficha_projeto_escola.pdf", None, "nao_e_elemento", [("custo_total", None)], "a funded-project summary sheet"),
+    (f"{W}/amarante_termos_comunicacoes_utilizacao.pdf", None, "nao_e_elemento", [], "a municipal explanatory note about termos"),
+    (f"{W}/anepc_nt03_2020.pdf", None, "nao_e_elemento", [], "ANEPC technical note on SCIE projects"),
+    (f"{W}/arcos_ine_q3_instrucoes.pdf", None, "nao_e_elemento", [("fogos", None)], "INE Q3 filling instructions (not the ficha itself)"),
+    (f"{W}/loures_ine_q3_instrucoes.pdf", None, "nao_e_elemento", [], "INE Q3 filling instructions, Loures copy"),
+    (f"{W}/benavente_deliberacao_minutas_tr.pdf", None, "nao_e_elemento", [], "a council deliberation approving termo minutas"),
+    (f"{W}/caminha_caderno_encargos.pdf", None, "nao_e_elemento", [("prazo_meses", None)], "a tender specification for topography services"),
+    (f"{W}/cascais_anexo_iv.pdf", None, "nao_e_elemento", [], "a municipal regulation annex (obras de urbanização)"),
+    (f"{W}/castrodaire_manual_normas_digitais.pdf", None, "nao_e_elemento", [], "a digital-submission manual"),
+    (f"{W}/estarreja_elementos_2020.pdf", None, "nao_e_elemento", [], "a list of elements for a forest-defence opinion"),
+    (f"{W}/figfoz_nip12_licenciamento.pdf", None, "nao_e_elemento", [], "a process-instruction norm"),
+    (f"{W}/gouveia_guia_redes_prediais.pdf", None, "nao_e_elemento", [], "a technical guide for building-network projects"),
+    (f"{W}/leiria_anexoiv_levantamentos.pdf", None, "nao_e_elemento", [], "criteria for topographic surveys (annex of a tender)"),
+    (f"{W}/macedo_obras_edificacao_arquitetura.pdf", None, "nao_e_elemento", [], "a municipal checklist (Mod. 331)"),
+    (f"{W}/maia_levantamento_acessibilidade.pdf", None, "nao_e_elemento", [], "a municipal accessibility diagnostic"),
+    (f"{W}/seixal_postura_aguas_residuais.pdf", None, "nao_e_elemento", [], "a municipal postura"),
+    (f"{W}/seixal_postura_estabilidade.pdf", None, "nao_e_elemento", [], "a municipal postura"),
+    (f"{W}/viseu_norma_pip.pdf", None, "nao_e_elemento", [], "a process-instruction norm (PIP)"),
+    (f"{W}/vncerveira_normas_levantamentos.pdf", None, "nao_e_elemento", [], "municipal norms for surveys and planta de implantação"),
 ]
 
 
