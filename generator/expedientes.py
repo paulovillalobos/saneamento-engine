@@ -408,6 +408,7 @@ def noise_about(c, rng):
     kind = rng.choice(["norma", "postura", "guia", "nota", "criterios", "deliberacao", "informacao", "ficha-projeto", "instrucoes", "termo-outro", "termo-outro",
                        "memoria-empresa", "manual", "diagnostico", "caderno"])
     X = rng.choice(ELEMENT_NAMES); M = rng.choice(MUNIS_PT); n = rng.randrange(1, 40)
+    X = re.sub(r"^projeto de ", "", X)  # "Postura referente a projetos de estabilidade", not "de projeto de estabilidade"
     if kind == "norma":
         d = G.Doc(f"NORMA DE INSTRUÇÃO DE PROCESSO NIP-{n:02d}")
         d.text(f"Revisão: A{rng.randrange(1, 9)}    Data: {rng.randrange(1, 28):02d}/{rng.randrange(1, 12):02d}/2026    CÂMARA MUNICIPAL DE {M.upper()}    Proc. N.º:", size=9)

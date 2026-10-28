@@ -34,3 +34,10 @@
   right. Lab held (D1/D2 100 %, D0 95-100 % on passages); elemento_doc tipo 57 → 84 %; exigido 45 % (only column left).
 - Lesson of the night (D11): the sealed generated sets could not see the file-name shortcut; only real files with real names
   did. Grow the stranger test to 40-50 files before D3. Night spend ≈ USD 56 (r4 13, r5 14, probes 1, r6 ×2 28).
+
+## 2026-10-28 afternoon — stranger test v2 (44 files), r6 = 27/45, r7 data ready
+- 33 new public files (real names kept; 3 dropped for private identifiers); keys in generator/stranger.py; 66 rows.
+- r6 on v2: element 27/45 (17 invented), quotes 14/15, facts 18/21. Patterns: documents ABOUT elements called the element
+  (13); termos of other procedures called item k/11 (5); speciality memórias typed "drawn" (2); narrative estimate missed (1).
+- r7 data: noise_about() 15 kinds + other-procedure termos, 2-5 noise files per expediente, doc_special_memory(),
+  doc_estimate() narrative variant. Chain training/runs/overnight-r7.sh awaits approval (≈ USD 14).
