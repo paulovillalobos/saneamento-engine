@@ -41,6 +41,17 @@ SPECIALTIES = [("TREECP", "SRCEST", "MDEECP", "PDEECP", "estabilidade, de escava
                ("TRPIE", "SRCIE", "MDPIE", "PDPIE", "instalações elétricas"), ("TRRPAE", "SRCPAE", "MDRPAE", "PDRPAE", "redes prediais de água e esgotos"),
                ("TRPAP", "SRCAP", "MDPAP", "PDPAP", "águas pluviais"), ("TRITED", "SRITED", "MDITED", "PDITED", "infraestruturas de telecomunicações (ITED)"),
                ("TRPCT", "SRCCT", "MDPCT", "PDPCT", "comportamento térmico"), ("TRPCA", "SRCCA", "MDPCA", "PDPCA", "condicionamento acústico")]
+
+MEM_TITLES = ["Memória descritiva e justificativa", "Memória Descritiva", "MEMÓRIA DESCRITIVA E JUSTIFICATIVA", "Memória Descritiva e Justificativa"]
+ATELIERS = ["DUPLODECIMETRO, ATELIER DE ARQUITECTOS", "TRAÇO VIVO - Arquitetura e Urbanismo, Lda.", "Gabinete de Projetos do Tâmega, Lda.", "ARQ+ENG Celorico, Unipessoal Lda.",
+            "DEL | DEPARTAMENTO DE ESTUDOS E PROJETOS", "Atelier Basto Arquitetura"]
+MONTHS = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "setembro", "outubro"]
+INDEX_HEADINGS = ["1. INTRODUÇÃO", "2. ÁREA DE INTERVENÇÃO", "3. ENQUADRAMENTO", "3.1. ENQUADRAMENTO JURÍDICO", "3.2. ENQUADRAMENTO NOS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL",
+                  "3.3. ENQUADRAMENTO URBANÍSTICO", "3.4. ANTECEDENTES PROCEDIMENTAIS", "3.4.1. CONSULTAS A ENTIDADES", "3.4.1.1. CONSULTAS DAS UNIDADES ORGÂNICAS DO UNIVERSO MUNICIPAL",
+                  "3.4.1.2. CONSULTAS A ENTIDADES EXTERNAS AOS SERVIÇOS MUNICIPAIS", "3.4.2. ESCLARECIMENTOS ADICIONAIS", "4. PROGRAMA DE INTERVENÇÃO", "4.1. PROPOSTA ARQUITETÓNICA",
+                  "4.2. INTEGRAÇÃO NA MORFOLOGIA E TECIDO URBANO ENVOLVENTE", "4.3. VIAS, ACESSOS E ESTACIONAMENTO", "4.4. INFRAESTRUTURAS", "4.5. ESPAÇOS VERDES",
+                  "4.6. GESTÃO DE RESÍDUOS SÓLIDOS", "4.7. ACESSIBILIDADES", "4.8. SEGURANÇA CONTRA INCÊNDIOS", "5. QUADRO SINÓPTICO", "6. ANEXOS"]
+
 def _real_sentences():
     """Sentences of the real public memórias (sources/real/memorias), texture for long generated memórias; loaded once, no PDF text reused as a key."""
     try:
@@ -138,16 +149,47 @@ def doc_request(c, override=None):
 def doc_memory(c, override=None, long=False, rng=None):
     o = override or {}
     a = c["people"]["arquiteto"]
-    d = G.Doc("Memória descritiva e justificativa")
+    title = rng.choice(MEM_TITLES) if (long and rng) else "Memória descritiva e justificativa"
+    d = G.Doc(title)
     if long and REAL and rng:
-        d.text(f"Requerente: {c['people']['requerente']['name']}    Operação: {c['work']}    Local: {c['site']}", size=9)
-        d.text("ÍNDICE", bold=True)
-        for i, h in enumerate(["INTRODUÇÃO", "ÁREA DE INTERVENÇÃO", "ENQUADRAMENTO", "ENQUADRAMENTO JURÍDICO", "ENQUADRAMENTO URBANÍSTICO", "PROGRAMA DE INTERVENÇÃO", "QUADRO SINÓPTICO"], 1):
-            d.text(f"{i}. {h} ........ {i + 2}", size=9)
-        d.text("1. INTRODUÇÃO", bold=True)
-        for _ in range(rng.randrange(2, 5)):
-            d.text(rng.choice(REAL))
-        d.text("2. ÁREA DE INTERVENÇÃO", bold=True)
+        atelier = rng.choice(ATELIERS)
+        if rng.random() < 0.35:
+            # the memória written as the reply to the council's ofício (real pattern: company header, "Resposta ao ofício", date, atelier footer)
+            d.text(f"{c['people']['requerente']['name']}", size=9)
+            d.text(f"Comunicação prévia de obras de edificação - Resposta ao ofício n.º {rng.randrange(1000, 9999)}/DGU.SAA, de {rng.randrange(1, 28):02d}/{rng.randrange(1, 12):02d}/2026", size=9)
+            d.text(f"{c['site']}, Celorico de Basto", size=9)
+            d.text(f"{title}                                       {rng.choice(MONTHS)} de 2026", size=9)
+            d.text(f"{atelier}                                                                                                     1", size=7)
+            d.text("1. NOTA EXPLICATIVA", bold=True)
+            d.text(f"Para cumprimento do ofício acima referido, procedeu-se à reformulação dos elementos instrutórios da operação urbanística pretendida ({c['work']}).")
+            for _ in range(rng.randrange(2, 5)):
+                d.text(rng.choice(REAL))
+            d.text("2. DESCRIÇÃO DA OPERAÇÃO", bold=True)
+        else:
+            # cover page, then an index with dotted leaders and sub-numbering, then the body (real pattern: Cascais/Valongo memórias)
+            d.text(f"{c['work']} - {c['site']}")
+            d.text(f"Requerente: {c['people']['requerente']['name']}")
+            d.gap(40)
+            d.text(atelier, size=9)
+            d._new_page()
+            d.text(f"{atelier}    |    {title}", size=7)
+            d.text(f"{atelier[:3].upper()} | {rng.choice(['DIVISÃO DE PROJETO', 'DEPARTAMENTO DE ARQUITETURA', 'GABINETE TÉCNICO'])}", size=7)
+            d.text("2", size=7)
+            d.text("ÍNDICE", bold=True)
+            page_no = 3
+            for h in INDEX_HEADINGS[: rng.randrange(14, len(INDEX_HEADINGS) + 1)]:
+                dots = "." * rng.randrange(40, 90)
+                d.text(f"{h} {dots} {page_no}", size=9)
+                page_no += rng.randrange(0, 3)
+            d._new_page()
+            d.text(f"{atelier}    |    {title}", size=7)
+            d.text("3", size=7)
+            d.text("1.  INTRODUÇÃO", bold=True)
+            d.text(f"O presente documento constitui o enquadramento e a fundamentação técnica do pedido de {c['work'].lower()}, sito em {c['site']}, freguesia do concelho de "
+                   f"Celorico de Basto, requerido por {c['people']['requerente']['name']}, ao abrigo do disposto no Regime Jurídico da Urbanização e da Edificação.")
+            for _ in range(rng.randrange(2, 5)):
+                d.text(rng.choice(REAL))
+            d.text("2.  ÁREA DE INTERVENÇÃO", bold=True)
     d.text(f"A presente memória descritiva e justificativa respeita à {c['work']}, localizada em {c['site']}, concelho de Celorico de Basto, "
            f"em prédio com a área de {o.get('plot', c['plot'])} m2.")
     d.text("A pretensão insere-se em Solo Urbano, conforme a Planta de Ordenamento do Plano Diretor Municipal de Celorico de Basto "
@@ -174,6 +216,9 @@ def doc_memory(c, override=None, long=False, rng=None):
 
 def doc_term_author(c, p, project, kind="I", site=None, wording=True):
     d = G.Doc(f"Termo de responsabilidade do autor do projeto de {project}")
+    if random.Random(c["id"] + project + kind).random() < 0.15:
+        d.text("A presente minuta de termo de responsabilidade de autoria de projeto transcreve a redação prevista no anexo VII, a que se refere o artigo 7.º, "
+               "da Portaria n.º 320/2026/1, de 2 de setembro.", size=9)
     head = (f"{p['name']}, {p['title']}, com domicílio em {p['address']}, contribuinte n.º {NIF}, inscrito na {p['body']} sob o n.º {p['number']}, declara, "
             f"para efeitos do disposto no n.º 1 do artigo 10.º do Decreto-Lei n.º 555/99, de 16 de dezembro, na sua redação atual, que o projeto de {project}, "
             f"de que é autor, relativo à obra de {c['work']}, localizada em {site or c['site']}, cuja comunicação prévia foi apresentada por {c['people']['requerente']['name']}")
@@ -194,6 +239,8 @@ def doc_term_author(c, p, project, kind="I", site=None, wording=True):
 
 def doc_term_coordinator(c, p):
     d = G.Doc("Termo de responsabilidade do coordenador de projeto")
+    if random.Random(c["id"] + "coord").random() < 0.15:
+        d.text("A presente minuta de termo de responsabilidade do coordenador de projeto transcreve a redação prevista no anexo VII da Portaria n.º 320/2026/1, de 2 de setembro.", size=9)
     d.text(f"{p['name']}, com domicílio em {p['address']}, contribuinte n.º {NIF}, inscrito na {p['body']} sob o n.º {p['number']}, na qualidade de coordenador, relativo à "
            f"obra de {c['work']}, localizada em {c['site']}, cuja comunicação prévia foi apresentada por {c['people']['requerente']['name']}, declara, para efeitos do "
            "disposto no n.º 1 do artigo 10.º do Decreto-Lei n.º 555/99, de 16 de dezembro, na sua redação atual, a compatibilidade entre os diversos projetos e as "
@@ -350,7 +397,7 @@ def noise_doc(c, rng):
 
 def plant(rng, c, n_err):
     plan, findings = {}, []
-    if rng.random() < 0.35:
+    if rng.random() < 0.5:
         plan["long_memoria"] = True
     choices = rng.sample(ERRORS, n_err)
     for e in choices:

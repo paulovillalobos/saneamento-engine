@@ -35,7 +35,8 @@ RUNS = {"r1": {"adapter": "amalia-saneamento-r1", "data": ["training/data"], "se
         "r1b": {"adapter": "amalia-saneamento-r1b", "data": ["training/data"], "sets": ["d0"], "repeat": {}},  # D0 v2: every passage, held-out phrasings, nao_sei probes
         "r2": {"adapter": "amalia-saneamento-r2", "data": ["training/data"], "sets": ["d0", "d1", "d2"], "repeat": {}},   # cumulative from the start: r1 showed D0 alone raises invented facts on D2
         "r3": {"adapter": "amalia-saneamento-r3", "data": ["training/data"], "sets": ["d0", "d1", "d2"], "repeat": {"d2": 2}},
-        "r4": {"adapter": "amalia-saneamento-r4", "data": ["training/data"], "sets": ["d0", "d1", "d2"], "repeat": {}}}   # D0 v4 (scope, rule, no base_legal), D1 v3 (long memórias, new noise, augmentation), 80 expedientes
+        "r4": {"adapter": "amalia-saneamento-r4", "data": ["training/data"], "sets": ["d0", "d1", "d2"], "repeat": {}},
+        "r5": {"adapter": "amalia-saneamento-r5", "data": ["training/data"], "sets": ["d0", "d1", "d2"], "repeat": {}}}   # r5: memórias with cover+index / ofício-reply headers, minuta preamble on termos, one-word-per-line augmentation (stranger failures of r4)   # D0 v4 (scope, rule, no base_legal), D1 v3 (long memórias, new noise, augmentation), 80 expedientes
 HP = {"lora_r": 16, "lora_alpha": 32, "lora_dropout": 0.05, "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
       "epochs": 2, "lr": 1e-4, "warmup_steps": 20, "effective_batch": 16, "tokens_per_batch": 24000, "max_len": 8192,
       "optimizer": "AdamW (weight_decay 0)", "schedule": "linear warm-up, linear decay to 0", "precision": "bf16", "grad_clip": 1.0, "seed": 0,

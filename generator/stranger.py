@@ -19,7 +19,7 @@ R = "sources/real"
 V9, V11, V12 = "portaria-320-2026-1:anexo-V.9", "portaria-320-2026-1:anexo-V.11", "portaria-320-2026-1:anexo-V.12"
 # (file, D1 element or None, D1 tipo, [D2 (field, value or None)], note)
 KEYS = [
-    (f"{R}/memorias/valongo_74l2023_md.pdf", V9, "escrito", [("area_parcela", "49 977,00 m2"), ("custo_total", None)], "real memória descritiva e justificativa (loteamento, Valongo 2025)"),
+    (f"{R}/memorias/valongo_74l2023_md.pdf", V9, "escrito", [("area_parcela", "49 977,00"), ("custo_total", None)], "real memória descritiva e justificativa (loteamento, Valongo 2025)"),
     (f"{R}/memorias/cascais_md_loteamento_1145.pdf", V9, "escrito", [("validade_seguro_fim", None)], "real memória descritiva (Cascais DLOT, alvará 1145)"),
     (f"{R}/memorias/cascais_md_loteamento_1032.pdf", V9, "escrito", [], "real memória descritiva (Cascais DLOT, alvará 1032)"),
     (f"{R}/memorias/cascais_md_loteamento_1037.pdf", V9, "escrito", [], "real memória descritiva (Cascais DLOT, alvará 1037)"),

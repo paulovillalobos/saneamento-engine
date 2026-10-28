@@ -76,6 +76,20 @@ def noisy(text, rng):
     return t
 
 
+def perline(text):
+    """Layout damage seen on real PDFs (the OA minutas): the extractor returns one word per line."""
+    return "\n".join(text.split())
+
+
+def damage(text, rng):
+    r = rng.random()
+    if r < 0.55:
+        return noisy(text, rng)
+    if r < 0.85:
+        return perline(text)
+    return perline(noisy(text, rng))
+
+
 def stranger_name(slot, stem, rng):
     styles = [lambda: f"{slot}_{stem.replace('-', '_')}.pdf", lambda: f"{stem.replace('-', '')[:40]}.pdf", lambda: f"{rng.randrange(1, 60):02d}_{stem.replace('-', '_')[:30]}.pdf",
               lambda: f"{slot.lower()}-{rng.randrange(100, 999)}.pdf", lambda: f"{stem.split('-')[0].upper()}_{rng.choice(['v1', 'final', 'rev2', 'assinado'])}.pdf"]
@@ -112,10 +126,10 @@ def main():
                 ans = {"elemento": lab["element"], "citacao": PORT[lab["element"]]["text"], "tipo": "desenhado" if lab["kind"] == "drawn" else "escrito"}
             d1.append({"id": rid("d1", lab["expediente"], lab["file"]), "task": "d1_elemento", "prompt": D1_PROMPT.format(shortlist=SHORTLIST, name=lab["file"], pages=n or 0, text=text),
                        "answer": json.dumps(ans, ensure_ascii=False), "expediente": lab["expediente"]})
-            if a.augment and pages is not None and rng.random() < 0.35:
+            if a.augment and pages is not None and rng.random() < 0.45:
                 stem = lab["file"][len(lab["slot"]) + 1:-4]
                 sname = stranger_name(lab["slot"], stem, rng)
-                ntext = "\n".join(f"[página {i + 1}]\n{noisy(t, rng)}" for i, t in enumerate(pages))[:MAXCH]
+                ntext = "\n".join(f"[página {i + 1}]\n{damage(t, rng)}" for i, t in enumerate(pages))[:MAXCH]
                 d1.append({"id": rid("d1", lab["expediente"], lab["file"], "aug"), "task": "d1_elemento", "prompt": D1_PROMPT.format(shortlist=SHORTLIST, name=sname, pages=n, text=ntext),
                            "answer": json.dumps(ans, ensure_ascii=False), "expediente": lab["expediente"]})
                 stats["augmented"] = stats.get("augmented", 0) + 1
