@@ -152,6 +152,9 @@ def train_remote(rows: list[dict], hp: dict, adapter: str = ADAPTER) -> dict:
                 if step % 10 == 0 or step == 1:
                     log.append({"step": step, "epoch": ep + 1, "loss": round(run_loss / run_n, 4), "seen": seen, "seconds": round(time.time() - t0, 1)})
                     print(log[-1], flush=True)
+                if step % 100 == 0:  # checkpoint: r6 died at step 1010/1017 before the final save ("Runner terminated"), 3.4 h lost
+                    model.save_pretrained(str(out_dir)); adapters.commit()
+                    print({"checkpoint": step}, flush=True)
                 run_loss, run_n = 0.0, 0
     if run_n:
         torch.nn.utils.clip_grad_norm_(model.parameters(), hp["grad_clip"])
