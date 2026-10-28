@@ -14,3 +14,11 @@
   passages in the prompt and must select and copy. D0 v3 = selection among candidate passages (hard negatives: siblings), copy verbatim,
   abstain when the right passage is not offered. D1 v2 = the CPEDI element shortlist (id + text) in the prompt. D2 unchanged.
   Inference may give the whole CPEDI block (216 passages ≈ 13.5k tokens, prefix-cached); training uses shortlists so a row stays ≈ 1-3k tokens.
+
+## D11 — the file name must not carry the label (2026-10-28)
+A probe on round 5 showed the reader classified real memórias by their file name: real text renamed to the generator's
+slot-stem name was right 3/3, generated text under a real name was right 3/3, every content ablation was wrong.
+Rule: in training, a large share of file names say nothing or lie (generator/d1d2.py opaque_name); the sealed generated
+sets keep their names (they measure the lab), the stranger test keeps the real names (it measures the world).
+Corollary: a sealed set built by the same generator cannot detect a shortcut the generator itself creates; the stranger
+test is the only gate that counts for shipping, and it must grow (more real memórias, termos, plantas with real names).

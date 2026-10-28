@@ -19,3 +19,11 @@
 - r5 data (training only): cover+index and ofício-reply memórias (50 % long), four title spellings, minuta preamble on 15 % of
   termos, augmentation 45 % with one-word-per-line layout. Chain: training/runs/overnight-r5.sh → training/runs/r5/.
 - Report for the morning: docs/REPORT-2026-10-28.md.
+
+## 2026-10-28 07:10 UTC — r5 landed (no stranger gain), cause found by probe, r6 launched
+- r5: lab held (D1/D2 100 %, D0 94-100 %); stranger 6/11 (minuta +1, Alcácer list −1, 4 real memórias still "not an element").
+- Probe 1 (municipality swap both ways): no effect. Probe 2 (10 ablations × 3 real memórias): only the FILE NAME flips the
+  answer — real text under MDARQ-memoria-descritiva.pdf → correct 3/3; generated text under the real name → correct 3/3.
+  The training names (slot-stem) and all stranger_name styles leaked the label. D11 recorded in DECISIONS.md.
+- r6 data: opaque_name() on 40 % of base D1 rows and 50 % of augmented rows (2,445/6,707 rows), incl. lying names.
+- Chain: training/runs/overnight-r6.sh → training/runs/r6/. Third training of the night (hard stop reached after it).
