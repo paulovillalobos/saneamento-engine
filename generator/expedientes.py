@@ -331,8 +331,7 @@ def documents(c, plan):
             ("MDARQ", "memoria-descritiva", "Memória descritiva e justificativa", "written", "arquiteto", *doc_memory(c, ov_mem, long=plan.get("long_memoria", False), rng=random.Random(c["id"] + "m"))),
             ("CEO", "calendarizacao", "Calendarização da execução da obra", "written", "arquiteto",
              *doc_plain(c, "Calendarização da execução da obra", arq, f"Início previsto dos trabalhos: {c['start']}. Duração prevista: {c['months']} meses.", facts=[("prazo_meses", str(c["months"]), "meses", 0)])),
-            ("EOCT", "estimativa-custo", "Estimativa do custo total da obra", "written", "arquiteto",
-             *doc_plain(c, "Estimativa do custo total da obra", arq, f"Estimativa do custo total da obra, baseada em quantidades e tipologias de trabalhos: {eur(c['cost'])} (valor fictício).", facts=[("custo_total", eur(c["cost"]), "", 0)])),
+            ("EOCT", "estimativa-custo", "Estimativa do custo total da obra", "written", "arquiteto", *doc_estimate(c, arq, random.Random(c["id"] + "eoct"))),
             ("OUTDOC", "estimativa-encargos", "Estimativa dos encargos urbanísticos", "written", "requerente",
              *doc_plain(c, "Estimativa dos encargos urbanísticos", req, f"Estimativa dos encargos urbanísticos, incluindo a taxa pela realização, manutenção e reforço de infraestruturas urbanísticas: {eur(int(c['cost'] * 0.013))} (simulação).")),
             ("MDPLAC", "memoria-acessibilidades", "Memória descritiva do plano de acessibilidades", "written", "arquiteto",
@@ -349,7 +348,7 @@ def documents(c, plan):
         docs += [(term, f"termo-{drw.lower()}", f"Termo de responsabilidade do autor do projeto de {name}", "written", "engenheiro", *doc_term_author(c, eng, name, "II")),
                  (ins, f"seguro-{drw.lower()}", f"Comprovativo de seguro do autor do projeto de {name}", "written", "seguradora", *doc_insurance(c, eng, f"a elaboração do projeto de {name}")),
                  (mem, f"memoria-{drw.lower()}", f"Memória descritiva do projeto de {name}", "written", "engenheiro",
-                  *doc_plain(c, f"Memória descritiva do projeto de {name}", eng, f"Memória descritiva e justificativa do projeto de {name}, relativo à {c['work']} em {c['site']} (conteúdo sintético).")),
+                  *doc_special_memory(c, name, eng, random.Random(c["id"] + mem))),
                  (drw, f"pecas-{drw.lower()}", f"Peças desenhadas do projeto de {name}", "drawn", "engenheiro", *doc_drawing(c, f"Projeto de {name}", f"{drw}-01", "1:100", eng, "plan"))]
     docs += [("TRFSCI", "termo-sci", "Termo de responsabilidade do autor da ficha de segurança contra incêndios", "written", "engenheiro", *doc_term_author(c, eng, "segurança contra incêndios em edifícios (ficha de segurança)", "II")),
              ("FSCI", "ficha-sci", "Ficha de segurança contra incêndios", "written", "engenheiro", *doc_plain(c, "Ficha de segurança contra incêndios", eng, "Ficha de segurança contra incêndios: utilização-tipo I (habitacional), 1.ª categoria de risco (conteúdo sintético).")),
@@ -393,6 +392,182 @@ def noise_doc(c, rng):
     if kind == "cv":
         return ("OUTDOC", "curriculo", "Curriculum vitae", doc_plain(c, "Curriculum vitae", p, f"{p['name']}. Formação: licenciatura (fictícia). Experiência: 12 anos (fictícia).")[0])
     return ("OUTDOC", "carta", "Carta", doc_plain(c, "Carta", p, f"Exmos. Senhores, venho por este meio juntar os elementos em falta ao meu pedido. Com os melhores cumprimentos, {p['name']}.")[0])
+
+
+ELEMENT_NAMES = ["memória descritiva e justificativa", "levantamento topográfico", "planta de implantação", "projeto de estabilidade e fundações",
+                 "plano de acessibilidades", "projeto de segurança contra incêndio em edifícios", "projeto de águas pluviais", "projeto de redes prediais de água e esgotos",
+                 "projeto de infraestruturas de telecomunicações (ITED)", "estimativa do custo total da obra", "calendarização da execução da obra", "planta de localização",
+                 "termos de responsabilidade dos autores dos projetos", "registo fotográfico", "projeto de condicionamento acústico", "projeto de comportamento térmico"]
+MUNIS_PT = ["Seixal", "Viseu", "Leiria", "Gouveia", "Figueira da Foz", "Estarreja", "Benavente", "Loures", "Castro Daire", "Vila Nova de Cerveira", "Alfândega da Fé", "Anadia", "Amarante", "Valpaços"]
+NOISE_PREFIX = "x-"
+
+
+def noise_about(c, rng):
+    """A document ABOUT an element (norm, postura, guide, technical note, criteria, deliberation, internal note, project sheet, filling instructions, manual,
+    diagnostic, tender spec) or a termo of ANOTHER procedure: real expedientes carry these, and none of them is the element it talks about."""
+    kind = rng.choice(["norma", "postura", "guia", "nota", "criterios", "deliberacao", "informacao", "ficha-projeto", "instrucoes", "termo-outro", "termo-outro",
+                       "memoria-empresa", "manual", "diagnostico", "caderno"])
+    X = rng.choice(ELEMENT_NAMES); M = rng.choice(MUNIS_PT); n = rng.randrange(1, 40)
+    if kind == "norma":
+        d = G.Doc(f"NORMA DE INSTRUÇÃO DE PROCESSO NIP-{n:02d}")
+        d.text(f"Revisão: A{rng.randrange(1, 9)}    Data: {rng.randrange(1, 28):02d}/{rng.randrange(1, 12):02d}/2026    CÂMARA MUNICIPAL DE {M.upper()}    Proc. N.º:", size=9)
+        d.text("COMUNICAÇÃO PRÉVIA DE OBRAS DE EDIFICAÇÃO", bold=True)
+        d.text("OBJETIVO E ÂMBITO DE APLICAÇÃO", bold=True)
+        d.text("Definir o modo de instruir o processo de comunicação prévia de obras de edificação ao abrigo do Regime Jurídico da Urbanização e da Edificação e da Portaria n.º 320/2026/1.")
+        d.text("ELEMENTOS A APRESENTAR", bold=True)
+        for i, el in enumerate(rng.sample(ELEMENT_NAMES, 6), 1):
+            d.text(f"{i}. {el[0].upper() + el[1:]}, em formato PDF/A" + (", assinado digitalmente pelo autor" if i % 2 else ", georreferenciado no sistema PT-TM06/ETRS89") + ";")
+        d.text(f"A {X} deve ser apresentada em ficheiro autónomo, com o nome normalizado previsto no manual de instrução digital.")
+    elif kind == "postura":
+        d = G.Doc(f"Postura Municipal Referente a Projetos de {X[0].upper() + X[1:]}")
+        d.text(f"MUNICÍPIO DE {M.upper()}    CÂMARA MUNICIPAL    Data: 2026/{rng.randrange(1, 12):02d}/{rng.randrange(1, 28):02d}    Página 1 de 1", size=9)
+        d.text(f"Os projetos de {X} devem ser instruídos com os seguintes elementos:")
+        d.text("1. Planta topográfica, a fornecer pelo departamento competente, onde se assinale o lote onde se pretende executar a obra;")
+        d.text(f"2. Memória descritiva e justificativa contendo a identificação do requerente, a localização, a composição e o tipo de utilização do edifício e a descrição da solução adotada para o {X};")
+        d.text("3. Peças desenhadas em escala adequada, com a indicação dos materiais, diâmetros, secções e cotas;")
+        d.text("4. Termo de responsabilidade do autor do projeto, nos termos do artigo 10.º do RJUE.")
+    elif kind == "guia":
+        d = G.Doc(f"Guia Técnico para Projetos de {X[0].upper() + X[1:]}")
+        d.text(f"GTPP_Rev.:{rng.randrange(1, 5):02d}    01/01/2026", size=9)
+        d.text("1. ÂMBITO DE APLICAÇÃO E OBJETIVOS", bold=True)
+        d.text(f"O presente guia tem como objetivo definir as normas para elaboração e instrução dos projetos particulares de {X}, com vista à sua apreciação pelos serviços municipais de {M}.")
+        d.text("2. INSTRUÇÃO DO PROJETO", bold=True)
+        d.text(f"O projeto deve incluir: a) memória descritiva, da qual constem a descrição da conceção do sistema, materiais e acessórios; b) cálculos justificativos; c) peças desenhadas; d) termo de responsabilidade do autor.")
+        d.text("3. NORMAS APLICÁVEIS", bold=True)
+        d.text("Decreto Regulamentar n.º 23/95, de 23 de agosto; Decreto-Lei n.º 194/2009, de 20 de agosto; normas europeias EN aplicáveis.")
+    elif kind == "nota":
+        d = G.Doc(f"NOTA TÉCNICA N.º {n:02d} — PROJETOS DE {X.upper()}")
+        d.text(f"PÁGINA 1/{rng.randrange(4, 12)}", size=8)
+        d.text("OBJETIVO", bold=True)
+        d.text(f"De acordo com a legislação em vigor, a presente nota técnica estabelece o conteúdo mínimo dos projetos de {X} apresentados para apreciação, nomeadamente a memória descritiva e justificativa e as peças desenhadas.")
+        d.text("QUADRO I — PEÇAS ESCRITAS", bold=True)
+        d.text("Memória descritiva e justificativa | Cálculos | Termo de responsabilidade | Ficha de segurança (quando aplicável)")
+        d.text("QUADRO II — PEÇAS DESENHADAS", bold=True)
+        d.text("Planta de localização 1:1000 | Plantas 1:100 | Cortes 1:100 | Pormenores")
+    elif kind == "criterios":
+        d = G.Doc("ANEXO IV — Critério para elaboração dos Levantamentos Topográficos e Cadastrais")
+        d.text(f"Município de {M} • N.I.P.C.: 5{rng.randrange(10000000, 99999999)} • Sítio: www.cm-{M.lower().replace(' ', '')}.pt", size=8)
+        d.text("1. O levantamento topográfico será efetuado à escala 1:500, podendo determinados pormenores justificar a escala 1:200.")
+        d.text("2. Todas as peças desenhadas em formato DWG ou DXF, em planimetria e altimetria, deverão estar referenciadas ao sistema de coordenadas PT-TM06/ETRS89.")
+        d.text("3. O levantamento inclui muros, lancis, caixas de visita, postes, árvores e todas as infraestruturas visíveis, com layers independentes.")
+        d.text("4. A planta de implantação é desenhada sobre o levantamento topográfico e identifica a parcela, as confrontações e a implantação proposta.")
+    elif kind == "deliberacao":
+        d = G.Doc(f"Cópia de parte da ata da reunião de 2026-{rng.randrange(1, 12):02d}-{rng.randrange(1, 28):02d}")
+        d.text(f"Ponto {n} – MINUTAS DOS TERMOS DE RESPONSABILIDADE", bold=True)
+        d.text(f"Parecer da Divisão de Obras Particulares, de {rng.randrange(1, 28):02d}.{rng.randrange(1, 12):02d}.2026")
+        d.text("Com a publicação da Portaria n.º 320/2026/1, que identifica os elementos instrutórios dos procedimentos previstos no Regime Jurídico da Urbanização e Edificação, "
+               "foram elaboradas as minutas dos termos de responsabilidade do autor do projeto, do coordenador de projeto, do autor do plano de acessibilidades e do diretor de obra.")
+        d.text("DELIBERAÇÃO: Deliberado por unanimidade validar as minutas dos termos de responsabilidade, que ficam arquivadas em anexo à presente ata.", bold=True)
+    elif kind == "informacao":
+        d = G.Doc(f"INFORMAÇÃO n.º {n}/2026")
+        d.text(f"Município de {M} — Câmara Municipal    DIVISÃO DE URBANISMO E TERRITÓRIO    DATA: {rng.randrange(1, 28):02d}/{rng.randrange(1, 12):02d}/2026    NIPG: {rng.randrange(100, 999)}/26", size=9)
+        d.text("DE: Chefe de Divisão    PARA: Vereador do Urbanismo", size=9)
+        d.text(f"ASSUNTO: Competência dos técnicos para subscrever {X}", bold=True)
+        d.text(f"Tendo presente o modelo de termo de responsabilidade do anexo VII da Portaria n.º 320/2026/1, coloca-se a questão de saber se a {X} pode ser subscrita por engenheiro técnico ou apenas por arquiteto ou engenheiro, nos termos da Lei n.º 31/2009.")
+        d.text("Propõe-se que os serviços aceitem a subscrição por qualquer técnico habilitado nos termos da lei, mediante declaração da respetiva associação pública profissional.")
+    elif kind == "ficha-projeto":
+        d = G.Doc("Ficha de Projeto")
+        d.text(f"Designação do Projeto | Reabilitação da Escola Básica de {rng.choice(['Favaios', 'Vilela', 'Fornos', 'Codeçoso', 'Gémeos'])}")
+        d.text(f"Código do Projeto | NORTE-08-{rng.randrange(1000, 9999)}-FEDER-{rng.randrange(100000, 999999)}")
+        d.text("Objetivo Principal | Adequar a construção antiga às novas exigências funcionais do edifício como estabelecimento de ensino")
+        d.text(f"Entidade Beneficiária | Município de {M}    Data de aprovação | 2026-{rng.randrange(1, 12):02d}-{rng.randrange(1, 28):02d}")
+        d.text(f"Custo elegível | {eur(rng.randrange(80, 900) * 1000)}    Apoio Financeiro da União Europeia | {eur(rng.randrange(60, 700) * 1000)}")
+    elif kind == "instrucoes":
+        d = G.Doc("Instruções Preenchimento_Q3")
+        d.text("OBJETIVO E ENQUADRAMENTO LEGAL", bold=True)
+        d.text("INQUÉRITO AOS PROJETOS DE OBRAS DE EDIFICAÇÃO E DEMOLIÇÃO DE EDIFÍCIOS (Q3). Por favor, leia com atenção as instruções que se seguem e cumpra o prazo estabelecido para o preenchimento do questionário.")
+        d.text("Informações Gerais: Processo Interno (A0410/A0420/A0430/A0431)    Tipo de Procedimento (A0600)    LICENÇA DE OPERAÇÕES URBANÍSTICAS (conceito 3084)    COMUNICAÇÃO PRÉVIA DE OPERAÇÕES URBANÍSTICAS (conceito 3083)")
+        d.text("Campos a preencher: número de fogos, área bruta de construção, número de pisos, tipo de obra, uso principal. Estes campos devem corresponder à informação registada no projeto.")
+    elif kind == "termo-outro":
+        which = rng.choice(["utilizacao", "conclusao", "rececao-prov", "rececao-def"])
+        who = c["people"]["diretor"]
+        if which == "utilizacao":
+            d = G.Doc("Termo de Responsabilidade")
+            d.text(f"Exmo. Senhor Presidente da Câmara Municipal de {M}")
+            d.text(f"{who['name']}, morador na {who['address']}, contribuinte n.º {NIF}, inscrito na {who['body']} sob o n.º {who['number']}, declara, para efeitos do disposto no artigo 63.º do "
+                   f"Decreto-Lei n.º 555/99, de 16 de dezembro, na sua redação atual, na qualidade de técnico, que a utilização de edifício ou fração, sem operação urbanística prévia, localizado em {c['site']}, pressupõe:")
+            d.text("A conformidade da utilização prevista com as normas legais e regulamentares que fixam os usos e utilizações admissíveis; e a idoneidade do edifício ou fração para o fim pretendido.")
+            d.text("Mais se declara que foram efetuados os ensaios e obtidos os certificados previstos na legislação aplicável.")
+        elif which == "conclusao":
+            d = G.Doc("Termo de responsabilidade do diretor de obra ou do diretor de fiscalização de obra")
+            d.text("A presente minuta de termo de responsabilidade do diretor de obra e do diretor de fiscalização de obra, a subscrever aquando da conclusão da obra, transcreve a redação prevista no anexo VII da Portaria n.º 320/2026/1.", size=9)
+            d.text(f"{who['name']}, morador na {who['address']}, contribuinte n.º {NIF}, inscrito na {who['body']} sob o n.º {who['number']}, declara, para efeitos do disposto no n.º 1 do artigo 63.º do RJUE, "
+                   f"na qualidade de diretor de obra, que a obra de {c['work']}, localizada em {c['site']}, se encontra concluída e foi executada de acordo com o projeto aprovado e com as condições da comunicação prévia.")
+        else:
+            fase = "Receção Provisória" if which == "rececao-prov" else "Receção Definitiva"
+            d = G.Doc(f"Termo de Responsabilidade – Diretor de Obra/Diretor de Fiscalização de Obra (Operação de Loteamento – {fase} de Obras de Urbanização)")
+            d.text(f"MPL/DOP-Mod.{rng.randrange(100, 199)}/SGQ.00    Pág. 1 de 1", size=8)
+            d.text("Identificação do Técnico    Nome:    Morada:    Freguesia:    Código Postal:    Concelho:    NIF n.º:    E-mail:    Habilitações Académicas:    Associação:    N.º:")
+            d.text(f"Declara, na qualidade de diretor de obra, que as obras de urbanização do loteamento sito em {c['site']} se encontram em condições de {fase.lower()}, nos termos do artigo 87.º do RJUE.")
+        sig(d, c, who)
+    elif kind == "memoria-empresa":
+        d = G.Doc("MINUTA DA MEMÓRIA DESCRITIVA")
+        d.text("Página 1 de 1", size=8)
+        d.text(f"Objetivos: Com este documento pretende-se que o empreendedor se apresente à Câmara Municipal de {M} e conte a sua história. Narre todo o processo de construção do trabalho, desde o momento inicial até à apresentação dos produtos finais.")
+        d.text("Espera-se ainda que refira a sua visão, conceito, características distintivas, síntese do produto ou serviço, mercado-alvo e modelo de negócio (máximo 2 páginas).")
+    elif kind == "manual":
+        d = G.Doc("MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE OPERAÇÕES URBANÍSTICAS EM FORMATO DIGITAL")
+        d.text(f"Município de {M} – NIPC 50{rng.randrange(1000000, 9999999)} | geral@cm-{M.lower().replace(' ', '')}.pt", size=8)
+        d.text("1. Os elementos são apresentados em ficheiros PDF/A, assinados digitalmente; as peças desenhadas em DWFx ou PDF/A; o levantamento topográfico e a planta de implantação em DWG georreferenciado.")
+        d.text(f"2. A {X} constitui um ficheiro autónomo, com o nome normalizado indicado no anexo I.")
+        d.text("3. Os ficheiros não podem ultrapassar 50 MB nem ter nomes com mais de 40 caracteres.")
+    elif kind == "diagnostico":
+        d = G.Doc("Plano Municipal de Acessibilidade Para Todos — Capítulo II – Levantamento e Diagnóstico")
+        d.text(f"Município de {M}    Entrega Final    {rng.randrange(40, 140)}", size=8)
+        d.text(f"Edificado {rng.randrange(1, 9)} — {rng.choice(['Biblioteca Municipal', 'Centro de Saúde', 'Escola Básica', 'Junta de Freguesia', 'Piscinas Municipais'])}", bold=True)
+        d.text("Registo Fotográfico — Diagnóstico do Edifício — Sinalética: ausente; Portão: cumpre o disposto no DL 163/2006 quanto à largura; Rampa: inclinação superior a 8 %, não cumpre; Balcão de atendimento: altura superior a 0,80 m.")
+        d.text("Propostas de intervenção: rebaixamento do balcão, correção da rampa, colocação de sinalética.")
+    else:
+        d = G.Doc(f"MUNICÍPIO DE {M.upper()} — AQUISIÇÃO DE SERVIÇOS DE {rng.choice(['PROFISSIONAL DE TOPOGRAFIA', 'ELABORAÇÃO DE PROJETO', 'FISCALIZAÇÃO DE OBRA'])} — CONSULTA PRÉVIA — CADERNO DE ENCARGOS")
+        d.text("Cláusula 1.ª Objeto", bold=True); d.text(f"O presente caderno de encargos compreende as cláusulas a incluir no contrato de aquisição de serviços de {X}.")
+        d.text("Cláusula 2.ª Prazo", bold=True); d.text(f"O contrato mantém-se em vigor pelo prazo de {rng.randrange(6, 36)} meses a contar da data da sua celebração.")
+        d.text("Cláusula 3.ª Preço e pagamento", bold=True); d.text("As quantias devidas deverão ser pagas no prazo de 30 dias após a receção das respetivas faturas.")
+    return ("OUTDOC", f"{NOISE_PREFIX}{kind}-{rng.randrange(100, 999)}", d.title[:60], d)
+
+
+def doc_special_memory(c, name, p, rng):
+    """A speciality memória as the engineers write them: index, numbered sections, figure captions, a table, references; always a WRITTEN piece."""
+    d = G.Doc(f"Memória descritiva e justificativa do projeto de {name}")
+    long = rng.random() < 0.5
+    if long:
+        d.text(f"{c['work'][0].upper() + c['work'][1:]} — {c['site']}    Edição Revisão A {rng.randrange(0, 3)}.0    Data {rng.choice(MONTHS)} 2026", size=9)
+        d.text(f"Elaborado por: Técnico Responsável {p['name']} Ins. OE n.º {p['number']}    Página 1 de {rng.randrange(6, 20)}", size=8)
+        d.text("ÍNDICE", bold=True)
+        for i, h in enumerate(["INTRODUÇÃO", "OBJETIVO", "DESCRIÇÃO DO EDIFÍCIO", "LEGISLAÇÃO E NORMAS", "SOLUÇÕES ADOTADAS", "CÁLCULOS JUSTIFICATIVOS", "CONSIDERAÇÕES FINAIS"], 1):
+            d.text(f"{i} – {h} {'.' * rng.randrange(50, 90)} {i + 2}", size=9)
+    d.text("1 – INTRODUÇÃO", bold=True)
+    d.text(f"A presente memória descritiva e justificativa refere-se ao projeto de {name} da {c['work']}, que o requerente {c['people']['requerente']['name']} pretende levar a efeito em {c['site']}, concelho de Celorico de Basto.")
+    d.text("2 – DESCRIÇÃO", bold=True)
+    d.text(f"O edifício é composto por {c['pisos']} piso(s) acima da cota de soleira, destinado a {c['use'].lower()}, com área total de construção de {c['built']} m2.")
+    if long:
+        d.text(f"Figura 1 – Localização do edifício. Figura 2 – Esquema da solução de {name}.", size=9)
+        d.text("3 – SOLUÇÕES ADOTADAS", bold=True)
+        for _ in range(rng.randrange(1, 4)):
+            d.text(rng.choice(REAL) if REAL else "Solução adotada de acordo com a regulamentação em vigor.")
+        d.text("Série: PVC    Descrição: Policloreto de vinilo    Coef. Manning: 0.009    Referências | Diâmetro interno: Ø32 29.6 | Ø40 37.6 | Ø50 47.6 | Ø75 72.0 | Ø90 86.8 | Ø110 105.6", size=9)
+        d.text("4 – CÁLCULOS JUSTIFICATIVOS", bold=True)
+        d.text("Os valores de cálculo foram determinados pela fórmula Qc = C x I x A, sendo C o coeficiente aplicável, I a intensidade de referência e A a área em projeção horizontal (ver peças desenhadas).")
+    d.text("5 – LEGISLAÇÃO E NORMAS", bold=True)
+    d.text("Foram consideradas as disposições legais e regulamentares aplicáveis, nomeadamente o Regulamento Geral das Edificações Urbanas, as normas europeias EN e as normas técnicas de construção em vigor.")
+    sig(d, c, p)
+    return d, []
+
+
+def doc_estimate(c, p, rng):
+    """The cost estimate: a table, or (40 %) the architects' narrative 'estimativa preliminar' with a nota introdutória and per-m2 reasoning; the total line is the fact."""
+    if rng.random() < 0.6:
+        return doc_plain(c, "Estimativa do custo total da obra", p, f"Estimativa do custo total da obra, baseada em quantidades e tipologias de trabalhos: {eur(c['cost'])} (valor fictício).", facts=[("custo_total", eur(c["cost"]), "", 0)])
+    d = G.Doc("Estimativas Orçamentais")
+    d.text(f"{rng.choice(ATELIERS)}    ESTIMATIVA PRELIMINAR    {c['work'][0].upper() + c['work'][1:]} — {c['site']}    1 de {rng.randrange(3, 12)}", size=9)
+    d.text("NOTA INTRODUTÓRIA", bold=True)
+    d.text("No desenvolvimento da proposta foram tidos em conta os requisitos expressos pelo dono de obra. A estimativa baseia-se em quantidades e tipologias dos trabalhos necessários à execução da obra, com valores unitários praticados na região.")
+    per = rng.randrange(600, 1400)
+    d.text(f"1 – Área bruta de construção {c['built']} m2, a um custo de construção por m2 de {per} €, resulta para o edificado um custo de construção de {eur(c['built'] * per)}.")
+    d.text(f"2 – Quanto à área exterior, considerou-se um valor de 60 €/m2 para {c['perm']} m2 de arranjos exteriores, num total de {eur(c['perm'] * 60)}.")
+    d.text("3 – Acresce o custo das demolições das pré-existências e das ligações às redes públicas.")
+    pg = d.text(f"Estimativa do custo total da obra: {eur(c['cost'])} (valor fictício).", tag="custo", bold=True)
+    sig(d, c, p)
+    return d, [("custo_total", eur(c["cost"]), "", pg, None)]
 
 
 def plant(rng, c, n_err):
@@ -450,8 +625,13 @@ def build_one(rng, cid, out_dir, n_err, with_noise):
     files, labels = [], []
     docs = documents(c, plan)
     if with_noise:
-        code, stem, title, d = noise_doc(c, rng)
-        docs.append((code, stem, title, "written", "requerente", d, []))
+        seen = set()
+        for _ in range(rng.randrange(2, 6)):
+            code, stem, title, d = noise_about(c, rng) if rng.random() < 0.75 else noise_doc(c, rng)
+            if stem in seen:
+                continue
+            seen.add(stem)
+            docs.append((code, stem, title, "written", "requerente", d, []))
     for code, stem, title, kind, signer, d, facts in docs:
         if code in plan.get("omit", set()):
             continue
@@ -466,11 +646,12 @@ def build_one(rng, cid, out_dir, n_err, with_noise):
         signed_by = None if code in plan.get("unsigned", set()) or code in plan.get("not_pdf", set()) else signer
         files.append({"slot": code, "file": fname, "title": title, "kind": kind, "signed_by": signed_by})
         NOISE = ("fatura-agua", "curriculo", "carta", "ficha-verificacao", "regulamento-extrato", "lista-elementos")
-        passages = DOCS.get(code, {}).get("passages", []) if stem not in NOISE else []
+        is_noise = stem in NOISE or stem.startswith(NOISE_PREFIX)
+        passages = DOCS.get(code, {}).get("passages", []) if not is_noise else []
         labels.append({"expediente": cid, "file": fname, "slot": code, "title": title, "kind": kind, "pages": len(d.pages), "is_pdf": code not in plan.get("not_pdf", set()),
                        "pdfa": code not in plan.get("no_pdfa", set()) and code not in plan.get("not_pdf", set()), "signed": signed_by is not None, "signer": signed_by,
                        "element": (f"portaria-320-2026-1:{passages[0]}" if passages else None), "elements": [f"portaria-320-2026-1:{p}" for p in passages],
-                       "noise": stem in NOISE,
+                       "noise": is_noise,
                        "facts": [{"field": f, "value": v, "unit": u, "page": pg, "line": ln} for f, v, u, pg, ln in facts]})
     submission = {"expediente": cid, "simulated": True, "procedure": "cp-edificacao", "request": "CPEDI", "municipality": "Celorico de Basto",
                   "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI", "applicant": {"name": c["people"]["requerente"]["name"], "nif": NIF},
@@ -499,7 +680,7 @@ def main():
     for i in range(a.n):
         cid = f"{tag}{seed}-{i:04d}"
         n_err = rng.choice([0, 1, 1, 2, 2, 3, a.max_errors])
-        nf, ne = build_one(rng, cid, out, n_err, with_noise=rng.random() < 0.7)
+        nf, ne = build_one(rng, cid, out, n_err, with_noise=rng.random() < 0.9)
         tot_files += nf; tot_err += ne
         print(f"{cid}: {nf} files, {ne} planted")
     print(f"{a.n} expedientes in {out.relative_to(ROOT)}: {tot_files} files, {tot_err} planted errors")
