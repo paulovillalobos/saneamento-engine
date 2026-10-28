@@ -27,3 +27,10 @@
   The training names (slot-stem) and all stranger_name styles leaked the label. D11 recorded in DECISIONS.md.
 - r6 data: opaque_name() on 40 % of base D1 rows and 50 % of augmented rows (2,445/6,707 rows), incl. lying names.
 - Chain: training/runs/overnight-r6.sh → training/runs/r6/. Third training of the night (hard stop reached after it).
+
+## 2026-10-28 14:30 UTC — r6 landed: stranger 18/18
+- r6 attempt 1 died at step 1010/1017 ("Runner terminated") before save; attempt 2 (10:50→14:20 UTC) with checkpoints every
+  100 steps. Stranger: 11/11 element, 6/6 quotes, 7/7 facts — the four real memórias, the minuta and the Alcácer list all
+  right. Lab held (D1/D2 100 %, D0 95-100 % on passages); elemento_doc tipo 57 → 84 %; exigido 45 % (only column left).
+- Lesson of the night (D11): the sealed generated sets could not see the file-name shortcut; only real files with real names
+  did. Grow the stranger test to 40-50 files before D3. Night spend ≈ USD 56 (r4 13, r5 14, probes 1, r6 ×2 28).
