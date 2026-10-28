@@ -1,0 +1,787 @@
+{
+ "adapter": "amalia-saneamento-r6",
+ "volume": "amalia-saneamento-lora",
+ "base": {
+  "model": "amalia-llm/AMALIA-9B-0626-DPO",
+  "revision": "c4614b9b5c7b4fe303fa20902e692fc7dface640"
+ },
+ "sets": [
+  "d0",
+  "d1",
+  "d2"
+ ],
+ "set_sha256": {
+  "d0": "b4304886e228b470dcc5193eeb567ea57bbdd5ff34ab9b858384c5c1a4b6db80",
+  "d1": "65e269971bfc501087e36c1c432a71c83a475528b4e087ccad0abd59466658c3",
+  "d2": "1e533c1de46951b7bbc7f6fdc8eb33d74e6bc6c6c7f340f7946b917493c8d1ae"
+ },
+ "repeat": {},
+ "mixture": {
+  "d0": 3411,
+  "d1": 6707,
+  "d2": 4633
+ },
+ "examples_in_mix": 14751,
+ "hyperparameters": {
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj",
+   "gate_proj",
+   "up_proj",
+   "down_proj"
+  ],
+  "epochs": 2,
+  "lr": 0.0001,
+  "warmup_steps": 20,
+  "effective_batch": 16,
+  "tokens_per_batch": 24000,
+  "max_len": 8192,
+  "optimizer": "AdamW (weight_decay 0)",
+  "schedule": "linear warm-up, linear decay to 0",
+  "precision": "bf16",
+  "grad_clip": 1.0,
+  "seed": 0,
+  "gpu": "H100"
+ },
+ "repo_commit": "09fdc82a06912f71463bca3fd8e50a9682a812ec",
+ "repo_dirty_training_or_law": false,
+ "started": "2026-10-28T10:50:07Z",
+ "finished": "2026-10-28T14:20:37Z",
+ "modal_app": "ap-QsZPcXkJa5W79v2KVQH5dO",
+ "modal_function_call": "fc-01M6123G00CWDB11TBRM73075S",
+ "result": {
+  "examples": 14751,
+  "dropped": 0,
+  "tokens": 27887214,
+  "trainable_params": 50921472,
+  "steps": 1019,
+  "seconds": 12554.6,
+  "log": [
+   {
+    "step": 1,
+    "epoch": 1,
+    "loss": 0.7946,
+    "seen": 35,
+    "seconds": 13.4
+   },
+   {
+    "step": 10,
+    "epoch": 1,
+    "loss": 0.5534,
+    "seen": 246,
+    "seconds": 153.3
+   },
+   {
+    "step": 20,
+    "epoch": 1,
+    "loss": 0.0934,
+    "seen": 503,
+    "seconds": 298.1
+   },
+   {
+    "step": 30,
+    "epoch": 1,
+    "loss": 0.1491,
+    "seen": 777,
+    "seconds": 437.3
+   },
+   {
+    "step": 40,
+    "epoch": 1,
+    "loss": 0.0279,
+    "seen": 1091,
+    "seconds": 565.6
+   },
+   {
+    "step": 50,
+    "epoch": 1,
+    "loss": 0.0494,
+    "seen": 1405,
+    "seconds": 675.3
+   },
+   {
+    "step": 60,
+    "epoch": 1,
+    "loss": 0.0034,
+    "seen": 1728,
+    "seconds": 808.0
+   },
+   {
+    "step": 70,
+    "epoch": 1,
+    "loss": 0.0269,
+    "seen": 2010,
+    "seconds": 941.0
+   },
+   {
+    "step": 80,
+    "epoch": 1,
+    "loss": 0.0008,
+    "seen": 2273,
+    "seconds": 1057.8
+   },
+   {
+    "step": 90,
+    "epoch": 1,
+    "loss": 0.0006,
+    "seen": 2581,
+    "seconds": 1185.3
+   },
+   {
+    "step": 100,
+    "epoch": 1,
+    "loss": 0.0132,
+    "seen": 2804,
+    "seconds": 1303.5
+   },
+   {
+    "step": 110,
+    "epoch": 1,
+    "loss": 0.0034,
+    "seen": 3077,
+    "seconds": 1445.4
+   },
+   {
+    "step": 120,
+    "epoch": 1,
+    "loss": 0.0026,
+    "seen": 3360,
+    "seconds": 1584.8
+   },
+   {
+    "step": 130,
+    "epoch": 1,
+    "loss": 0.0271,
+    "seen": 3691,
+    "seconds": 1691.0
+   },
+   {
+    "step": 140,
+    "epoch": 1,
+    "loss": 0.0006,
+    "seen": 3996,
+    "seconds": 1811.2
+   },
+   {
+    "step": 150,
+    "epoch": 1,
+    "loss": 0.0924,
+    "seen": 4279,
+    "seconds": 1944.8
+   },
+   {
+    "step": 160,
+    "epoch": 1,
+    "loss": 0.0103,
+    "seen": 4584,
+    "seconds": 2067.5
+   },
+   {
+    "step": 170,
+    "epoch": 1,
+    "loss": 0.0001,
+    "seen": 4821,
+    "seconds": 2206.5
+   },
+   {
+    "step": 180,
+    "epoch": 1,
+    "loss": 0.0002,
+    "seen": 5112,
+    "seconds": 2327.6
+   },
+   {
+    "step": 190,
+    "epoch": 1,
+    "loss": 0.0066,
+    "seen": 5362,
+    "seconds": 2445.1
+   },
+   {
+    "step": 200,
+    "epoch": 1,
+    "loss": 0.0022,
+    "seen": 5662,
+    "seconds": 2556.2
+   },
+   {
+    "step": 210,
+    "epoch": 1,
+    "loss": 0.008,
+    "seen": 5946,
+    "seconds": 2677.1
+   },
+   {
+    "step": 220,
+    "epoch": 1,
+    "loss": 0.0034,
+    "seen": 6242,
+    "seconds": 2789.9
+   },
+   {
+    "step": 230,
+    "epoch": 1,
+    "loss": 0.0195,
+    "seen": 6595,
+    "seconds": 2911.3
+   },
+   {
+    "step": 240,
+    "epoch": 1,
+    "loss": 0.0003,
+    "seen": 6937,
+    "seconds": 3018.4
+   },
+   {
+    "step": 250,
+    "epoch": 1,
+    "loss": 0.0159,
+    "seen": 7344,
+    "seconds": 3135.9
+   },
+   {
+    "step": 260,
+    "epoch": 1,
+    "loss": 0.0002,
+    "seen": 7592,
+    "seconds": 3253.6
+   },
+   {
+    "step": 270,
+    "epoch": 1,
+    "loss": 0.0072,
+    "seen": 7870,
+    "seconds": 3342.7
+   },
+   {
+    "step": 280,
+    "epoch": 1,
+    "loss": 0.0001,
+    "seen": 8133,
+    "seconds": 3459.8
+   },
+   {
+    "step": 290,
+    "epoch": 1,
+    "loss": 0.0046,
+    "seen": 8442,
+    "seconds": 3564.2
+   },
+   {
+    "step": 300,
+    "epoch": 1,
+    "loss": 0.0002,
+    "seen": 8720,
+    "seconds": 3682.8
+   },
+   {
+    "step": 310,
+    "epoch": 1,
+    "loss": 0.0003,
+    "seen": 8991,
+    "seconds": 3815.7
+   },
+   {
+    "step": 320,
+    "epoch": 1,
+    "loss": 0.0002,
+    "seen": 9317,
+    "seconds": 3938.5
+   },
+   {
+    "step": 330,
+    "epoch": 1,
+    "loss": 0.0001,
+    "seen": 9580,
+    "seconds": 4055.7
+   },
+   {
+    "step": 340,
+    "epoch": 1,
+    "loss": 0.0003,
+    "seen": 9903,
+    "seconds": 4188.4
+   },
+   {
+    "step": 350,
+    "epoch": 1,
+    "loss": 0.0019,
+    "seen": 10163,
+    "seconds": 4343.1
+   },
+   {
+    "step": 360,
+    "epoch": 1,
+    "loss": 0.0038,
+    "seen": 10462,
+    "seconds": 4485.8
+   },
+   {
+    "step": 370,
+    "epoch": 1,
+    "loss": 0.0,
+    "seen": 10716,
+    "seconds": 4611.6
+   },
+   {
+    "step": 380,
+    "epoch": 1,
+    "loss": 0.0017,
+    "seen": 11040,
+    "seconds": 4742.3
+   },
+   {
+    "step": 390,
+    "epoch": 1,
+    "loss": 0.0001,
+    "seen": 11306,
+    "seconds": 4870.1
+   },
+   {
+    "step": 400,
+    "epoch": 1,
+    "loss": 0.0005,
+    "seen": 11611,
+    "seconds": 4962.6
+   },
+   {
+    "step": 410,
+    "epoch": 1,
+    "loss": 0.3519,
+    "seen": 11866,
+    "seconds": 5080.5
+   },
+   {
+    "step": 420,
+    "epoch": 1,
+    "loss": 0.0001,
+    "seen": 12181,
+    "seconds": 5209.9
+   },
+   {
+    "step": 430,
+    "epoch": 1,
+    "loss": 0.0079,
+    "seen": 12543,
+    "seconds": 5330.6
+   },
+   {
+    "step": 440,
+    "epoch": 1,
+    "loss": 0.0001,
+    "seen": 12793,
+    "seconds": 5470.4
+   },
+   {
+    "step": 450,
+    "epoch": 1,
+    "loss": 0.0068,
+    "seen": 13066,
+    "seconds": 5577.7
+   },
+   {
+    "step": 460,
+    "epoch": 1,
+    "loss": 0.0001,
+    "seen": 13300,
+    "seconds": 5702.0
+   },
+   {
+    "step": 470,
+    "epoch": 1,
+    "loss": 0.0041,
+    "seen": 13535,
+    "seconds": 5846.9
+   },
+   {
+    "step": 480,
+    "epoch": 1,
+    "loss": 0.0009,
+    "seen": 13871,
+    "seconds": 5958.3
+   },
+   {
+    "step": 490,
+    "epoch": 1,
+    "loss": 0.0041,
+    "seen": 14240,
+    "seconds": 6069.8
+   },
+   {
+    "step": 500,
+    "epoch": 1,
+    "loss": 0.005,
+    "seen": 14534,
+    "seconds": 6200.3
+   },
+   {
+    "step": 510,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 14772,
+    "seconds": 6331.4
+   },
+   {
+    "step": 520,
+    "epoch": 2,
+    "loss": 0.0022,
+    "seen": 15077,
+    "seconds": 6441.0
+   },
+   {
+    "step": 530,
+    "epoch": 2,
+    "loss": 0.002,
+    "seen": 15342,
+    "seconds": 6589.0
+   },
+   {
+    "step": 540,
+    "epoch": 2,
+    "loss": 0.0005,
+    "seen": 15683,
+    "seconds": 6727.3
+   },
+   {
+    "step": 550,
+    "epoch": 2,
+    "loss": 0.0005,
+    "seen": 16014,
+    "seconds": 6839.9
+   },
+   {
+    "step": 560,
+    "epoch": 2,
+    "loss": 0.0053,
+    "seen": 16334,
+    "seconds": 6945.8
+   },
+   {
+    "step": 570,
+    "epoch": 2,
+    "loss": 0.0006,
+    "seen": 16707,
+    "seconds": 7052.4
+   },
+   {
+    "step": 580,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 16984,
+    "seconds": 7191.0
+   },
+   {
+    "step": 590,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 17330,
+    "seconds": 7312.7
+   },
+   {
+    "step": 600,
+    "epoch": 2,
+    "loss": 0.0001,
+    "seen": 17613,
+    "seconds": 7442.0
+   },
+   {
+    "step": 610,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 17910,
+    "seconds": 7576.6
+   },
+   {
+    "step": 620,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 18202,
+    "seconds": 7691.7
+   },
+   {
+    "step": 630,
+    "epoch": 2,
+    "loss": 0.0015,
+    "seen": 18428,
+    "seconds": 7823.1
+   },
+   {
+    "step": 640,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 18680,
+    "seconds": 7943.8
+   },
+   {
+    "step": 650,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 18951,
+    "seconds": 8041.7
+   },
+   {
+    "step": 660,
+    "epoch": 2,
+    "loss": 0.0001,
+    "seen": 19179,
+    "seconds": 8169.3
+   },
+   {
+    "step": 670,
+    "epoch": 2,
+    "loss": 0.0043,
+    "seen": 19515,
+    "seconds": 8278.9
+   },
+   {
+    "step": 680,
+    "epoch": 2,
+    "loss": 0.001,
+    "seen": 19823,
+    "seconds": 8398.2
+   },
+   {
+    "step": 690,
+    "epoch": 2,
+    "loss": 0.0001,
+    "seen": 20128,
+    "seconds": 8501.6
+   },
+   {
+    "step": 700,
+    "epoch": 2,
+    "loss": 0.0316,
+    "seen": 20425,
+    "seconds": 8622.5
+   },
+   {
+    "step": 710,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 20796,
+    "seconds": 8733.1
+   },
+   {
+    "step": 720,
+    "epoch": 2,
+    "loss": 0.0001,
+    "seen": 21035,
+    "seconds": 8869.8
+   },
+   {
+    "step": 730,
+    "epoch": 2,
+    "loss": 0.0092,
+    "seen": 21290,
+    "seconds": 8998.7
+   },
+   {
+    "step": 740,
+    "epoch": 2,
+    "loss": 0.0561,
+    "seen": 21639,
+    "seconds": 9139.2
+   },
+   {
+    "step": 750,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 21893,
+    "seconds": 9276.3
+   },
+   {
+    "step": 760,
+    "epoch": 2,
+    "loss": 0.0034,
+    "seen": 22107,
+    "seconds": 9412.4
+   },
+   {
+    "step": 770,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 22345,
+    "seconds": 9561.1
+   },
+   {
+    "step": 780,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 22615,
+    "seconds": 9697.4
+   },
+   {
+    "step": 790,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 22951,
+    "seconds": 9808.3
+   },
+   {
+    "step": 800,
+    "epoch": 2,
+    "loss": 0.0043,
+    "seen": 23195,
+    "seconds": 9919.1
+   },
+   {
+    "step": 810,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 23523,
+    "seconds": 10027.8
+   },
+   {
+    "step": 820,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 23796,
+    "seconds": 10155.9
+   },
+   {
+    "step": 830,
+    "epoch": 2,
+    "loss": 0.0005,
+    "seen": 24053,
+    "seconds": 10298.8
+   },
+   {
+    "step": 840,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 24322,
+    "seconds": 10417.6
+   },
+   {
+    "step": 850,
+    "epoch": 2,
+    "loss": 0.0032,
+    "seen": 24667,
+    "seconds": 10517.0
+   },
+   {
+    "step": 860,
+    "epoch": 2,
+    "loss": 0.0065,
+    "seen": 25020,
+    "seconds": 10621.0
+   },
+   {
+    "step": 870,
+    "epoch": 2,
+    "loss": 0.0057,
+    "seen": 25308,
+    "seconds": 10720.8
+   },
+   {
+    "step": 880,
+    "epoch": 2,
+    "loss": 0.0071,
+    "seen": 25573,
+    "seconds": 10826.6
+   },
+   {
+    "step": 890,
+    "epoch": 2,
+    "loss": 0.0021,
+    "seen": 25925,
+    "seconds": 10937.3
+   },
+   {
+    "step": 900,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 26185,
+    "seconds": 11060.3
+   },
+   {
+    "step": 910,
+    "epoch": 2,
+    "loss": 0.001,
+    "seen": 26436,
+    "seconds": 11175.8
+   },
+   {
+    "step": 920,
+    "epoch": 2,
+    "loss": 0.0022,
+    "seen": 26721,
+    "seconds": 11297.4
+   },
+   {
+    "step": 930,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 27002,
+    "seconds": 11425.7
+   },
+   {
+    "step": 940,
+    "epoch": 2,
+    "loss": 0.002,
+    "seen": 27273,
+    "seconds": 11548.2
+   },
+   {
+    "step": 950,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 27500,
+    "seconds": 11684.4
+   },
+   {
+    "step": 960,
+    "epoch": 2,
+    "loss": 0.0008,
+    "seen": 27843,
+    "seconds": 11788.4
+   },
+   {
+    "step": 970,
+    "epoch": 2,
+    "loss": 0.0023,
+    "seen": 28109,
+    "seconds": 11903.6
+   },
+   {
+    "step": 980,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 28356,
+    "seconds": 12040.4
+   },
+   {
+    "step": 990,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 28684,
+    "seconds": 12168.5
+   },
+   {
+    "step": 1000,
+    "epoch": 2,
+    "loss": 0.0018,
+    "seen": 28994,
+    "seconds": 12294.7
+   },
+   {
+    "step": 1010,
+    "epoch": 2,
+    "loss": 0.0,
+    "seen": 29258,
+    "seconds": 12430.4
+   }
+  ],
+  "adapter_files": {
+   "README.md": "e884ecb21e8e49712a8ae49780938098a302d987f2269689d0b670f6bb21a101",
+   "adapter_config.json": "e24075134cbaba9e21ab2fea2efe97accd659e78b5b53b5a2e9721b86ec6c563",
+   "adapter_model.safetensors": "732d07322afc67d986c2745816d869788de7dcd93aa53d70d8dc1b3423104892"
+  }
+ },
+ "cost_usd": "see COST.json (modal billing report)"
+}

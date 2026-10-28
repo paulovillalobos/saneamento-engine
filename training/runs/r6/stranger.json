@@ -1,0 +1,159 @@
+[
+ {
+  "meta": {
+   "model": "amalia-llm/AMALIA-9B-0626-DPO@c4614b9b5c7b",
+   "adapter": "amalia-saneamento-r6",
+   "runtime": "vllm 0.30.0, bf16, L40S, prefix caching, guided JSON per task",
+   "temperature": 0,
+   "max_tokens": 1200,
+   "load_seconds": 160.3,
+   "generate_seconds": 6.2,
+   "answered": 18,
+   "skipped": 0
+  }
+ },
+ {
+  "key": "d1:5276d6c56cfaa2a4",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:b9c8a4cd574da395",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 54,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"49 977,00\", \"pagina\": 1, \"citacao\": \"O terreno tem a área total de 49 977,00 m2 e as seguintes confrontações:\"}"
+ },
+ {
+  "key": "d2:bf500619076a7061",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:4faa266999203ee1",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:ca71d15ea43313e9",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:7cd3066c9e800af1",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:663b17d910231686",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:84877dcd3a6d2ec3",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.11\", \"citacao\": \"11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:eb15cdc46dfee293",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 62,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"Observa as normas legais e regulamentares aplicáveis, designadamente as normas técnicas de construção em vigor\", \"pagina\": 1, \"citacao\": \"Observa as normas legais e regulamentares aplicáveis, designadamente as normas técnicas de construção em vigor\"}"
+ },
+ {
+  "key": "d2:8dfc7aef113ca7ca",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:b42834dbdb8a7d99",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 67,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.12\", \"citacao\": \"12 - Termo de responsabilidade do coordenador de projeto quanto à garantia de compatibilidade entre os diversos projetos;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:ec280ad55a41f037",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:f7117e8dc17ed4ae",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d2:49e25aac298c89e8",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:bbc7a2fbd6b6e509",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:026b8af7c78585ef",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:a1852d7ab843b77e",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:b9bdb7907e8b1401",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ }
+]
