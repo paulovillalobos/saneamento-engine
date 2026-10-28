@@ -90,7 +90,23 @@ def damage(text, rng):
     return perline(noisy(text, rng))
 
 
+MUNIS = ["cascais", "valongo", "braga", "porto", "guimaraes", "fafe", "amarante", "cmcb", "celorico", "vnfamalicao", "lisboa"]
+
+
+def opaque_name(rng, stem=""):
+    """A file name that says nothing (or lies) about the content: real submissions arrive like this, and the reader must read the text, not the name."""
+    n = rng.randrange(1, 9999)
+    styles = [lambda: f"doc_{n:04d}.pdf", lambda: f"scan{n}.pdf", lambda: f"IMG_{n}.pdf", lambda: f"{rng.choice(MUNIS)}_{n}.pdf",
+              lambda: f"{rng.choice(MUNIS)}_{rng.choice(['md', 'tr', 'pl', 'proc', 'lot', 'cp'])}_{n}.pdf", lambda: f"2026-{rng.randrange(1, 12):02d}-{rng.randrange(1, 28):02d}_{n}.pdf",
+              lambda: f"ficheiro ({rng.randrange(1, 9)}).pdf", lambda: f"anexo{rng.randrange(1, 30)}.pdf", lambda: f"{n}l2026_{rng.choice(['md', 'a', 'b', 'c'])}.pdf",
+              lambda: f"Documento{rng.randrange(1, 40)}.pdf", lambda: f"{rng.choice(['PROJETO', 'processo', 'entrega', 'final', 'rev'])}_{n}.pdf",
+              lambda: f"{rng.choice(['memoria', 'termo', 'planta', 'certidao', 'estimativa', 'calendarizacao', 'levantamento'])}.pdf"]   # the last one may lie
+    return rng.choice(styles)()
+
+
 def stranger_name(slot, stem, rng):
+    if rng.random() < 0.5:
+        return opaque_name(rng, stem)
     styles = [lambda: f"{slot}_{stem.replace('-', '_')}.pdf", lambda: f"{stem.replace('-', '')[:40]}.pdf", lambda: f"{rng.randrange(1, 60):02d}_{stem.replace('-', '_')[:30]}.pdf",
               lambda: f"{slot.lower()}-{rng.randrange(100, 999)}.pdf", lambda: f"{stem.split('-')[0].upper()}_{rng.choice(['v1', 'final', 'rev2', 'assinado'])}.pdf"]
     return rng.choice(styles)()
@@ -124,7 +140,8 @@ def main():
                 ans = {"elemento": None, "citacao": "", "tipo": "nao_e_elemento"}; stats["noise"] += lab["noise"]
             else:
                 ans = {"elemento": lab["element"], "citacao": PORT[lab["element"]]["text"], "tipo": "desenhado" if lab["kind"] == "drawn" else "escrito"}
-            d1.append({"id": rid("d1", lab["expediente"], lab["file"]), "task": "d1_elemento", "prompt": D1_PROMPT.format(shortlist=SHORTLIST, name=lab["file"], pages=n or 0, text=text),
+            shown_name = opaque_name(rng) if (a.augment and rng.random() < 0.4) else lab["file"]   # training: 40 % of base rows carry an uninformative name
+            d1.append({"id": rid("d1", lab["expediente"], lab["file"]), "task": "d1_elemento", "prompt": D1_PROMPT.format(shortlist=SHORTLIST, name=shown_name, pages=n or 0, text=text),
                        "answer": json.dumps(ans, ensure_ascii=False), "expediente": lab["expediente"]})
             if a.augment and pages is not None and rng.random() < 0.45:
                 stem = lab["file"][len(lab["slot"]) + 1:-4]
