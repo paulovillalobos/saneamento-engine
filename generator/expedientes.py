@@ -203,7 +203,7 @@ def doc_memory(c, override=None, long=False, rng=None):
     if long and REAL and rng:
         for h in ("3. ENQUADRAMENTO", "3.1. ENQUADRAMENTO JURÍDICO", "3.2. ENQUADRAMENTO URBANÍSTICO", "4. PROGRAMA DE INTERVENÇÃO"):
             d.text(h, bold=True)
-            for _ in range(rng.randrange(2, 6)):
+            for _ in range(rng.randrange(3, 8)):
                 d.text(rng.choice(REAL))
         d.text("5. QUADRO SINÓPTICO", bold=True)
     pg_q = d.text(f"Quadro sinóptico: superfície do terreno {o.get('plot', c['plot'])} m2; área de implantação {c['impl']} m2; área total de construção "
@@ -419,6 +419,13 @@ def noise_about(c, rng):
         for i, el in enumerate(rng.sample(ELEMENT_NAMES, 6), 1):
             d.text(f"{i}. {el[0].upper() + el[1:]}, em formato PDF/A" + (", assinado digitalmente pelo autor" if i % 2 else ", georreferenciado no sistema PT-TM06/ETRS89") + ";")
         d.text(f"A {X} deve ser apresentada em ficheiro autónomo, com o nome normalizado previsto no manual de instrução digital.")
+        if rng.random() < 0.5:
+            d.text("ELEMENTOS ESPECÍFICOS", bold=True)
+            for i, el in enumerate(ELEMENT_NAMES, 7):
+                d.text(f"{i}. {el[0].upper() + el[1:]}: " + rng.choice(["em PDF/A, assinado digitalmente;", "à escala adequada, em DWFx;", "quando exigível nos termos da lei;",
+                                                                        "com termo de responsabilidade do autor;", "georreferenciado, em DWG;"]))
+            d.text("DISPOSIÇÕES FINAIS", bold=True)
+            d.text("A falta de qualquer dos elementos determina a rejeição liminar ou o convite ao aperfeiçoamento, nos termos do artigo 11.º do RJUE.")
     elif kind == "postura":
         d = G.Doc(f"Postura Municipal Referente a Projetos de {X[0].upper() + X[1:]}")
         d.text(f"MUNICÍPIO DE {M.upper()}    CÂMARA MUNICIPAL    Data: 2026/{rng.randrange(1, 12):02d}/{rng.randrange(1, 28):02d}    Página 1 de 1", size=9)
@@ -436,6 +443,11 @@ def noise_about(c, rng):
         d.text(f"O projeto deve incluir: a) memória descritiva, da qual constem a descrição da conceção do sistema, materiais e acessórios; b) cálculos justificativos; c) peças desenhadas; d) termo de responsabilidade do autor.")
         d.text("3. NORMAS APLICÁVEIS", bold=True)
         d.text("Decreto Regulamentar n.º 23/95, de 23 de agosto; Decreto-Lei n.º 194/2009, de 20 de agosto; normas europeias EN aplicáveis.")
+        if rng.random() < 0.5:
+            for i, h in enumerate(["CONCEÇÃO DO SISTEMA", "MATERIAIS E ACESSÓRIOS", "DIMENSIONAMENTO", "PEÇAS DESENHADAS", "ENTREGA E APRECIAÇÃO"], 4):
+                d.text(f"{i}. {h}", bold=True)
+                for _ in range(rng.randrange(1, 3)):
+                    d.text(rng.choice(REAL) if REAL else "Disposição aplicável.")
     elif kind == "nota":
         d = G.Doc(f"NOTA TÉCNICA N.º {n:02d} — PROJETOS DE {X.upper()}")
         d.text(f"PÁGINA 1/{rng.randrange(4, 12)}", size=8)
@@ -512,6 +524,13 @@ def noise_about(c, rng):
         d.text("1. Os elementos são apresentados em ficheiros PDF/A, assinados digitalmente; as peças desenhadas em DWFx ou PDF/A; o levantamento topográfico e a planta de implantação em DWG georreferenciado.")
         d.text(f"2. A {X} constitui um ficheiro autónomo, com o nome normalizado indicado no anexo I.")
         d.text("3. Os ficheiros não podem ultrapassar 50 MB nem ter nomes com mais de 40 caracteres.")
+        if rng.random() < 0.6:
+            for i, el in enumerate(rng.sample(ELEMENT_NAMES, rng.randrange(6, len(ELEMENT_NAMES))), 4):
+                d.text(f"{i}. {el[0].upper() + el[1:]}: nome do ficheiro {el.split()[0].upper()[:6]}_{rng.randrange(1, 40):02d}.pdf; " +
+                       rng.choice(["uma peça por ficheiro.", "assinatura digital qualificada do autor.", "formato PDF/A ou DWFx.", "sem páginas em branco."]))
+            d.text("ANEXO I — Lista de nomes normalizados", bold=True)
+            for el in ELEMENT_NAMES[:8]:
+                d.text(f"{el} | {el.split()[0].upper()[:6]}.pdf | PDF/A")
     elif kind == "diagnostico":
         d = G.Doc("Plano Municipal de Acessibilidade Para Todos — Capítulo II – Levantamento e Diagnóstico")
         d.text(f"Município de {M}    Entrega Final    {rng.randrange(40, 140)}", size=8)
@@ -627,7 +646,7 @@ def build_one(rng, cid, out_dir, n_err, with_noise):
     docs = documents(c, plan)
     if with_noise:
         seen = set()
-        for _ in range(rng.randrange(2, 6)):
+        for _ in range(rng.randrange(3, 8)):
             code, stem, title, d = noise_about(c, rng) if rng.random() < 0.75 else noise_doc(c, rng)
             if stem in seen:
                 continue
@@ -681,7 +700,7 @@ def main():
     for i in range(a.n):
         cid = f"{tag}{seed}-{i:04d}"
         n_err = rng.choice([0, 1, 1, 2, 2, 3, a.max_errors])
-        nf, ne = build_one(rng, cid, out, n_err, with_noise=rng.random() < 0.9)
+        nf, ne = build_one(rng, cid, out, n_err, with_noise=True)
         tot_files += nf; tot_err += ne
         print(f"{cid}: {nf} files, {ne} planted")
     print(f"{a.n} expedientes in {out.relative_to(ROOT)}: {tot_files} files, {tot_err} planted errors")

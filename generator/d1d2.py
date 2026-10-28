@@ -23,7 +23,14 @@ MAXCH = 3500  # characters of document text shown to the reader (the first pages
 D1_PROMPT = ("Um expediente de comunicação prévia de obras de edificação (CPEDI, Celorico de Basto) traz o ficheiro abaixo. Os elementos instrutórios que este "
              "pedido pode levar são estes (id — texto da Portaria n.º 320/2026/1):\n{shortlist}\n\nLê o texto do ficheiro e diz qual destes elementos ele é: "
              "copia o id em «elemento» e o texto da passagem, letra a letra, em «citacao». Se o ficheiro não é nenhum deles, elemento null e tipo nao_e_elemento; "
-             "se não se lê, tipo ilegivel. Responde {{\"elemento\": <id ou null>, \"citacao\": <texto ou \"\">, \"tipo\": \"escrito\"|\"desenhado\"|\"nao_e_elemento\"|\"ilegivel\"}}."
+             "se não se lê, tipo ilegivel.\nRegras: (1) o ficheiro é o elemento só quando é a própria peça instrutória (a memória, o termo, a planta, a estimativa, "
+             "a certidão, o comprovativo), preenchida ou em minuta por preencher. (2) Um documento que fala sobre elementos — norma de instrução, regulamento, "
+             "postura, guia técnico, nota técnica, lista de elementos, ficha de verificação, deliberação, informação interna, instruções de preenchimento, manual, "
+             "caderno de encargos, ficha de projeto, diagnóstico, ata — não é elemento: elemento null, tipo nao_e_elemento. (3) Um termo de responsabilidade de outro "
+             "procedimento (utilização do edifício, conclusão da obra, receção de obras de urbanização, loteamento) não é elemento deste pedido. (4) tipo escrito = peça "
+             "de texto (memória, termo, estimativa, calendarização, certidão, comprovativo, registo fotográfico), mesmo com tabelas, quadros ou figuras; tipo desenhado = "
+             "peça desenhada (planta, alçado, corte, pormenor, levantamento topográfico, peças desenhadas).\nResponde {{\"elemento\": <id ou null>, "
+             "\"citacao\": <texto ou \"\">, \"tipo\": \"escrito\"|\"desenhado\"|\"nao_e_elemento\"|\"ilegivel\"}}."
              "\n\nFicheiro: {name} ({pages} página(s))\n---\n{text}\n---")
 DOCS = json.loads((ROOT / "celorico" / "mapping" / "documents.json").read_text(encoding="utf-8"))["documents"]
 SHORTLIST_IDS = sorted({f"portaria-320-2026-1:{d['passages'][0]}" for d in DOCS if "CP/CPEDI" in d["requests"] and d["passages"]},

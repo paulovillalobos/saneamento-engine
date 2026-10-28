@@ -41,3 +41,14 @@
   (13); termos of other procedures called item k/11 (5); speciality memórias typed "drawn" (2); narrative estimate missed (1).
 - r7 data: noise_about() 15 kinds + other-procedure termos, 2-5 noise files per expediente, doc_special_memory(),
   doc_estimate() narrative variant. Chain training/runs/overnight-r7.sh awaits approval (≈ USD 14).
+
+## 2026-10-28 evening — prompt audit before r7 (Paulo: "check the prompt, check the data")
+- The D1 prompt never defined "is the element": nothing about documents ABOUT elements, termos of other procedures, or how to pick
+  escrito/desenhado. D1 prompt v3 adds four rules: (1) the file is the element only when it is the piece itself, filled or blank
+  minuta; (2) norms, regulations, posturas, guides, notes, lists, checklists, deliberations, internal notes, instructions, manuals,
+  tender specs, project sheets, diagnostics, minutes are not elements; (3) termos of other procedures (utilização, conclusão,
+  receção de obras de urbanização, loteamento) are not elements of this request; (4) escrito = text piece even with tables/figures,
+  desenhado = drawn piece. Sealed D1 regenerated with v3 (same 1,145 ids and answers; v2 kept as d1-test-v2.jsonl); stranger regenerated.
+- Data: every expediente now carries 3-7 noise files (noise share 1.2 % → 7.3 %); norms/manuals/guides have long variants.
+- r6 on the v3 prompt without retraining: 26/45 (unchanged) — the adapter was trained without the rules, so the rules only
+  count once r7 trains on prompts that carry them.
