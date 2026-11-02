@@ -147,11 +147,11 @@ def main():
                 ans = {"elemento": None, "citacao": "", "tipo": "nao_e_elemento"}; stats["noise"] += lab["noise"]
             else:
                 ans = {"elemento": lab["element"], "citacao": PORT[lab["element"]]["text"], "tipo": "desenhado" if lab["kind"] == "drawn" else "escrito"}
-            shown_name = opaque_name(rng) if (a.augment and rng.random() < 0.4) else lab["file"]   # training: 40 % of base rows carry an uninformative name
+            shown_name = opaque_name(rng) if (a.augment and rng.random() < 0.5) else lab["file"]   # training: 40 % of base rows carry an uninformative name
             d1.append({"id": rid("d1", lab["expediente"], lab["file"]), "task": "d1_elemento", "prompt": D1_PROMPT.format(shortlist=SHORTLIST, name=shown_name, pages=n or 0, text=text),
                        "answer": json.dumps(ans, ensure_ascii=False), "expediente": lab["expediente"]})
             if a.augment and pages is not None and rng.random() < 0.45:
-                stem = lab["file"][len(lab["slot"]) + 1:-4]
+                stem = lab["file"][len(lab["slot"]) + 1:-4] if lab["file"].startswith(lab["slot"] + "-") else lab["file"][:-4]
                 sname = stranger_name(lab["slot"], stem, rng)
                 ntext = "\n".join(f"[página {i + 1}]\n{damage(t, rng)}" for i, t in enumerate(pages))[:MAXCH]
                 d1.append({"id": rid("d1", lab["expediente"], lab["file"], "aug"), "task": "d1_elemento", "prompt": D1_PROMPT.format(shortlist=SHORTLIST, name=sname, pages=n, text=ntext),

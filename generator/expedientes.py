@@ -216,6 +216,15 @@ def doc_memory(c, override=None, long=False, rng=None):
 
 def doc_term_author(c, p, project, kind="I", site=None, wording=True):
     d = G.Doc(f"Termo de responsabilidade do autor do projeto de {project}")
+    r_ = random.Random(c["id"] + project + kind + "blank")
+    if r_.random() < 0.12:
+        d.text("A presente minuta de termo de responsabilidade de autoria de projeto transcreve a redação prevista no anexo VII da Portaria n.º 320/2026/1.", size=9)
+        d.text("… (a) … (b), morador na …, contribuinte n.º …, inscrito na ... (c) sob o n.º …, declara, para efeitos do disposto no n.º 1 do artigo 10.º do Decreto-Lei n.º 555/99, "
+               "de 16 de dezembro, na sua redação atual, que o projeto de … (a), de que é autor, relativo à obra de … (e), localizada em … (f), cujo … (g) foi … (h) por … (i):")
+        d.text("a) Observa as normas legais e regulamentares aplicáveis, designadamente as normas técnicas de construção em vigor … (j);")
+        d.text("b) Está conforme com os planos municipais ou intermunicipais de ordenamento do território aplicáveis à pretensão, bem como com … (k).")
+        d.text("(a) Indicar o tipo de projeto. (b) Indicar nome e habilitação do autor. (c) Indicar associação pública de natureza profissional.", size=8)
+        return d, []
     if random.Random(c["id"] + project + kind).random() < 0.15:
         d.text("A presente minuta de termo de responsabilidade de autoria de projeto transcreve a redação prevista no anexo VII, a que se refere o artigo 7.º, "
                "da Portaria n.º 320/2026/1, de 2 de setembro.", size=9)
@@ -402,6 +411,13 @@ MUNIS_PT = ["Seixal", "Viseu", "Leiria", "Gouveia", "Figueira da Foz", "Estarrej
 NOISE_PREFIX = "x-"
 
 
+def slug(title):
+    t = title.lower()
+    for a_, b_ in (("á", "a"), ("à", "a"), ("ã", "a"), ("â", "a"), ("é", "e"), ("ê", "e"), ("í", "i"), ("ó", "o"), ("ô", "o"), ("õ", "o"), ("ú", "u"), ("ç", "c")):
+        t = t.replace(a_, b_)
+    return re.sub(r"[^a-z0-9 ]", " ", t)
+
+
 def noise_about(c, rng):
     """A document ABOUT an element (norm, postura, guide, technical note, criteria, deliberation, internal note, project sheet, filling instructions, manual,
     diagnostic, tender spec) or a termo of ANOTHER procedure: real expedientes carry these, and none of them is the element it talks about."""
@@ -542,7 +558,10 @@ def noise_about(c, rng):
         d.text("Cláusula 1.ª Objeto", bold=True); d.text(f"O presente caderno de encargos compreende as cláusulas a incluir no contrato de aquisição de serviços de {X}.")
         d.text("Cláusula 2.ª Prazo", bold=True); d.text(f"O contrato mantém-se em vigor pelo prazo de {rng.randrange(6, 36)} meses a contar da data da sua celebração.")
         d.text("Cláusula 3.ª Preço e pagamento", bold=True); d.text("As quantias devidas deverão ser pagas no prazo de 30 dias após a receção das respetivas faturas.")
-    return ("OUTDOC", f"{NOISE_PREFIX}{kind}-{rng.randrange(100, 999)}", d.title[:60], d)
+    words = [w for w in slug(d.title).split() if len(w) > 2 and w not in ("para", "dos", "das", "com", "por", "municipal", "referente")][:4] or [kind]
+    stem = NOISE_PREFIX + rng.choice([lambda: "_".join(words), lambda: f"{M.lower().split()[0]}_{'_'.join(words[:2])}", lambda: f"{kind.replace('-', '_')}_{rng.randrange(1, 99):02d}",
+                                      lambda: f"{'-'.join(words[:3])}-{rng.randrange(2019, 2027)}", lambda: f"PDF{rng.randrange(10**13, 10**14)}"])()
+    return ("OUTDOC", stem, d.title[:60], d)
 
 
 def doc_special_memory(c, name, p, rng):
@@ -655,7 +674,11 @@ def build_one(rng, cid, out_dir, n_err, with_noise):
     for code, stem, title, kind, signer, d, facts in docs:
         if code in plan.get("omit", set()):
             continue
-        fname = f"{code}-{stem}.pdf"
+        NOISE = ("fatura-agua", "curriculo", "carta", "ficha-verificacao", "regulamento-extrato", "lista-elementos")
+        LEGACY_NAMES = {"fatura-agua": "fatura_agua_2026_08", "curriculo": "cv_requerente", "carta": "carta_cmcb", "ficha-verificacao": "ficha_verificacao_elementos",
+                        "regulamento-extrato": "regulamento_instrucao_digital_extrato", "lista-elementos": "lista_elementos_nomeacao_ficheiros"}
+        is_noise = stem in NOISE or stem.startswith(NOISE_PREFIX)
+        fname = (f"{stem[len(NOISE_PREFIX):]}.pdf" if stem.startswith(NOISE_PREFIX) else f"{LEGACY_NAMES[stem]}.pdf") if is_noise else f"{code}-{stem}.pdf"
         if code in plan.get("not_pdf", set()):
             data = G.png(640, 400, 90)
         else:
@@ -665,8 +688,6 @@ def build_one(rng, cid, out_dir, n_err, with_noise):
         (folder / fname).write_bytes(data)
         signed_by = None if code in plan.get("unsigned", set()) or code in plan.get("not_pdf", set()) else signer
         files.append({"slot": code, "file": fname, "title": title, "kind": kind, "signed_by": signed_by})
-        NOISE = ("fatura-agua", "curriculo", "carta", "ficha-verificacao", "regulamento-extrato", "lista-elementos")
-        is_noise = stem in NOISE or stem.startswith(NOISE_PREFIX)
         passages = DOCS.get(code, {}).get("passages", []) if not is_noise else []
         labels.append({"expediente": cid, "file": fname, "slot": code, "title": title, "kind": kind, "pages": len(d.pages), "is_pdf": code not in plan.get("not_pdf", set()),
                        "pdfa": code not in plan.get("no_pdfa", set()) and code not in plan.get("not_pdf", set()), "signed": signed_by is not None, "signer": signed_by,
