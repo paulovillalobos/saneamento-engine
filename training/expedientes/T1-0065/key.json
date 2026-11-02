@@ -2,81 +2,93 @@
  "expediente": "T1-0065",
  "case": {
   "id": "T1-0065",
-  "work": "alteração e ampliação de moradia unifamiliar",
+  "work": "ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 2,
-  "plot": 670,
-  "impl": 237,
-  "built": 430,
-  "imperm": 324,
-  "perm": 346,
-  "volume": 1333,
-  "height": 7.8,
-  "facade": 7.1,
+  "pisos": 1,
+  "plot": 1590,
+  "impl": 264,
+  "built": 252,
+  "imperm": 413,
+  "perm": 1177,
+  "volume": 781,
+  "height": 4.0,
+  "facade": 3.3,
   "parking": 2,
-  "cost": 538300,
-  "submitted": "2026-11-16",
-  "site": "Rua da Escola, n.º 82, Vale de Bouro, 4890-000 Celorico de Basto",
+  "cost": 252200,
+  "submitted": "2026-11-06",
+  "site": "Rua da Escola, n.º 240, Infesta, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 11,
+  "months": 13,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Helena Fictício Diogo",
+    "name": "Xavier Fictício Rita",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "51379-SIM",
-    "address": "Rua da Escola, n.º 82, Vale de Bouro, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1554"
+    "number": "22358-SIM",
+    "address": "Rua da Escola, n.º 240, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1794"
    },
    "arquiteto": {
-    "name": "Pedro Modelo Pedro",
+    "name": "João Simulado Xavier",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "04274-SIM",
-    "address": "Rua da Escola, n.º 35, 4000-000 Porto",
-    "policy": "SIM-RC-8672"
+    "number": "61171-SIM",
+    "address": "Lugar de Vilar, n.º 76, 4800-000 Guimarães",
+    "policy": "SIM-RC-8037"
    },
    "engenheiro": {
-    "name": "Rita Amostra Gonçalo",
+    "name": "Eva Amostra Carla",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "47629-SIM",
-    "address": "Lugar de Carvalhal, n.º 15, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5218"
+    "number": "05067-SIM",
+    "address": "Lugar de Carvalhal, n.º 74, 4700-000 Braga",
+    "policy": "SIM-RC-3913"
    },
    "diretor": {
-    "name": "Nuno Amostra Nuno",
+    "name": "Bruno Modelo João",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "39016-SIM",
-    "address": "Travessa do Souto, n.º 30, 4800-000 Guimarães",
-    "policy": "SIM-RC-9192"
+    "number": "55269-SIM",
+    "address": "Lugar de Carvalhal, n.º 33, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9046"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "missing_required",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "slot": "CEO"
+   },
+   "law": {
+    "ref": "V.27.e",
+    "quote": "e) Calendarização da execução da obra, com estimativa do prazo de início e de conclusão dos trabalhos;"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "6700 m2",
-    "area_implantacao": "237 m2",
-    "MDARQ": "670 m2"
+    "REQ": "252 m2",
+    "MDARQ": "168 m2"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Nuno Exemplo Olga",
+  "name": "Bruno Simulado Helena",
   "nif": "999999990"
  },
- "site": "Lugar de Vilar, n.º 221, Moreira do Castelo, 4890-000 Celorico de Basto",
- "operation": "construção de moradia unifamiliar",
- "submitted_at": "2026-12-09",
+ "site": "Travessa do Souto, n.º 116, Agilde, 4890-000 Celorico de Basto",
+ "operation": "alteração e ampliação de moradia unifamiliar",
+ "submitted_at": "2026-11-15",
  "files": [
   {
    "slot": "REQ",
@@ -411,6 +411,41 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF28175121375926.pdf",
+   "title": "NOTA TÉCNICA N.º 27 — PROJETOS DE SEGURANÇA CONTRA INCÊNDIO ",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "vila_ficha_projeto.pdf",
+   "title": "Ficha de Projeto",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "municipio-valpacos-aquisicao-2020.pdf",
+   "title": "MUNICÍPIO DE VALPAÇOS — AQUISIÇÃO DE SERVIÇOS DE FISCALIZAÇÃ",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "termo_responsabilidade_diretor_obra.pdf",
+   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
+   "kind": "written",
+   "signed_by": "requerente"
   }
  ]
 }

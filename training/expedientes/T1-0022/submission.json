@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Teresa Exemplo Miguel",
+  "name": "Nuno Exemplo Sérgio",
   "nif": "999999990"
  },
- "site": "Rua das Tílias, n.º 27, Britelo, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-10-03",
+ "site": "Lugar de Carvalhal, n.º 187, Moreira do Castelo, 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
+ "submitted_at": "2026-11-14",
  "files": [
   {
    "slot": "REQ",
@@ -186,7 +186,7 @@
    "file": "TREECP-termo-pdeecp.pdf",
    "title": "Termo de responsabilidade do autor do projeto de estabilidade, de escavação e contenção periférica",
    "kind": "written",
-   "signed_by": "engenheiro"
+   "signed_by": null
   },
   {
    "slot": "SRCEST",
@@ -414,8 +414,50 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-lista-elementos.pdf",
-   "title": "Lista de elementos instrutórios",
+   "file": "postura_65.pdf",
+   "title": "Postura Municipal Referente a Projetos de Águas pluviais",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "alfândega_minuta_memoria.pdf",
+   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "fatura_agua_2026_08.pdf",
+   "title": "Fatura de água",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "gouveia_informacao_2026.pdf",
+   "title": "INFORMAÇÃO n.º 20/2026",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "postura_projetos_redes_prediais.pdf",
+   "title": "Postura Municipal Referente a Projetos de Redes prediais de ",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "cv_requerente.pdf",
+   "title": "Curriculum vitae",
    "kind": "written",
    "signed_by": "requerente"
   }

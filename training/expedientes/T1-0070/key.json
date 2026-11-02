@@ -2,89 +2,87 @@
  "expediente": "T1-0070",
  "case": {
   "id": "T1-0070",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 3,
-  "plot": 2860,
-  "impl": 1229,
-  "built": 3336,
-  "imperm": 1363,
-  "perm": 1497,
-  "volume": 10341,
-  "height": 9.7,
-  "facade": 9.0,
+  "work": "ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 1,
+  "plot": 410,
+  "impl": 115,
+  "built": 104,
+  "imperm": 287,
+  "perm": 123,
+  "volume": 322,
+  "height": 3.8,
+  "facade": 3.1,
   "parking": 2,
-  "cost": 3639500,
-  "submitted": "2026-12-05",
-  "site": "Caminho da Lameira, n.º 59, Moreira do Castelo, 4890-000 Celorico de Basto",
+  "cost": 87600,
+  "submitted": "2026-12-13",
+  "site": "Caminho da Lameira, n.º 41, Britelo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 16,
+  "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Gonçalo de Teste Xavier",
+    "name": "Olga Amostra Eva",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "19464-SIM",
-    "address": "Caminho da Lameira, n.º 59, Moreira do Castelo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-3770"
+    "number": "62208-SIM",
+    "address": "Caminho da Lameira, n.º 41, Britelo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4927"
    },
    "arquiteto": {
-    "name": "Rita de Teste Eva",
+    "name": "Vasco de Teste Bruno",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "54530-SIM",
-    "address": "Lugar da Devesa, n.º 55, 4800-000 Guimarães",
-    "policy": "SIM-RC-1834"
+    "number": "81549-SIM",
+    "address": "Lugar da Devesa, n.º 38, 4000-000 Porto",
+    "policy": "SIM-RC-7989"
    },
    "engenheiro": {
-    "name": "Inês Simulado Sérgio",
+    "name": "Carla Fictício Xavier",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "39710-SIM",
-    "address": "Lugar da Devesa, n.º 26, 4700-000 Braga",
-    "policy": "SIM-RC-3759"
+    "number": "51239-SIM",
+    "address": "Lugar de Carvalhal, n.º 34, 4800-000 Guimarães",
+    "policy": "SIM-RC-0369"
    },
    "diretor": {
-    "name": "Helena Exemplo Miguel",
+    "name": "Olga Simulado João",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "34609-SIM",
-    "address": "Rua da Escola, n.º 63, 4700-000 Braga",
-    "policy": "SIM-RC-7008"
+    "number": "07439-SIM",
+    "address": "Lugar da Devesa, n.º 26, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2964"
    }
   }
  },
  "planted": [
   {
-   "type": "expired_insurance",
+   "type": "impossible_value",
    "target": {
-    "slot": "SRCARQ"
+    "field": "area_parcela",
+    "slot": "REQ"
    },
    "basis": "documents",
    "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-12-05"
+    "area_parcela": "4100 m2",
+    "area_implantacao": "115 m2",
+    "MDARQ": "410 m2"
+   }
+  },
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "SRCCP"
    },
    "law": {
     "ref": "V.14",
     "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
-   }
-  },
-  {
-   "type": "not_pdfa",
-   "target": {
-    "slot": "MDPAP"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   },
   {
@@ -96,9 +94,20 @@
     "ref": "VII.I",
     "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Olga Simulado João",
+    "assinante": "Vasco de Teste Bruno"
+   }
   }
  ],
- "n_planted": 3,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

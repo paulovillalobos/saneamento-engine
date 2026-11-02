@@ -2,84 +2,89 @@
  "expediente": "T1-0077",
  "case": {
   "id": "T1-0077",
-  "work": "alteração e ampliação de moradia unifamiliar",
+  "work": "ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 2,
-  "plot": 2510,
-  "impl": 540,
-  "built": 933,
-  "imperm": 601,
-  "perm": 1909,
-  "volume": 2892,
-  "height": 7.4,
-  "facade": 6.7,
+  "pisos": 1,
+  "plot": 350,
+  "impl": 61,
+  "built": 54,
+  "imperm": 109,
+  "perm": 241,
+  "volume": 167,
+  "height": 3.9,
+  "facade": 3.2,
   "parking": 2,
-  "cost": 955300,
-  "submitted": "2026-12-14",
-  "site": "Rua das Tílias, n.º 64, Ourilhe, 4890-000 Celorico de Basto",
+  "cost": 36700,
+  "submitted": "2026-11-19",
+  "site": "Rua da Escola, n.º 266, Basto (São Clemente), 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 9,
+  "months": 13,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Olga Modelo Gonçalo",
+    "name": "Xavier Simulado Teresa",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "15769-SIM",
-    "address": "Rua das Tílias, n.º 64, Ourilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6286"
+    "number": "58612-SIM",
+    "address": "Rua da Escola, n.º 266, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5968"
    },
    "arquiteto": {
-    "name": "Filipe Amostra Eva",
+    "name": "Nuno Fictício Vasco",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "29849-SIM",
-    "address": "Travessa do Souto, n.º 89, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5295"
+    "number": "65927-SIM",
+    "address": "Caminho da Lameira, n.º 16, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0387"
    },
    "engenheiro": {
-    "name": "Sérgio Exemplo Filipe",
+    "name": "João Amostra Sérgio",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "50598-SIM",
-    "address": "Lugar de Carvalhal, n.º 73, 4700-000 Braga",
-    "policy": "SIM-RC-0613"
+    "number": "09113-SIM",
+    "address": "Caminho da Lameira, n.º 8, 4000-000 Porto",
+    "policy": "SIM-RC-6068"
    },
    "diretor": {
-    "name": "Sérgio Fictício Helena",
+    "name": "Miguel Simulado Sérgio",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "18215-SIM",
-    "address": "Travessa do Souto, n.º 36, 4000-000 Porto",
-    "policy": "SIM-RC-0081"
+    "number": "60008-SIM",
+    "address": "Caminho da Lameira, n.º 91, 4000-000 Porto",
+    "policy": "SIM-RC-0912"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "not_pdfa",
    "target": {
-    "slot": "SRCCP"
-   },
-   "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
-   }
-  },
-  {
-   "type": "not_pdf",
-   "target": {
-    "slot": "PLANT"
+    "slot": "CEO"
    },
    "law": {
     "ref": "VI.1.a",
     "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "54 m2",
+    "MDARQ": "-11 m2"
    }
   }
  ],

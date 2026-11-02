@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Teresa Exemplo Teresa",
+  "name": "Nuno Exemplo Inês",
   "nif": "999999990"
  },
- "site": "Travessa do Souto, n.º 18, Canedo de Basto, 4890-000 Celorico de Basto",
- "operation": "construção de moradia unifamiliar",
- "submitted_at": "2026-11-27",
+ "site": "Lugar de Carvalhal, n.º 74, Canedo de Basto, 4890-000 Celorico de Basto",
+ "operation": "construção de armazém agrícola",
+ "submitted_at": "2026-11-21",
  "files": [
   {
    "slot": "REQ",
@@ -414,7 +414,49 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-curriculo.pdf",
+   "file": "lista_elementos_nomeacao_ficheiros.pdf",
+   "title": "Lista de elementos instrutórios",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "minuta_memoria_descritiva.pdf",
+   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "anexo_obras_edificacao.pdf",
+   "title": "ANEXO II — OBRAS DE EDIFICAÇÃO",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF68451081416240.pdf",
+   "title": "INFORMAÇÃO n.º 13/2026",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "postura_projetos_seguranca_contra.pdf",
+   "title": "Postura Municipal Referente a Projetos de Segurança contra i",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF32995979150929.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "cv_requerente.pdf",
    "title": "Curriculum vitae",
    "kind": "written",
    "signed_by": "requerente"

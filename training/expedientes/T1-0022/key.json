@@ -2,81 +2,99 @@
  "expediente": "T1-0022",
  "case": {
   "id": "T1-0022",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 2,
-  "plot": 1470,
-  "impl": 226,
-  "built": 394,
-  "imperm": 271,
-  "perm": 1199,
-  "volume": 1221,
-  "height": 7.1,
-  "facade": 6.4,
-  "parking": 4,
-  "cost": 331300,
-  "submitted": "2026-10-03",
-  "site": "Rua das Tílias, n.º 27, Britelo, 4890-000 Celorico de Basto",
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 1,
+  "plot": 1520,
+  "impl": 570,
+  "built": 521,
+  "imperm": 660,
+  "perm": 860,
+  "volume": 1615,
+  "height": 4.2,
+  "facade": 3.5,
+  "parking": 2,
+  "cost": 517300,
+  "submitted": "2026-11-14",
+  "site": "Lugar de Carvalhal, n.º 187, Moreira do Castelo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 14,
+  "months": 18,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Teresa Exemplo Miguel",
+    "name": "Nuno Exemplo Sérgio",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "07164-SIM",
-    "address": "Rua das Tílias, n.º 27, Britelo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1944"
+    "number": "03242-SIM",
+    "address": "Lugar de Carvalhal, n.º 187, Moreira do Castelo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2753"
    },
    "arquiteto": {
-    "name": "Inês Amostra Inês",
+    "name": "João Modelo Eva",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "24467-SIM",
-    "address": "Lugar de Carvalhal, n.º 104, 4000-000 Porto",
-    "policy": "SIM-RC-3510"
+    "number": "72896-SIM",
+    "address": "Lugar de Vilar, n.º 22, 4800-000 Guimarães",
+    "policy": "SIM-RC-2495"
    },
    "engenheiro": {
-    "name": "Carla Exemplo Diogo",
+    "name": "Eva Fictício Carla",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "88648-SIM",
-    "address": "Lugar de Carvalhal, n.º 38, 4800-000 Guimarães",
-    "policy": "SIM-RC-6441"
+    "number": "81221-SIM",
+    "address": "Caminho da Lameira, n.º 31, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5165"
    },
    "diretor": {
-    "name": "Diogo Modelo Rita",
+    "name": "Filipe de Teste Rita",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "14871-SIM",
-    "address": "Lugar de Vilar, n.º 50, 4700-000 Braga",
-    "policy": "SIM-RC-2739"
+    "number": "41598-SIM",
+    "address": "Travessa do Souto, n.º 55, 4700-000 Braga",
+    "policy": "SIM-RC-9011"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "template_wording_missing",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TREECP"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "147 m2",
-    "area_implantacao": "226 m2",
-    "MDARQ": "1470 m2"
+    "REQ": "Lugar de Carvalhal, n.º 187, Moreira do Castelo, 4890-000 Celorico de Basto",
+    "TRPARQ": "Lugar da Devesa, n.º 36, Carvalho, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

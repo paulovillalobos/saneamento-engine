@@ -2,67 +2,93 @@
  "expediente": "T1-0001",
  "case": {
   "id": "T1-0001",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
   "pisos": 2,
-  "plot": 1810,
-  "impl": 661,
-  "built": 1301,
-  "imperm": 809,
-  "perm": 1001,
-  "volume": 4033,
-  "height": 7.7,
-  "facade": 7.0,
+  "plot": 1350,
+  "impl": 585,
+  "built": 1078,
+  "imperm": 698,
+  "perm": 652,
+  "volume": 3341,
+  "height": 7.3,
+  "facade": 6.6,
   "parking": 2,
-  "cost": 1407600,
-  "submitted": "2026-12-27",
-  "site": "Rua do Outeiro, n.º 156, Gagos, 4890-000 Celorico de Basto",
+  "cost": 920600,
+  "submitted": "2026-12-14",
+  "site": "Lugar de Carvalhal, n.º 183, Rego, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 23,
+  "months": 19,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Sérgio Exemplo Vasco",
+    "name": "Ana Modelo Teresa",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "05525-SIM",
-    "address": "Rua do Outeiro, n.º 156, Gagos, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6789"
+    "number": "82722-SIM",
+    "address": "Lugar de Carvalhal, n.º 183, Rego, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3762"
    },
    "arquiteto": {
-    "name": "Filipe de Teste Teresa",
+    "name": "Filipe Modelo Vasco",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "93148-SIM",
-    "address": "Lugar da Devesa, n.º 12, 4800-000 Guimarães",
-    "policy": "SIM-RC-8331"
+    "number": "24695-SIM",
+    "address": "Travessa do Souto, n.º 103, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0532"
    },
    "engenheiro": {
-    "name": "Diogo Fictício Sérgio",
+    "name": "Carla Simulado Ana",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "52544-SIM",
-    "address": "Lugar da Devesa, n.º 63, 4000-000 Porto",
-    "policy": "SIM-RC-7690"
+    "number": "60375-SIM",
+    "address": "Rua da Escola, n.º 97, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4089"
    },
    "diretor": {
-    "name": "Bruno de Teste Xavier",
+    "name": "Inês Simulado Xavier",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "78749-SIM",
-    "address": "Rua das Tílias, n.º 83, 4700-000 Braga",
-    "policy": "SIM-RC-2763"
+    "number": "25197-SIM",
+    "address": "Lugar da Devesa, n.º 38, 4000-000 Porto",
+    "policy": "SIM-RC-2744"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-14"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRPLAC"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  }
+ ],
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

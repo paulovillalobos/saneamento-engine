@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Helena Fictício Diogo",
+  "name": "Xavier Fictício Rita",
   "nif": "999999990"
  },
- "site": "Rua da Escola, n.º 82, Vale de Bouro, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-11-16",
+ "site": "Rua da Escola, n.º 240, Infesta, 4890-000 Celorico de Basto",
+ "operation": "ampliação de moradia unifamiliar",
+ "submitted_at": "2026-11-06",
  "files": [
   {
    "slot": "REQ",
@@ -94,13 +94,6 @@
    "slot": "MDARQ",
    "file": "MDARQ-memoria-descritiva.pdf",
    "title": "Memória descritiva e justificativa",
-   "kind": "written",
-   "signed_by": "arquiteto"
-  },
-  {
-   "slot": "CEO",
-   "file": "CEO-calendarizacao.pdf",
-   "title": "Calendarização da execução da obra",
    "kind": "written",
    "signed_by": "arquiteto"
   },
@@ -414,8 +407,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-ficha-verificacao.pdf",
-   "title": "Ficha de verificação",
+   "file": "lista_elementos_nomeacao_ficheiros.pdf",
+   "title": "Lista de elementos instrutórios",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "instrucoes_66.pdf",
+   "title": "Instruções Preenchimento_Q3",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "carta_cmcb.pdf",
+   "title": "Carta",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF83588171647173.pdf",
+   "title": "ANEXO III — OBRAS DE URBANIZAÇÃO",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "guia-tecnico-projetos-2024.pdf",
+   "title": "Guia Técnico para Projetos de Redes prediais de água e esgot",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "informacao_2026.pdf",
+   "title": "INFORMAÇÃO n.º 12/2026",
    "kind": "written",
    "signed_by": "requerente"
   }

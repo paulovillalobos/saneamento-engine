@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Leonor Fictício Xavier",
+  "name": "Teresa Exemplo Filipe",
   "nif": "999999990"
  },
- "site": "Travessa do Souto, n.º 219, Corgo, 4890-000 Celorico de Basto",
+ "site": "Lugar de Vilar, n.º 214, Codeçoso, 4890-000 Celorico de Basto",
  "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-12-13",
+ "submitted_at": "2026-10-07",
  "files": [
   {
    "slot": "REQ",
@@ -411,6 +411,41 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "minuta-memoria-descritiva-2024.pdf",
+   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "copia-parte-ata-2024.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-06-20",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF27867957535662.pdf",
+   "title": "MUNICÍPIO DE CASTRO DAIRE — AQUISIÇÃO DE SERVIÇOS DE FISCALI",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "termo-responsabilidade-diretor-2022.pdf",
+   "title": "Termo de responsabilidade do diretor de obra ou do diretor d",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "termo_responsabilidade_diretor_obra.pdf",
+   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
+   "kind": "written",
+   "signed_by": "requerente"
   }
  ]
 }

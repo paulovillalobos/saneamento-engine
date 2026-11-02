@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Rita Amostra Pedro",
+  "name": "Miguel Fictício Carla",
   "nif": "999999990"
  },
- "site": "Caminho da Lameira, n.º 204, Arnoia, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-12-11",
+ "site": "Travessa do Souto, n.º 27, Rego, 4890-000 Celorico de Basto",
+ "operation": "construção de armazém agrícola",
+ "submitted_at": "2026-11-26",
  "files": [
   {
    "slot": "REQ",
@@ -165,7 +165,7 @@
    "file": "ALC-alcados.pdf",
    "title": "Alçados",
    "kind": "drawn",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "CORTES",
@@ -411,6 +411,34 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "anexo-criterio-elaboracao-2025.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "plano-acessibilidade-todos-2019.pdf",
+   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "carta_cmcb.pdf",
+   "title": "Carta",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "anexo-criterio-elaboracao-2019.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "kind": "written",
+   "signed_by": "requerente"
   }
  ]
 }

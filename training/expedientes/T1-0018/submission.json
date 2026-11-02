@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Eva Modelo Carla",
+  "name": "Helena de Teste Nuno",
   "nif": "999999990"
  },
- "site": "Lugar da Devesa, n.º 50, Rego, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-11-13",
+ "site": "Caminho da Lameira, n.º 189, Basto (São Clemente), 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de habitação bifamiliar",
+ "submitted_at": "2026-11-28",
  "files": [
   {
    "slot": "REQ",
@@ -186,7 +186,7 @@
    "file": "TREECP-termo-pdeecp.pdf",
    "title": "Termo de responsabilidade do autor do projeto de estabilidade, de escavação e contenção periférica",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "engenheiro"
   },
   {
    "slot": "SRCEST",
@@ -392,6 +392,13 @@
    "signed_by": "engenheiro"
   },
   {
+   "slot": "FEE",
+   "file": "FEE-ficha-estatistica.pdf",
+   "title": "Ficha de elementos estatísticos",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
    "slot": "ASAT",
    "file": "ASAT-apolice-acidentes.pdf",
    "title": "Apólice de seguro de acidentes de trabalho",
@@ -404,6 +411,34 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "anadia_copia_parte.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-11-21",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "cv_requerente.pdf",
+   "title": "Curriculum vitae",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "memoria-descritiva-candidatura-2022.pdf",
+   "title": "Memória descritiva da candidatura",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "carta_cmcb.pdf",
+   "title": "Carta",
+   "kind": "written",
+   "signed_by": "requerente"
   }
  ]
 }

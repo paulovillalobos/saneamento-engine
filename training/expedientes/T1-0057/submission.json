@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Diogo Fictício Xavier",
+  "name": "Pedro Modelo Eva",
   "nif": "999999990"
  },
- "site": "Rua da Escola, n.º 150, Ourilhe, 4890-000 Celorico de Basto",
- "operation": "construção de armazém agrícola",
- "submitted_at": "2026-11-05",
+ "site": "Rua do Outeiro, n.º 2, Britelo, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de habitação bifamiliar",
+ "submitted_at": "2026-12-12",
  "files": [
   {
    "slot": "REQ",
@@ -98,6 +98,13 @@
    "signed_by": "arquiteto"
   },
   {
+   "slot": "CEO",
+   "file": "CEO-calendarizacao.pdf",
+   "title": "Calendarização da execução da obra",
+   "kind": "written",
+   "signed_by": "arquiteto"
+  },
+  {
    "slot": "EOCT",
    "file": "EOCT-estimativa-custo.pdf",
    "title": "Estimativa do custo total da obra",
@@ -159,13 +166,6 @@
    "title": "Alçados",
    "kind": "drawn",
    "signed_by": "arquiteto"
-  },
-  {
-   "slot": "CORTES",
-   "file": "CORTES-cortes.pdf",
-   "title": "Cortes",
-   "kind": "drawn",
-   "signed_by": null
   },
   {
    "slot": "PC",
@@ -404,6 +404,55 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "castro_termo_responsabilidade.pdf",
+   "title": "Termo de Responsabilidade",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "castro_anexo_arranjos.pdf",
+   "title": "ANEXO II — ARRANJOS EXTERIORES",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "viseu_plano_acessibilidade.pdf",
+   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "copia-parte-ata-2026.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-05-08",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "leiria_guia_tecnico.pdf",
+   "title": "Guia Técnico para Projetos de Águas pluviais",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "municipio_loures_aquisicao_servicos.pdf",
+   "title": "MUNICÍPIO DE LOURES — AQUISIÇÃO DE SERVIÇOS DE FISCALIZAÇÃO ",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "nota_tecnica_projetos_redes.pdf",
+   "title": "NOTA TÉCNICA N.º 20 — PROJETOS DE REDES PREDIAIS DE ÁGUA E E",
+   "kind": "written",
+   "signed_by": "requerente"
   }
  ]
 }

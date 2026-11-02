@@ -2,74 +2,89 @@
  "expediente": "T1-0020",
  "case": {
   "id": "T1-0020",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 2,
-  "plot": 2760,
-  "impl": 1072,
-  "built": 2143,
-  "imperm": 1157,
-  "perm": 1603,
-  "volume": 6643,
-  "height": 7.1,
-  "facade": 6.4,
-  "parking": 4,
-  "cost": 1410000,
-  "submitted": "2026-12-18",
-  "site": "Rua das Tílias, n.º 264, Vale de Bouro, 4890-000 Celorico de Basto",
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 2640,
+  "impl": 519,
+  "built": 475,
+  "imperm": 718,
+  "perm": 1922,
+  "volume": 1472,
+  "height": 4.2,
+  "facade": 3.5,
+  "parking": 2,
+  "cost": 471600,
+  "submitted": "2026-12-21",
+  "site": "Lugar de Vilar, n.º 197, Rego, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 10,
+  "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Nuno Modelo Sérgio",
+    "name": "Diogo de Teste Ana",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "76796-SIM",
-    "address": "Rua das Tílias, n.º 264, Vale de Bouro, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7512"
+    "number": "34528-SIM",
+    "address": "Lugar de Vilar, n.º 197, Rego, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0246"
    },
    "arquiteto": {
-    "name": "Ana Fictício João",
+    "name": "Leonor de Teste João",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "92225-SIM",
-    "address": "Rua da Escola, n.º 70, 4000-000 Porto",
-    "policy": "SIM-RC-4959"
+    "number": "78225-SIM",
+    "address": "Rua da Escola, n.º 27, 4000-000 Porto",
+    "policy": "SIM-RC-5385"
    },
    "engenheiro": {
-    "name": "Sérgio Amostra Leonor",
+    "name": "Diogo Amostra Carla",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "72175-SIM",
-    "address": "Caminho da Lameira, n.º 68, 4800-000 Guimarães",
-    "policy": "SIM-RC-8881"
+    "number": "17825-SIM",
+    "address": "Caminho da Lameira, n.º 53, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3811"
    },
    "diretor": {
-    "name": "Sérgio Exemplo Xavier",
+    "name": "Ana Amostra Filipe",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "83570-SIM",
-    "address": "Caminho da Lameira, n.º 58, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2146"
+    "number": "67083-SIM",
+    "address": "Lugar da Devesa, n.º 39, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6194"
    }
   }
  },
  "planted": [
   {
-   "type": "unsigned",
+   "type": "expired_insurance",
    "target": {
-    "slot": "TRCP"
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-21"
    },
    "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
   },
   {
@@ -79,12 +94,23 @@
    },
    "basis": "documents",
    "values": {
-    "declarante": "Sérgio Exemplo Xavier",
-    "assinante": "Ana Fictício João"
+    "declarante": "Ana Amostra Filipe",
+    "assinante": "Leonor de Teste João"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Lugar de Vilar, n.º 197, Rego, 4890-000 Celorico de Basto",
+    "TRPARQ": "Rua das Tílias, n.º 119, Agilde, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

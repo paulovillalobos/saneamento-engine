@@ -2,67 +2,78 @@
  "expediente": "T1-0063",
  "case": {
   "id": "T1-0063",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 910,
-  "impl": 187,
-  "built": 349,
-  "imperm": 290,
-  "perm": 620,
-  "volume": 1081,
-  "height": 7.4,
-  "facade": 6.7,
-  "parking": 2,
-  "cost": 291400,
-  "submitted": "2026-10-10",
-  "site": "Travessa do Souto, n.º 88, Ribas, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 3,
+  "plot": 3960,
+  "impl": 1460,
+  "built": 3887,
+  "imperm": 1483,
+  "perm": 2477,
+  "volume": 12049,
+  "height": 10.1,
+  "facade": 9.4,
+  "parking": 4,
+  "cost": 3094000,
+  "submitted": "2026-11-03",
+  "site": "Rua do Outeiro, n.º 198, Codeçoso, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 19,
+  "months": 20,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Nuno Amostra Pedro",
+    "name": "Xavier Modelo Teresa",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "89880-SIM",
-    "address": "Travessa do Souto, n.º 88, Ribas, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9220"
+    "number": "12819-SIM",
+    "address": "Rua do Outeiro, n.º 198, Codeçoso, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2272"
    },
    "arquiteto": {
-    "name": "Rita Modelo Carla",
+    "name": "Nuno Simulado Nuno",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "88871-SIM",
-    "address": "Rua da Escola, n.º 8, 4000-000 Porto",
-    "policy": "SIM-RC-4568"
+    "number": "68839-SIM",
+    "address": "Rua do Outeiro, n.º 60, 4800-000 Guimarães",
+    "policy": "SIM-RC-8905"
    },
    "engenheiro": {
-    "name": "Bruno de Teste João",
+    "name": "Carla Fictício Ana",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "24110-SIM",
-    "address": "Lugar de Carvalhal, n.º 80, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0280"
+    "number": "47252-SIM",
+    "address": "Rua da Escola, n.º 73, 4800-000 Guimarães",
+    "policy": "SIM-RC-2237"
    },
    "diretor": {
-    "name": "Pedro de Teste Helena",
+    "name": "Rita Exemplo Gonçalo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "30673-SIM",
-    "address": "Lugar da Devesa, n.º 95, 4000-000 Porto",
-    "policy": "SIM-RC-0376"
+    "number": "96264-SIM",
+    "address": "Rua do Outeiro, n.º 78, 4000-000 Porto",
+    "policy": "SIM-RC-5574"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDARQ"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

@@ -2,79 +2,74 @@
  "expediente": "T1-0049",
  "case": {
   "id": "T1-0049",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 1,
-  "plot": 1550,
-  "impl": 585,
-  "built": 576,
-  "imperm": 620,
-  "perm": 930,
-  "volume": 1785,
-  "height": 4.0,
-  "facade": 3.3,
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 1450,
+  "impl": 310,
+  "built": 599,
+  "imperm": 475,
+  "perm": 975,
+  "volume": 1856,
+  "height": 7.7,
+  "facade": 7.0,
   "parking": 2,
-  "cost": 391600,
-  "submitted": "2026-11-12",
-  "site": "Lugar da Devesa, n.º 210, Codeçoso, 4890-000 Celorico de Basto",
+  "cost": 689400,
+  "submitted": "2026-11-05",
+  "site": "Travessa do Souto, n.º 202, Borba de Montanha, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 17,
+  "months": 10,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Helena de Teste Nuno",
+    "name": "Ana Simulado Carla",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "92567-SIM",
-    "address": "Lugar da Devesa, n.º 210, Codeçoso, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0138"
+    "number": "12445-SIM",
+    "address": "Travessa do Souto, n.º 202, Borba de Montanha, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1008"
    },
    "arquiteto": {
-    "name": "Nuno Amostra Miguel",
+    "name": "Gonçalo Exemplo Leonor",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "80196-SIM",
-    "address": "Rua do Outeiro, n.º 30, 4000-000 Porto",
-    "policy": "SIM-RC-5248"
+    "number": "90384-SIM",
+    "address": "Caminho da Lameira, n.º 85, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3281"
    },
    "engenheiro": {
-    "name": "Nuno Fictício João",
+    "name": "Filipe Exemplo Carla",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "13549-SIM",
-    "address": "Rua das Tílias, n.º 1, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1528"
+    "number": "47443-SIM",
+    "address": "Travessa do Souto, n.º 55, 4800-000 Guimarães",
+    "policy": "SIM-RC-5465"
    },
    "diretor": {
-    "name": "Olga Fictício Diogo",
+    "name": "Sérgio Simulado Ana",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "70941-SIM",
-    "address": "Lugar de Vilar, n.º 97, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2364"
+    "number": "87650-SIM",
+    "address": "Rua da Escola, n.º 19, 4800-000 Guimarães",
+    "policy": "SIM-RC-9826"
    }
   }
  },
  "planted": [
   {
-   "type": "value_mismatch",
+   "type": "not_pdf",
    "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
+    "slot": "CORTES"
    },
-   "basis": "documents",
-   "values": {
-    "REQ": "576 m2",
-    "MDARQ": "632 m2"
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   }
  ],

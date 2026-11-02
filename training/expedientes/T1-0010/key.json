@@ -2,81 +2,66 @@
  "expediente": "T1-0010",
  "case": {
   "id": "T1-0010",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 3,
-  "plot": 1090,
-  "impl": 284,
-  "built": 844,
-  "imperm": 317,
-  "perm": 773,
-  "volume": 2616,
-  "height": 10.2,
-  "facade": 9.5,
-  "parking": 4,
-  "cost": 888700,
-  "submitted": "2026-12-21",
-  "site": "Lugar da Devesa, n.º 197, Veade, 4890-000 Celorico de Basto",
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 830,
+  "impl": 278,
+  "built": 255,
+  "imperm": 441,
+  "perm": 389,
+  "volume": 790,
+  "height": 4.5,
+  "facade": 3.8,
+  "parking": 2,
+  "cost": 317400,
+  "submitted": "2026-12-17",
+  "site": "Rua da Escola, n.º 150, Carvalho, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 13,
+  "months": 14,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Teresa Amostra Bruno",
+    "name": "Miguel Exemplo Sérgio",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "69704-SIM",
-    "address": "Lugar da Devesa, n.º 197, Veade, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1656"
+    "number": "43496-SIM",
+    "address": "Rua da Escola, n.º 150, Carvalho, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2071"
    },
    "arquiteto": {
-    "name": "Inês Amostra Carla",
+    "name": "Vasco Simulado Bruno",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "19235-SIM",
-    "address": "Travessa do Souto, n.º 57, 4700-000 Braga",
-    "policy": "SIM-RC-6265"
+    "number": "40386-SIM",
+    "address": "Lugar da Devesa, n.º 54, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5224"
    },
    "engenheiro": {
-    "name": "Olga Exemplo Filipe",
+    "name": "Miguel de Teste Leonor",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "43659-SIM",
-    "address": "Lugar de Carvalhal, n.º 17, 4800-000 Guimarães",
-    "policy": "SIM-RC-3474"
+    "number": "99138-SIM",
+    "address": "Rua da Escola, n.º 68, 4000-000 Porto",
+    "policy": "SIM-RC-2438"
    },
    "diretor": {
-    "name": "Diogo Exemplo Xavier",
+    "name": "Leonor Amostra Leonor",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "70999-SIM",
-    "address": "Rua das Tílias, n.º 117, 4000-000 Porto",
-    "policy": "SIM-RC-4842"
+    "number": "43934-SIM",
+    "address": "Travessa do Souto, n.º 58, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7860"
    }
   }
  },
  "planted": [
-  {
-   "type": "expired_insurance",
-   "target": {
-    "slot": "SRCARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-12-21"
-   },
-   "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
-   }
-  },
   {
    "type": "impossible_value",
    "target": {
@@ -85,9 +70,24 @@
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "109 m2",
-    "area_implantacao": "284 m2",
-    "MDARQ": "1090 m2"
+    "area_parcela": "8300 m2",
+    "area_implantacao": "278 m2",
+    "MDARQ": "830 m2"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "255 m2",
+    "MDARQ": "151 m2"
    }
   }
  ],

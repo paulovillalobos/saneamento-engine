@@ -2,80 +2,80 @@
  "expediente": "T1-0068",
  "case": {
   "id": "T1-0068",
-  "work": "ampliação de moradia unifamiliar",
+  "work": "construção de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 2,
-  "plot": 1190,
-  "impl": 431,
-  "built": 751,
-  "imperm": 524,
-  "perm": 666,
-  "volume": 2328,
-  "height": 7.2,
-  "facade": 6.5,
+  "pisos": 1,
+  "plot": 3980,
+  "impl": 1134,
+  "built": 1016,
+  "imperm": 1230,
+  "perm": 2750,
+  "volume": 3149,
+  "height": 3.7,
+  "facade": 3.0,
   "parking": 2,
-  "cost": 959000,
-  "submitted": "2026-11-27",
-  "site": "Lugar de Vilar, n.º 292, Vale de Bouro, 4890-000 Celorico de Basto",
+  "cost": 1305500,
+  "submitted": "2026-10-19",
+  "site": "Lugar da Devesa, n.º 276, Ribas, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
   "months": 17,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Vasco Modelo Inês",
+    "name": "Pedro de Teste Sérgio",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "98147-SIM",
-    "address": "Lugar de Vilar, n.º 292, Vale de Bouro, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8833"
+    "number": "58567-SIM",
+    "address": "Lugar da Devesa, n.º 276, Ribas, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4980"
    },
    "arquiteto": {
-    "name": "Vasco Exemplo Eva",
+    "name": "Vasco de Teste Carla",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "43466-SIM",
-    "address": "Lugar de Vilar, n.º 59, 4800-000 Guimarães",
-    "policy": "SIM-RC-9461"
+    "number": "88453-SIM",
+    "address": "Caminho da Lameira, n.º 5, 4800-000 Guimarães",
+    "policy": "SIM-RC-2131"
    },
    "engenheiro": {
-    "name": "Teresa Amostra Eva",
+    "name": "Rita Modelo Leonor",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "66972-SIM",
-    "address": "Travessa do Souto, n.º 78, 4800-000 Guimarães",
-    "policy": "SIM-RC-4268"
+    "number": "88350-SIM",
+    "address": "Caminho da Lameira, n.º 16, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7140"
    },
    "diretor": {
-    "name": "Nuno Exemplo Bruno",
+    "name": "Helena Fictício Nuno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "83085-SIM",
-    "address": "Caminho da Lameira, n.º 21, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6361"
+    "number": "71847-SIM",
+    "address": "Travessa do Souto, n.º 52, 4700-000 Braga",
+    "policy": "SIM-RC-4159"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "not_pdf",
    "target": {
-    "slot": "TRCP"
+    "slot": "CORTES"
    },
    "law": {
-    "ref": "V.12",
-    "quote": "12 - Termo de responsabilidade do coordenador de projeto quanto à garantia de compatibilidade entre os diversos projetos;"
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   },
   {
    "type": "not_pdfa",
    "target": {
-    "slot": "MDPAP"
+    "slot": "CEO"
    },
    "law": {
     "ref": "VI.1.a",

@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Leonor Amostra Helena",
+  "name": "Eva Modelo Nuno",
   "nif": "999999990"
  },
- "site": "Rua do Outeiro, n.º 52, Corgo, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-11-23",
+ "site": "Rua das Tílias, n.º 48, Vale de Bouro, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de habitação bifamiliar",
+ "submitted_at": "2026-10-25",
  "files": [
   {
    "slot": "REQ",
@@ -60,7 +60,7 @@
    "file": "TRPLAC-termo-acessibilidades.pdf",
    "title": "Termo de responsabilidade do autor do plano de acessibilidades",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "TRDO",
@@ -414,8 +414,36 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-fatura-agua.pdf",
-   "title": "Fatura de água",
+   "file": "anexo-loteamentos-2019.pdf",
+   "title": "ANEXO IV — LOTEAMENTOS",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF68238436116146.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-10-19",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "anexo-obras-edificacao-2020.pdf",
+   "title": "ANEXO II — OBRAS DE EDIFICAÇÃO",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "carta_cmcb.pdf",
+   "title": "Carta",
    "kind": "written",
    "signed_by": "requerente"
   }

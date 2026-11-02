@@ -2,67 +2,78 @@
  "expediente": "T1-0032",
  "case": {
   "id": "T1-0032",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
   "pisos": 2,
-  "plot": 1380,
-  "impl": 466,
-  "built": 864,
-  "imperm": 634,
-  "perm": 746,
-  "volume": 2678,
-  "height": 6.9,
-  "facade": 6.2,
-  "parking": 2,
-  "cost": 564100,
-  "submitted": "2026-12-04",
-  "site": "Rua do Outeiro, n.º 289, Ourilhe, 4890-000 Celorico de Basto",
+  "plot": 1120,
+  "impl": 230,
+  "built": 404,
+  "imperm": 292,
+  "perm": 828,
+  "volume": 1252,
+  "height": 7.6,
+  "facade": 6.9,
+  "parking": 4,
+  "cost": 519500,
+  "submitted": "2026-10-11",
+  "site": "Rua das Tílias, n.º 109, Carvalho, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 23,
+  "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Teresa Modelo Helena",
+    "name": "Pedro Fictício Nuno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "36082-SIM",
-    "address": "Rua do Outeiro, n.º 289, Ourilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9083"
+    "number": "15762-SIM",
+    "address": "Rua das Tílias, n.º 109, Carvalho, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4747"
    },
    "arquiteto": {
-    "name": "Sérgio Fictício Olga",
+    "name": "Sérgio Amostra Pedro",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "36873-SIM",
-    "address": "Rua das Tílias, n.º 52, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8094"
+    "number": "45105-SIM",
+    "address": "Travessa do Souto, n.º 9, 4000-000 Porto",
+    "policy": "SIM-RC-3784"
    },
    "engenheiro": {
-    "name": "Diogo Amostra Eva",
+    "name": "Diogo Modelo Pedro",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "25464-SIM",
-    "address": "Rua da Escola, n.º 59, 4000-000 Porto",
-    "policy": "SIM-RC-8003"
+    "number": "94682-SIM",
+    "address": "Lugar de Carvalhal, n.º 2, 4700-000 Braga",
+    "policy": "SIM-RC-7507"
    },
    "diretor": {
-    "name": "Gonçalo Exemplo Teresa",
+    "name": "Olga Modelo Diogo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "45072-SIM",
-    "address": "Rua do Outeiro, n.º 13, 4000-000 Porto",
-    "policy": "SIM-RC-0699"
+    "number": "26193-SIM",
+    "address": "Rua da Escola, n.º 32, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3510"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "CEO"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Sérgio Exemplo Gonçalo",
+  "name": "Gonçalo Modelo Nuno",
   "nif": "999999990"
  },
- "site": "Rua da Escola, n.º 217, Corgo, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-12-06",
+ "site": "Lugar de Vilar, n.º 147, Britelo, 4890-000 Celorico de Basto",
+ "operation": "ampliação de moradia unifamiliar",
+ "submitted_at": "2026-11-13",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCDO",
@@ -414,8 +414,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-curriculo.pdf",
-   "title": "Curriculum vitae",
+   "file": "loures_plano_acessibilidade.pdf",
+   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "termo_outro_60.pdf",
+   "title": "Termo de responsabilidade do diretor de obra ou do diretor d",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "parecer_tecnico_portaria_320.pdf",
+   "title": "Parecer técnico — Portaria n.º 320/2026/1 e redes prediais d",
    "kind": "written",
    "signed_by": "requerente"
   }

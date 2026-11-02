@@ -2,104 +2,67 @@
  "expediente": "T1-0012",
  "case": {
   "id": "T1-0012",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 3060,
-  "impl": 709,
-  "built": 1360,
-  "imperm": 875,
-  "perm": 2185,
-  "volume": 4216,
-  "height": 7.2,
-  "facade": 6.5,
-  "parking": 2,
-  "cost": 1408900,
-  "submitted": "2026-11-07",
-  "site": "Rua da Escola, n.º 143, Agilde, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 3,
+  "plot": 1630,
+  "impl": 657,
+  "built": 1849,
+  "imperm": 750,
+  "perm": 880,
+  "volume": 5731,
+  "height": 10.7,
+  "facade": 10.0,
+  "parking": 4,
+  "cost": 1982100,
+  "submitted": "2026-11-17",
+  "site": "Caminho da Lameira, n.º 216, Fervença, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 14,
+  "months": 21,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Pedro Modelo Sérgio",
+    "name": "Leonor Exemplo Gonçalo",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "54603-SIM",
-    "address": "Rua da Escola, n.º 143, Agilde, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7363"
+    "number": "94777-SIM",
+    "address": "Caminho da Lameira, n.º 216, Fervença, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1498"
    },
    "arquiteto": {
-    "name": "Xavier Amostra Sérgio",
+    "name": "Carla Fictício Gonçalo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "26868-SIM",
-    "address": "Lugar da Devesa, n.º 68, 4000-000 Porto",
-    "policy": "SIM-RC-6377"
+    "number": "20608-SIM",
+    "address": "Rua do Outeiro, n.º 94, 4000-000 Porto",
+    "policy": "SIM-RC-1692"
    },
    "engenheiro": {
-    "name": "Vasco Exemplo Nuno",
+    "name": "Inês Fictício Rita",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "45041-SIM",
-    "address": "Travessa do Souto, n.º 64, 4700-000 Braga",
-    "policy": "SIM-RC-4766"
+    "number": "13969-SIM",
+    "address": "Rua das Tílias, n.º 84, 4700-000 Braga",
+    "policy": "SIM-RC-0050"
    },
    "diretor": {
-    "name": "Ana Exemplo Eva",
+    "name": "Carla Exemplo Xavier",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "84064-SIM",
-    "address": "Rua das Tílias, n.º 101, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2919"
+    "number": "07667-SIM",
+    "address": "Rua do Outeiro, n.º 69, 4800-000 Guimarães",
+    "policy": "SIM-RC-5681"
    }
   }
  },
- "planted": [
-  {
-   "type": "missing_required",
-   "target": {
-    "slot": "EOCT"
-   },
-   "law": {
-    "ref": "V.27.f",
-    "quote": "f) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;"
-   }
-  },
-  {
-   "type": "value_mismatch",
-   "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "1360 m2",
-    "MDARQ": "1477 m2"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
-   },
-   "basis": "documents",
-   "values": {
-    "declarante": "Ana Exemplo Eva",
-    "assinante": "Xavier Amostra Sérgio"
-   }
-  }
- ],
- "n_planted": 3,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Nuno Amostra Pedro",
+  "name": "Xavier Modelo Teresa",
   "nif": "999999990"
  },
- "site": "Travessa do Souto, n.º 88, Ribas, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-10",
+ "site": "Rua do Outeiro, n.º 198, Codeçoso, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de habitação bifamiliar",
+ "submitted_at": "2026-11-03",
  "files": [
   {
    "slot": "REQ",
@@ -411,6 +411,48 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "analise-portaria-320-2020.pdf",
+   "title": "Análise — Portaria n.º 320/2026/1 e registo fotográfico",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "norma-instrucao-processo-2021.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-33",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "termo_outro_45.pdf",
+   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "termos-responsabilidade-passados-2020.pdf",
+   "title": "Os termos de responsabilidade passados no âmbito das comunic",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "carta_cmcb.pdf",
+   "title": "Carta",
+   "kind": "written",
+   "signed_by": "requerente"
   }
  ]
 }

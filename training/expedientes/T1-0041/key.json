@@ -5,75 +5,64 @@
   "work": "ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 2,
-  "plot": 2090,
-  "impl": 564,
-  "built": 1106,
-  "imperm": 752,
-  "perm": 1338,
-  "volume": 3428,
-  "height": 7.6,
-  "facade": 6.9,
+  "pisos": 1,
+  "plot": 3660,
+  "impl": 593,
+  "built": 567,
+  "imperm": 763,
+  "perm": 2897,
+  "volume": 1757,
+  "height": 4.1,
+  "facade": 3.4,
   "parking": 2,
-  "cost": 1151300,
-  "submitted": "2026-12-13",
-  "site": "Travessa do Souto, n.º 219, Corgo, 4890-000 Celorico de Basto",
+  "cost": 443900,
+  "submitted": "2026-10-07",
+  "site": "Lugar de Vilar, n.º 214, Codeçoso, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 23,
+  "months": 20,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Leonor Fictício Xavier",
+    "name": "Teresa Exemplo Filipe",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "86082-SIM",
-    "address": "Travessa do Souto, n.º 219, Corgo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7154"
+    "number": "80066-SIM",
+    "address": "Lugar de Vilar, n.º 214, Codeçoso, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3978"
    },
    "arquiteto": {
-    "name": "Inês Modelo João",
+    "name": "Gonçalo Simulado Eva",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "44914-SIM",
-    "address": "Lugar da Devesa, n.º 53, 4800-000 Guimarães",
-    "policy": "SIM-RC-5970"
+    "number": "33050-SIM",
+    "address": "Rua do Outeiro, n.º 79, 4700-000 Braga",
+    "policy": "SIM-RC-8984"
    },
    "engenheiro": {
-    "name": "Miguel de Teste Nuno",
+    "name": "Inês Simulado Vasco",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "62776-SIM",
-    "address": "Rua da Escola, n.º 48, 4700-000 Braga",
-    "policy": "SIM-RC-4955"
+    "number": "49781-SIM",
+    "address": "Travessa do Souto, n.º 46, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2938"
    },
    "diretor": {
-    "name": "Filipe de Teste Vasco",
+    "name": "Vasco Exemplo Olga",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "17614-SIM",
-    "address": "Lugar de Vilar, n.º 22, 4800-000 Guimarães",
-    "policy": "SIM-RC-2495"
+    "number": "73982-SIM",
+    "address": "Rua do Outeiro, n.º 119, 4700-000 Braga",
+    "policy": "SIM-RC-9076"
    }
   }
  },
- "planted": [
-  {
-   "type": "template_wording_missing",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
-   }
-  }
- ],
- "n_planted": 1,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

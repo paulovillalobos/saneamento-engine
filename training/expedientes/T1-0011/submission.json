@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Pedro Fictício Teresa",
+  "name": "Ana Modelo Miguel",
   "nif": "999999990"
  },
- "site": "Rua do Outeiro, n.º 140, Gagos, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-10-18",
+ "site": "Rua do Outeiro, n.º 89, Veade, 4890-000 Celorico de Basto",
+ "operation": "alteração e ampliação de moradia unifamiliar",
+ "submitted_at": "2026-10-26",
  "files": [
   {
    "slot": "REQ",
@@ -129,13 +129,6 @@
    "slot": "PDPLAC",
    "file": "PDPLAC-pecas-acessibilidades.pdf",
    "title": "Peças desenhadas do plano de acessibilidades",
-   "kind": "drawn",
-   "signed_by": "arquiteto"
-  },
-  {
-   "slot": "P10000",
-   "file": "P10000-planta-localizacao.pdf",
-   "title": "Planta de localização",
    "kind": "drawn",
    "signed_by": "arquiteto"
   },
@@ -414,8 +407,50 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-ficha-verificacao.pdf",
+   "file": "lista_elementos_nomeacao_ficheiros.pdf",
+   "title": "Lista de elementos instrutórios",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "nota-explicativa-estimativa-2023.pdf",
+   "title": "Nota explicativa — estimativa do custo total da obra",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "vila_anexo_criterio.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "norma_instrucao_processo_nip.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-37",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "ficha_verificacao_elementos.pdf",
    "title": "Ficha de verificação",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "instrucoes_50.pdf",
+   "title": "Instruções Preenchimento_Q3",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "estarreja_nota_tecnica.pdf",
+   "title": "NOTA TÉCNICA N.º 10 — PROJETOS DE COMPORTAMENTO TÉRMICO",
    "kind": "written",
    "signed_by": "requerente"
   }

@@ -2,79 +2,108 @@
  "expediente": "T1-0047",
  "case": {
   "id": "T1-0047",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 1,
-  "plot": 3330,
-  "impl": 1044,
-  "built": 1035,
-  "imperm": 1215,
-  "perm": 2115,
-  "volume": 3208,
-  "height": 4.1,
-  "facade": 3.4,
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 1770,
+  "impl": 509,
+  "built": 1004,
+  "imperm": 592,
+  "perm": 1178,
+  "volume": 3112,
+  "height": 6.8,
+  "facade": 6.1,
   "parking": 2,
-  "cost": 1085700,
-  "submitted": "2026-11-12",
-  "site": "Lugar de Vilar, n.º 140, Carvalho, 4890-000 Celorico de Basto",
+  "cost": 913600,
+  "submitted": "2026-12-27",
+  "site": "Rua do Outeiro, n.º 211, Arnoia, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 8,
+  "months": 21,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Teresa Simulado Carla",
+    "name": "Nuno Fictício Eva",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "73100-SIM",
-    "address": "Lugar de Vilar, n.º 140, Carvalho, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7236"
+    "number": "10425-SIM",
+    "address": "Rua do Outeiro, n.º 211, Arnoia, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9867"
    },
    "arquiteto": {
-    "name": "Leonor Amostra Diogo",
+    "name": "Nuno Fictício João",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "51898-SIM",
-    "address": "Rua da Escola, n.º 96, 4800-000 Guimarães",
-    "policy": "SIM-RC-4559"
+    "number": "80143-SIM",
+    "address": "Rua das Tílias, n.º 35, 4000-000 Porto",
+    "policy": "SIM-RC-4651"
    },
    "engenheiro": {
-    "name": "Olga Exemplo Leonor",
+    "name": "Eva Simulado Olga",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "67515-SIM",
-    "address": "Travessa do Souto, n.º 22, 4800-000 Guimarães",
-    "policy": "SIM-RC-8865"
+    "number": "37920-SIM",
+    "address": "Caminho da Lameira, n.º 89, 4800-000 Guimarães",
+    "policy": "SIM-RC-9080"
    },
    "diretor": {
-    "name": "Olga Modelo Rita",
+    "name": "Bruno Amostra Eva",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "67260-SIM",
-    "address": "Lugar de Vilar, n.º 41, 4700-000 Braga",
-    "policy": "SIM-RC-5734"
+    "number": "13761-SIM",
+    "address": "Lugar de Vilar, n.º 67, 4800-000 Guimarães",
+    "policy": "SIM-RC-7096"
    }
   }
  },
  "planted": [
   {
-   "type": "wrong_signer",
+   "type": "expired_insurance",
    "target": {
-    "slot": "TRDO"
+    "slot": "SRCARQ"
    },
    "basis": "documents",
    "values": {
-    "declarante": "Olga Modelo Rita",
-    "assinante": "Leonor Amostra Diogo"
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-27"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "P10000"
+   },
+   "law": {
+    "ref": "V.2",
+    "quote": "2 - Delimitação da área objeto da operação urbanística e sua área de enquadramento em planta de localização fornecida pela câmara municipal ou planta de localização à escala 1:1.000;"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "1004 m2",
+    "MDARQ": "935 m2"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

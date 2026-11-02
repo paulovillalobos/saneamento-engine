@@ -10,7 +10,7 @@
   "nif": "999999990"
  },
  "site": "Rua da Escola, n.º 200, Rego, 4890-000 Celorico de Basto",
- "operation": "construção de moradia unifamiliar",
+ "operation": "construção de edifício de comércio e serviços",
  "submitted_at": "2026-10-16",
  "files": [
   {
@@ -414,8 +414,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-lista-elementos.pdf",
-   "title": "Lista de elementos instrutórios",
+   "file": "anadia_termo_responsabilidade.pdf",
+   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "memoria-descritiva-justificativa-2022.pdf",
+   "title": "Memória descritiva e justificativa — Candidatura ao programa",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "manual-normas-organizacao-2021.pdf",
+   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
    "kind": "written",
    "signed_by": "requerente"
   }

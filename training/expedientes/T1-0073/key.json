@@ -2,66 +2,91 @@
  "expediente": "T1-0073",
  "case": {
   "id": "T1-0073",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 2,
-  "plot": 3240,
-  "impl": 920,
-  "built": 1636,
-  "imperm": 1014,
-  "perm": 2226,
-  "volume": 5071,
-  "height": 6.9,
-  "facade": 6.2,
-  "parking": 2,
-  "cost": 1622900,
-  "submitted": "2026-10-09",
-  "site": "Rua das Tílias, n.º 227, Vale de Bouro, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 3,
+  "plot": 2880,
+  "impl": 605,
+  "built": 1696,
+  "imperm": 747,
+  "perm": 2133,
+  "volume": 5257,
+  "height": 10.3,
+  "facade": 9.6,
+  "parking": 4,
+  "cost": 1887600,
+  "submitted": "2026-10-13",
+  "site": "Rua das Tílias, n.º 206, Basto (São Clemente), 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 13,
+  "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Nuno Simulado Carla",
+    "name": "João de Teste Helena",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "77393-SIM",
-    "address": "Rua das Tílias, n.º 227, Vale de Bouro, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8568"
+    "number": "96312-SIM",
+    "address": "Rua das Tílias, n.º 206, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7689"
    },
    "arquiteto": {
-    "name": "João Simulado Olga",
+    "name": "Bruno Modelo Gonçalo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "15261-SIM",
-    "address": "Lugar da Devesa, n.º 17, 4000-000 Porto",
-    "policy": "SIM-RC-5643"
+    "number": "16443-SIM",
+    "address": "Lugar da Devesa, n.º 105, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7013"
    },
    "engenheiro": {
-    "name": "Helena Modelo Miguel",
+    "name": "Helena Amostra Filipe",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "69042-SIM",
-    "address": "Rua das Tílias, n.º 92, 4700-000 Braga",
-    "policy": "SIM-RC-8525"
+    "number": "37327-SIM",
+    "address": "Caminho da Lameira, n.º 88, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1755"
    },
    "diretor": {
-    "name": "Carla Simulado Leonor",
+    "name": "Miguel Exemplo Sérgio",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "03493-SIM",
-    "address": "Lugar de Carvalhal, n.º 4, 4700-000 Braga",
-    "policy": "SIM-RC-4605"
+    "number": "56575-SIM",
+    "address": "Lugar de Carvalhal, n.º 105, 4800-000 Guimarães",
+    "policy": "SIM-RC-3662"
    }
   }
  },
  "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-10-13"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "PLANT"
+   },
+   "law": {
+    "ref": "V.27.b.i",
+    "quote": "i) Plantas à escala de 1:50 ou de 1:100 contendo as dimensões e áreas e utilizações de todos os compartimentos, bem como a representação do mobiliário fixo e equipamento sanitário;"
+   }
+  },
   {
    "type": "wrong_signer",
    "target": {
@@ -69,12 +94,23 @@
    },
    "basis": "documents",
    "values": {
-    "declarante": "Carla Simulado Leonor",
-    "assinante": "João Simulado Olga"
+    "declarante": "Miguel Exemplo Sérgio",
+    "assinante": "Bruno Modelo Gonçalo"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Rua das Tílias, n.º 206, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "TRPARQ": "Travessa do Souto, n.º 44, Ourilhe, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

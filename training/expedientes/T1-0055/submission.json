@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Xavier Fictício João",
+  "name": "Olga Amostra Pedro",
   "nif": "999999990"
  },
- "site": "Lugar da Devesa, n.º 289, Rego, 4890-000 Celorico de Basto",
- "operation": "construção de moradia unifamiliar",
- "submitted_at": "2026-10-17",
+ "site": "Lugar da Devesa, n.º 214, Ourilhe, 4890-000 Celorico de Basto",
+ "operation": "alteração e ampliação de moradia unifamiliar",
+ "submitted_at": "2026-12-21",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCDO",
@@ -414,8 +414,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-ficha-verificacao.pdf",
+   "file": "ficha_verificacao_elementos.pdf",
    "title": "Ficha de verificação",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "anexo-criterio-elaboracao-2024.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF39918526597944.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
    "kind": "written",
    "signed_by": "requerente"
   }

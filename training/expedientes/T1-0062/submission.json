@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Nuno Modelo Diogo",
+  "name": "Helena Amostra Olga",
   "nif": "999999990"
  },
- "site": "Lugar da Devesa, n.º 198, Molares, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-11-13",
+ "site": "Rua da Escola, n.º 118, Codeçoso, 4890-000 Celorico de Basto",
+ "operation": "alteração e ampliação de moradia unifamiliar",
+ "submitted_at": "2026-10-19",
  "files": [
   {
    "slot": "REQ",
@@ -88,7 +88,7 @@
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "MDARQ",
@@ -414,8 +414,50 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-ficha-verificacao.pdf",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF54020698330162.pdf",
+   "title": "Primeira Análise — Portaria n.º 320/2026/1 e comportamento t",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "ficha_verificacao_elementos.pdf",
    "title": "Ficha de verificação",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "nota_explicativa_88.pdf",
+   "title": "Os termos de responsabilidade passados no âmbito das comunic",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "ficha_projeto.pdf",
+   "title": "Ficha de Projeto",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "ficha_projeto_95.pdf",
+   "title": "Ficha de Projeto",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "benavente_ficha_projeto.pdf",
+   "title": "Ficha de Projeto",
    "kind": "written",
    "signed_by": "requerente"
   }

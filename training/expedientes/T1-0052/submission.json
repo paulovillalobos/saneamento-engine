@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "João Simulado Rita",
+  "name": "Carla Modelo Rita",
   "nif": "999999990"
  },
- "site": "Rua da Escola, n.º 188, Canedo de Basto, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-11-05",
+ "site": "Lugar de Vilar, n.º 155, Rego, 4890-000 Celorico de Basto",
+ "operation": "ampliação de moradia unifamiliar",
+ "submitted_at": "2026-12-04",
  "files": [
   {
    "slot": "REQ",
@@ -414,7 +414,35 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-curriculo.pdf",
+   "file": "ficha_verificacao_elementos.pdf",
+   "title": "Ficha de verificação",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "estarreja_municipio_estarreja.pdf",
+   "title": "MUNICÍPIO DE ESTARREJA — AQUISIÇÃO DE SERVIÇOS DE PROFISSION",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "instrucoes-preenchimento-2019.pdf",
+   "title": "Instruções Preenchimento_Q3",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "anexo-obras-edificacao-2021.pdf",
+   "title": "ANEXO V — OBRAS DE EDIFICAÇÃO",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "cv_requerente.pdf",
    "title": "Curriculum vitae",
    "kind": "written",
    "signed_by": "requerente"

@@ -2,108 +2,67 @@
  "expediente": "T1-0058",
  "case": {
   "id": "T1-0058",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
   "fogos": 0,
-  "pisos": 1,
-  "plot": 720,
-  "impl": 231,
-  "built": 208,
-  "imperm": 261,
-  "perm": 459,
-  "volume": 644,
-  "height": 3.7,
-  "facade": 3.0,
+  "pisos": 2,
+  "plot": 3350,
+  "impl": 1422,
+  "built": 2654,
+  "imperm": 1603,
+  "perm": 1747,
+  "volume": 8227,
+  "height": 7.0,
+  "facade": 6.3,
   "parking": 2,
-  "cost": 144700,
-  "submitted": "2026-12-10",
-  "site": "Lugar da Devesa, n.º 158, Borba de Montanha, 4890-000 Celorico de Basto",
+  "cost": 2062100,
+  "submitted": "2026-10-23",
+  "site": "Rua das Tílias, n.º 109, Ribas, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 23,
+  "months": 12,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Xavier de Teste Leonor",
+    "name": "Gonçalo Simulado Olga",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "23430-SIM",
-    "address": "Lugar da Devesa, n.º 158, Borba de Montanha, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5363"
+    "number": "10530-SIM",
+    "address": "Rua das Tílias, n.º 109, Ribas, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4940"
    },
    "arquiteto": {
-    "name": "Xavier Fictício Helena",
+    "name": "Inês Modelo Sérgio",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "84150-SIM",
-    "address": "Rua do Outeiro, n.º 40, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8787"
+    "number": "96067-SIM",
+    "address": "Lugar de Carvalhal, n.º 110, 4800-000 Guimarães",
+    "policy": "SIM-RC-1923"
    },
    "engenheiro": {
-    "name": "Leonor Amostra João",
+    "name": "Diogo Amostra Miguel",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "78045-SIM",
-    "address": "Rua da Escola, n.º 85, 4800-000 Guimarães",
-    "policy": "SIM-RC-4141"
+    "number": "60544-SIM",
+    "address": "Lugar de Carvalhal, n.º 85, 4800-000 Guimarães",
+    "policy": "SIM-RC-3479"
    },
    "diretor": {
-    "name": "Helena Fictício Helena",
+    "name": "Vasco de Teste Eva",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "22133-SIM",
-    "address": "Travessa do Souto, n.º 34, 4800-000 Guimarães",
-    "policy": "SIM-RC-3320"
+    "number": "83217-SIM",
+    "address": "Caminho da Lameira, n.º 42, 4700-000 Braga",
+    "policy": "SIM-RC-9797"
    }
   }
  },
- "planted": [
-  {
-   "type": "expired_insurance",
-   "target": {
-    "slot": "SRCARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-12-10"
-   },
-   "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
-   }
-  },
-  {
-   "type": "template_wording_missing",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
-   }
-  },
-  {
-   "type": "value_mismatch",
-   "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "208 m2",
-    "MDARQ": "265 m2"
-   }
-  }
- ],
- "n_planted": 3,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

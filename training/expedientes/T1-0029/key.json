@@ -2,89 +2,83 @@
  "expediente": "T1-0029",
  "case": {
   "id": "T1-0029",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
   "pisos": 2,
-  "plot": 3900,
-  "impl": 1160,
-  "built": 2107,
-  "imperm": 1181,
-  "perm": 2719,
-  "volume": 6531,
-  "height": 7.3,
-  "facade": 6.6,
-  "parking": 2,
-  "cost": 1906800,
-  "submitted": "2026-11-06",
-  "site": "Lugar de Vilar, n.º 176, Corgo, 4890-000 Celorico de Basto",
+  "plot": 840,
+  "impl": 377,
+  "built": 737,
+  "imperm": 511,
+  "perm": 329,
+  "volume": 2284,
+  "height": 7.2,
+  "facade": 6.5,
+  "parking": 4,
+  "cost": 908700,
+  "submitted": "2026-11-18",
+  "site": "Lugar da Devesa, n.º 65, Arnoia, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 10,
+  "months": 14,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Teresa Modelo Filipe",
+    "name": "Inês Modelo Carla",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "24017-SIM",
-    "address": "Lugar de Vilar, n.º 176, Corgo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8407"
+    "number": "61550-SIM",
+    "address": "Lugar da Devesa, n.º 65, Arnoia, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8224"
    },
    "arquiteto": {
-    "name": "Gonçalo Exemplo Helena",
+    "name": "Ana Modelo Nuno",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "06302-SIM",
-    "address": "Rua do Outeiro, n.º 90, 4000-000 Porto",
-    "policy": "SIM-RC-4062"
+    "number": "15685-SIM",
+    "address": "Travessa do Souto, n.º 88, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9920"
    },
    "engenheiro": {
-    "name": "Nuno Exemplo Diogo",
+    "name": "Xavier Amostra Vasco",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "75319-SIM",
-    "address": "Rua da Escola, n.º 50, 4000-000 Porto",
-    "policy": "SIM-RC-9175"
+    "number": "59636-SIM",
+    "address": "Travessa do Souto, n.º 79, 4800-000 Guimarães",
+    "policy": "SIM-RC-8680"
    },
    "diretor": {
-    "name": "Diogo Amostra Rita",
+    "name": "Leonor Modelo Bruno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "06895-SIM",
-    "address": "Rua do Outeiro, n.º 100, 4000-000 Porto",
-    "policy": "SIM-RC-0342"
+    "number": "25636-SIM",
+    "address": "Lugar de Vilar, n.º 8, 4000-000 Porto",
+    "policy": "SIM-RC-0700"
    }
   }
  },
  "planted": [
   {
-   "type": "not_pdfa",
+   "type": "expired_insurance",
    "target": {
-    "slot": "CEO"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
-   "type": "wrong_site",
-   "target": {
-    "slot": "TRPARQ"
+    "slot": "SRCARQ"
    },
    "basis": "documents",
    "values": {
-    "REQ": "Lugar de Vilar, n.º 176, Corgo, 4890-000 Celorico de Basto",
-    "TRPARQ": "Rua das Tílias, n.º 86, Agilde, 4890-000 Celorico de Basto"
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-11-18"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

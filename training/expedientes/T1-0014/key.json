@@ -2,84 +2,89 @@
  "expediente": "T1-0014",
  "case": {
   "id": "T1-0014",
-  "work": "alteração e ampliação de moradia unifamiliar",
+  "work": "ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 2,
-  "plot": 1430,
-  "impl": 626,
-  "built": 1196,
-  "imperm": 815,
-  "perm": 615,
-  "volume": 3707,
-  "height": 6.6,
-  "facade": 5.9,
+  "pisos": 1,
+  "plot": 1700,
+  "impl": 493,
+  "built": 442,
+  "imperm": 541,
+  "perm": 1159,
+  "volume": 1370,
+  "height": 4.0,
+  "facade": 3.3,
   "parking": 2,
-  "cost": 1539200,
-  "submitted": "2026-11-11",
-  "site": "Rua das Tílias, n.º 128, Fervença, 4890-000 Celorico de Basto",
+  "cost": 343800,
+  "submitted": "2026-12-28",
+  "site": "Caminho da Lameira, n.º 208, Borba de Montanha, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 14,
+  "months": 23,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Carla Amostra Filipe",
+    "name": "Vasco Exemplo Teresa",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "76909-SIM",
-    "address": "Rua das Tílias, n.º 128, Fervença, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9933"
+    "number": "52612-SIM",
+    "address": "Caminho da Lameira, n.º 208, Borba de Montanha, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4959"
    },
    "arquiteto": {
-    "name": "Inês Exemplo Sérgio",
+    "name": "Teresa Fictício Bruno",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "22303-SIM",
-    "address": "Lugar de Vilar, n.º 100, 4700-000 Braga",
-    "policy": "SIM-RC-7221"
+    "number": "79655-SIM",
+    "address": "Travessa do Souto, n.º 23, 4700-000 Braga",
+    "policy": "SIM-RC-3523"
    },
    "engenheiro": {
-    "name": "Miguel de Teste Nuno",
+    "name": "Olga de Teste Teresa",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "32521-SIM",
-    "address": "Travessa do Souto, n.º 92, 4700-000 Braga",
-    "policy": "SIM-RC-5006"
+    "number": "03619-SIM",
+    "address": "Caminho da Lameira, n.º 69, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8686"
    },
    "diretor": {
-    "name": "Carla Simulado Helena",
+    "name": "Inês Exemplo Eva",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "53036-SIM",
-    "address": "Lugar da Devesa, n.º 64, 4000-000 Porto",
-    "policy": "SIM-RC-3060"
+    "number": "53859-SIM",
+    "address": "Travessa do Souto, n.º 96, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1132"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "expired_insurance",
    "target": {
-    "slot": "TRPARQ"
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-28"
    },
    "law": {
-    "ref": "V.11",
-    "quote": "11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;"
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
    }
   },
   {
-   "type": "not_pdf",
+   "type": "missing_required",
    "target": {
-    "slot": "FOTO"
+    "slot": "SRCCP"
    },
    "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
    }
   },
   {
@@ -93,23 +98,12 @@
    },
    "basis": "documents",
    "values": {
-    "REQ": "1196 m2",
-    "MDARQ": "1269 m2"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
-   },
-   "basis": "documents",
-   "values": {
-    "declarante": "Carla Simulado Helena",
-    "assinante": "Inês Exemplo Sérgio"
+    "REQ": "442 m2",
+    "MDARQ": "529 m2"
    }
   }
  ],
- "n_planted": 4,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

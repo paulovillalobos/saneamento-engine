@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Gonçalo de Teste Xavier",
+  "name": "Olga Amostra Eva",
   "nif": "999999990"
  },
- "site": "Caminho da Lameira, n.º 59, Moreira do Castelo, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-12-05",
+ "site": "Caminho da Lameira, n.º 41, Britelo, 4890-000 Celorico de Basto",
+ "operation": "ampliação de moradia unifamiliar",
+ "submitted_at": "2026-12-13",
  "files": [
   {
    "slot": "REQ",
@@ -49,13 +49,6 @@
    "signed_by": "arquiteto"
   },
   {
-   "slot": "SRCCP",
-   "file": "SRCCP-seguro-coordenador.pdf",
-   "title": "Comprovativo de seguro de responsabilidade civil do coordenador de projeto",
-   "kind": "written",
-   "signed_by": "seguradora"
-  },
-  {
    "slot": "TRPLAC",
    "file": "TRPLAC-termo-acessibilidades.pdf",
    "title": "Termo de responsabilidade do autor do plano de acessibilidades",
@@ -67,7 +60,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCDO",
@@ -411,6 +404,41 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "seixal_memoria_descritiva.pdf",
+   "title": "Memória descritiva do projeto empresarial",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "benavente_anexo_criterio.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "fatura_agua_2026_08.pdf",
+   "title": "Fatura de água",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "benavente_memoria_descritiva.pdf",
+   "title": "Memória descritiva do projeto empresarial",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "copia-parte-ata-2021.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-05-06",
+   "kind": "written",
+   "signed_by": "requerente"
   }
  ]
 }

@@ -2,78 +2,100 @@
  "expediente": "T1-0013",
  "case": {
   "id": "T1-0013",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 1,
-  "plot": 2780,
-  "impl": 762,
-  "built": 652,
-  "imperm": 912,
-  "perm": 1868,
-  "volume": 2021,
-  "height": 3.7,
-  "facade": 3.0,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 2,
+  "plot": 1770,
+  "impl": 582,
+  "built": 1130,
+  "imperm": 656,
+  "perm": 1114,
+  "volume": 3503,
+  "height": 7.5,
+  "facade": 6.8,
   "parking": 2,
-  "cost": 817600,
-  "submitted": "2026-11-03",
-  "site": "Lugar da Devesa, n.º 35, Ribas, 4890-000 Celorico de Basto",
+  "cost": 1455400,
+  "submitted": "2026-11-28",
+  "site": "Lugar de Carvalhal, n.º 53, Arnoia, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 8,
+  "months": 19,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Filipe Modelo Filipe",
+    "name": "Inês Simulado Teresa",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "91498-SIM",
-    "address": "Lugar da Devesa, n.º 35, Ribas, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9913"
+    "number": "82979-SIM",
+    "address": "Lugar de Carvalhal, n.º 53, Arnoia, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3745"
    },
    "arquiteto": {
-    "name": "João Fictício Sérgio",
+    "name": "Sérgio de Teste Inês",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "28224-SIM",
-    "address": "Rua do Outeiro, n.º 114, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4409"
+    "number": "93571-SIM",
+    "address": "Rua do Outeiro, n.º 53, 4700-000 Braga",
+    "policy": "SIM-RC-2134"
    },
    "engenheiro": {
-    "name": "Carla Simulado Sérgio",
+    "name": "Inês Fictício Olga",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "87348-SIM",
-    "address": "Lugar da Devesa, n.º 60, 4000-000 Porto",
-    "policy": "SIM-RC-2762"
+    "number": "74511-SIM",
+    "address": "Rua da Escola, n.º 69, 4700-000 Braga",
+    "policy": "SIM-RC-6780"
    },
    "diretor": {
-    "name": "João Amostra Teresa",
+    "name": "Inês de Teste Rita",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "36358-SIM",
-    "address": "Lugar da Devesa, n.º 79, 4700-000 Braga",
-    "policy": "SIM-RC-6432"
+    "number": "92150-SIM",
+    "address": "Caminho da Lameira, n.º 35, 4800-000 Guimarães",
+    "policy": "SIM-RC-3513"
    }
   }
  },
  "planted": [
   {
-   "type": "unsigned",
+   "type": "not_pdf",
    "target": {
-    "slot": "TREECP"
+    "slot": "ALC"
    },
    "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Inês de Teste Rita",
+    "assinante": "Sérgio de Teste Inês"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Lugar de Carvalhal, n.º 53, Arnoia, 4890-000 Celorico de Basto",
+    "TRPARQ": "Lugar da Devesa, n.º 91, Agilde, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

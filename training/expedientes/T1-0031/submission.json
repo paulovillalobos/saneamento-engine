@@ -6,11 +6,11 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "João Fictício Nuno",
+  "name": "Nuno Simulado Olga",
   "nif": "999999990"
  },
- "site": "Travessa do Souto, n.º 124, Ourilhe, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
+ "site": "Rua das Tílias, n.º 252, Corgo, 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
  "submitted_at": "2026-12-05",
  "files": [
   {
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCDO",
@@ -88,7 +88,7 @@
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "MDARQ",
@@ -411,6 +411,27 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "lista_elementos_nomeacao_ficheiros.pdf",
+   "title": "Lista de elementos instrutórios",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "cv_requerente.pdf",
+   "title": "Curriculum vitae",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "termo-responsabilidade-2023.pdf",
+   "title": "Termo de Responsabilidade",
+   "kind": "written",
+   "signed_by": "requerente"
   }
  ]
 }

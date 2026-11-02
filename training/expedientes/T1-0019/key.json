@@ -2,85 +2,87 @@
  "expediente": "T1-0019",
  "case": {
   "id": "T1-0019",
-  "work": "ampliação de moradia unifamiliar",
+  "work": "alteração e ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 1550,
-  "impl": 370,
-  "built": 733,
-  "imperm": 554,
-  "perm": 996,
-  "volume": 2272,
-  "height": 7.0,
-  "facade": 6.3,
+  "plot": 2110,
+  "impl": 897,
+  "built": 1695,
+  "imperm": 920,
+  "perm": 1190,
+  "volume": 5254,
+  "height": 7.8,
+  "facade": 7.1,
   "parking": 2,
-  "cost": 706600,
-  "submitted": "2026-11-20",
-  "site": "Lugar da Devesa, n.º 273, Veade, 4890-000 Celorico de Basto",
+  "cost": 1157600,
+  "submitted": "2026-10-09",
+  "site": "Rua da Escola, n.º 5, Corgo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 13,
+  "months": 10,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Ana Fictício Inês",
+    "name": "Sérgio Fictício Bruno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "91078-SIM",
-    "address": "Lugar da Devesa, n.º 273, Veade, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1848"
+    "number": "70226-SIM",
+    "address": "Rua da Escola, n.º 5, Corgo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4732"
    },
    "arquiteto": {
-    "name": "Filipe Exemplo Xavier",
+    "name": "Helena Exemplo Sérgio",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "07567-SIM",
-    "address": "Travessa do Souto, n.º 70, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1753"
+    "number": "49677-SIM",
+    "address": "Lugar da Devesa, n.º 51, 4000-000 Porto",
+    "policy": "SIM-RC-3199"
    },
    "engenheiro": {
-    "name": "Gonçalo de Teste Carla",
+    "name": "Xavier Fictício Gonçalo",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "83855-SIM",
-    "address": "Travessa do Souto, n.º 110, 4000-000 Porto",
-    "policy": "SIM-RC-3562"
+    "number": "90704-SIM",
+    "address": "Caminho da Lameira, n.º 75, 4800-000 Guimarães",
+    "policy": "SIM-RC-7767"
    },
    "diretor": {
-    "name": "Filipe Modelo Olga",
+    "name": "Miguel Simulado Rita",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "03863-SIM",
-    "address": "Lugar da Devesa, n.º 116, 4800-000 Guimarães",
-    "policy": "SIM-RC-4649"
+    "number": "03707-SIM",
+    "address": "Travessa do Souto, n.º 85, 4800-000 Guimarães",
+    "policy": "SIM-RC-9539"
    }
   }
  },
  "planted": [
   {
-   "type": "not_pdf",
+   "type": "impossible_value",
    "target": {
-    "slot": "ALC"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
-   "type": "wrong_site",
-   "target": {
-    "slot": "TRPARQ"
+    "field": "area_parcela",
+    "slot": "REQ"
    },
    "basis": "documents",
    "values": {
-    "REQ": "Lugar da Devesa, n.º 273, Veade, 4890-000 Celorico de Basto",
-    "TRPARQ": "Rua das Tílias, n.º 232, Moreira do Castelo, 4890-000 Celorico de Basto"
+    "area_parcela": "211 m2",
+    "area_implantacao": "897 m2",
+    "MDARQ": "2110 m2"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
   }
  ],

@@ -2,62 +2,62 @@
  "expediente": "T1-0072",
  "case": {
   "id": "T1-0072",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
   "pisos": 2,
-  "plot": 680,
-  "impl": 131,
-  "built": 241,
-  "imperm": 239,
-  "perm": 441,
-  "volume": 747,
-  "height": 7.5,
-  "facade": 6.8,
+  "plot": 2460,
+  "impl": 881,
+  "built": 1541,
+  "imperm": 1029,
+  "perm": 1431,
+  "volume": 4777,
+  "height": 6.9,
+  "facade": 6.2,
   "parking": 2,
-  "cost": 163600,
-  "submitted": "2026-10-20",
-  "site": "Rua da Escola, n.º 88, Agilde, 4890-000 Celorico de Basto",
+  "cost": 1368400,
+  "submitted": "2026-10-03",
+  "site": "Rua do Outeiro, n.º 72, Corgo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
   "months": 15,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Teresa Exemplo João",
+    "name": "Teresa de Teste Sérgio",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "56483-SIM",
-    "address": "Rua da Escola, n.º 88, Agilde, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1115"
+    "number": "69442-SIM",
+    "address": "Rua do Outeiro, n.º 72, Corgo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7371"
    },
    "arquiteto": {
-    "name": "Nuno Fictício Vasco",
+    "name": "Bruno Simulado Filipe",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "28216-SIM",
-    "address": "Lugar de Carvalhal, n.º 86, 4800-000 Guimarães",
-    "policy": "SIM-RC-8090"
+    "number": "54879-SIM",
+    "address": "Lugar de Vilar, n.º 111, 4800-000 Guimarães",
+    "policy": "SIM-RC-8280"
    },
    "engenheiro": {
-    "name": "Diogo Exemplo Filipe",
+    "name": "Helena Fictício Bruno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "94592-SIM",
-    "address": "Lugar de Carvalhal, n.º 28, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9135"
+    "number": "49701-SIM",
+    "address": "Lugar de Vilar, n.º 111, 4700-000 Braga",
+    "policy": "SIM-RC-7069"
    },
    "diretor": {
-    "name": "Bruno de Teste João",
+    "name": "Teresa Fictício Inês",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "19196-SIM",
-    "address": "Caminho da Lameira, n.º 106, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7799"
+    "number": "46394-SIM",
+    "address": "Rua do Outeiro, n.º 38, 4700-000 Braga",
+    "policy": "SIM-RC-1678"
    }
   }
  },
@@ -73,8 +73,8 @@
    },
    "basis": "documents",
    "values": {
-    "REQ": "241 m2",
-    "MDARQ": "297 m2"
+    "REQ": "1541 m2",
+    "MDARQ": "1642 m2"
    }
   }
  ],

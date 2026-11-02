@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Nuno Simulado Carla",
+  "name": "João de Teste Helena",
   "nif": "999999990"
  },
- "site": "Rua das Tílias, n.º 227, Vale de Bouro, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-10-09",
+ "site": "Rua das Tílias, n.º 206, Basto (São Clemente), 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de habitação bifamiliar",
+ "submitted_at": "2026-10-13",
  "files": [
   {
    "slot": "REQ",
@@ -150,13 +150,6 @@
    "slot": "PI",
    "file": "PI-planta-implantacao.pdf",
    "title": "Planta de implantação",
-   "kind": "drawn",
-   "signed_by": "arquiteto"
-  },
-  {
-   "slot": "PLANT",
-   "file": "PLANT-plantas.pdf",
-   "title": "Plantas",
    "kind": "drawn",
    "signed_by": "arquiteto"
   },
@@ -414,8 +407,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-curriculo.pdf",
+   "file": "vila_anexo_obras.pdf",
+   "title": "ANEXO II — OBRAS DE URBANIZAÇÃO",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "instrucoes-preenchimento-2020.pdf",
+   "title": "Instruções Preenchimento_Q3",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "cv_requerente.pdf",
    "title": "Curriculum vitae",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "gouveia_termo_responsabilidade.pdf",
+   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
    "kind": "written",
    "signed_by": "requerente"
   }

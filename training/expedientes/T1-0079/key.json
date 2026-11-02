@@ -2,94 +2,103 @@
  "expediente": "T1-0079",
  "case": {
   "id": "T1-0079",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 1,
-  "plot": 3720,
-  "impl": 510,
-  "built": 503,
-  "imperm": 624,
-  "perm": 3096,
-  "volume": 1559,
-  "height": 4.6,
-  "facade": 3.9,
-  "parking": 2,
-  "cost": 565300,
-  "submitted": "2026-10-22",
-  "site": "Lugar de Carvalhal, n.º 294, Moreira do Castelo, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 3,
+  "plot": 3780,
+  "impl": 1529,
+  "built": 4126,
+  "imperm": 1608,
+  "perm": 2172,
+  "volume": 12790,
+  "height": 10.0,
+  "facade": 9.3,
+  "parking": 4,
+  "cost": 2917000,
+  "submitted": "2026-10-06",
+  "site": "Lugar de Carvalhal, n.º 233, Veade, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 19,
+  "months": 10,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Eva Exemplo Gonçalo",
+    "name": "Nuno Simulado Vasco",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "72608-SIM",
-    "address": "Lugar de Carvalhal, n.º 294, Moreira do Castelo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9795"
+    "number": "96901-SIM",
+    "address": "Lugar de Carvalhal, n.º 233, Veade, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0184"
    },
    "arquiteto": {
-    "name": "Gonçalo Fictício Xavier",
+    "name": "Xavier Exemplo Helena",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "29885-SIM",
-    "address": "Caminho da Lameira, n.º 14, 4000-000 Porto",
-    "policy": "SIM-RC-3719"
+    "number": "81479-SIM",
+    "address": "Rua do Outeiro, n.º 28, 4700-000 Braga",
+    "policy": "SIM-RC-9081"
    },
    "engenheiro": {
-    "name": "Olga Modelo Gonçalo",
+    "name": "Vasco Exemplo Eva",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "88943-SIM",
-    "address": "Caminho da Lameira, n.º 64, 4000-000 Porto",
-    "policy": "SIM-RC-6155"
+    "number": "77273-SIM",
+    "address": "Lugar de Vilar, n.º 21, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0918"
    },
    "diretor": {
-    "name": "Gonçalo Amostra Bruno",
+    "name": "Miguel Simulado Rita",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "41499-SIM",
-    "address": "Caminho da Lameira, n.º 80, 4700-000 Braga",
-    "policy": "SIM-RC-7024"
+    "number": "60240-SIM",
+    "address": "Travessa do Souto, n.º 5, 4800-000 Guimarães",
+    "policy": "SIM-RC-2250"
    }
   }
  },
  "planted": [
   {
-   "type": "value_mismatch",
+   "type": "expired_insurance",
    "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
+    "slot": "SRCARQ"
    },
    "basis": "documents",
    "values": {
-    "REQ": "503 m2",
-    "MDARQ": "409 m2"
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-10-06"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
    }
   },
   {
-   "type": "wrong_site",
+   "type": "missing_required",
    "target": {
-    "slot": "TRPARQ"
+    "slot": "FOTO"
    },
-   "basis": "documents",
-   "values": {
-    "REQ": "Lugar de Carvalhal, n.º 294, Moreira do Castelo, 4890-000 Celorico de Basto",
-    "TRPARQ": "Rua das Tílias, n.º 125, Caçarilhe, 4890-000 Celorico de Basto"
+   "law": {
+    "ref": "V.15",
+    "quote": "15 - Registo fotográfico da situação existente, abrangendo o imóvel e as edificações adjacentes, quando estas existam;"
+   }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDPAP"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

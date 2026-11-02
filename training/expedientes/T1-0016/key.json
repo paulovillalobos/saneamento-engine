@@ -2,67 +2,78 @@
  "expediente": "T1-0016",
  "case": {
   "id": "T1-0016",
-  "work": "construção de moradia unifamiliar",
+  "work": "ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 1,
-  "plot": 2510,
-  "impl": 458,
-  "built": 423,
-  "imperm": 511,
-  "perm": 1999,
-  "volume": 1311,
-  "height": 4.5,
-  "facade": 3.8,
+  "pisos": 2,
+  "plot": 2080,
+  "impl": 441,
+  "built": 811,
+  "imperm": 499,
+  "perm": 1581,
+  "volume": 2514,
+  "height": 7.7,
+  "facade": 7.0,
   "parking": 2,
-  "cost": 357800,
-  "submitted": "2026-12-15",
-  "site": "Rua das Tílias, n.º 169, Fervença, 4890-000 Celorico de Basto",
+  "cost": 736300,
+  "submitted": "2026-10-07",
+  "site": "Travessa do Souto, n.º 297, Britelo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 16,
+  "months": 14,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Helena Fictício Bruno",
+    "name": "Teresa Exemplo Helena",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "78060-SIM",
-    "address": "Rua das Tílias, n.º 169, Fervença, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9919"
+    "number": "76708-SIM",
+    "address": "Travessa do Souto, n.º 297, Britelo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6412"
    },
    "arquiteto": {
-    "name": "Teresa Amostra Sérgio",
+    "name": "Gonçalo Simulado Carla",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "08969-SIM",
-    "address": "Lugar da Devesa, n.º 71, 4800-000 Guimarães",
-    "policy": "SIM-RC-8817"
+    "number": "21064-SIM",
+    "address": "Rua da Escola, n.º 4, 4800-000 Guimarães",
+    "policy": "SIM-RC-6269"
    },
    "engenheiro": {
-    "name": "Gonçalo Amostra Teresa",
+    "name": "Olga Amostra Eva",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "56590-SIM",
-    "address": "Travessa do Souto, n.º 92, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1185"
+    "number": "78464-SIM",
+    "address": "Lugar de Vilar, n.º 87, 4000-000 Porto",
+    "policy": "SIM-RC-3953"
    },
    "diretor": {
-    "name": "Inês Fictício Diogo",
+    "name": "Nuno Fictício João",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "20793-SIM",
-    "address": "Rua da Escola, n.º 118, 4700-000 Braga",
-    "policy": "SIM-RC-7015"
+    "number": "27530-SIM",
+    "address": "Rua das Tílias, n.º 46, 4700-000 Braga",
+    "policy": "SIM-RC-3689"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRPLAC"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  }
+ ],
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

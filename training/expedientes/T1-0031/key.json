@@ -2,106 +2,79 @@
  "expediente": "T1-0031",
  "case": {
   "id": "T1-0031",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 2,
-  "plot": 3710,
-  "impl": 482,
-  "built": 878,
-  "imperm": 608,
-  "perm": 3102,
-  "volume": 2721,
-  "height": 7.4,
-  "facade": 6.7,
-  "parking": 4,
-  "cost": 1101800,
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 1,
+  "plot": 1750,
+  "impl": 673,
+  "built": 613,
+  "imperm": 790,
+  "perm": 960,
+  "volume": 1900,
+  "height": 3.6,
+  "facade": 2.9,
+  "parking": 2,
+  "cost": 763700,
   "submitted": "2026-12-05",
-  "site": "Travessa do Souto, n.º 124, Ourilhe, 4890-000 Celorico de Basto",
+  "site": "Rua das Tílias, n.º 252, Corgo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 12,
+  "months": 8,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "João Fictício Nuno",
+    "name": "Nuno Simulado Olga",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "47774-SIM",
-    "address": "Travessa do Souto, n.º 124, Ourilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2357"
+    "number": "79737-SIM",
+    "address": "Rua das Tílias, n.º 252, Corgo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7444"
    },
    "arquiteto": {
-    "name": "Miguel Exemplo Teresa",
+    "name": "Carla de Teste Xavier",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "39242-SIM",
-    "address": "Travessa do Souto, n.º 66, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-3422"
+    "number": "06187-SIM",
+    "address": "Lugar da Devesa, n.º 99, 4000-000 Porto",
+    "policy": "SIM-RC-1120"
    },
    "engenheiro": {
-    "name": "Pedro Simulado João",
+    "name": "Carla Simulado Vasco",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "82536-SIM",
-    "address": "Travessa do Souto, n.º 79, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7268"
+    "number": "41200-SIM",
+    "address": "Lugar da Devesa, n.º 40, 4000-000 Porto",
+    "policy": "SIM-RC-8806"
    },
    "diretor": {
-    "name": "Inês Modelo Bruno",
+    "name": "Rita Modelo Miguel",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "07824-SIM",
-    "address": "Lugar da Devesa, n.º 21, 4700-000 Braga",
-    "policy": "SIM-RC-1693"
+    "number": "43846-SIM",
+    "address": "Lugar de Vilar, n.º 114, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8622"
    }
   }
  },
  "planted": [
   {
-   "type": "expired_insurance",
+   "type": "wrong_signer",
    "target": {
-    "slot": "SRCARQ"
+    "slot": "TRDO"
    },
    "basis": "documents",
    "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-12-05"
-   },
-   "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
-   }
-  },
-  {
-   "type": "impossible_value",
-   "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
-   },
-   "basis": "documents",
-   "values": {
-    "area_parcela": "371 m2",
-    "area_implantacao": "482 m2",
-    "MDARQ": "3710 m2"
-   }
-  },
-  {
-   "type": "not_pdf",
-   "target": {
-    "slot": "FOTO"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    "declarante": "Rita Modelo Miguel",
+    "assinante": "Carla de Teste Xavier"
    }
   }
  ],
- "n_planted": 3,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

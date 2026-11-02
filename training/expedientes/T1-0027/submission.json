@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Vasco Fictício Sérgio",
+  "name": "Ana de Teste Filipe",
   "nif": "999999990"
  },
- "site": "Rua da Escola, n.º 1, Basto (São Clemente), 4890-000 Celorico de Basto",
- "operation": "construção de armazém agrícola",
- "submitted_at": "2026-10-16",
+ "site": "Lugar da Devesa, n.º 163, Agilde, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de habitação bifamiliar",
+ "submitted_at": "2026-11-05",
  "files": [
   {
    "slot": "REQ",
@@ -40,6 +40,13 @@
    "title": "Comprovativo de seguro de responsabilidade civil do autor do projeto de arquitetura",
    "kind": "written",
    "signed_by": "seguradora"
+  },
+  {
+   "slot": "TRCP",
+   "file": "TRCP-termo-coordenador.pdf",
+   "title": "Termo de responsabilidade do coordenador de projeto",
+   "kind": "written",
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCCP",
@@ -407,8 +414,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-lista-elementos.pdf",
-   "title": "Lista de elementos instrutórios",
+   "file": "nota_tecnica_projetos_estabilidade.pdf",
+   "title": "NOTA TÉCNICA N.º 26 — PROJETOS DE ESTABILIDADE E FUNDAÇÕES",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "memoria_candidatura_83.pdf",
+   "title": "Memória descritiva da candidatura",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF28186843477450.pdf",
+   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "parecer_tecnico_portaria_320.pdf",
+   "title": "Parecer técnico — Portaria n.º 320/2026/1 e planta de locali",
    "kind": "written",
    "signed_by": "requerente"
   }

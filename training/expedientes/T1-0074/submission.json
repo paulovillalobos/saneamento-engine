@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Olga Modelo Vasco",
+  "name": "Sérgio Fictício Gonçalo",
   "nif": "999999990"
  },
- "site": "Rua das Tílias, n.º 26, Corgo, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-11-10",
+ "site": "Rua da Escola, n.º 98, Carvalho, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
+ "submitted_at": "2026-11-20",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -186,7 +186,7 @@
    "file": "TREECP-termo-pdeecp.pdf",
    "title": "Termo de responsabilidade do autor do projeto de estabilidade, de escavação e contenção periférica",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "engenheiro"
   },
   {
    "slot": "SRCEST",
@@ -411,6 +411,41 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "ficha_verificacao_elementos.pdf",
+   "title": "Ficha de verificação",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "lista_elementos_nomeacao_ficheiros.pdf",
+   "title": "Lista de elementos instrutórios",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "cv_requerente.pdf",
+   "title": "Curriculum vitae",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "castro_anexo_criterio.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "nota_explicativa_07.pdf",
+   "title": "Os termos de responsabilidade passados no âmbito das legaliz",
+   "kind": "written",
+   "signed_by": "requerente"
   }
  ]
 }

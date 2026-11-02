@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Eva Exemplo Miguel",
+  "name": "Teresa Simulado Carla",
   "nif": "999999990"
  },
- "site": "Rua da Escola, n.º 186, Arnoia, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-11-17",
+ "site": "Lugar de Vilar, n.º 140, Carvalho, 4890-000 Celorico de Basto",
+ "operation": "construção de armazém agrícola",
+ "submitted_at": "2026-11-12",
  "files": [
   {
    "slot": "REQ",
@@ -158,7 +158,7 @@
    "file": "PLANT-plantas.pdf",
    "title": "Plantas",
    "kind": "drawn",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "ALC",
@@ -186,7 +186,7 @@
    "file": "TREECP-termo-pdeecp.pdf",
    "title": "Termo de responsabilidade do autor do projeto de estabilidade, de escavação e contenção periférica",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "engenheiro"
   },
   {
    "slot": "SRCEST",
@@ -414,8 +414,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-regulamento-extrato.pdf",
-   "title": "Regulamento municipal (extrato)",
+   "file": "informacao_2026.pdf",
+   "title": "INFORMAÇÃO n.º 10/2026",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "minuta_memoria_descritiva.pdf",
+   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "municipio-anadia-aquisicao-2024.pdf",
+   "title": "MUNICÍPIO DE ANADIA — AQUISIÇÃO DE SERVIÇOS DE FISCALIZAÇÃO ",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "carta_cmcb.pdf",
+   "title": "Carta",
    "kind": "written",
    "signed_by": "requerente"
   }

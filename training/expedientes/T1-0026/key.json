@@ -2,67 +2,81 @@
  "expediente": "T1-0026",
  "case": {
   "id": "T1-0026",
-  "work": "ampliação de moradia unifamiliar",
+  "work": "construção de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 2,
-  "plot": 3010,
-  "impl": 831,
-  "built": 1513,
-  "imperm": 877,
-  "perm": 2133,
-  "volume": 4690,
-  "height": 7.5,
-  "facade": 6.8,
+  "pisos": 1,
+  "plot": 2800,
+  "impl": 747,
+  "built": 686,
+  "imperm": 904,
+  "perm": 1896,
+  "volume": 2126,
+  "height": 3.7,
+  "facade": 3.0,
   "parking": 2,
-  "cost": 1089300,
-  "submitted": "2026-12-18",
-  "site": "Lugar da Devesa, n.º 279, Britelo, 4890-000 Celorico de Basto",
+  "cost": 669500,
+  "submitted": "2026-11-27",
+  "site": "Lugar de Carvalhal, n.º 287, Infesta, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 8,
+  "months": 18,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Xavier de Teste Pedro",
+    "name": "Teresa Modelo Pedro",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "90445-SIM",
-    "address": "Lugar da Devesa, n.º 279, Britelo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9491"
+    "number": "43373-SIM",
+    "address": "Lugar de Carvalhal, n.º 287, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8787"
    },
    "arquiteto": {
-    "name": "Eva Amostra Gonçalo",
+    "name": "Gonçalo Fictício Helena",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "64448-SIM",
-    "address": "Lugar da Devesa, n.º 47, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2618"
+    "number": "71327-SIM",
+    "address": "Rua do Outeiro, n.º 110, 4700-000 Braga",
+    "policy": "SIM-RC-0846"
    },
    "engenheiro": {
-    "name": "Eva Exemplo Pedro",
+    "name": "Leonor Modelo Bruno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "54168-SIM",
-    "address": "Travessa do Souto, n.º 77, 4700-000 Braga",
-    "policy": "SIM-RC-4420"
+    "number": "44028-SIM",
+    "address": "Rua das Tílias, n.º 4, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5891"
    },
    "diretor": {
-    "name": "João Amostra Xavier",
+    "name": "Miguel Modelo Xavier",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "02072-SIM",
-    "address": "Rua da Escola, n.º 118, 4700-000 Braga",
-    "policy": "SIM-RC-6218"
+    "number": "87596-SIM",
+    "address": "Rua das Tílias, n.º 27, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3680"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "280 m2",
+    "area_implantacao": "747 m2",
+    "MDARQ": "2800 m2"
+   }
+  }
+ ],
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

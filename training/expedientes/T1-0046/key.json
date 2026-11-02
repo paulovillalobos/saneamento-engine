@@ -2,78 +2,99 @@
  "expediente": "T1-0046",
  "case": {
   "id": "T1-0046",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
-  "fogos": 0,
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
   "pisos": 1,
-  "plot": 2680,
-  "impl": 600,
-  "built": 522,
-  "imperm": 663,
-  "perm": 2017,
-  "volume": 1618,
-  "height": 4.0,
-  "facade": 3.3,
+  "plot": 3290,
+  "impl": 1170,
+  "built": 1068,
+  "imperm": 1243,
+  "perm": 2047,
+  "volume": 3310,
+  "height": 3.7,
+  "facade": 3.0,
   "parking": 2,
-  "cost": 435300,
-  "submitted": "2026-12-20",
-  "site": "Caminho da Lameira, n.º 120, Britelo, 4890-000 Celorico de Basto",
+  "cost": 703800,
+  "submitted": "2026-10-16",
+  "site": "Travessa do Souto, n.º 109, Infesta, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 21,
+  "months": 14,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Pedro Exemplo Sérgio",
+    "name": "João de Teste Pedro",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "73368-SIM",
-    "address": "Caminho da Lameira, n.º 120, Britelo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9700"
+    "number": "61960-SIM",
+    "address": "Travessa do Souto, n.º 109, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6169"
    },
    "arquiteto": {
-    "name": "Gonçalo de Teste Eva",
+    "name": "Carla Amostra Ana",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "90420-SIM",
-    "address": "Rua da Escola, n.º 105, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1951"
+    "number": "10671-SIM",
+    "address": "Caminho da Lameira, n.º 93, 4800-000 Guimarães",
+    "policy": "SIM-RC-3357"
    },
    "engenheiro": {
-    "name": "Olga Exemplo Sérgio",
+    "name": "João Exemplo Filipe",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "97285-SIM",
-    "address": "Lugar de Vilar, n.º 80, 4800-000 Guimarães",
-    "policy": "SIM-RC-7364"
+    "number": "85219-SIM",
+    "address": "Rua das Tílias, n.º 49, 4800-000 Guimarães",
+    "policy": "SIM-RC-3627"
    },
    "diretor": {
-    "name": "Teresa Exemplo Miguel",
+    "name": "Helena Exemplo Ana",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "28055-SIM",
-    "address": "Rua da Escola, n.º 11, 4000-000 Porto",
-    "policy": "SIM-RC-1595"
+    "number": "39353-SIM",
+    "address": "Caminho da Lameira, n.º 61, 4800-000 Guimarães",
+    "policy": "SIM-RC-5768"
    }
   }
  },
  "planted": [
   {
-   "type": "unsigned",
+   "type": "not_pdf",
    "target": {
-    "slot": "TREECP"
+    "slot": "FOTO"
    },
    "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Helena Exemplo Ana",
+    "assinante": "Carla Amostra Ana"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

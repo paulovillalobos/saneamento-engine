@@ -2,78 +2,104 @@
  "expediente": "T1-0040",
  "case": {
   "id": "T1-0040",
-  "work": "construção de moradia unifamiliar",
+  "work": "alteração e ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 1520,
-  "impl": 200,
-  "built": 359,
-  "imperm": 250,
-  "perm": 1270,
-  "volume": 1112,
-  "height": 6.6,
-  "facade": 5.9,
+  "plot": 1660,
+  "impl": 516,
+  "built": 919,
+  "imperm": 700,
+  "perm": 960,
+  "volume": 2848,
+  "height": 6.9,
+  "facade": 6.2,
   "parking": 2,
-  "cost": 301200,
-  "submitted": "2026-12-21",
-  "site": "Travessa do Souto, n.º 95, Codeçoso, 4890-000 Celorico de Basto",
+  "cost": 774700,
+  "submitted": "2026-12-22",
+  "site": "Rua da Escola, n.º 54, Codeçoso, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 15,
+  "months": 16,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Filipe de Teste Diogo",
+    "name": "Filipe Amostra Leonor",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "08706-SIM",
-    "address": "Travessa do Souto, n.º 95, Codeçoso, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1030"
+    "number": "29789-SIM",
+    "address": "Rua da Escola, n.º 54, Codeçoso, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9970"
    },
    "arquiteto": {
-    "name": "Pedro Fictício Helena",
+    "name": "Helena Exemplo Inês",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "06650-SIM",
-    "address": "Caminho da Lameira, n.º 45, 4000-000 Porto",
-    "policy": "SIM-RC-9660"
+    "number": "34753-SIM",
+    "address": "Rua do Outeiro, n.º 82, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6153"
    },
    "engenheiro": {
-    "name": "Carla Exemplo Gonçalo",
+    "name": "Bruno Simulado Eva",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "30859-SIM",
-    "address": "Lugar de Vilar, n.º 16, 4000-000 Porto",
-    "policy": "SIM-RC-3316"
+    "number": "95318-SIM",
+    "address": "Lugar de Carvalhal, n.º 56, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6006"
    },
    "diretor": {
-    "name": "Bruno Amostra Diogo",
+    "name": "Nuno de Teste Xavier",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "12458-SIM",
-    "address": "Rua do Outeiro, n.º 37, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8638"
+    "number": "26951-SIM",
+    "address": "Caminho da Lameira, n.º 118, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4330"
    }
   }
  },
  "planted": [
   {
-   "type": "not_pdf",
+   "type": "unsigned",
    "target": {
-    "slot": "CORTES"
+    "slot": "TREECP"
    },
    "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "919 m2",
+    "MDARQ": "880 m2"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Nuno de Teste Xavier",
+    "assinante": "Helena Exemplo Inês"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

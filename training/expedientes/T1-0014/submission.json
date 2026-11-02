@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Carla Amostra Filipe",
+  "name": "Vasco Exemplo Teresa",
   "nif": "999999990"
  },
- "site": "Rua das Tílias, n.º 128, Fervença, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-11-11",
+ "site": "Caminho da Lameira, n.º 208, Borba de Montanha, 4890-000 Celorico de Basto",
+ "operation": "ampliação de moradia unifamiliar",
+ "submitted_at": "2026-12-28",
  "files": [
   {
    "slot": "REQ",
@@ -28,6 +28,13 @@
    "signed_by": "requerente"
   },
   {
+   "slot": "TRPARQ",
+   "file": "TRPARQ-termo-arquitetura.pdf",
+   "title": "Termo de responsabilidade do autor do projeto de arquitetura",
+   "kind": "written",
+   "signed_by": "arquiteto"
+  },
+  {
    "slot": "SRCARQ",
    "file": "SRCARQ-seguro-arquiteto.pdf",
    "title": "Comprovativo de seguro de responsabilidade civil do autor do projeto de arquitetura",
@@ -42,13 +49,6 @@
    "signed_by": "arquiteto"
   },
   {
-   "slot": "SRCCP",
-   "file": "SRCCP-seguro-coordenador.pdf",
-   "title": "Comprovativo de seguro de responsabilidade civil do coordenador de projeto",
-   "kind": "written",
-   "signed_by": "seguradora"
-  },
-  {
    "slot": "TRPLAC",
    "file": "TRPLAC-termo-acessibilidades.pdf",
    "title": "Termo de responsabilidade do autor do plano de acessibilidades",
@@ -60,7 +60,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -81,7 +81,7 @@
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "MDARQ",
@@ -407,8 +407,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-lista-elementos.pdf",
-   "title": "Lista de elementos instrutórios",
+   "file": "memoria_candidatura_38.pdf",
+   "title": "Memória descritiva e justificativa — Candidatura ao programa",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "manual_85.pdf",
+   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "postura_57.pdf",
+   "title": "Postura Municipal Referente a Projetos de Registo fotográfic",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "cv_requerente.pdf",
+   "title": "Curriculum vitae",
    "kind": "written",
    "signed_by": "requerente"
   }

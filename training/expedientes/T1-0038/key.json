@@ -2,79 +2,74 @@
  "expediente": "T1-0038",
  "case": {
   "id": "T1-0038",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
   "pisos": 1,
-  "plot": 2040,
-  "impl": 263,
-  "built": 248,
-  "imperm": 459,
-  "perm": 1581,
-  "volume": 768,
-  "height": 3.8,
-  "facade": 3.1,
+  "plot": 1190,
+  "impl": 244,
+  "built": 240,
+  "imperm": 282,
+  "perm": 908,
+  "volume": 744,
+  "height": 4.1,
+  "facade": 3.4,
   "parking": 2,
-  "cost": 289100,
-  "submitted": "2026-12-19",
-  "site": "Lugar da Devesa, n.º 155, Gagos, 4890-000 Celorico de Basto",
+  "cost": 246400,
+  "submitted": "2026-12-12",
+  "site": "Rua do Outeiro, n.º 55, Arnoia, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
   "months": 20,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Olga Modelo Pedro",
+    "name": "Leonor Modelo Leonor",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "10726-SIM",
-    "address": "Lugar da Devesa, n.º 155, Gagos, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9960"
+    "number": "90688-SIM",
+    "address": "Rua do Outeiro, n.º 55, Arnoia, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6596"
    },
    "arquiteto": {
-    "name": "Bruno Modelo Helena",
+    "name": "Xavier de Teste Miguel",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "83542-SIM",
-    "address": "Rua do Outeiro, n.º 32, 4800-000 Guimarães",
-    "policy": "SIM-RC-6216"
+    "number": "81385-SIM",
+    "address": "Travessa do Souto, n.º 119, 4800-000 Guimarães",
+    "policy": "SIM-RC-3655"
    },
    "engenheiro": {
-    "name": "Gonçalo Modelo Eva",
+    "name": "Xavier Exemplo Miguel",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "95383-SIM",
-    "address": "Caminho da Lameira, n.º 96, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0024"
+    "number": "38069-SIM",
+    "address": "Rua da Escola, n.º 14, 4000-000 Porto",
+    "policy": "SIM-RC-2803"
    },
    "diretor": {
-    "name": "João Exemplo Rita",
+    "name": "Xavier Fictício Teresa",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "23397-SIM",
-    "address": "Lugar de Vilar, n.º 4, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7160"
+    "number": "58579-SIM",
+    "address": "Caminho da Lameira, n.º 55, 4800-000 Guimarães",
+    "policy": "SIM-RC-0075"
    }
   }
  },
  "planted": [
   {
-   "type": "expired_insurance",
+   "type": "unsigned",
    "target": {
-    "slot": "SRCARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-12-19"
+    "slot": "TRCP"
    },
    "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
    }
   }
  ],

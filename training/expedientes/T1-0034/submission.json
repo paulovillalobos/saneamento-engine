@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Filipe de Teste Miguel",
+  "name": "Nuno Fictício Filipe",
   "nif": "999999990"
  },
- "site": "Lugar de Carvalhal, n.º 172, Veade, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-12-03",
+ "site": "Rua da Escola, n.º 12, Ribas, 4890-000 Celorico de Basto",
+ "operation": "construção de armazém agrícola",
+ "submitted_at": "2026-11-24",
  "files": [
   {
    "slot": "REQ",
@@ -171,13 +171,6 @@
    "slot": "CORTES",
    "file": "CORTES-cortes.pdf",
    "title": "Cortes",
-   "kind": "drawn",
-   "signed_by": "arquiteto"
-  },
-  {
-   "slot": "PC",
-   "file": "PC-pormenores.pdf",
-   "title": "Pormenores de construção",
    "kind": "drawn",
    "signed_by": "arquiteto"
   },
@@ -414,8 +407,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-curriculo.pdf",
+   "file": "plano-acessibilidade-todos-2026.pdf",
+   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF50301295465013.pdf",
+   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "nota_explicativa_91.pdf",
+   "title": "Os termos de responsabilidade passados no âmbito das legaliz",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "cv_requerente.pdf",
    "title": "Curriculum vitae",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "memoria_descritiva_candidatura.pdf",
+   "title": "Memória descritiva da candidatura",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "nota_tecnica_projetos_termos.pdf",
+   "title": "NOTA TÉCNICA N.º 12 — PROJETOS DE TERMOS DE RESPONSABILIDADE",
    "kind": "written",
    "signed_by": "requerente"
   }

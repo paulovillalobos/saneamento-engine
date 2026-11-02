@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Rita Simulado Ana",
+  "name": "Leonor Simulado Olga",
   "nif": "999999990"
  },
- "site": "Caminho da Lameira, n.º 233, Infesta, 4890-000 Celorico de Basto",
+ "site": "Rua do Outeiro, n.º 251, Canedo de Basto, 4890-000 Celorico de Basto",
  "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-12-09",
+ "submitted_at": "2026-10-10",
  "files": [
   {
    "slot": "REQ",
@@ -91,13 +91,6 @@
    "signed_by": "arquiteto"
   },
   {
-   "slot": "MDARQ",
-   "file": "MDARQ-memoria-descritiva.pdf",
-   "title": "Memória descritiva e justificativa",
-   "kind": "written",
-   "signed_by": "arquiteto"
-  },
-  {
    "slot": "CEO",
    "file": "CEO-calendarizacao.pdf",
    "title": "Calendarização da execução da obra",
@@ -150,6 +143,13 @@
    "slot": "PI",
    "file": "PI-planta-implantacao.pdf",
    "title": "Planta de implantação",
+   "kind": "drawn",
+   "signed_by": "arquiteto"
+  },
+  {
+   "slot": "PLANT",
+   "file": "PLANT-plantas.pdf",
+   "title": "Plantas",
    "kind": "drawn",
    "signed_by": "arquiteto"
   },
@@ -407,8 +407,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-lista-elementos.pdf",
-   "title": "Lista de elementos instrutórios",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "nota_tecnica_projetos_condicionamento.pdf",
+   "title": "NOTA TÉCNICA N.º 16 — PROJETOS DE CONDICIONAMENTO ACÚSTICO",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "manual_normas_organizacao_instrucao.pdf",
+   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "fatura_agua_2026_08.pdf",
+   "title": "Fatura de água",
    "kind": "written",
    "signed_by": "requerente"
   }

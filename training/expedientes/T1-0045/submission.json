@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Vasco Exemplo Leonor",
+  "name": "Sérgio de Teste Nuno",
   "nif": "999999990"
  },
- "site": "Travessa do Souto, n.º 20, Veade, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-10-24",
+ "site": "Rua da Escola, n.º 73, Vale de Bouro, 4890-000 Celorico de Basto",
+ "operation": "alteração e ampliação de moradia unifamiliar",
+ "submitted_at": "2026-11-14",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -414,8 +414,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-lista-elementos.pdf",
-   "title": "Lista de elementos instrutórios",
+   "file": "estarreja_instrucoes_preenchimento.pdf",
+   "title": "Instruções Preenchimento_Q3",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "plano_acessibilidade_todos_capitulo.pdf",
+   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "termo-responsabilidade-diretor-2023.pdf",
+   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
    "kind": "written",
    "signed_by": "requerente"
   }

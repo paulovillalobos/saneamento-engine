@@ -6,17 +6,24 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Nuno Exemplo Helena",
+  "name": "Bruno Simulado Xavier",
   "nif": "999999990"
  },
- "site": "Caminho da Lameira, n.º 286, Ourilhe, 4890-000 Celorico de Basto",
- "operation": "construção de moradia unifamiliar",
- "submitted_at": "2026-11-23",
+ "site": "Lugar de Vilar, n.º 213, Gagos, 4890-000 Celorico de Basto",
+ "operation": "ampliação de moradia unifamiliar",
+ "submitted_at": "2026-10-02",
  "files": [
   {
    "slot": "REQ",
    "file": "REQ-requerimento.pdf",
    "title": "Requerimento de comunicação prévia (modelo do Anexo I)",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "CRP",
+   "file": "CRP-certidao-permanente.pdf",
+   "title": "Código de acesso à certidão permanente do registo predial",
    "kind": "written",
    "signed_by": "requerente"
   },
@@ -60,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": null
   },
   {
    "slot": "SRCDO",
@@ -407,8 +414,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-regulamento-extrato.pdf",
-   "title": "Regulamento municipal (extrato)",
+   "file": "norma_12.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-32",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "carta_cmcb.pdf",
+   "title": "Carta",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "valpaços_primeira_analise.pdf",
+   "title": "Primeira Análise — Portaria n.º 320/2026/1 e estimativa do c",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "lista_elementos_nomeacao_ficheiros.pdf",
+   "title": "Lista de elementos instrutórios",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "norma_68.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-05",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "ficha_verificacao_elementos.pdf",
+   "title": "Ficha de verificação",
    "kind": "written",
    "signed_by": "requerente"
   }

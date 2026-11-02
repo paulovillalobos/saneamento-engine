@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Xavier de Teste Leonor",
+  "name": "Gonçalo Simulado Olga",
   "nif": "999999990"
  },
- "site": "Lugar da Devesa, n.º 158, Borba de Montanha, 4890-000 Celorico de Basto",
- "operation": "construção de armazém agrícola",
- "submitted_at": "2026-12-10",
+ "site": "Rua das Tílias, n.º 109, Ribas, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
+ "submitted_at": "2026-10-23",
  "files": [
   {
    "slot": "REQ",
@@ -414,8 +414,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-curriculo.pdf",
-   "title": "Curriculum vitae",
+   "file": "nota_73.pdf",
+   "title": "NOTA TÉCNICA N.º 24 — PROJETOS DE PLANO DE ACESSIBILIDADES",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "loures_municipio_loures.pdf",
+   "title": "MUNICÍPIO DE LOURES — AQUISIÇÃO DE SERVIÇOS DE FISCALIZAÇÃO ",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "carta_cmcb.pdf",
+   "title": "Carta",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "criterios_41.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF84770313890020.pdf",
+   "title": "NOTA TÉCNICA N.º 27 — PROJETOS DE REGISTO FOTOGRÁFICO",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "benavente_manual_normas.pdf",
+   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
    "kind": "written",
    "signed_by": "requerente"
   }

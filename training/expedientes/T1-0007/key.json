@@ -2,77 +2,74 @@
  "expediente": "T1-0007",
  "case": {
   "id": "T1-0007",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
   "fogos": 0,
   "pisos": 1,
-  "plot": 870,
-  "impl": 166,
-  "built": 156,
-  "imperm": 324,
-  "perm": 546,
-  "volume": 483,
-  "height": 4.6,
-  "facade": 3.9,
+  "plot": 3930,
+  "impl": 1367,
+  "built": 1244,
+  "imperm": 1563,
+  "perm": 2367,
+  "volume": 3856,
+  "height": 3.9,
+  "facade": 3.2,
   "parking": 2,
-  "cost": 176200,
-  "submitted": "2026-12-12",
-  "site": "Caminho da Lameira, n.º 94, Britelo, 4890-000 Celorico de Basto",
+  "cost": 1195400,
+  "submitted": "2026-10-17",
+  "site": "Rua do Outeiro, n.º 122, Infesta, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 14,
+  "months": 16,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "João Fictício Helena",
+    "name": "Carla Simulado Sérgio",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "48246-SIM",
-    "address": "Caminho da Lameira, n.º 94, Britelo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1465"
+    "number": "87348-SIM",
+    "address": "Rua do Outeiro, n.º 122, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2762"
    },
    "arquiteto": {
-    "name": "Pedro Simulado Vasco",
+    "name": "João Amostra Teresa",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "85340-SIM",
-    "address": "Lugar da Devesa, n.º 30, 4800-000 Guimarães",
-    "policy": "SIM-RC-5027"
+    "number": "36358-SIM",
+    "address": "Lugar da Devesa, n.º 79, 4700-000 Braga",
+    "policy": "SIM-RC-6432"
    },
    "engenheiro": {
-    "name": "Bruno de Teste Filipe",
+    "name": "Teresa Exemplo Filipe",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "42515-SIM",
-    "address": "Caminho da Lameira, n.º 32, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1654"
+    "number": "64389-SIM",
+    "address": "Caminho da Lameira, n.º 111, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3643"
    },
    "diretor": {
-    "name": "Teresa Modelo Vasco",
+    "name": "Inês Modelo Helena",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "79114-SIM",
-    "address": "Travessa do Souto, n.º 32, 4700-000 Braga",
-    "policy": "SIM-RC-0334"
+    "number": "87617-SIM",
+    "address": "Rua da Escola, n.º 110, 4800-000 Guimarães",
+    "policy": "SIM-RC-5187"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "not_pdf",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "slot": "PLANT"
    },
-   "basis": "documents",
-   "values": {
-    "area_parcela": "8700 m2",
-    "area_implantacao": "166 m2",
-    "MDARQ": "870 m2"
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   }
  ],

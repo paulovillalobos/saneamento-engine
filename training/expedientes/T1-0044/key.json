@@ -2,62 +2,62 @@
  "expediente": "T1-0044",
  "case": {
   "id": "T1-0044",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 2,
-  "plot": 2790,
-  "impl": 805,
-  "built": 1528,
-  "imperm": 970,
-  "perm": 1820,
-  "volume": 4736,
-  "height": 7.4,
-  "facade": 6.7,
-  "parking": 4,
-  "cost": 1480600,
-  "submitted": "2026-12-11",
-  "site": "Travessa do Souto, n.º 247, Infesta, 4890-000 Celorico de Basto",
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 2140,
+  "impl": 503,
+  "built": 494,
+  "imperm": 570,
+  "perm": 1570,
+  "volume": 1531,
+  "height": 4.8,
+  "facade": 4.1,
+  "parking": 2,
+  "cost": 325000,
+  "submitted": "2026-11-08",
+  "site": "Rua da Escola, n.º 256, Basto (São Clemente), 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 21,
+  "months": 8,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Carla de Teste Carla",
+    "name": "Carla Modelo Pedro",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "87298-SIM",
-    "address": "Travessa do Souto, n.º 247, Infesta, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5366"
+    "number": "01328-SIM",
+    "address": "Rua da Escola, n.º 256, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6365"
    },
    "arquiteto": {
-    "name": "Helena de Teste Inês",
+    "name": "Helena Modelo Xavier",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "34082-SIM",
-    "address": "Caminho da Lameira, n.º 63, 4800-000 Guimarães",
-    "policy": "SIM-RC-0197"
+    "number": "37280-SIM",
+    "address": "Lugar de Vilar, n.º 93, 4700-000 Braga",
+    "policy": "SIM-RC-2647"
    },
    "engenheiro": {
-    "name": "João Fictício João",
+    "name": "Carla de Teste Miguel",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "07370-SIM",
-    "address": "Travessa do Souto, n.º 56, 4800-000 Guimarães",
-    "policy": "SIM-RC-3562"
+    "number": "12291-SIM",
+    "address": "Travessa do Souto, n.º 103, 4700-000 Braga",
+    "policy": "SIM-RC-3354"
    },
    "diretor": {
-    "name": "Inês de Teste Vasco",
+    "name": "Leonor Modelo Teresa",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "65769-SIM",
-    "address": "Caminho da Lameira, n.º 78, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2825"
+    "number": "59717-SIM",
+    "address": "Travessa do Souto, n.º 56, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2705"
    }
   }
  },
@@ -83,8 +83,8 @@
    },
    "basis": "documents",
    "values": {
-    "REQ": "1528 m2",
-    "MDARQ": "1603 m2"
+    "REQ": "494 m2",
+    "MDARQ": "377 m2"
    }
   }
  ],

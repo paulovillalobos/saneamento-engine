@@ -2,83 +2,67 @@
  "expediente": "T1-0078",
  "case": {
   "id": "T1-0078",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 3,
-  "plot": 3310,
-  "impl": 690,
-  "built": 2011,
-  "imperm": 728,
-  "perm": 2582,
-  "volume": 6234,
-  "height": 10.7,
-  "facade": 10.0,
-  "parking": 4,
-  "cost": 1636900,
-  "submitted": "2026-12-14",
-  "site": "Rua do Outeiro, n.º 202, Britelo, 4890-000 Celorico de Basto",
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 2050,
+  "impl": 734,
+  "built": 625,
+  "imperm": 916,
+  "perm": 1134,
+  "volume": 1937,
+  "height": 4.6,
+  "facade": 3.9,
+  "parking": 2,
+  "cost": 788100,
+  "submitted": "2026-10-28",
+  "site": "Rua da Escola, n.º 18, Caçarilhe, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 23,
+  "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Filipe Modelo Carla",
+    "name": "Gonçalo de Teste Carla",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "66340-SIM",
-    "address": "Rua do Outeiro, n.º 202, Britelo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2485"
+    "number": "50351-SIM",
+    "address": "Rua da Escola, n.º 18, Caçarilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6409"
    },
    "arquiteto": {
-    "name": "Helena Fictício Xavier",
+    "name": "João Fictício Xavier",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "81450-SIM",
-    "address": "Lugar de Vilar, n.º 71, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1070"
+    "number": "39288-SIM",
+    "address": "Caminho da Lameira, n.º 36, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3741"
    },
    "engenheiro": {
-    "name": "Vasco de Teste Carla",
+    "name": "Helena Simulado Nuno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "47592-SIM",
-    "address": "Caminho da Lameira, n.º 23, 4800-000 Guimarães",
-    "policy": "SIM-RC-7104"
+    "number": "19652-SIM",
+    "address": "Lugar da Devesa, n.º 37, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9782"
    },
    "diretor": {
-    "name": "Teresa Modelo Teresa",
+    "name": "Sérgio Modelo Miguel",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "29931-SIM",
-    "address": "Lugar de Vilar, n.º 71, 4000-000 Porto",
-    "policy": "SIM-RC-7136"
+    "number": "07908-SIM",
+    "address": "Rua da Escola, n.º 12, 4800-000 Guimarães",
+    "policy": "SIM-RC-5553"
    }
   }
  },
- "planted": [
-  {
-   "type": "value_mismatch",
-   "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "2011 m2",
-    "MDARQ": "1925 m2"
-   }
-  }
- ],
- "n_planted": 1,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

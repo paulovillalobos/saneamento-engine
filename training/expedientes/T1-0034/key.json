@@ -2,67 +2,88 @@
  "expediente": "T1-0034",
  "case": {
   "id": "T1-0034",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 2020,
-  "impl": 742,
-  "built": 1269,
-  "imperm": 856,
-  "perm": 1164,
-  "volume": 3933,
-  "height": 7.3,
-  "facade": 6.6,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 3460,
+  "impl": 434,
+  "built": 425,
+  "imperm": 514,
+  "perm": 2946,
+  "volume": 1317,
+  "height": 4.6,
+  "facade": 3.9,
   "parking": 2,
-  "cost": 1454200,
-  "submitted": "2026-12-03",
-  "site": "Lugar de Carvalhal, n.º 172, Veade, 4890-000 Celorico de Basto",
+  "cost": 374400,
+  "submitted": "2026-11-24",
+  "site": "Rua da Escola, n.º 12, Ribas, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 8,
+  "months": 14,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Filipe de Teste Miguel",
+    "name": "Nuno Fictício Filipe",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "29041-SIM",
-    "address": "Lugar de Carvalhal, n.º 172, Veade, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9660"
+    "number": "31405-SIM",
+    "address": "Rua da Escola, n.º 12, Ribas, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2855"
    },
    "arquiteto": {
-    "name": "Diogo Exemplo Leonor",
+    "name": "Leonor Simulado Pedro",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "67668-SIM",
-    "address": "Rua das Tílias, n.º 106, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5594"
+    "number": "71568-SIM",
+    "address": "Lugar de Vilar, n.º 5, 4800-000 Guimarães",
+    "policy": "SIM-RC-3640"
    },
    "engenheiro": {
-    "name": "Inês Modelo Miguel",
+    "name": "Inês Amostra Sérgio",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "05928-SIM",
-    "address": "Travessa do Souto, n.º 99, 4700-000 Braga",
-    "policy": "SIM-RC-4351"
+    "number": "58394-SIM",
+    "address": "Rua do Outeiro, n.º 108, 4000-000 Porto",
+    "policy": "SIM-RC-9917"
    },
    "diretor": {
-    "name": "Nuno Modelo João",
+    "name": "Nuno Exemplo Nuno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "76205-SIM",
-    "address": "Travessa do Souto, n.º 10, 4700-000 Braga",
-    "policy": "SIM-RC-4380"
+    "number": "68027-SIM",
+    "address": "Rua das Tílias, n.º 35, 4800-000 Guimarães",
+    "policy": "SIM-RC-5522"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "PC"
+   },
+   "law": {
+    "ref": "V.27.b.iv",
+    "quote": "iv) Pormenores de construção, à escala adequada, esclarecendo a solução construtiva adotada para as paredes exteriores do edifício e sua articulação com a cobertura, vãos de iluminação/ventilação e de acesso, bem como com o pavimento exterior envolvente;"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  }
+ ],
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

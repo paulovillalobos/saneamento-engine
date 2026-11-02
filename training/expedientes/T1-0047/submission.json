@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Teresa Simulado Carla",
+  "name": "Nuno Fictício Eva",
   "nif": "999999990"
  },
- "site": "Lugar de Vilar, n.º 140, Carvalho, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-11-12",
+ "site": "Rua do Outeiro, n.º 211, Arnoia, 4890-000 Celorico de Basto",
+ "operation": "alteração e ampliação de moradia unifamiliar",
+ "submitted_at": "2026-12-27",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -129,13 +129,6 @@
    "slot": "PDPLAC",
    "file": "PDPLAC-pecas-acessibilidades.pdf",
    "title": "Peças desenhadas do plano de acessibilidades",
-   "kind": "drawn",
-   "signed_by": "arquiteto"
-  },
-  {
-   "slot": "P10000",
-   "file": "P10000-planta-localizacao.pdf",
-   "title": "Planta de localização",
    "kind": "drawn",
    "signed_by": "arquiteto"
   },
@@ -414,8 +407,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-curriculo.pdf",
-   "title": "Curriculum vitae",
+   "file": "termo_outro_66.pdf",
+   "title": "Termo de responsabilidade do diretor de obra ou do diretor d",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "guia_tecnico_projetos_levantamento.pdf",
+   "title": "Guia Técnico para Projetos de Levantamento topográfico",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "ficha_verificacao_elementos.pdf",
+   "title": "Ficha de verificação",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "amarante_memoria_descritiva.pdf",
+   "title": "Memória descritiva da candidatura",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "postura_projetos_registo_fotografico.pdf",
+   "title": "Postura Municipal Referente a Projetos de Registo fotográfic",
    "kind": "written",
    "signed_by": "requerente"
   }

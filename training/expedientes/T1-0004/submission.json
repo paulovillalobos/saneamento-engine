@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Olga Modelo Inês",
+  "name": "Teresa Modelo Vasco",
   "nif": "999999990"
  },
- "site": "Travessa do Souto, n.º 159, Gagos, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-28",
+ "site": "Caminho da Lameira, n.º 126, Infesta, 4890-000 Celorico de Basto",
+ "operation": "construção de armazém agrícola",
+ "submitted_at": "2026-11-26",
  "files": [
   {
    "slot": "REQ",
@@ -60,14 +60,14 @@
    "file": "TRPLAC-termo-acessibilidades.pdf",
    "title": "Termo de responsabilidade do autor do plano de acessibilidades",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "TRDO",
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCDO",
@@ -87,6 +87,13 @@
    "slot": "FOTO",
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
+   "kind": "written",
+   "signed_by": "arquiteto"
+  },
+  {
+   "slot": "MDARQ",
+   "file": "MDARQ-memoria-descritiva.pdf",
+   "title": "Memória descritiva e justificativa",
    "kind": "written",
    "signed_by": "arquiteto"
   },
@@ -404,6 +411,34 @@
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
    "kind": "written",
    "signed_by": "diretor"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "postura_56.pdf",
+   "title": "Postura Municipal Referente a Projetos de Calendarização da ",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "postura-projetos-redes-2023.pdf",
+   "title": "Postura Municipal Referente a Projetos de Redes prediais de ",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "nota_explicativa_63.pdf",
+   "title": "Os termos de responsabilidade passados no âmbito das comunic",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "seixal_plano_acessibilidade.pdf",
+   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
+   "kind": "written",
+   "signed_by": "requerente"
   }
  ]
 }

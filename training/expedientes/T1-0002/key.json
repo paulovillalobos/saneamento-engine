@@ -2,109 +2,91 @@
  "expediente": "T1-0002",
  "case": {
   "id": "T1-0002",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
   "pisos": 2,
-  "plot": 1480,
-  "impl": 428,
-  "built": 849,
-  "imperm": 595,
-  "perm": 885,
-  "volume": 2631,
-  "height": 7.0,
-  "facade": 6.3,
-  "parking": 2,
-  "cost": 785300,
-  "submitted": "2026-12-18",
-  "site": "Rua da Escola, n.º 197, Veade, 4890-000 Celorico de Basto",
+  "plot": 2980,
+  "impl": 745,
+  "built": 1395,
+  "imperm": 847,
+  "perm": 2133,
+  "volume": 4324,
+  "height": 7.4,
+  "facade": 6.7,
+  "parking": 4,
+  "cost": 1514900,
+  "submitted": "2026-10-24",
+  "site": "Caminho da Lameira, n.º 65, Codeçoso, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 12,
+  "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Sérgio Modelo Gonçalo",
+    "name": "João Simulado Carla",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "56848-SIM",
-    "address": "Rua da Escola, n.º 197, Veade, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9339"
+    "number": "41679-SIM",
+    "address": "Caminho da Lameira, n.º 65, Codeçoso, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6819"
    },
    "arquiteto": {
-    "name": "Teresa Fictício Sérgio",
+    "name": "Vasco de Teste Eva",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "55185-SIM",
-    "address": "Lugar de Carvalhal, n.º 105, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6790"
+    "number": "02111-SIM",
+    "address": "Rua da Escola, n.º 76, 4700-000 Braga",
+    "policy": "SIM-RC-9344"
    },
    "engenheiro": {
-    "name": "Miguel Simulado Teresa",
+    "name": "Pedro Fictício Xavier",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "71793-SIM",
-    "address": "Lugar da Devesa, n.º 59, 4000-000 Porto",
-    "policy": "SIM-RC-3762"
+    "number": "67699-SIM",
+    "address": "Rua da Escola, n.º 49, 4700-000 Braga",
+    "policy": "SIM-RC-5685"
    },
    "diretor": {
-    "name": "Filipe Modelo Vasco",
+    "name": "Diogo Fictício Vasco",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "24695-SIM",
-    "address": "Travessa do Souto, n.º 103, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0532"
+    "number": "89362-SIM",
+    "address": "Rua das Tílias, n.º 76, 4700-000 Braga",
+    "policy": "SIM-RC-8067"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "impossible_value",
    "target": {
-    "slot": "CRP"
+    "field": "area_parcela",
+    "slot": "REQ"
    },
-   "law": {
-    "ref": "V.5",
-    "quote": "5 - Indicação do código de acesso à certidão permanente do registo predial referente ao prédio ou prédios abrangidos pela operação urbanística ou, quando omisso, a respetiva certidão negativa do registo predial, acompanhada da caderneta predial da qual constem os correspondentes artigos matriciais;"
+   "basis": "documents",
+   "values": {
+    "area_parcela": "298 m2",
+    "area_implantacao": "745 m2",
+    "MDARQ": "2980 m2"
    }
   },
   {
-   "type": "not_pdf",
+   "type": "not_pdfa",
    "target": {
-    "slot": "PLANT"
+    "slot": "FSCI"
    },
    "law": {
     "ref": "VI.1.a",
     "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
-  },
-  {
-   "type": "template_wording_missing",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
-   },
-   "basis": "documents",
-   "values": {
-    "declarante": "Filipe Modelo Vasco",
-    "assinante": "Teresa Fictício Sérgio"
-   }
   }
  ],
- "n_planted": 4,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

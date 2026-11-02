@@ -2,67 +2,115 @@
  "expediente": "T1-0059",
  "case": {
   "id": "T1-0059",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
-  "fogos": 0,
-  "pisos": 1,
-  "plot": 870,
-  "impl": 326,
-  "built": 312,
-  "imperm": 420,
-  "perm": 450,
-  "volume": 967,
-  "height": 4.2,
-  "facade": 3.5,
-  "parking": 2,
-  "cost": 345000,
-  "submitted": "2026-11-03",
-  "site": "Travessa do Souto, n.º 37, Corgo, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 3,
+  "plot": 3790,
+  "impl": 1236,
+  "built": 3556,
+  "imperm": 1319,
+  "perm": 2471,
+  "volume": 11023,
+  "height": 9.8,
+  "facade": 9.1,
+  "parking": 4,
+  "cost": 2848300,
+  "submitted": "2026-12-11",
+  "site": "Lugar de Vilar, n.º 56, Codeçoso, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 11,
+  "months": 21,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Sérgio Exemplo Teresa",
+    "name": "Bruno Modelo Leonor",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "61080-SIM",
-    "address": "Travessa do Souto, n.º 37, Corgo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7507"
+    "number": "71391-SIM",
+    "address": "Lugar de Vilar, n.º 56, Codeçoso, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3734"
    },
    "arquiteto": {
-    "name": "Olga Modelo Diogo",
+    "name": "Miguel Exemplo Carla",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "26193-SIM",
-    "address": "Rua da Escola, n.º 32, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-3510"
+    "number": "30498-SIM",
+    "address": "Lugar de Carvalhal, n.º 17, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6042"
    },
    "engenheiro": {
-    "name": "Sérgio Modelo João",
+    "name": "Carla Exemplo Sérgio",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "41372-SIM",
-    "address": "Caminho da Lameira, n.º 118, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4353"
+    "number": "55788-SIM",
+    "address": "Rua das Tílias, n.º 100, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1202"
    },
    "diretor": {
-    "name": "João Simulado Ana",
+    "name": "Pedro Exemplo Eva",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "02376-SIM",
-    "address": "Lugar de Carvalhal, n.º 6, 4700-000 Braga",
-    "policy": "SIM-RC-1261"
+    "number": "35559-SIM",
+    "address": "Rua da Escola, n.º 101, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6943"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "PLANT"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "3556 m2",
+    "MDARQ": "3508 m2"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Pedro Exemplo Eva",
+    "assinante": "Miguel Exemplo Carla"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Lugar de Vilar, n.º 56, Codeçoso, 4890-000 Celorico de Basto",
+    "TRPARQ": "Rua do Outeiro, n.º 51, Corgo, 4890-000 Celorico de Basto"
+   }
+  }
+ ],
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

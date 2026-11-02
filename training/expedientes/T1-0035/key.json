@@ -2,83 +2,88 @@
  "expediente": "T1-0035",
  "case": {
   "id": "T1-0035",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
   "pisos": 2,
-  "plot": 1640,
-  "impl": 310,
-  "built": 552,
-  "imperm": 452,
-  "perm": 1188,
-  "volume": 1711,
-  "height": 6.7,
-  "facade": 6.0,
+  "plot": 3650,
+  "impl": 1383,
+  "built": 2375,
+  "imperm": 1416,
+  "perm": 2234,
+  "volume": 7362,
+  "height": 7.2,
+  "facade": 6.5,
   "parking": 2,
-  "cost": 648000,
-  "submitted": "2026-11-26",
-  "site": "Rua do Outeiro, n.º 279, Borba de Montanha, 4890-000 Celorico de Basto",
+  "cost": 2047200,
+  "submitted": "2026-11-20",
+  "site": "Lugar de Carvalhal, n.º 57, Infesta, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
   "months": 18,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Leonor de Teste Sérgio",
+    "name": "Nuno Amostra Nuno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "18465-SIM",
-    "address": "Rua do Outeiro, n.º 279, Borba de Montanha, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0611"
+    "number": "39016-SIM",
+    "address": "Lugar de Carvalhal, n.º 57, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9192"
    },
    "arquiteto": {
-    "name": "Ana de Teste Olga",
+    "name": "Miguel Exemplo Olga",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "99275-SIM",
-    "address": "Lugar de Vilar, n.º 114, 4000-000 Porto",
-    "policy": "SIM-RC-9640"
+    "number": "93953-SIM",
+    "address": "Rua das Tílias, n.º 76, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3058"
    },
    "engenheiro": {
-    "name": "Sérgio Exemplo Filipe",
+    "name": "Eva Simulado Leonor",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "26876-SIM",
-    "address": "Rua do Outeiro, n.º 15, 4700-000 Braga",
-    "policy": "SIM-RC-9613"
+    "number": "47095-SIM",
+    "address": "Rua das Tílias, n.º 9, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9436"
    },
    "diretor": {
-    "name": "Sérgio Simulado Inês",
+    "name": "Filipe Fictício Diogo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "61074-SIM",
-    "address": "Rua do Outeiro, n.º 101, 4000-000 Porto",
-    "policy": "SIM-RC-5920"
+    "number": "70662-SIM",
+    "address": "Rua do Outeiro, n.º 62, 4700-000 Braga",
+    "policy": "SIM-RC-5874"
    }
   }
  },
  "planted": [
   {
-   "type": "value_mismatch",
+   "type": "not_pdf",
    "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
+    "slot": "ALC"
    },
-   "basis": "documents",
-   "values": {
-    "REQ": "552 m2",
-    "MDARQ": "610 m2"
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRPLAC"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

@@ -2,70 +2,70 @@
  "expediente": "T1-0048",
  "case": {
   "id": "T1-0048",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 2,
-  "plot": 2620,
-  "impl": 403,
-  "built": 697,
-  "imperm": 436,
-  "perm": 2184,
-  "volume": 2160,
-  "height": 7.1,
-  "facade": 6.4,
-  "parking": 4,
-  "cost": 720000,
-  "submitted": "2026-12-11",
-  "site": "Caminho da Lameira, n.º 204, Arnoia, 4890-000 Celorico de Basto",
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 2710,
+  "impl": 711,
+  "built": 659,
+  "imperm": 837,
+  "perm": 1873,
+  "volume": 2042,
+  "height": 4.1,
+  "facade": 3.4,
+  "parking": 2,
+  "cost": 776300,
+  "submitted": "2026-11-26",
+  "site": "Travessa do Souto, n.º 27, Rego, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 20,
+  "months": 12,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Rita Amostra Pedro",
+    "name": "Miguel Fictício Carla",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "40541-SIM",
-    "address": "Caminho da Lameira, n.º 204, Arnoia, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5131"
+    "number": "60821-SIM",
+    "address": "Travessa do Souto, n.º 27, Rego, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1652"
    },
    "arquiteto": {
-    "name": "João Fictício Diogo",
+    "name": "Gonçalo Modelo Leonor",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "65140-SIM",
-    "address": "Lugar de Vilar, n.º 58, 4700-000 Braga",
-    "policy": "SIM-RC-7516"
+    "number": "21796-SIM",
+    "address": "Lugar de Vilar, n.º 43, 4000-000 Porto",
+    "policy": "SIM-RC-3419"
    },
    "engenheiro": {
-    "name": "Diogo Modelo Diogo",
+    "name": "João Modelo Vasco",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "71272-SIM",
-    "address": "Lugar da Devesa, n.º 41, 4800-000 Guimarães",
-    "policy": "SIM-RC-9159"
+    "number": "09626-SIM",
+    "address": "Lugar de Carvalhal, n.º 73, 4800-000 Guimarães",
+    "policy": "SIM-RC-8196"
    },
    "diretor": {
-    "name": "Leonor Amostra Vasco",
+    "name": "Pedro Exemplo Miguel",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "42917-SIM",
-    "address": "Lugar de Carvalhal, n.º 42, 4800-000 Guimarães",
-    "policy": "SIM-RC-6458"
+    "number": "69597-SIM",
+    "address": "Lugar de Carvalhal, n.º 104, 4700-000 Braga",
+    "policy": "SIM-RC-2336"
    }
   }
  },
  "planted": [
   {
-   "type": "not_pdf",
+   "type": "not_pdfa",
    "target": {
-    "slot": "ALC"
+    "slot": "MDARQ"
    },
    "law": {
     "ref": "VI.1.a",

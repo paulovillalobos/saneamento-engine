@@ -5,110 +5,64 @@
   "work": "construção de edifício de comércio e serviços",
   "use": "Comércio e serviços",
   "fogos": 0,
-  "pisos": 3,
-  "plot": 3180,
-  "impl": 959,
-  "built": 2661,
-  "imperm": 1101,
-  "perm": 2079,
-  "volume": 8249,
-  "height": 10.3,
-  "facade": 9.6,
+  "pisos": 1,
+  "plot": 1820,
+  "impl": 489,
+  "built": 415,
+  "imperm": 678,
+  "perm": 1142,
+  "volume": 1286,
+  "height": 3.7,
+  "facade": 3.0,
   "parking": 2,
-  "cost": 3296900,
-  "submitted": "2026-11-20",
-  "site": "Lugar de Carvalhal, n.º 85, Fervença, 4890-000 Celorico de Basto",
+  "cost": 388800,
+  "submitted": "2026-12-10",
+  "site": "Caminho da Lameira, n.º 235, Ourilhe, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 17,
+  "months": 11,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Vasco Exemplo Xavier",
+    "name": "Helena de Teste Eva",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "71740-SIM",
-    "address": "Lugar de Carvalhal, n.º 85, Fervença, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0241"
+    "number": "67808-SIM",
+    "address": "Caminho da Lameira, n.º 235, Ourilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1547"
    },
    "arquiteto": {
-    "name": "Xavier Simulado Pedro",
+    "name": "Olga Amostra Eva",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "60970-SIM",
-    "address": "Lugar da Devesa, n.º 30, 4800-000 Guimarães",
-    "policy": "SIM-RC-3427"
+    "number": "37016-SIM",
+    "address": "Travessa do Souto, n.º 48, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3458"
    },
    "engenheiro": {
-    "name": "Rita de Teste Eva",
+    "name": "Leonor Modelo Eva",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "51317-SIM",
-    "address": "Rua das Tílias, n.º 7, 4000-000 Porto",
-    "policy": "SIM-RC-5838"
+    "number": "74165-SIM",
+    "address": "Rua do Outeiro, n.º 79, 4000-000 Porto",
+    "policy": "SIM-RC-3770"
    },
    "diretor": {
-    "name": "Ana de Teste Teresa",
+    "name": "Rita de Teste Eva",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "98261-SIM",
-    "address": "Rua da Escola, n.º 40, 4800-000 Guimarães",
-    "policy": "SIM-RC-0246"
+    "number": "54530-SIM",
+    "address": "Lugar da Devesa, n.º 55, 4800-000 Guimarães",
+    "policy": "SIM-RC-1834"
    }
   }
  },
- "planted": [
-  {
-   "type": "missing_required",
-   "target": {
-    "slot": "LEVT"
-   },
-   "law": {
-    "ref": "V.7",
-    "quote": "7 - Levantamento topográfico georreferenciado, acompanhado por termo de responsabilidade, sempre que haja alteração da topografia ou da implantação das construções, à escala de 1:200, ou de 1:500 no caso de loteamentos, devidamente cotado, que identifique o prédio e a respetiva área, construções nela erigidas, assim como o espaço público envolvente (vias, passeios, estacionamentos, árvores e infraestruturas ou instalações aí localizadas, incluindo postes, tampas, sinalização e mobiliário urbano);"
-   }
-  },
-  {
-   "type": "not_pdf",
-   "target": {
-    "slot": "CORTES"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
-   "type": "not_pdfa",
-   "target": {
-    "slot": "MDPAP"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
-   "type": "value_mismatch",
-   "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "2661 m2",
-    "MDARQ": "2615 m2"
-   }
-  }
- ],
- "n_planted": 4,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

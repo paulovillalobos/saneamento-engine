@@ -2,67 +2,112 @@
  "expediente": "T1-0017",
  "case": {
   "id": "T1-0017",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
   "fogos": 0,
-  "pisos": 3,
-  "plot": 2700,
-  "impl": 653,
-  "built": 1954,
-  "imperm": 683,
-  "perm": 2017,
-  "volume": 6057,
-  "height": 9.8,
-  "facade": 9.1,
+  "pisos": 1,
+  "plot": 1700,
+  "impl": 427,
+  "built": 394,
+  "imperm": 618,
+  "perm": 1082,
+  "volume": 1221,
+  "height": 4.6,
+  "facade": 3.9,
   "parking": 2,
-  "cost": 1334500,
-  "submitted": "2026-11-22",
-  "site": "Lugar de Vilar, n.º 203, Ribas, 4890-000 Celorico de Basto",
+  "cost": 308100,
+  "submitted": "2026-10-18",
+  "site": "Rua da Escola, n.º 233, Basto (São Clemente), 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 8,
+  "months": 23,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Sérgio de Teste Carla",
+    "name": "Gonçalo Exemplo Teresa",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "33769-SIM",
-    "address": "Lugar de Vilar, n.º 203, Ribas, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0561"
+    "number": "45072-SIM",
+    "address": "Rua da Escola, n.º 233, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0699"
    },
    "arquiteto": {
-    "name": "Nuno Simulado Inês",
+    "name": "Olga Exemplo Gonçalo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "42052-SIM",
-    "address": "Lugar de Vilar, n.º 34, 4800-000 Guimarães",
-    "policy": "SIM-RC-1920"
+    "number": "23704-SIM",
+    "address": "Rua do Outeiro, n.º 109, 4800-000 Guimarães",
+    "policy": "SIM-RC-8550"
    },
    "engenheiro": {
-    "name": "João Simulado Olga",
+    "name": "Miguel Fictício Helena",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "33163-SIM",
-    "address": "Rua do Outeiro, n.º 43, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8345"
+    "number": "48150-SIM",
+    "address": "Travessa do Souto, n.º 44, 4000-000 Porto",
+    "policy": "SIM-RC-7512"
    },
    "diretor": {
-    "name": "Nuno Modelo Rita",
+    "name": "Bruno Modelo Filipe",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "14721-SIM",
-    "address": "Lugar de Vilar, n.º 84, 4800-000 Guimarães",
-    "policy": "SIM-RC-8582"
+    "number": "20357-SIM",
+    "address": "Caminho da Lameira, n.º 61, 4000-000 Porto",
+    "policy": "SIM-RC-9558"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "170 m2",
+    "area_implantacao": "427 m2",
+    "MDARQ": "1700 m2"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "PLANT"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Bruno Modelo Filipe",
+    "assinante": "Olga Exemplo Gonçalo"
+   }
+  }
+ ],
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

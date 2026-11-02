@@ -2,102 +2,83 @@
  "expediente": "T1-0076",
  "case": {
   "id": "T1-0076",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 2,
-  "plot": 3040,
-  "impl": 470,
-  "built": 837,
-  "imperm": 572,
-  "perm": 2468,
-  "volume": 2594,
-  "height": 6.9,
-  "facade": 6.2,
-  "parking": 4,
-  "cost": 571600,
-  "submitted": "2026-12-08",
-  "site": "Rua das Tílias, n.º 135, Fervença, 4890-000 Celorico de Basto",
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 1,
+  "plot": 3600,
+  "impl": 1099,
+  "built": 1013,
+  "imperm": 1261,
+  "perm": 2339,
+  "volume": 3140,
+  "height": 4.1,
+  "facade": 3.4,
+  "parking": 2,
+  "cost": 1238800,
+  "submitted": "2026-10-04",
+  "site": "Lugar de Carvalhal, n.º 137, Basto (São Clemente), 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 14,
+  "months": 18,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Inês Exemplo Bruno",
+    "name": "Pedro Fictício João",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "05326-SIM",
-    "address": "Rua das Tílias, n.º 135, Fervença, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7153"
+    "number": "61058-SIM",
+    "address": "Lugar de Carvalhal, n.º 137, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8708"
    },
    "arquiteto": {
-    "name": "João de Teste Nuno",
+    "name": "Diogo Modelo Diogo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "47665-SIM",
-    "address": "Rua do Outeiro, n.º 37, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4330"
+    "number": "85779-SIM",
+    "address": "Travessa do Souto, n.º 108, 4800-000 Guimarães",
+    "policy": "SIM-RC-7054"
    },
    "engenheiro": {
-    "name": "Rita Modelo Eva",
+    "name": "Sérgio Simulado Olga",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "77034-SIM",
-    "address": "Lugar da Devesa, n.º 19, 4800-000 Guimarães",
-    "policy": "SIM-RC-1003"
+    "number": "47653-SIM",
+    "address": "Lugar de Vilar, n.º 90, 4800-000 Guimarães",
+    "policy": "SIM-RC-8181"
    },
    "diretor": {
-    "name": "Carla de Teste Carla",
+    "name": "Xavier Modelo Olga",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "65700-SIM",
-    "address": "Rua do Outeiro, n.º 59, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0660"
+    "number": "39488-SIM",
+    "address": "Lugar de Carvalhal, n.º 60, 4700-000 Braga",
+    "policy": "SIM-RC-3423"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "expired_insurance",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "slot": "SRCARQ"
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "304 m2",
-    "area_implantacao": "470 m2",
-    "MDARQ": "3040 m2"
-   }
-  },
-  {
-   "type": "missing_required",
-   "target": {
-    "slot": "ALC"
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-10-04"
    },
    "law": {
-    "ref": "V.27.b.ii",
-    "quote": "ii) Alçados à escala de 1:50 ou de 1:100 com a indicação das cores e dos materiais dos elementos que constituem as fachadas e a cobertura, bem como as construções adjacentes, quando existam;"
-   }
-  },
-  {
-   "type": "wrong_site",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "Rua das Tílias, n.º 135, Fervença, 4890-000 Celorico de Basto",
-    "TRPARQ": "Rua das Tílias, n.º 188, Agilde, 4890-000 Celorico de Basto"
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
    }
   }
  ],
- "n_planted": 3,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

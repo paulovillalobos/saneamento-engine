@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Pedro Modelo Sérgio",
+  "name": "Leonor Exemplo Gonçalo",
   "nif": "999999990"
  },
- "site": "Rua da Escola, n.º 143, Agilde, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-11-07",
+ "site": "Caminho da Lameira, n.º 216, Fervença, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de habitação bifamiliar",
+ "submitted_at": "2026-11-17",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -101,6 +101,13 @@
    "slot": "CEO",
    "file": "CEO-calendarizacao.pdf",
    "title": "Calendarização da execução da obra",
+   "kind": "written",
+   "signed_by": "arquiteto"
+  },
+  {
+   "slot": "EOCT",
+   "file": "EOCT-estimativa-custo.pdf",
+   "title": "Estimativa do custo total da obra",
    "kind": "written",
    "signed_by": "arquiteto"
   },
@@ -407,8 +414,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-regulamento-extrato.pdf",
-   "title": "Regulamento municipal (extrato)",
+   "file": "figueira_plano_acessibilidade.pdf",
+   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "guia-tecnico-projetos-2025.pdf",
+   "title": "Guia Técnico para Projetos de Termos de responsabilidade dos",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF68631704982259.pdf",
+   "title": "ANEXO III — OBRAS DE EDIFICAÇÃO",
    "kind": "written",
    "signed_by": "requerente"
   }

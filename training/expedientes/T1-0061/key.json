@@ -2,91 +2,78 @@
  "expediente": "T1-0061",
  "case": {
   "id": "T1-0061",
-  "work": "construção de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
   "pisos": 1,
-  "plot": 1920,
-  "impl": 369,
-  "built": 335,
-  "imperm": 493,
-  "perm": 1427,
-  "volume": 1038,
-  "height": 4.5,
-  "facade": 3.8,
+  "plot": 2780,
+  "impl": 471,
+  "built": 408,
+  "imperm": 559,
+  "perm": 2221,
+  "volume": 1264,
+  "height": 4.3,
+  "facade": 3.6,
   "parking": 2,
-  "cost": 421000,
-  "submitted": "2026-11-27",
-  "site": "Travessa do Souto, n.º 18, Canedo de Basto, 4890-000 Celorico de Basto",
+  "cost": 270900,
+  "submitted": "2026-11-21",
+  "site": "Lugar de Carvalhal, n.º 74, Canedo de Basto, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 21,
+  "months": 18,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Teresa Exemplo Teresa",
+    "name": "Nuno Exemplo Inês",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "36598-SIM",
-    "address": "Travessa do Souto, n.º 18, Canedo de Basto, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4985"
+    "number": "80390-SIM",
+    "address": "Lugar de Carvalhal, n.º 74, Canedo de Basto, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6502"
    },
    "arquiteto": {
-    "name": "Nuno de Teste Sérgio",
+    "name": "Xavier Modelo Carla",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "03998-SIM",
-    "address": "Caminho da Lameira, n.º 25, 4700-000 Braga",
-    "policy": "SIM-RC-3767"
+    "number": "03864-SIM",
+    "address": "Rua do Outeiro, n.º 71, 4700-000 Braga",
+    "policy": "SIM-RC-4040"
    },
    "engenheiro": {
-    "name": "Carla Fictício Rita",
+    "name": "Xavier Amostra Miguel",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "22587-SIM",
-    "address": "Rua da Escola, n.º 85, 4800-000 Guimarães",
-    "policy": "SIM-RC-4633"
+    "number": "57792-SIM",
+    "address": "Travessa do Souto, n.º 11, 4000-000 Porto",
+    "policy": "SIM-RC-3825"
    },
    "diretor": {
-    "name": "Ana Fictício Diogo",
+    "name": "Leonor Fictício Gonçalo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "06209-SIM",
-    "address": "Rua das Tílias, n.º 61, 4700-000 Braga",
-    "policy": "SIM-RC-3574"
+    "number": "70335-SIM",
+    "address": "Lugar de Vilar, n.º 71, 4000-000 Porto",
+    "policy": "SIM-RC-8358"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "not_pdfa",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
-   },
-   "basis": "documents",
-   "values": {
-    "area_parcela": "192 m2",
-    "area_implantacao": "369 m2",
-    "MDARQ": "1920 m2"
-   }
-  },
-  {
-   "type": "template_wording_missing",
-   "target": {
-    "slot": "TRPARQ"
+    "slot": "CEO"
    },
    "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

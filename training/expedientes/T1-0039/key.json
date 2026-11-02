@@ -2,85 +2,89 @@
  "expediente": "T1-0039",
  "case": {
   "id": "T1-0039",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 3,
-  "plot": 870,
-  "impl": 289,
-  "built": 842,
-  "imperm": 478,
-  "perm": 392,
-  "volume": 2610,
-  "height": 9.9,
-  "facade": 9.2,
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 2560,
+  "impl": 916,
+  "built": 1803,
+  "imperm": 1034,
+  "perm": 1526,
+  "volume": 5589,
+  "height": 6.6,
+  "facade": 5.9,
   "parking": 2,
-  "cost": 556500,
-  "submitted": "2026-11-25",
-  "site": "Travessa do Souto, n.º 252, Caçarilhe, 4890-000 Celorico de Basto",
+  "cost": 2246500,
+  "submitted": "2026-10-11",
+  "site": "Rua da Escola, n.º 268, Gagos, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 15,
+  "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Xavier Amostra Inês",
+    "name": "Olga Simulado Xavier",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "58248-SIM",
-    "address": "Travessa do Souto, n.º 252, Caçarilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0889"
+    "number": "83070-SIM",
+    "address": "Rua da Escola, n.º 268, Gagos, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5643"
    },
    "arquiteto": {
-    "name": "Diogo Modelo Sérgio",
+    "name": "Helena Modelo Miguel",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "68394-SIM",
-    "address": "Lugar de Vilar, n.º 17, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0792"
+    "number": "69042-SIM",
+    "address": "Rua das Tílias, n.º 92, 4700-000 Braga",
+    "policy": "SIM-RC-8525"
    },
    "engenheiro": {
-    "name": "Carla Fictício Ana",
+    "name": "Carla Simulado Leonor",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "89137-SIM",
-    "address": "Rua da Escola, n.º 55, 4000-000 Porto",
-    "policy": "SIM-RC-1085"
+    "number": "03493-SIM",
+    "address": "Lugar de Carvalhal, n.º 4, 4700-000 Braga",
+    "policy": "SIM-RC-4605"
    },
    "diretor": {
-    "name": "Bruno Simulado Bruno",
+    "name": "Xavier Fictício Olga",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "71509-SIM",
-    "address": "Lugar da Devesa, n.º 43, 4000-000 Porto",
-    "policy": "SIM-RC-0145"
+    "number": "38918-SIM",
+    "address": "Lugar de Vilar, n.º 6, 4000-000 Porto",
+    "policy": "SIM-RC-8147"
    }
   }
  },
  "planted": [
   {
-   "type": "not_pdf",
+   "type": "expired_insurance",
    "target": {
-    "slot": "PLANT"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
-   "type": "wrong_site",
-   "target": {
-    "slot": "TRPARQ"
+    "slot": "SRCARQ"
    },
    "basis": "documents",
    "values": {
-    "REQ": "Travessa do Souto, n.º 252, Caçarilhe, 4890-000 Celorico de Basto",
-    "TRPARQ": "Caminho da Lameira, n.º 152, Molares, 4890-000 Celorico de Basto"
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-10-11"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
   }
  ],

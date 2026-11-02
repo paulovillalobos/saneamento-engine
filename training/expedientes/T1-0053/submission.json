@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Bruno Amostra Xavier",
+  "name": "Rita Amostra Nuno",
   "nif": "999999990"
  },
- "site": "Rua das Tílias, n.º 287, Gagos, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-12-02",
+ "site": "Lugar de Carvalhal, n.º 184, Borba de Montanha, 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
+ "submitted_at": "2026-12-01",
  "files": [
   {
    "slot": "REQ",
@@ -414,8 +414,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-curriculo.pdf",
-   "title": "Curriculum vitae",
+   "file": "memoria-descritiva-candidatura-2024.pdf",
+   "title": "Memória descritiva da candidatura",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "carta_cmcb.pdf",
+   "title": "Carta",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "lista_elementos_nomeacao_ficheiros.pdf",
+   "title": "Lista de elementos instrutórios",
    "kind": "written",
    "signed_by": "requerente"
   }

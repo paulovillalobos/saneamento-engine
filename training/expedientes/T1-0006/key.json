@@ -2,62 +2,62 @@
  "expediente": "T1-0006",
  "case": {
   "id": "T1-0006",
-  "work": "ampliação de moradia unifamiliar",
+  "work": "alteração e ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 2160,
-  "impl": 661,
-  "built": 1307,
-  "imperm": 798,
-  "perm": 1362,
-  "volume": 4051,
-  "height": 7.7,
-  "facade": 7.0,
+  "plot": 360,
+  "impl": 157,
+  "built": 302,
+  "imperm": 343,
+  "perm": 17,
+  "volume": 936,
+  "height": 6.8,
+  "facade": 6.1,
   "parking": 2,
-  "cost": 993300,
-  "submitted": "2026-10-27",
-  "site": "Caminho da Lameira, n.º 7, Agilde, 4890-000 Celorico de Basto",
+  "cost": 350900,
+  "submitted": "2026-11-19",
+  "site": "Caminho da Lameira, n.º 224, Veade, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 8,
+  "months": 19,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Carla Exemplo Diogo",
+    "name": "Sérgio de Teste Ana",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "06245-SIM",
-    "address": "Caminho da Lameira, n.º 7, Agilde, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2655"
+    "number": "17239-SIM",
+    "address": "Caminho da Lameira, n.º 224, Veade, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5738"
    },
    "arquiteto": {
-    "name": "Diogo Exemplo Filipe",
+    "name": "João Modelo Nuno",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "90245-SIM",
-    "address": "Rua do Outeiro, n.º 21, 4000-000 Porto",
-    "policy": "SIM-RC-7129"
+    "number": "45481-SIM",
+    "address": "Lugar de Carvalhal, n.º 15, 4800-000 Guimarães",
+    "policy": "SIM-RC-6266"
    },
    "engenheiro": {
-    "name": "Nuno Modelo João",
+    "name": "Gonçalo Modelo Ana",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "73117-SIM",
-    "address": "Caminho da Lameira, n.º 92, 4800-000 Guimarães",
-    "policy": "SIM-RC-5153"
+    "number": "37388-SIM",
+    "address": "Rua do Outeiro, n.º 119, 4800-000 Guimarães",
+    "policy": "SIM-RC-9845"
    },
    "diretor": {
-    "name": "Diogo Fictício Leonor",
+    "name": "Sérgio Exemplo João",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "06193-SIM",
-    "address": "Rua da Escola, n.º 2, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9775"
+    "number": "93129-SIM",
+    "address": "Lugar de Vilar, n.º 58, 4700-000 Braga",
+    "policy": "SIM-RC-5889"
    }
   }
  },
@@ -70,24 +70,20 @@
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "216 m2",
-    "area_implantacao": "661 m2",
-    "MDARQ": "2160 m2"
+    "area_parcela": "3600 m2",
+    "area_implantacao": "157 m2",
+    "MDARQ": "360 m2"
    }
   },
   {
-   "type": "value_mismatch",
+   "type": "wrong_signer",
    "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
+    "slot": "TRDO"
    },
    "basis": "documents",
    "values": {
-    "REQ": "1307 m2",
-    "MDARQ": "1345 m2"
+    "declarante": "Sérgio Exemplo João",
+    "assinante": "João Modelo Nuno"
    }
   }
  ],

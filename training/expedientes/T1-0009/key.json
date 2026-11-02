@@ -2,118 +2,67 @@
  "expediente": "T1-0009",
  "case": {
   "id": "T1-0009",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
   "pisos": 1,
-  "plot": 2780,
-  "impl": 1061,
-  "built": 1050,
-  "imperm": 1227,
-  "perm": 1553,
-  "volume": 3255,
-  "height": 3.6,
-  "facade": 2.9,
+  "plot": 3560,
+  "impl": 1301,
+  "built": 1239,
+  "imperm": 1370,
+  "perm": 2190,
+  "volume": 3840,
+  "height": 4.4,
+  "facade": 3.7,
   "parking": 2,
-  "cost": 1063600,
-  "submitted": "2026-12-05",
-  "site": "Lugar de Vilar, n.º 71, Fervença, 4890-000 Celorico de Basto",
+  "cost": 1299700,
+  "submitted": "2026-11-21",
+  "site": "Caminho da Lameira, n.º 134, Corgo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 16,
+  "months": 15,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Nuno Modelo Nuno",
+    "name": "Bruno Modelo Vasco",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "23567-SIM",
-    "address": "Lugar de Vilar, n.º 71, Fervença, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0123"
+    "number": "23973-SIM",
+    "address": "Caminho da Lameira, n.º 134, Corgo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5788"
    },
    "arquiteto": {
-    "name": "Filipe Modelo Leonor",
+    "name": "Teresa Exemplo Teresa",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "66653-SIM",
-    "address": "Lugar de Carvalhal, n.º 88, 4700-000 Braga",
-    "policy": "SIM-RC-3906"
+    "number": "27131-SIM",
+    "address": "Rua das Tílias, n.º 118, 4000-000 Porto",
+    "policy": "SIM-RC-4377"
    },
    "engenheiro": {
-    "name": "Leonor Exemplo Rita",
+    "name": "Xavier Amostra Carla",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "30499-SIM",
-    "address": "Rua das Tílias, n.º 44, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-3596"
+    "number": "33975-SIM",
+    "address": "Lugar de Vilar, n.º 13, 4700-000 Braga",
+    "policy": "SIM-RC-0962"
    },
    "diretor": {
-    "name": "Bruno Simulado Sérgio",
+    "name": "Gonçalo Exemplo Bruno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "85579-SIM",
-    "address": "Lugar da Devesa, n.º 21, 4700-000 Braga",
-    "policy": "SIM-RC-5109"
+    "number": "07922-SIM",
+    "address": "Travessa do Souto, n.º 117, 4800-000 Guimarães",
+    "policy": "SIM-RC-8211"
    }
   }
  },
- "planted": [
-  {
-   "type": "expired_insurance",
-   "target": {
-    "slot": "SRCARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-12-05"
-   },
-   "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
-   }
-  },
-  {
-   "type": "not_pdfa",
-   "target": {
-    "slot": "FSCI"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
-   "type": "template_wording_missing",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
-   }
-  },
-  {
-   "type": "value_mismatch",
-   "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "1050 m2",
-    "MDARQ": "1005 m2"
-   }
-  }
- ],
- "n_planted": 4,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

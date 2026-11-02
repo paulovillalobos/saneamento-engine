@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Nuno Modelo Nuno",
+  "name": "Bruno Modelo Vasco",
   "nif": "999999990"
  },
- "site": "Lugar de Vilar, n.º 71, Fervença, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-12-05",
+ "site": "Caminho da Lameira, n.º 134, Corgo, 4890-000 Celorico de Basto",
+ "operation": "construção de armazém agrícola",
+ "submitted_at": "2026-11-21",
  "files": [
   {
    "slot": "REQ",
@@ -414,8 +414,36 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-regulamento-extrato.pdf",
-   "title": "Regulamento municipal (extrato)",
+   "file": "nota-explicativa-levantamento-2019.pdf",
+   "title": "Nota explicativa — levantamento topográfico",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "instrucoes_preenchimento.pdf",
+   "title": "Instruções Preenchimento_Q3",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "manual_49.pdf",
+   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "lista_elementos_nomeacao_ficheiros.pdf",
+   "title": "Lista de elementos instrutórios",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF65043371526611.pdf",
+   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
    "kind": "written",
    "signed_by": "requerente"
   }

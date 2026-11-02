@@ -2,79 +2,93 @@
  "expediente": "T1-0060",
  "case": {
   "id": "T1-0060",
-  "work": "alteração e ampliação de moradia unifamiliar",
+  "work": "ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 2,
-  "plot": 860,
-  "impl": 111,
-  "built": 209,
-  "imperm": 165,
-  "perm": 695,
-  "volume": 647,
-  "height": 7.3,
-  "facade": 6.6,
+  "pisos": 1,
+  "plot": 3210,
+  "impl": 418,
+  "built": 375,
+  "imperm": 551,
+  "perm": 2659,
+  "volume": 1162,
+  "height": 3.7,
+  "facade": 3.0,
   "parking": 2,
-  "cost": 141200,
-  "submitted": "2026-11-24",
-  "site": "Rua da Escola, n.º 287, Corgo, 4890-000 Celorico de Basto",
+  "cost": 256100,
+  "submitted": "2026-11-05",
+  "site": "Travessa do Souto, n.º 242, Borba de Montanha, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 23,
+  "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Filipe Modelo Ana",
+    "name": "Eva Exemplo Eva",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "30356-SIM",
-    "address": "Rua da Escola, n.º 287, Corgo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2247"
+    "number": "91369-SIM",
+    "address": "Travessa do Souto, n.º 242, Borba de Montanha, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4824"
    },
    "arquiteto": {
-    "name": "Leonor Modelo Carla",
+    "name": "Ana Modelo Inês",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "68823-SIM",
-    "address": "Caminho da Lameira, n.º 25, 4800-000 Guimarães",
-    "policy": "SIM-RC-0130"
+    "number": "72329-SIM",
+    "address": "Travessa do Souto, n.º 77, 4000-000 Porto",
+    "policy": "SIM-RC-8750"
    },
    "engenheiro": {
-    "name": "Teresa de Teste Miguel",
+    "name": "Teresa Modelo Miguel",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "34939-SIM",
-    "address": "Rua das Tílias, n.º 112, 4800-000 Guimarães",
-    "policy": "SIM-RC-8686"
+    "number": "05389-SIM",
+    "address": "Rua do Outeiro, n.º 70, 4700-000 Braga",
+    "policy": "SIM-RC-0358"
    },
    "diretor": {
-    "name": "Sérgio Modelo Pedro",
+    "name": "Nuno Simulado Eva",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "37561-SIM",
-    "address": "Travessa do Souto, n.º 24, 4800-000 Guimarães",
-    "policy": "SIM-RC-9221"
+    "number": "44710-SIM",
+    "address": "Rua das Tílias, n.º 72, 4000-000 Porto",
+    "policy": "SIM-RC-9867"
    }
   }
  },
  "planted": [
   {
-   "type": "wrong_signer",
+   "type": "not_pdfa",
    "target": {
-    "slot": "TRDO"
+    "slot": "MDARQ"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
    },
    "basis": "documents",
    "values": {
-    "declarante": "Sérgio Modelo Pedro",
-    "assinante": "Leonor Modelo Carla"
+    "REQ": "375 m2",
+    "MDARQ": "466 m2"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

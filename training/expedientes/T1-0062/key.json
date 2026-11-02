@@ -2,67 +2,93 @@
  "expediente": "T1-0062",
  "case": {
   "id": "T1-0062",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
   "pisos": 2,
-  "plot": 2730,
-  "impl": 789,
-  "built": 1428,
-  "imperm": 958,
-  "perm": 1772,
-  "volume": 4426,
+  "plot": 750,
+  "impl": 135,
+  "built": 269,
+  "imperm": 228,
+  "perm": 522,
+  "volume": 833,
   "height": 6.9,
   "facade": 6.2,
   "parking": 2,
-  "cost": 1575000,
-  "submitted": "2026-11-13",
-  "site": "Lugar da Devesa, n.º 198, Molares, 4890-000 Celorico de Basto",
+  "cost": 296700,
+  "submitted": "2026-10-19",
+  "site": "Rua da Escola, n.º 118, Codeçoso, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 15,
+  "months": 16,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Nuno Modelo Diogo",
+    "name": "Helena Amostra Olga",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "24706-SIM",
-    "address": "Lugar da Devesa, n.º 198, Molares, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6873"
+    "number": "97583-SIM",
+    "address": "Rua da Escola, n.º 118, Codeçoso, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5894"
    },
    "arquiteto": {
-    "name": "Vasco Exemplo Bruno",
+    "name": "Rita Exemplo Gonçalo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "61332-SIM",
-    "address": "Travessa do Souto, n.º 81, 4700-000 Braga",
-    "policy": "SIM-RC-7450"
+    "number": "61099-SIM",
+    "address": "Lugar da Devesa, n.º 6, 4700-000 Braga",
+    "policy": "SIM-RC-3648"
    },
    "engenheiro": {
-    "name": "Miguel Modelo Carla",
+    "name": "Teresa Fictício Olga",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "44935-SIM",
-    "address": "Rua da Escola, n.º 36, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2127"
+    "number": "17155-SIM",
+    "address": "Travessa do Souto, n.º 98, 4800-000 Guimarães",
+    "policy": "SIM-RC-6977"
    },
    "diretor": {
-    "name": "Vasco Fictício Olga",
+    "name": "Sérgio Exemplo Xavier",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "91107-SIM",
-    "address": "Caminho da Lameira, n.º 92, 4800-000 Guimarães",
-    "policy": "SIM-RC-3987"
+    "number": "61046-SIM",
+    "address": "Travessa do Souto, n.º 102, 4700-000 Braga",
+    "policy": "SIM-RC-0966"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-10-19"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "FOTO"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

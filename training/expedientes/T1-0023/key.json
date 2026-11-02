@@ -2,89 +2,79 @@
  "expediente": "T1-0023",
  "case": {
   "id": "T1-0023",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
   "fogos": 0,
   "pisos": 1,
-  "plot": 3540,
-  "impl": 1346,
-  "built": 1269,
-  "imperm": 1490,
-  "perm": 2050,
-  "volume": 3933,
-  "height": 3.7,
-  "facade": 3.0,
+  "plot": 1660,
+  "impl": 288,
+  "built": 248,
+  "imperm": 454,
+  "perm": 1206,
+  "volume": 768,
+  "height": 4.2,
+  "facade": 3.5,
   "parking": 2,
-  "cost": 1275300,
-  "submitted": "2026-12-09",
-  "site": "Rua da Escola, n.º 277, Ribas, 4890-000 Celorico de Basto",
+  "cost": 298000,
+  "submitted": "2026-12-28",
+  "site": "Rua das Tílias, n.º 225, Molares, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 17,
+  "months": 23,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Diogo Fictício Sérgio",
+    "name": "Filipe Modelo Miguel",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "36987-SIM",
-    "address": "Rua da Escola, n.º 277, Ribas, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6745"
+    "number": "26620-SIM",
+    "address": "Rua das Tílias, n.º 225, Molares, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4538"
    },
    "arquiteto": {
-    "name": "Eva Fictício Inês",
+    "name": "Gonçalo Fictício Eva",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "26599-SIM",
-    "address": "Rua das Tílias, n.º 72, 4000-000 Porto",
-    "policy": "SIM-RC-8730"
+    "number": "18509-SIM",
+    "address": "Rua do Outeiro, n.º 3, 4700-000 Braga",
+    "policy": "SIM-RC-7958"
    },
    "engenheiro": {
-    "name": "Xavier Modelo Eva",
+    "name": "Miguel Fictício Bruno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "55237-SIM",
-    "address": "Caminho da Lameira, n.º 36, 4800-000 Guimarães",
-    "policy": "SIM-RC-5011"
+    "number": "48229-SIM",
+    "address": "Travessa do Souto, n.º 79, 4700-000 Braga",
+    "policy": "SIM-RC-3464"
    },
    "diretor": {
-    "name": "Inês Exemplo Gonçalo",
+    "name": "Carla Exemplo Gonçalo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "66373-SIM",
-    "address": "Lugar da Devesa, n.º 77, 4800-000 Guimarães",
-    "policy": "SIM-RC-3960"
+    "number": "79854-SIM",
+    "address": "Lugar da Devesa, n.º 22, 4000-000 Porto",
+    "policy": "SIM-RC-3565"
    }
   }
  },
  "planted": [
   {
-   "type": "unsigned",
+   "type": "wrong_site",
    "target": {
-    "slot": "TREECP"
-   },
-   "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
+    "slot": "TRPARQ"
    },
    "basis": "documents",
    "values": {
-    "declarante": "Inês Exemplo Gonçalo",
-    "assinante": "Eva Fictício Inês"
+    "REQ": "Rua das Tílias, n.º 225, Molares, 4890-000 Celorico de Basto",
+    "TRPARQ": "Rua da Escola, n.º 27, Moreira do Castelo, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

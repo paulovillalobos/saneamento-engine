@@ -2,74 +2,75 @@
  "expediente": "T1-0054",
  "case": {
   "id": "T1-0054",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
   "pisos": 2,
-  "plot": 2820,
-  "impl": 1108,
-  "built": 1969,
-  "imperm": 1207,
-  "perm": 1613,
-  "volume": 6103,
-  "height": 7.5,
-  "facade": 6.8,
-  "parking": 4,
-  "cost": 2370600,
-  "submitted": "2026-11-05",
-  "site": "Travessa do Souto, n.º 257, Canedo de Basto, 4890-000 Celorico de Basto",
+  "plot": 3750,
+  "impl": 492,
+  "built": 879,
+  "imperm": 662,
+  "perm": 3088,
+  "volume": 2724,
+  "height": 6.7,
+  "facade": 6.0,
+  "parking": 2,
+  "cost": 803400,
+  "submitted": "2026-10-09",
+  "site": "Lugar da Devesa, n.º 57, Ourilhe, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
   "months": 22,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Bruno Exemplo Rita",
+    "name": "João Modelo Inês",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "96635-SIM",
-    "address": "Travessa do Souto, n.º 257, Canedo de Basto, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2051"
+    "number": "49855-SIM",
+    "address": "Lugar da Devesa, n.º 57, Ourilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1711"
    },
    "arquiteto": {
-    "name": "Ana Modelo Gonçalo",
+    "name": "Nuno Exemplo Leonor",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "36215-SIM",
-    "address": "Travessa do Souto, n.º 101, 4800-000 Guimarães",
-    "policy": "SIM-RC-4642"
+    "number": "01906-SIM",
+    "address": "Lugar de Carvalhal, n.º 81, 4700-000 Braga",
+    "policy": "SIM-RC-2235"
    },
    "engenheiro": {
-    "name": "Ana Amostra Inês",
+    "name": "Leonor Fictício Gonçalo",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "96010-SIM",
-    "address": "Rua da Escola, n.º 73, 4800-000 Guimarães",
-    "policy": "SIM-RC-1836"
+    "number": "64597-SIM",
+    "address": "Lugar de Vilar, n.º 116, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5645"
    },
    "diretor": {
-    "name": "Diogo Amostra Leonor",
+    "name": "Helena Amostra Gonçalo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "80356-SIM",
-    "address": "Lugar de Carvalhal, n.º 12, 4800-000 Guimarães",
-    "policy": "SIM-RC-8680"
+    "number": "81544-SIM",
+    "address": "Rua da Escola, n.º 78, 4800-000 Guimarães",
+    "policy": "SIM-RC-4520"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "wrong_site",
    "target": {
-    "slot": "MDARQ"
+    "slot": "TRPARQ"
    },
-   "law": {
-    "ref": "V.9",
-    "quote": "9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:"
+   "basis": "documents",
+   "values": {
+    "REQ": "Lugar da Devesa, n.º 57, Ourilhe, 4890-000 Celorico de Basto",
+    "TRPARQ": "Lugar de Carvalhal, n.º 241, Moreira do Castelo, 4890-000 Celorico de Basto"
    }
   }
  ],

@@ -6,58 +6,58 @@
   "use": "Comércio e serviços",
   "fogos": 0,
   "pisos": 2,
-  "plot": 1240,
-  "impl": 267,
-  "built": 467,
-  "imperm": 352,
-  "perm": 888,
-  "volume": 1447,
-  "height": 7.2,
-  "facade": 6.5,
+  "plot": 1390,
+  "impl": 515,
+  "built": 968,
+  "imperm": 600,
+  "perm": 790,
+  "volume": 3000,
+  "height": 7.0,
+  "facade": 6.3,
   "parking": 2,
-  "cost": 383800,
-  "submitted": "2026-12-09",
-  "site": "Caminho da Lameira, n.º 233, Infesta, 4890-000 Celorico de Basto",
+  "cost": 966000,
+  "submitted": "2026-10-10",
+  "site": "Rua do Outeiro, n.º 251, Canedo de Basto, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 23,
+  "months": 11,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Rita Simulado Ana",
+    "name": "Leonor Simulado Olga",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "41895-SIM",
-    "address": "Caminho da Lameira, n.º 233, Infesta, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-3081"
+    "number": "10593-SIM",
+    "address": "Rua do Outeiro, n.º 251, Canedo de Basto, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2049"
    },
    "arquiteto": {
-    "name": "Inês Simulado Inês",
+    "name": "Leonor Simulado Xavier",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "96702-SIM",
-    "address": "Rua do Outeiro, n.º 78, 4800-000 Guimarães",
-    "policy": "SIM-RC-0342"
+    "number": "77992-SIM",
+    "address": "Rua das Tílias, n.º 10, 4700-000 Braga",
+    "policy": "SIM-RC-9273"
    },
    "engenheiro": {
-    "name": "Helena Simulado Nuno",
+    "name": "Carla de Teste Miguel",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "20197-SIM",
-    "address": "Rua da Escola, n.º 93, 4700-000 Braga",
-    "policy": "SIM-RC-7302"
+    "number": "39738-SIM",
+    "address": "Travessa do Souto, n.º 59, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1766"
    },
    "diretor": {
-    "name": "Sérgio Amostra Olga",
+    "name": "Bruno de Teste Ana",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "72395-SIM",
-    "address": "Rua do Outeiro, n.º 81, 4800-000 Guimarães",
-    "policy": "SIM-RC-3657"
+    "number": "81435-SIM",
+    "address": "Rua da Escola, n.º 12, 4800-000 Guimarães",
+    "policy": "SIM-RC-1886"
    }
   }
  },
@@ -65,11 +65,11 @@
   {
    "type": "missing_required",
    "target": {
-    "slot": "PLANT"
+    "slot": "MDARQ"
    },
    "law": {
-    "ref": "V.27.b.i",
-    "quote": "i) Plantas à escala de 1:50 ou de 1:100 contendo as dimensões e áreas e utilizações de todos os compartimentos, bem como a representação do mobiliário fixo e equipamento sanitário;"
+    "ref": "V.9",
+    "quote": "9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:"
    }
   }
  ],

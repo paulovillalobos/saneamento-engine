@@ -2,96 +2,66 @@
  "expediente": "T1-0025",
  "case": {
   "id": "T1-0025",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
   "fogos": 0,
-  "pisos": 2,
-  "plot": 510,
-  "impl": 74,
-  "built": 141,
-  "imperm": 120,
-  "perm": 390,
-  "volume": 437,
-  "height": 7.0,
-  "facade": 6.3,
+  "pisos": 1,
+  "plot": 2590,
+  "impl": 812,
+  "built": 805,
+  "imperm": 983,
+  "perm": 1607,
+  "volume": 2495,
+  "height": 4.1,
+  "facade": 3.4,
   "parking": 2,
-  "cost": 127400,
-  "submitted": "2026-11-17",
-  "site": "Rua da Escola, n.º 186, Arnoia, 4890-000 Celorico de Basto",
+  "cost": 844400,
+  "submitted": "2026-11-12",
+  "site": "Lugar de Vilar, n.º 140, Carvalho, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 10,
+  "months": 8,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Eva Exemplo Miguel",
+    "name": "Teresa Simulado Carla",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "95378-SIM",
-    "address": "Rua da Escola, n.º 186, Arnoia, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4484"
+    "number": "73100-SIM",
+    "address": "Lugar de Vilar, n.º 140, Carvalho, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7236"
    },
    "arquiteto": {
-    "name": "Ana Modelo Leonor",
+    "name": "Leonor Amostra Diogo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "15707-SIM",
-    "address": "Lugar da Devesa, n.º 119, 4700-000 Braga",
-    "policy": "SIM-RC-9932"
+    "number": "51898-SIM",
+    "address": "Rua da Escola, n.º 96, 4800-000 Guimarães",
+    "policy": "SIM-RC-4559"
    },
    "engenheiro": {
-    "name": "Inês Exemplo Carla",
+    "name": "Olga Exemplo Leonor",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "89998-SIM",
-    "address": "Lugar de Carvalhal, n.º 73, 4800-000 Guimarães",
-    "policy": "SIM-RC-8778"
+    "number": "67515-SIM",
+    "address": "Travessa do Souto, n.º 22, 4800-000 Guimarães",
+    "policy": "SIM-RC-8865"
    },
    "diretor": {
-    "name": "Nuno de Teste Helena",
+    "name": "Olga Modelo Rita",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "83933-SIM",
-    "address": "Caminho da Lameira, n.º 71, 4700-000 Braga",
-    "policy": "SIM-RC-0884"
+    "number": "67260-SIM",
+    "address": "Lugar de Vilar, n.º 41, 4700-000 Braga",
+    "policy": "SIM-RC-5734"
    }
   }
  },
  "planted": [
-  {
-   "type": "not_pdf",
-   "target": {
-    "slot": "PLANT"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
-   "type": "template_wording_missing",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
-   }
-  },
-  {
-   "type": "unsigned",
-   "target": {
-    "slot": "TREECP"
-   },
-   "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
-   }
-  },
   {
    "type": "wrong_signer",
    "target": {
@@ -99,12 +69,12 @@
    },
    "basis": "documents",
    "values": {
-    "declarante": "Nuno de Teste Helena",
-    "assinante": "Ana Modelo Leonor"
+    "declarante": "Olga Modelo Rita",
+    "assinante": "Leonor Amostra Diogo"
    }
   }
  ],
- "n_planted": 4,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

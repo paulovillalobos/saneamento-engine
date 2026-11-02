@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Bruno Exemplo Rita",
+  "name": "João Modelo Inês",
   "nif": "999999990"
  },
- "site": "Travessa do Souto, n.º 257, Canedo de Basto, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-11-05",
+ "site": "Lugar da Devesa, n.º 57, Ourilhe, 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
+ "submitted_at": "2026-10-09",
  "files": [
   {
    "slot": "REQ",
@@ -87,6 +87,13 @@
    "slot": "FOTO",
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
+   "kind": "written",
+   "signed_by": "arquiteto"
+  },
+  {
+   "slot": "MDARQ",
+   "file": "MDARQ-memoria-descritiva.pdf",
+   "title": "Memória descritiva e justificativa",
    "kind": "written",
    "signed_by": "arquiteto"
   },
@@ -407,8 +414,36 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-curriculo.pdf",
-   "title": "Curriculum vitae",
+   "file": "ficha_projeto.pdf",
+   "title": "Ficha de Projeto",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "ficha_verificacao_elementos.pdf",
+   "title": "Ficha de verificação",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF28540583205287.pdf",
+   "title": "Nota explicativa — planta de implantação",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "fatura_agua_2026_08.pdf",
+   "title": "Fatura de água",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "manual_normas_organizacao_instrucao.pdf",
+   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
    "kind": "written",
    "signed_by": "requerente"
   }

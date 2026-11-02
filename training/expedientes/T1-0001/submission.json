@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Sérgio Exemplo Vasco",
+  "name": "Ana Modelo Teresa",
   "nif": "999999990"
  },
- "site": "Rua do Outeiro, n.º 156, Gagos, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-12-27",
+ "site": "Lugar de Carvalhal, n.º 183, Rego, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
+ "submitted_at": "2026-12-14",
  "files": [
   {
    "slot": "REQ",
@@ -60,7 +60,7 @@
    "file": "TRPLAC-termo-acessibilidades.pdf",
    "title": "Termo de responsabilidade do autor do plano de acessibilidades",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "TRDO",
@@ -414,8 +414,36 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-fatura-agua.pdf",
-   "title": "Fatura de água",
+   "file": "termo_outro_50.pdf",
+   "title": "Termo de Responsabilidade",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF12933357665957.pdf",
+   "title": "INFORMAÇÃO n.º 17/2026",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "manual-normas-organizacao-2022.pdf",
+   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "lista_elementos_nomeacao_ficheiros.pdf",
+   "title": "Lista de elementos instrutórios",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
    "kind": "written",
    "signed_by": "requerente"
   }

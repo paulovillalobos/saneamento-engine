@@ -2,83 +2,101 @@
  "expediente": "T1-0050",
  "case": {
   "id": "T1-0050",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 1,
-  "plot": 1120,
-  "impl": 178,
-  "built": 166,
-  "imperm": 231,
-  "perm": 889,
-  "volume": 514,
-  "height": 4.1,
-  "facade": 3.4,
-  "parking": 2,
-  "cost": 164500,
-  "submitted": "2026-12-26",
-  "site": "Lugar da Devesa, n.º 71, Arnoia, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 2,
+  "plot": 1680,
+  "impl": 246,
+  "built": 435,
+  "imperm": 342,
+  "perm": 1338,
+  "volume": 1348,
+  "height": 7.3,
+  "facade": 6.6,
+  "parking": 4,
+  "cost": 416700,
+  "submitted": "2026-10-10",
+  "site": "Travessa do Souto, n.º 154, Veade, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 19,
+  "months": 11,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Filipe Fictício Helena",
+    "name": "Gonçalo Exemplo Nuno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "91837-SIM",
-    "address": "Lugar da Devesa, n.º 71, Arnoia, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0562"
+    "number": "84886-SIM",
+    "address": "Travessa do Souto, n.º 154, Veade, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7812"
    },
    "arquiteto": {
-    "name": "Carla Fictício Teresa",
+    "name": "Ana de Teste Rita",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "62457-SIM",
-    "address": "Lugar de Vilar, n.º 27, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2259"
+    "number": "62442-SIM",
+    "address": "Lugar da Devesa, n.º 24, 4700-000 Braga",
+    "policy": "SIM-RC-7819"
    },
    "engenheiro": {
-    "name": "Inês Amostra Miguel",
+    "name": "Teresa Fictício Sérgio",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "09500-SIM",
-    "address": "Rua das Tílias, n.º 61, 4000-000 Porto",
-    "policy": "SIM-RC-8668"
+    "number": "97698-SIM",
+    "address": "Rua do Outeiro, n.º 18, 4800-000 Guimarães",
+    "policy": "SIM-RC-3254"
    },
    "diretor": {
-    "name": "Pedro Fictício Helena",
+    "name": "Miguel Exemplo Helena",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "28018-SIM",
-    "address": "Rua da Escola, n.º 93, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0691"
+    "number": "07375-SIM",
+    "address": "Rua do Outeiro, n.º 107, 4000-000 Porto",
+    "policy": "SIM-RC-5951"
    }
   }
  },
  "planted": [
   {
-   "type": "expired_insurance",
+   "type": "impossible_value",
    "target": {
-    "slot": "SRCARQ"
+    "field": "area_parcela",
+    "slot": "REQ"
    },
    "basis": "documents",
    "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-12-26"
+    "area_parcela": "168 m2",
+    "area_implantacao": "246 m2",
+    "MDARQ": "1680 m2"
+   }
+  },
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "LEVT"
    },
    "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+    "ref": "V.7",
+    "quote": "7 - Levantamento topográfico georreferenciado, acompanhado por termo de responsabilidade, sempre que haja alteração da topografia ou da implantação das construções, à escala de 1:200, ou de 1:500 no caso de loteamentos, devidamente cotado, que identifique o prédio e a respetiva área, construções nela erigidas, assim como o espaço público envolvente (vias, passeios, estacionamentos, árvores e infraestruturas ou instalações aí localizadas, incluindo postes, tampas, sinalização e mobiliário urbano);"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "FOTO"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

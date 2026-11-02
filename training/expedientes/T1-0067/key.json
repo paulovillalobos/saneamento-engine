@@ -2,78 +2,89 @@
  "expediente": "T1-0067",
  "case": {
   "id": "T1-0067",
-  "work": "construção de moradia unifamiliar",
+  "work": "ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 1,
-  "plot": 420,
-  "impl": 89,
-  "built": 85,
-  "imperm": 211,
-  "perm": 209,
-  "volume": 263,
-  "height": 4.5,
-  "facade": 3.8,
+  "pisos": 2,
+  "plot": 970,
+  "impl": 367,
+  "built": 644,
+  "imperm": 393,
+  "perm": 577,
+  "volume": 1996,
+  "height": 7.3,
+  "facade": 6.6,
   "parking": 2,
-  "cost": 99700,
-  "submitted": "2026-11-23",
-  "site": "Caminho da Lameira, n.º 286, Ourilhe, 4890-000 Celorico de Basto",
+  "cost": 831400,
+  "submitted": "2026-10-02",
+  "site": "Lugar de Vilar, n.º 213, Gagos, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 11,
+  "months": 14,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Nuno Exemplo Helena",
+    "name": "Bruno Simulado Xavier",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "10329-SIM",
-    "address": "Caminho da Lameira, n.º 286, Ourilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6203"
+    "number": "69736-SIM",
+    "address": "Lugar de Vilar, n.º 213, Gagos, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7702"
    },
    "arquiteto": {
-    "name": "Bruno de Teste Miguel",
+    "name": "Teresa Exemplo Pedro",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "87223-SIM",
-    "address": "Rua da Escola, n.º 89, 4800-000 Guimarães",
-    "policy": "SIM-RC-5198"
+    "number": "85768-SIM",
+    "address": "Travessa do Souto, n.º 73, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1743"
    },
    "engenheiro": {
-    "name": "Vasco Simulado Teresa",
+    "name": "João Fictício Bruno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "42387-SIM",
-    "address": "Rua das Tílias, n.º 89, 4000-000 Porto",
-    "policy": "SIM-RC-9565"
+    "number": "32138-SIM",
+    "address": "Travessa do Souto, n.º 27, 4700-000 Braga",
+    "policy": "SIM-RC-6438"
    },
    "diretor": {
-    "name": "Pedro Amostra Diogo",
+    "name": "Nuno Amostra Eva",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "56513-SIM",
-    "address": "Rua das Tílias, n.º 95, 4000-000 Porto",
-    "policy": "SIM-RC-9265"
+    "number": "75018-SIM",
+    "address": "Rua do Outeiro, n.º 72, 4700-000 Braga",
+    "policy": "SIM-RC-7993"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "unsigned",
    "target": {
-    "slot": "CRP"
+    "slot": "TRDO"
    },
    "law": {
-    "ref": "V.5",
-    "quote": "5 - Indicação do código de acesso à certidão permanente do registo predial referente ao prédio ou prédios abrangidos pela operação urbanística ou, quando omisso, a respetiva certidão negativa do registo predial, acompanhada da caderneta predial da qual constem os correspondentes artigos matriciais;"
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Nuno Amostra Eva",
+    "assinante": "Teresa Exemplo Pedro"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

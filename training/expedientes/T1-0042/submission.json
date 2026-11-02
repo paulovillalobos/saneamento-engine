@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Carla Amostra Filipe",
+  "name": "Nuno Fictício Sérgio",
   "nif": "999999990"
  },
- "site": "Lugar de Carvalhal, n.º 56, Canedo de Basto, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-12-12",
+ "site": "Rua das Tílias, n.º 15, Agilde, 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
+ "submitted_at": "2026-11-18",
  "files": [
   {
    "slot": "REQ",
@@ -49,11 +49,18 @@
    "signed_by": "arquiteto"
   },
   {
+   "slot": "SRCCP",
+   "file": "SRCCP-seguro-coordenador.pdf",
+   "title": "Comprovativo de seguro de responsabilidade civil do coordenador de projeto",
+   "kind": "written",
+   "signed_by": "seguradora"
+  },
+  {
    "slot": "TRPLAC",
    "file": "TRPLAC-termo-acessibilidades.pdf",
    "title": "Termo de responsabilidade do autor do plano de acessibilidades",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "TRDO",
@@ -407,8 +414,36 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-carta.pdf",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "parecer_tecnico_portaria_320.pdf",
+   "title": "Parecer técnico — Portaria n.º 320/2026/1 e redes prediais d",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "guia-tecnico-projetos-2020.pdf",
+   "title": "Guia Técnico para Projetos de Segurança contra incêndio em e",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "carta_cmcb.pdf",
    "title": "Carta",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "informacao-2026-2023.pdf",
+   "title": "INFORMAÇÃO n.º 1/2026",
    "kind": "written",
    "signed_by": "requerente"
   }

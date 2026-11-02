@@ -2,78 +2,88 @@
  "expediente": "T1-0011",
  "case": {
   "id": "T1-0011",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 1,
-  "plot": 400,
-  "impl": 130,
-  "built": 122,
-  "imperm": 216,
-  "perm": 184,
-  "volume": 378,
-  "height": 3.8,
-  "facade": 3.1,
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 1660,
+  "impl": 311,
+  "built": 534,
+  "imperm": 477,
+  "perm": 1183,
+  "volume": 1655,
+  "height": 7.2,
+  "facade": 6.5,
   "parking": 2,
-  "cost": 114800,
-  "submitted": "2026-10-18",
-  "site": "Rua do Outeiro, n.º 140, Gagos, 4890-000 Celorico de Basto",
+  "cost": 389800,
+  "submitted": "2026-10-26",
+  "site": "Rua do Outeiro, n.º 89, Veade, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 16,
+  "months": 21,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Pedro Fictício Teresa",
+    "name": "Ana Modelo Miguel",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "47786-SIM",
-    "address": "Rua do Outeiro, n.º 140, Gagos, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-3424"
+    "number": "64789-SIM",
+    "address": "Rua do Outeiro, n.º 89, Veade, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9799"
    },
    "arquiteto": {
-    "name": "Vasco Exemplo Gonçalo",
+    "name": "Rita Fictício Olga",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "38230-SIM",
-    "address": "Travessa do Souto, n.º 116, 4000-000 Porto",
-    "policy": "SIM-RC-1935"
+    "number": "60269-SIM",
+    "address": "Lugar da Devesa, n.º 70, 4700-000 Braga",
+    "policy": "SIM-RC-7900"
    },
    "engenheiro": {
-    "name": "Vasco Amostra Ana",
+    "name": "Carla de Teste Olga",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "72471-SIM",
-    "address": "Caminho da Lameira, n.º 87, 4700-000 Braga",
-    "policy": "SIM-RC-1232"
+    "number": "27393-SIM",
+    "address": "Rua da Escola, n.º 96, 4800-000 Guimarães",
+    "policy": "SIM-RC-8427"
    },
    "diretor": {
-    "name": "Sérgio de Teste Vasco",
+    "name": "Rita Simulado Nuno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "41796-SIM",
-    "address": "Rua das Tílias, n.º 65, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8658"
+    "number": "81719-SIM",
+    "address": "Rua das Tílias, n.º 6, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7512"
    }
   }
  },
  "planted": [
   {
-   "type": "template_wording_missing",
+   "type": "missing_required",
    "target": {
-    "slot": "TRPARQ"
+    "slot": "P10000"
    },
    "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+    "ref": "V.2",
+    "quote": "2 - Delimitação da área objeto da operação urbanística e sua área de enquadramento em planta de localização fornecida pela câmara municipal ou planta de localização à escala 1:1.000;"
+   }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDPAP"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

@@ -2,88 +2,114 @@
  "expediente": "T1-0004",
  "case": {
   "id": "T1-0004",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 3530,
-  "impl": 492,
-  "built": 880,
-  "imperm": 566,
-  "perm": 2964,
-  "volume": 2728,
-  "height": 7.7,
-  "facade": 7.0,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 760,
+  "impl": 327,
+  "built": 297,
+  "imperm": 425,
+  "perm": 335,
+  "volume": 920,
+  "height": 3.6,
+  "facade": 2.9,
   "parking": 2,
-  "cost": 847400,
-  "submitted": "2026-10-28",
-  "site": "Travessa do Souto, n.º 159, Gagos, 4890-000 Celorico de Basto",
+  "cost": 249700,
+  "submitted": "2026-11-26",
+  "site": "Caminho da Lameira, n.º 126, Infesta, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 13,
+  "months": 11,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Olga Modelo Inês",
+    "name": "Teresa Modelo Vasco",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "18090-SIM",
-    "address": "Travessa do Souto, n.º 159, Gagos, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9677"
+    "number": "79114-SIM",
+    "address": "Caminho da Lameira, n.º 126, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0334"
    },
    "arquiteto": {
-    "name": "Gonçalo Modelo Pedro",
+    "name": "Helena Exemplo Carla",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "23481-SIM",
-    "address": "Rua da Escola, n.º 49, 4700-000 Braga",
-    "policy": "SIM-RC-5685"
+    "number": "36135-SIM",
+    "address": "Travessa do Souto, n.º 94, 4000-000 Porto",
+    "policy": "SIM-RC-0353"
    },
    "engenheiro": {
-    "name": "Diogo Fictício Vasco",
+    "name": "Ana de Teste Miguel",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "89362-SIM",
-    "address": "Rua das Tílias, n.º 76, 4700-000 Braga",
-    "policy": "SIM-RC-8067"
+    "number": "65652-SIM",
+    "address": "Lugar de Carvalhal, n.º 111, 4700-000 Braga",
+    "policy": "SIM-RC-1654"
    },
    "diretor": {
-    "name": "Diogo Amostra Nuno",
+    "name": "Sérgio de Teste Carla",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "39806-SIM",
-    "address": "Lugar de Carvalhal, n.º 3, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6592"
+    "number": "67751-SIM",
+    "address": "Lugar de Vilar, n.º 23, 4700-000 Braga",
+    "policy": "SIM-RC-2319"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "not_pdfa",
    "target": {
     "slot": "MDARQ"
    },
    "law": {
-    "ref": "V.9",
-    "quote": "9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:"
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   },
   {
-   "type": "unsigned",
+   "type": "template_wording_missing",
    "target": {
-    "slot": "TRPLAC"
+    "slot": "TRPARQ"
    },
    "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "297 m2",
+    "MDARQ": "343 m2"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Sérgio de Teste Carla",
+    "assinante": "Helena Exemplo Carla"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

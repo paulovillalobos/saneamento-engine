@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Vasco Modelo Inês",
+  "name": "Pedro de Teste Sérgio",
   "nif": "999999990"
  },
- "site": "Lugar de Vilar, n.º 292, Vale de Bouro, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-11-27",
+ "site": "Lugar da Devesa, n.º 276, Ribas, 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
+ "submitted_at": "2026-10-19",
  "files": [
   {
    "slot": "REQ",
@@ -40,6 +40,13 @@
    "title": "Comprovativo de seguro de responsabilidade civil do autor do projeto de arquitetura",
    "kind": "written",
    "signed_by": "seguradora"
+  },
+  {
+   "slot": "TRCP",
+   "file": "TRCP-termo-coordenador.pdf",
+   "title": "Termo de responsabilidade do coordenador de projeto",
+   "kind": "written",
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCCP",
@@ -165,7 +172,7 @@
    "file": "CORTES-cortes.pdf",
    "title": "Cortes",
    "kind": "drawn",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "PC",
@@ -407,8 +414,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "OUTDOC-ficha-verificacao.pdf",
-   "title": "Ficha de verificação",
+   "file": "anexo-criterio-elaboracao-2020.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF96785227912199.pdf",
+   "title": "MUNICÍPIO DE BENAVENTE — AQUISIÇÃO DE SERVIÇOS DE ELABORAÇÃO",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "anexo_criterio_elaboracao_levantamentos.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "fatura_agua_2026_08.pdf",
+   "title": "Fatura de água",
    "kind": "written",
    "signed_by": "requerente"
   }
