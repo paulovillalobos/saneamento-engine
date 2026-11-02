@@ -422,7 +422,7 @@ def noise_about(c, rng):
     """A document ABOUT an element (norm, postura, guide, technical note, criteria, deliberation, internal note, project sheet, filling instructions, manual,
     diagnostic, tender spec) or a termo of ANOTHER procedure: real expedientes carry these, and none of them is the element it talks about."""
     kind = rng.choice(["norma", "postura", "guia", "nota", "criterios", "deliberacao", "informacao", "ficha-projeto", "instrucoes", "termo-outro", "termo-outro",
-                       "memoria-empresa", "manual", "diagnostico", "caderno"])
+                       "memoria-empresa", "manual", "diagnostico", "caderno", "anexo-regulamento", "analise", "nota-explicativa", "memoria-candidatura"])
     X = rng.choice(ELEMENT_NAMES); M = rng.choice(MUNIS_PT); n = rng.randrange(1, 40)
     X = re.sub(r"^projeto de ", "", X)  # "Postura referente a projetos de estabilidade", not "de projeto de estabilidade"
     if kind == "norma":
@@ -529,6 +529,33 @@ def noise_about(c, rng):
             d.text("Identificação do Técnico    Nome:    Morada:    Freguesia:    Código Postal:    Concelho:    NIF n.º:    E-mail:    Habilitações Académicas:    Associação:    N.º:")
             d.text(f"Declara, na qualidade de diretor de obra, que as obras de urbanização do loteamento sito em {c['site']} se encontram em condições de {fase.lower()}, nos termos do artigo 87.º do RJUE.")
         sig(d, c, who)
+    elif kind == "anexo-regulamento":
+        d = G.Doc(f"ANEXO {rng.choice(['II', 'III', 'IV', 'V'])} — {rng.choice(['OBRAS DE URBANIZAÇÃO', 'OBRAS DE EDIFICAÇÃO', 'ARRANJOS EXTERIORES', 'LOTEAMENTOS'])}")
+        d.text("CAPÍTULO I — DOS PROJETOS", bold=True)
+        d.text(f"Artigo 1.º — Projetos", bold=True)
+        d.text(f"A realização das operações urbanísticas pressupõe a apresentação dos seguintes projetos: a) projeto de infraestruturas viárias; b) {X}; c) projeto de redes de abastecimento de água; d) projeto de arquitetura paisagística.")
+        d.text("Artigo 2.º — Peças escritas", bold=True)
+        d.text("Cada projeto é constituído por memória descritiva e justificativa, cálculos, medições e orçamento, e termo de responsabilidade do autor.")
+        d.text("Artigo 3.º — Peças desenhadas", bold=True)
+        d.text("Planta de localização à escala 1:1000, planta de implantação sobre levantamento topográfico, perfis longitudinais e transversais, pormenores.")
+    elif kind == "analise":
+        d = G.Doc(rng.choice(["Primeira Análise", "Análise", "Parecer técnico", "Apresentação"]) + f" — Portaria n.º 320/2026/1 e {X}")
+        d.text(f"{rng.choice(['Ordem dos Arquitectos', 'Ordem dos Engenheiros', 'Associação Nacional de Municípios', 'Gabinete Jurídico'])} — {rng.choice(MONTHS)} de 2026", size=9)
+        d.text(f"1. A Portaria n.º 320/2026/1 identifica os elementos instrutórios dos procedimentos do RJUE. Esta análise incide sobre o regime da {X} e sobre as dúvidas de aplicação suscitadas pelos associados.")
+        d.text(f"2. Verifica-se que a {X} passa a ser exigida apenas quando aplicável, cabendo ao técnico declarar a sua não aplicabilidade no termo de responsabilidade.")
+        d.text("3. Recomenda-se aos associados a leitura do anexo V e a utilização das minutas de termos publicadas.")
+    elif kind == "nota-explicativa":
+        d = G.Doc(rng.choice([f"Os termos de responsabilidade passados no âmbito das {rng.choice(['comunicações de utilização', 'comunicações prévias', 'legalizações'])}",
+                              f"Esclarecimento sobre a {X}", f"Nota explicativa — {X}"]))
+        d.text(f"Tendo presente que, tal como decorre do disposto no artigo 62.º-A do RJUE, e no que concerne à {X}, importa esclarecer os requerentes e os técnicos sobre o seguinte:")
+        d.text("1. O termo de responsabilidade é subscrito por técnico habilitado nos termos da Lei n.º 31/2009, com assinatura digital qualificada;")
+        d.text(f"2. A {X} é apresentada em ficheiro autónomo, nos termos do manual de instrução digital;")
+        d.text("3. Os serviços municipais verificam a instrução no prazo de 10 dias e, havendo omissões, convidam o requerente a corrigi-las.")
+    elif kind == "memoria-candidatura":
+        d = G.Doc(rng.choice(["Memória descritiva da candidatura", "Memória descritiva e justificativa — Candidatura ao programa de apoio", "Memória descritiva do projeto empresarial"]))
+        d.text(f"Promotor: {c['people']['requerente']['name']}    Programa: {rng.choice(['PRR — Bairros Comerciais', 'Portugal 2030', 'Reabilitar para Arrendar', 'Apoio ao comércio local'])}", size=9)
+        d.text("1. Apresentação do promotor e do projeto empresarial. 2. Objetivos da candidatura e resultados esperados. 3. Plano de investimento e cronograma. 4. Mercado-alvo e modelo de negócio.")
+        d.text(f"O presente documento descreve a candidatura ao apoio financeiro para a atividade a instalar em {c['site']}, não constituindo projeto de obra.")
     elif kind == "memoria-empresa":
         d = G.Doc("MINUTA DA MEMÓRIA DESCRITIVA")
         d.text("Página 1 de 1", size=8)
