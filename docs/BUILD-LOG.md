@@ -52,3 +52,13 @@
 - Data: every expediente now carries 3-7 noise files (noise share 1.2 % → 7.3 %); norms/manuals/guides have long variants.
 - r6 on the v3 prompt without retraining: 26/45 (unchanged) — the adapter was trained without the rules, so the rules only
   count once r7 trains on prompts that carry them.
+
+## 2026-11-02 — prompt v4: every stranger file decided by a written rule
+- Applied the rules by hand to all 45 stranger D1 rows: two files no rule named (Cascais regulation annex, Leiria survey
+  criteria) and three only implied (OA analysis, Amarante explanatory note, Funchal business memo). Rule 2 now names annexes/
+  chapters/articles of regulations, criteria, analyses, opinions, presentations, explanatory notes; rule 1 says the item-9
+  memória describes the work of the request and a business/application memória is not an element.
+- Generator: noise kinds anexo-regulamento, analise, nota-explicativa, memoria-candidatura; noise files carry real-looking
+  names (no OUTDOC prefix — the file-name shortcut on negatives); 12 % of author termos come as blank minutas (rule 1);
+  opaque names on half the rows. Negatives now 14 % of D1 rows (was 1.2 % in r6).
+- Sealed D1 and stranger regenerated with v4 (same ids and answers). r7 not yet trained: awaiting Modal go (≈ USD 14).
