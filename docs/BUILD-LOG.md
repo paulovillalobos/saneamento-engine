@@ -80,3 +80,12 @@
 - Back: 4 loteamento memórias (D12), OA coordinator blank minuta; noise-file facts now null. Left: OA conclusion termo → 27.k,
   forest-defence element list → item 9 (both right in r7), Caxinas estimate letter still rejected (no total within the window).
 - Gate "≥ 42/45 → D3" met. Next: D3 verdict + convite (code), next round only when D3 needs it.
+
+## 2026-11-03 evening — fresh batch (wave 3, 32 files nobody tuned on): 27/32, one invented fact with a fabricated quote
+- 32 new public files (14 new municipalities + OE + Azores civil protection), 15 candidates dropped for private identifiers; keys committed
+  c3ae780 before any output; second keyer (fresh Claude agent, no access to keys/scores; Codex blocked by the permission layer) agrees 31/32.
+- r8 adapter, scored once: element 27/32 (24/26 unambiguous, 28/32 on the second keys), invented 1 (index of drawings → plantas), rejected 2
+  (bench detail sheet, priced bill of quantities — both ambiguous), two memórias with structure chapters in the index → estabilidade (window).
+- Facts 6/8: the Nazaré memória cost "1 888 000,00 €" with a quoted sentence that is not in the document (first fabricated fact on a real
+  file; the quote-in-text guard catches it); Moimenta "90" dias given as months.
+- Old 44 files unchanged in the same run (42/45, 19/21). Wave 3 stays held out; r9 plan in the report. Spend: ≈ USD 1.
