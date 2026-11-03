@@ -18,6 +18,7 @@ from pypdf import PdfReader  # noqa: E402
 R = "sources/real"
 V9, V11, V12, V27K = "portaria-320-2026-1:anexo-V.9", "portaria-320-2026-1:anexo-V.11", "portaria-320-2026-1:anexo-V.12", "portaria-320-2026-1:anexo-V.27.k"
 W = "sources/real/wave2"
+W3 = "sources/real/wave3"
 # (file, D1 element or None, D1 tipo, [D2 (field, value or None)], note)
 KEYS = [
     (f"{R}/memorias/valongo_74l2023_md.pdf", V9, "escrito", [("area_parcela", "49 977,00"), ("custo_total", None)], "real memória descritiva e justificativa (loteamento, Valongo 2025)"),
@@ -67,6 +68,39 @@ KEYS = [
     (f"{W}/seixal_postura_estabilidade.pdf", None, "nao_e_elemento", [], "a municipal postura"),
     (f"{W}/viseu_norma_pip.pdf", None, "nao_e_elemento", [], "a process-instruction norm (PIP)"),
     (f"{W}/vncerveira_normas_levantamentos.pdf", None, "nao_e_elemento", [], "municipal norms for surveys and planta de implantação"),
+    # wave 3 (2026-11-03): keys written and committed BEFORE any reader output was seen; never used to fix data. "ambiguous" = a second reader could defend the other key.
+    (f"{W3}/amadora_parque_urbano_neudel_memoria_descritiva.pdf", V9, "escrito", [], "w3 MDJ, road infrastructure of an urban park (obras de urbanização) — ambiguous: urbanisation memória as item 9 (D12)"),
+    (f"{W3}/lagos_alteracao_loteamento_memoria_descritiva.pdf", V9, "escrito", [("area_parcela", "1.900,00")], "w3 MDJ, alteração de loteamento, Lagos 2025"),
+    (f"{W3}/matosinhos_herois_de_franca_pecas_escritas.pdf", V9, "escrito", [], "w3 MDJ, estudo prévio of a street reordering — ambiguous: urbanisation memória as item 9 (D12)"),
+    (f"{W3}/mgrande_15001_muros_eb_praia_vieira_mdj.pdf", V9, "escrito", [], "w3 MDJ, school boundary walls, Marinha Grande 2015 (cover + index + body)"),
+    (f"{W3}/mgrande_cantina_embra_mdj.pdf", V9, "escrito", [], "w3 MDJ, canteen rehabilitation, Marinha Grande"),
+    (f"{W3}/mgrande_memoria_em242_estrada_atlantica.pdf", V9, "escrito", [], "w3 MDJ, road conservation project — ambiguous: urbanisation memória as item 9 (D12)"),
+    (f"{W3}/mgrande_vol_iii_mapa_quantidades.pdf", None, "nao_e_elemento", [], "w3 unpriced mapa de quantidades — ambiguous: quantities without cost are not the estimate (27.f)"),
+    (f"{W3}/moimenta_memoria_descritiva_pacos_fase02.pdf", V9, "escrito", [], "w3 MDJ, town-hall roof and façades, Moimenta da Beira"),
+    (f"{W3}/nazare_pe_347_pavilhao_famalicao_mdj.pdf", V9, "escrito", [], "w3 MDJ, sports pavilion energy rehabilitation, Nazaré 2016"),
+    (f"{W3}/nazare_pe_365_escola_amadeu_gaudencio_mdj.pdf", V9, "escrito", [("custo_total", None)], "w3 MDJ, six classrooms extension, Nazaré 2017"),
+    (f"{W3}/nazare_pe_365_indice_pecas_desenhadas.pdf", None, "nao_e_elemento", [], "w3 index of drawn pieces (a list)"),
+    (f"{W3}/nazare_pe_365_arq_021_mapa_bancadas.pdf", "portaria-320-2026-1:anexo-V.27.b.iv", "desenhado", [], "w3 drawn sheet 1:20, bench detail of the architecture project — ambiguous: construction detail (27.b.iv)"),
+    (f"{W3}/pombal_casa_varela_memoria_descritiva_arquitectura.pdf", V9, "escrito", [], "w3 MDJ, historic house rehabilitation, Pombal 2016 (firm letterhead repeated)"),
+    (f"{W3}/resende_memoria_descritiva_centro_informacao_carquere.pdf", V9, "escrito", [], "w3 MDJ anteprojeto, parish residence conversion, Resende 2016"),
+    (f"{W3}/santiagocacem_memoria_descritiva_loteamento_piaget.pdf", V9, "escrito", [("area_parcela", "181.182,57")], "w3 MDJ, operação de loteamento, Santiago do Cacém 2017"),
+    (f"{W3}/sever_memoria_descritiva_arquitetura.pdf", V9, "escrito", [], "w3 MDJ, ecocentre, Sever do Vouga (text extracts broken into fragments)"),
+    (f"{W3}/setubal_tr_autor_do_projeto.pdf", V11, "escrito", [], "w3 blank minuta, termo do autor do projeto (Portaria 113/2015 annex), Setúbal"),
+    (f"{W3}/setubal_tr_diretor_de_obra.pdf", V27K, "escrito", [("apolice", None)], "w3 blank minuta, termo do diretor de obra, Setúbal"),
+    (f"{W3}/vagos_9_lpu_lista_precos_unitarios.pdf", "portaria-320-2026-1:anexo-V.27.f", "escrito", [("custo_total", "2.963.691,24 €")], "w3 priced bill of quantities with chapter totals and TOTAL — ambiguous: estimate based on quantities (27.f)"),
+    (f"{W3}/alcoutim_cp_obras_edificacao.pdf", None, "nao_e_elemento", [("custo_total", None)], "w3 blank municipal form, comunicação prévia"),
+    (f"{W3}/braga_insturb0502_licenciamento_obra_edificacao.pdf", None, "nao_e_elemento", [], "w3 list of elementos instrutórios, Braga"),
+    (f"{W3}/evora_edital_384_2010_rmeu.pdf", None, "nao_e_elemento", [], "w3 DR pages with a municipal regulation (Évora RMEU 2010)"),
+    (f"{W3}/guimaraes_estimativa_orcamental_valores_referencia.pdf", None, "nao_e_elemento", [("custo_total", None)], "w3 reference €/m2 values for the estimate, Guimarães (trap: €/m2 table)"),
+    (f"{W3}/lamego_normas_tecnicas_instrucao.pdf", None, "nao_e_elemento", [], "w3 technical norms for digital instruction, Lamego"),
+    (f"{W3}/mesaofrio_aviso_253_2025_rmue.pdf", None, "nao_e_elemento", [], "w3 Aviso with the RMUE of Mesão Frio"),
+    (f"{W3}/moimenta_caderno_encargos_cg.pdf", None, "nao_e_elemento", [("prazo_meses", None)], "w3 caderno de encargos, cláusulas gerais (trap: prazo 90 dias)"),
+    (f"{W3}/oe_parecer_coordenacao_projeto_urbanizacao.pdf", None, "nao_e_elemento", [], "w3 Ordem dos Engenheiros opinion on project coordination"),
+    (f"{W3}/oe_projeto_acustico_nota_tecnica.pdf", None, "nao_e_elemento", [], "w3 Ordem dos Engenheiros technical note on the acoustic project"),
+    (f"{W3}/pontadelgada_prefixos_urbanismo.pdf", None, "nao_e_elemento", [], "w3 table of file-name prefixes per document, Ponta Delgada"),
+    (f"{W3}/prociv_azores_map_edificios_escolares_2018.pdf", None, "nao_e_elemento", [], "w3 civil-protection guide on self-protection measures for schools"),
+    (f"{W3}/scflores_fs035_comunicacao_previa_obras_edificacao.pdf", None, "nao_e_elemento", [], "w3 service sheet for comunicação prévia, Santa Cruz das Flores"),
+    (f"{W3}/vilareal_anexoii_normas_instrucao_formato_digital.pdf", None, "nao_e_elemento", [], "w3 Anexo II, norms for digital instruction, Vila Real"),
 ]
 
 
