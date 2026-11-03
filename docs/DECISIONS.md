@@ -32,3 +32,20 @@ operation or requerente the header names. Whether the piece describes THIS reque
 is a D3 check made through D2 facts. The one exception stays: termos de responsabilidade are procedure-specific in the
 law itself (utilização, conclusão, receção de obras de urbanização have their own legal basis), so a termo of another
 procedure is not an element of this request. Prompt v5 says both things in rules 1 and 3; the stranger keys are unchanged.
+
+## D13 — the hard scaffold: the reader can only say what the prompt holds (2026-11-03)
+The fresh batch showed a fabricated fact with a fabricated quote on a real file (Nazaré, page 5 of a four-page window).
+Paulo's call: no round 9; scaffold first, ccp-engine style (readers/quote_grammar.py), so that she "can only answer what
+she has been trained with". Decision: the decoder follows a grammar built from each prompt by generator/guard.py, and the
+same language is checked in Python after decoding.
+- D1: the element id is one printed in the shortlist, the citation is that line's law text letter by letter, or
+  {null, "", nao_e_elemento|ilegivel}; a file that is not a PDF admits only {null, "", ilegivel}.
+- D2: value and quote are token-aligned pieces of ONE shown page and «pagina» is that page's number, or the null answer.
+  Tokens: runs of digits, runs of letters, each other mark alone («1.900,00m2» holds «1.900,00»). Pages and answer strings
+  are compared after whitespace collapse. The rule the grammar cannot say, the checker adds: the value is inside the quote.
+- Sentences use the trained JSON spacing («, » and «: »), as every training answer was written.
+- An answer the checker refuses is wrong, not an abstention: the scorer counts «recusado» as a miss in every field, the
+  product sends the file to the técnico as not read.
+What the scaffold cannot do: stop a real number that answers another question (Moimenta «90» days for months) or a real
+element id for a file that is not that element. Those stay measured by the keys. Nothing is trained; the r8 adapter is
+read with --guard and the keys say what changed. D0 (the law tasks) keeps its schema: not in the file path of D3.

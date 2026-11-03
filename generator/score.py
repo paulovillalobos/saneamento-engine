@@ -7,6 +7,7 @@ Metrics (all as count/total):
   D1  elemento exact (null == null); tipo exact; citacao verbatim when an element is named; invented = element named when key is null.
   D2  valor exact (string equality after whitespace collapse; null == null); pagina exact; citacao contains the value;
       invented = non-null valor when the key is null; missed = null valor when the key has one.
+  Answers marked "guard" (refused by generator/guard.py) count as wrong in every field: recusado N.
 """
 import argparse
 import json
@@ -35,6 +36,14 @@ def main():
         t = r["task"]; k = json.loads(r["answer"]); c = m[t]; c["n"] += 1
         if o.get("skipped") or not o.get("text"):
             c["skipped"] += 1; continue
+        if o.get("guard"):
+            # refused by the scaffold (generator/guard.py): counted as wrong in every field, never as an abstention
+            c["recusado"] += 1
+            if t == "d1_elemento":
+                c["com_elemento" if k["elemento"] else "sem_elemento"] += 1
+            elif t == "d2_facto":
+                c["nulos" if k["valor"] is None else "com_valor"] += 1
+            continue
         try:
             p = json.loads(o["text"])
         except json.JSONDecodeError:
@@ -78,7 +87,7 @@ def main():
                 if f in ("pagina", "valor_e_pagina", "citacao_contem") and t == "d2_facto":
                     den = c["com_valor"]
                 parts.append(f"{f} {c[f]}/{den} ({100 * c[f] / den:.0f}%)" if den else f"{f} -")
-        for f in ("inventado", "perdido", "malformed", "skipped", "nao_sei"):
+        for f in ("inventado", "perdido", "recusado", "malformed", "skipped", "nao_sei"):
             if c.get(f):
                 parts.append(f"{f} {c[f]}")
         if c.get("probes"):

@@ -13,7 +13,7 @@ Layout
 - celorico/             the whole picture of one municipality: catalogue, mapping, RMOU, PDM, taxas, geo, the sample
 - sources/real/         real public pieces: memórias descritivas, official termo minutas, file-naming norms
 - exam/                 the three day-one dossiers with planted errors, answer key and scorer (baseline 0/11)
-- generator/            expedientes written from the law + real pieces, with answer keys (to build)
+- generator/            expedientes written from the law + real pieces, with answer keys; guard.py = the hard scaffold (D13)
 - sealed/               held-out expedientes frozen before any training (to build)
 - training/, modal/     data per round, LoRA runs on Modal (app saneamento, volume amalia-saneamento-lora)
 - docs/                 DECISIONS.md, BUILD-LOG.md

@@ -89,3 +89,20 @@
 - Facts 6/8: the Nazaré memória cost "1 888 000,00 €" with a quoted sentence that is not in the document (first fabricated fact on a real
   file; the quote-in-text guard catches it); Moimenta "90" dias given as months.
 - Old 44 files unchanged in the same run (42/45, 19/21). Wave 3 stays held out; r9 plan in the report. Spend: ≈ USD 1.
+
+## 2026-11-03 night — D13 hard scaffold (no round 9): generator/guard.py, reader --guard, checker over r8's answers
+- generator/guard.py (stdlib): grammar_for(task, prompt) → xgrammar EBNF from the prompt alone (shortlist lines, «[página n]»
+  blocks); check(task, prompt, text) → None or why not; CLI marks a finished run's answers "guard": why. generator/test_guard.py:
+  2 399 keys (sealed D1/D2 + stranger) all inside the language, 9 bad shapes refused. Grammar size 75 B – 86 KB (D1 carries 43 law texts).
+- modal/reader.py --guard: builds the grammar locally, decoder gets StructuredOutputsParams(grammar=…), xgrammar backend; meta "guard".
+- generator/score.py: "guard" answers = recusado, wrong in every field (denominators kept).
+- The checker over r8's existing answers (no GPU): sealed D1 0/1 145 refused; sealed D2 75/1 148 refused — 56 quotes copied
+  from the generator's own cut-mid-word window («omunicação prévia…», « da obra, baseada…»: the model learned the key's
+  artefact), 19 small-integer facts (pisos, fogos: «1», «3») whose quote is a random line holding that digit — both are
+  DATA DEBTS of generator/d1d2.py line_with(), to fix before any next round. Stranger 44: 2/21 refused (an ellipsis «...»
+  in a value; a case change «Estrutura Residencial» for «ESTRUTURA RESIDENCIAL») = the two facts r8 already had wrong.
+  Wave 3: 6/29 refused — Nazaré «1 888 000,00 €» page 5 (pages 1–4 shown) and Moimenta «90» page 3 (pages 1–2 shown; the
+  phrase is on page 1): both fabrications caught by the page alone; Santiago right value, page 3 for page 2; Vagos right
+  value, «****» inserted in the quote; plus the two above. Under the grammar none of the six can be written as they were.
+- Next (needs the go, ≈ USD 1–2, one container): read sealed D1/D2 + stranger 44 + wave 3 with r8 --guard → training/runs/r8-guard/.
+  That is wave 3's second and last scoring (the product reader is the guarded one). No training.

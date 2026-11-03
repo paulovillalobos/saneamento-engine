@@ -1,12 +1,18 @@
 """AMALIA-9B-0626-DPO as the saneamento reader on Modal: base model or base + a LoRA adapter from the volume
 amalia-saneamento-lora, vLLM, temperature 0, guided JSON with one schema per task.
 
-    modal run modal/reader.py --jsonl sealed/d0-test.jsonl --out training/runs/base/d0.json [--lora r1] [--limit N]
+    modal run modal/reader.py --jsonl sealed/d0-test.jsonl --out training/runs/base/d0.json [--lora r1] [--limit N] [--guard]
 
 Rows are {id, task, prompt, answer}; the answer is the key and is never sent. Output: a JSON list, first item = meta,
 then {key, task, prompt_tokens, completion_tokens, finish_reason, text}. Prompts that do not fit the window are skipped, never cut.
+
+With --guard (DECISIONS D13), each D1/D2 item carries the grammar generator/guard.py builds from its own prompt, and the decoder
+follows that grammar instead of the task schema: the element id can only be one printed in the shortlist with the law's own
+text as citation, a fact can only be a token-aligned piece of a shown page with that page's number. The grammar is built here,
+before the GPU; the container never imports generator/. Other tasks keep their schema. The meta says "guard": "grammar".
 """
 import json
+import sys
 from pathlib import Path
 
 import modal
@@ -42,7 +48,7 @@ app = modal.App("saneamento-reader", image=image)
 
 
 @app.function(gpu="L40S", volumes={"/weights": weights, "/lora": adapters}, timeout=3600)
-def answer(prompts: list[dict], lora: str = "") -> list[dict]:
+def answer(prompts: list[dict], lora: str = "", guard: bool = False) -> list[dict]:
     import time
     from huggingface_hub import snapshot_download
     from vllm import LLM, SamplingParams
@@ -50,6 +56,8 @@ def answer(prompts: list[dict], lora: str = "") -> list[dict]:
     t0 = time.time()
     path = snapshot_download(MODEL, revision=REVISION, cache_dir="/weights")
     extra = {"enable_lora": True, "max_lora_rank": 16} if lora else {}
+    if guard:
+        extra["structured_outputs_config"] = {"backend": "xgrammar", "disable_any_whitespace": False}
     llm = LLM(model=path, max_model_len=WINDOW, enable_prefix_caching=True, gpu_memory_utilization=0.92, seed=0, **extra)
     tok = llm.get_tokenizer()
     request = None
@@ -69,24 +77,33 @@ def answer(prompts: list[dict], lora: str = "") -> list[dict]:
         else:
             keep.append((p, msgs, n))
     t1 = time.time()
-    params = [SamplingParams(temperature=0.0, max_tokens=MAX_TOKENS, seed=0, structured_outputs=StructuredOutputsParams(json=SCHEMAS[k[0]["task"]], disable_any_whitespace=True)) for k in keep]
+    params = [SamplingParams(temperature=0.0, max_tokens=MAX_TOKENS, seed=0,
+                             structured_outputs=StructuredOutputsParams(grammar=k[0]["grammar"]) if k[0].get("grammar") else
+                             StructuredOutputsParams(json=SCHEMAS[k[0]["task"]], disable_any_whitespace=True)) for k in keep]
     res = llm.chat([k[1] for k in keep], params, use_tqdm=False, lora_request=request)
     gen_s = round(time.time() - t1, 1)
     for (p, _, n), r in zip(keep, res):
         o = r.outputs[0]
         out.append({"key": p["key"], "task": p["task"], "prompt_tokens": n, "completion_tokens": len(o.token_ids), "finish_reason": o.finish_reason, "text": o.text})
     meta = {"model": f"{MODEL}@{REVISION[:12]}", "adapter": f"amalia-saneamento-{lora}" if lora else None, "runtime": "vllm 0.30.0, bf16, L40S, prefix caching, guided JSON per task",
-            "temperature": 0, "max_tokens": MAX_TOKENS, "load_seconds": load_s, "generate_seconds": gen_s, "answered": len(keep), "skipped": len(prompts) - len(keep)}
+            "temperature": 0, "max_tokens": MAX_TOKENS, "guard": "grammar" if guard else None, "load_seconds": load_s, "generate_seconds": gen_s, "answered": len(keep), "skipped": len(prompts) - len(keep)}
     return [{"meta": meta}] + out
 
 
 @app.local_entrypoint()
-def main(jsonl: str, out: str, lora: str = "", limit: int = 0):
+def main(jsonl: str, out: str, lora: str = "", limit: int = 0, guard: bool = False):
     rows = [json.loads(l) for l in open(jsonl, encoding="utf-8") if l.strip()]
     if limit:
         rows = rows[:limit]
     items = [{"key": r["id"], "task": r["task"], "prompt": r["prompt"]} for r in rows]
-    result = answer.remote(items, lora)
+    if guard:
+        sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "generator"))
+        from guard import grammar_for, TASKS
+        for i in items:
+            if i["task"] in TASKS:
+                i["grammar"] = grammar_for(i["task"], i["prompt"])
+        print(f"guard: {sum(1 for i in items if i.get('grammar'))} of {len(items)} items carry a grammar")
+    result = answer.remote(items, lora, guard)
     Path(out).parent.mkdir(parents=True, exist_ok=True)
     json.dump(result, open(out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(json.dumps(result[0], indent=1, ensure_ascii=False))
