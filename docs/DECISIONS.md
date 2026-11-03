@@ -22,3 +22,13 @@ Rule: in training, a large share of file names say nothing or lie (generator/d1d
 sets keep their names (they measure the lab), the stranger test keeps the real names (it measures the world).
 Corollary: a sealed set built by the same generator cannot detect a shortcut the generator itself creates; the stranger
 test is the only gate that counts for shipping, and it must grow (more real memórias, termos, plantas with real names).
+
+## D12 — D1 names the piece; D3 checks the fit to the request (2026-11-03)
+Round 7 rejected the four real memórias of the stranger test (Valongo, three Cascais) because their headers name a
+loteamento and prompt v4 listed "loteamento" among the other procedures. The reader applied the rule consistently; the
+key and the rule disagreed. Decision: D1 answers "which element is this piece" by the nature of the piece — a memória
+descritiva e justificativa of any operação urbanística is item 9, a projeto de estabilidade is item 27.i.i, whatever
+operation or requerente the header names. Whether the piece describes THIS request (site, operation, requerente, areas)
+is a D3 check made through D2 facts. The one exception stays: termos de responsabilidade are procedure-specific in the
+law itself (utilização, conclusão, receção de obras de urbanização have their own legal basis), so a termo of another
+procedure is not an element of this request. Prompt v5 says both things in rules 1 and 3; the stranger keys are unchanged.

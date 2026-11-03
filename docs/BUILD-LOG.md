@@ -62,3 +62,16 @@
   names (no OUTDOC prefix — the file-name shortcut on negatives); 12 % of author termos come as blank minutas (rule 1);
   opaque names on half the rows. Negatives now 14 % of D1 rows (was 1.2 % in r6).
 - Sealed D1 and stranger regenerated with v4 (same ids and answers). r7 not yet trained: awaiting Modal go (≈ USD 14).
+
+## 2026-11-03 — round 7 (00:32–04:51 UTC, third attempt): stranger 39/45, no invented element, six real pieces rejected
+- Attempt 1 died with the session at step 220 (≈ USD 3); attempt 2 refused because the stale checkpoint sat where the adapter goes
+  (volume rm, no GPU cost); attempt 3 ran detached (modal run --detach, Python start_new_session): 1,137 steps, 4.1 h, ≈ USD 16.
+- Stranger (44 files): element 39/45 (r6 27/45), invented 17 → 0, rejected real pieces 0 → 6: the four loteamento memórias
+  (Valongo, Cascais ×3), the OA coordinator blank minuta, the Caxinas estimate letter. Facts 17/21 (two invented values on noise
+  files: "custo elegível" of a funding sheet, a clause number of a tender spec; two near-misses). Sealed D1 1135/1145 (10 ITED
+  projects called item 9 — the sealed ITED doc is the old plain shape), D2 100 %, D0 passages 90-100 %, exigido 39 %.
+- D12 (docs/DECISIONS.md): D1 names the piece, D3 checks the fit; only termos are procedure-specific. Prompt v5 (rules 1 and 3);
+  sealed D1 (v4 kept as d1-test-v4.jsonl) and stranger regenerated with the same ids and answers.
+- r8 data: 30 % of long memórias headed by another operation (alvará de loteamento, DLOT lines, município as requerente) still
+  labelled item 9; coordinator blank minuta 12 %; estimate as the architects' letter (areas per space, cost per m2, total);
+  D2 questions asked of noise files answered null (50 % of noise files). Chain training/runs/overnight-r8.sh ready — needs go (≈ USD 15).

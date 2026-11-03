@@ -24,12 +24,14 @@ D1_PROMPT = ("Um expediente de comunicação prévia de obras de edificação (C
              "pedido pode levar são estes (id — texto da Portaria n.º 320/2026/1):\n{shortlist}\n\nLê o texto do ficheiro e diz qual destes elementos ele é: "
              "copia o id em «elemento» e o texto da passagem, letra a letra, em «citacao». Se o ficheiro não é nenhum deles, elemento null e tipo nao_e_elemento; "
              "se não se lê, tipo ilegivel.\nRegras: (1) o ficheiro é o elemento só quando é a própria peça instrutória (a memória, o termo, a planta, a estimativa, "
-             "a certidão, o comprovativo), preenchida ou em minuta por preencher; a memória do elemento 9 descreve a obra do pedido — uma memória de apresentação "
-             "de empresa, de candidatura ou de negócio não é elemento. (2) Um documento que fala sobre elementos — norma de instrução, regulamento ou anexo, capítulo "
+             "a certidão, o comprovativo), preenchida ou em minuta por preencher; a memória descritiva e justificativa de uma operação urbanística (obras de "
+             "edificação, loteamento, alteração de alvará, obras de urbanização) é o elemento 9, mesmo quando o cabeçalho fala de outra operação ou de outro "
+             "requerente — se descreve outra obra, isso vê-se depois nos factos; uma memória de apresentação de empresa, de candidatura ou de negócio não é "
+             "elemento. (2) Um documento que fala sobre elementos — norma de instrução, regulamento ou anexo, capítulo "
              "ou artigos de regulamento, postura, guia técnico, nota técnica, nota explicativa, esclarecimento, análise, parecer, apresentação, critérios, lista de "
              "elementos, ficha de verificação, deliberação, ata, informação interna, instruções de preenchimento, manual, caderno de encargos, ficha de projeto, "
-             "diagnóstico — não é elemento: elemento null, tipo nao_e_elemento. (3) Um termo de responsabilidade de outro "
-             "procedimento (utilização do edifício, conclusão da obra, receção de obras de urbanização, loteamento) não é elemento deste pedido. (4) tipo escrito = peça "
+             "diagnóstico — não é elemento: elemento null, tipo nao_e_elemento. (3) Só os termos de responsabilidade são próprios de cada procedimento: um termo "
+             "de outro procedimento (utilização do edifício, conclusão da obra, receção de obras de urbanização, loteamento) não é elemento deste pedido. (4) tipo escrito = peça "
              "de texto (memória, termo, estimativa, calendarização, certidão, comprovativo, registo fotográfico), mesmo com tabelas, quadros ou figuras; tipo desenhado = "
              "peça desenhada (planta, alçado, corte, pormenor, levantamento topográfico, peças desenhadas).\nResponde {{\"elemento\": <id ou null>, "
              "\"citacao\": <texto ou \"\">, \"tipo\": \"escrito\"|\"desenhado\"|\"nao_e_elemento\"|\"ilegivel\"}}."
@@ -181,6 +183,13 @@ def main():
                     d2.append({"id": rid("d2", lab["expediente"], lab["file"], field, "absent"), "task": "d2_facto",
                                "prompt": D2_FACT.format(question=QUESTIONS[field], name=lab["file"], pages=n, text=text),
                                "answer": json.dumps({"valor": None, "pagina": None, "citacao": ""}, ensure_ascii=False), "expediente": lab["expediente"]})
+            if lab["noise"] and rng.random() < 0.5:
+                # a question asked of a noise file (funding sheet, tender spec, norm): the answer is null even when a similar-looking number is on the page
+                field = rng.choice(sorted(QUESTIONS))
+                stats["absent"] += 1
+                d2.append({"id": rid("d2", lab["expediente"], lab["file"], field, "noise"), "task": "d2_facto",
+                           "prompt": D2_FACT.format(question=QUESTIONS[field], name=lab["file"], pages=n, text=text),
+                           "answer": json.dumps({"valor": None, "pagina": None, "citacao": ""}, ensure_ascii=False), "expediente": lab["expediente"]})
     out = ROOT / a.out
     for name, rows in (("d1", d1), ("d2", d2)):
         rng.shuffle(rows)

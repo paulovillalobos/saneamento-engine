@@ -153,24 +153,38 @@ def doc_memory(c, override=None, long=False, rng=None):
     d = G.Doc(title)
     if long and REAL and rng:
         atelier = rng.choice(ATELIERS)
+        other = rng.random() < 0.3   # the header names another operation (loteamento, alteração de alvará, obras de urbanização): still the item-9 piece (D12)
         if rng.random() < 0.35:
             # the memória written as the reply to the council's ofício (real pattern: company header, "Resposta ao ofício", date, atelier footer)
             d.text(f"{c['people']['requerente']['name']}", size=9)
-            d.text(f"Comunicação prévia de obras de edificação - Resposta ao ofício n.º {rng.randrange(1000, 9999)}/DGU.SAA, de {rng.randrange(1, 28):02d}/{rng.randrange(1, 12):02d}/2026", size=9)
+            op = rng.choice(["Licenciamento de operação de loteamento", "Alteração à licença de loteamento", "Obras de urbanização"]) if other else "Comunicação prévia de obras de edificação"
+            d.text(f"{op} - Resposta ao ofício n.º {rng.randrange(1000, 9999)}/DGU.SAA, de {rng.randrange(1, 28):02d}/{rng.randrange(1, 12):02d}/2026", size=9)
             d.text(f"{c['site']}, Celorico de Basto", size=9)
             d.text(f"{title}                                       {rng.choice(MONTHS)} de 2026", size=9)
             d.text(f"{atelier}                                                                                                     1", size=7)
             d.text("1. NOTA EXPLICATIVA", bold=True)
+            if other:
+                d.text("A proposta de operação de loteamento não foi alterada no que respeita ao traçado, número de lotes e as suas características, áreas de construção e "
+                       "implantação, ocupação e áreas de cedência, assim como todos os restantes indicadores urbanísticos. No entanto, considera-se útil a transcrição dos dados caracterizadores desta proposta.")
             d.text(f"Para cumprimento do ofício acima referido, procedeu-se à reformulação dos elementos instrutórios da operação urbanística pretendida ({c['work']}).")
             for _ in range(rng.randrange(2, 5)):
                 d.text(rng.choice(REAL))
             d.text("2. DESCRIÇÃO DA OPERAÇÃO", bold=True)
         else:
             # cover page, then an index with dotted leaders and sub-numbering, then the body (real pattern: Cascais/Valongo memórias)
-            d.text(f"{c['work']} - {c['site']}")
-            d.text(f"Requerente: {c['people']['requerente']['name']}")
-            d.gap(40)
-            d.text(atelier, size=9)
+            if other:
+                d.text(rng.choice([f"Alteração à Licença de Loteamento titulada pelo alvará de loteamento n.º {rng.randrange(100, 1300)}",
+                                   f"Operação de loteamento - {c['site']}", f"Obras de urbanização - {c['site']}"]))
+                d.text(rng.choice([f"Requerente: MUNICÍPIO DE {rng.choice(MUNIS_PT).upper()}", f"Requerente: {c['people']['requerente']['name']}"]))
+                d.gap(40)
+                d.text("DEL I Departamento de Estudos e Loteamentos", size=9)
+                d.text("DLOT I Divisão de Loteamentos", size=9)
+                atelier = "DEL | DEPARTAMENTO DE ESTUDOS E LOTEAMENTOS"
+            else:
+                d.text(f"{c['work']} - {c['site']}")
+                d.text(f"Requerente: {c['people']['requerente']['name']}")
+                d.gap(40)
+                d.text(atelier, size=9)
             d._new_page()
             d.text(f"{atelier}    |    {title}", size=7)
             d.text(f"{atelier[:3].upper()} | {rng.choice(['DIVISÃO DE PROJETO', 'DEPARTAMENTO DE ARQUITETURA', 'GABINETE TÉCNICO'])}", size=7)
@@ -248,6 +262,17 @@ def doc_term_author(c, p, project, kind="I", site=None, wording=True):
 
 def doc_term_coordinator(c, p):
     d = G.Doc("Termo de responsabilidade do coordenador de projeto")
+    if random.Random(c["id"] + "coordblank").random() < 0.12:
+        d.text("A presente minuta de termo de responsabilidade do coordenador de projetos transcreve a redação presente no anexo VII da Portaria n.º 320/2026/1.", size=9)
+        d.text("Termo de responsabilidade do coordenador do projeto de … (a) … (b), morador na …, contribuinte n.º …, inscrito na … (c) sob o n.º …, declara, para efeitos "
+               "do disposto no n.º 1 do artigo 10.º do Decreto-Lei n.º 555/99, de 16 de dezembro, na sua redação atual, que o projeto de … (a), de que é coordenador, "
+               "relativo à obra de … (d), localizada em … (e), cujo … (f) foi … (g) por … (h):")
+        d.text("a) Observa as normas legais e regulamentares aplicáveis, designadamente … (i); b) Está conforme com os planos municipais ou intermunicipais de ordenamento "
+               "do território aplicáveis à pretensão, bem como com (j); c) Atesta a compatibilidade entre os projetos necessários à execução da operação urbanística.")
+        d.text("… (data). … (assinatura) (k). (l) Código de verificação das competências profissionais.")
+        d.text("Instruções de preenchimento: (a) Identificar o tipo de operação urbanística. (b) Indicar nome e habilitação do autor do projeto. (c) Indicar associação "
+               "pública de natureza profissional, quando for o caso. (d) Indicar a natureza da operação urbanística a realizar.", size=8)
+        return d, []
     if random.Random(c["id"] + "coord").random() < 0.15:
         d.text("A presente minuta de termo de responsabilidade do coordenador de projeto transcreve a redação prevista no anexo VII da Portaria n.º 320/2026/1, de 2 de setembro.", size=9)
     d.text(f"{p['name']}, com domicílio em {p['address']}, contribuinte n.º {NIF}, inscrito na {p['body']} sob o n.º {p['number']}, na qualidade de coordenador, relativo à "
@@ -624,6 +649,29 @@ def doc_estimate(c, p, rng):
     if rng.random() < 0.6:
         return doc_plain(c, "Estimativa do custo total da obra", p, f"Estimativa do custo total da obra, baseada em quantidades e tipologias de trabalhos: {eur(c['cost'])} (valor fictício).", facts=[("custo_total", eur(c["cost"]), "", 0)])
     d = G.Doc("Estimativas Orçamentais")
+    if rng.random() < 0.5:
+        # the architects' letter to the dono de obra (real pattern: expectations of cost vs programme, areas per space, cost per m2, total)
+        atelier = rng.choice(ATELIERS)
+        d.text(f"{atelier}", size=9)
+        d.text("Estimativas Orçamentais", bold=True)
+        d.text(f"Exmo. Senhor {c['people']['requerente']['name']}, Dono de Obra da {c['work']}, em {c['site']}.")
+        d.text("Um projeto é o resultado de um processo de decisão em que o Dono de Obra é confrontado com diferentes solicitações, permitindo-lhe fazer opções de forma "
+               "refletida e informada. Os projetistas, com a sua experiência e conhecimentos técnicos, constituem o principal apoio do Dono de Obra nesse processo.")
+        d.text("Em nossa opinião, estamos perante uma situação de disparidade de expectativas entre custo e qualidade / quantidade, que passamos a explicar.")
+        d.text("1 - A listagem de espaços presente no Programa Base não continha as áreas úteis dos mesmos. Assim, os projetistas atribuíram-lhes áreas no seu entender "
+               "adequadas aos objetivos descritos, resultando nas seguintes áreas brutas de construção:")
+        rest = c["built"]
+        for name in rng.sample(["Zona de estar e refeições", "Quartos e instalações sanitárias", "Cozinha e lavandaria", "Garagem e arrumos", "Escritório", "Alpendre e varandas"], rng.randrange(2, 4)):
+            part = max(10, int(rest * rng.uniform(0.2, 0.5))); rest -= part
+            d.text(f"{name}  {part}m2")
+        d.text(f"TOTAL AB CONSTRUÇÃO  {c['built']}m2")
+        per = rng.randrange(600, 1400)
+        d.text(f"Atribuindo um custo de construção por m2 de {per}€, teremos para o edificado um custo de construção de {eur(c['built'] * per)}.")
+        d.text("No entanto, consideramos este valor por m2 baixo para as exigências que decorrem do Programa Base, nomeadamente a dimensão dos vãos e o nível de acabamentos pretendido.")
+        d.text("2 - Quanto aos arranjos exteriores e às ligações às redes públicas, o seu custo foi estimado a partir de obras semelhantes já executadas pelo gabinete.")
+        pg = d.text(f"Em conclusão, a estimativa do custo total da obra é de {eur(c['cost'])} (valor fictício).", tag="custo", bold=True)
+        sig(d, c, p)
+        return d, [("custo_total", eur(c["cost"]), "", pg, None)]
     d.text(f"{rng.choice(ATELIERS)}    ESTIMATIVA PRELIMINAR    {c['work'][0].upper() + c['work'][1:]} — {c['site']}    1 de {rng.randrange(3, 12)}", size=9)
     d.text("NOTA INTRODUTÓRIA", bold=True)
     d.text("No desenvolvimento da proposta foram tidos em conta os requisitos expressos pelo dono de obra. A estimativa baseia-se em quantidades e tipologias dos trabalhos necessários à execução da obra, com valores unitários praticados na região.")

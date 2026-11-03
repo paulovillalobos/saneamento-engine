@@ -1,0 +1,27 @@
+== regenerate training expedientes (80) 2026-10-28T10:49:04Z
+80 expedientes in training/expedientes: 4598 files, 133 planted errors
+== D1/D2 rows with augmentation
+training/data/d1/train.jsonl: 6707 rows
+training/data/d2/train.jsonl: 4633 rows
+{'files': 4598, 'illegible': 13, 'noise': 56, 'facts': 4146, 'absent': 487, 'augmented': 2109}
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	training/runs/overnight-r6.log
+
+nothing added to commit but untracked files present (use "git add" to track)
+== train r6 2026-10-28T10:50:05Z
+'examples': 14751
+'steps': 1019, 'seconds': 12554.6
+== evaluate r6 2026-10-28T14:20:41Z
+- **alinea_de** n=203; passagem 193/203 (95%); citacao 193/203 (95%); ambos 193/203 (95%); nao_sei 1
+- **elemento_doc** n=91; passagem 89/91 (98%); citacao 89/91 (98%); ambos 89/91 (98%); tipo 76/91 (84%)
+- **exigencia** n=116; passagem 110/116 (95%); citacao 110/116 (95%); ambos 110/116 (95%); exigido 52/116 (45%); nao_sei 1
+- **localiza** n=492; passagem 475/492 (97%); citacao 474/492 (96%); ambos 474/492 (96%); inventado 5; probes nao_sei 42/47
+- **proibido** n=30; passagem 28/30 (93%); citacao 29/30 (97%); ambos 28/30 (93%); resposta 25/30 (83%)
+- **transcreve** n=491; passagem 489/491 (100%); citacao 490/491 (100%); ambos 489/491 (100%); inventado 10; nao_sei 1; probes nao_sei 51/61
+- **d1_elemento** n=1145; citacao 1071/1071 (100%); elemento 1145/1145 (100%); tipo 1145/1145 (100%)
+- **d2_facto** n=1148; valor 1148/1148 (100%); pagina 1035/1035 (100%); valor_e_pagina 1035/1035 (100%); citacao_contem 1012/1035 (98%)
+- **d1_elemento** n=11; citacao 6/6 (100%); elemento 11/11 (100%); tipo 11/11 (100%)
+- **d2_facto** n=7; valor 7/7 (100%); pagina 2/2 (100%); valor_e_pagina 2/2 (100%); citacao_contem 2/2 (100%)
+== done 2026-10-28T14:30:46Z
