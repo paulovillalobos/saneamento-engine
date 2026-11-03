@@ -28,3 +28,10 @@ model amalia-llm/AMALIA-9B-0626-DPO@c4614b9b5c7b adapter amalia-saneamento-r8 an
 - **d1_elemento** n=45; citacao 14/15 (93%); elemento 42/45 (93%); tipo 42/45 (93%); inventado 2
 - **d2_facto** n=21; valor 19/21 (90%); pagina 3/3 (100%); valor_e_pagina 1/3 (33%); citacao_contem 2/3 (67%)
 
+# training/runs/r8/stranger-v3.json
+
+model amalia-llm/AMALIA-9B-0626-DPO@c4614b9b5c7b adapter amalia-saneamento-r8 answered 106 skipped 0 load 142.3s gen 19.8s
+
+- **d1_elemento** n=77; citacao 27/32 (84%); elemento 69/77 (90%); tipo 71/77 (92%); inventado 3
+- **d2_facto** n=29; valor 25/29 (86%); pagina 5/6 (83%); valor_e_pagina 3/6 (50%); citacao_contem 5/6 (83%); inventado 2
+
