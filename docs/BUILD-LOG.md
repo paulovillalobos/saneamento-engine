@@ -75,3 +75,8 @@
 - r8 data: 30 % of long memórias headed by another operation (alvará de loteamento, DLOT lines, município as requerente) still
   labelled item 9; coordinator blank minuta 12 %; estimate as the architects' letter (areas per space, cost per m2, total);
   D2 questions asked of noise files answered null (50 % of noise files). Chain training/runs/overnight-r8.sh ready — needs go (≈ USD 15).
+
+## 2026-11-03 — round 8 (12:05–16:26 UTC, first attempt, ≈ USD 16): stranger 42/45, facts 19/21, sealed D1/D2 100 %
+- Back: 4 loteamento memórias (D12), OA coordinator blank minuta; noise-file facts now null. Left: OA conclusion termo → 27.k,
+  forest-defence element list → item 9 (both right in r7), Caxinas estimate letter still rejected (no total within the window).
+- Gate "≥ 42/45 → D3" met. Next: D3 verdict + convite (code), next round only when D3 needs it.
