@@ -49,3 +49,25 @@ same language is checked in Python after decoding.
 What the scaffold cannot do: stop a real number that answers another question (Moimenta «90» days for months) or a real
 element id for a file that is not that element. Those stay measured by the keys. Nothing is trained; the r8 adapter is
 read with --guard and the keys say what changed. D0 (the law tasks) keeps its schema: not in the file path of D3.
+
+## D14 — scaffold from the start: the window, the keys and the data of round 9 (2026-11-03)
+Paulo: she may say the same thing in other words, she may not say what is not there ("Portugal is in France"), and every
+round from now on is trained and read inside the scaffold. Round 9 is the first.
+- Keys inside the language. generator/d1d2.py checks every row's key with guard.check() and drops the row when the key is
+  outside it (page not shown, value cut); the old training set carried 77 of 4 601 fact rows (1.7 %) whose page was never
+  shown or whose value was cut by the 3 500-character window — the generator was teaching her to answer with pages she
+  could not see, which is where «page 5» came from. Quotes are now token-aligned pieces of the page (quote_for: the
+  labelled line when on the page, else the sentence holding the value, preferring the field's keyword), never the 60-char
+  window cut mid-word that round 8 learned to copy.
+- The window. window(): the first 2 pages, then the pages with the most signals (amounts, areas, dates, prazos,
+  signatures), then the rest in order, 11 000 characters in all, each page cut at 2 500 on a word boundary; the header
+  lists the pages shown when not all. The grammar admits only shown pages, so an unshown page cannot be cited.
+- The data. Long memórias go on past the quadro (solutions, networks) and may state the cost (30 %) and the prazo: in
+  months (a fact) or in DAYS (no prazo_meses fact → the question "em meses" is null). Absent-fact questions are asked only
+  of files whose labels have no such fact, and now of memórias (cost, prazo). New noise: an index of pieces (written and
+  drawn, with scales and sheet sizes) and an external entity's opinion listing the elements it received.
+- Sealed. The sealed expedientes are unchanged; their rows are regenerated with the window and the memória absent-facts
+  (D2 1 148 → 1 190 rows); the r8-window rows stay as sealed/*-r8.jsonl for the r8-under-scaffold baseline. The stranger
+  rows are regenerated with the window, keys unchanged. Wave 3 is scored by r9 under the scaffold: its second and last.
+- Reads: r9 on D1/D2/stranger with --guard; r8 with --guard on the r8-window rows (sealed D2, stranger waves 1-2) as the
+  "scaffold alone" baseline. D0 keeps its schema.

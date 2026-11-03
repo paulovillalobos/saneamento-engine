@@ -45,7 +45,7 @@ TASKS = ("d1_elemento", "d2_facto")
 # ---- the prompt ---------------------------------------------------------------------------------------------------------
 def body_of(prompt):
     """The file text between the fences: after «Ficheiro: … (n página(s))\\n---\\n», up to the final «\\n---»."""
-    m = re.search(r"\nFicheiro: .*? \(\d+ página\(s\)\)\n---\n", prompt)
+    m = re.search(r"\nFicheiro: .*? \(\d+ página\(s\)\)(?: — páginas mostradas: [\d, ]+)?\n---\n", prompt)
     if not m or not prompt.endswith("\n---"):
         raise ValueError("the prompt has no «Ficheiro: … ---» fences")
     return prompt[m.end():-4]

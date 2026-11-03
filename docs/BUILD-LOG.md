@@ -106,3 +106,13 @@
   value, «****» inserted in the quote; plus the two above. Under the grammar none of the six can be written as they were.
 - Next (needs the go, ≈ USD 1–2, one container): read sealed D1/D2 + stranger 44 + wave 3 with r8 --guard → training/runs/r8-guard/.
   That is wave 3's second and last scoring (the product reader is the guarded one). No training.
+
+## 2026-11-03 night — round 9 prepared: scaffold from the start (D14)
+- Finding: 77 of 4 601 r8 training fact rows had keys outside the window (38 pages never shown, 39 values cut) → trained fabrication of pages.
+- generator/d1d2.py: window() 11 000 chars (2 head pages, densest signal pages, rest), quote_for() aligned quotes, guard.check() gate on every
+  row (dropped rows listed), ABSENT by field (memória cost/prazo hard negatives). expedientes.py: memória cost (30 % of long) and prazo in
+  months / days, noise «indice-pecas» ×2 and «parecer-externo». stranger.py uses the same window and quote. guard.py header regex.
+- Sealed rows regenerated (D1 1 145, D2 1 190; r8-window copies kept as *-r8.jsonl), stranger regenerated (106 rows, keys unchanged);
+  test_guard: 2 441 keys inside the language. 12-expediente sample: D1 prompt mean 11.3k chars (max 20.7k), 2 of 601 fact rows dropped.
+- modal/train_lora.py RUNS r9; training/runs/overnight-r9.sh: regenerate 80 expedientes → train → r9 reads with --guard (D0 schema) →
+  r8 --guard baseline on the r8-window rows → scores. Expected ≈ USD 20–25 (longer rows than r8's 4.1 h).

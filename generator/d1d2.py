@@ -1,5 +1,5 @@
 """D1 and D2 rows from generated expedientes: the reader sees the extracted text of a file (what any PDF reader gives a
-técnico) and answers with the element it is (D1) or the facts it states, with the page (D2). Keys come from labels.jsonl,
+técnico) through window() (D14: first pages, signal pages, the rest, 9 000 characters) and answers with the element it is (D1) or the facts it states, with the page (D2). Keys come from labels.jsonl,
 written by the generator at the same time as the file, never from a model.
 
     .venv-of-rjue/bin/python -I generator/d1d2.py --src training/expedientes --out training/data           # train rows
@@ -19,7 +19,81 @@ sys.path.insert(0, str(ROOT))
 from pypdf import PdfReader  # noqa: E402
 
 PORT = {p["id"]: p for p in json.loads((ROOT / "structure" / "portaria-320-2026-1.json").read_text(encoding="utf-8"))["passages"]}
-MAXCH = 3500  # characters of document text shown to the reader (the first pages; a termo or a memória fits whole)
+sys.path.insert(0, str(ROOT / "generator"))
+import guard  # noqa: E402  (D13: every row's key must be inside the language the reader is held to)
+
+MAXCH = 3500  # the r1–r8 window (first 3,500 characters); kept only as a record, window() below is what rows use since r9 (D14)
+WINDOW_CH, PAGE_CH, HEAD_PAGES = 11000, 2500, 2
+SIGNAL = re.compile(r"€|\btotal\b|\bm2\b|m²|\bpiso|\bfogo|\bprazo|\bmeses\b|\bdias\b|ap[oó]lice|validade|altura|assin|\d{4}-\d{2}-\d{2}|\d{1,2}/\d{1,2}/\d{4}", re.I)
+
+
+def cut(text, limit=PAGE_CH):
+    """text up to limit characters, ending on a whitespace boundary (so every token shown is whole)."""
+    if len(text) <= limit:
+        return text
+    k = text.rfind(" ", 0, limit); k2 = text.rfind("\n", 0, limit)
+    return text[:max(k, k2)] if max(k, k2) > 0 else text[:limit]
+
+
+def window(pages):
+    """What the reader sees of a document (D14): the first HEAD_PAGES pages, then the pages that carry signals (amounts, areas,
+    dates, prazos, signatures) densest first, then the remaining pages in order, while the WINDOW_CH budget lasts; each page
+    cut at PAGE_CH on a word boundary. Returns (text with «[página n]» blocks, header note listing the shown pages when not all)."""
+    cuts = [cut(t) for t in pages]
+    shown, budget = [], WINDOW_CH
+    def take(i):
+        nonlocal budget
+        if i not in shown and len(cuts[i]) + 1 <= budget:
+            shown.append(i); budget -= len(cuts[i]) + 1; return True
+        return False
+    for i in range(min(HEAD_PAGES, len(cuts))):
+        take(i)
+    for i in sorted(range(len(cuts)), key=lambda i: (-len(SIGNAL.findall(cuts[i])), i)):   # densest signal pages first
+        if SIGNAL.search(cuts[i]):
+            take(i)
+    for i in range(len(cuts)):
+        take(i)
+    shown.sort()
+    text = "\n".join(f"[página {i + 1}]\n{cuts[i]}" for i in shown)
+    note = "" if len(shown) == len(cuts) else " — páginas mostradas: " + ", ".join(str(i + 1) for i in shown)
+    return text, note
+
+
+KEYWORD = {"pisos_acima_soleira": "piso", "fogos": "fogo", "prazo_meses": "mes", "area_total_construcao": "constru", "area_parcela": "parcela|terreno|lote",
+           "area_implantacao": "implanta", "altura_edificacao": "altura", "custo_total": "custo|valor|total", "validade_seguro_fim": "validade|até|ate",
+           "apolice": "apólice|apolice", "uso": "destina|uso|habita", "wording_annex_vii": "observa"}
+
+
+def quote_for(page_text, value, field, line=None):
+    """The quote the key gives for a fact (D13): a token-aligned piece of the collapsed page that holds the value as a whole
+    token — the labelled line when it is on the page, else the sentence holding the value (preferring one with the field's
+    keyword), narrowed to ±120 characters on token boundaries when long. None when the value is not a whole token of the page."""
+    t = guard.collapse(page_text); v = guard.collapse(value)
+    if line:
+        ln = guard.collapse(line)
+        if guard.aligned(t, ln) and guard.aligned(ln, v):
+            return ln
+    if not guard.aligned(t, v):
+        return None
+    sents = [x.strip() for x in re.split(r"(?<=[.;])\s+", t)]
+    cands = [x for x in sents if guard.aligned(t, x) and guard.aligned(x, v)]
+    kw = re.compile(KEYWORD.get(field, "(?!x)x"), re.I)
+    best = next((x for x in cands if kw.search(x)), cands[0] if cands else t)
+    if len(best) > 300:
+        best = narrow(best, v)
+    return best if guard.aligned(t, best) and guard.aligned(best, v) else None
+
+
+def narrow(text, value, radius=120):
+    sp = guard.tokens(text)
+    k = text.find(value)
+    while k >= 0 and not any(a == k for a, _ in sp):
+        k = text.find(value, k + 1)
+    if k < 0:
+        return text
+    a = min((x for x, _ in sp if x >= k - radius), default=k)
+    b = max((y for _, y in sp if y <= k + len(value) + radius), default=k + len(value))
+    return text[a:b]
 D1_PROMPT = ("Um expediente de comunicação prévia de obras de edificação (CPEDI, Celorico de Basto) traz o ficheiro abaixo. Os elementos instrutórios que este "
              "pedido pode levar são estes (id — texto da Portaria n.º 320/2026/1):\n{shortlist}\n\nLê o texto do ficheiro e diz qual destes elementos ele é: "
              "copia o id em «elemento» e o texto da passagem, letra a letra, em «citacao». Se o ficheiro não é nenhum deles, elemento null e tipo nao_e_elemento; "
@@ -35,22 +109,24 @@ D1_PROMPT = ("Um expediente de comunicação prévia de obras de edificação (C
              "de texto (memória, termo, estimativa, calendarização, certidão, comprovativo, registo fotográfico), mesmo com tabelas, quadros ou figuras; tipo desenhado = "
              "peça desenhada (planta, alçado, corte, pormenor, levantamento topográfico, peças desenhadas).\nResponde {{\"elemento\": <id ou null>, "
              "\"citacao\": <texto ou \"\">, \"tipo\": \"escrito\"|\"desenhado\"|\"nao_e_elemento\"|\"ilegivel\"}}."
-             "\n\nFicheiro: {name} ({pages} página(s))\n---\n{text}\n---")
+             "\n\nFicheiro: {name} ({pages} página(s)){shown}\n---\n{text}\n---")
 DOCS = json.loads((ROOT / "celorico" / "mapping" / "documents.json").read_text(encoding="utf-8"))["documents"]
 SHORTLIST_IDS = sorted({f"portaria-320-2026-1:{d['passages'][0]}" for d in DOCS if "CP/CPEDI" in d["requests"] and d["passages"]},
                        key=lambda i: [int(x) if x.isdigit() else x for x in re.split(r"[.-]", i.split(":anexo-")[1])])
 SHORTLIST = "\n".join(f"{i} — {PORT[i]['text']}" for i in SHORTLIST_IDS if i in PORT)
 D2_FACT = ("Lê o documento abaixo de um expediente CPEDI (Celorico de Basto) e responde à pergunta com {{\"valor\": <texto exato como aparece ou null>, "
            "\"pagina\": <número ou null>, \"citacao\": <a linha onde aparece ou \"\">}}. Se o documento não o diz, valor null.\n\n"
-           "Pergunta: {question}\n\nFicheiro: {name} ({pages} página(s))\n---\n{text}\n---")
+           "Pergunta: {question}\n\nFicheiro: {name} ({pages} página(s)){shown}\n---\n{text}\n---")
 QUESTIONS = {"area_total_construcao": "Qual é a área total de construção declarada?", "area_parcela": "Qual é a área da parcela (ou do terreno) declarada?",
              "area_implantacao": "Qual é a área total de implantação declarada?", "pisos_acima_soleira": "Quantos pisos acima da cota de soleira declara?",
              "uso": "Qual é o uso a que se destina a edificação?", "fogos": "Quantos fogos declara?", "altura_edificacao": "Qual é a altura da edificação declarada?",
              "custo_total": "Qual é o valor da estimativa do custo total da obra?", "validade_seguro_fim": "Até que data é válida a apólice de seguro?",
              "apolice": "Qual é o número da apólice?", "prazo_meses": "Qual é a duração prevista da obra, em meses?",
              "wording_annex_vii": "O termo contém a declaração de conformidade exigida pelo Anexo VII (que o projeto observa as normas legais e regulamentares aplicáveis)? Se sim, valor = essa frase tal como aparece no termo; se não, null."}
-ABSENT = {"area_total_construcao": ["CEO", "CRP", "ASAT", "IMPIC", "FSCI"], "custo_total": ["CRP", "FOTO", "FEE"], "validade_seguro_fim": ["TRDO", "CEO", "MDARQ"],
-          "pisos_acima_soleira": ["EOCT", "CEO", "ASAT"], "apolice": ["REQ", "CEO", "FEE"]}
+ABSENT = {"area_total_construcao": ["CEO", "CRP", "ASAT", "IMPIC", "FSCI"], "custo_total": ["CRP", "FOTO", "FEE", "MDARQ", "MDARQ"], "validade_seguro_fim": ["TRDO", "CEO", "MDARQ"],
+          "pisos_acima_soleira": ["EOCT", "CEO", "ASAT"], "apolice": ["REQ", "CEO", "FEE"], "prazo_meses": ["MDARQ", "MDARQ", "CEO", "TRDO"]}
+# a question is asked as absent only of a file whose labels carry no such fact (a memória may now state its cost or prazo); MDARQ twice = asked more often:
+# the memória that states a prazo in DAYS answers prazo_meses with null (the days-vs-months trap), the one with areas but no cost answers custo_total with null
 
 
 def rid(task, *parts):
@@ -138,12 +214,13 @@ def main():
     a = ap.parse_args()
     rng = random.Random(a.seed)
     src = ROOT / a.src
-    d1, d2, stats = [], [], {"files": 0, "illegible": 0, "noise": 0, "facts": 0, "absent": 0}
+    d1, d2, stats, dropped = [], [], {"files": 0, "illegible": 0, "noise": 0, "facts": 0, "absent": 0, "dropped": 0}, []
     for folder in sorted(p for p in src.iterdir() if p.is_dir()):
         for lab in (json.loads(l) for l in (folder / "labels.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()):
             stats["files"] += 1
             pages, n = extract(folder / lab["file"], lab["is_pdf"])
-            text = "\n".join(f"[página {i + 1}]\n{t}" for i, t in enumerate(pages))[:MAXCH] if pages else "(ficheiro ilegível: não é um PDF)"
+            text, shown = window(pages) if pages else ("(ficheiro ilegível: não é um PDF)", "")
+            cpages = [guard.collapse(t) for t in pages] if pages else []
             # D1
             if pages is None:
                 ans = {"elemento": None, "citacao": "", "tipo": "ilegivel"}; stats["illegible"] += 1
@@ -152,13 +229,13 @@ def main():
             else:
                 ans = {"elemento": lab["element"], "citacao": PORT[lab["element"]]["text"], "tipo": "desenhado" if lab["kind"] == "drawn" else "escrito"}
             shown_name = opaque_name(rng) if (a.augment and rng.random() < 0.5) else lab["file"]   # training: 40 % of base rows carry an uninformative name
-            d1.append({"id": rid("d1", lab["expediente"], lab["file"]), "task": "d1_elemento", "prompt": D1_PROMPT.format(shortlist=SHORTLIST, name=shown_name, pages=n or 0, text=text),
+            d1.append({"id": rid("d1", lab["expediente"], lab["file"]), "task": "d1_elemento", "prompt": D1_PROMPT.format(shortlist=SHORTLIST, name=shown_name, pages=n or 0, shown=shown, text=text),
                        "answer": json.dumps(ans, ensure_ascii=False), "expediente": lab["expediente"]})
             if a.augment and pages is not None and rng.random() < 0.45:
                 stem = lab["file"][len(lab["slot"]) + 1:-4] if lab["file"].startswith(lab["slot"] + "-") else lab["file"][:-4]
                 sname = stranger_name(lab["slot"], stem, rng)
-                ntext = "\n".join(f"[página {i + 1}]\n{damage(t, rng)}" for i, t in enumerate(pages))[:MAXCH]
-                d1.append({"id": rid("d1", lab["expediente"], lab["file"], "aug"), "task": "d1_elemento", "prompt": D1_PROMPT.format(shortlist=SHORTLIST, name=sname, pages=n, text=ntext),
+                ntext, nshown = window([damage(t, rng) for t in pages])
+                d1.append({"id": rid("d1", lab["expediente"], lab["file"], "aug"), "task": "d1_elemento", "prompt": D1_PROMPT.format(shortlist=SHORTLIST, name=sname, pages=n, shown=nshown, text=ntext),
                            "answer": json.dumps(ans, ensure_ascii=False), "expediente": lab["expediente"]})
                 stats["augmented"] = stats.get("augmented", 0) + 1
             if pages is None:
@@ -167,29 +244,41 @@ def main():
             for f in lab["facts"]:
                 if f["field"] not in QUESTIONS:
                     continue
-                if f["field"] == "wording_annex_vii":
-                    present = bool(f["value"])
-                    ans = {"valor": f["value"] if present else None, "pagina": f["page"] if present else None, "citacao": line_with(pages, f["page"], f["value"]) if present else ""}
+                present = bool(f["value"])
+                if present:
+                    q = quote_for(cpages[f["page"] - 1], f["value"], f["field"], f.get("line")) if f["page"] <= len(cpages) else None
+                    ans = {"valor": f["value"], "pagina": f["page"], "citacao": q or ""}
                 else:
-                    ans = {"valor": f["value"], "pagina": f["page"], "citacao": line_with(pages, f["page"], f["value"])}
-                    if not ans["citacao"]:
-                        continue  # the value did not survive extraction (should not happen; counted below)
+                    ans = {"valor": None, "pagina": None, "citacao": ""}
+                prompt = D2_FACT.format(question=QUESTIONS[f["field"]], name=lab["file"], pages=n, shown=shown, text=text)
+                why = "valor não é um token inteiro da página" if (present and not q) else guard.check("d2_facto", prompt, json.dumps(ans, ensure_ascii=False))
+                if why:
+                    # D13/D14: a key the reader cannot give (page not shown, value cut by the window) is never a training row
+                    stats["dropped"] += 1; dropped.append((lab["expediente"], lab["file"], f["field"], why)); continue
                 stats["facts"] += 1
-                d2.append({"id": rid("d2", lab["expediente"], lab["file"], f["field"]), "task": "d2_facto",
-                           "prompt": D2_FACT.format(question=QUESTIONS[f["field"]], name=lab["file"], pages=n, text=text), "answer": json.dumps(ans, ensure_ascii=False), "expediente": lab["expediente"]})
+                d2.append({"id": rid("d2", lab["expediente"], lab["file"], f["field"]), "task": "d2_facto", "prompt": prompt, "answer": json.dumps(ans, ensure_ascii=False), "expediente": lab["expediente"]})
+            have = {f["field"] for f in lab["facts"] if f["value"]}
             for field, slots in ABSENT.items():
-                if lab["slot"] in slots and rng.random() < 0.35:
+                if field not in have and rng.random() < 0.35 * slots.count(lab["slot"]):
                     stats["absent"] += 1
                     d2.append({"id": rid("d2", lab["expediente"], lab["file"], field, "absent"), "task": "d2_facto",
-                               "prompt": D2_FACT.format(question=QUESTIONS[field], name=lab["file"], pages=n, text=text),
+                               "prompt": D2_FACT.format(question=QUESTIONS[field], name=lab["file"], pages=n, shown=shown, text=text),
                                "answer": json.dumps({"valor": None, "pagina": None, "citacao": ""}, ensure_ascii=False), "expediente": lab["expediente"]})
             if lab["noise"] and rng.random() < 0.5:
                 # a question asked of a noise file (funding sheet, tender spec, norm): the answer is null even when a similar-looking number is on the page
                 field = rng.choice(sorted(QUESTIONS))
                 stats["absent"] += 1
                 d2.append({"id": rid("d2", lab["expediente"], lab["file"], field, "noise"), "task": "d2_facto",
-                           "prompt": D2_FACT.format(question=QUESTIONS[field], name=lab["file"], pages=n, text=text),
+                           "prompt": D2_FACT.format(question=QUESTIONS[field], name=lab["file"], pages=n, shown=shown, text=text),
                            "answer": json.dumps({"valor": None, "pagina": None, "citacao": ""}, ensure_ascii=False), "expediente": lab["expediente"]})
+    for r in d1:
+        why = guard.check("d1_elemento", r["prompt"], r["answer"])
+        assert not why, (r["id"], why)
+    if dropped:
+        import collections
+        print("dropped (key outside the language):", dict(collections.Counter(w for *_, w in dropped)))
+        for x in dropped[:8]:
+            print("  ", x)
     out = ROOT / a.out
     for name, rows in (("d1", d1), ("d2", d2)):
         rng.shuffle(rows)

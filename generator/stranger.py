@@ -112,18 +112,22 @@ def main():
     rows = []
     for path, elem, tipo, facts, note in KEYS:
         r = PdfReader(str(ROOT / path)); pages = [(p.extract_text() or "").strip() for p in r.pages]
-        text = "\n".join(f"[página {i + 1}]\n{t}" for i, t in enumerate(pages))[:M.MAXCH]
+        text, shown = M.window(pages)
+        cpages = [M.guard.collapse(t) for t in pages]
         name = Path(path).name
         ans = {"elemento": elem, "citacao": M.PORT[elem]["text"] if elem else "", "tipo": tipo}
-        rows.append({"id": f"d1:{rid('stranger', name)}", "task": "d1_elemento", "prompt": M.D1_PROMPT.format(shortlist=M.SHORTLIST, name=name, pages=len(pages), text=text), "answer": json.dumps(ans, ensure_ascii=False), "note": note})
+        rows.append({"id": f"d1:{rid('stranger', name)}", "task": "d1_elemento", "prompt": M.D1_PROMPT.format(shortlist=M.SHORTLIST, name=name, pages=len(pages), shown=shown, text=text), "answer": json.dumps(ans, ensure_ascii=False), "note": note})
         for field, value in facts:
             if value is None:
                 a = {"valor": None, "pagina": None, "citacao": ""}
             else:
-                page = next((i + 1 for i, t in enumerate(pages) if value in " ".join(t.split())), None)
+                page = next((i + 1 for i, t in enumerate(cpages) if M.guard.aligned(t, value)), None)
                 assert page, (name, value)
-                a = {"valor": value, "pagina": page, "citacao": M.line_with([" ".join(t.split()) for t in pages], page, value)}
-            rows.append({"id": f"d2:{rid('stranger', name, field)}", "task": "d2_facto", "prompt": M.D2_FACT.format(question=M.QUESTIONS[field], name=name, pages=len(pages), text=text), "answer": json.dumps(a, ensure_ascii=False), "note": note})
+                a = {"valor": value, "pagina": page, "citacao": M.quote_for(cpages[page - 1], value, field)}
+            prompt = M.D2_FACT.format(question=M.QUESTIONS[field], name=name, pages=len(pages), shown=shown, text=text)
+            why = M.guard.check("d2_facto", prompt, json.dumps(a, ensure_ascii=False))
+            assert not why, (name, field, why)   # a key outside the language = the window does not show that page: fix window(), not the key
+            rows.append({"id": f"d2:{rid('stranger', name, field)}", "task": "d2_facto", "prompt": prompt, "answer": json.dumps(a, ensure_ascii=False), "note": note})
     out = ROOT / "sealed" / "stranger-test.jsonl"
     with open(out, "w", encoding="utf-8") as f:
         for row in rows:

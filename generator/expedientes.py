@@ -223,9 +223,28 @@ def doc_memory(c, override=None, long=False, rng=None):
     pg_q = d.text(f"Quadro sinóptico: superfície do terreno {o.get('plot', c['plot'])} m2; área de implantação {c['impl']} m2; área total de construção "
                   f"{o.get('built', c['built'])} m2; área permeável {c['perm']} m2; área impermeabilizada {c['imperm']} m2; volume {c['volume']} m3; "
                   f"altura da edificação {str(c['height']).replace('.', ',')} m; altura da fachada {str(c['facade']).replace('.', ',')} m.", tag="quadro")
+    extra = []
+    if rng:
+        # D14: the body goes on (the cost and the prazo land on later pages of a long memória); a prazo written in DAYS carries no
+        # prazo_meses fact — the question "em meses" is then answered null (the days-vs-months trap of the fresh batch)
+        if long and REAL:
+            for h in ("6. SOLUÇÕES CONSTRUTIVAS", "7. REDES E INFRAESTRUTURAS"):
+                d.text(h, bold=True)
+                for _ in range(rng.randrange(4, 9)):
+                    d.text(rng.choice(REAL))
+            if rng.random() < 0.3:
+                d.text("8. ESTIMATIVA DO CUSTO DA OBRA", bold=True)
+                pg_c = d.text(f"O custo total da obra estima-se em {eur(c['cost'])}, com base nas áreas acima e nos valores de referência de custo por m2.", tag="custo")
+                extra.append(("custo_total", eur(c["cost"]), "", pg_c, None))
+        r2 = rng.random()
+        if r2 < 0.25:
+            pg_p = d.text(f"O prazo de execução previsto para a obra é de {c['months']} meses.", tag="prazo")
+            extra.append(("prazo_meses", str(c["months"]), "meses", pg_p, None))
+        elif r2 < 0.5:
+            d.text(f"O prazo de execução previsto para a obra é de {rng.choice([60, 90, 120, 180, 240, 365])} dias a contar da data de início dos trabalhos.")
     sig(d, c, a)
     return d, [("area_total_construcao", str(o.get("built", c["built"])), "m2", pg_b, None), ("area_parcela", str(o.get("plot", c["plot"])), "m2", pg_q, None),
-               ("pisos_acima_soleira", str(c["pisos"]), "", pg_b, None)]
+               ("pisos_acima_soleira", str(c["pisos"]), "", pg_b, None)] + extra
 
 
 def doc_term_author(c, p, project, kind="I", site=None, wording=True):
@@ -447,7 +466,8 @@ def noise_about(c, rng):
     """A document ABOUT an element (norm, postura, guide, technical note, criteria, deliberation, internal note, project sheet, filling instructions, manual,
     diagnostic, tender spec) or a termo of ANOTHER procedure: real expedientes carry these, and none of them is the element it talks about."""
     kind = rng.choice(["norma", "postura", "guia", "nota", "criterios", "deliberacao", "informacao", "ficha-projeto", "instrucoes", "termo-outro", "termo-outro",
-                       "memoria-empresa", "manual", "diagnostico", "caderno", "anexo-regulamento", "analise", "nota-explicativa", "memoria-candidatura"])
+                       "memoria-empresa", "manual", "diagnostico", "caderno", "anexo-regulamento", "analise", "nota-explicativa", "memoria-candidatura",
+                       "indice-pecas", "indice-pecas", "parecer-externo"])   # D14: an index of pieces is not the pieces; an opinion's element list is not an element
     X = rng.choice(ELEMENT_NAMES); M = rng.choice(MUNIS_PT); n = rng.randrange(1, 40)
     X = re.sub(r"^projeto de ", "", X)  # "Postura referente a projetos de estabilidade", not "de projeto de estabilidade"
     if kind == "norma":
@@ -554,6 +574,27 @@ def noise_about(c, rng):
             d.text("Identificação do Técnico    Nome:    Morada:    Freguesia:    Código Postal:    Concelho:    NIF n.º:    E-mail:    Habilitações Académicas:    Associação:    N.º:")
             d.text(f"Declara, na qualidade de diretor de obra, que as obras de urbanização do loteamento sito em {c['site']} se encontram em condições de {fase.lower()}, nos termos do artigo 87.º do RJUE.")
         sig(d, c, who)
+    elif kind == "indice-pecas":
+        d = G.Doc(rng.choice(["ÍNDICE DE PEÇAS DESENHADAS", "LISTA DE PEÇAS", "ÍNDICE GERAL DO PROJETO", "PEÇAS ESCRITAS E DESENHADAS - ÍNDICE", "Índice de peças"]))
+        d.text(f"{c['work']} - {c['site']}    Requerente: {c['people']['requerente']['name']}", size=9)
+        if rng.random() < 0.6:
+            d.text("PEÇAS ESCRITAS", bold=True)
+            for i, nme in enumerate(["Memória descritiva e justificativa", "Termo de responsabilidade do autor do projeto", "Estimativa orçamental", "Calendarização da obra",
+                                     "Projeto de estabilidade", "Projeto de redes de abastecimento de água e drenagem", "Projeto de comportamento térmico", "Projeto acústico", "ITED"], 1):
+                d.text(f"{i:02d}  {nme} " + "." * rng.randrange(20, 60) + f" {rng.randrange(1, 40)} pág.", size=9)
+        d.text("PEÇAS DESENHADAS", bold=True)
+        for i, (nme, sc) in enumerate([("Planta de localização", "1:1000"), ("Planta de implantação", "1:200"), ("Plantas dos pisos", "1:100"), ("Alçados", "1:100"), ("Cortes", "1:100"),
+                                       ("Pormenores construtivos", "1:20"), ("Levantamento topográfico", "1:500"), ("Planta de cobertura", "1:100"), ("Alçados e cortes - vermelhos e amarelos", "1:100")], 1):
+            d.text(f"{i:02d}  {nme}    esc. {sc}    A{rng.choice([1, 2, 3])}    {rng.choice(['DWFx', 'PDF', 'DWG'])}", size=9)
+    elif kind == "parecer-externo":
+        d = G.Doc(rng.choice(["PARECER", "Parecer técnico", "PEDIDO DE PARECER - ELEMENTOS A REMETER", "Consulta a entidade externa"]))
+        d.text(f"Entidade: {rng.choice(['Autoridade Nacional de Emergência e Proteção Civil', 'Infraestruturas de Portugal, S.A.', 'Direção-Geral do Património Cultural', 'Agência Portuguesa do Ambiente', 'Comissão de Coordenação e Desenvolvimento Regional do Norte'])}", size=9)
+        d.text(f"Processo: {rng.randrange(100, 9999)}/2026    Requerente: {c['people']['requerente']['name']}    Local: {c['site']}", size=9)
+        d.text("Para emissão de parecer, o pedido foi instruído com os seguintes elementos:")
+        for i, el in enumerate(rng.sample(ELEMENT_NAMES, rng.randrange(4, 8)), 1):
+            d.text(f"{i}. {el[0].upper() + el[1:]};")
+        d.text(rng.choice(["Face aos elementos apresentados, emite-se parecer favorável condicionado ao cumprimento das disposições legais e regulamentares aplicáveis.",
+                           "Os elementos remetidos não permitem a apreciação do pedido; solicita-se o envio das peças em falta no prazo de 10 dias úteis.", "Emite-se parecer favorável."]))
     elif kind == "anexo-regulamento":
         d = G.Doc(f"ANEXO {rng.choice(['II', 'III', 'IV', 'V'])} — {rng.choice(['OBRAS DE URBANIZAÇÃO', 'OBRAS DE EDIFICAÇÃO', 'ARRANJOS EXTERIORES', 'LOTEAMENTOS'])}")
         d.text("CAPÍTULO I — DOS PROJETOS", bold=True)
