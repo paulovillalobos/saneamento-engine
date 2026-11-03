@@ -11,7 +11,7 @@ $PY -I generator/d1d2.py --src training/expedientes --out training/data --augmen
 git add training/expedientes training/data/d1 training/data/d2 && git commit -q -m "Training set for round 7: 80 expedientes with documents-about-elements noise, other-procedure termos, rich speciality memórias, narrative estimates" || true
 echo "== train r7 $(date -u +%FT%TZ)"
 mkdir -p training/runs/r7
-$MODAL run modal/train_lora.py --run r7 > training/runs/r7/train.log 2>&1 &
+$MODAL run --detach modal/train_lora.py --run r7 > training/runs/r7/train.log 2>&1 &
 TRAIN=$!
 # watchdog: if the log stops growing for 15 minutes (the container died: "Runner terminated"), kill the hung client and go on with the last checkpoint
 LAST=0; STALL=0
