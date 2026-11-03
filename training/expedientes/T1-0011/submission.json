@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Ana Modelo Miguel",
+  "name": "Miguel Exemplo Nuno",
   "nif": "999999990"
  },
- "site": "Rua do Outeiro, n.º 89, Veade, 4890-000 Celorico de Basto",
+ "site": "Rua da Escola, n.º 218, Molares, 4890-000 Celorico de Basto",
  "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-26",
+ "submitted_at": "2026-10-09",
  "files": [
   {
    "slot": "REQ",
@@ -129,6 +129,13 @@
    "slot": "PDPLAC",
    "file": "PDPLAC-pecas-acessibilidades.pdf",
    "title": "Peças desenhadas do plano de acessibilidades",
+   "kind": "drawn",
+   "signed_by": "arquiteto"
+  },
+  {
+   "slot": "P10000",
+   "file": "P10000-planta-localizacao.pdf",
+   "title": "Planta de localização",
    "kind": "drawn",
    "signed_by": "arquiteto"
   },
@@ -407,50 +414,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "lista_elementos_nomeacao_ficheiros.pdf",
-   "title": "Lista de elementos instrutórios",
+   "file": "plano-acessibilidade-todos-2020.pdf",
+   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "nota-explicativa-estimativa-2023.pdf",
+   "file": "informacao-2026-2020.pdf",
+   "title": "INFORMAÇÃO n.º 2/2026",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF58792640440052.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-10-02",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF26348333805943.pdf",
+   "title": "PEÇAS ESCRITAS E DESENHADAS - ÍNDICE",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF68631704982259.pdf",
+   "title": "ANEXO III — OBRAS DE EDIFICAÇÃO",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "valpaços_nota_explicativa.pdf",
    "title": "Nota explicativa — estimativa do custo total da obra",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "vila_anexo_criterio.pdf",
-   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "norma_instrucao_processo_nip.pdf",
-   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-37",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "ficha_verificacao_elementos.pdf",
-   "title": "Ficha de verificação",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "instrucoes_50.pdf",
-   "title": "Instruções Preenchimento_Q3",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "estarreja_nota_tecnica.pdf",
-   "title": "NOTA TÉCNICA N.º 10 — PROJETOS DE COMPORTAMENTO TÉRMICO",
    "kind": "written",
    "signed_by": "requerente"
   }

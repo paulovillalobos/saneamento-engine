@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Bruno Simulado Xavier",
+  "name": "Teresa de Teste Sérgio",
   "nif": "999999990"
  },
- "site": "Lugar de Vilar, n.º 213, Gagos, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-02",
+ "site": "Rua do Outeiro, n.º 72, Corgo, 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
+ "submitted_at": "2026-10-03",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -414,43 +414,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "norma_12.pdf",
-   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-32",
+   "file": "castro_plano_acessibilidade.pdf",
+   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "carta_cmcb.pdf",
-   "title": "Carta",
+   "file": "anexo-loteamentos-2026.pdf",
+   "title": "ANEXO II — LOTEAMENTOS",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "valpaços_primeira_analise.pdf",
-   "title": "Primeira Análise — Portaria n.º 320/2026/1 e estimativa do c",
+   "file": "informacao_78.pdf",
+   "title": "INFORMAÇÃO n.º 13/2026",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "lista_elementos_nomeacao_ficheiros.pdf",
-   "title": "Lista de elementos instrutórios",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "norma_68.pdf",
-   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-05",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "ficha_verificacao_elementos.pdf",
-   "title": "Ficha de verificação",
+   "file": "instrucoes_preenchimento.pdf",
+   "title": "Instruções Preenchimento_Q3",
    "kind": "written",
    "signed_by": "requerente"
   }

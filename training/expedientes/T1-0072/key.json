@@ -2,83 +2,67 @@
  "expediente": "T1-0072",
  "case": {
   "id": "T1-0072",
-  "work": "construção de moradia unifamiliar",
+  "work": "alteração e ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 2460,
-  "impl": 881,
-  "built": 1541,
-  "imperm": 1029,
-  "perm": 1431,
-  "volume": 4777,
-  "height": 6.9,
-  "facade": 6.2,
+  "plot": 1030,
+  "impl": 458,
+  "built": 827,
+  "imperm": 652,
+  "perm": 378,
+  "volume": 2563,
+  "height": 7.6,
+  "facade": 6.9,
   "parking": 2,
-  "cost": 1368400,
-  "submitted": "2026-10-03",
-  "site": "Rua do Outeiro, n.º 72, Corgo, 4890-000 Celorico de Basto",
+  "cost": 616900,
+  "submitted": "2026-11-28",
+  "site": "Rua do Outeiro, n.º 164, Gagos, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 15,
+  "months": 8,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Teresa de Teste Sérgio",
+    "name": "Inês Exemplo Pedro",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "69442-SIM",
-    "address": "Rua do Outeiro, n.º 72, Corgo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7371"
+    "number": "35793-SIM",
+    "address": "Rua do Outeiro, n.º 164, Gagos, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0204"
    },
    "arquiteto": {
-    "name": "Bruno Simulado Filipe",
+    "name": "Inês Exemplo Eva",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "54879-SIM",
-    "address": "Lugar de Vilar, n.º 111, 4800-000 Guimarães",
-    "policy": "SIM-RC-8280"
+    "number": "31303-SIM",
+    "address": "Lugar da Devesa, n.º 105, 4800-000 Guimarães",
+    "policy": "SIM-RC-0081"
    },
    "engenheiro": {
-    "name": "Helena Fictício Bruno",
+    "name": "Helena Modelo Filipe",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "49701-SIM",
-    "address": "Lugar de Vilar, n.º 111, 4700-000 Braga",
-    "policy": "SIM-RC-7069"
+    "number": "30102-SIM",
+    "address": "Travessa do Souto, n.º 25, 4000-000 Porto",
+    "policy": "SIM-RC-3164"
    },
    "diretor": {
-    "name": "Teresa Fictício Inês",
+    "name": "Helena Simulado Olga",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "46394-SIM",
-    "address": "Rua do Outeiro, n.º 38, 4700-000 Braga",
-    "policy": "SIM-RC-1678"
+    "number": "96935-SIM",
+    "address": "Lugar da Devesa, n.º 19, 4000-000 Porto",
+    "policy": "SIM-RC-7640"
    }
   }
  },
- "planted": [
-  {
-   "type": "value_mismatch",
-   "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "1541 m2",
-    "MDARQ": "1642 m2"
-   }
-  }
- ],
- "n_planted": 1,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

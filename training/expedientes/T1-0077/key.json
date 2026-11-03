@@ -5,90 +5,64 @@
   "work": "ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 1,
-  "plot": 350,
-  "impl": 61,
-  "built": 54,
-  "imperm": 109,
-  "perm": 241,
-  "volume": 167,
-  "height": 3.9,
-  "facade": 3.2,
+  "pisos": 2,
+  "plot": 330,
+  "impl": 137,
+  "built": 240,
+  "imperm": 185,
+  "perm": 145,
+  "volume": 744,
+  "height": 7.0,
+  "facade": 6.3,
   "parking": 2,
-  "cost": 36700,
-  "submitted": "2026-11-19",
-  "site": "Rua da Escola, n.º 266, Basto (São Clemente), 4890-000 Celorico de Basto",
+  "cost": 238300,
+  "submitted": "2026-12-17",
+  "site": "Caminho da Lameira, n.º 85, Molares, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 13,
+  "months": 17,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Xavier Simulado Teresa",
+    "name": "João Exemplo Sérgio",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "58612-SIM",
-    "address": "Rua da Escola, n.º 266, Basto (São Clemente), 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5968"
+    "number": "43486-SIM",
+    "address": "Caminho da Lameira, n.º 85, Molares, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1066"
    },
    "arquiteto": {
-    "name": "Nuno Fictício Vasco",
+    "name": "Carla de Teste Xavier",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "65927-SIM",
-    "address": "Caminho da Lameira, n.º 16, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0387"
+    "number": "56180-SIM",
+    "address": "Rua das Tílias, n.º 48, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9444"
    },
    "engenheiro": {
-    "name": "João Amostra Sérgio",
+    "name": "Carla Amostra Eva",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "09113-SIM",
-    "address": "Caminho da Lameira, n.º 8, 4000-000 Porto",
-    "policy": "SIM-RC-6068"
+    "number": "74072-SIM",
+    "address": "Lugar de Carvalhal, n.º 65, 4800-000 Guimarães",
+    "policy": "SIM-RC-3685"
    },
    "diretor": {
-    "name": "Miguel Simulado Sérgio",
+    "name": "Teresa de Teste Olga",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "60008-SIM",
-    "address": "Caminho da Lameira, n.º 91, 4000-000 Porto",
-    "policy": "SIM-RC-0912"
+    "number": "45076-SIM",
+    "address": "Caminho da Lameira, n.º 23, 4000-000 Porto",
+    "policy": "SIM-RC-1850"
    }
   }
  },
- "planted": [
-  {
-   "type": "not_pdfa",
-   "target": {
-    "slot": "CEO"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
-   "type": "value_mismatch",
-   "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "54 m2",
-    "MDARQ": "-11 m2"
-   }
-  }
- ],
- "n_planted": 2,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

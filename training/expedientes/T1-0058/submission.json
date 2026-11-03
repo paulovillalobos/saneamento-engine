@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Gonçalo Simulado Olga",
+  "name": "Helena de Teste Rita",
   "nif": "999999990"
  },
- "site": "Rua das Tílias, n.º 109, Ribas, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-10-23",
+ "site": "Caminho da Lameira, n.º 123, Rego, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de habitação bifamiliar",
+ "submitted_at": "2026-12-07",
  "files": [
   {
    "slot": "REQ",
@@ -414,43 +414,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "nota_73.pdf",
-   "title": "NOTA TÉCNICA N.º 24 — PROJETOS DE PLANO DE ACESSIBILIDADES",
+   "file": "minuta-memoria-descritiva-2022.pdf",
+   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "loures_municipio_loures.pdf",
-   "title": "MUNICÍPIO DE LOURES — AQUISIÇÃO DE SERVIÇOS DE FISCALIZAÇÃO ",
+   "file": "fatura_agua_2026_08.pdf",
+   "title": "Fatura de água",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "carta_cmcb.pdf",
-   "title": "Carta",
+   "file": "plano-acessibilidade-todos-2026.pdf",
+   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "criterios_41.pdf",
-   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "PDF84770313890020.pdf",
-   "title": "NOTA TÉCNICA N.º 27 — PROJETOS DE REGISTO FOTOGRÁFICO",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "benavente_manual_normas.pdf",
-   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
+   "file": "PDF95952159680368.pdf",
+   "title": "Postura Municipal Referente a Projetos de Estimativa do cust",
    "kind": "written",
    "signed_by": "requerente"
   }

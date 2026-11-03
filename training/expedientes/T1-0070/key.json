@@ -2,112 +2,78 @@
  "expediente": "T1-0070",
  "case": {
   "id": "T1-0070",
-  "work": "ampliação de moradia unifamiliar",
+  "work": "construção de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 1,
-  "plot": 410,
-  "impl": 115,
-  "built": 104,
-  "imperm": 287,
-  "perm": 123,
-  "volume": 322,
-  "height": 3.8,
-  "facade": 3.1,
+  "pisos": 2,
+  "plot": 2930,
+  "impl": 646,
+  "built": 1104,
+  "imperm": 783,
+  "perm": 2147,
+  "volume": 3422,
+  "height": 7.0,
+  "facade": 6.3,
   "parking": 2,
-  "cost": 87600,
-  "submitted": "2026-12-13",
-  "site": "Caminho da Lameira, n.º 41, Britelo, 4890-000 Celorico de Basto",
+  "cost": 1212100,
+  "submitted": "2026-11-16",
+  "site": "Lugar da Devesa, n.º 84, Rego, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
   "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Olga Amostra Eva",
+    "name": "Sérgio de Teste Inês",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "62208-SIM",
-    "address": "Caminho da Lameira, n.º 41, Britelo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4927"
+    "number": "75543-SIM",
+    "address": "Lugar da Devesa, n.º 84, Rego, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2523"
    },
    "arquiteto": {
-    "name": "Vasco de Teste Bruno",
+    "name": "Rita Fictício Nuno",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "81549-SIM",
-    "address": "Lugar da Devesa, n.º 38, 4000-000 Porto",
-    "policy": "SIM-RC-7989"
+    "number": "72180-SIM",
+    "address": "Lugar de Carvalhal, n.º 23, 4700-000 Braga",
+    "policy": "SIM-RC-8427"
    },
    "engenheiro": {
-    "name": "Carla Fictício Xavier",
+    "name": "Bruno Modelo Filipe",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "51239-SIM",
-    "address": "Lugar de Carvalhal, n.º 34, 4800-000 Guimarães",
-    "policy": "SIM-RC-0369"
+    "number": "54892-SIM",
+    "address": "Lugar de Carvalhal, n.º 96, 4000-000 Porto",
+    "policy": "SIM-RC-3246"
    },
    "diretor": {
-    "name": "Olga Simulado João",
+    "name": "Bruno Modelo Xavier",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "07439-SIM",
-    "address": "Lugar da Devesa, n.º 26, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2964"
+    "number": "52972-SIM",
+    "address": "Travessa do Souto, n.º 91, 4800-000 Guimarães",
+    "policy": "SIM-RC-0096"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "not_pdf",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
-   },
-   "basis": "documents",
-   "values": {
-    "area_parcela": "4100 m2",
-    "area_implantacao": "115 m2",
-    "MDARQ": "410 m2"
-   }
-  },
-  {
-   "type": "missing_required",
-   "target": {
-    "slot": "SRCCP"
+    "slot": "FOTO"
    },
    "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
-   }
-  },
-  {
-   "type": "template_wording_missing",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
-   },
-   "basis": "documents",
-   "values": {
-    "declarante": "Olga Simulado João",
-    "assinante": "Vasco de Teste Bruno"
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   }
  ],
- "n_planted": 4,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

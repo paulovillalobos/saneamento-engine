@@ -2,83 +2,94 @@
  "expediente": "T1-0027",
  "case": {
   "id": "T1-0027",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
   "pisos": 2,
-  "plot": 1140,
-  "impl": 499,
-  "built": 870,
-  "imperm": 632,
-  "perm": 508,
-  "volume": 2697,
-  "height": 7.3,
-  "facade": 6.6,
-  "parking": 4,
-  "cost": 681200,
-  "submitted": "2026-11-05",
-  "site": "Lugar da Devesa, n.º 163, Agilde, 4890-000 Celorico de Basto",
+  "plot": 3910,
+  "impl": 1299,
+  "built": 2420,
+  "imperm": 1423,
+  "perm": 2487,
+  "volume": 7502,
+  "height": 6.9,
+  "facade": 6.2,
+  "parking": 2,
+  "cost": 2867700,
+  "submitted": "2026-11-16",
+  "site": "Lugar da Devesa, n.º 225, Caçarilhe, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 12,
+  "months": 10,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Ana de Teste Filipe",
+    "name": "Gonçalo Modelo Xavier",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "30662-SIM",
-    "address": "Lugar da Devesa, n.º 163, Agilde, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9707"
+    "number": "92442-SIM",
+    "address": "Lugar da Devesa, n.º 225, Caçarilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5815"
    },
    "arquiteto": {
-    "name": "Rita Simulado Carla",
+    "name": "Diogo Fictício Diogo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "18507-SIM",
-    "address": "Lugar de Carvalhal, n.º 73, 4700-000 Braga",
-    "policy": "SIM-RC-3425"
+    "number": "91393-SIM",
+    "address": "Travessa do Souto, n.º 1, 4800-000 Guimarães",
+    "policy": "SIM-RC-3842"
    },
    "engenheiro": {
-    "name": "Miguel Amostra Eva",
+    "name": "Carla de Teste Rita",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "37706-SIM",
-    "address": "Lugar da Devesa, n.º 9, 4800-000 Guimarães",
-    "policy": "SIM-RC-7786"
+    "number": "81132-SIM",
+    "address": "Rua da Escola, n.º 74, 4800-000 Guimarães",
+    "policy": "SIM-RC-9183"
    },
    "diretor": {
-    "name": "Ana Modelo Pedro",
+    "name": "João Exemplo Bruno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "26822-SIM",
-    "address": "Rua do Outeiro, n.º 27, 4000-000 Porto",
-    "policy": "SIM-RC-4982"
+    "number": "88840-SIM",
+    "address": "Rua da Escola, n.º 36, 4800-000 Guimarães",
+    "policy": "SIM-RC-7175"
    }
   }
  },
  "planted": [
   {
-   "type": "expired_insurance",
+   "type": "value_mismatch",
    "target": {
-    "slot": "SRCARQ"
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
    },
    "basis": "documents",
    "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-11-05"
+    "REQ": "2420 m2",
+    "MDARQ": "2518 m2"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
    },
-   "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   "basis": "documents",
+   "values": {
+    "REQ": "Lugar da Devesa, n.º 225, Caçarilhe, 4890-000 Celorico de Basto",
+    "TRPARQ": "Rua da Escola, n.º 138, Veade, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

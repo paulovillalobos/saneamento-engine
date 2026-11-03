@@ -2,78 +2,92 @@
  "expediente": "T1-0061",
  "case": {
   "id": "T1-0061",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
-  "fogos": 0,
-  "pisos": 1,
-  "plot": 2780,
-  "impl": 471,
-  "built": 408,
-  "imperm": 559,
-  "perm": 2221,
-  "volume": 1264,
-  "height": 4.3,
-  "facade": 3.6,
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 630,
+  "impl": 149,
+  "built": 255,
+  "imperm": 346,
+  "perm": 284,
+  "volume": 790,
+  "height": 7.4,
+  "facade": 6.7,
   "parking": 2,
-  "cost": 270900,
-  "submitted": "2026-11-21",
-  "site": "Lugar de Carvalhal, n.º 74, Canedo de Basto, 4890-000 Celorico de Basto",
+  "cost": 297300,
+  "submitted": "2026-11-12",
+  "site": "Lugar da Devesa, n.º 205, Carvalho, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 18,
+  "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Nuno Exemplo Inês",
+    "name": "Pedro de Teste Filipe",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "80390-SIM",
-    "address": "Lugar de Carvalhal, n.º 74, Canedo de Basto, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6502"
+    "number": "79809-SIM",
+    "address": "Lugar da Devesa, n.º 205, Carvalho, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2670"
    },
    "arquiteto": {
-    "name": "Xavier Modelo Carla",
+    "name": "Xavier Exemplo Teresa",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "03864-SIM",
-    "address": "Rua do Outeiro, n.º 71, 4700-000 Braga",
-    "policy": "SIM-RC-4040"
+    "number": "53191-SIM",
+    "address": "Travessa do Souto, n.º 40, 4000-000 Porto",
+    "policy": "SIM-RC-7522"
    },
    "engenheiro": {
-    "name": "Xavier Amostra Miguel",
+    "name": "Filipe Modelo Olga",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "57792-SIM",
-    "address": "Travessa do Souto, n.º 11, 4000-000 Porto",
-    "policy": "SIM-RC-3825"
+    "number": "65293-SIM",
+    "address": "Lugar de Vilar, n.º 95, 4000-000 Porto",
+    "policy": "SIM-RC-0509"
    },
    "diretor": {
-    "name": "Leonor Fictício Gonçalo",
+    "name": "Teresa Amostra Teresa",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "70335-SIM",
-    "address": "Lugar de Vilar, n.º 71, 4000-000 Porto",
-    "policy": "SIM-RC-8358"
+    "number": "63819-SIM",
+    "address": "Lugar de Vilar, n.º 31, 4000-000 Porto",
+    "policy": "SIM-RC-8816"
    }
   }
  },
  "planted": [
   {
-   "type": "not_pdfa",
+   "type": "impossible_value",
    "target": {
-    "slot": "CEO"
+    "field": "area_parcela",
+    "slot": "REQ"
    },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   "basis": "documents",
+   "values": {
+    "area_parcela": "6300 m2",
+    "area_implantacao": "149 m2",
+    "MDARQ": "630 m2"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Lugar da Devesa, n.º 205, Carvalho, 4890-000 Celorico de Basto",
+    "TRPARQ": "Caminho da Lameira, n.º 292, Moreira do Castelo, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

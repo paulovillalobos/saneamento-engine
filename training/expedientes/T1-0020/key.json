@@ -2,115 +2,67 @@
  "expediente": "T1-0020",
  "case": {
   "id": "T1-0020",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
   "fogos": 0,
-  "pisos": 1,
-  "plot": 2640,
-  "impl": 519,
-  "built": 475,
-  "imperm": 718,
-  "perm": 1922,
-  "volume": 1472,
-  "height": 4.2,
-  "facade": 3.5,
+  "pisos": 3,
+  "plot": 1530,
+  "impl": 296,
+  "built": 849,
+  "imperm": 413,
+  "perm": 1117,
+  "volume": 2631,
+  "height": 9.9,
+  "facade": 9.2,
   "parking": 2,
-  "cost": 471600,
-  "submitted": "2026-12-21",
-  "site": "Lugar de Vilar, n.º 197, Rego, 4890-000 Celorico de Basto",
+  "cost": 683400,
+  "submitted": "2026-12-10",
+  "site": "Lugar da Devesa, n.º 1, Gagos, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 9,
+  "months": 22,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Diogo de Teste Ana",
+    "name": "Rita Fictício Eva",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "34528-SIM",
-    "address": "Lugar de Vilar, n.º 197, Rego, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0246"
+    "number": "05087-SIM",
+    "address": "Lugar da Devesa, n.º 1, Gagos, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8409"
    },
    "arquiteto": {
-    "name": "Leonor de Teste João",
+    "name": "Rita de Teste Xavier",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "78225-SIM",
-    "address": "Rua da Escola, n.º 27, 4000-000 Porto",
-    "policy": "SIM-RC-5385"
+    "number": "15616-SIM",
+    "address": "Caminho da Lameira, n.º 104, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7038"
    },
    "engenheiro": {
-    "name": "Diogo Amostra Carla",
+    "name": "Ana de Teste Carla",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "17825-SIM",
-    "address": "Caminho da Lameira, n.º 53, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-3811"
+    "number": "84716-SIM",
+    "address": "Lugar de Carvalhal, n.º 15, 4700-000 Braga",
+    "policy": "SIM-RC-9923"
    },
    "diretor": {
-    "name": "Ana Amostra Filipe",
+    "name": "Inês Exemplo Miguel",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "67083-SIM",
-    "address": "Lugar da Devesa, n.º 39, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6194"
+    "number": "31219-SIM",
+    "address": "Rua da Escola, n.º 14, 4700-000 Braga",
+    "policy": "SIM-RC-2126"
    }
   }
  },
- "planted": [
-  {
-   "type": "expired_insurance",
-   "target": {
-    "slot": "SRCARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-12-21"
-   },
-   "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
-   }
-  },
-  {
-   "type": "template_wording_missing",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
-   },
-   "basis": "documents",
-   "values": {
-    "declarante": "Ana Amostra Filipe",
-    "assinante": "Leonor de Teste João"
-   }
-  },
-  {
-   "type": "wrong_site",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "Lugar de Vilar, n.º 197, Rego, 4890-000 Celorico de Basto",
-    "TRPARQ": "Rua das Tílias, n.º 119, Agilde, 4890-000 Celorico de Basto"
-   }
-  }
- ],
- "n_planted": 4,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

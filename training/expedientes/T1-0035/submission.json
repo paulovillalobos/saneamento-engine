@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Nuno Amostra Nuno",
+  "name": "Bruno Fictício João",
   "nif": "999999990"
  },
- "site": "Lugar de Carvalhal, n.º 57, Infesta, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-11-20",
+ "site": "Rua das Tílias, n.º 179, Carvalho, 4890-000 Celorico de Basto",
+ "operation": "alteração e ampliação de moradia unifamiliar",
+ "submitted_at": "2026-10-25",
  "files": [
   {
    "slot": "REQ",
@@ -60,7 +60,7 @@
    "file": "TRPLAC-termo-acessibilidades.pdf",
    "title": "Termo de responsabilidade do autor do plano de acessibilidades",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "TRDO",
@@ -82,13 +82,6 @@
    "title": "Comprovativo de contratação do diretor de obra",
    "kind": "written",
    "signed_by": "requerente"
-  },
-  {
-   "slot": "FOTO",
-   "file": "FOTO-registo-fotografico.pdf",
-   "title": "Registo fotográfico da situação existente",
-   "kind": "written",
-   "signed_by": "arquiteto"
   },
   {
    "slot": "MDARQ",
@@ -165,7 +158,7 @@
    "file": "ALC-alcados.pdf",
    "title": "Alçados",
    "kind": "drawn",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "CORTES",
@@ -414,15 +407,36 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "diagnostico_32.pdf",
-   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
+   "file": "instrucoes-preenchimento-2021.pdf",
+   "title": "Instruções Preenchimento_Q3",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "manual_45.pdf",
-   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
+   "file": "ficha_projeto.pdf",
+   "title": "Ficha de Projeto",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF32407804260822.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "anexo_regulamento_68.pdf",
+   "title": "ANEXO V — OBRAS DE EDIFICAÇÃO",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "lista_elementos_nomeacao_ficheiros.pdf",
+   "title": "Lista de elementos instrutórios",
    "kind": "written",
    "signed_by": "requerente"
   },
@@ -430,13 +444,6 @@
    "slot": "OUTDOC",
    "file": "fatura_agua_2026_08.pdf",
    "title": "Fatura de água",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "municipio-vila-nova-2019.pdf",
-   "title": "MUNICÍPIO DE VILA NOVA DE CERVEIRA — AQUISIÇÃO DE SERVIÇOS D",
    "kind": "written",
    "signed_by": "requerente"
   }

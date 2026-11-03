@@ -2,79 +2,103 @@
  "expediente": "T1-0005",
  "case": {
   "id": "T1-0005",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 1710,
-  "impl": 523,
-  "built": 916,
-  "imperm": 565,
-  "perm": 1145,
-  "volume": 2839,
-  "height": 6.9,
-  "facade": 6.2,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 3810,
+  "impl": 756,
+  "built": 698,
+  "imperm": 898,
+  "perm": 2912,
+  "volume": 2163,
+  "height": 4.7,
+  "facade": 4.0,
   "parking": 2,
-  "cost": 601800,
-  "submitted": "2026-10-17",
-  "site": "Lugar da Devesa, n.º 257, Ribas, 4890-000 Celorico de Basto",
+  "cost": 748200,
+  "submitted": "2026-11-18",
+  "site": "Caminho da Lameira, n.º 113, Basto (São Clemente), 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 15,
+  "months": 10,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Helena de Teste Rita",
+    "name": "Sérgio Amostra Miguel",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "91039-SIM",
-    "address": "Lugar da Devesa, n.º 257, Ribas, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5521"
+    "number": "21901-SIM",
+    "address": "Caminho da Lameira, n.º 113, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4909"
    },
    "arquiteto": {
-    "name": "Teresa Modelo Inês",
+    "name": "Teresa de Teste Filipe",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "85726-SIM",
-    "address": "Rua do Outeiro, n.º 7, 4000-000 Porto",
-    "policy": "SIM-RC-8384"
+    "number": "92918-SIM",
+    "address": "Lugar de Carvalhal, n.º 77, 4000-000 Porto",
+    "policy": "SIM-RC-2020"
    },
    "engenheiro": {
-    "name": "Miguel Fictício Sérgio",
+    "name": "Xavier Modelo Vasco",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "27718-SIM",
-    "address": "Caminho da Lameira, n.º 39, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9050"
+    "number": "50440-SIM",
+    "address": "Lugar de Vilar, n.º 20, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6992"
    },
    "diretor": {
-    "name": "Miguel Fictício Pedro",
+    "name": "Gonçalo Modelo Bruno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "78932-SIM",
-    "address": "Travessa do Souto, n.º 110, 4000-000 Porto",
-    "policy": "SIM-RC-9931"
+    "number": "65884-SIM",
+    "address": "Rua das Tílias, n.º 92, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6292"
    }
   }
  },
  "planted": [
   {
-   "type": "wrong_signer",
+   "type": "expired_insurance",
    "target": {
-    "slot": "TRDO"
+    "slot": "SRCARQ"
    },
    "basis": "documents",
    "values": {
-    "declarante": "Miguel Fictício Pedro",
-    "assinante": "Teresa Modelo Inês"
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-11-18"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "EOCT"
+   },
+   "law": {
+    "ref": "V.27.f",
+    "quote": "f) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRDO"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

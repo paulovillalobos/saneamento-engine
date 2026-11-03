@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Gonçalo Modelo Nuno",
+  "name": "Carla Exemplo Inês",
   "nif": "999999990"
  },
- "site": "Lugar de Vilar, n.º 147, Britelo, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-11-13",
+ "site": "Lugar de Vilar, n.º 257, Molares, 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
+ "submitted_at": "2026-10-14",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -88,7 +88,7 @@
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "MDARQ",
@@ -157,13 +157,6 @@
    "slot": "PLANT",
    "file": "PLANT-plantas.pdf",
    "title": "Plantas",
-   "kind": "drawn",
-   "signed_by": "arquiteto"
-  },
-  {
-   "slot": "ALC",
-   "file": "ALC-alcados.pdf",
-   "title": "Alçados",
    "kind": "drawn",
    "signed_by": "arquiteto"
   },
@@ -414,22 +407,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "loures_plano_acessibilidade.pdf",
-   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
+   "file": "fatura_agua_2026_08.pdf",
+   "title": "Fatura de água",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "termo_outro_60.pdf",
-   "title": "Termo de responsabilidade do diretor de obra ou do diretor d",
+   "file": "ficha_verificacao_elementos.pdf",
+   "title": "Ficha de verificação",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "parecer_tecnico_portaria_320.pdf",
-   "title": "Parecer técnico — Portaria n.º 320/2026/1 e redes prediais d",
+   "file": "anexo-criterio-elaboracao-2023.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
    "kind": "written",
    "signed_by": "requerente"
   }

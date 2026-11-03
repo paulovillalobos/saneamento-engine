@@ -6,76 +6,79 @@
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 1660,
-  "impl": 311,
-  "built": 534,
-  "imperm": 477,
-  "perm": 1183,
-  "volume": 1655,
-  "height": 7.2,
-  "facade": 6.5,
+  "plot": 3270,
+  "impl": 880,
+  "built": 1530,
+  "imperm": 1013,
+  "perm": 2257,
+  "volume": 4743,
+  "height": 7.3,
+  "facade": 6.6,
   "parking": 2,
-  "cost": 389800,
-  "submitted": "2026-10-26",
-  "site": "Rua do Outeiro, n.º 89, Veade, 4890-000 Celorico de Basto",
+  "cost": 1855800,
+  "submitted": "2026-10-09",
+  "site": "Rua da Escola, n.º 218, Molares, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 21,
+  "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Ana Modelo Miguel",
+    "name": "Miguel Exemplo Nuno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "64789-SIM",
-    "address": "Rua do Outeiro, n.º 89, Veade, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9799"
+    "number": "37903-SIM",
+    "address": "Rua da Escola, n.º 218, Molares, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1476"
    },
    "arquiteto": {
-    "name": "Rita Fictício Olga",
+    "name": "Ana Exemplo Inês",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "60269-SIM",
-    "address": "Lugar da Devesa, n.º 70, 4700-000 Braga",
-    "policy": "SIM-RC-7900"
+    "number": "61865-SIM",
+    "address": "Caminho da Lameira, n.º 102, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7888"
    },
    "engenheiro": {
-    "name": "Carla de Teste Olga",
+    "name": "Leonor Exemplo Pedro",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "27393-SIM",
-    "address": "Rua da Escola, n.º 96, 4800-000 Guimarães",
-    "policy": "SIM-RC-8427"
+    "number": "16271-SIM",
+    "address": "Lugar de Carvalhal, n.º 46, 4700-000 Braga",
+    "policy": "SIM-RC-6803"
    },
    "diretor": {
-    "name": "Rita Simulado Nuno",
+    "name": "Eva Simulado Filipe",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "81719-SIM",
-    "address": "Rua das Tílias, n.º 6, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7512"
+    "number": "35109-SIM",
+    "address": "Lugar da Devesa, n.º 110, 4700-000 Braga",
+    "policy": "SIM-RC-9660"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "impossible_value",
    "target": {
-    "slot": "P10000"
+    "field": "area_parcela",
+    "slot": "REQ"
    },
-   "law": {
-    "ref": "V.2",
-    "quote": "2 - Delimitação da área objeto da operação urbanística e sua área de enquadramento em planta de localização fornecida pela câmara municipal ou planta de localização à escala 1:1.000;"
+   "basis": "documents",
+   "values": {
+    "area_parcela": "327 m2",
+    "area_implantacao": "880 m2",
+    "MDARQ": "3270 m2"
    }
   },
   {
    "type": "not_pdfa",
    "target": {
-    "slot": "MDPAP"
+    "slot": "CEO"
    },
    "law": {
     "ref": "VI.1.a",

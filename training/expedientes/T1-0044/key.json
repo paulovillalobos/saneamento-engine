@@ -2,93 +2,78 @@
  "expediente": "T1-0044",
  "case": {
   "id": "T1-0044",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
-  "fogos": 0,
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
   "pisos": 1,
-  "plot": 2140,
-  "impl": 503,
-  "built": 494,
-  "imperm": 570,
-  "perm": 1570,
-  "volume": 1531,
-  "height": 4.8,
-  "facade": 4.1,
+  "plot": 2070,
+  "impl": 411,
+  "built": 381,
+  "imperm": 597,
+  "perm": 1473,
+  "volume": 1181,
+  "height": 4.1,
+  "facade": 3.4,
   "parking": 2,
-  "cost": 325000,
-  "submitted": "2026-11-08",
-  "site": "Rua da Escola, n.º 256, Basto (São Clemente), 4890-000 Celorico de Basto",
+  "cost": 409100,
+  "submitted": "2026-10-26",
+  "site": "Rua do Outeiro, n.º 1, Corgo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 8,
+  "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Carla Modelo Pedro",
+    "name": "Eva Modelo Carla",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "01328-SIM",
-    "address": "Rua da Escola, n.º 256, Basto (São Clemente), 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6365"
+    "number": "04238-SIM",
+    "address": "Rua do Outeiro, n.º 1, Corgo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3762"
    },
    "arquiteto": {
-    "name": "Helena Modelo Xavier",
+    "name": "Miguel de Teste Eva",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "37280-SIM",
-    "address": "Lugar de Vilar, n.º 93, 4700-000 Braga",
-    "policy": "SIM-RC-2647"
+    "number": "13290-SIM",
+    "address": "Caminho da Lameira, n.º 113, 4800-000 Guimarães",
+    "policy": "SIM-RC-5827"
    },
    "engenheiro": {
-    "name": "Carla de Teste Miguel",
+    "name": "Xavier Simulado Teresa",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "12291-SIM",
-    "address": "Travessa do Souto, n.º 103, 4700-000 Braga",
-    "policy": "SIM-RC-3354"
+    "number": "09144-SIM",
+    "address": "Lugar de Carvalhal, n.º 5, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5102"
    },
    "diretor": {
-    "name": "Leonor Modelo Teresa",
+    "name": "João Amostra Nuno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "59717-SIM",
-    "address": "Travessa do Souto, n.º 56, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2705"
+    "number": "41213-SIM",
+    "address": "Rua das Tílias, n.º 62, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1965"
    }
   }
  },
  "planted": [
   {
-   "type": "template_wording_missing",
+   "type": "missing_required",
    "target": {
-    "slot": "TRPARQ"
+    "slot": "TRCP"
    },
    "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
-   }
-  },
-  {
-   "type": "value_mismatch",
-   "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "494 m2",
-    "MDARQ": "377 m2"
+    "ref": "V.12",
+    "quote": "12 - Termo de responsabilidade do coordenador de projeto quanto à garantia de compatibilidade entre os diversos projetos;"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

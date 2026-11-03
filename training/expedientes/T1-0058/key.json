@@ -2,67 +2,91 @@
  "expediente": "T1-0058",
  "case": {
   "id": "T1-0058",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 2,
-  "plot": 3350,
-  "impl": 1422,
-  "built": 2654,
-  "imperm": 1603,
-  "perm": 1747,
-  "volume": 8227,
-  "height": 7.0,
-  "facade": 6.3,
-  "parking": 2,
-  "cost": 2062100,
-  "submitted": "2026-10-23",
-  "site": "Rua das Tílias, n.º 109, Ribas, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 3,
+  "plot": 1770,
+  "impl": 416,
+  "built": 1106,
+  "imperm": 447,
+  "perm": 1323,
+  "volume": 3428,
+  "height": 10.5,
+  "facade": 9.8,
+  "parking": 4,
+  "cost": 977700,
+  "submitted": "2026-12-07",
+  "site": "Caminho da Lameira, n.º 123, Rego, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 12,
+  "months": 16,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Gonçalo Simulado Olga",
+    "name": "Helena de Teste Rita",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "10530-SIM",
-    "address": "Rua das Tílias, n.º 109, Ribas, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4940"
+    "number": "54857-SIM",
+    "address": "Caminho da Lameira, n.º 123, Rego, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0763"
    },
    "arquiteto": {
-    "name": "Inês Modelo Sérgio",
+    "name": "Helena Fictício Teresa",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "96067-SIM",
-    "address": "Lugar de Carvalhal, n.º 110, 4800-000 Guimarães",
-    "policy": "SIM-RC-1923"
+    "number": "21336-SIM",
+    "address": "Rua das Tílias, n.º 16, 4000-000 Porto",
+    "policy": "SIM-RC-6827"
    },
    "engenheiro": {
-    "name": "Diogo Amostra Miguel",
+    "name": "Olga Modelo Nuno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "60544-SIM",
-    "address": "Lugar de Carvalhal, n.º 85, 4800-000 Guimarães",
-    "policy": "SIM-RC-3479"
+    "number": "79766-SIM",
+    "address": "Lugar de Carvalhal, n.º 13, 4700-000 Braga",
+    "policy": "SIM-RC-0966"
    },
    "diretor": {
-    "name": "Vasco de Teste Eva",
+    "name": "Nuno Fictício Teresa",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "83217-SIM",
-    "address": "Caminho da Lameira, n.º 42, 4700-000 Braga",
-    "policy": "SIM-RC-9797"
+    "number": "92869-SIM",
+    "address": "Rua do Outeiro, n.º 56, 4800-000 Guimarães",
+    "policy": "SIM-RC-6132"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "177 m2",
+    "area_implantacao": "416 m2",
+    "MDARQ": "1770 m2"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  }
+ ],
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

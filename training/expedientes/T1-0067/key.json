@@ -2,89 +2,83 @@
  "expediente": "T1-0067",
  "case": {
   "id": "T1-0067",
-  "work": "ampliação de moradia unifamiliar",
+  "work": "construção de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 970,
-  "impl": 367,
-  "built": 644,
-  "imperm": 393,
-  "perm": 577,
-  "volume": 1996,
-  "height": 7.3,
-  "facade": 6.6,
+  "plot": 2460,
+  "impl": 881,
+  "built": 1541,
+  "imperm": 1029,
+  "perm": 1431,
+  "volume": 4777,
+  "height": 6.9,
+  "facade": 6.2,
   "parking": 2,
-  "cost": 831400,
-  "submitted": "2026-10-02",
-  "site": "Lugar de Vilar, n.º 213, Gagos, 4890-000 Celorico de Basto",
+  "cost": 1368400,
+  "submitted": "2026-10-03",
+  "site": "Rua do Outeiro, n.º 72, Corgo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 14,
+  "months": 15,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Bruno Simulado Xavier",
+    "name": "Teresa de Teste Sérgio",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "69736-SIM",
-    "address": "Lugar de Vilar, n.º 213, Gagos, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7702"
+    "number": "69442-SIM",
+    "address": "Rua do Outeiro, n.º 72, Corgo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7371"
    },
    "arquiteto": {
-    "name": "Teresa Exemplo Pedro",
+    "name": "Bruno Simulado Filipe",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "85768-SIM",
-    "address": "Travessa do Souto, n.º 73, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1743"
+    "number": "54879-SIM",
+    "address": "Lugar de Vilar, n.º 111, 4800-000 Guimarães",
+    "policy": "SIM-RC-8280"
    },
    "engenheiro": {
-    "name": "João Fictício Bruno",
+    "name": "Helena Fictício Bruno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "32138-SIM",
-    "address": "Travessa do Souto, n.º 27, 4700-000 Braga",
-    "policy": "SIM-RC-6438"
+    "number": "49701-SIM",
+    "address": "Lugar de Vilar, n.º 111, 4700-000 Braga",
+    "policy": "SIM-RC-7069"
    },
    "diretor": {
-    "name": "Nuno Amostra Eva",
+    "name": "Teresa Fictício Inês",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "75018-SIM",
-    "address": "Rua do Outeiro, n.º 72, 4700-000 Braga",
-    "policy": "SIM-RC-7993"
+    "number": "46394-SIM",
+    "address": "Rua do Outeiro, n.º 38, 4700-000 Braga",
+    "policy": "SIM-RC-1678"
    }
   }
  },
  "planted": [
   {
-   "type": "unsigned",
+   "type": "value_mismatch",
    "target": {
-    "slot": "TRDO"
-   },
-   "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
    },
    "basis": "documents",
    "values": {
-    "declarante": "Nuno Amostra Eva",
-    "assinante": "Teresa Exemplo Pedro"
+    "REQ": "1541 m2",
+    "MDARQ": "1642 m2"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

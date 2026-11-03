@@ -2,99 +2,67 @@
  "expediente": "T1-0046",
  "case": {
   "id": "T1-0046",
-  "work": "construção de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 1,
-  "plot": 3290,
-  "impl": 1170,
-  "built": 1068,
-  "imperm": 1243,
-  "perm": 2047,
-  "volume": 3310,
-  "height": 3.7,
-  "facade": 3.0,
-  "parking": 2,
-  "cost": 703800,
-  "submitted": "2026-10-16",
-  "site": "Travessa do Souto, n.º 109, Infesta, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 3,
+  "plot": 2710,
+  "impl": 549,
+  "built": 1555,
+  "imperm": 594,
+  "perm": 2116,
+  "volume": 4820,
+  "height": 10.1,
+  "facade": 9.4,
+  "parking": 4,
+  "cost": 1887700,
+  "submitted": "2026-12-10",
+  "site": "Travessa do Souto, n.º 27, Rego, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 14,
+  "months": 12,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "João de Teste Pedro",
+    "name": "Miguel Fictício Carla",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "61960-SIM",
-    "address": "Travessa do Souto, n.º 109, Infesta, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6169"
+    "number": "60821-SIM",
+    "address": "Travessa do Souto, n.º 27, Rego, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1652"
    },
    "arquiteto": {
-    "name": "Carla Amostra Ana",
+    "name": "Gonçalo Modelo Leonor",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "10671-SIM",
-    "address": "Caminho da Lameira, n.º 93, 4800-000 Guimarães",
-    "policy": "SIM-RC-3357"
+    "number": "21796-SIM",
+    "address": "Lugar de Vilar, n.º 43, 4000-000 Porto",
+    "policy": "SIM-RC-3419"
    },
    "engenheiro": {
-    "name": "João Exemplo Filipe",
+    "name": "João Modelo Vasco",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "85219-SIM",
-    "address": "Rua das Tílias, n.º 49, 4800-000 Guimarães",
-    "policy": "SIM-RC-3627"
+    "number": "09626-SIM",
+    "address": "Lugar de Carvalhal, n.º 73, 4800-000 Guimarães",
+    "policy": "SIM-RC-8196"
    },
    "diretor": {
-    "name": "Helena Exemplo Ana",
+    "name": "Pedro Exemplo Miguel",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "39353-SIM",
-    "address": "Caminho da Lameira, n.º 61, 4800-000 Guimarães",
-    "policy": "SIM-RC-5768"
+    "number": "69597-SIM",
+    "address": "Lugar de Carvalhal, n.º 104, 4700-000 Braga",
+    "policy": "SIM-RC-2336"
    }
   }
  },
- "planted": [
-  {
-   "type": "not_pdf",
-   "target": {
-    "slot": "FOTO"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
-   "type": "template_wording_missing",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
-   },
-   "basis": "documents",
-   "values": {
-    "declarante": "Helena Exemplo Ana",
-    "assinante": "Carla Amostra Ana"
-   }
-  }
- ],
- "n_planted": 3,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

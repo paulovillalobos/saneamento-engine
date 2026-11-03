@@ -2,83 +2,109 @@
  "expediente": "T1-0076",
  "case": {
   "id": "T1-0076",
-  "work": "construção de moradia unifamiliar",
+  "work": "ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 1,
-  "plot": 3600,
-  "impl": 1099,
-  "built": 1013,
-  "imperm": 1261,
-  "perm": 2339,
-  "volume": 3140,
-  "height": 4.1,
-  "facade": 3.4,
+  "plot": 1040,
+  "impl": 425,
+  "built": 390,
+  "imperm": 514,
+  "perm": 526,
+  "volume": 1209,
+  "height": 3.7,
+  "facade": 3.0,
   "parking": 2,
-  "cost": 1238800,
-  "submitted": "2026-10-04",
-  "site": "Lugar de Carvalhal, n.º 137, Basto (São Clemente), 4890-000 Celorico de Basto",
+  "cost": 288200,
+  "submitted": "2026-10-21",
+  "site": "Travessa do Souto, n.º 255, Canedo de Basto, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 18,
+  "months": 23,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Pedro Fictício João",
+    "name": "Pedro Modelo Nuno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "61058-SIM",
-    "address": "Lugar de Carvalhal, n.º 137, Basto (São Clemente), 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8708"
+    "number": "30629-SIM",
+    "address": "Travessa do Souto, n.º 255, Canedo de Basto, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0864"
    },
    "arquiteto": {
-    "name": "Diogo Modelo Diogo",
+    "name": "João Exemplo Bruno",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "85779-SIM",
-    "address": "Travessa do Souto, n.º 108, 4800-000 Guimarães",
-    "policy": "SIM-RC-7054"
+    "number": "21361-SIM",
+    "address": "Rua do Outeiro, n.º 27, 4700-000 Braga",
+    "policy": "SIM-RC-3501"
    },
    "engenheiro": {
-    "name": "Sérgio Simulado Olga",
+    "name": "Eva Simulado Nuno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "47653-SIM",
-    "address": "Lugar de Vilar, n.º 90, 4800-000 Guimarães",
-    "policy": "SIM-RC-8181"
+    "number": "83371-SIM",
+    "address": "Rua da Escola, n.º 97, 4800-000 Guimarães",
+    "policy": "SIM-RC-6028"
    },
    "diretor": {
-    "name": "Xavier Modelo Olga",
+    "name": "Miguel de Teste Eva",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "39488-SIM",
-    "address": "Lugar de Carvalhal, n.º 60, 4700-000 Braga",
-    "policy": "SIM-RC-3423"
+    "number": "43226-SIM",
+    "address": "Lugar da Devesa, n.º 69, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0963"
    }
   }
  },
  "planted": [
   {
-   "type": "expired_insurance",
+   "type": "missing_required",
    "target": {
-    "slot": "SRCARQ"
+    "slot": "PLANT"
+   },
+   "law": {
+    "ref": "V.27.b.i",
+    "quote": "i) Plantas à escala de 1:50 ou de 1:100 contendo as dimensões e áreas e utilizações de todos os compartimentos, bem como a representação do mobiliário fixo e equipamento sanitário;"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRCP"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
    },
    "basis": "documents",
    "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-10-04"
-   },
-   "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+    "REQ": "Travessa do Souto, n.º 255, Canedo de Basto, 4890-000 Celorico de Basto",
+    "TRPARQ": "Rua da Escola, n.º 250, Caçarilhe, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

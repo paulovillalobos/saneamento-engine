@@ -5,72 +5,71 @@
   "work": "construção de edifício de comércio e serviços",
   "use": "Comércio e serviços",
   "fogos": 0,
-  "pisos": 1,
-  "plot": 1660,
-  "impl": 288,
-  "built": 248,
-  "imperm": 454,
-  "perm": 1206,
-  "volume": 768,
-  "height": 4.2,
-  "facade": 3.5,
+  "pisos": 3,
+  "plot": 2910,
+  "impl": 1214,
+  "built": 3390,
+  "imperm": 1372,
+  "perm": 1538,
+  "volume": 10509,
+  "height": 10.5,
+  "facade": 9.8,
   "parking": 2,
-  "cost": 298000,
-  "submitted": "2026-12-28",
-  "site": "Rua das Tílias, n.º 225, Molares, 4890-000 Celorico de Basto",
+  "cost": 3725600,
+  "submitted": "2026-12-17",
+  "site": "Lugar de Carvalhal, n.º 94, Veade, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 23,
+  "months": 19,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Filipe Modelo Miguel",
+    "name": "Gonçalo Exemplo Carla",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "26620-SIM",
-    "address": "Rua das Tílias, n.º 225, Molares, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4538"
+    "number": "37296-SIM",
+    "address": "Lugar de Carvalhal, n.º 94, Veade, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2189"
    },
    "arquiteto": {
-    "name": "Gonçalo Fictício Eva",
+    "name": "Gonçalo Simulado Filipe",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "18509-SIM",
-    "address": "Rua do Outeiro, n.º 3, 4700-000 Braga",
-    "policy": "SIM-RC-7958"
+    "number": "64663-SIM",
+    "address": "Lugar da Devesa, n.º 24, 4000-000 Porto",
+    "policy": "SIM-RC-5904"
    },
    "engenheiro": {
-    "name": "Miguel Fictício Bruno",
+    "name": "Carla Modelo Helena",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "48229-SIM",
-    "address": "Travessa do Souto, n.º 79, 4700-000 Braga",
-    "policy": "SIM-RC-3464"
+    "number": "89863-SIM",
+    "address": "Rua do Outeiro, n.º 12, 4800-000 Guimarães",
+    "policy": "SIM-RC-3217"
    },
    "diretor": {
-    "name": "Carla Exemplo Gonçalo",
+    "name": "Xavier de Teste Filipe",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "79854-SIM",
-    "address": "Lugar da Devesa, n.º 22, 4000-000 Porto",
-    "policy": "SIM-RC-3565"
+    "number": "76383-SIM",
+    "address": "Rua da Escola, n.º 28, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7871"
    }
   }
  },
  "planted": [
   {
-   "type": "wrong_site",
+   "type": "missing_required",
    "target": {
-    "slot": "TRPARQ"
+    "slot": "PI"
    },
-   "basis": "documents",
-   "values": {
-    "REQ": "Rua das Tílias, n.º 225, Molares, 4890-000 Celorico de Basto",
-    "TRPARQ": "Rua da Escola, n.º 27, Moreira do Castelo, 4890-000 Celorico de Basto"
+   "law": {
+    "ref": "V.8",
+    "quote": "8 - Planta de implantação, desenhada sobre o levantamento topográfico, quando este for exigível, indicando a construção, as áreas permeáveis e impermeabilizadas e os respetivos materiais e, quando houver alterações na via pública, planta dessas alterações;"
    }
   }
  ],

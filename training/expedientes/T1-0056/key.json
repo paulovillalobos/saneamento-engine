@@ -2,89 +2,79 @@
  "expediente": "T1-0056",
  "case": {
   "id": "T1-0056",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
   "pisos": 2,
-  "plot": 2640,
-  "impl": 725,
-  "built": 1325,
-  "imperm": 745,
-  "perm": 1895,
-  "volume": 4107,
-  "height": 7.8,
-  "facade": 7.1,
-  "parking": 2,
-  "cost": 1184500,
-  "submitted": "2026-12-13",
-  "site": "Caminho da Lameira, n.º 14, Veade, 4890-000 Celorico de Basto",
+  "plot": 2480,
+  "impl": 498,
+  "built": 860,
+  "imperm": 618,
+  "perm": 1862,
+  "volume": 2666,
+  "height": 7.4,
+  "facade": 6.7,
+  "parking": 4,
+  "cost": 811800,
+  "submitted": "2026-11-20",
+  "site": "Lugar de Carvalhal, n.º 48, Rego, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 18,
+  "months": 15,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Diogo Modelo Helena",
+    "name": "Gonçalo Exemplo Diogo",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "57160-SIM",
-    "address": "Caminho da Lameira, n.º 14, Veade, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9302"
+    "number": "68458-SIM",
+    "address": "Lugar de Carvalhal, n.º 48, Rego, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0513"
    },
    "arquiteto": {
-    "name": "Teresa de Teste Inês",
+    "name": "Carla de Teste Helena",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "16875-SIM",
-    "address": "Travessa do Souto, n.º 92, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6635"
+    "number": "59012-SIM",
+    "address": "Travessa do Souto, n.º 25, 4000-000 Porto",
+    "policy": "SIM-RC-7231"
    },
    "engenheiro": {
-    "name": "Pedro de Teste Olga",
+    "name": "Eva Simulado Rita",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "89639-SIM",
-    "address": "Lugar de Carvalhal, n.º 64, 4800-000 Guimarães",
-    "policy": "SIM-RC-8795"
+    "number": "09453-SIM",
+    "address": "Rua da Escola, n.º 19, 4800-000 Guimarães",
+    "policy": "SIM-RC-2056"
    },
    "diretor": {
-    "name": "Ana Simulado Rita",
+    "name": "Rita Exemplo Rita",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "43286-SIM",
-    "address": "Rua do Outeiro, n.º 14, 4000-000 Porto",
-    "policy": "SIM-RC-5734"
+    "number": "39589-SIM",
+    "address": "Rua da Escola, n.º 78, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8917"
    }
   }
  },
  "planted": [
   {
-   "type": "unsigned",
+   "type": "wrong_signer",
    "target": {
     "slot": "TRDO"
    },
-   "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
-   }
-  },
-  {
-   "type": "wrong_site",
-   "target": {
-    "slot": "TRPARQ"
-   },
    "basis": "documents",
    "values": {
-    "REQ": "Caminho da Lameira, n.º 14, Veade, 4890-000 Celorico de Basto",
-    "TRPARQ": "Rua do Outeiro, n.º 75, Ribas, 4890-000 Celorico de Basto"
+    "declarante": "Rita Exemplo Rita",
+    "assinante": "Carla de Teste Helena"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

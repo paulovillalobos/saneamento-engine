@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Helena Amostra Olga",
+  "name": "João Fictício Bruno",
   "nif": "999999990"
  },
- "site": "Rua da Escola, n.º 118, Codeçoso, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-19",
+ "site": "Travessa do Souto, n.º 290, Infesta, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
+ "submitted_at": "2026-12-19",
  "files": [
   {
    "slot": "REQ",
@@ -49,13 +49,6 @@
    "signed_by": "arquiteto"
   },
   {
-   "slot": "SRCCP",
-   "file": "SRCCP-seguro-coordenador.pdf",
-   "title": "Comprovativo de seguro de responsabilidade civil do coordenador de projeto",
-   "kind": "written",
-   "signed_by": "seguradora"
-  },
-  {
    "slot": "TRPLAC",
    "file": "TRPLAC-termo-acessibilidades.pdf",
    "title": "Termo de responsabilidade do autor do plano de acessibilidades",
@@ -67,7 +60,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": null
   },
   {
    "slot": "SRCDO",
@@ -88,7 +81,7 @@
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "MDARQ",
@@ -414,29 +407,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "regulamento_instrucao_digital_extrato.pdf",
-   "title": "Regulamento municipal (extrato)",
+   "file": "fatura_agua_2026_08.pdf",
+   "title": "Fatura de água",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF54020698330162.pdf",
-   "title": "Primeira Análise — Portaria n.º 320/2026/1 e comportamento t",
+   "file": "PDF18624297228293.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "ficha_verificacao_elementos.pdf",
-   "title": "Ficha de verificação",
+   "file": "PDF74682540206066.pdf",
+   "title": "Nota explicativa — planta de localização",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "nota_explicativa_88.pdf",
-   "title": "Os termos de responsabilidade passados no âmbito das comunic",
+   "file": "PDF37253262567819.pdf",
+   "title": "Consulta a entidade externa",
    "kind": "written",
    "signed_by": "requerente"
   },
@@ -449,15 +442,15 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "ficha_projeto_95.pdf",
-   "title": "Ficha de Projeto",
+   "file": "castro_indice_pecas.pdf",
+   "title": "ÍNDICE DE PEÇAS DESENHADAS",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "benavente_ficha_projeto.pdf",
-   "title": "Ficha de Projeto",
+   "file": "instrucoes_preenchimento.pdf",
+   "title": "Instruções Preenchimento_Q3",
    "kind": "written",
    "signed_by": "requerente"
   }

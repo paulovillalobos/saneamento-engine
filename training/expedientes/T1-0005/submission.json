@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Helena de Teste Rita",
+  "name": "Sérgio Amostra Miguel",
   "nif": "999999990"
  },
- "site": "Lugar da Devesa, n.º 257, Ribas, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-17",
+ "site": "Caminho da Lameira, n.º 113, Basto (São Clemente), 4890-000 Celorico de Basto",
+ "operation": "construção de armazém agrícola",
+ "submitted_at": "2026-11-18",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "SRCDO",
@@ -101,13 +101,6 @@
    "slot": "CEO",
    "file": "CEO-calendarizacao.pdf",
    "title": "Calendarização da execução da obra",
-   "kind": "written",
-   "signed_by": "arquiteto"
-  },
-  {
-   "slot": "EOCT",
-   "file": "EOCT-estimativa-custo.pdf",
-   "title": "Estimativa do custo total da obra",
    "kind": "written",
    "signed_by": "arquiteto"
   },
@@ -414,43 +407,15 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "instrucoes_preenchimento.pdf",
-   "title": "Instruções Preenchimento_Q3",
+   "file": "amarante_guia_tecnico.pdf",
+   "title": "Guia Técnico para Projetos de Plano de acessibilidades",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF78676135726079.pdf",
-   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "fatura_agua_2026_08.pdf",
-   "title": "Fatura de água",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "termos-responsabilidade-passados-2019.pdf",
-   "title": "Os termos de responsabilidade passados no âmbito das comunic",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "regulamento_instrucao_digital_extrato.pdf",
-   "title": "Regulamento municipal (extrato)",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "norma_instrucao_processo_nip.pdf",
-   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-39",
+   "file": "ficha_verificacao_elementos.pdf",
+   "title": "Ficha de verificação",
    "kind": "written",
    "signed_by": "requerente"
   }

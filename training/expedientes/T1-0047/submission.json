@@ -6,24 +6,17 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Nuno Fictício Eva",
+  "name": "Filipe Fictício Vasco",
   "nif": "999999990"
  },
- "site": "Rua do Outeiro, n.º 211, Arnoia, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-12-27",
+ "site": "Caminho da Lameira, n.º 16, Corgo, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de habitação bifamiliar",
+ "submitted_at": "2026-10-05",
  "files": [
   {
    "slot": "REQ",
    "file": "REQ-requerimento.pdf",
    "title": "Requerimento de comunicação prévia (modelo do Anexo I)",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "CRP",
-   "file": "CRP-certidao-permanente.pdf",
-   "title": "Código de acesso à certidão permanente do registo predial",
    "kind": "written",
    "signed_by": "requerente"
   },
@@ -133,6 +126,13 @@
    "signed_by": "arquiteto"
   },
   {
+   "slot": "P10000",
+   "file": "P10000-planta-localizacao.pdf",
+   "title": "Planta de localização",
+   "kind": "drawn",
+   "signed_by": "arquiteto"
+  },
+  {
    "slot": "LEVT",
    "file": "LEVT-levantamento-topografico.pdf",
    "title": "Levantamento topográfico georreferenciado",
@@ -151,7 +151,7 @@
    "file": "PLANT-plantas.pdf",
    "title": "Plantas",
    "kind": "drawn",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "ALC",
@@ -407,43 +407,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "termo_outro_66.pdf",
-   "title": "Termo de responsabilidade do diretor de obra ou do diretor d",
+   "file": "loures_copia_parte.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-04-17",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "guia_tecnico_projetos_levantamento.pdf",
-   "title": "Guia Técnico para Projetos de Levantamento topográfico",
+   "file": "informacao_2026.pdf",
+   "title": "INFORMAÇÃO n.º 15/2026",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "regulamento_instrucao_digital_extrato.pdf",
-   "title": "Regulamento municipal (extrato)",
+   "file": "fatura_agua_2026_08.pdf",
+   "title": "Fatura de água",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "ficha_verificacao_elementos.pdf",
-   "title": "Ficha de verificação",
+   "file": "informacao-2026-2026.pdf",
+   "title": "INFORMAÇÃO n.º 27/2026",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "amarante_memoria_descritiva.pdf",
-   "title": "Memória descritiva da candidatura",
+   "file": "informacao-2026-2022.pdf",
+   "title": "INFORMAÇÃO n.º 34/2026",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "postura_projetos_registo_fotografico.pdf",
-   "title": "Postura Municipal Referente a Projetos de Registo fotográfic",
+   "file": "norma_24.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-25",
    "kind": "written",
    "signed_by": "requerente"
   }

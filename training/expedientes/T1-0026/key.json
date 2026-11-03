@@ -2,81 +2,120 @@
  "expediente": "T1-0026",
  "case": {
   "id": "T1-0026",
-  "work": "construção de moradia unifamiliar",
+  "work": "alteração e ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 1,
-  "plot": 2800,
-  "impl": 747,
-  "built": 686,
-  "imperm": 904,
-  "perm": 1896,
-  "volume": 2126,
-  "height": 3.7,
-  "facade": 3.0,
+  "pisos": 2,
+  "plot": 3890,
+  "impl": 1230,
+  "built": 2098,
+  "imperm": 1294,
+  "perm": 2596,
+  "volume": 6503,
+  "height": 6.9,
+  "facade": 6.2,
   "parking": 2,
-  "cost": 669500,
-  "submitted": "2026-11-27",
-  "site": "Lugar de Carvalhal, n.º 287, Infesta, 4890-000 Celorico de Basto",
+  "cost": 2429400,
+  "submitted": "2026-12-16",
+  "site": "Rua da Escola, n.º 46, Canedo de Basto, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 18,
+  "months": 23,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Teresa Modelo Pedro",
+    "name": "Vasco Fictício Gonçalo",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "43373-SIM",
-    "address": "Lugar de Carvalhal, n.º 287, Infesta, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8787"
+    "number": "48253-SIM",
+    "address": "Rua da Escola, n.º 46, Canedo de Basto, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1063"
    },
    "arquiteto": {
-    "name": "Gonçalo Fictício Helena",
+    "name": "Nuno Exemplo Ana",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "71327-SIM",
-    "address": "Rua do Outeiro, n.º 110, 4700-000 Braga",
-    "policy": "SIM-RC-0846"
+    "number": "70341-SIM",
+    "address": "Lugar de Carvalhal, n.º 114, 4700-000 Braga",
+    "policy": "SIM-RC-3947"
    },
    "engenheiro": {
-    "name": "Leonor Modelo Bruno",
+    "name": "Gonçalo Amostra Ana",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "44028-SIM",
-    "address": "Rua das Tílias, n.º 4, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5891"
+    "number": "95695-SIM",
+    "address": "Caminho da Lameira, n.º 6, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8503"
    },
    "diretor": {
-    "name": "Miguel Modelo Xavier",
+    "name": "Gonçalo Simulado Diogo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "87596-SIM",
-    "address": "Rua das Tílias, n.º 27, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-3680"
+    "number": "15437-SIM",
+    "address": "Rua das Tílias, n.º 43, 4000-000 Porto",
+    "policy": "SIM-RC-7298"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "expired_insurance",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "slot": "SRCARQ"
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "280 m2",
-    "area_implantacao": "747 m2",
-    "MDARQ": "2800 m2"
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-16"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "2098 m2",
+    "MDARQ": "2210 m2"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Gonçalo Simulado Diogo",
+    "assinante": "Nuno Exemplo Ana"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Rua da Escola, n.º 46, Canedo de Basto, 4890-000 Celorico de Basto",
+    "TRPARQ": "Caminho da Lameira, n.º 74, Rego, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

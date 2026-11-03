@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Gonçalo Amostra Xavier",
+  "name": "Rita Fictício Helena",
   "nif": "999999990"
  },
- "site": "Travessa do Souto, n.º 87, Carvalho, 4890-000 Celorico de Basto",
- "operation": "construção de armazém agrícola",
- "submitted_at": "2026-12-12",
+ "site": "Travessa do Souto, n.º 157, Borba de Montanha, 4890-000 Celorico de Basto",
+ "operation": "ampliação de moradia unifamiliar",
+ "submitted_at": "2026-11-12",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": null
   },
   {
    "slot": "SRCDO",
@@ -171,13 +171,6 @@
    "slot": "CORTES",
    "file": "CORTES-cortes.pdf",
    "title": "Cortes",
-   "kind": "drawn",
-   "signed_by": "arquiteto"
-  },
-  {
-   "slot": "PC",
-   "file": "PC-pormenores.pdf",
-   "title": "Pormenores de construção",
    "kind": "drawn",
    "signed_by": "arquiteto"
   },
@@ -414,29 +407,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "manual_normas_organizacao_instrucao.pdf",
-   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
+   "file": "PDF83303036724597.pdf",
+   "title": "Memória descritiva da candidatura",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF37034201957156.pdf",
-   "title": "Cópia de parte da ata da reunião de 2026-11-06",
+   "file": "PDF48624351988902.pdf",
+   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "lista_elementos_nomeacao_ficheiros.pdf",
-   "title": "Lista de elementos instrutórios",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "carta_cmcb.pdf",
-   "title": "Carta",
+   "file": "memoria_candidatura_65.pdf",
+   "title": "Memória descritiva da candidatura",
    "kind": "written",
    "signed_by": "requerente"
   }

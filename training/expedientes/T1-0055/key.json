@@ -2,92 +2,83 @@
  "expediente": "T1-0055",
  "case": {
   "id": "T1-0055",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 3460,
-  "impl": 1482,
-  "built": 2564,
-  "imperm": 1667,
-  "perm": 1793,
-  "volume": 7948,
-  "height": 7.0,
-  "facade": 6.3,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 980,
+  "impl": 402,
+  "built": 343,
+  "imperm": 457,
+  "perm": 523,
+  "volume": 1063,
+  "height": 4.1,
+  "facade": 3.4,
   "parking": 2,
-  "cost": 3194700,
-  "submitted": "2026-12-21",
-  "site": "Lugar da Devesa, n.º 214, Ourilhe, 4890-000 Celorico de Basto",
+  "cost": 440000,
+  "submitted": "2026-12-13",
+  "site": "Lugar de Vilar, n.º 48, Veade, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 10,
+  "months": 15,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Olga Amostra Pedro",
+    "name": "Gonçalo Exemplo Rita",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "40347-SIM",
-    "address": "Lugar da Devesa, n.º 214, Ourilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8924"
+    "number": "50634-SIM",
+    "address": "Lugar de Vilar, n.º 48, Veade, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8658"
    },
    "arquiteto": {
-    "name": "Xavier Fictício Pedro",
+    "name": "Sérgio Amostra Inês",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "80221-SIM",
-    "address": "Lugar de Carvalhal, n.º 50, 4000-000 Porto",
-    "policy": "SIM-RC-5441"
+    "number": "04171-SIM",
+    "address": "Rua das Tílias, n.º 95, 4800-000 Guimarães",
+    "policy": "SIM-RC-2371"
    },
    "engenheiro": {
-    "name": "Inês Amostra Eva",
+    "name": "Filipe Modelo Inês",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "35700-SIM",
-    "address": "Rua da Escola, n.º 13, 4700-000 Braga",
-    "policy": "SIM-RC-0584"
+    "number": "14019-SIM",
+    "address": "Rua das Tílias, n.º 15, 4800-000 Guimarães",
+    "policy": "SIM-RC-6620"
    },
    "diretor": {
-    "name": "Ana de Teste Leonor",
+    "name": "Bruno Exemplo Carla",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "06399-SIM",
-    "address": "Lugar de Vilar, n.º 54, 4800-000 Guimarães",
-    "policy": "SIM-RC-0284"
+    "number": "74929-SIM",
+    "address": "Travessa do Souto, n.º 29, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6322"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "value_mismatch",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "346 m2",
-    "area_implantacao": "1482 m2",
-    "MDARQ": "3460 m2"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
-   },
-   "basis": "documents",
-   "values": {
-    "declarante": "Ana de Teste Leonor",
-    "assinante": "Xavier Fictício Pedro"
+    "REQ": "343 m2",
+    "MDARQ": "458 m2"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

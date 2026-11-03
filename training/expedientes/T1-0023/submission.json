@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Filipe Modelo Miguel",
+  "name": "Gonçalo Exemplo Carla",
   "nif": "999999990"
  },
- "site": "Rua das Tílias, n.º 225, Molares, 4890-000 Celorico de Basto",
+ "site": "Lugar de Carvalhal, n.º 94, Veade, 4890-000 Celorico de Basto",
  "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-12-28",
+ "submitted_at": "2026-12-17",
  "files": [
   {
    "slot": "REQ",
@@ -145,13 +145,6 @@
    "title": "Levantamento topográfico georreferenciado",
    "kind": "drawn",
    "signed_by": "engenheiro"
-  },
-  {
-   "slot": "PI",
-   "file": "PI-planta-implantacao.pdf",
-   "title": "Planta de implantação",
-   "kind": "drawn",
-   "signed_by": "arquiteto"
   },
   {
    "slot": "PLANT",

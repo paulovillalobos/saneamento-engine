@@ -2,79 +2,101 @@
  "expediente": "T1-0074",
  "case": {
   "id": "T1-0074",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 3,
-  "plot": 980,
-  "impl": 223,
-  "built": 587,
-  "imperm": 328,
-  "perm": 652,
-  "volume": 1819,
-  "height": 10.4,
-  "facade": 9.7,
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 1,
+  "plot": 800,
+  "impl": 309,
+  "built": 272,
+  "imperm": 508,
+  "perm": 292,
+  "volume": 843,
+  "height": 4.6,
+  "facade": 3.9,
   "parking": 2,
-  "cost": 502400,
-  "submitted": "2026-11-20",
-  "site": "Rua da Escola, n.º 98, Carvalho, 4890-000 Celorico de Basto",
+  "cost": 340200,
+  "submitted": "2026-12-02",
+  "site": "Lugar da Devesa, n.º 114, Agilde, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 18,
+  "months": 21,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Sérgio Fictício Gonçalo",
+    "name": "Nuno Simulado Bruno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "86033-SIM",
-    "address": "Rua da Escola, n.º 98, Carvalho, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9542"
+    "number": "57698-SIM",
+    "address": "Lugar da Devesa, n.º 114, Agilde, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1200"
    },
    "arquiteto": {
-    "name": "Vasco Amostra Inês",
+    "name": "Diogo de Teste Filipe",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "24407-SIM",
-    "address": "Rua da Escola, n.º 97, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6272"
+    "number": "46613-SIM",
+    "address": "Rua das Tílias, n.º 60, 4700-000 Braga",
+    "policy": "SIM-RC-2872"
    },
    "engenheiro": {
-    "name": "Teresa Exemplo Nuno",
+    "name": "Olga Amostra Rita",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "09327-SIM",
-    "address": "Lugar da Devesa, n.º 44, 4700-000 Braga",
-    "policy": "SIM-RC-4246"
+    "number": "25796-SIM",
+    "address": "Rua da Escola, n.º 65, 4700-000 Braga",
+    "policy": "SIM-RC-3245"
    },
    "diretor": {
-    "name": "Inês Modelo Pedro",
+    "name": "Filipe Amostra Carla",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "21929-SIM",
-    "address": "Lugar de Carvalhal, n.º 25, 4800-000 Guimarães",
-    "policy": "SIM-RC-7690"
+    "number": "79331-SIM",
+    "address": "Rua da Escola, n.º 12, 4700-000 Braga",
+    "policy": "SIM-RC-7420"
    }
   }
  },
  "planted": [
   {
-   "type": "wrong_site",
+   "type": "impossible_value",
    "target": {
-    "slot": "TRPARQ"
+    "field": "area_parcela",
+    "slot": "REQ"
    },
    "basis": "documents",
    "values": {
-    "REQ": "Rua da Escola, n.º 98, Carvalho, 4890-000 Celorico de Basto",
-    "TRPARQ": "Travessa do Souto, n.º 286, Carvalho, 4890-000 Celorico de Basto"
+    "area_parcela": "8000 m2",
+    "area_implantacao": "309 m2",
+    "MDARQ": "800 m2"
+   }
+  },
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "ALC"
+   },
+   "law": {
+    "ref": "V.27.b.ii",
+    "quote": "ii) Alçados à escala de 1:50 ou de 1:100 com a indicação das cores e dos materiais dos elementos que constituem as fachadas e a cobertura, bem como as construções adjacentes, quando existam;"
+   }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDARQ"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

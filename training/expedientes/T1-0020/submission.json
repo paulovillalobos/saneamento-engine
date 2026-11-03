@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Diogo de Teste Ana",
+  "name": "Rita Fictício Eva",
   "nif": "999999990"
  },
- "site": "Lugar de Vilar, n.º 197, Rego, 4890-000 Celorico de Basto",
- "operation": "construção de armazém agrícola",
- "submitted_at": "2026-12-21",
+ "site": "Lugar da Devesa, n.º 1, Gagos, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
+ "submitted_at": "2026-12-10",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -414,22 +414,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "ficha_projeto.pdf",
-   "title": "Ficha de Projeto",
+   "file": "fatura_agua_2026_08.pdf",
+   "title": "Fatura de água",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "termo_responsabilidade_diretor_obra.pdf",
-   "title": "Termo de responsabilidade do diretor de obra ou do diretor d",
+   "file": "parecer.pdf",
+   "title": "PARECER",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "ficha_verificacao_elementos.pdf",
-   "title": "Ficha de verificação",
+   "file": "figueira_anexo_obras.pdf",
+   "title": "ANEXO IV — OBRAS DE EDIFICAÇÃO",
    "kind": "written",
    "signed_by": "requerente"
   }

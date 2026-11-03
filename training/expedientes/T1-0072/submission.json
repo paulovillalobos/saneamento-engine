@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Teresa de Teste Sérgio",
+  "name": "Inês Exemplo Pedro",
   "nif": "999999990"
  },
- "site": "Rua do Outeiro, n.º 72, Corgo, 4890-000 Celorico de Basto",
- "operation": "construção de moradia unifamiliar",
- "submitted_at": "2026-10-03",
+ "site": "Rua do Outeiro, n.º 164, Gagos, 4890-000 Celorico de Basto",
+ "operation": "alteração e ampliação de moradia unifamiliar",
+ "submitted_at": "2026-11-28",
  "files": [
   {
    "slot": "REQ",
@@ -414,29 +414,50 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "castro_plano_acessibilidade.pdf",
-   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
+   "file": "postura_09.pdf",
+   "title": "Postura Municipal Referente a Projetos de Levantamento topog",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "anexo-loteamentos-2026.pdf",
-   "title": "ANEXO II — LOTEAMENTOS",
+   "file": "alfândega_pecas_escritas.pdf",
+   "title": "PEÇAS ESCRITAS E DESENHADAS - ÍNDICE",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "informacao_78.pdf",
-   "title": "INFORMAÇÃO n.º 13/2026",
+   "file": "PDF10036121671645.pdf",
+   "title": "PEDIDO DE PARECER - ELEMENTOS A REMETER",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "instrucoes_preenchimento.pdf",
-   "title": "Instruções Preenchimento_Q3",
+   "file": "nota_tecnica_projetos_estimativa.pdf",
+   "title": "NOTA TÉCNICA N.º 33 — PROJETOS DE ESTIMATIVA DO CUSTO TOTAL ",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "estarreja_minuta_memoria.pdf",
+   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "consulta-entidade-externa-2020.pdf",
+   "title": "Consulta a entidade externa",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "viseu_memoria_descritiva.pdf",
+   "title": "Memória descritiva da candidatura",
    "kind": "written",
    "signed_by": "requerente"
   }

@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "João Modelo Inês",
+  "name": "Inês Simulado Ana",
   "nif": "999999990"
  },
- "site": "Lugar da Devesa, n.º 57, Ourilhe, 4890-000 Celorico de Basto",
- "operation": "construção de moradia unifamiliar",
- "submitted_at": "2026-10-09",
+ "site": "Caminho da Lameira, n.º 78, Fervença, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
+ "submitted_at": "2026-10-22",
  "files": [
   {
    "slot": "REQ",
@@ -414,22 +414,8 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "ficha_projeto.pdf",
-   "title": "Ficha de Projeto",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "ficha_verificacao_elementos.pdf",
-   "title": "Ficha de verificação",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "PDF28540583205287.pdf",
-   "title": "Nota explicativa — planta de implantação",
+   "file": "castro_guia_tecnico.pdf",
+   "title": "Guia Técnico para Projetos de Estimativa do custo total da o",
    "kind": "written",
    "signed_by": "requerente"
   },
@@ -442,8 +428,15 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "manual_normas_organizacao_instrucao.pdf",
+   "file": "manual_26.pdf",
    "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "ficha_verificacao_elementos.pdf",
+   "title": "Ficha de verificação",
    "kind": "written",
    "signed_by": "requerente"
   }

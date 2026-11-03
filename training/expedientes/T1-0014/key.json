@@ -2,89 +2,94 @@
  "expediente": "T1-0014",
  "case": {
   "id": "T1-0014",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
   "pisos": 1,
-  "plot": 1700,
-  "impl": 493,
-  "built": 442,
-  "imperm": 541,
-  "perm": 1159,
-  "volume": 1370,
-  "height": 4.0,
-  "facade": 3.3,
+  "plot": 1520,
+  "impl": 464,
+  "built": 419,
+  "imperm": 524,
+  "perm": 996,
+  "volume": 1298,
+  "height": 3.7,
+  "facade": 3.0,
   "parking": 2,
-  "cost": 343800,
-  "submitted": "2026-12-28",
-  "site": "Caminho da Lameira, n.º 208, Borba de Montanha, 4890-000 Celorico de Basto",
+  "cost": 289500,
+  "submitted": "2026-12-11",
+  "site": "Rua das Tílias, n.º 178, Fervença, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 23,
+  "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Vasco Exemplo Teresa",
+    "name": "Xavier Exemplo Olga",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "52612-SIM",
-    "address": "Caminho da Lameira, n.º 208, Borba de Montanha, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4959"
+    "number": "50322-SIM",
+    "address": "Rua das Tílias, n.º 178, Fervença, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7226"
    },
    "arquiteto": {
-    "name": "Teresa Fictício Bruno",
+    "name": "Helena Amostra Xavier",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "79655-SIM",
-    "address": "Travessa do Souto, n.º 23, 4700-000 Braga",
-    "policy": "SIM-RC-3523"
+    "number": "69025-SIM",
+    "address": "Lugar de Vilar, n.º 8, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1860"
    },
    "engenheiro": {
-    "name": "Olga de Teste Teresa",
+    "name": "Sérgio Fictício Teresa",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "03619-SIM",
-    "address": "Caminho da Lameira, n.º 69, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8686"
+    "number": "85245-SIM",
+    "address": "Lugar de Carvalhal, n.º 115, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1991"
    },
    "diretor": {
-    "name": "Inês Exemplo Eva",
+    "name": "Vasco Simulado Rita",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "53859-SIM",
-    "address": "Travessa do Souto, n.º 96, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1132"
+    "number": "28422-SIM",
+    "address": "Rua das Tílias, n.º 81, 4700-000 Braga",
+    "policy": "SIM-RC-6509"
    }
   }
  },
  "planted": [
   {
-   "type": "expired_insurance",
+   "type": "not_pdf",
    "target": {
-    "slot": "SRCARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-12-28"
+    "slot": "ALC"
    },
    "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   },
   {
-   "type": "missing_required",
+   "type": "template_wording_missing",
    "target": {
-    "slot": "SRCCP"
+    "slot": "TRPARQ"
    },
    "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRPLAC"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
    }
   },
   {
@@ -98,12 +103,12 @@
    },
    "basis": "documents",
    "values": {
-    "REQ": "442 m2",
-    "MDARQ": "529 m2"
+    "REQ": "419 m2",
+    "MDARQ": "509 m2"
    }
   }
  ],
- "n_planted": 3,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

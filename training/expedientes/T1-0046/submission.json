@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "João de Teste Pedro",
+  "name": "Miguel Fictício Carla",
   "nif": "999999990"
  },
- "site": "Travessa do Souto, n.º 109, Infesta, 4890-000 Celorico de Basto",
- "operation": "construção de moradia unifamiliar",
- "submitted_at": "2026-10-16",
+ "site": "Travessa do Souto, n.º 27, Rego, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de habitação bifamiliar",
+ "submitted_at": "2026-12-10",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -88,7 +88,7 @@
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "MDARQ",
@@ -414,43 +414,36 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF16327172952905.pdf",
-   "title": "Postura Municipal Referente a Projetos de Segurança contra i",
+   "file": "indice_pecas_62.pdf",
+   "title": "LISTA DE PEÇAS",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "informacao_2026.pdf",
-   "title": "INFORMAÇÃO n.º 20/2026",
+   "file": "benavente_pedido_parecer.pdf",
+   "title": "PEDIDO DE PARECER - ELEMENTOS A REMETER",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "plano-acessibilidade-todos-2026.pdf",
-   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "lista_elementos_nomeacao_ficheiros.pdf",
-   "title": "Lista de elementos instrutórios",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "termo_responsabilidade.pdf",
+   "file": "PDF20437084609899.pdf",
    "title": "Termo de Responsabilidade",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "ficha_verificacao_elementos.pdf",
-   "title": "Ficha de verificação",
+   "file": "PDF39711351126979.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-06",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF13351430602742.pdf",
+   "title": "PARECER",
    "kind": "written",
    "signed_by": "requerente"
   }

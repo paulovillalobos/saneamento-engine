@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Teresa Modelo Eva",
+  "name": "Pedro de Teste Eva",
   "nif": "999999990"
  },
- "site": "Rua das Tílias, n.º 58, Moreira do Castelo, 4890-000 Celorico de Basto",
- "operation": "construção de armazém agrícola",
- "submitted_at": "2026-10-02",
+ "site": "Caminho da Lameira, n.º 83, Canedo de Basto, 4890-000 Celorico de Basto",
+ "operation": "ampliação de moradia unifamiliar",
+ "submitted_at": "2026-12-08",
  "files": [
   {
    "slot": "REQ",
@@ -414,29 +414,50 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "plano_acessibilidade_todos_capitulo.pdf",
-   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
+   "file": "primeira-analise-portaria-2020.pdf",
+   "title": "Primeira Análise — Portaria n.º 320/2026/1 e memória descrit",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "ficha_verificacao_elementos.pdf",
-   "title": "Ficha de verificação",
+   "file": "guia_tecnico_projetos_plano.pdf",
+   "title": "Guia Técnico para Projetos de Plano de acessibilidades",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "postura_projetos_plano_acessibilidades.pdf",
-   "title": "Postura Municipal Referente a Projetos de Plano de acessibil",
+   "file": "instrucoes_85.pdf",
+   "title": "Instruções Preenchimento_Q3",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "anexo-criterio-elaboracao-2022.pdf",
-   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "file": "viseu_nota_tecnica.pdf",
+   "title": "NOTA TÉCNICA N.º 26 — PROJETOS DE PLANO DE ACESSIBILIDADES",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "termo_responsabilidade_diretor_obra.pdf",
+   "title": "Termo de responsabilidade do diretor de obra ou do diretor d",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "informacao-2026-2023.pdf",
+   "title": "INFORMAÇÃO n.º 29/2026",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF37327227313987.pdf",
+   "title": "Termo de Responsabilidade",
    "kind": "written",
    "signed_by": "requerente"
   }

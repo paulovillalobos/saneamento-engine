@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Bruno Modelo Leonor",
+  "name": "Miguel Fictício Sérgio",
   "nif": "999999990"
  },
- "site": "Lugar de Vilar, n.º 56, Codeçoso, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-12-11",
+ "site": "Rua do Outeiro, n.º 49, Canedo de Basto, 4890-000 Celorico de Basto",
+ "operation": "construção de armazém agrícola",
+ "submitted_at": "2026-10-19",
  "files": [
   {
    "slot": "REQ",
@@ -26,13 +26,6 @@
    "title": "Código de acesso à certidão permanente do registo predial",
    "kind": "written",
    "signed_by": "requerente"
-  },
-  {
-   "slot": "TRPARQ",
-   "file": "TRPARQ-termo-arquitetura.pdf",
-   "title": "Termo de responsabilidade do autor do projeto de arquitetura",
-   "kind": "written",
-   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCARQ",
@@ -67,7 +60,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -158,7 +151,7 @@
    "file": "PLANT-plantas.pdf",
    "title": "Plantas",
    "kind": "drawn",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "ALC",
@@ -414,36 +407,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "loures_memoria_descritiva.pdf",
-   "title": "Memória descritiva e justificativa — Candidatura ao programa",
+   "file": "estarreja_informacao_2026.pdf",
+   "title": "INFORMAÇÃO n.º 13/2026",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF52534816879327.pdf",
-   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
+   "file": "analise-portaria-320-2020.pdf",
+   "title": "Análise — Portaria n.º 320/2026/1 e registo fotográfico",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "caderno_28.pdf",
-   "title": "MUNICÍPIO DE SEIXAL — AQUISIÇÃO DE SERVIÇOS DE FISCALIZAÇÃO ",
+   "file": "norma-instrucao-processo-2021.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-33",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "memoria-descritiva-candidatura-2023.pdf",
-   "title": "Memória descritiva da candidatura",
+   "file": "termo_outro_45.pdf",
+   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "anexo_iii_loteamentos.pdf",
-   "title": "ANEXO III — LOTEAMENTOS",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "termos-responsabilidade-passados-2020.pdf",
+   "title": "Os termos de responsabilidade passados no âmbito das comunic",
    "kind": "written",
    "signed_by": "requerente"
   }

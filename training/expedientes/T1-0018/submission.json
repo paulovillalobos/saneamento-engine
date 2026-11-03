@@ -6,10 +6,10 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Helena de Teste Nuno",
+  "name": "Xavier de Teste Bruno",
   "nif": "999999990"
  },
- "site": "Caminho da Lameira, n.º 189, Basto (São Clemente), 4890-000 Celorico de Basto",
+ "site": "Rua das Tílias, n.º 185, Infesta, 4890-000 Celorico de Basto",
  "operation": "construção de edifício de habitação bifamiliar",
  "submitted_at": "2026-11-28",
  "files": [
@@ -414,29 +414,36 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "anadia_copia_parte.pdf",
-   "title": "Cópia de parte da ata da reunião de 2026-11-21",
+   "file": "termo_responsabilidade_diretor_obra.pdf",
+   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "cv_requerente.pdf",
-   "title": "Curriculum vitae",
+   "file": "PDF69753843591755.pdf",
+   "title": "Termo de Responsabilidade",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "memoria-descritiva-candidatura-2022.pdf",
-   "title": "Memória descritiva da candidatura",
+   "file": "informacao_2026.pdf",
+   "title": "INFORMAÇÃO n.º 38/2026",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "carta_cmcb.pdf",
-   "title": "Carta",
+   "file": "caderno_79.pdf",
+   "title": "MUNICÍPIO DE AMARANTE — AQUISIÇÃO DE SERVIÇOS DE ELABORAÇÃO ",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "ficha_projeto.pdf",
+   "title": "Ficha de Projeto",
    "kind": "written",
    "signed_by": "requerente"
   }

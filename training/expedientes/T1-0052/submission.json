@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Carla Modelo Rita",
+  "name": "Olga Amostra Pedro",
   "nif": "999999990"
  },
- "site": "Lugar de Vilar, n.º 155, Rego, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-12-04",
+ "site": "Lugar da Devesa, n.º 214, Ourilhe, 4890-000 Celorico de Basto",
+ "operation": "alteração e ampliação de moradia unifamiliar",
+ "submitted_at": "2026-12-21",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCDO",
@@ -421,29 +421,15 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "estarreja_municipio_estarreja.pdf",
-   "title": "MUNICÍPIO DE ESTARREJA — AQUISIÇÃO DE SERVIÇOS DE PROFISSION",
+   "file": "anexo-criterio-elaboracao-2024.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "instrucoes-preenchimento-2019.pdf",
-   "title": "Instruções Preenchimento_Q3",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "anexo-obras-edificacao-2021.pdf",
-   "title": "ANEXO V — OBRAS DE EDIFICAÇÃO",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "cv_requerente.pdf",
-   "title": "Curriculum vitae",
+   "file": "lista_pecas.pdf",
+   "title": "LISTA DE PEÇAS",
    "kind": "written",
    "signed_by": "requerente"
   }

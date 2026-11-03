@@ -6,100 +6,84 @@
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 1660,
-  "impl": 516,
-  "built": 919,
-  "imperm": 700,
-  "perm": 960,
-  "volume": 2848,
-  "height": 6.9,
-  "facade": 6.2,
+  "plot": 2250,
+  "impl": 893,
+  "built": 1618,
+  "imperm": 1024,
+  "perm": 1226,
+  "volume": 5015,
+  "height": 7.3,
+  "facade": 6.6,
   "parking": 2,
-  "cost": 774700,
-  "submitted": "2026-12-22",
-  "site": "Rua da Escola, n.º 54, Codeçoso, 4890-000 Celorico de Basto",
+  "cost": 1237700,
+  "submitted": "2026-10-28",
+  "site": "Lugar de Carvalhal, n.º 197, Carvalho, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 16,
+  "months": 12,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Filipe Amostra Leonor",
+    "name": "Helena Modelo Diogo",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "29789-SIM",
-    "address": "Rua da Escola, n.º 54, Codeçoso, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9970"
+    "number": "91782-SIM",
+    "address": "Lugar de Carvalhal, n.º 197, Carvalho, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2732"
    },
    "arquiteto": {
-    "name": "Helena Exemplo Inês",
+    "name": "Nuno Amostra Rita",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "34753-SIM",
-    "address": "Rua do Outeiro, n.º 82, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6153"
+    "number": "74826-SIM",
+    "address": "Lugar de Vilar, n.º 5, 4700-000 Braga",
+    "policy": "SIM-RC-4096"
    },
    "engenheiro": {
-    "name": "Bruno Simulado Eva",
+    "name": "Eva Simulado Inês",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "95318-SIM",
-    "address": "Lugar de Carvalhal, n.º 56, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6006"
+    "number": "74006-SIM",
+    "address": "Rua da Escola, n.º 1, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4678"
    },
    "diretor": {
-    "name": "Nuno de Teste Xavier",
+    "name": "Gonçalo Simulado João",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "26951-SIM",
-    "address": "Caminho da Lameira, n.º 118, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4330"
+    "number": "87052-SIM",
+    "address": "Lugar de Vilar, n.º 17, 4000-000 Porto",
+    "policy": "SIM-RC-2563"
    }
   }
  },
  "planted": [
   {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDPAP"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
    "type": "unsigned",
    "target": {
-    "slot": "TREECP"
+    "slot": "TRCP"
    },
    "law": {
     "ref": "VI.1",
     "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
    }
-  },
-  {
-   "type": "value_mismatch",
-   "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "919 m2",
-    "MDARQ": "880 m2"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
-   },
-   "basis": "documents",
-   "values": {
-    "declarante": "Nuno de Teste Xavier",
-    "assinante": "Helena Exemplo Inês"
-   }
   }
  ],
- "n_planted": 3,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

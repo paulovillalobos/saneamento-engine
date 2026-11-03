@@ -2,78 +2,94 @@
  "expediente": "T1-0069",
  "case": {
   "id": "T1-0069",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 2,
-  "plot": 2580,
-  "impl": 1138,
-  "built": 1997,
-  "imperm": 1328,
-  "perm": 1252,
-  "volume": 6190,
-  "height": 7.8,
-  "facade": 7.1,
-  "parking": 2,
-  "cost": 2198600,
-  "submitted": "2026-12-07",
-  "site": "Rua do Outeiro, n.º 200, Infesta, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 3,
+  "plot": 1280,
+  "impl": 200,
+  "built": 562,
+  "imperm": 288,
+  "perm": 992,
+  "volume": 1742,
+  "height": 9.8,
+  "facade": 9.1,
+  "parking": 4,
+  "cost": 654700,
+  "submitted": "2026-11-13",
+  "site": "Rua das Tílias, n.º 207, Borba de Montanha, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 22,
+  "months": 18,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Inês de Teste Filipe",
+    "name": "Leonor Fictício Inês",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "40350-SIM",
-    "address": "Rua do Outeiro, n.º 200, Infesta, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8669"
+    "number": "36080-SIM",
+    "address": "Rua das Tílias, n.º 207, Borba de Montanha, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3138"
    },
    "arquiteto": {
-    "name": "Xavier Exemplo Vasco",
+    "name": "Nuno Exemplo Carla",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "78778-SIM",
-    "address": "Rua do Outeiro, n.º 13, 4800-000 Guimarães",
-    "policy": "SIM-RC-1967"
+    "number": "58975-SIM",
+    "address": "Travessa do Souto, n.º 72, 4700-000 Braga",
+    "policy": "SIM-RC-4212"
    },
    "engenheiro": {
-    "name": "Pedro Modelo Teresa",
+    "name": "João Exemplo João",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "22882-SIM",
-    "address": "Travessa do Souto, n.º 90, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8549"
+    "number": "98353-SIM",
+    "address": "Caminho da Lameira, n.º 26, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2135"
    },
    "diretor": {
-    "name": "Nuno Modelo Helena",
+    "name": "Xavier Fictício Teresa",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "69277-SIM",
-    "address": "Travessa do Souto, n.º 101, 4800-000 Guimarães",
-    "policy": "SIM-RC-3746"
+    "number": "85341-SIM",
+    "address": "Travessa do Souto, n.º 106, 4800-000 Guimarães",
+    "policy": "SIM-RC-3552"
    }
   }
  },
  "planted": [
   {
-   "type": "template_wording_missing",
+   "type": "expired_insurance",
    "target": {
-    "slot": "TRPARQ"
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-11-13"
    },
    "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Xavier Fictício Teresa",
+    "assinante": "Nuno Exemplo Carla"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

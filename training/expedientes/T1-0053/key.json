@@ -2,81 +2,98 @@
  "expediente": "T1-0053",
  "case": {
   "id": "T1-0053",
-  "work": "construção de moradia unifamiliar",
+  "work": "ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 3790,
-  "impl": 667,
-  "built": 1217,
-  "imperm": 791,
-  "perm": 2999,
-  "volume": 3772,
-  "height": 7.0,
-  "facade": 6.3,
+  "plot": 2370,
+  "impl": 569,
+  "built": 1123,
+  "imperm": 718,
+  "perm": 1652,
+  "volume": 3481,
+  "height": 7.1,
+  "facade": 6.4,
   "parking": 2,
-  "cost": 1066000,
+  "cost": 1162300,
   "submitted": "2026-12-01",
-  "site": "Lugar de Carvalhal, n.º 184, Borba de Montanha, 4890-000 Celorico de Basto",
+  "site": "Rua da Escola, n.º 250, Infesta, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 16,
+  "months": 15,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Rita Amostra Nuno",
+    "name": "Diogo Simulado Miguel",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "61211-SIM",
-    "address": "Lugar de Carvalhal, n.º 184, Borba de Montanha, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7985"
+    "number": "11101-SIM",
+    "address": "Rua da Escola, n.º 250, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2011"
    },
    "arquiteto": {
-    "name": "Sérgio Fictício Leonor",
+    "name": "Helena Fictício Pedro",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "20438-SIM",
-    "address": "Rua do Outeiro, n.º 95, 4800-000 Guimarães",
-    "policy": "SIM-RC-1995"
+    "number": "98146-SIM",
+    "address": "Travessa do Souto, n.º 22, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7757"
    },
    "engenheiro": {
-    "name": "Diogo de Teste Eva",
+    "name": "Miguel Fictício Helena",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "62475-SIM",
-    "address": "Lugar de Carvalhal, n.º 111, 4700-000 Braga",
-    "policy": "SIM-RC-8094"
+    "number": "06703-SIM",
+    "address": "Caminho da Lameira, n.º 84, 4800-000 Guimarães",
+    "policy": "SIM-RC-8910"
    },
    "diretor": {
-    "name": "Eva Simulado Gonçalo",
+    "name": "Teresa Exemplo Xavier",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "93341-SIM",
-    "address": "Rua das Tílias, n.º 43, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7997"
+    "number": "37948-SIM",
+    "address": "Rua do Outeiro, n.º 2, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7703"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "not_pdf",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "slot": "CORTES"
    },
-   "basis": "documents",
-   "values": {
-    "area_parcela": "379 m2",
-    "area_implantacao": "667 m2",
-    "MDARQ": "3790 m2"
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDARQ"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRPLAC"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

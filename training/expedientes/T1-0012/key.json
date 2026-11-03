@@ -2,67 +2,110 @@
  "expediente": "T1-0012",
  "case": {
   "id": "T1-0012",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 3,
-  "plot": 1630,
-  "impl": 657,
-  "built": 1849,
-  "imperm": 750,
-  "perm": 880,
-  "volume": 5731,
-  "height": 10.7,
-  "facade": 10.0,
-  "parking": 4,
-  "cost": 1982100,
-  "submitted": "2026-11-17",
-  "site": "Caminho da Lameira, n.º 216, Fervença, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 2,
+  "plot": 2020,
+  "impl": 310,
+  "built": 597,
+  "imperm": 498,
+  "perm": 1522,
+  "volume": 1850,
+  "height": 7.0,
+  "facade": 6.3,
+  "parking": 2,
+  "cost": 551000,
+  "submitted": "2026-10-18",
+  "site": "Lugar de Carvalhal, n.º 154, Caçarilhe, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 21,
+  "months": 15,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Leonor Exemplo Gonçalo",
+    "name": "Sérgio de Teste Inês",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "94777-SIM",
-    "address": "Caminho da Lameira, n.º 216, Fervença, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1498"
+    "number": "93571-SIM",
+    "address": "Lugar de Carvalhal, n.º 154, Caçarilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2134"
    },
    "arquiteto": {
-    "name": "Carla Fictício Gonçalo",
+    "name": "Inês Fictício Olga",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "20608-SIM",
-    "address": "Rua do Outeiro, n.º 94, 4000-000 Porto",
-    "policy": "SIM-RC-1692"
+    "number": "74511-SIM",
+    "address": "Rua da Escola, n.º 69, 4700-000 Braga",
+    "policy": "SIM-RC-6780"
    },
    "engenheiro": {
-    "name": "Inês Fictício Rita",
+    "name": "Inês de Teste Rita",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "13969-SIM",
-    "address": "Rua das Tílias, n.º 84, 4700-000 Braga",
-    "policy": "SIM-RC-0050"
+    "number": "92150-SIM",
+    "address": "Caminho da Lameira, n.º 35, 4800-000 Guimarães",
+    "policy": "SIM-RC-3513"
    },
    "diretor": {
-    "name": "Carla Exemplo Xavier",
+    "name": "Rita de Teste Xavier",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "07667-SIM",
-    "address": "Rua do Outeiro, n.º 69, 4800-000 Guimarães",
-    "policy": "SIM-RC-5681"
+    "number": "62675-SIM",
+    "address": "Rua do Outeiro, n.º 44, 4700-000 Braga",
+    "policy": "SIM-RC-9925"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "LEVT"
+   },
+   "law": {
+    "ref": "V.7",
+    "quote": "7 - Levantamento topográfico georreferenciado, acompanhado por termo de responsabilidade, sempre que haja alteração da topografia ou da implantação das construções, à escala de 1:200, ou de 1:500 no caso de loteamentos, devidamente cotado, que identifique o prédio e a respetiva área, construções nela erigidas, assim como o espaço público envolvente (vias, passeios, estacionamentos, árvores e infraestruturas ou instalações aí localizadas, incluindo postes, tampas, sinalização e mobiliário urbano);"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRCP"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Rita de Teste Xavier",
+    "assinante": "Inês Fictício Olga"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Lugar de Carvalhal, n.º 154, Caçarilhe, 4890-000 Celorico de Basto",
+    "TRPARQ": "Lugar da Devesa, n.º 271, Canedo de Basto, 4890-000 Celorico de Basto"
+   }
+  }
+ ],
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

@@ -5,71 +5,71 @@
   "work": "construção de edifício de comércio e serviços",
   "use": "Comércio e serviços",
   "fogos": 0,
-  "pisos": 1,
-  "plot": 3930,
-  "impl": 1367,
-  "built": 1244,
-  "imperm": 1563,
-  "perm": 2367,
-  "volume": 3856,
-  "height": 3.9,
-  "facade": 3.2,
+  "pisos": 3,
+  "plot": 310,
+  "impl": 77,
+  "built": 211,
+  "imperm": 200,
+  "perm": 110,
+  "volume": 654,
+  "height": 10.0,
+  "facade": 9.3,
   "parking": 2,
-  "cost": 1195400,
-  "submitted": "2026-10-17",
-  "site": "Rua do Outeiro, n.º 122, Infesta, 4890-000 Celorico de Basto",
+  "cost": 271300,
+  "submitted": "2026-12-24",
+  "site": "Travessa do Souto, n.º 253, Corgo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 16,
+  "months": 17,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Carla Simulado Sérgio",
+    "name": "Ana Exemplo Eva",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "87348-SIM",
-    "address": "Rua do Outeiro, n.º 122, Infesta, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2762"
+    "number": "84064-SIM",
+    "address": "Travessa do Souto, n.º 253, Corgo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2919"
    },
    "arquiteto": {
-    "name": "João Amostra Teresa",
+    "name": "Carla Modelo Ana",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "36358-SIM",
-    "address": "Lugar da Devesa, n.º 79, 4700-000 Braga",
-    "policy": "SIM-RC-6432"
+    "number": "46803-SIM",
+    "address": "Caminho da Lameira, n.º 103, 4800-000 Guimarães",
+    "policy": "SIM-RC-8917"
    },
    "engenheiro": {
-    "name": "Teresa Exemplo Filipe",
+    "name": "João Fictício Pedro",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "64389-SIM",
-    "address": "Caminho da Lameira, n.º 111, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-3643"
+    "number": "34993-SIM",
+    "address": "Lugar de Carvalhal, n.º 22, 4800-000 Guimarães",
+    "policy": "SIM-RC-8362"
    },
    "diretor": {
-    "name": "Inês Modelo Helena",
+    "name": "Bruno de Teste Sérgio",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "87617-SIM",
-    "address": "Rua da Escola, n.º 110, 4800-000 Guimarães",
-    "policy": "SIM-RC-5187"
+    "number": "13927-SIM",
+    "address": "Rua das Tílias, n.º 9, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1098"
    }
   }
  },
  "planted": [
   {
-   "type": "not_pdf",
+   "type": "missing_required",
    "target": {
-    "slot": "PLANT"
+    "slot": "FOTO"
    },
    "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    "ref": "V.15",
+    "quote": "15 - Registo fotográfico da situação existente, abrangendo o imóvel e as edificações adjacentes, quando estas existam;"
    }
   }
  ],

@@ -2,67 +2,91 @@
  "expediente": "T1-0008",
  "case": {
   "id": "T1-0008",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 1,
-  "plot": 410,
-  "impl": 141,
-  "built": 130,
-  "imperm": 296,
-  "perm": 114,
-  "volume": 403,
-  "height": 4.6,
-  "facade": 3.9,
+  "work": "ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 1880,
+  "impl": 374,
+  "built": 716,
+  "imperm": 568,
+  "perm": 1312,
+  "volume": 2219,
+  "height": 7.0,
+  "facade": 6.3,
   "parking": 2,
-  "cost": 166000,
-  "submitted": "2026-11-11",
-  "site": "Caminho da Lameira, n.º 61, Agilde, 4890-000 Celorico de Basto",
+  "cost": 542700,
+  "submitted": "2026-10-13",
+  "site": "Lugar da Devesa, n.º 253, Caçarilhe, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
   "months": 13,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Diogo Fictício Nuno",
+    "name": "Bruno Simulado Xavier",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "31568-SIM",
-    "address": "Caminho da Lameira, n.º 61, Agilde, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2763"
+    "number": "04051-SIM",
+    "address": "Lugar da Devesa, n.º 253, Caçarilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8102"
    },
    "arquiteto": {
-    "name": "Helena Fictício João",
+    "name": "Sérgio Amostra Xavier",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "61630-SIM",
-    "address": "Rua das Tílias, n.º 28, 4800-000 Guimarães",
-    "policy": "SIM-RC-4226"
+    "number": "58971-SIM",
+    "address": "Lugar da Devesa, n.º 85, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1935"
    },
    "engenheiro": {
-    "name": "Leonor Exemplo Vasco",
+    "name": "Xavier Amostra Filipe",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "15541-SIM",
-    "address": "Rua do Outeiro, n.º 11, 4000-000 Porto",
-    "policy": "SIM-RC-0253"
+    "number": "13482-SIM",
+    "address": "Rua do Outeiro, n.º 52, 4700-000 Braga",
+    "policy": "SIM-RC-8111"
    },
    "diretor": {
-    "name": "Ana Exemplo Leonor",
+    "name": "Pedro Exemplo Filipe",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "51219-SIM",
-    "address": "Caminho da Lameira, n.º 118, 4700-000 Braga",
-    "policy": "SIM-RC-6553"
+    "number": "31371-SIM",
+    "address": "Rua do Outeiro, n.º 105, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7579"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "188 m2",
+    "area_implantacao": "374 m2",
+    "MDARQ": "1880 m2"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "FOTO"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

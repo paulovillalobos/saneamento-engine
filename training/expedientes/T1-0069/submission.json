@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Inês de Teste Filipe",
+  "name": "Leonor Fictício Inês",
   "nif": "999999990"
  },
- "site": "Rua do Outeiro, n.º 200, Infesta, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-12-07",
+ "site": "Rua das Tílias, n.º 207, Borba de Montanha, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de habitação bifamiliar",
+ "submitted_at": "2026-11-13",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCDO",
@@ -414,43 +414,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "parecer-tecnico-portaria-2021.pdf",
-   "title": "Parecer técnico — Portaria n.º 320/2026/1 e estimativa do cu",
+   "file": "memoria_candidatura_82.pdf",
+   "title": "Memória descritiva da candidatura",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF88231012622283.pdf",
-   "title": "MUNICÍPIO DE LOURES — AQUISIÇÃO DE SERVIÇOS DE ELABORAÇÃO DE",
+   "file": "postura_12.pdf",
+   "title": "Postura Municipal Referente a Projetos de Levantamento topog",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "nota_tecnica_projetos_termos.pdf",
-   "title": "NOTA TÉCNICA N.º 18 — PROJETOS DE TERMOS DE RESPONSABILIDADE",
+   "file": "PDF11622963700362.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-09-20",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "minuta-memoria-descritiva-2021.pdf",
-   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "instrucoes-preenchimento-2026.pdf",
-   "title": "Instruções Preenchimento_Q3",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "ficha-projeto-2019.pdf",
-   "title": "Ficha de Projeto",
+   "file": "anexo_regulamento_55.pdf",
+   "title": "ANEXO III — OBRAS DE URBANIZAÇÃO",
    "kind": "written",
    "signed_by": "requerente"
   }

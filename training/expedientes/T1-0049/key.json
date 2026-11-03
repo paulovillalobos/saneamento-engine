@@ -2,78 +2,67 @@
  "expediente": "T1-0049",
  "case": {
   "id": "T1-0049",
-  "work": "alteração e ampliação de moradia unifamiliar",
+  "work": "ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 1450,
-  "impl": 310,
-  "built": 599,
-  "imperm": 475,
-  "perm": 975,
-  "volume": 1856,
-  "height": 7.7,
-  "facade": 7.0,
+  "plot": 1620,
+  "impl": 721,
+  "built": 1231,
+  "imperm": 880,
+  "perm": 740,
+  "volume": 3816,
+  "height": 6.7,
+  "facade": 6.0,
   "parking": 2,
-  "cost": 689400,
-  "submitted": "2026-11-05",
-  "site": "Travessa do Souto, n.º 202, Borba de Montanha, 4890-000 Celorico de Basto",
+  "cost": 1197700,
+  "submitted": "2026-12-04",
+  "site": "Lugar de Vilar, n.º 155, Rego, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 10,
+  "months": 12,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Ana Simulado Carla",
+    "name": "Carla Modelo Rita",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "12445-SIM",
-    "address": "Travessa do Souto, n.º 202, Borba de Montanha, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1008"
+    "number": "69284-SIM",
+    "address": "Lugar de Vilar, n.º 155, Rego, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2451"
    },
    "arquiteto": {
-    "name": "Gonçalo Exemplo Leonor",
+    "name": "Pedro Exemplo Xavier",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "90384-SIM",
-    "address": "Caminho da Lameira, n.º 85, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-3281"
+    "number": "43956-SIM",
+    "address": "Caminho da Lameira, n.º 64, 4000-000 Porto",
+    "policy": "SIM-RC-8681"
    },
    "engenheiro": {
-    "name": "Filipe Exemplo Carla",
+    "name": "Eva Simulado Carla",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "47443-SIM",
-    "address": "Travessa do Souto, n.º 55, 4800-000 Guimarães",
-    "policy": "SIM-RC-5465"
+    "number": "27897-SIM",
+    "address": "Lugar da Devesa, n.º 62, 4700-000 Braga",
+    "policy": "SIM-RC-2864"
    },
    "diretor": {
-    "name": "Sérgio Simulado Ana",
+    "name": "Eva Exemplo Bruno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "87650-SIM",
-    "address": "Rua da Escola, n.º 19, 4800-000 Guimarães",
-    "policy": "SIM-RC-9826"
+    "number": "10776-SIM",
+    "address": "Lugar da Devesa, n.º 82, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4116"
    }
   }
  },
- "planted": [
-  {
-   "type": "not_pdf",
-   "target": {
-    "slot": "CORTES"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  }
- ],
- "n_planted": 1,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

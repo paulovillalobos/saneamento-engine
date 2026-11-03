@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Sérgio Fictício Bruno",
+  "name": "Gonçalo Amostra Xavier",
   "nif": "999999990"
  },
- "site": "Rua da Escola, n.º 5, Corgo, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-09",
+ "site": "Travessa do Souto, n.º 100, Agilde, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de habitação bifamiliar",
+ "submitted_at": "2026-11-21",
  "files": [
   {
    "slot": "REQ",
@@ -414,29 +414,36 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "vila_anexo_loteamentos.pdf",
-   "title": "ANEXO V — LOTEAMENTOS",
+   "file": "amarante_norma_instrucao.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-30",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "lista_elementos_nomeacao_ficheiros.pdf",
-   "title": "Lista de elementos instrutórios",
+   "file": "termo_outro_53.pdf",
+   "title": "Termo de responsabilidade do diretor de obra ou do diretor d",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "carta_cmcb.pdf",
-   "title": "Carta",
+   "file": "ficha-projeto-2020.pdf",
+   "title": "Ficha de Projeto",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "manual_normas_organizacao_instrucao.pdf",
-   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
+   "file": "ficha_verificacao_elementos.pdf",
+   "title": "Ficha de verificação",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
    "kind": "written",
    "signed_by": "requerente"
   }

@@ -2,79 +2,75 @@
  "expediente": "T1-0029",
  "case": {
   "id": "T1-0029",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
   "pisos": 2,
-  "plot": 840,
-  "impl": 377,
-  "built": 737,
-  "imperm": 511,
-  "perm": 329,
-  "volume": 2284,
+  "plot": 470,
+  "impl": 204,
+  "built": 372,
+  "imperm": 314,
+  "perm": 156,
+  "volume": 1153,
   "height": 7.2,
   "facade": 6.5,
-  "parking": 4,
-  "cost": 908700,
-  "submitted": "2026-11-18",
-  "site": "Lugar da Devesa, n.º 65, Arnoia, 4890-000 Celorico de Basto",
+  "parking": 2,
+  "cost": 297900,
+  "submitted": "2026-10-26",
+  "site": "Rua do Outeiro, n.º 118, Basto (São Clemente), 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 14,
+  "months": 19,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Inês Modelo Carla",
+    "name": "Carla Exemplo Leonor",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "61550-SIM",
-    "address": "Lugar da Devesa, n.º 65, Arnoia, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8224"
+    "number": "29526-SIM",
+    "address": "Rua do Outeiro, n.º 118, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8536"
    },
    "arquiteto": {
-    "name": "Ana Modelo Nuno",
+    "name": "Nuno Simulado Rita",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "15685-SIM",
-    "address": "Travessa do Souto, n.º 88, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9920"
+    "number": "90747-SIM",
+    "address": "Rua da Escola, n.º 61, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4301"
    },
    "engenheiro": {
-    "name": "Xavier Amostra Vasco",
+    "name": "João Fictício Eva",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "59636-SIM",
-    "address": "Travessa do Souto, n.º 79, 4800-000 Guimarães",
-    "policy": "SIM-RC-8680"
+    "number": "91380-SIM",
+    "address": "Rua das Tílias, n.º 85, 4000-000 Porto",
+    "policy": "SIM-RC-6268"
    },
    "diretor": {
-    "name": "Leonor Modelo Bruno",
+    "name": "Pedro Modelo Ana",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "25636-SIM",
-    "address": "Lugar de Vilar, n.º 8, 4000-000 Porto",
-    "policy": "SIM-RC-0700"
+    "number": "18272-SIM",
+    "address": "Rua do Outeiro, n.º 110, 4800-000 Guimarães",
+    "policy": "SIM-RC-1624"
    }
   }
  },
  "planted": [
   {
-   "type": "expired_insurance",
+   "type": "wrong_signer",
    "target": {
-    "slot": "SRCARQ"
+    "slot": "TRDO"
    },
    "basis": "documents",
    "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-11-18"
-   },
-   "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+    "declarante": "Pedro Modelo Ana",
+    "assinante": "Nuno Simulado Rita"
    }
   }
  ],

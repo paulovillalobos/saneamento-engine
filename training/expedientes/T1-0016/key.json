@@ -2,78 +2,67 @@
  "expediente": "T1-0016",
  "case": {
   "id": "T1-0016",
-  "work": "ampliação de moradia unifamiliar",
+  "work": "alteração e ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 2080,
-  "impl": 441,
-  "built": 811,
-  "imperm": 499,
-  "perm": 1581,
-  "volume": 2514,
-  "height": 7.7,
-  "facade": 7.0,
+  "plot": 690,
+  "impl": 261,
+  "built": 448,
+  "imperm": 384,
+  "perm": 306,
+  "volume": 1388,
+  "height": 7.1,
+  "facade": 6.4,
   "parking": 2,
-  "cost": 736300,
-  "submitted": "2026-10-07",
-  "site": "Travessa do Souto, n.º 297, Britelo, 4890-000 Celorico de Basto",
+  "cost": 353900,
+  "submitted": "2026-12-20",
+  "site": "Lugar de Vilar, n.º 276, Britelo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 14,
+  "months": 10,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Teresa Exemplo Helena",
+    "name": "Helena Exemplo Eva",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "76708-SIM",
-    "address": "Travessa do Souto, n.º 297, Britelo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6412"
+    "number": "38443-SIM",
+    "address": "Lugar de Vilar, n.º 276, Britelo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5847"
    },
    "arquiteto": {
-    "name": "Gonçalo Simulado Carla",
+    "name": "Filipe Fictício João",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "21064-SIM",
-    "address": "Rua da Escola, n.º 4, 4800-000 Guimarães",
-    "policy": "SIM-RC-6269"
+    "number": "93973-SIM",
+    "address": "Lugar de Vilar, n.º 45, 4800-000 Guimarães",
+    "policy": "SIM-RC-8772"
    },
    "engenheiro": {
-    "name": "Olga Amostra Eva",
+    "name": "João Simulado Sérgio",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "78464-SIM",
-    "address": "Lugar de Vilar, n.º 87, 4000-000 Porto",
-    "policy": "SIM-RC-3953"
+    "number": "40182-SIM",
+    "address": "Rua do Outeiro, n.º 91, 4800-000 Guimarães",
+    "policy": "SIM-RC-0359"
    },
    "diretor": {
-    "name": "Nuno Fictício João",
+    "name": "João Modelo Vasco",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "27530-SIM",
-    "address": "Rua das Tílias, n.º 46, 4700-000 Braga",
-    "policy": "SIM-RC-3689"
+    "number": "14505-SIM",
+    "address": "Lugar da Devesa, n.º 97, 4800-000 Guimarães",
+    "policy": "SIM-RC-4177"
    }
   }
  },
- "planted": [
-  {
-   "type": "unsigned",
-   "target": {
-    "slot": "TRPLAC"
-   },
-   "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
-   }
-  }
- ],
- "n_planted": 1,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

@@ -2,78 +2,93 @@
  "expediente": "T1-0038",
  "case": {
   "id": "T1-0038",
-  "work": "construção de moradia unifamiliar",
+  "work": "alteração e ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 1,
-  "plot": 1190,
-  "impl": 244,
-  "built": 240,
-  "imperm": 282,
-  "perm": 908,
-  "volume": 744,
-  "height": 4.1,
-  "facade": 3.4,
+  "pisos": 2,
+  "plot": 2560,
+  "impl": 916,
+  "built": 1803,
+  "imperm": 1034,
+  "perm": 1526,
+  "volume": 5589,
+  "height": 6.6,
+  "facade": 5.9,
   "parking": 2,
-  "cost": 246400,
-  "submitted": "2026-12-12",
-  "site": "Rua do Outeiro, n.º 55, Arnoia, 4890-000 Celorico de Basto",
+  "cost": 2246500,
+  "submitted": "2026-10-11",
+  "site": "Rua da Escola, n.º 268, Gagos, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 20,
+  "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Leonor Modelo Leonor",
+    "name": "Olga Simulado Xavier",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "90688-SIM",
-    "address": "Rua do Outeiro, n.º 55, Arnoia, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6596"
+    "number": "83070-SIM",
+    "address": "Rua da Escola, n.º 268, Gagos, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5643"
    },
    "arquiteto": {
-    "name": "Xavier de Teste Miguel",
+    "name": "Helena Modelo Miguel",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "81385-SIM",
-    "address": "Travessa do Souto, n.º 119, 4800-000 Guimarães",
-    "policy": "SIM-RC-3655"
+    "number": "69042-SIM",
+    "address": "Rua das Tílias, n.º 92, 4700-000 Braga",
+    "policy": "SIM-RC-8525"
    },
    "engenheiro": {
-    "name": "Xavier Exemplo Miguel",
+    "name": "Carla Simulado Leonor",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "38069-SIM",
-    "address": "Rua da Escola, n.º 14, 4000-000 Porto",
-    "policy": "SIM-RC-2803"
+    "number": "03493-SIM",
+    "address": "Lugar de Carvalhal, n.º 4, 4700-000 Braga",
+    "policy": "SIM-RC-4605"
    },
    "diretor": {
-    "name": "Xavier Fictício Teresa",
+    "name": "Xavier Fictício Olga",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "58579-SIM",
-    "address": "Caminho da Lameira, n.º 55, 4800-000 Guimarães",
-    "policy": "SIM-RC-0075"
+    "number": "38918-SIM",
+    "address": "Lugar de Vilar, n.º 6, 4000-000 Porto",
+    "policy": "SIM-RC-8147"
    }
   }
  },
  "planted": [
   {
-   "type": "unsigned",
+   "type": "expired_insurance",
    "target": {
-    "slot": "TRCP"
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-10-11"
    },
    "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

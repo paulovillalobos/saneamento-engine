@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Diogo Fictício Nuno",
+  "name": "Bruno Simulado Xavier",
   "nif": "999999990"
  },
- "site": "Caminho da Lameira, n.º 61, Agilde, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-11-11",
+ "site": "Lugar da Devesa, n.º 253, Caçarilhe, 4890-000 Celorico de Basto",
+ "operation": "ampliação de moradia unifamiliar",
+ "submitted_at": "2026-10-13",
  "files": [
   {
    "slot": "REQ",
@@ -88,7 +88,7 @@
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "MDARQ",
@@ -414,29 +414,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "fatura_agua_2026_08.pdf",
-   "title": "Fatura de água",
+   "file": "memoria_descritiva_candidatura.pdf",
+   "title": "Memória descritiva da candidatura",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "vila_anexo_criterio.pdf",
-   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "file": "carta_cmcb.pdf",
+   "title": "Carta",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF28145552311050.pdf",
-   "title": "Termo de Responsabilidade",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "benavente_instrucoes_preenchimento.pdf",
-   "title": "Instruções Preenchimento_Q3",
+   "file": "informacao-2026-2021.pdf",
+   "title": "INFORMAÇÃO n.º 10/2026",
    "kind": "written",
    "signed_by": "requerente"
   }

@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Nuno Fictício Filipe",
+  "name": "Nuno Amostra Nuno",
   "nif": "999999990"
  },
- "site": "Rua da Escola, n.º 12, Ribas, 4890-000 Celorico de Basto",
- "operation": "construção de armazém agrícola",
- "submitted_at": "2026-11-24",
+ "site": "Lugar de Carvalhal, n.º 57, Infesta, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
+ "submitted_at": "2026-11-20",
  "files": [
   {
    "slot": "REQ",
@@ -60,7 +60,7 @@
    "file": "TRPLAC-termo-acessibilidades.pdf",
    "title": "Termo de responsabilidade do autor do plano de acessibilidades",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "TRDO",
@@ -165,12 +165,19 @@
    "file": "ALC-alcados.pdf",
    "title": "Alçados",
    "kind": "drawn",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "CORTES",
    "file": "CORTES-cortes.pdf",
    "title": "Cortes",
+   "kind": "drawn",
+   "signed_by": "arquiteto"
+  },
+  {
+   "slot": "PC",
+   "file": "PC-pormenores.pdf",
+   "title": "Pormenores de construção",
    "kind": "drawn",
    "signed_by": "arquiteto"
   },
@@ -407,43 +414,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "plano-acessibilidade-todos-2026.pdf",
+   "file": "diagnostico_32.pdf",
    "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF50301295465013.pdf",
-   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
+   "file": "manual_45.pdf",
+   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "nota_explicativa_91.pdf",
-   "title": "Os termos de responsabilidade passados no âmbito das legaliz",
+   "file": "fatura_agua_2026_08.pdf",
+   "title": "Fatura de água",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "cv_requerente.pdf",
-   "title": "Curriculum vitae",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "memoria_descritiva_candidatura.pdf",
-   "title": "Memória descritiva da candidatura",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "nota_tecnica_projetos_termos.pdf",
-   "title": "NOTA TÉCNICA N.º 12 — PROJETOS DE TERMOS DE RESPONSABILIDADE",
+   "file": "municipio-vila-nova-2019.pdf",
+   "title": "MUNICÍPIO DE VILA NOVA DE CERVEIRA — AQUISIÇÃO DE SERVIÇOS D",
    "kind": "written",
    "signed_by": "requerente"
   }

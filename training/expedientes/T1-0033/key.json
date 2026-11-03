@@ -2,89 +2,84 @@
  "expediente": "T1-0033",
  "case": {
   "id": "T1-0033",
-  "work": "construção de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 3080,
-  "impl": 727,
-  "built": 1451,
-  "imperm": 845,
-  "perm": 2235,
-  "volume": 4498,
-  "height": 7.6,
-  "facade": 6.9,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 3460,
+  "impl": 434,
+  "built": 425,
+  "imperm": 514,
+  "perm": 2946,
+  "volume": 1317,
+  "height": 4.6,
+  "facade": 3.9,
   "parking": 2,
-  "cost": 1729500,
-  "submitted": "2026-12-18",
-  "site": "Lugar de Carvalhal, n.º 143, Borba de Montanha, 4890-000 Celorico de Basto",
+  "cost": 374400,
+  "submitted": "2026-11-24",
+  "site": "Rua da Escola, n.º 12, Ribas, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 13,
+  "months": 14,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Rita Modelo Nuno",
+    "name": "Nuno Fictício Filipe",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "18446-SIM",
-    "address": "Lugar de Carvalhal, n.º 143, Borba de Montanha, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8474"
+    "number": "31405-SIM",
+    "address": "Rua da Escola, n.º 12, Ribas, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2855"
    },
    "arquiteto": {
-    "name": "Bruno de Teste Eva",
+    "name": "Leonor Simulado Pedro",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "29686-SIM",
-    "address": "Lugar da Devesa, n.º 51, 4000-000 Porto",
-    "policy": "SIM-RC-6692"
+    "number": "71568-SIM",
+    "address": "Lugar de Vilar, n.º 5, 4800-000 Guimarães",
+    "policy": "SIM-RC-3640"
    },
    "engenheiro": {
-    "name": "Vasco Exemplo Sérgio",
+    "name": "Inês Amostra Sérgio",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "09511-SIM",
-    "address": "Rua da Escola, n.º 17, 4800-000 Guimarães",
-    "policy": "SIM-RC-8945"
+    "number": "58394-SIM",
+    "address": "Rua do Outeiro, n.º 108, 4000-000 Porto",
+    "policy": "SIM-RC-9917"
    },
    "diretor": {
-    "name": "Nuno Modelo Inês",
+    "name": "Nuno Exemplo Nuno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "78575-SIM",
-    "address": "Rua da Escola, n.º 28, 4700-000 Braga",
-    "policy": "SIM-RC-4985"
+    "number": "68027-SIM",
+    "address": "Rua das Tílias, n.º 35, 4800-000 Guimarães",
+    "policy": "SIM-RC-5522"
    }
   }
  },
  "planted": [
   {
-   "type": "expired_insurance",
+   "type": "missing_required",
    "target": {
-    "slot": "SRCARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-12-18"
+    "slot": "PC"
    },
    "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+    "ref": "V.27.b.iv",
+    "quote": "iv) Pormenores de construção, à escala adequada, esclarecendo a solução construtiva adotada para as paredes exteriores do edifício e sua articulação com a cobertura, vãos de iluminação/ventilação e de acesso, bem como com o pavimento exterior envolvente;"
    }
   },
   {
-   "type": "not_pdfa",
+   "type": "template_wording_missing",
    "target": {
-    "slot": "MDPAP"
+    "slot": "TRPARQ"
    },
    "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
   }
  ],

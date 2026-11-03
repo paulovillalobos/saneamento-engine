@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Xavier Fictício Rita",
+  "name": "Bruno Exemplo Carla",
   "nif": "999999990"
  },
- "site": "Rua da Escola, n.º 240, Infesta, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-11-06",
+ "site": "Rua da Escola, n.º 269, Infesta, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
+ "submitted_at": "2026-12-10",
  "files": [
   {
    "slot": "REQ",
@@ -94,6 +94,13 @@
    "slot": "MDARQ",
    "file": "MDARQ-memoria-descritiva.pdf",
    "title": "Memória descritiva e justificativa",
+   "kind": "written",
+   "signed_by": "arquiteto"
+  },
+  {
+   "slot": "CEO",
+   "file": "CEO-calendarizacao.pdf",
+   "title": "Calendarização da execução da obra",
    "kind": "written",
    "signed_by": "arquiteto"
   },
@@ -407,43 +414,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "lista_elementos_nomeacao_ficheiros.pdf",
-   "title": "Lista de elementos instrutórios",
+   "file": "benavente_anexo_criterio.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "instrucoes_66.pdf",
-   "title": "Instruções Preenchimento_Q3",
+   "file": "fatura_agua_2026_08.pdf",
+   "title": "Fatura de água",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "carta_cmcb.pdf",
-   "title": "Carta",
+   "file": "benavente_memoria_descritiva.pdf",
+   "title": "Memória descritiva do projeto empresarial",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF83588171647173.pdf",
-   "title": "ANEXO III — OBRAS DE URBANIZAÇÃO",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "guia-tecnico-projetos-2024.pdf",
-   "title": "Guia Técnico para Projetos de Redes prediais de água e esgot",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "informacao_2026.pdf",
-   "title": "INFORMAÇÃO n.º 12/2026",
+   "file": "copia-parte-ata-2021.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-05-06",
    "kind": "written",
    "signed_by": "requerente"
   }

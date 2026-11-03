@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Xavier Simulado Teresa",
+  "name": "João Exemplo Sérgio",
   "nif": "999999990"
  },
- "site": "Rua da Escola, n.º 266, Basto (São Clemente), 4890-000 Celorico de Basto",
+ "site": "Caminho da Lameira, n.º 85, Molares, 4890-000 Celorico de Basto",
  "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-11-19",
+ "submitted_at": "2026-12-17",
  "files": [
   {
    "slot": "REQ",
@@ -414,43 +414,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "benavente_guia_tecnico.pdf",
-   "title": "Guia Técnico para Projetos de Redes prediais de água e esgot",
+   "file": "anexo_loteamentos.pdf",
+   "title": "ANEXO IV — LOTEAMENTOS",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "criterios_31.pdf",
-   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "file": "nota_explicativa_73.pdf",
+   "title": "Esclarecimento sobre a condicionamento acústico",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "termo_outro_84.pdf",
-   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "PDF64200848385307.pdf",
-   "title": "Guia Técnico para Projetos de Memória descritiva e justifica",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "cv_requerente.pdf",
-   "title": "Curriculum vitae",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "alfândega_copia_parte.pdf",
-   "title": "Cópia de parte da ata da reunião de 2026-04-04",
+   "file": "castro_nota_tecnica.pdf",
+   "title": "NOTA TÉCNICA N.º 16 — PROJETOS DE ESTABILIDADE E FUNDAÇÕES",
    "kind": "written",
    "signed_by": "requerente"
   }

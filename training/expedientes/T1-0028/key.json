@@ -2,91 +2,83 @@
  "expediente": "T1-0028",
  "case": {
   "id": "T1-0028",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 3,
-  "plot": 390,
-  "impl": 63,
-  "built": 168,
-  "imperm": 203,
-  "perm": 187,
-  "volume": 520,
-  "height": 10.4,
-  "facade": 9.7,
-  "parking": 4,
-  "cost": 192100,
-  "submitted": "2026-10-25",
-  "site": "Rua das Tílias, n.º 48, Vale de Bouro, 4890-000 Celorico de Basto",
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 1,
+  "plot": 2860,
+  "impl": 1285,
+  "built": 1256,
+  "imperm": 1419,
+  "perm": 1441,
+  "volume": 3893,
+  "height": 4.2,
+  "facade": 3.5,
+  "parking": 2,
+  "cost": 1548600,
+  "submitted": "2026-11-18",
+  "site": "Lugar da Devesa, n.º 65, Arnoia, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 11,
+  "months": 14,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Eva Modelo Nuno",
+    "name": "Inês Modelo Carla",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "85301-SIM",
-    "address": "Rua das Tílias, n.º 48, Vale de Bouro, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7825"
+    "number": "61550-SIM",
+    "address": "Lugar da Devesa, n.º 65, Arnoia, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8224"
    },
    "arquiteto": {
-    "name": "Leonor Exemplo Diogo",
+    "name": "Ana Modelo Nuno",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "09814-SIM",
-    "address": "Rua do Outeiro, n.º 76, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1710"
+    "number": "15685-SIM",
+    "address": "Travessa do Souto, n.º 88, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9920"
    },
    "engenheiro": {
-    "name": "Diogo de Teste Diogo",
+    "name": "Xavier Amostra Vasco",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "26675-SIM",
-    "address": "Travessa do Souto, n.º 89, 4000-000 Porto",
-    "policy": "SIM-RC-0059"
+    "number": "59636-SIM",
+    "address": "Travessa do Souto, n.º 79, 4800-000 Guimarães",
+    "policy": "SIM-RC-8680"
    },
    "diretor": {
-    "name": "Sérgio Exemplo Helena",
+    "name": "Leonor Modelo Bruno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "12987-SIM",
-    "address": "Caminho da Lameira, n.º 63, 4000-000 Porto",
-    "policy": "SIM-RC-9396"
+    "number": "25636-SIM",
+    "address": "Lugar de Vilar, n.º 8, 4000-000 Porto",
+    "policy": "SIM-RC-0700"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "expired_insurance",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "slot": "SRCARQ"
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "3900 m2",
-    "area_implantacao": "63 m2",
-    "MDARQ": "390 m2"
-   }
-  },
-  {
-   "type": "not_pdfa",
-   "target": {
-    "slot": "MDPAP"
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-11-18"
    },
    "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

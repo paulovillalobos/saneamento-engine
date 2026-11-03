@@ -2,67 +2,101 @@
  "expediente": "T1-0041",
  "case": {
   "id": "T1-0041",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
   "pisos": 1,
-  "plot": 3660,
-  "impl": 593,
-  "built": 567,
-  "imperm": 763,
-  "perm": 2897,
-  "volume": 1757,
-  "height": 4.1,
-  "facade": 3.4,
+  "plot": 2180,
+  "impl": 580,
+  "built": 541,
+  "imperm": 700,
+  "perm": 1480,
+  "volume": 1677,
+  "height": 4.0,
+  "facade": 3.3,
   "parking": 2,
-  "cost": 443900,
-  "submitted": "2026-10-07",
-  "site": "Lugar de Vilar, n.º 214, Codeçoso, 4890-000 Celorico de Basto",
+  "cost": 665400,
+  "submitted": "2026-10-02",
+  "site": "Rua da Escola, n.º 189, Agilde, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 20,
+  "months": 22,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Teresa Exemplo Filipe",
+    "name": "Filipe Amostra Pedro",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "80066-SIM",
-    "address": "Lugar de Vilar, n.º 214, Codeçoso, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-3978"
+    "number": "76095-SIM",
+    "address": "Rua da Escola, n.º 189, Agilde, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7494"
    },
    "arquiteto": {
-    "name": "Gonçalo Simulado Eva",
+    "name": "Gonçalo Modelo Rita",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "33050-SIM",
-    "address": "Rua do Outeiro, n.º 79, 4700-000 Braga",
-    "policy": "SIM-RC-8984"
+    "number": "71249-SIM",
+    "address": "Caminho da Lameira, n.º 77, 4700-000 Braga",
+    "policy": "SIM-RC-2081"
    },
    "engenheiro": {
-    "name": "Inês Simulado Vasco",
+    "name": "Xavier Fictício João",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "49781-SIM",
-    "address": "Travessa do Souto, n.º 46, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2938"
+    "number": "14868-SIM",
+    "address": "Travessa do Souto, n.º 84, 4700-000 Braga",
+    "policy": "SIM-RC-6954"
    },
    "diretor": {
-    "name": "Vasco Exemplo Olga",
+    "name": "Sérgio Fictício João",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "73982-SIM",
-    "address": "Rua do Outeiro, n.º 119, 4700-000 Braga",
-    "policy": "SIM-RC-9076"
+    "number": "65513-SIM",
+    "address": "Rua da Escola, n.º 49, 4700-000 Braga",
+    "policy": "SIM-RC-0876"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "218 m2",
+    "area_implantacao": "580 m2",
+    "MDARQ": "2180 m2"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "FOTO"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDPAP"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

@@ -2,67 +2,78 @@
  "expediente": "T1-0037",
  "case": {
   "id": "T1-0037",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
   "pisos": 1,
-  "plot": 1820,
-  "impl": 489,
-  "built": 415,
-  "imperm": 678,
-  "perm": 1142,
-  "volume": 1286,
-  "height": 3.7,
-  "facade": 3.0,
+  "plot": 1190,
+  "impl": 244,
+  "built": 240,
+  "imperm": 282,
+  "perm": 908,
+  "volume": 744,
+  "height": 4.1,
+  "facade": 3.4,
   "parking": 2,
-  "cost": 388800,
-  "submitted": "2026-12-10",
-  "site": "Caminho da Lameira, n.º 235, Ourilhe, 4890-000 Celorico de Basto",
+  "cost": 246400,
+  "submitted": "2026-12-12",
+  "site": "Rua do Outeiro, n.º 55, Arnoia, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 11,
+  "months": 20,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Helena de Teste Eva",
+    "name": "Leonor Modelo Leonor",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "67808-SIM",
-    "address": "Caminho da Lameira, n.º 235, Ourilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1547"
+    "number": "90688-SIM",
+    "address": "Rua do Outeiro, n.º 55, Arnoia, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6596"
    },
    "arquiteto": {
-    "name": "Olga Amostra Eva",
+    "name": "Xavier de Teste Miguel",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "37016-SIM",
-    "address": "Travessa do Souto, n.º 48, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-3458"
+    "number": "81385-SIM",
+    "address": "Travessa do Souto, n.º 119, 4800-000 Guimarães",
+    "policy": "SIM-RC-3655"
    },
    "engenheiro": {
-    "name": "Leonor Modelo Eva",
+    "name": "Xavier Exemplo Miguel",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "74165-SIM",
-    "address": "Rua do Outeiro, n.º 79, 4000-000 Porto",
-    "policy": "SIM-RC-3770"
+    "number": "38069-SIM",
+    "address": "Rua da Escola, n.º 14, 4000-000 Porto",
+    "policy": "SIM-RC-2803"
    },
    "diretor": {
-    "name": "Rita de Teste Eva",
+    "name": "Xavier Fictício Teresa",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "54530-SIM",
-    "address": "Lugar da Devesa, n.º 55, 4800-000 Guimarães",
-    "policy": "SIM-RC-1834"
+    "number": "58579-SIM",
+    "address": "Caminho da Lameira, n.º 55, 4800-000 Guimarães",
+    "policy": "SIM-RC-0075"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRCP"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  }
+ ],
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

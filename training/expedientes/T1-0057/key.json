@@ -2,78 +2,104 @@
  "expediente": "T1-0057",
  "case": {
   "id": "T1-0057",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 3,
-  "plot": 2300,
-  "impl": 841,
-  "built": 2213,
-  "imperm": 962,
-  "perm": 1338,
-  "volume": 6860,
-  "height": 10.4,
-  "facade": 9.7,
-  "parking": 4,
-  "cost": 2246100,
-  "submitted": "2026-12-12",
-  "site": "Rua do Outeiro, n.º 2, Britelo, 4890-000 Celorico de Basto",
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 3510,
+  "impl": 771,
+  "built": 1499,
+  "imperm": 936,
+  "perm": 2574,
+  "volume": 4646,
+  "height": 7.3,
+  "facade": 6.6,
+  "parking": 2,
+  "cost": 993800,
+  "submitted": "2026-11-03",
+  "site": "Travessa do Souto, n.º 125, Borba de Montanha, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 13,
+  "months": 21,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Pedro Modelo Eva",
+    "name": "Sérgio Exemplo Teresa",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "37994-SIM",
-    "address": "Rua do Outeiro, n.º 2, Britelo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5619"
+    "number": "41768-SIM",
+    "address": "Travessa do Souto, n.º 125, Borba de Montanha, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7950"
    },
    "arquiteto": {
-    "name": "Inês Simulado Eva",
+    "name": "Xavier de Teste Eva",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "25662-SIM",
-    "address": "Caminho da Lameira, n.º 28, 4000-000 Porto",
-    "policy": "SIM-RC-0950"
+    "number": "72782-SIM",
+    "address": "Travessa do Souto, n.º 27, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8881"
    },
    "engenheiro": {
-    "name": "Bruno Exemplo João",
+    "name": "Ana Exemplo Vasco",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "30155-SIM",
-    "address": "Travessa do Souto, n.º 96, 4000-000 Porto",
-    "policy": "SIM-RC-9890"
+    "number": "60356-SIM",
+    "address": "Lugar de Vilar, n.º 19, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6558"
    },
    "diretor": {
-    "name": "Eva Fictício Filipe",
+    "name": "Pedro de Teste Xavier",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "05093-SIM",
-    "address": "Rua das Tílias, n.º 21, 4700-000 Braga",
-    "policy": "SIM-RC-7209"
+    "number": "61100-SIM",
+    "address": "Lugar da Devesa, n.º 91, 4800-000 Guimarães",
+    "policy": "SIM-RC-9428"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "expired_insurance",
    "target": {
-    "slot": "CORTES"
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-11-03"
    },
    "law": {
-    "ref": "V.27.b.iii",
-    "quote": "iii) Cortes longitudinais e transversais à escala de 1:50 ou de 1:100 abrangendo o terreno e o arranque dos terrenos vizinhos, com indicação do perfil existente e o proposto, bem como das cotas dos diversos pisos, da cota de soleira e dos acessos ao estacionamento;"
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "ALC"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Pedro de Teste Xavier",
+    "assinante": "Xavier de Teste Eva"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

@@ -421,22 +421,8 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "valpaços_esclarecimento_sobre.pdf",
-   "title": "Esclarecimento sobre a estimativa do custo total da obra",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "estarreja_municipio_estarreja.pdf",
-   "title": "MUNICÍPIO DE ESTARREJA — AQUISIÇÃO DE SERVIÇOS DE ELABORAÇÃO",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "vila_anexo_loteamentos.pdf",
-   "title": "ANEXO II — LOTEAMENTOS",
+   "file": "pecas-escritas-desenhadas-2021.pdf",
+   "title": "PEÇAS ESCRITAS E DESENHADAS - ÍNDICE",
    "kind": "written",
    "signed_by": "requerente"
   },
@@ -458,6 +444,20 @@
    "slot": "OUTDOC",
    "file": "nota-tecnica-projetos-2025.pdf",
    "title": "NOTA TÉCNICA N.º 25 — PROJETOS DE ESTABILIDADE E FUNDAÇÕES",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "municipio-vila-nova-2025.pdf",
+   "title": "MUNICÍPIO DE VILA NOVA DE CERVEIRA — AQUISIÇÃO DE SERVIÇOS D",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "memoria_empresa_24.pdf",
+   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
    "kind": "written",
    "signed_by": "requerente"
   }

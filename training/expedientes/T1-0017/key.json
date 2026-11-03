@@ -2,89 +2,66 @@
  "expediente": "T1-0017",
  "case": {
   "id": "T1-0017",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
-  "fogos": 0,
-  "pisos": 1,
-  "plot": 1700,
-  "impl": 427,
-  "built": 394,
-  "imperm": 618,
-  "perm": 1082,
-  "volume": 1221,
-  "height": 4.6,
-  "facade": 3.9,
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 2760,
+  "impl": 574,
+  "built": 1085,
+  "imperm": 765,
+  "perm": 1995,
+  "volume": 3363,
+  "height": 7.4,
+  "facade": 6.7,
   "parking": 2,
-  "cost": 308100,
-  "submitted": "2026-10-18",
-  "site": "Rua da Escola, n.º 233, Basto (São Clemente), 4890-000 Celorico de Basto",
+  "cost": 1320400,
+  "submitted": "2026-12-08",
+  "site": "Rua das Tílias, n.º 141, Rego, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 23,
+  "months": 20,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Gonçalo Exemplo Teresa",
+    "name": "Inês Exemplo Diogo",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "45072-SIM",
-    "address": "Rua da Escola, n.º 233, Basto (São Clemente), 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0699"
+    "number": "88724-SIM",
+    "address": "Rua das Tílias, n.º 141, Rego, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7438"
    },
    "arquiteto": {
-    "name": "Olga Exemplo Gonçalo",
+    "name": "Bruno Exemplo Gonçalo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "23704-SIM",
-    "address": "Rua do Outeiro, n.º 109, 4800-000 Guimarães",
-    "policy": "SIM-RC-8550"
+    "number": "52634-SIM",
+    "address": "Lugar da Devesa, n.º 117, 4700-000 Braga",
+    "policy": "SIM-RC-1541"
    },
    "engenheiro": {
-    "name": "Miguel Fictício Helena",
+    "name": "Carla Amostra Bruno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "48150-SIM",
-    "address": "Travessa do Souto, n.º 44, 4000-000 Porto",
-    "policy": "SIM-RC-7512"
+    "number": "56399-SIM",
+    "address": "Lugar de Carvalhal, n.º 25, 4700-000 Braga",
+    "policy": "SIM-RC-9754"
    },
    "diretor": {
-    "name": "Bruno Modelo Filipe",
+    "name": "Sérgio Fictício Sérgio",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "20357-SIM",
-    "address": "Caminho da Lameira, n.º 61, 4000-000 Porto",
-    "policy": "SIM-RC-9558"
+    "number": "51436-SIM",
+    "address": "Lugar da Devesa, n.º 26, 4700-000 Braga",
+    "policy": "SIM-RC-5894"
    }
   }
  },
  "planted": [
-  {
-   "type": "impossible_value",
-   "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
-   },
-   "basis": "documents",
-   "values": {
-    "area_parcela": "170 m2",
-    "area_implantacao": "427 m2",
-    "MDARQ": "1700 m2"
-   }
-  },
-  {
-   "type": "not_pdf",
-   "target": {
-    "slot": "PLANT"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
   {
    "type": "template_wording_missing",
    "target": {
@@ -102,12 +79,12 @@
    },
    "basis": "documents",
    "values": {
-    "declarante": "Bruno Modelo Filipe",
-    "assinante": "Olga Exemplo Gonçalo"
+    "declarante": "Sérgio Fictício Sérgio",
+    "assinante": "Bruno Exemplo Gonçalo"
    }
   }
  ],
- "n_planted": 4,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

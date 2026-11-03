@@ -2,99 +2,91 @@
  "expediente": "T1-0042",
  "case": {
   "id": "T1-0042",
-  "work": "construção de moradia unifamiliar",
+  "work": "alteração e ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 1,
-  "plot": 1160,
-  "impl": 422,
-  "built": 418,
-  "imperm": 446,
-  "perm": 714,
-  "volume": 1295,
-  "height": 4.2,
-  "facade": 3.5,
+  "pisos": 2,
+  "plot": 1210,
+  "impl": 203,
+  "built": 360,
+  "imperm": 352,
+  "perm": 858,
+  "volume": 1116,
+  "height": 7.1,
+  "facade": 6.4,
   "parking": 2,
-  "cost": 479000,
-  "submitted": "2026-11-18",
-  "site": "Rua das Tílias, n.º 15, Agilde, 4890-000 Celorico de Basto",
+  "cost": 268200,
+  "submitted": "2026-12-04",
+  "site": "Travessa do Souto, n.º 197, Vale de Bouro, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 21,
+  "months": 19,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Nuno Fictício Sérgio",
+    "name": "Gonçalo Simulado Sérgio",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "02064-SIM",
-    "address": "Rua das Tílias, n.º 15, Agilde, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5171"
+    "number": "54654-SIM",
+    "address": "Travessa do Souto, n.º 197, Vale de Bouro, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2767"
    },
    "arquiteto": {
-    "name": "Bruno Fictício Pedro",
+    "name": "Helena Fictício Sérgio",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "93157-SIM",
-    "address": "Lugar de Vilar, n.º 58, 4700-000 Braga",
-    "policy": "SIM-RC-2353"
+    "number": "88499-SIM",
+    "address": "Lugar da Devesa, n.º 83, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7823"
    },
    "engenheiro": {
-    "name": "Inês Modelo Nuno",
+    "name": "Xavier Modelo Sérgio",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "91735-SIM",
-    "address": "Travessa do Souto, n.º 66, 4000-000 Porto",
-    "policy": "SIM-RC-1163"
+    "number": "31831-SIM",
+    "address": "Rua do Outeiro, n.º 37, 4000-000 Porto",
+    "policy": "SIM-RC-9338"
    },
    "diretor": {
-    "name": "Nuno Exemplo Miguel",
+    "name": "Ana Simulado Xavier",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "28596-SIM",
-    "address": "Rua da Escola, n.º 68, 4800-000 Guimarães",
-    "policy": "SIM-RC-3614"
+    "number": "42338-SIM",
+    "address": "Travessa do Souto, n.º 102, 4700-000 Braga",
+    "policy": "SIM-RC-7474"
    }
   }
  },
  "planted": [
   {
-   "type": "not_pdf",
+   "type": "impossible_value",
    "target": {
-    "slot": "ALC"
+    "field": "area_parcela",
+    "slot": "REQ"
    },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   "basis": "documents",
+   "values": {
+    "area_parcela": "121 m2",
+    "area_implantacao": "203 m2",
+    "MDARQ": "1210 m2"
    }
   },
   {
    "type": "unsigned",
    "target": {
-    "slot": "TRPLAC"
+    "slot": "TRDO"
    },
    "law": {
     "ref": "VI.1",
     "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
    }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
-   },
-   "basis": "documents",
-   "values": {
-    "declarante": "Nuno Exemplo Miguel",
-    "assinante": "Bruno Fictício Pedro"
-   }
   }
  ],
- "n_planted": 3,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

@@ -2,108 +2,111 @@
  "expediente": "T1-0047",
  "case": {
   "id": "T1-0047",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
   "pisos": 2,
-  "plot": 1770,
-  "impl": 509,
-  "built": 1004,
-  "imperm": 592,
-  "perm": 1178,
-  "volume": 3112,
-  "height": 6.8,
-  "facade": 6.1,
-  "parking": 2,
-  "cost": 913600,
-  "submitted": "2026-12-27",
-  "site": "Rua do Outeiro, n.º 211, Arnoia, 4890-000 Celorico de Basto",
+  "plot": 1590,
+  "impl": 313,
+  "built": 605,
+  "imperm": 479,
+  "perm": 1111,
+  "volume": 1875,
+  "height": 7.2,
+  "facade": 6.5,
+  "parking": 4,
+  "cost": 511800,
+  "submitted": "2026-10-05",
+  "site": "Caminho da Lameira, n.º 16, Corgo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 21,
+  "months": 13,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Nuno Fictício Eva",
+    "name": "Filipe Fictício Vasco",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "10425-SIM",
-    "address": "Rua do Outeiro, n.º 211, Arnoia, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9867"
+    "number": "81861-SIM",
+    "address": "Caminho da Lameira, n.º 16, Corgo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0057"
    },
    "arquiteto": {
-    "name": "Nuno Fictício João",
+    "name": "Gonçalo Modelo Miguel",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "80143-SIM",
-    "address": "Rua das Tílias, n.º 35, 4000-000 Porto",
-    "policy": "SIM-RC-4651"
+    "number": "86418-SIM",
+    "address": "Lugar de Vilar, n.º 35, 4000-000 Porto",
+    "policy": "SIM-RC-1322"
    },
    "engenheiro": {
-    "name": "Eva Simulado Olga",
+    "name": "João Fictício Nuno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "37920-SIM",
-    "address": "Caminho da Lameira, n.º 89, 4800-000 Guimarães",
-    "policy": "SIM-RC-9080"
+    "number": "40017-SIM",
+    "address": "Lugar de Vilar, n.º 119, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2283"
    },
    "diretor": {
-    "name": "Bruno Amostra Eva",
+    "name": "João Modelo Diogo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "13761-SIM",
-    "address": "Lugar de Vilar, n.º 67, 4800-000 Guimarães",
-    "policy": "SIM-RC-7096"
+    "number": "40238-SIM",
+    "address": "Travessa do Souto, n.º 99, 4700-000 Braga",
+    "policy": "SIM-RC-7210"
    }
   }
  },
  "planted": [
   {
-   "type": "expired_insurance",
+   "type": "impossible_value",
    "target": {
-    "slot": "SRCARQ"
+    "field": "area_parcela",
+    "slot": "REQ"
    },
    "basis": "documents",
    "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-12-27"
-   },
-   "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+    "area_parcela": "159 m2",
+    "area_implantacao": "313 m2",
+    "MDARQ": "1590 m2"
    }
   },
   {
    "type": "missing_required",
    "target": {
-    "slot": "P10000"
+    "slot": "CRP"
    },
    "law": {
-    "ref": "V.2",
-    "quote": "2 - Delimitação da área objeto da operação urbanística e sua área de enquadramento em planta de localização fornecida pela câmara municipal ou planta de localização à escala 1:1.000;"
+    "ref": "V.5",
+    "quote": "5 - Indicação do código de acesso à certidão permanente do registo predial referente ao prédio ou prédios abrangidos pela operação urbanística ou, quando omisso, a respetiva certidão negativa do registo predial, acompanhada da caderneta predial da qual constem os correspondentes artigos matriciais;"
    }
   },
   {
-   "type": "value_mismatch",
+   "type": "not_pdf",
    "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
+    "slot": "PLANT"
    },
-   "basis": "documents",
-   "values": {
-    "REQ": "1004 m2",
-    "MDARQ": "935 m2"
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
   }
  ],
- "n_planted": 3,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

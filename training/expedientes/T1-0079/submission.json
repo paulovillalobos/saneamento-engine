@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Nuno Simulado Vasco",
+  "name": "Ana Simulado Gonçalo",
   "nif": "999999990"
  },
- "site": "Lugar de Carvalhal, n.º 233, Veade, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-10-06",
+ "site": "Travessa do Souto, n.º 10, Arnoia, 4890-000 Celorico de Basto",
+ "operation": "alteração e ampliação de moradia unifamiliar",
+ "submitted_at": "2026-12-27",
  "files": [
   {
    "slot": "REQ",
@@ -82,6 +82,13 @@
    "title": "Comprovativo de contratação do diretor de obra",
    "kind": "written",
    "signed_by": "requerente"
+  },
+  {
+   "slot": "FOTO",
+   "file": "FOTO-registo-fotografico.pdf",
+   "title": "Registo fotográfico da situação existente",
+   "kind": "written",
+   "signed_by": "arquiteto"
   },
   {
    "slot": "MDARQ",
@@ -407,29 +414,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "termo_responsabilidade_diretor_obra.pdf",
-   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
+   "file": "nota_tecnica_projetos_condicionamento.pdf",
+   "title": "NOTA TÉCNICA N.º 21 — PROJETOS DE CONDICIONAMENTO ACÚSTICO",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "anexo_regulamento_17.pdf",
-   "title": "ANEXO II — OBRAS DE URBANIZAÇÃO",
+   "file": "analise_08.pdf",
+   "title": "Análise — Portaria n.º 320/2026/1 e condicionamento acústico",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "cv_requerente.pdf",
-   "title": "Curriculum vitae",
+   "file": "postura-projetos-plano-2019.pdf",
+   "title": "Postura Municipal Referente a Projetos de Plano de acessibil",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "municipio_vila_nova_cerveira.pdf",
-   "title": "MUNICÍPIO DE VILA NOVA DE CERVEIRA — AQUISIÇÃO DE SERVIÇOS D",
+   "file": "vila_manual_normas.pdf",
+   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
    "kind": "written",
    "signed_by": "requerente"
   }

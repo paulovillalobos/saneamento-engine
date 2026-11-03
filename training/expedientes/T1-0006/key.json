@@ -2,62 +2,62 @@
  "expediente": "T1-0006",
  "case": {
   "id": "T1-0006",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 360,
-  "impl": 157,
-  "built": 302,
-  "imperm": 343,
-  "perm": 17,
-  "volume": 936,
-  "height": 6.8,
-  "facade": 6.1,
-  "parking": 2,
-  "cost": 350900,
-  "submitted": "2026-11-19",
-  "site": "Caminho da Lameira, n.º 224, Veade, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 3,
+  "plot": 1960,
+  "impl": 316,
+  "built": 935,
+  "imperm": 390,
+  "perm": 1570,
+  "volume": 2898,
+  "height": 9.7,
+  "facade": 9.0,
+  "parking": 4,
+  "cost": 1182700,
+  "submitted": "2026-12-14",
+  "site": "Travessa do Souto, n.º 152, Fervença, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 19,
+  "months": 15,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Sérgio de Teste Ana",
+    "name": "Nuno Amostra Teresa",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "17239-SIM",
-    "address": "Caminho da Lameira, n.º 224, Veade, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5738"
+    "number": "01525-SIM",
+    "address": "Travessa do Souto, n.º 152, Fervença, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9488"
    },
    "arquiteto": {
-    "name": "João Modelo Nuno",
+    "name": "Ana Simulado Xavier",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "45481-SIM",
-    "address": "Lugar de Carvalhal, n.º 15, 4800-000 Guimarães",
-    "policy": "SIM-RC-6266"
+    "number": "32750-SIM",
+    "address": "Caminho da Lameira, n.º 27, 4700-000 Braga",
+    "policy": "SIM-RC-4666"
    },
    "engenheiro": {
-    "name": "Gonçalo Modelo Ana",
+    "name": "Eva Modelo Gonçalo",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "37388-SIM",
-    "address": "Rua do Outeiro, n.º 119, 4800-000 Guimarães",
-    "policy": "SIM-RC-9845"
+    "number": "36812-SIM",
+    "address": "Caminho da Lameira, n.º 75, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7314"
    },
    "diretor": {
-    "name": "Sérgio Exemplo João",
+    "name": "Filipe Modelo Miguel",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "93129-SIM",
-    "address": "Lugar de Vilar, n.º 58, 4700-000 Braga",
-    "policy": "SIM-RC-5889"
+    "number": "65331-SIM",
+    "address": "Rua das Tílias, n.º 110, 4000-000 Porto",
+    "policy": "SIM-RC-3424"
    }
   }
  },
@@ -70,20 +70,19 @@
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "3600 m2",
-    "area_implantacao": "157 m2",
-    "MDARQ": "360 m2"
+    "area_parcela": "196 m2",
+    "area_implantacao": "316 m2",
+    "MDARQ": "1960 m2"
    }
   },
   {
-   "type": "wrong_signer",
+   "type": "not_pdf",
    "target": {
-    "slot": "TRDO"
+    "slot": "PLANT"
    },
-   "basis": "documents",
-   "values": {
-    "declarante": "Sérgio Exemplo João",
-    "assinante": "João Modelo Nuno"
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   }
  ],

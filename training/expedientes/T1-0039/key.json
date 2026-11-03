@@ -6,85 +6,80 @@
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 2560,
-  "impl": 916,
-  "built": 1803,
-  "imperm": 1034,
-  "perm": 1526,
-  "volume": 5589,
-  "height": 6.6,
-  "facade": 5.9,
+  "plot": 2230,
+  "impl": 429,
+  "built": 781,
+  "imperm": 453,
+  "perm": 1777,
+  "volume": 2421,
+  "height": 7.4,
+  "facade": 6.7,
   "parking": 2,
-  "cost": 2246500,
-  "submitted": "2026-10-11",
-  "site": "Rua da Escola, n.º 268, Gagos, 4890-000 Celorico de Basto",
+  "cost": 929300,
+  "submitted": "2026-11-25",
+  "site": "Lugar de Vilar, n.º 28, Ourilhe, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 9,
+  "months": 21,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Olga Simulado Xavier",
+    "name": "Gonçalo Fictício Helena",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "83070-SIM",
-    "address": "Rua da Escola, n.º 268, Gagos, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5643"
+    "number": "13003-SIM",
+    "address": "Lugar de Vilar, n.º 28, Ourilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4099"
    },
    "arquiteto": {
-    "name": "Helena Modelo Miguel",
+    "name": "Gonçalo Modelo Xavier",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "69042-SIM",
-    "address": "Rua das Tílias, n.º 92, 4700-000 Braga",
-    "policy": "SIM-RC-8525"
+    "number": "34527-SIM",
+    "address": "Rua das Tílias, n.º 32, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4224"
    },
    "engenheiro": {
-    "name": "Carla Simulado Leonor",
+    "name": "Eva Amostra Inês",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "03493-SIM",
-    "address": "Lugar de Carvalhal, n.º 4, 4700-000 Braga",
-    "policy": "SIM-RC-4605"
+    "number": "48405-SIM",
+    "address": "Caminho da Lameira, n.º 65, 4700-000 Braga",
+    "policy": "SIM-RC-3102"
    },
    "diretor": {
-    "name": "Xavier Fictício Olga",
+    "name": "Teresa Amostra Ana",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "38918-SIM",
-    "address": "Lugar de Vilar, n.º 6, 4000-000 Porto",
-    "policy": "SIM-RC-8147"
+    "number": "14812-SIM",
+    "address": "Rua do Outeiro, n.º 36, 4700-000 Braga",
+    "policy": "SIM-RC-5277"
    }
   }
  },
  "planted": [
   {
-   "type": "expired_insurance",
+   "type": "missing_required",
    "target": {
-    "slot": "SRCARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-10-11"
+    "slot": "PLANT"
    },
    "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+    "ref": "V.27.b.i",
+    "quote": "i) Plantas à escala de 1:50 ou de 1:100 contendo as dimensões e áreas e utilizações de todos os compartimentos, bem como a representação do mobiliário fixo e equipamento sanitário;"
    }
   },
   {
-   "type": "template_wording_missing",
+   "type": "not_pdf",
    "target": {
-    "slot": "TRPARQ"
+    "slot": "PLANT"
    },
    "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   }
  ],

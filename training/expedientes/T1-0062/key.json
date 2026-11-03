@@ -2,75 +2,70 @@
  "expediente": "T1-0062",
  "case": {
   "id": "T1-0062",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 750,
-  "impl": 135,
-  "built": 269,
-  "imperm": 228,
-  "perm": 522,
-  "volume": 833,
-  "height": 6.9,
-  "facade": 6.2,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 3,
+  "plot": 3060,
+  "impl": 795,
+  "built": 2123,
+  "imperm": 935,
+  "perm": 2125,
+  "volume": 6581,
+  "height": 10.3,
+  "facade": 9.6,
   "parking": 2,
-  "cost": 296700,
-  "submitted": "2026-10-19",
-  "site": "Rua da Escola, n.º 118, Codeçoso, 4890-000 Celorico de Basto",
+  "cost": 2390400,
+  "submitted": "2026-12-19",
+  "site": "Travessa do Souto, n.º 290, Infesta, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 16,
+  "months": 11,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Helena Amostra Olga",
+    "name": "João Fictício Bruno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "97583-SIM",
-    "address": "Rua da Escola, n.º 118, Codeçoso, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5894"
+    "number": "32138-SIM",
+    "address": "Travessa do Souto, n.º 290, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6438"
    },
    "arquiteto": {
-    "name": "Rita Exemplo Gonçalo",
+    "name": "Nuno Amostra Eva",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "61099-SIM",
-    "address": "Lugar da Devesa, n.º 6, 4700-000 Braga",
-    "policy": "SIM-RC-3648"
+    "number": "75018-SIM",
+    "address": "Rua do Outeiro, n.º 72, 4700-000 Braga",
+    "policy": "SIM-RC-7993"
    },
    "engenheiro": {
-    "name": "Teresa Fictício Olga",
+    "name": "Vasco Amostra Eva",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "17155-SIM",
-    "address": "Travessa do Souto, n.º 98, 4800-000 Guimarães",
-    "policy": "SIM-RC-6977"
+    "number": "90894-SIM",
+    "address": "Travessa do Souto, n.º 50, 4800-000 Guimarães",
+    "policy": "SIM-RC-5882"
    },
    "diretor": {
-    "name": "Sérgio Exemplo Xavier",
+    "name": "Ana Modelo Rita",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "61046-SIM",
-    "address": "Travessa do Souto, n.º 102, 4700-000 Braga",
-    "policy": "SIM-RC-0966"
+    "number": "84556-SIM",
+    "address": "Lugar de Carvalhal, n.º 99, 4000-000 Porto",
+    "policy": "SIM-RC-4084"
    }
   }
  },
  "planted": [
   {
-   "type": "expired_insurance",
+   "type": "missing_required",
    "target": {
-    "slot": "SRCARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-10-19"
+    "slot": "SRCCP"
    },
    "law": {
     "ref": "V.14",
@@ -78,17 +73,38 @@
    }
   },
   {
-   "type": "not_pdf",
+   "type": "not_pdfa",
    "target": {
-    "slot": "FOTO"
+    "slot": "CEO"
    },
    "law": {
     "ref": "VI.1.a",
     "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRDO"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Travessa do Souto, n.º 290, Infesta, 4890-000 Celorico de Basto",
+    "TRPARQ": "Caminho da Lameira, n.º 267, Gagos, 4890-000 Celorico de Basto"
+   }
   }
  ],
- "n_planted": 2,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

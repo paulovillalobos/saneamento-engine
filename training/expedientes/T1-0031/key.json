@@ -2,75 +2,74 @@
  "expediente": "T1-0031",
  "case": {
   "id": "T1-0031",
-  "work": "construção de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 1,
-  "plot": 1750,
-  "impl": 673,
-  "built": 613,
-  "imperm": 790,
-  "perm": 960,
-  "volume": 1900,
-  "height": 3.6,
-  "facade": 2.9,
-  "parking": 2,
-  "cost": 763700,
-  "submitted": "2026-12-05",
-  "site": "Rua das Tílias, n.º 252, Corgo, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 2,
+  "plot": 1120,
+  "impl": 230,
+  "built": 404,
+  "imperm": 292,
+  "perm": 828,
+  "volume": 1252,
+  "height": 7.6,
+  "facade": 6.9,
+  "parking": 4,
+  "cost": 519500,
+  "submitted": "2026-10-11",
+  "site": "Rua das Tílias, n.º 109, Carvalho, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 8,
+  "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Nuno Simulado Olga",
+    "name": "Pedro Fictício Nuno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "79737-SIM",
-    "address": "Rua das Tílias, n.º 252, Corgo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7444"
+    "number": "15762-SIM",
+    "address": "Rua das Tílias, n.º 109, Carvalho, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4747"
    },
    "arquiteto": {
-    "name": "Carla de Teste Xavier",
+    "name": "Sérgio Amostra Pedro",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "06187-SIM",
-    "address": "Lugar da Devesa, n.º 99, 4000-000 Porto",
-    "policy": "SIM-RC-1120"
+    "number": "45105-SIM",
+    "address": "Travessa do Souto, n.º 9, 4000-000 Porto",
+    "policy": "SIM-RC-3784"
    },
    "engenheiro": {
-    "name": "Carla Simulado Vasco",
+    "name": "Diogo Modelo Pedro",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "41200-SIM",
-    "address": "Lugar da Devesa, n.º 40, 4000-000 Porto",
-    "policy": "SIM-RC-8806"
+    "number": "94682-SIM",
+    "address": "Lugar de Carvalhal, n.º 2, 4700-000 Braga",
+    "policy": "SIM-RC-7507"
    },
    "diretor": {
-    "name": "Rita Modelo Miguel",
+    "name": "Olga Modelo Diogo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "43846-SIM",
-    "address": "Lugar de Vilar, n.º 114, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8622"
+    "number": "26193-SIM",
+    "address": "Rua da Escola, n.º 32, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3510"
    }
   }
  },
  "planted": [
   {
-   "type": "wrong_signer",
+   "type": "not_pdfa",
    "target": {
-    "slot": "TRDO"
+    "slot": "CEO"
    },
-   "basis": "documents",
-   "values": {
-    "declarante": "Rita Modelo Miguel",
-    "assinante": "Carla de Teste Xavier"
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   }
  ],

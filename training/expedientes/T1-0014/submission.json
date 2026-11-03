@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Vasco Exemplo Teresa",
+  "name": "Xavier Exemplo Olga",
   "nif": "999999990"
  },
- "site": "Caminho da Lameira, n.º 208, Borba de Montanha, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-12-28",
+ "site": "Rua das Tílias, n.º 178, Fervença, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
+ "submitted_at": "2026-12-11",
  "files": [
   {
    "slot": "REQ",
@@ -49,11 +49,18 @@
    "signed_by": "arquiteto"
   },
   {
+   "slot": "SRCCP",
+   "file": "SRCCP-seguro-coordenador.pdf",
+   "title": "Comprovativo de seguro de responsabilidade civil do coordenador de projeto",
+   "kind": "written",
+   "signed_by": "seguradora"
+  },
+  {
    "slot": "TRPLAC",
    "file": "TRPLAC-termo-acessibilidades.pdf",
    "title": "Termo de responsabilidade do autor do plano de acessibilidades",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "TRDO",
@@ -158,7 +165,7 @@
    "file": "ALC-alcados.pdf",
    "title": "Alçados",
    "kind": "drawn",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "CORTES",
@@ -407,29 +414,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "memoria_candidatura_38.pdf",
-   "title": "Memória descritiva e justificativa — Candidatura ao programa",
+   "file": "consulta_entidade_externa.pdf",
+   "title": "Consulta a entidade externa",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "manual_85.pdf",
-   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
+   "file": "amarante_copia_parte.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-11-17",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "postura_57.pdf",
-   "title": "Postura Municipal Referente a Projetos de Registo fotográfic",
+   "file": "PDF65000043408816.pdf",
+   "title": "Apresentação — Portaria n.º 320/2026/1 e estabilidade e fund",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "cv_requerente.pdf",
-   "title": "Curriculum vitae",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "ficha_verificacao_elementos.pdf",
+   "title": "Ficha de verificação",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "lista_elementos_nomeacao_ficheiros.pdf",
+   "title": "Lista de elementos instrutórios",
    "kind": "written",
    "signed_by": "requerente"
   }

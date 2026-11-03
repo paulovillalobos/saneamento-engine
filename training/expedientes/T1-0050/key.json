@@ -2,62 +2,62 @@
  "expediente": "T1-0050",
  "case": {
   "id": "T1-0050",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
   "pisos": 2,
-  "plot": 1680,
-  "impl": 246,
-  "built": 435,
-  "imperm": 342,
-  "perm": 1338,
-  "volume": 1348,
-  "height": 7.3,
-  "facade": 6.6,
-  "parking": 4,
-  "cost": 416700,
-  "submitted": "2026-10-10",
-  "site": "Travessa do Souto, n.º 154, Veade, 4890-000 Celorico de Basto",
+  "plot": 3790,
+  "impl": 667,
+  "built": 1217,
+  "imperm": 791,
+  "perm": 2999,
+  "volume": 3772,
+  "height": 7.0,
+  "facade": 6.3,
+  "parking": 2,
+  "cost": 1066000,
+  "submitted": "2026-12-01",
+  "site": "Lugar de Carvalhal, n.º 184, Borba de Montanha, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 11,
+  "months": 16,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Gonçalo Exemplo Nuno",
+    "name": "Rita Amostra Nuno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "84886-SIM",
-    "address": "Travessa do Souto, n.º 154, Veade, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7812"
+    "number": "61211-SIM",
+    "address": "Lugar de Carvalhal, n.º 184, Borba de Montanha, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7985"
    },
    "arquiteto": {
-    "name": "Ana de Teste Rita",
+    "name": "Sérgio Fictício Leonor",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "62442-SIM",
-    "address": "Lugar da Devesa, n.º 24, 4700-000 Braga",
-    "policy": "SIM-RC-7819"
+    "number": "20438-SIM",
+    "address": "Rua do Outeiro, n.º 95, 4800-000 Guimarães",
+    "policy": "SIM-RC-1995"
    },
    "engenheiro": {
-    "name": "Teresa Fictício Sérgio",
+    "name": "Diogo de Teste Eva",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "97698-SIM",
-    "address": "Rua do Outeiro, n.º 18, 4800-000 Guimarães",
-    "policy": "SIM-RC-3254"
+    "number": "62475-SIM",
+    "address": "Lugar de Carvalhal, n.º 111, 4700-000 Braga",
+    "policy": "SIM-RC-8094"
    },
    "diretor": {
-    "name": "Miguel Exemplo Helena",
+    "name": "Eva Simulado Gonçalo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "07375-SIM",
-    "address": "Rua do Outeiro, n.º 107, 4000-000 Porto",
-    "policy": "SIM-RC-5951"
+    "number": "93341-SIM",
+    "address": "Rua das Tílias, n.º 43, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7997"
    }
   }
  },
@@ -70,33 +70,13 @@
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "168 m2",
-    "area_implantacao": "246 m2",
-    "MDARQ": "1680 m2"
-   }
-  },
-  {
-   "type": "missing_required",
-   "target": {
-    "slot": "LEVT"
-   },
-   "law": {
-    "ref": "V.7",
-    "quote": "7 - Levantamento topográfico georreferenciado, acompanhado por termo de responsabilidade, sempre que haja alteração da topografia ou da implantação das construções, à escala de 1:200, ou de 1:500 no caso de loteamentos, devidamente cotado, que identifique o prédio e a respetiva área, construções nela erigidas, assim como o espaço público envolvente (vias, passeios, estacionamentos, árvores e infraestruturas ou instalações aí localizadas, incluindo postes, tampas, sinalização e mobiliário urbano);"
-   }
-  },
-  {
-   "type": "not_pdf",
-   "target": {
-    "slot": "FOTO"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    "area_parcela": "379 m2",
+    "area_implantacao": "667 m2",
+    "MDARQ": "3790 m2"
    }
   }
  ],
- "n_planted": 3,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

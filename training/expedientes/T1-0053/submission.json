@@ -6,11 +6,11 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Rita Amostra Nuno",
+  "name": "Diogo Simulado Miguel",
   "nif": "999999990"
  },
- "site": "Lugar de Carvalhal, n.º 184, Borba de Montanha, 4890-000 Celorico de Basto",
- "operation": "construção de moradia unifamiliar",
+ "site": "Rua da Escola, n.º 250, Infesta, 4890-000 Celorico de Basto",
+ "operation": "ampliação de moradia unifamiliar",
  "submitted_at": "2026-12-01",
  "files": [
   {
@@ -60,7 +60,7 @@
    "file": "TRPLAC-termo-acessibilidades.pdf",
    "title": "Termo de responsabilidade do autor do plano de acessibilidades",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "TRDO",
@@ -172,7 +172,7 @@
    "file": "CORTES-cortes.pdf",
    "title": "Cortes",
    "kind": "drawn",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "PC",
@@ -414,8 +414,8 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "memoria-descritiva-candidatura-2024.pdf",
-   "title": "Memória descritiva da candidatura",
+   "file": "memoria_descritiva_justificativa_candidatura.pdf",
+   "title": "Memória descritiva e justificativa — Candidatura ao programa",
    "kind": "written",
    "signed_by": "requerente"
   },
@@ -428,8 +428,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "lista_elementos_nomeacao_ficheiros.pdf",
-   "title": "Lista de elementos instrutórios",
+   "file": "amarante_ficha_projeto.pdf",
+   "title": "Ficha de Projeto",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "instrucoes_28.pdf",
+   "title": "Instruções Preenchimento_Q3",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "norma_instrucao_processo_nip.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-03",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "deliberacao_75.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-08-20",
    "kind": "written",
    "signed_by": "requerente"
   }

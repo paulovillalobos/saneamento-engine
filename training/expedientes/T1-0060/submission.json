@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Eva Exemplo Eva",
+  "name": "Filipe de Teste Teresa",
   "nif": "999999990"
  },
- "site": "Travessa do Souto, n.º 242, Borba de Montanha, 4890-000 Celorico de Basto",
+ "site": "Lugar de Vilar, n.º 14, Rego, 4890-000 Celorico de Basto",
  "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-11-05",
+ "submitted_at": "2026-12-16",
  "files": [
   {
    "slot": "REQ",
@@ -88,7 +88,7 @@
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "MDARQ",
@@ -414,22 +414,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "instrucoes_94.pdf",
+   "file": "gouveia_termo_responsabilidade.pdf",
+   "title": "Termo de Responsabilidade",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "parecer_externo_05.pdf",
+   "title": "PEDIDO DE PARECER - ELEMENTOS A REMETER",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "castro_instrucoes_preenchimento.pdf",
    "title": "Instruções Preenchimento_Q3",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "regulamento_instrucao_digital_extrato.pdf",
-   "title": "Regulamento municipal (extrato)",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "PDF14586027818154.pdf",
-   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-38",
+   "file": "carta_cmcb.pdf",
+   "title": "Carta",
    "kind": "written",
    "signed_by": "requerente"
   }

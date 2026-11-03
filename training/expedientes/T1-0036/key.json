@@ -2,88 +2,67 @@
  "expediente": "T1-0036",
  "case": {
   "id": "T1-0036",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 2580,
-  "impl": 670,
-  "built": 1286,
-  "imperm": 834,
-  "perm": 1746,
-  "volume": 3986,
-  "height": 7.8,
-  "facade": 7.1,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 1820,
+  "impl": 489,
+  "built": 415,
+  "imperm": 678,
+  "perm": 1142,
+  "volume": 1286,
+  "height": 3.7,
+  "facade": 3.0,
   "parking": 2,
-  "cost": 857700,
-  "submitted": "2026-10-25",
-  "site": "Rua das Tílias, n.º 179, Carvalho, 4890-000 Celorico de Basto",
+  "cost": 388800,
+  "submitted": "2026-12-10",
+  "site": "Caminho da Lameira, n.º 235, Ourilhe, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 20,
+  "months": 11,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Bruno Fictício João",
+    "name": "Helena de Teste Eva",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "68689-SIM",
-    "address": "Rua das Tílias, n.º 179, Carvalho, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9344"
+    "number": "67808-SIM",
+    "address": "Caminho da Lameira, n.º 235, Ourilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1547"
    },
    "arquiteto": {
-    "name": "Rita Amostra João",
+    "name": "Olga Amostra Eva",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "77385-SIM",
-    "address": "Caminho da Lameira, n.º 95, 4000-000 Porto",
-    "policy": "SIM-RC-6403"
+    "number": "37016-SIM",
+    "address": "Travessa do Souto, n.º 48, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3458"
    },
    "engenheiro": {
-    "name": "Teresa Modelo Olga",
+    "name": "Leonor Modelo Eva",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "20196-SIM",
-    "address": "Lugar da Devesa, n.º 22, 4800-000 Guimarães",
-    "policy": "SIM-RC-6441"
+    "number": "74165-SIM",
+    "address": "Rua do Outeiro, n.º 79, 4000-000 Porto",
+    "policy": "SIM-RC-3770"
    },
    "diretor": {
-    "name": "Vasco Modelo Eva",
+    "name": "Rita de Teste Eva",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "66972-SIM",
-    "address": "Travessa do Souto, n.º 78, 4800-000 Guimarães",
-    "policy": "SIM-RC-4268"
+    "number": "54530-SIM",
+    "address": "Lugar da Devesa, n.º 55, 4800-000 Guimarães",
+    "policy": "SIM-RC-1834"
    }
   }
  },
- "planted": [
-  {
-   "type": "missing_required",
-   "target": {
-    "slot": "FOTO"
-   },
-   "law": {
-    "ref": "V.15",
-    "quote": "15 - Registo fotográfico da situação existente, abrangendo o imóvel e as edificações adjacentes, quando estas existam;"
-   }
-  },
-  {
-   "type": "not_pdfa",
-   "target": {
-    "slot": "CEO"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  }
- ],
- "n_planted": 2,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

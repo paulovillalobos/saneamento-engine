@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Leonor Exemplo Gonçalo",
+  "name": "Sérgio de Teste Inês",
   "nif": "999999990"
  },
- "site": "Caminho da Lameira, n.º 216, Fervença, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-11-17",
+ "site": "Lugar de Carvalhal, n.º 154, Caçarilhe, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
+ "submitted_at": "2026-10-18",
  "files": [
   {
    "slot": "REQ",
@@ -46,7 +46,7 @@
    "file": "TRCP-termo-coordenador.pdf",
    "title": "Termo de responsabilidade do coordenador de projeto",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "SRCCP",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCDO",
@@ -138,13 +138,6 @@
    "title": "Planta de localização",
    "kind": "drawn",
    "signed_by": "arquiteto"
-  },
-  {
-   "slot": "LEVT",
-   "file": "LEVT-levantamento-topografico.pdf",
-   "title": "Levantamento topográfico georreferenciado",
-   "kind": "drawn",
-   "signed_by": "engenheiro"
   },
   {
    "slot": "PI",
@@ -414,22 +407,50 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "figueira_plano_acessibilidade.pdf",
-   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
+   "file": "termo_responsabilidade_diretor_obra.pdf",
+   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "guia-tecnico-projetos-2025.pdf",
-   "title": "Guia Técnico para Projetos de Termos de responsabilidade dos",
+   "file": "alfândega_postura_projetos.pdf",
+   "title": "Postura Municipal Referente a Projetos de Segurança contra i",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF68631704982259.pdf",
-   "title": "ANEXO III — OBRAS DE EDIFICAÇÃO",
+   "file": "parecer_externo_35.pdf",
+   "title": "PARECER",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "parecer_tecnico_portaria_320.pdf",
+   "title": "Parecer técnico — Portaria n.º 320/2026/1 e termos de respon",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "anexo_criterio_elaboracao_levantamentos.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "ficha_projeto.pdf",
+   "title": "Ficha de Projeto",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "instrucoes_preenchimento.pdf",
+   "title": "Instruções Preenchimento_Q3",
    "kind": "written",
    "signed_by": "requerente"
   }

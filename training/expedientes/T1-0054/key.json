@@ -2,75 +2,79 @@
  "expediente": "T1-0054",
  "case": {
   "id": "T1-0054",
-  "work": "construção de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 3750,
-  "impl": 492,
-  "built": 879,
-  "imperm": 662,
-  "perm": 3088,
-  "volume": 2724,
-  "height": 6.7,
-  "facade": 6.0,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 3,
+  "plot": 3450,
+  "impl": 474,
+  "built": 1232,
+  "imperm": 619,
+  "perm": 2831,
+  "volume": 3819,
+  "height": 9.9,
+  "facade": 9.2,
   "parking": 2,
-  "cost": 803400,
-  "submitted": "2026-10-09",
-  "site": "Lugar da Devesa, n.º 57, Ourilhe, 4890-000 Celorico de Basto",
+  "cost": 1199900,
+  "submitted": "2026-10-22",
+  "site": "Caminho da Lameira, n.º 78, Fervença, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 22,
+  "months": 21,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "João Modelo Inês",
+    "name": "Inês Simulado Ana",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "49855-SIM",
-    "address": "Lugar da Devesa, n.º 57, Ourilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1711"
+    "number": "01559-SIM",
+    "address": "Caminho da Lameira, n.º 78, Fervença, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0932"
    },
    "arquiteto": {
-    "name": "Nuno Exemplo Leonor",
+    "name": "Leonor Fictício Bruno",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "01906-SIM",
-    "address": "Lugar de Carvalhal, n.º 81, 4700-000 Braga",
-    "policy": "SIM-RC-2235"
+    "number": "05533-SIM",
+    "address": "Rua da Escola, n.º 34, 4700-000 Braga",
+    "policy": "SIM-RC-0504"
    },
    "engenheiro": {
-    "name": "Leonor Fictício Gonçalo",
+    "name": "João Exemplo Xavier",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "64597-SIM",
-    "address": "Lugar de Vilar, n.º 116, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5645"
+    "number": "85516-SIM",
+    "address": "Lugar de Carvalhal, n.º 44, 4000-000 Porto",
+    "policy": "SIM-RC-3270"
    },
    "diretor": {
-    "name": "Helena Amostra Gonçalo",
+    "name": "Filipe de Teste Carla",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "81544-SIM",
-    "address": "Rua da Escola, n.º 78, 4800-000 Guimarães",
-    "policy": "SIM-RC-4520"
+    "number": "49508-SIM",
+    "address": "Lugar de Vilar, n.º 47, 4700-000 Braga",
+    "policy": "SIM-RC-7565"
    }
   }
  },
  "planted": [
   {
-   "type": "wrong_site",
+   "type": "value_mismatch",
    "target": {
-    "slot": "TRPARQ"
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
    },
    "basis": "documents",
    "values": {
-    "REQ": "Lugar da Devesa, n.º 57, Ourilhe, 4890-000 Celorico de Basto",
-    "TRPARQ": "Lugar de Carvalhal, n.º 241, Moreira do Castelo, 4890-000 Celorico de Basto"
+    "REQ": "1232 m2",
+    "MDARQ": "1171 m2"
    }
   }
  ],

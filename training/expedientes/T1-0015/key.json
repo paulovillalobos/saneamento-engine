@@ -2,99 +2,83 @@
  "expediente": "T1-0015",
  "case": {
   "id": "T1-0015",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
+  "work": "ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
   "pisos": 1,
-  "plot": 2950,
-  "impl": 408,
-  "built": 387,
-  "imperm": 559,
-  "perm": 2391,
-  "volume": 1199,
-  "height": 3.8,
-  "facade": 3.1,
+  "plot": 3690,
+  "impl": 535,
+  "built": 497,
+  "imperm": 697,
+  "perm": 2993,
+  "volume": 1540,
+  "height": 4.8,
+  "facade": 4.1,
   "parking": 2,
-  "cost": 499200,
-  "submitted": "2026-11-11",
-  "site": "Travessa do Souto, n.º 299, Arnoia, 4890-000 Celorico de Basto",
+  "cost": 412000,
+  "submitted": "2026-11-19",
+  "site": "Rua da Escola, n.º 263, Codeçoso, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 23,
+  "months": 21,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Gonçalo Exemplo Filipe",
+    "name": "Helena Simulado Sérgio",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "53067-SIM",
-    "address": "Travessa do Souto, n.º 299, Arnoia, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5499"
+    "number": "95978-SIM",
+    "address": "Rua da Escola, n.º 263, Codeçoso, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4062"
    },
    "arquiteto": {
-    "name": "Leonor Amostra Helena",
+    "name": "Nuno Exemplo Diogo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "89709-SIM",
-    "address": "Lugar de Carvalhal, n.º 96, 4800-000 Guimarães",
-    "policy": "SIM-RC-6055"
+    "number": "75319-SIM",
+    "address": "Rua da Escola, n.º 50, 4000-000 Porto",
+    "policy": "SIM-RC-9175"
    },
    "engenheiro": {
-    "name": "Rita Amostra Gonçalo",
+    "name": "Diogo Amostra Rita",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "57621-SIM",
-    "address": "Lugar de Carvalhal, n.º 52, 4000-000 Porto",
-    "policy": "SIM-RC-9363"
+    "number": "06895-SIM",
+    "address": "Rua do Outeiro, n.º 100, 4000-000 Porto",
+    "policy": "SIM-RC-0342"
    },
    "diretor": {
-    "name": "Rita de Teste Eva",
+    "name": "João Exemplo Inês",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "20645-SIM",
-    "address": "Rua da Escola, n.º 49, 4800-000 Guimarães",
-    "policy": "SIM-RC-1786"
+    "number": "95756-SIM",
+    "address": "Rua das Tílias, n.º 22, 4700-000 Braga",
+    "policy": "SIM-RC-9203"
    }
   }
  },
  "planted": [
   {
-   "type": "template_wording_missing",
+   "type": "value_mismatch",
    "target": {
-    "slot": "TRPARQ"
-   },
-   "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
-   }
-  },
-  {
-   "type": "unsigned",
-   "target": {
-    "slot": "TREECP"
-   },
-   "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
-   }
-  },
-  {
-   "type": "wrong_site",
-   "target": {
-    "slot": "TRPARQ"
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
    },
    "basis": "documents",
    "values": {
-    "REQ": "Travessa do Souto, n.º 299, Arnoia, 4890-000 Celorico de Basto",
-    "TRPARQ": "Caminho da Lameira, n.º 80, Canedo de Basto, 4890-000 Celorico de Basto"
+    "REQ": "497 m2",
+    "MDARQ": "591 m2"
    }
   }
  ],
- "n_planted": 3,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

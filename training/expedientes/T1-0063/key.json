@@ -2,78 +2,91 @@
  "expediente": "T1-0063",
  "case": {
   "id": "T1-0063",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 3,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
   "plot": 3960,
-  "impl": 1460,
-  "built": 3887,
-  "imperm": 1483,
-  "perm": 2477,
-  "volume": 12049,
-  "height": 10.1,
-  "facade": 9.4,
-  "parking": 4,
-  "cost": 3094000,
-  "submitted": "2026-11-03",
-  "site": "Rua do Outeiro, n.º 198, Codeçoso, 4890-000 Celorico de Basto",
+  "impl": 1115,
+  "built": 1105,
+  "imperm": 1217,
+  "perm": 2743,
+  "volume": 3425,
+  "height": 4.4,
+  "facade": 3.7,
+  "parking": 2,
+  "cost": 855200,
+  "submitted": "2026-12-10",
+  "site": "Rua das Tílias, n.º 114, Corgo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
   "months": 20,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Xavier Modelo Teresa",
+    "name": "Teresa Modelo Carla",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "12819-SIM",
-    "address": "Rua do Outeiro, n.º 198, Codeçoso, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2272"
+    "number": "53717-SIM",
+    "address": "Rua das Tílias, n.º 114, Corgo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4155"
    },
    "arquiteto": {
-    "name": "Nuno Simulado Nuno",
+    "name": "Helena de Teste Carla",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "68839-SIM",
-    "address": "Rua do Outeiro, n.º 60, 4800-000 Guimarães",
-    "policy": "SIM-RC-8905"
+    "number": "34876-SIM",
+    "address": "Rua das Tílias, n.º 14, 4700-000 Braga",
+    "policy": "SIM-RC-3961"
    },
    "engenheiro": {
-    "name": "Carla Fictício Ana",
+    "name": "Rita de Teste Pedro",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "47252-SIM",
-    "address": "Rua da Escola, n.º 73, 4800-000 Guimarães",
-    "policy": "SIM-RC-2237"
+    "number": "54322-SIM",
+    "address": "Travessa do Souto, n.º 66, 4800-000 Guimarães",
+    "policy": "SIM-RC-0590"
    },
    "diretor": {
-    "name": "Rita Exemplo Gonçalo",
+    "name": "Olga Fictício Nuno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "96264-SIM",
-    "address": "Rua do Outeiro, n.º 78, 4000-000 Porto",
-    "policy": "SIM-RC-5574"
+    "number": "75147-SIM",
+    "address": "Caminho da Lameira, n.º 79, 4700-000 Braga",
+    "policy": "SIM-RC-2184"
    }
   }
  },
  "planted": [
   {
-   "type": "not_pdfa",
+   "type": "impossible_value",
    "target": {
-    "slot": "MDARQ"
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "396 m2",
+    "area_implantacao": "1115 m2",
+    "MDARQ": "3960 m2"
+   }
+  },
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "CRP"
    },
    "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    "ref": "V.5",
+    "quote": "5 - Indicação do código de acesso à certidão permanente do registo predial referente ao prédio ou prédios abrangidos pela operação urbanística ou, quando omisso, a respetiva certidão negativa do registo predial, acompanhada da caderneta predial da qual constem os correspondentes artigos matriciais;"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

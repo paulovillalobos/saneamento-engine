@@ -6,24 +6,17 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Xavier Modelo Teresa",
+  "name": "Teresa Modelo Carla",
   "nif": "999999990"
  },
- "site": "Rua do Outeiro, n.º 198, Codeçoso, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-11-03",
+ "site": "Rua das Tílias, n.º 114, Corgo, 4890-000 Celorico de Basto",
+ "operation": "construção de armazém agrícola",
+ "submitted_at": "2026-12-10",
  "files": [
   {
    "slot": "REQ",
    "file": "REQ-requerimento.pdf",
    "title": "Requerimento de comunicação prévia (modelo do Anexo I)",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "CRP",
-   "file": "CRP-certidao-permanente.pdf",
-   "title": "Código de acesso à certidão permanente do registo predial",
    "kind": "written",
    "signed_by": "requerente"
   },
@@ -414,43 +407,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "analise-portaria-320-2020.pdf",
-   "title": "Análise — Portaria n.º 320/2026/1 e registo fotográfico",
+   "file": "fatura_agua_2026_08.pdf",
+   "title": "Fatura de água",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "norma-instrucao-processo-2021.pdf",
-   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-33",
+   "file": "amarante_municipio_amarante.pdf",
+   "title": "MUNICÍPIO DE AMARANTE — AQUISIÇÃO DE SERVIÇOS DE FISCALIZAÇÃ",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "termo_outro_45.pdf",
-   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "regulamento_instrucao_digital_extrato.pdf",
-   "title": "Regulamento municipal (extrato)",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "termos-responsabilidade-passados-2020.pdf",
-   "title": "Os termos de responsabilidade passados no âmbito das comunic",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "carta_cmcb.pdf",
-   "title": "Carta",
+   "file": "pecas_escritas_desenhadas_indice.pdf",
+   "title": "PEÇAS ESCRITAS E DESENHADAS - ÍNDICE",
    "kind": "written",
    "signed_by": "requerente"
   }

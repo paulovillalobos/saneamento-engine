@@ -2,84 +2,84 @@
  "expediente": "T1-0034",
  "case": {
   "id": "T1-0034",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
   "fogos": 0,
-  "pisos": 1,
-  "plot": 3460,
-  "impl": 434,
-  "built": 425,
-  "imperm": 514,
-  "perm": 2946,
-  "volume": 1317,
-  "height": 4.6,
-  "facade": 3.9,
+  "pisos": 2,
+  "plot": 3650,
+  "impl": 1383,
+  "built": 2375,
+  "imperm": 1416,
+  "perm": 2234,
+  "volume": 7362,
+  "height": 7.2,
+  "facade": 6.5,
   "parking": 2,
-  "cost": 374400,
-  "submitted": "2026-11-24",
-  "site": "Rua da Escola, n.º 12, Ribas, 4890-000 Celorico de Basto",
+  "cost": 2047200,
+  "submitted": "2026-11-20",
+  "site": "Lugar de Carvalhal, n.º 57, Infesta, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 14,
+  "months": 18,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Nuno Fictício Filipe",
+    "name": "Nuno Amostra Nuno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "31405-SIM",
-    "address": "Rua da Escola, n.º 12, Ribas, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2855"
+    "number": "39016-SIM",
+    "address": "Lugar de Carvalhal, n.º 57, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9192"
    },
    "arquiteto": {
-    "name": "Leonor Simulado Pedro",
+    "name": "Miguel Exemplo Olga",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "71568-SIM",
-    "address": "Lugar de Vilar, n.º 5, 4800-000 Guimarães",
-    "policy": "SIM-RC-3640"
+    "number": "93953-SIM",
+    "address": "Rua das Tílias, n.º 76, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3058"
    },
    "engenheiro": {
-    "name": "Inês Amostra Sérgio",
+    "name": "Eva Simulado Leonor",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "58394-SIM",
-    "address": "Rua do Outeiro, n.º 108, 4000-000 Porto",
-    "policy": "SIM-RC-9917"
+    "number": "47095-SIM",
+    "address": "Rua das Tílias, n.º 9, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9436"
    },
    "diretor": {
-    "name": "Nuno Exemplo Nuno",
+    "name": "Filipe Fictício Diogo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "68027-SIM",
-    "address": "Rua das Tílias, n.º 35, 4800-000 Guimarães",
-    "policy": "SIM-RC-5522"
+    "number": "70662-SIM",
+    "address": "Rua do Outeiro, n.º 62, 4700-000 Braga",
+    "policy": "SIM-RC-5874"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "not_pdf",
    "target": {
-    "slot": "PC"
+    "slot": "ALC"
    },
    "law": {
-    "ref": "V.27.b.iv",
-    "quote": "iv) Pormenores de construção, à escala adequada, esclarecendo a solução construtiva adotada para as paredes exteriores do edifício e sua articulação com a cobertura, vãos de iluminação/ventilação e de acesso, bem como com o pavimento exterior envolvente;"
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   },
   {
-   "type": "template_wording_missing",
+   "type": "unsigned",
    "target": {
-    "slot": "TRPARQ"
+    "slot": "TRPLAC"
    },
    "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
    }
   }
  ],
