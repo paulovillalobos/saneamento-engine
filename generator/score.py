@@ -22,6 +22,11 @@ def norm(s):
     return re.sub(r"\s+", " ", s or "").strip()
 
 
+def val(s):
+    """a fact's value, unit-tolerant: «1.900,00m2», «1.900,00 m2» and «1.900,00» are the same value (D15)."""
+    return re.sub(r"\s*(m2|m²|m\^2|€|eur|euros?)\s*$", "", norm(s), flags=re.I).strip()
+
+
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--rows", required=True); ap.add_argument("--answers", required=True); ap.add_argument("--record", default="")
     a = ap.parse_args()
@@ -70,10 +75,10 @@ def main():
                 c["nulos"] += 1; c["inventado"] += p.get("valor") is not None; c["valor"] += p.get("valor") is None
             else:
                 c["com_valor"] += 1; c["perdido"] += p.get("valor") is None
-                c["valor"] += norm(p.get("valor")) == norm(k["valor"])
+                c["valor"] += val(p.get("valor")) == val(k["valor"])
                 c["pagina"] += p.get("pagina") == k["pagina"]
-                c["valor_e_pagina"] += (norm(p.get("valor")) == norm(k["valor"]) and p.get("pagina") == k["pagina"])
-                c["citacao_contem"] += bool(p.get("citacao")) and norm(k["valor"]) in norm(p.get("citacao"))
+                c["valor_e_pagina"] += (val(p.get("valor")) == val(k["valor"]) and p.get("pagina") == k["pagina"])
+                c["citacao_contem"] += bool(p.get("citacao")) and val(k["valor"]) in norm(p.get("citacao"))
     lines = [f"# {a.answers}", "", f"model {meta.get('model')} adapter {meta.get('adapter')} answered {meta.get('answered')} skipped {meta.get('skipped')} "
              f"load {meta.get('load_seconds')}s gen {meta.get('generate_seconds')}s", ""]
     for t, c in sorted(m.items()):

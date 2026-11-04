@@ -6,3 +6,5 @@ training/runs/*/weights/
 training/expedientes/*/*.pdf
 sealed/expedientes/*/*.pdf
 training/runs/*/*.log
+sources/.ocr-cache/
+training/runs/ceiling-*/prompts/

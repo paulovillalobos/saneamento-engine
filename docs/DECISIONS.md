@@ -71,3 +71,22 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
   rows are regenerated with the window, keys unchanged. Wave 3 is scored by r9 under the scaffold: its second and last.
 - Reads: r9 on D1/D2/stranger with --guard; r8 with --guard on the r8-window rows (sealed D2, stranger waves 1-2) as the
   "scaffold alone" baseline. D0 keeps its schema.
+
+## D15 — The ceiling, and the scoring conventions it fixed (2026-11-04)
+- Before any round 10, measure what the stranger rows allow: a large general model (Claude Opus 5.5) reads the same 106 rows,
+  same prompts, same shortlist, same JSON, whole document (every page, uncut, in order), no training. generator/ceiling.py
+  builds the prompts and collects; the readers see prompts/ only, never a key. Result 76/77 elements, 27/29 facts, wave 3
+  40/40 → the documents allow ≈ 97%; the gap to AMALIA (61/77 elements under r9) is ours: the window.
+- A fact's value is unit-tolerant in the scorer (score.py val()): «1.900,00m2», «1.900,00 m2» and «1.900,00» are the same
+  value. Reason: the prompt asks for the exact text as it appears and both are that text; the keys were written without the
+  unit by habit. Applies to every run equally.
+- Keys: a wave-1 or wave-2 key may be corrected when a reader shows the document says otherwise (tuned set); a wave-3 key
+  never (held-out set). Corrected today: Valongo custo_total null → «2.125.000€» page 4 (Estimativa orçamental total of the
+  obras de urbanização). The r8-window copy of the row carries the same key.
+- Direction: the base model's context is 32,768 tokens (Llama architecture; our 8,192 was a training-script setting, the
+  11,000-character window a generator setting). Round 10 reads whole documents; no page selection; keys still gated by the
+  scaffold; "about an element" negatives at a fixed share in every mix. Real public documents enter TRAINING only from a
+  collection kept apart from the test.
+- OCR (generator/ocr.py): pages with < 80 characters of pypdf text go through ocrmypdf --skip-text -l por once (cached in
+  sources/.ocr-cache, ignored by git); recovered text is prefixed «[texto OCR]». The real corpus has 8 such pages in 6 files,
+  all blank/image-only, 0 recovered: no scanned document in the test today.

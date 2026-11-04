@@ -13,7 +13,8 @@ sys.path.insert(0, str(ROOT))
 sys.argv = ["x"]
 import importlib.util  # noqa: E402
 spec = importlib.util.spec_from_file_location("d1d2", ROOT / "generator" / "d1d2.py"); M = importlib.util.module_from_spec(spec); spec.loader.exec_module(M)
-from pypdf import PdfReader  # noqa: E402
+sys.path.insert(0, str(ROOT / "generator"))
+from ocr import pages_text  # noqa: E402  (pypdf text, OCR for pages without any — scans, image-only covers)
 
 R = "sources/real"
 V9, V11, V12, V27K = "portaria-320-2026-1:anexo-V.9", "portaria-320-2026-1:anexo-V.11", "portaria-320-2026-1:anexo-V.12", "portaria-320-2026-1:anexo-V.27.k"
@@ -21,7 +22,7 @@ W = "sources/real/wave2"
 W3 = "sources/real/wave3"
 # (file, D1 element or None, D1 tipo, [D2 (field, value or None)], note)
 KEYS = [
-    (f"{R}/memorias/valongo_74l2023_md.pdf", V9, "escrito", [("area_parcela", "49 977,00"), ("custo_total", None)], "real memória descritiva e justificativa (loteamento, Valongo 2025)"),
+    (f"{R}/memorias/valongo_74l2023_md.pdf", V9, "escrito", [("area_parcela", "49 977,00"), ("custo_total", "2.125.000€")], "real memória descritiva e justificativa (loteamento, Valongo 2025; cost = the Estimativa orçamental total of the obras de urbanização, p. 4 — key corrected 2026-11-04 after the ceiling read it; wave 1 is the tuned set)"),
     (f"{R}/memorias/cascais_md_loteamento_1145.pdf", V9, "escrito", [("validade_seguro_fim", None)], "real memória descritiva (Cascais DLOT, alvará 1145)"),
     (f"{R}/memorias/cascais_md_loteamento_1032.pdf", V9, "escrito", [], "real memória descritiva (Cascais DLOT, alvará 1032)"),
     (f"{R}/memorias/cascais_md_loteamento_1037.pdf", V9, "escrito", [], "real memória descritiva (Cascais DLOT, alvará 1037)"),
@@ -111,7 +112,7 @@ def rid(*parts):
 def main():
     rows = []
     for path, elem, tipo, facts, note in KEYS:
-        r = PdfReader(str(ROOT / path)); pages = [(p.extract_text() or "").strip() for p in r.pages]
+        pages = pages_text(ROOT / path)
         text, shown = M.window(pages)
         cpages = [M.guard.collapse(t) for t in pages]
         name = Path(path).name

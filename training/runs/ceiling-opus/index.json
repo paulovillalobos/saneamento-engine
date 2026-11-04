@@ -1,0 +1,744 @@
+[
+ {
+  "id": "d1:5276d6c56cfaa2a4",
+  "task": "d1_elemento",
+  "file": "valongo_74l2023_md.pdf",
+  "pages": 11,
+  "chars": 33148
+ },
+ {
+  "id": "d2:b9c8a4cd574da395",
+  "task": "d2_facto",
+  "file": "valongo_74l2023_md.pdf",
+  "pages": 11,
+  "chars": 23041
+ },
+ {
+  "id": "d2:bf500619076a7061",
+  "task": "d2_facto",
+  "file": "valongo_74l2023_md.pdf",
+  "pages": 11,
+  "chars": 23042
+ },
+ {
+  "id": "d1:4faa266999203ee1",
+  "task": "d1_elemento",
+  "file": "cascais_md_loteamento_1145.pdf",
+  "pages": 30,
+  "chars": 66594
+ },
+ {
+  "id": "d2:ca71d15ea43313e9",
+  "task": "d2_facto",
+  "file": "cascais_md_loteamento_1145.pdf",
+  "pages": 30,
+  "chars": 56478
+ },
+ {
+  "id": "d1:7cd3066c9e800af1",
+  "task": "d1_elemento",
+  "file": "cascais_md_loteamento_1032.pdf",
+  "pages": 29,
+  "chars": 65218
+ },
+ {
+  "id": "d1:663b17d910231686",
+  "task": "d1_elemento",
+  "file": "cascais_md_loteamento_1037.pdf",
+  "pages": 23,
+  "chars": 54443
+ },
+ {
+  "id": "d1:84877dcd3a6d2ec3",
+  "task": "d1_elemento",
+  "file": "OA_TR_autor_projeto.pdf",
+  "pages": 1,
+  "chars": 12596
+ },
+ {
+  "id": "d2:eb15cdc46dfee293",
+  "task": "d2_facto",
+  "file": "OA_TR_autor_projeto.pdf",
+  "pages": 1,
+  "chars": 2642
+ },
+ {
+  "id": "d2:8dfc7aef113ca7ca",
+  "task": "d2_facto",
+  "file": "OA_TR_autor_projeto.pdf",
+  "pages": 1,
+  "chars": 2482
+ },
+ {
+  "id": "d1:b42834dbdb8a7d99",
+  "task": "d1_elemento",
+  "file": "OA_TR_coordenador.pdf",
+  "pages": 1,
+  "chars": 12650
+ },
+ {
+  "id": "d2:ec280ad55a41f037",
+  "task": "d2_facto",
+  "file": "OA_TR_coordenador.pdf",
+  "pages": 1,
+  "chars": 2519
+ },
+ {
+  "id": "d1:f7117e8dc17ed4ae",
+  "task": "d1_elemento",
+  "file": "macedo_fichas_CP_edificacao.pdf",
+  "pages": 3,
+  "chars": 24869
+ },
+ {
+  "id": "d2:49e25aac298c89e8",
+  "task": "d2_facto",
+  "file": "macedo_fichas_CP_edificacao.pdf",
+  "pages": 3,
+  "chars": 14763
+ },
+ {
+  "id": "d1:bbc7a2fbd6b6e509",
+  "task": "d1_elemento",
+  "file": "OA_analise_portaria.pdf",
+  "pages": 40,
+  "chars": 48548
+ },
+ {
+  "id": "d1:026b8af7c78585ef",
+  "task": "d1_elemento",
+  "file": "alcacer_lista_elementos_nomeacao_ficheiros_2026.pdf",
+  "pages": 16,
+  "chars": 103645
+ },
+ {
+  "id": "d1:a1852d7ab843b77e",
+  "task": "d1_elemento",
+  "file": "torresvedras_regulamento_instrucao_digital.pdf",
+  "pages": 10,
+  "chars": 28724
+ },
+ {
+  "id": "d1:b9bdb7907e8b1401",
+  "task": "d1_elemento",
+  "file": "torresvedras_manual_construtor_eurb2023.pdf",
+  "pages": 23,
+  "chars": 29441
+ },
+ {
+  "id": "d1:f45ede732ec08766",
+  "task": "d1_elemento",
+  "file": "OA_TR_dir_obra_fisc.pdf",
+  "pages": 2,
+  "chars": 13501
+ },
+ {
+  "id": "d2:df854302ae5c950c",
+  "task": "d2_facto",
+  "file": "OA_TR_dir_obra_fisc.pdf",
+  "pages": 2,
+  "chars": 3370
+ },
+ {
+  "id": "d1:a9ecdcbd3e1420c0",
+  "task": "d1_elemento",
+  "file": "OA_TR_dir_obra_inicio.pdf",
+  "pages": 1,
+  "chars": 12910
+ },
+ {
+  "id": "d2:5777cdac774952a8",
+  "task": "d2_facto",
+  "file": "OA_TR_dir_obra_inicio.pdf",
+  "pages": 1,
+  "chars": 2779
+ },
+ {
+  "id": "d1:011be86868d1e7e0",
+  "task": "d1_elemento",
+  "file": "valpacos_memoria_pr_1678_22.pdf",
+  "pages": 20,
+  "chars": 62437
+ },
+ {
+  "id": "d2:a8efe8080619cc3b",
+  "task": "d2_facto",
+  "file": "valpacos_memoria_pr_1678_22.pdf",
+  "pages": 20,
+  "chars": 52322
+ },
+ {
+  "id": "d2:6fd9bec08fc6b9cd",
+  "task": "d2_facto",
+  "file": "valpacos_memoria_pr_1678_22.pdf",
+  "pages": 20,
+  "chars": 52331
+ },
+ {
+  "id": "d1:6435f948f05ff74b",
+  "task": "d1_elemento",
+  "file": "uminho_memoria_estabilidade_braga.pdf",
+  "pages": 11,
+  "chars": 27886
+ },
+ {
+  "id": "d2:e12dcb9bfca5e3a9",
+  "task": "d2_facto",
+  "file": "uminho_memoria_estabilidade_braga.pdf",
+  "pages": 11,
+  "chars": 17780
+ },
+ {
+  "id": "d1:08a5974087330187",
+  "task": "d1_elemento",
+  "file": "anadia_memoria_acessibilidades.pdf",
+  "pages": 2,
+  "chars": 15160
+ },
+ {
+  "id": "d2:85870f54717f0ef4",
+  "task": "d2_facto",
+  "file": "anadia_memoria_acessibilidades.pdf",
+  "pages": 2,
+  "chars": 5024
+ },
+ {
+  "id": "d1:bc4bd1105336b012",
+  "task": "d1_elemento",
+  "file": "viladoconde_memoria_pluviais.pdf",
+  "pages": 3,
+  "chars": 15629
+ },
+ {
+  "id": "d2:596815c53e901176",
+  "task": "d2_facto",
+  "file": "viladoconde_memoria_pluviais.pdf",
+  "pages": 3,
+  "chars": 5522
+ },
+ {
+  "id": "d1:e64cb1fb895dc834",
+  "task": "d1_elemento",
+  "file": "valpacos_memoria_ited.pdf",
+  "pages": 15,
+  "chars": 37606
+ },
+ {
+  "id": "d2:c4d6e70683cb7d5e",
+  "task": "d2_facto",
+  "file": "valpacos_memoria_ited.pdf",
+  "pages": 15,
+  "chars": 27500
+ },
+ {
+  "id": "d1:58445f056c77a886",
+  "task": "d1_elemento",
+  "file": "viladoconde_estimativa.pdf",
+  "pages": 11,
+  "chars": 30418
+ },
+ {
+  "id": "d1:cc9d83d68a771593",
+  "task": "d1_elemento",
+  "file": "ipcb_memoria_reabilitacao_escola.pdf",
+  "pages": 11,
+  "chars": 28846
+ },
+ {
+  "id": "d2:5b7a1db490e2f157",
+  "task": "d2_facto",
+  "file": "ipcb_memoria_reabilitacao_escola.pdf",
+  "pages": 11,
+  "chars": 18740
+ },
+ {
+  "id": "d1:1eb2fb2172d8060b",
+  "task": "d1_elemento",
+  "file": "dgt_planta_localizacao.pdf",
+  "pages": 1,
+  "chars": 11285
+ },
+ {
+  "id": "d1:104873503cec8d04",
+  "task": "d1_elemento",
+  "file": "loures_PDF20241114175831728.pdf",
+  "pages": 2,
+  "chars": 13572
+ },
+ {
+  "id": "d2:458bfa1f8dca1a1c",
+  "task": "d2_facto",
+  "file": "loures_PDF20241114175831728.pdf",
+  "pages": 2,
+  "chars": 3441
+ },
+ {
+  "id": "d1:b2d1655f09358c02",
+  "task": "d1_elemento",
+  "file": "pontedelima_mod_166.pdf",
+  "pages": 2,
+  "chars": 15113
+ },
+ {
+  "id": "d1:136f7a1a1fca0699",
+  "task": "d1_elemento",
+  "file": "pontedelima_mod_167.pdf",
+  "pages": 1,
+  "chars": 14415
+ },
+ {
+  "id": "d1:2fc5d4be14b795c8",
+  "task": "d1_elemento",
+  "file": "funchal_minuta_memoria_viveiro_lojas.pdf",
+  "pages": 1,
+  "chars": 11864
+ },
+ {
+  "id": "d2:1582ee7a583b9824",
+  "task": "d2_facto",
+  "file": "funchal_minuta_memoria_viveiro_lojas.pdf",
+  "pages": 1,
+  "chars": 1750
+ },
+ {
+  "id": "d1:8435d64df96eb6c8",
+  "task": "d1_elemento",
+  "file": "alfandegadafe_competencia_tecnicos.pdf",
+  "pages": 4,
+  "chars": 22319
+ },
+ {
+  "id": "d1:57203acea12a5265",
+  "task": "d1_elemento",
+  "file": "alijo_ficha_projeto_escola.pdf",
+  "pages": 1,
+  "chars": 12191
+ },
+ {
+  "id": "d2:340c1a09057ae555",
+  "task": "d2_facto",
+  "file": "alijo_ficha_projeto_escola.pdf",
+  "pages": 1,
+  "chars": 2085
+ },
+ {
+  "id": "d1:276ff0ca445c0c1e",
+  "task": "d1_elemento",
+  "file": "amarante_termos_comunicacoes_utilizacao.pdf",
+  "pages": 6,
+  "chars": 24433
+ },
+ {
+  "id": "d1:aa672492545a5531",
+  "task": "d1_elemento",
+  "file": "anepc_nt03_2020.pdf",
+  "pages": 10,
+  "chars": 23248
+ },
+ {
+  "id": "d1:46f6598e94ec7a70",
+  "task": "d1_elemento",
+  "file": "arcos_ine_q3_instrucoes.pdf",
+  "pages": 7,
+  "chars": 40316
+ },
+ {
+  "id": "d2:3af00c03d07fa75d",
+  "task": "d2_facto",
+  "file": "arcos_ine_q3_instrucoes.pdf",
+  "pages": 7,
+  "chars": 30180
+ },
+ {
+  "id": "d1:78df01b390ac44b5",
+  "task": "d1_elemento",
+  "file": "loures_ine_q3_instrucoes.pdf",
+  "pages": 9,
+  "chars": 50014
+ },
+ {
+  "id": "d1:4bdcafd7c84d48d8",
+  "task": "d1_elemento",
+  "file": "benavente_deliberacao_minutas_tr.pdf",
+  "pages": 2,
+  "chars": 13996
+ },
+ {
+  "id": "d1:0dc7ca672eaa6075",
+  "task": "d1_elemento",
+  "file": "caminha_caderno_encargos.pdf",
+  "pages": 5,
+  "chars": 17612
+ },
+ {
+  "id": "d2:c7d9ddcb6092c73f",
+  "task": "d2_facto",
+  "file": "caminha_caderno_encargos.pdf",
+  "pages": 5,
+  "chars": 7498
+ },
+ {
+  "id": "d1:8be33ea0cfcdcbe8",
+  "task": "d1_elemento",
+  "file": "cascais_anexo_iv.pdf",
+  "pages": 11,
+  "chars": 33019
+ },
+ {
+  "id": "d1:52818c124d8ff689",
+  "task": "d1_elemento",
+  "file": "castrodaire_manual_normas_digitais.pdf",
+  "pages": 23,
+  "chars": 43162
+ },
+ {
+  "id": "d1:30454b8a80a1d943",
+  "task": "d1_elemento",
+  "file": "estarreja_elementos_2020.pdf",
+  "pages": 4,
+  "chars": 21885
+ },
+ {
+  "id": "d1:43b518642272d8a3",
+  "task": "d1_elemento",
+  "file": "figfoz_nip12_licenciamento.pdf",
+  "pages": 3,
+  "chars": 19067
+ },
+ {
+  "id": "d1:dff0f8c585ce6443",
+  "task": "d1_elemento",
+  "file": "gouveia_guia_redes_prediais.pdf",
+  "pages": 6,
+  "chars": 26993
+ },
+ {
+  "id": "d1:ef970b425fd6ae40",
+  "task": "d1_elemento",
+  "file": "leiria_anexoiv_levantamentos.pdf",
+  "pages": 14,
+  "chars": 35528
+ },
+ {
+  "id": "d1:8bbefe1f2868043c",
+  "task": "d1_elemento",
+  "file": "macedo_obras_edificacao_arquitetura.pdf",
+  "pages": 3,
+  "chars": 22463
+ },
+ {
+  "id": "d1:414a9851228e24e2",
+  "task": "d1_elemento",
+  "file": "maia_levantamento_acessibilidade.pdf",
+  "pages": 4,
+  "chars": 15657
+ },
+ {
+  "id": "d1:81fdbad23011d33f",
+  "task": "d1_elemento",
+  "file": "seixal_postura_aguas_residuais.pdf",
+  "pages": 1,
+  "chars": 12607
+ },
+ {
+  "id": "d1:dd1f63c14352cbbf",
+  "task": "d1_elemento",
+  "file": "seixal_postura_estabilidade.pdf",
+  "pages": 4,
+  "chars": 18425
+ },
+ {
+  "id": "d1:14c04f0af8fcb72d",
+  "task": "d1_elemento",
+  "file": "viseu_norma_pip.pdf",
+  "pages": 7,
+  "chars": 28628
+ },
+ {
+  "id": "d1:e0948744955a0da7",
+  "task": "d1_elemento",
+  "file": "vncerveira_normas_levantamentos.pdf",
+  "pages": 1,
+  "chars": 13385
+ },
+ {
+  "id": "d1:856b5a8e02dea0f6",
+  "task": "d1_elemento",
+  "file": "amadora_parque_urbano_neudel_memoria_descritiva.pdf",
+  "pages": 34,
+  "chars": 56216
+ },
+ {
+  "id": "d1:fdb05a5d92d30fe1",
+  "task": "d1_elemento",
+  "file": "lagos_alteracao_loteamento_memoria_descritiva.pdf",
+  "pages": 5,
+  "chars": 20823
+ },
+ {
+  "id": "d2:01e20b518ca3673a",
+  "task": "d2_facto",
+  "file": "lagos_alteracao_loteamento_memoria_descritiva.pdf",
+  "pages": 5,
+  "chars": 10716
+ },
+ {
+  "id": "d1:a39a5a85dfea95a3",
+  "task": "d1_elemento",
+  "file": "matosinhos_herois_de_franca_pecas_escritas.pdf",
+  "pages": 13,
+  "chars": 42288
+ },
+ {
+  "id": "d1:da3705867b199cf4",
+  "task": "d1_elemento",
+  "file": "mgrande_15001_muros_eb_praia_vieira_mdj.pdf",
+  "pages": 8,
+  "chars": 25002
+ },
+ {
+  "id": "d1:4084fece53b5cdfd",
+  "task": "d1_elemento",
+  "file": "mgrande_cantina_embra_mdj.pdf",
+  "pages": 10,
+  "chars": 25913
+ },
+ {
+  "id": "d1:81d31b87bf8be85e",
+  "task": "d1_elemento",
+  "file": "mgrande_memoria_em242_estrada_atlantica.pdf",
+  "pages": 6,
+  "chars": 18921
+ },
+ {
+  "id": "d1:f8fc29e9a1d66218",
+  "task": "d1_elemento",
+  "file": "mgrande_vol_iii_mapa_quantidades.pdf",
+  "pages": 5,
+  "chars": 42382
+ },
+ {
+  "id": "d1:605bcd1b96251081",
+  "task": "d1_elemento",
+  "file": "moimenta_memoria_descritiva_pacos_fase02.pdf",
+  "pages": 5,
+  "chars": 16996
+ },
+ {
+  "id": "d1:bb14f8c76757e712",
+  "task": "d1_elemento",
+  "file": "nazare_pe_347_pavilhao_famalicao_mdj.pdf",
+  "pages": 7,
+  "chars": 22735
+ },
+ {
+  "id": "d1:5486ef0d01541509",
+  "task": "d1_elemento",
+  "file": "nazare_pe_365_escola_amadeu_gaudencio_mdj.pdf",
+  "pages": 5,
+  "chars": 17302
+ },
+ {
+  "id": "d2:14651c89d64c316c",
+  "task": "d2_facto",
+  "file": "nazare_pe_365_escola_amadeu_gaudencio_mdj.pdf",
+  "pages": 5,
+  "chars": 7196
+ },
+ {
+  "id": "d1:a7667e7d292f2703",
+  "task": "d1_elemento",
+  "file": "nazare_pe_365_indice_pecas_desenhadas.pdf",
+  "pages": 2,
+  "chars": 14728
+ },
+ {
+  "id": "d1:e3a0d5b099f25318",
+  "task": "d1_elemento",
+  "file": "nazare_pe_365_arq_021_mapa_bancadas.pdf",
+  "pages": 1,
+  "chars": 12479
+ },
+ {
+  "id": "d1:5ff9e8f810e5868f",
+  "task": "d1_elemento",
+  "file": "pombal_casa_varela_memoria_descritiva_arquitectura.pdf",
+  "pages": 10,
+  "chars": 32175
+ },
+ {
+  "id": "d1:301aaf954d0de492",
+  "task": "d1_elemento",
+  "file": "resende_memoria_descritiva_centro_informacao_carquere.pdf",
+  "pages": 8,
+  "chars": 31724
+ },
+ {
+  "id": "d1:26d144d92d909a29",
+  "task": "d1_elemento",
+  "file": "santiagocacem_memoria_descritiva_loteamento_piaget.pdf",
+  "pages": 17,
+  "chars": 36044
+ },
+ {
+  "id": "d2:f9bc47fac7eff441",
+  "task": "d2_facto",
+  "file": "santiagocacem_memoria_descritiva_loteamento_piaget.pdf",
+  "pages": 17,
+  "chars": 25937
+ },
+ {
+  "id": "d1:bea334deed3ca4e1",
+  "task": "d1_elemento",
+  "file": "sever_memoria_descritiva_arquitetura.pdf",
+  "pages": 12,
+  "chars": 35495
+ },
+ {
+  "id": "d1:f5156aba807c78e9",
+  "task": "d1_elemento",
+  "file": "setubal_tr_autor_do_projeto.pdf",
+  "pages": 1,
+  "chars": 13142
+ },
+ {
+  "id": "d1:b80f8068af4635a4",
+  "task": "d1_elemento",
+  "file": "setubal_tr_diretor_de_obra.pdf",
+  "pages": 1,
+  "chars": 12455
+ },
+ {
+  "id": "d2:27dcd1563f085f7d",
+  "task": "d2_facto",
+  "file": "setubal_tr_diretor_de_obra.pdf",
+  "pages": 1,
+  "chars": 2324
+ },
+ {
+  "id": "d1:4e4bf3e51dab33b9",
+  "task": "d1_elemento",
+  "file": "vagos_9_lpu_lista_precos_unitarios.pdf",
+  "pages": 13,
+  "chars": 59295
+ },
+ {
+  "id": "d2:4d5096721c145d0d",
+  "task": "d2_facto",
+  "file": "vagos_9_lpu_lista_precos_unitarios.pdf",
+  "pages": 13,
+  "chars": 49189
+ },
+ {
+  "id": "d1:536468345892a501",
+  "task": "d1_elemento",
+  "file": "alcoutim_cp_obras_edificacao.pdf",
+  "pages": 7,
+  "chars": 30842
+ },
+ {
+  "id": "d2:2d6a4d2215d7d5f6",
+  "task": "d2_facto",
+  "file": "alcoutim_cp_obras_edificacao.pdf",
+  "pages": 7,
+  "chars": 20736
+ },
+ {
+  "id": "d1:db8c714bf3d7ba18",
+  "task": "d1_elemento",
+  "file": "braga_insturb0502_licenciamento_obra_edificacao.pdf",
+  "pages": 3,
+  "chars": 21779
+ },
+ {
+  "id": "d1:c2b0b6627f2815be",
+  "task": "d1_elemento",
+  "file": "evora_edital_384_2010_rmeu.pdf",
+  "pages": 8,
+  "chars": 66767
+ },
+ {
+  "id": "d1:c098e905cf83f236",
+  "task": "d1_elemento",
+  "file": "guimaraes_estimativa_orcamental_valores_referencia.pdf",
+  "pages": 1,
+  "chars": 11151
+ },
+ {
+  "id": "d2:3059ca10993493f0",
+  "task": "d2_facto",
+  "file": "guimaraes_estimativa_orcamental_valores_referencia.pdf",
+  "pages": 1,
+  "chars": 1045
+ },
+ {
+  "id": "d1:d59054186614d2fb",
+  "task": "d1_elemento",
+  "file": "lamego_normas_tecnicas_instrucao.pdf",
+  "pages": 6,
+  "chars": 26208
+ },
+ {
+  "id": "d1:5f7af035b635e9d6",
+  "task": "d1_elemento",
+  "file": "mesaofrio_aviso_253_2025_rmue.pdf",
+  "pages": 32,
+  "chars": 91296
+ },
+ {
+  "id": "d1:cc2a1f0a84df7674",
+  "task": "d1_elemento",
+  "file": "moimenta_caderno_encargos_cg.pdf",
+  "pages": 2,
+  "chars": 13448
+ },
+ {
+  "id": "d2:623a81eb40f38e01",
+  "task": "d2_facto",
+  "file": "moimenta_caderno_encargos_cg.pdf",
+  "pages": 2,
+  "chars": 3334
+ },
+ {
+  "id": "d1:bc514fea8a74379a",
+  "task": "d1_elemento",
+  "file": "oe_parecer_coordenacao_projeto_urbanizacao.pdf",
+  "pages": 11,
+  "chars": 33560
+ },
+ {
+  "id": "d1:2a74a43ebc7dedf5",
+  "task": "d1_elemento",
+  "file": "oe_projeto_acustico_nota_tecnica.pdf",
+  "pages": 8,
+  "chars": 24222
+ },
+ {
+  "id": "d1:8cd7db9200c64f0a",
+  "task": "d1_elemento",
+  "file": "pontadelgada_prefixos_urbanismo.pdf",
+  "pages": 8,
+  "chars": 64109
+ },
+ {
+  "id": "d1:9374510499b32b42",
+  "task": "d1_elemento",
+  "file": "prociv_azores_map_edificios_escolares_2018.pdf",
+  "pages": 16,
+  "chars": 35111
+ },
+ {
+  "id": "d1:43ae1090bc0df6f1",
+  "task": "d1_elemento",
+  "file": "scflores_fs035_comunicacao_previa_obras_edificacao.pdf",
+  "pages": 5,
+  "chars": 21735
+ },
+ {
+  "id": "d1:61204d8cd992aef8",
+  "task": "d1_elemento",
+  "file": "vilareal_anexoii_normas_instrucao_formato_digital.pdf",
+  "pages": 11,
+  "chars": 31455
+ }
+]

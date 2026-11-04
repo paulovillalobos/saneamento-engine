@@ -131,3 +131,17 @@
   called the element again. Cause = the D14 window view, not the scaffold. No change to any key.
 - Chain bug fixed for the record: overnight-r9.sh line 40 committed the outputs with the round-8 message; HEAD amended.
 - Next (no training, ≈ USD 2): head-whole + signal-pages view, read the 44 files with r8 and r9 under the scaffold, keep the better pair; then D3.
+
+## 2026-11-04 morning — the ceiling (Claude Opus 5.5, whole documents, 11 readers, no GPU) + OCR step + scorer D15
+- generator/ceiling.py build/collect: 106 whole-document prompts (2.77 M chars ≈ 0.92 M tokens, max 103 k chars), answers in
+  training/runs/ceiling-opus/raw/, collected to stranger.json + stranger-checked.json (checker refused 0), SCORES.md.
+  Result: elements 76/77 (miss: IPCB student memória → null, defensible), facts 27/29 unit-tolerant (OA wording copied short;
+  Valpaços «lar de idosos» p4 for the capitalised use of p1), wave 3 40/40. Agreed with the key on every row the keyers called ambiguous.
+- generator/score.py val(): value compared without a trailing unit (m2/m²/€). Rescored: r8 free 69/77 + 23/29, r9 scaffold
+  61/77 + 25/29, ceiling 76/77 + 27/29. Wave 3 all rows: r8 32, r9 34, ceiling 40 of 40.
+- Key corrected (wave 1, tuned): Valongo custo_total → «2.125.000€» p4; sealed/stranger-test.jsonl regenerated (prompts unchanged,
+  1 answer changed), stranger-test-r8.jsonl patched. r9 loses that row (said null), r8 too.
+- generator/ocr.py + stranger.py reads through it; brew tesseract + tesseract-lang (por) + ocrmypdf installed. Corpus: 8 text-less
+  pages in 6 files, 0 recovered (blank/image covers). No scanned document in the test today.
+- Base model fact checked: AMALIA-9B config = LlamaForCausalLM, max_position_embeddings 32768, rope_theta 1e6. The 8,192 was ours.
+- Cost: USD 0 on Modal; the ceiling ran on the Claude subscription (≈ 2 M tokens).
