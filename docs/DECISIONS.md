@@ -113,3 +113,29 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
   ceiling 40), fabricated 0. The r9 adapter on the whole view scored 59/77: the gain is from training on long documents, not from
   the view. Wave 3 did not move: its misses are document shapes absent from the generator (park/road memórias with engineering
   chapters, priced bills of quantities, technical notes) → the next data is a real-document TRAINING collection apart from the test.
+
+## D17 — Real public documents for TRAINING, apart from the test (2026-11-04)
+- Why: round 10 proved the generated expedientes teach everything they contain and that the wave-3 misses are document SHAPES
+  the generator never produced (park and road memórias with engineering chapters, priced and unpriced bills of quantities, technical
+  notes, blank 2026 forms). Paulo's call: "get the real documents for training". The ceiling showed the text of these documents is
+  enough to read them right.
+- What: sources/real/train — 106 public PDFs from municipalities and public bodies NOT in the stranger test (Melgaço, Sabugal,
+  Peniche, Lisboa and its juntas, Angra, Condeixa, Borba, Arganil, Lousã, Figueira de Castelo Rodrigo, Tomar, Porto de Mós,
+  Oliveira de Azeméis, Póvoa de Lanhoso, Ponte da Barca, Mealhada, Viana do Castelo, Sardoal, Sabrosa, Fronteira, Sines, Ílhavo,
+  Aveiro, S. João da Madeira, Feira, Murtosa, Praia da Vitória, CCDR-LVT, APA, LNEC, Provedor de Justiça, Madeira DRE). Provenance
+  in sources/real/PROVENANCE.md. Found by six parallel searches by document shape; downloaded as published; names kept.
+- Privacy gate: generator/privacy.py scans every file (natural-person NIF, phones, ID words, personal e-mail, professional numbers)
+  with context; a human decides. Dropped: a school safety plan with staff mobiles, a memória with an architect's OA number, a
+  memória naming a private owner with his property articles. Public bodies' own numbers and officials signing in function stay.
+- Keys: generator/realtrain.py KEYS, by hand, same conventions as the test: a memória of any operation = item 9 (incl. urbanisation
+  road memórias, D12); speciality memórias = their 27.i item (water/sewage networks of a loteamento keyed 27.i.v); plano de
+  acessibilidades memória = 27.b.vi; priced price lists / orçamentos = 27.f; unpriced quantity maps, cadernos de encargos, PSS,
+  PPGRCD, blank forms, norms, guides, regulations, fee tables, avisos, leaflets, service proposals = not an element; an external
+  entity's opinion letter (APA) = 27.h (noted ambiguous: here on a plan). Days-only deadlines → prazo null. 106 documents:
+  69 D1 positives / 189 negatives across 3 name variants; 220 D2 rows (one fact + two absent questions per document).
+- Rows: training/data/real/train.jsonl (538), INDEX.md with the key table. Each document → 3 D1 rows (real name; opaque name;
+  damaged text under a stranger name) + D2 rows, all gated by guard.check (0 dropped). HARD RULE in code: a train file whose sha256
+  matches any test file stops the build. Whole-document view, 65k-char cap (p90 prompt 64.7k chars, max 75.7k).
+- r11 = r10 data + real set repeated 3× (modal/train_lora.py RUNS r11). Chain training/runs/overnight-r11.sh; needs Paulo's go
+  (≈ USD 25-30, 6-7 h at 32k; timeout now 12 h).
+
