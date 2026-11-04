@@ -134,6 +134,11 @@ KEYS = [
     ("vfxira_ifrru_modelo_parecer_vinculativo.pdf", None, "nao_e_elemento", [], "blank model of a municipal binding opinion (IFRRU)"),
     ("vianacastelo_parecer_apa_pu.pdf", P + "27.h", "escrito", [], "APA (external entity) opinion letter, 24 pages — ambiguous: an external entity's parecer, here on a plan rather than on a building operation"),
     ("vianacastelo_parecer_apa_s046221.pdf", P + "27.h", "escrito", [], "APA (external entity) opinion letter, 20 pages — same ambiguity"),
+    ("angra_mercado_duque_braganca_memoria_descritiva.pdf", P + "9", "escrito", [], "memória descritiva of a design-build market tender (conceção-construção), 57 pages, Angra — the memória of the works"),
+    ("pcoura_eb23_programa_procedimento.pdf", None, "nao_e_elemento", [], "programa do procedimento of a school rehabilitation tender, Paredes de Coura"),
+    ("pcoura_eb23_caderno_encargos.pdf", None, "nao_e_elemento", [], "caderno de encargos of the school rehabilitation tender"),
+    ("pcoura_eb23_relatorio_final.pdf", None, "nao_e_elemento", [], "final evaluation report of the tender jury (image first page)"),
+    ("pcoura_cct_caderno_encargos.pdf", None, "nao_e_elemento", [], "caderno de encargos of a bus-station rehabilitation tender"),
 ]
 
 

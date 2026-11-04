@@ -78,7 +78,7 @@ Dropped before filing (private person's NIF / ID card / phone / professional num
 
 ## train (2026-11-04) — public documents for TRAINING (D17), apart from the test, downloaded as published, names kept
 Found by six parallel searches over municipalities not in the stranger test; every file scanned with generator/privacy.py and read by hand before keying (generator/realtrain.py KEYS).
-Dropped before filing: fornos_plano_seguranca_escolas.pdf (staff mobile numbers); peniche_gnr_mdj_arranjos_exteriores.pdf (architect's signed professional number); melgaco_alvaredo_habitacao_mdj.pdf (a private owner named with his property articles); jfestrela_arruamentos_2020_mqt_global.pdf and jfestrela_ruas_2021_projeto_execucao.pdf (CID-encoded fonts, text unreadable); peniche_smas_ferrel_projeto_execucao.pdf (scanned cover volume, content not readable).
+Dropped before filing: fornos_plano_seguranca_escolas.pdf (staff mobile numbers); peniche_gnr_mdj_arranjos_exteriores.pdf (architect's signed professional number); melgaco_alvaredo_habitacao_mdj.pdf (a private owner named with his property articles); jfestrela_arruamentos_2020_mqt_global.pdf and jfestrela_ruas_2021_projeto_execucao.pdf (CID-encoded fonts, text unreadable); peniche_smas_ferrel_projeto_execucao.pdf (scanned cover volume, content not readable); pcoura_eb23_contrato.pdf (a contract naming the signing persons).
 
 | file | source |
 |---|---|
@@ -188,3 +188,8 @@ Dropped before filing: fornos_plano_seguranca_escolas.pdf (staff mobile numbers)
 | vfxira_ifrru_modelo_parecer_vinculativo.pdf | https://www.cm-vfxira.pt/cmvfxira/uploads/writer_file/document/21211/ifrru_pedido_parecer_vinculativo_municipio.pdf |
 | vianacastelo_parecer_apa_pu.pdf | https://www.cm-viana-castelo.pt/cmvianadocastelo/uploads/document/file/8606/ponto_1___parecer_da_apa.pdf |
 | vianacastelo_parecer_apa_s046221.pdf | https://www.cm-viana-castelo.pt/cmvianadocastelo/uploads/document/file/8160/s046221_202508_arhn_dpi_parecer_apa.pdf |
+| angra_mercado_duque_braganca_memoria_descritiva.pdf | https://angradoheroismo.pt/wp-content/uploads/2022/04/Memoria-Descritiva.pdf |
+| pcoura_cct_caderno_encargos.pdf | https://www.paredesdecoura.pt/wp-content/uploads/2018/02/CE_CCT.pdf |
+| pcoura_eb23_caderno_encargos.pdf | https://www.paredesdecoura.pt/wp-content/uploads/2017/10/CE_EB23.pdf |
+| pcoura_eb23_programa_procedimento.pdf | https://www.paredesdecoura.pt/wp-content/uploads/2017/10/PP_EB23.pdf |
+| pcoura_eb23_relatorio_final.pdf | https://www.paredesdecoura.pt/wp-content/uploads/2017/10/RELATORIOFINAL.pdf |
