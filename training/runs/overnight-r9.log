@@ -1,0 +1,26 @@
+== regenerate training expedientes (80, D14 window + scaffold-clean keys) 2026-11-03T21:00:03Z
+80 expedientes in training/expedientes: 4930 files, 145 planted errors
+== D1/D2 rows with augmentation
+training/data/d1/train.jsonl: 7098 rows
+training/data/d2/train.jsonl: 4718 rows
+{'files': 4930, 'illegible': 14, 'noise': 392, 'facts': 3948, 'absent': 770, 'dropped': 17, 'augmented': 2168}
+== train r9 2026-11-03T21:01:17Z
+'checkpoint': 1100
+'examples': 15227
+'steps': 1154, 'seconds': 14885.0
+== evaluate r9 under the scaffold 2026-11-04T01:11:24Z
+== r8 under the scaffold, on the r8-window rows (baseline; stranger limited to waves 1-2) 2026-11-04T01:21:41Z
+- **alinea_de** n=203; passagem 197/203 (97%); citacao 197/203 (97%); ambos 197/203 (97%); nao_sei 2
+- **elemento_doc** n=91; passagem 86/91 (95%); citacao 86/91 (95%); ambos 86/91 (95%); tipo 76/91 (84%); nao_sei 1
+- **exigencia** n=116; passagem 110/116 (95%); citacao 110/116 (95%); ambos 110/116 (95%); exigido 55/116 (47%); nao_sei 1
+- **localiza** n=492; passagem 473/492 (96%); citacao 469/492 (95%); ambos 469/492 (95%); inventado 5; nao_sei 2; probes nao_sei 42/47
+- **proibido** n=30; passagem 28/30 (93%); citacao 29/30 (97%); ambos 28/30 (93%); resposta 30/30 (100%)
+- **transcreve** n=491; passagem 489/491 (100%); citacao 489/491 (100%); ambos 489/491 (100%); inventado 12; nao_sei 1; probes nao_sei 49/61
+- **d1_elemento** n=1145; citacao 1071/1071 (100%); elemento 1145/1145 (100%); tipo 1145/1145 (100%)
+- **d2_facto** n=1190; valor 1190/1190 (100%); pagina 1035/1035 (100%); valor_e_pagina 1035/1035 (100%); citacao_contem 1035/1035 (100%)
+- **d1_elemento** n=77; citacao 22/32 (69%); elemento 61/77 (79%); tipo 62/77 (81%); inventado 6
+- **d2_facto** n=29; valor 27/29 (93%); pagina 6/6 (100%); valor_e_pagina 5/6 (83%); citacao_contem 4/6 (67%); inventado 1
+- **d2_facto** n=1148; valor 1148/1148 (100%); pagina 1035/1035 (100%); valor_e_pagina 1035/1035 (100%); citacao_contem 982/1035 (95%)
+- **d1_elemento** n=45; citacao 14/15 (93%); elemento 42/45 (93%); tipo 42/45 (93%); inventado 2
+- **d2_facto** n=21; valor 20/21 (95%); pagina 2/3 (67%); valor_e_pagina 2/3 (67%); citacao_contem 2/3 (67%)
+== done 2026-11-04T01:25:37Z

@@ -37,5 +37,5 @@ $MODAL run modal/reader.py --jsonl sealed/stranger-test-r8.jsonl --out training/
 while pgrep -f "reader.py --jsonl sealed/d2-test-r8" >/dev/null; do sleep 20; done
 for s in d0 d1 d2 stranger; do f=$([ $s = stranger ] && echo sealed/stranger-test.jsonl || echo sealed/$s-test.jsonl); [ -f training/runs/r9/$s.json ] && python3 -I generator/score.py --rows $f --answers training/runs/r9/$s.json --record training/runs/r9/SCORES.md | grep "^- " || echo "$s: no answers"; done
 for s in d2 stranger; do f=$([ $s = stranger ] && echo sealed/stranger-test-r8.jsonl || echo sealed/d2-test-r8.jsonl); [ -f training/runs/r8-guard/$s.json ] && python3 -I generator/score.py --rows $f --answers training/runs/r8-guard/$s.json --record training/runs/r8-guard/SCORES.md | grep "^- " || echo "r8-guard $s: no answers"; done
-git add training/runs/r9 && git commit -q -m "Round 8 trained and scored on the sealed sets and the stranger test" || true
+git add training/runs/r9 && git commit -q -m "Round 9 trained and read under the scaffold: sealed D1/D2 and the stranger test (waves 1-3)" || true
 echo "== done $(date -u +%FT%TZ)"

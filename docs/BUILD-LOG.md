@@ -116,3 +116,18 @@
   test_guard: 2 441 keys inside the language. 12-expediente sample: D1 prompt mean 11.3k chars (max 20.7k), 2 of 601 fact rows dropped.
 - modal/train_lora.py RUNS r9; training/runs/overnight-r9.sh: regenerate 80 expedientes → train → r9 reads with --guard (D0 schema) →
   r8 --guard baseline on the r8-window rows → scores. Expected ≈ USD 20–25 (longer rows than r8's 4.1 h).
+
+## 2026-11-04 01:25 UTC — round 9 done first attempt (≈ USD 18, spend to date ≈ USD 110)
+- Chain overnight-r9.sh: regen 80 expedientes (4 930 files, D1 7 098 rows, D2 4 718 rows, 17 keys dropped by the gate) → train r9
+  (H100 4.1 h, 1 154 steps, 15 227 examples, ckpt 1100) → reads with --guard (d0 schema): sealed D1 1 145/1 145, D2 1 190/1 190 value+page,
+  quote holds value 1 035/1 035; stranger 106: elements 61/77 (waves 1-2 34/45, wave 3 27/32), facts 27/29 (26/29 after the checker).
+- Checker over the guarded answers (guard.py CLI → *-checked.json): r9 sealed 0 refused; r9 stranger 2 refused (OA termo "…" value;
+  Lagos 1.900,00 quoted from another sentence of the right page). r8-guard sealed D2: 53 refused (the cut-mid-word quotes), stranger 0.
+- Wave 3 second and last scoring = r9 under the scaffold: 34/40 (r8 free was 32/40); facts 7/8 with ZERO fabricated values/pages/quotes;
+  elements 27/32 (Amadora 34-page memória → null; Setúbal author termo → null; Nazaré bench sheet, Vagos LPU ambiguous; Marinha Grande
+  quantities map → planta de cedências invented).
+- Regression found: elements on the 44 tuned files 42 → 34. Shape: long real memórias (Cascais 23–30 pp) shown as pages 1, 2 + five dense
+  middle pages → "not an element"; five about-element docs (ANEPC note, Leiria annex, Maia survey, Seixal postura, OA fiscalização termo)
+  called the element again. Cause = the D14 window view, not the scaffold. No change to any key.
+- Chain bug fixed for the record: overnight-r9.sh line 40 committed the outputs with the round-8 message; HEAD amended.
+- Next (no training, ≈ USD 2): head-whole + signal-pages view, read the 44 files with r8 and r9 under the scaffold, keep the better pair; then D3.

@@ -1,0 +1,64 @@
+[
+ {
+  "meta": {
+   "model": "amalia-llm/AMALIA-9B-0626-DPO@c4614b9b5c7b",
+   "adapter": "amalia-saneamento-r8",
+   "runtime": "vllm 0.30.0, bf16, L40S, prefix caching, guided JSON per task",
+   "temperature": 0,
+   "max_tokens": 1200,
+   "guard": "grammar",
+   "load_seconds": 147.8,
+   "generate_seconds": 7.5,
+   "answered": 6,
+   "skipped": 0
+  }
+ },
+ {
+  "key": "d1:5276d6c56cfaa2a4",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:b9c8a4cd574da395",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 49,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"49 977,00\", \"pagina\": 3, \"citacao\": \"Área do terreno da intervenção (m2) 49 977,00\"}"
+ },
+ {
+  "key": "d2:bf500619076a7061",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 53,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"2.125.000€\", \"pagina\": 4, \"citacao\": \"Total 16.340,3m2 2.125.000€\"}"
+ },
+ {
+  "key": "d1:4faa266999203ee1",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d2:ca71d15ea43313e9",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:7cd3066c9e800af1",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ }
+]
