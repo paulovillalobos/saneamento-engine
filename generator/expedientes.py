@@ -53,13 +53,16 @@ INDEX_HEADINGS = ["1. INTRODUÇÃO", "2. ÁREA DE INTERVENÇÃO", "3. ENQUADRAME
                   "4.6. GESTÃO DE RESÍDUOS SÓLIDOS", "4.7. ACESSIBILIDADES", "4.8. SEGURANÇA CONTRA INCÊNDIOS", "5. QUADRO SINÓPTICO", "6. ANEXOS"]
 
 def _real_sentences():
-    """Sentences of the real public memórias (sources/real/memorias), texture for long generated memórias; loaded once, no PDF text reused as a key."""
+    """Sentences of the real public memórias of the TRAINING collection (sources/real/train, D17: memórias, MDJ, peças escritas), texture
+    for long generated memórias; loaded once, no PDF text reused as a key. Until round 10 the pool was sources/real/memorias, i.e. the
+    four wave-1 TEST memórias: sentences of test files inside training text. Since r11 the test contributes nothing to training."""
     try:
         from pypdf import PdfReader
     except ImportError:
         return []
     out = []
-    for f in sorted((ROOT / "sources" / "real" / "memorias").glob("*.pdf")):
+    files = [f for f in (ROOT / "sources" / "real" / "train").glob("*.pdf") if re.search(r"memoria|mdj|_md_|pecas_escritas", f.name)]
+    for f in sorted(files):
         try:
             t = " ".join((pg.extract_text() or "") for pg in PdfReader(str(f)).pages)
         except Exception:

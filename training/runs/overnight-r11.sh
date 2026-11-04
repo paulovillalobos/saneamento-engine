@@ -1,7 +1,16 @@
 #!/bin/zsh
-# Round 11 (D17): r10 data + the real public documents keyed by hand (training/data/real, repeated 3×). No regeneration: d0/d1/d2 are r10's.
+# Round 11 (D17): regenerated expedientes (sentence pool = the real TRAINING memórias, test memórias out) + the real public documents keyed by hand (training/data/real, repeated 6×).
 cd ~/Downloads/saneamento-engine
 MODAL=~/Downloads/foaap-core/.venv-modal/bin/modal
+PY=/Users/baphomet/Downloads/rjue-engine/.venv/bin/python
+echo "== regenerate training expedientes (80, D16 whole documents, D17 sentence pool) $(date -u +%FT%TZ)"
+rm -rf training/expedientes
+$PY -I generator/expedientes.py --n 80 --seed 1 2>&1 | grep -v "fontTools\|pointing object" | tail -1
+echo "== D1/D2 rows with augmentation"
+$PY -I generator/d1d2.py --src training/expedientes --out training/data --augment 2>&1 | grep -v "fontTools\|pointing object" | tail -3
+echo "== real rows"
+$PY -I generator/realtrain.py 2>&1 | grep -v "fontTools\|pointing object" | tail -1
+git add training/expedientes training/data && git commit -q -m "Training set for round 11: expedientes regenerated with the real training memórias as sentence pool, real-document rows (D17)" || true
 echo "== train r11 $(date -u +%FT%TZ)"
 mkdir -p training/runs/r11
 $MODAL run --detach modal/train_lora.py --run r11 > training/runs/r11/train.log 2>&1 &
