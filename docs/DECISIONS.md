@@ -119,7 +119,7 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
   the generator never produced (park and road memórias with engineering chapters, priced and unpriced bills of quantities, technical
   notes, blank 2026 forms). Paulo's call: "get the real documents for training". The ceiling showed the text of these documents is
   enough to read them right.
-- What: sources/real/train — 106 public PDFs from municipalities and public bodies NOT in the stranger test (Melgaço, Sabugal,
+- What: sources/real/train — 111 public PDFs from municipalities and public bodies NOT in the stranger test (Melgaço, Sabugal,
   Peniche, Lisboa and its juntas, Angra, Condeixa, Borba, Arganil, Lousã, Figueira de Castelo Rodrigo, Tomar, Porto de Mós,
   Oliveira de Azeméis, Póvoa de Lanhoso, Ponte da Barca, Mealhada, Viana do Castelo, Sardoal, Sabrosa, Fronteira, Sines, Ílhavo,
   Aveiro, S. João da Madeira, Feira, Murtosa, Praia da Vitória, CCDR-LVT, APA, LNEC, Provedor de Justiça, Madeira DRE). Provenance
@@ -131,9 +131,9 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
   road memórias, D12); speciality memórias = their 27.i item (water/sewage networks of a loteamento keyed 27.i.v); plano de
   acessibilidades memória = 27.b.vi; priced price lists / orçamentos = 27.f; unpriced quantity maps, cadernos de encargos, PSS,
   PPGRCD, blank forms, norms, guides, regulations, fee tables, avisos, leaflets, service proposals = not an element; an external
-  entity's opinion letter (APA) = 27.h (noted ambiguous: here on a plan). Days-only deadlines → prazo null. 106 documents:
-  69 D1 positives / 189 negatives across 3 name variants; 220 D2 rows (one fact + two absent questions per document).
-- Rows: training/data/real/train.jsonl (538), INDEX.md with the key table. Each document → 3 D1 rows (real name; opaque name;
+  entity's opinion letter (APA) = 27.h (noted ambiguous: here on a plan). Days-only deadlines → prazo null. 111 documents:
+  72 D1 positives / 261 negatives across 3 name variants; 230 D2 rows (one fact + two absent questions per document).
+- Rows: training/data/real/train.jsonl (563), INDEX.md with the key table. Each document → 3 D1 rows (real name; opaque name;
   damaged text under a stranger name) + D2 rows, all gated by guard.check (0 dropped). HARD RULE in code: a train file whose sha256
   matches any test file stops the build. Whole-document view, 65k-char cap (p90 prompt 64.7k chars, max 75.7k).
 - r11 = r10 data + real set repeated 3× (modal/train_lora.py RUNS r11). Chain training/runs/overnight-r11.sh; needs Paulo's go
