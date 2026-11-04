@@ -69,7 +69,7 @@ def mixture(run="r1"):
     return mix, {k: len(v) for k, v in sorted(by_task.items())}
 
 
-@app.function(gpu="H100", volumes={"/weights": weights, "/lora": adapters}, timeout=6 * 3600)
+@app.function(gpu="H100", volumes={"/weights": weights, "/lora": adapters}, timeout=12 * 3600)   # r10 hit the 6 h wall at step 1035/~1050 (whole documents, 32k rows); the step-1000 checkpoint stood in
 def train_remote(rows: list[dict], hp: dict, adapter: str = ADAPTER) -> dict:
     import math
     import random

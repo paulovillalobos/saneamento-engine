@@ -155,3 +155,8 @@
   compile, 6/6 answered, 21.5 s generate; r9 on whole documents answers inside the language but wrong on the Valpaços use (trained on short docs).
 - Chain training/runs/overnight-r10.sh: regen 80 (seed 1) → d1d2 --augment → commit → train r10 (watchdog 25 min) → r10 reads --guard
   (d0 schema) → r9 --guard on the whole-document stranger rows (baseline) → scores → commit. Log training/runs/overnight-r10.log.
+
+## 2026-11-04 — round 10 training hit the 6 h wall; reads launched from the step-1000 checkpoint
+- Claude: the r10 trainer (whole documents, max_len 32 768) ran 525 steps per epoch; Modal's function timeout (6 h) killed it at step ~1035 of ~1050, 21 463 s in. The step-1000 checkpoint (saved every 100 steps since r6) is on the volume as amalia-saneamento-r10. Linear decay to 0: at step 1000 the learning rate was ≈ 5 % of peak, so the lost 50 steps change the adapter very little. Taken as round 10, stated as such in the report.
+- Claude: training cost ≈ 6.0 h H100 ≈ USD 24. Timeout raised to 12 h in modal/train_lora.py for the next run.
+- Claude: the chain script stopped at the failed `wait` (set -e) before the reads. Reads launched separately with training/runs/overnight-r10-reads.sh (d0, d1 --guard, d2 --guard, stranger --guard, then r9 --guard on the whole-document stranger rows into r9-whole, then score.py).
