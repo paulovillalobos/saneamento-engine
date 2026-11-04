@@ -177,3 +177,7 @@
 - Claude: train_lora.py r11 run (sets d0,d1,d2,real; real ×3), training/runs/overnight-r11.sh ready. Cost so far USD 0.
 - Paulo: the go for round 11 (≈ USD 25-30).
 
+
+## 2026-11-04 23:25 UTC — round 11 launched (commit f2d3090)
+- Paulo: "go, run round 11 with weight 6".
+- Claude: real set repeated 6× (≈ 3,400 of ≈ 15,000 examples; about half of the element rows). Sentence pool of the generated memórias moved from sources/real/memorias (the four wave-1 TEST memórias, a mild leak of test text into training since round 9) to the 39 memórias of the training collection (3,218 sentences); 80 expedientes regenerated. Chain training/runs/overnight-r11.sh: regen → rows → commit → train r11 (12 h limit) → guarded reads → score → commit. Log training/runs/overnight-r11.log, pid training/runs/r11.pid. Expected ≈ USD 25-30, results ≈ 06:30-07:30 UTC.
