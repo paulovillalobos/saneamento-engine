@@ -172,8 +172,8 @@
 
 ## 2026-11-04 evening — real-document TRAINING collection (D17)
 - Claude: six parallel searches by shape (general memórias; speciality memórias; quantities and prices; about-element documents; tender packages; small pieces), municipalities of the test excluded. 4 download batches (fetch helper, %PDF check, page count): 117 files landed, Coimbra refused (WAF 403).
-- Claude: generator/privacy.py written (number classes by first digit + phone context, ID words, personal e-mail, professional numbers); scan → 3 files dropped for a private person's data, 3 for unreadable text/scans. 106 kept.
-- Claude: generator/realtrain.py written (KEYS by hand → rows with the whole-document view and the scaffold gate; sha256 test guard; INDEX.md). 538 rows, 0 dropped. sources/real/PROVENANCE.md train section with every URL.
+- Claude: generator/privacy.py written (number classes by first digit + phone context, ID words, personal e-mail, professional numbers); scan → 3 files dropped for a private person's data, 3 for unreadable text/scans. 111 kept (a last batch of 5 from the tender-package search, whose finding was that works packages sit behind e-procurement logins).
+- Claude: generator/realtrain.py written (KEYS by hand → rows with the whole-document view and the scaffold gate; sha256 test guard; INDEX.md). 563 rows, 0 dropped. sources/real/PROVENANCE.md train section with every URL.
 - Claude: train_lora.py r11 run (sets d0,d1,d2,real; real ×3), training/runs/overnight-r11.sh ready. Cost so far USD 0.
 - Paulo: the go for round 11 (≈ USD 25-30).
 
