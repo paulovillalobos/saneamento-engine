@@ -1,0 +1,866 @@
+[
+ {
+  "meta": {
+   "model": "amalia-llm/AMALIA-9B-0626-DPO@c4614b9b5c7b",
+   "adapter": "amalia-saneamento-r10",
+   "runtime": "vllm 0.30.0, bf16, L40S, prefix caching, guided JSON per task",
+   "temperature": 0,
+   "max_tokens": 1200,
+   "guard": "checked",
+   "load_seconds": 147.2,
+   "generate_seconds": 107.2,
+   "answered": 106,
+   "skipped": 0
+  }
+ },
+ {
+  "key": "d1:5276d6c56cfaa2a4",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:b9c8a4cd574da395",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 196,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"49 977,00\", \"pagina\": 1, \"citacao\": \"A operação urbanística enquadra-se no nº 3 do Artigo 109º do RPDMV , pois incide apenas num único prédio e proprietário, como é referido na proposta de decisão constante da informação técnica 397/DGU.EU/2025. Pelo referido, julga-se necessário a apresentação das peças desenhadas revistas, tendo “apenas” em atenção as retificações devidas à identificação da parcela sobre a qual incide a operação urbanística. Paralelamente, e para efeitos do previsto nos números 2 e 3 do artigo 108.ª do regulamento do PDM de Valongo, apresenta-se estudo urbanístico de conjunto para a totalidade da área programada.\"}",
+  "guard": "valor fora da citação"
+ },
+ {
+  "key": "d2:bf500619076a7061",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:4faa266999203ee1",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:ca71d15ea43313e9",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:7cd3066c9e800af1",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:663b17d910231686",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:84877dcd3a6d2ec3",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.11\", \"citacao\": \"11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:eb15cdc46dfee293",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 68,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"Observa as normas legais e regulamentares aplicáveis, designadamente as normas técnicas de construção em vigor\", \"pagina\": 1, \"citacao\": \"a) Observa as normas legais e regulamentares aplicáveis, designadamente as normas técnicas de construção em vigor …\"}"
+ },
+ {
+  "key": "d2:8dfc7aef113ca7ca",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:b42834dbdb8a7d99",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 67,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.12\", \"citacao\": \"12 - Termo de responsabilidade do coordenador de projeto quanto à garantia de compatibilidade entre os diversos projetos;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:ec280ad55a41f037",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:f7117e8dc17ed4ae",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d2:49e25aac298c89e8",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:bbc7a2fbd6b6e509",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:026b8af7c78585ef",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:a1852d7ab843b77e",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:b9bdb7907e8b1401",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:f45ede732ec08766",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 82,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.k\", \"citacao\": \"k) Termo de responsabilidade pela assunção da função de diretor de obra e, quando exista, de diretor de fiscalização de obra para efeitos do início da sua execução;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:df854302ae5c950c",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:a9ecdcbd3e1420c0",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d2:5777cdac774952a8",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:011be86868d1e7e0",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.11\", \"citacao\": \"11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:a8efe8080619cc3b",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 60,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"Utilizações-Tipo V “Hospitalares e Lares de Idosos”\", \"pagina\": 4, \"citacao\": \"a) Utilizações-Tipo Utilizações-Tipo V “Hospitalares e Lares de Idosos”\"}"
+ },
+ {
+  "key": "d2:6fd9bec08fc6b9cd",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:6435f948f05ff74b",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 67,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.i\", \"citacao\": \"i) Projeto de estabilidade que inclua o projeto de escavação e contenção periférica;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:e12dcb9bfca5e3a9",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:08a5974087330187",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 127,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.b.vi\", \"citacao\": \"vi) Plano de acessibilidades, que integrando peças escritas e desenhadas, permita evidenciar as opções de projeto em matéria de garantia do acesso aos utilizadores com mobilidade reduzida, apresentando a rede de espaços e equipamentos acessíveis, existente ou proposta, para a área objeto da operação urbanística, comprovando que a execução da operação se conforma com o regime jurídico da acessibilidade;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:85870f54717f0ef4",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:bc4bd1105336b012",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 56,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.vi\", \"citacao\": \"vi) Projeto de águas pluviais;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:596815c53e901176",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:e64cb1fb895dc834",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 61,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.viii\", \"citacao\": \"viii) Projeto de infraestruturas de telecomunicações;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:c4d6e70683cb7d5e",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:58445f056c77a886",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 97,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.f\", \"citacao\": \"f) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:cc9d83d68a771593",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:5b7a1db490e2f157",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:1eb2fb2172d8060b",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 85,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.2\", \"citacao\": \"2 - Delimitação da área objeto da operação urbanística e sua área de enquadramento em planta de localização fornecida pela câmara municipal ou planta de localização à escala 1:1.000;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:104873503cec8d04",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.11\", \"citacao\": \"11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:458bfa1f8dca1a1c",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:b2d1655f09358c02",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:136f7a1a1fca0699",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:2fc5d4be14b795c8",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d2:1582ee7a583b9824",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:8435d64df96eb6c8",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:57203acea12a5265",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d2:340c1a09057ae555",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:276ff0ca445c0c1e",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:aa672492545a5531",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:46f6598e94ec7a70",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d2:3af00c03d07fa75d",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:78df01b390ac44b5",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:4bdcafd7c84d48d8",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:0dc7ca672eaa6075",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d2:c7d9ddcb6092c73f",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:8be33ea0cfcdcbe8",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:52818c124d8ff689",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:30454b8a80a1d943",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:43b518642272d8a3",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:dff0f8c585ce6443",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:ef970b425fd6ae40",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:8bbefe1f2868043c",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:414a9851228e24e2",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:81fdbad23011d33f",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:dd1f63c14352cbbf",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:14c04f0af8fcb72d",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:e0948744955a0da7",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:856b5a8e02dea0f6",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 61,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.viii\", \"citacao\": \"viii) Projeto de infraestruturas de telecomunicações;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:fdb05a5d92d30fe1",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:01e20b518ca3673a",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 171,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"1.900,00\", \"pagina\": 1, \"citacao\": \"O loteamento em que se insere, titulado pelo Alvará nº 2/2008, abrange uma área com cerca de 34,7 ha, situando-se entre a EM 534 e a linha de caminho de ferro. A alteração ao loteamento ora proposta consiste na modificação do uso do lote 18, destinado, no alvará em vigor, a equipamento, comércio e serviços, para estabelecimento hoteleiro de 3* (três estrelas), mantendo-se os restantes parâmetros urbanísticos e não havendo lugar a alteração das obras de urbanização do loteamento,\"}",
+  "guard": "valor fora da citação"
+ },
+ {
+  "key": "d1:a39a5a85dfea95a3",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:da3705867b199cf4",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:4084fece53b5cdfd",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:81d31b87bf8be85e",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 56,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.vi\", \"citacao\": \"vi) Projeto de águas pluviais;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:f8fc29e9a1d66218",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 95,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.b.i\", \"citacao\": \"i) Plantas à escala de 1:50 ou de 1:100 contendo as dimensões e áreas e utilizações de todos os compartimentos, bem como a representação do mobiliário fixo e equipamento sanitário;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:605bcd1b96251081",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:bb14f8c76757e712",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:5486ef0d01541509",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:14651c89d64c316c",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:a7667e7d292f2703",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:e3a0d5b099f25318",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:5ff9e8f810e5868f",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:301aaf954d0de492",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:26d144d92d909a29",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:f9bc47fac7eff441",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 161,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"181.182,57\", \"pagina\": 2, \"citacao\": \"1 1. Introdução A presente Memória Descritiva e Justificativa refere -se ao projecto de uma Operação de Loteamento que o Instituto Piaget pretende aprovar e levar a efeito num terreno do qual é superficiário, sito em Vila Nova de Santo André, concelho de Santiago de Cacém, inscrito no Artigo Matricial n.º 7004 e descrito na CRP so b o n.º 3617/20010130, com uma área total de intervenção de 181.182,57m2.\"}"
+ },
+ {
+  "key": "d1:bea334deed3ca4e1",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:f5156aba807c78e9",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.11\", \"citacao\": \"11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:b80f8068af4635a4",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 82,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.k\", \"citacao\": \"k) Termo de responsabilidade pela assunção da função de diretor de obra e, quando exista, de diretor de fiscalização de obra para efeitos do início da sua execução;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:27dcd1563f085f7d",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:4e4bf3e51dab33b9",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d2:4d5096721c145d0d",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 50,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"2.963.691,24\", \"pagina\": 13, \"citacao\": \"TOTAL 2.963.691,24 €\"}"
+ },
+ {
+  "key": "d1:536468345892a501",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d2:2d6a4d2215d7d5f6",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:db8c714bf3d7ba18",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:c2b0b6627f2815be",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:c098e905cf83f236",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d2:3059ca10993493f0",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:d59054186614d2fb",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:5f7af035b635e9d6",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:cc2a1f0a84df7674",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d2:623a81eb40f38e01",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:bc514fea8a74379a",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:2a74a43ebc7dedf5",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 58,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.xii\", \"citacao\": \"xii) Projeto de condicionamento acústico;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:8cd7db9200c64f0a",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:9374510499b32b42",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:43ae1090bc0df6f1",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:61204d8cd992aef8",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ }
+]

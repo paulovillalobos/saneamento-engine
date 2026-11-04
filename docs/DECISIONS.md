@@ -107,3 +107,9 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
   as the "view alone" baseline (training/runs/r9-whole/; smoke: 650 KB D2 grammars compile, 6 rows in 21 s).
 - Expected cost 2–3× round 9 (longer rows, attention quadratic): ≈ USD 30–45. Approved by Paulo 2026-11-04 ("go, run round 10
   with whole documents").
+- Outcome (2026-11-04 19:35 UTC): training killed by Modal's 6 h function timeout at step ~1035 of ~1050; the step-1000
+  checkpoint (learning rate ≈ 5 % of peak there) is the r10 adapter, named as such in training/runs/r10/MANIFEST.json; timeout now
+  12 h. Stranger, whole documents: elements 67/77 (r9 61, ceiling 76), facts 25/29 (r9 25, ceiling 27), wave 3 33/40 (r9 34,
+  ceiling 40), fabricated 0. The r9 adapter on the whole view scored 59/77: the gain is from training on long documents, not from
+  the view. Wave 3 did not move: its misses are document shapes absent from the generator (park/road memórias with engineering
+  chapters, priced bills of quantities, technical notes) → the next data is a real-document TRAINING collection apart from the test.

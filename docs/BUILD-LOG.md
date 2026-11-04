@@ -160,3 +160,12 @@
 - Claude: the r10 trainer (whole documents, max_len 32 768) ran 525 steps per epoch; Modal's function timeout (6 h) killed it at step ~1035 of ~1050, 21 463 s in. The step-1000 checkpoint (saved every 100 steps since r6) is on the volume as amalia-saneamento-r10. Linear decay to 0: at step 1000 the learning rate was ≈ 5 % of peak, so the lost 50 steps change the adapter very little. Taken as round 10, stated as such in the report.
 - Claude: training cost ≈ 6.0 h H100 ≈ USD 24. Timeout raised to 12 h in modal/train_lora.py for the next run.
 - Claude: the chain script stopped at the failed `wait` (set -e) before the reads. Reads launched separately with training/runs/overnight-r10-reads.sh (d0, d1 --guard, d2 --guard, stranger --guard, then r9 --guard on the whole-document stranger rows into r9-whole, then score.py).
+
+## 2026-11-04 19:35 UTC — round 10 read and scored
+- Claude: reads done in 16 min (d0, d1 --guard, d2 --guard, stranger --guard; r9 --guard on the whole-document stranger rows → training/runs/r9-whole/).
+  Checker (guard.py CLI) over every output → *-checked.json: sealed D1/D2 0 refused; stranger r10 2 refused (Valongo area, Lagos area: right value, quote from another sentence); r9-whole 3 refused.
+- Claude: sealed D1 1145/1145, D2 1190/1190 value + page + quote. Stranger (whole documents): r10 elements 67/77 (waves 1–2 41/45, wave 3 26/32), facts 25/29, wave 3 total 33/40, fabricated 0;
+  r9 on the same whole view 59/77, 24/29, 33/40; ceiling 76/77, 27/29, 40/40. r10 right where r9-whole wrong: 13 rows; the reverse: 4.
+- Claude: per-wave comparison script kept in the scratchpad only (one-off); numbers in the report. MANIFEST.json for r10 written by hand from train.log (trainer writes it only on a clean finish).
+- Claude: cost: training 6.0 h H100 ≈ USD 24 + reads ≈ USD 1 = ≈ USD 25 (estimate was 30–45). To date ≈ USD 135.
+- Paulo: decide the next data step (real-document TRAINING collection, work not money) and whether a round 11 on it (≈ USD 25) gets the go.
