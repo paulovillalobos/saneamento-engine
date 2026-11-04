@@ -72,6 +72,53 @@ def _real_sentences():
 
 
 REAL = _real_sentences()
+
+# D16 (round 10): documents as long as the real ones. Real memórias run 5–34 pages, real norms, manuals and regulations 4–40; ours ran 1–6.
+# stretch() lengthens a document with numbered chapters of plain text until it reaches a target page count; the facts keep their pages.
+MEM_CHAPTERS = ["SOLUÇÕES CONSTRUTIVAS E MATERIAIS", "ACESSIBILIDADES", "SEGURANÇA CONTRA INCÊNDIO", "COMPORTAMENTO TÉRMICO E ENERGIA", "CONDICIONAMENTO ACÚSTICO",
+                "REDES DE ÁGUAS E ESGOTOS", "REDE ELÉTRICA E TELECOMUNICAÇÕES", "ARRANJOS EXTERIORES", "GESTÃO DE RESÍDUOS DE CONSTRUÇÃO E DEMOLIÇÃO", "ESTALEIRO E FASEAMENTO",
+                "CONDICIONANTES E SERVIDÕES", "ENQUADRAMENTO NO PDM", "DESCRIÇÃO DOS ESPAÇOS", "ÁREAS E ÍNDICES", "QUADRO SÍNTESE", "CONSIDERAÇÕES FINAIS", "ANEXOS"]
+REG_TEMPLATES = ["Artigo {n}.º — Para efeitos do presente regulamento, entende-se por {X} o documento técnico que acompanha o pedido e identifica a solução adotada.",
+                 "Artigo {n}.º — O pedido de comunicação prévia é instruído com os elementos previstos na Portaria n.º 320/2026/1, em formato digital, nos termos do artigo 8.º-A do RJUE.",
+                 "Artigo {n}.º — A {X} é apresentada em ficheiro autónomo, assinado digitalmente pelo técnico autor, com termo de responsabilidade nos termos do artigo 10.º do RJUE.",
+                 "Artigo {n}.º — Compete à Câmara Municipal de {M} verificar a instrução do pedido no prazo de {d} dias, convidando o requerente a corrigir ou completar os elementos em falta.",
+                 "Artigo {n}.º — As peças desenhadas são apresentadas à escala adequada, georreferenciadas no sistema PT-TM06/ETRS89, em formato DWFx ou DWG.",
+                 "{n}. Os projetos de especialidade, designadamente o projeto de {X}, são acompanhados dos respetivos termos de responsabilidade e das declarações das ordens profissionais.",
+                 "{n}. O incumprimento do disposto no número anterior determina a rejeição liminar da comunicação prévia ou o convite ao aperfeiçoamento, nos termos do artigo 11.º do RJUE.",
+                 "{n}. Nas operações urbanísticas em solo rústico aplicam-se, com as devidas adaptações, as regras constantes do Plano Diretor Municipal de {M} e do presente regulamento.",
+                 "{n}. A estimativa do custo total da obra é calculada com base nos valores de referência fixados anualmente por deliberação da Câmara Municipal de {M}.",
+                 "{n}. O prazo de execução das obras é fixado na comunicação prévia e pode ser prorrogado uma vez, por período não superior a metade do prazo inicial.",
+                 "{n}. As taxas devidas pela realização, manutenção e reforço de infraestruturas urbanísticas são liquidadas nos termos do Regulamento Municipal de Taxas de {M}.",
+                 "{n}. O requerente indica, no formulário, o técnico autor de cada peça e o diretor de obra, com os números de inscrição nas respetivas ordens profissionais.",
+                 "Secção {n} — Disposições relativas ao {X}: aplicam-se as normas técnicas em vigor, nomeadamente as normas europeias EN e as disposições do RGEU.",
+                 "{n}. Os ficheiros são nomeados de acordo com o manual de instrução digital em vigor, com o prefixo correspondente ao tipo de peça e o número de ordem.",
+                 "{n}. A Câmara Municipal de {M} pode solicitar pareceres a entidades externas quando a operação urbanística incida sobre áreas sujeitas a servidões ou restrições de utilidade pública.",
+                 "{n}. Os elementos instrutórios são apresentados em formato PDF/A, com resolução mínima de 300 dpi quando resultem de digitalização, e não podem exceder 20 MB por ficheiro."]
+REG_HEADINGS = ["CAPÍTULO I — DISPOSIÇÕES GERAIS", "CAPÍTULO II — INSTRUÇÃO DOS PEDIDOS", "CAPÍTULO III — ELEMENTOS INSTRUTÓRIOS", "CAPÍTULO IV — PEÇAS DESENHADAS", "CAPÍTULO V — PROJETOS DE ESPECIALIDADE",
+                "CAPÍTULO VI — PRAZOS E TRAMITAÇÃO", "CAPÍTULO VII — TAXAS", "CAPÍTULO VIII — FISCALIZAÇÃO", "CAPÍTULO IX — DISPOSIÇÕES FINAIS E TRANSITÓRIAS", "ANEXO I — MODELOS", "ANEXO II — NORMAS DE NOMEAÇÃO DE FICHEIROS"]
+
+
+def reg_sentence(rng, n):
+    return rng.choice(REG_TEMPLATES).format(n=n, X=rng.choice(ELEMENT_NAMES), M=rng.choice(MUNIS_PT), d=rng.choice([8, 10, 15, 20, 30]))
+
+
+def stretch(d, rng, target_pages, pool="memoria", first=8, header=None):
+    """Add numbered chapters until the document has at least target_pages pages (each chapter 3–9 paragraphs). pool: 'memoria' draws from the
+    real memória sentences, 'regulamento' from article templates. header (if given) is printed small at the top of each new chapter, as the
+    letterheads and footers that real documents repeat on every page."""
+    k, n = first, rng.randrange(10, 40)
+    heads = MEM_CHAPTERS if pool == "memoria" else REG_HEADINGS
+    while len(d.pages) < target_pages:
+        if header:
+            d.text(header, size=7)
+        d.text(f"{k}. {heads[(k - first) % len(heads)]}" if pool == "memoria" else heads[(k - first) % len(heads)], bold=True)
+        for _ in range(rng.randrange(3, 10)):
+            if pool == "memoria":
+                d.text(rng.choice(REAL) if REAL else "Texto descritivo da solução adotada.")
+            else:
+                d.text(reg_sentence(rng, n)); n += 1
+        k += 1
+    return d
 REQUIRED_ALWAYS = ["REQ", "CRP", "TRPARQ", "SRCARQ", "TRCP", "SRCCP", "FOTO", "MDARQ", "CEO", "EOCT", "OUTDOC", "P10000", "LEVT", "PI", "PLANT", "ALC", "CORTES", "PC", "FEE", "IMPIC", "ASAT"]
 ERRORS = ["missing_required", "template_wording_missing", "unsigned", "not_pdf", "not_pdfa", "value_mismatch", "impossible_value", "wrong_site", "expired_insurance", "wrong_signer"]
 
@@ -232,6 +279,9 @@ def doc_memory(c, override=None, long=False, rng=None):
                 d.text(h, bold=True)
                 for _ in range(rng.randrange(4, 9)):
                     d.text(rng.choice(REAL))
+            # D16: as long as the real ones (5–34 pages); the cost and the prazo land somewhere in the second half, not always on the last page
+            target = rng.randrange(6, 25)
+            stretch(d, rng, max(len(d.pages), target - rng.randrange(0, 4)), header=f"{title}    |    {c['site']}" if rng.random() < 0.6 else None)
             if rng.random() < 0.3:
                 d.text("8. ESTIMATIVA DO CUSTO DA OBRA", bold=True)
                 pg_c = d.text(f"O custo total da obra estima-se em {eur(c['cost'])}, com base nas áreas acima e nos valores de referência de custo por m2.", tag="custo")
@@ -242,6 +292,8 @@ def doc_memory(c, override=None, long=False, rng=None):
             extra.append(("prazo_meses", str(c["months"]), "meses", pg_p, None))
         elif r2 < 0.5:
             d.text(f"O prazo de execução previsto para a obra é de {rng.choice([60, 90, 120, 180, 240, 365])} dias a contar da data de início dos trabalhos.")
+        if long and REAL:
+            stretch(d, rng, len(d.pages) + rng.randrange(0, 4), first=20)   # a few more chapters after the facts (quadro síntese, anexos)
     sig(d, c, a)
     return d, [("area_total_construcao", str(o.get("built", c["built"])), "m2", pg_b, None), ("area_parcela", str(o.get("plot", c["plot"])), "m2", pg_q, None),
                ("pisos_acima_soleira", str(c["pisos"]), "", pg_b, None)] + extra
@@ -679,6 +731,8 @@ def doc_special_memory(c, name, p, rng):
         d.text("Série: PVC    Descrição: Policloreto de vinilo    Coef. Manning: 0.009    Referências | Diâmetro interno: Ø32 29.6 | Ø40 37.6 | Ø50 47.6 | Ø75 72.0 | Ø90 86.8 | Ø110 105.6", size=9)
         d.text("4 – CÁLCULOS JUSTIFICATIVOS", bold=True)
         d.text("Os valores de cálculo foram determinados pela fórmula Qc = C x I x A, sendo C o coeficiente aplicável, I a intensidade de referência e A a área em projeção horizontal (ver peças desenhadas).")
+    if long:
+        stretch(d, rng, rng.randrange(4, 17), first=5)   # D16: real speciality memórias run 10–20 pages (SCIE, ITED)
     d.text("5 – LEGISLAÇÃO E NORMAS", bold=True)
     d.text("Foram consideradas as disposições legais e regulamentares aplicáveis, nomeadamente o Regulamento Geral das Edificações Urbanas, as normas europeias EN e as normas técnicas de construção em vigor.")
     sig(d, c, p)
@@ -783,6 +837,8 @@ def build_one(rng, cid, out_dir, n_err, with_noise):
         seen = set()
         for _ in range(rng.randrange(3, 8)):
             code, stem, title, d = noise_about(c, rng) if rng.random() < 0.75 else noise_doc(c, rng)
+            if rng.random() < 0.4:   # D16: real norms, manuals, regulations and avisos run 4–40 pages; a long document about an element is still not the element
+                stretch(d, rng, rng.randrange(5, 31), pool="regulamento", header=f"{title}    —    Página" if rng.random() < 0.5 else None)
             if stem in seen:
                 continue
             seen.add(stem)

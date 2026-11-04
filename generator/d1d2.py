@@ -23,7 +23,7 @@ sys.path.insert(0, str(ROOT / "generator"))
 import guard  # noqa: E402  (D13: every row's key must be inside the language the reader is held to)
 
 MAXCH = 3500  # the r1–r8 window (first 3,500 characters); kept only as a record, window() below is what rows use since r9 (D14)
-WINDOW_CH, PAGE_CH, HEAD_PAGES = 11000, 2500, 2
+WINDOW_CH, PAGE_CH, HEAD_PAGES = 65000, 65000, 0   # D16 (round 10): the whole document; D14's 11 000 / 2 500 / 2 and the signal-page order are retired
 SIGNAL = re.compile(r"€|\btotal\b|\bm2\b|m²|\bpiso|\bfogo|\bprazo|\bmeses\b|\bdias\b|ap[oó]lice|validade|altura|assin|\d{4}-\d{2}-\d{2}|\d{1,2}/\d{1,2}/\d{4}", re.I)
 
 
@@ -36,26 +36,19 @@ def cut(text, limit=PAGE_CH):
 
 
 def window(pages):
-    """What the reader sees of a document (D14): the first HEAD_PAGES pages, then the pages that carry signals (amounts, areas,
-    dates, prazos, signatures) densest first, then the remaining pages in order, while the WINDOW_CH budget lasts; each page
-    cut at PAGE_CH on a word boundary. Returns (text with «[página n]» blocks, header note listing the shown pages when not all)."""
-    cuts = [cut(t) for t in pages]
+    """What the reader sees of a document (D16, round 10): the WHOLE document — every page, uncut, in order — up to WINDOW_CH
+    characters (≈ the base model's 32k-token context minus the prompt and the answer). Only a document longer than that loses
+    its last pages, and then the header lists the pages shown, so the grammar admits only those. Returns (text with
+    «[página n]» blocks, header note or "")."""
     shown, budget = [], WINDOW_CH
-    def take(i):
-        nonlocal budget
-        if i not in shown and len(cuts[i]) + 1 <= budget:
-            shown.append(i); budget -= len(cuts[i]) + 1; return True
-        return False
-    for i in range(min(HEAD_PAGES, len(cuts))):
-        take(i)
-    for i in sorted(range(len(cuts)), key=lambda i: (-len(SIGNAL.findall(cuts[i])), i)):   # densest signal pages first
-        if SIGNAL.search(cuts[i]):
-            take(i)
-    for i in range(len(cuts)):
-        take(i)
-    shown.sort()
-    text = "\n".join(f"[página {i + 1}]\n{cuts[i]}" for i in shown)
-    note = "" if len(shown) == len(cuts) else " — páginas mostradas: " + ", ".join(str(i + 1) for i in shown)
+    for i, t in enumerate(pages):
+        if len(t) + 1 > budget:
+            break
+        shown.append(i); budget -= len(t) + 1
+    if not shown:                                   # a single page longer than the whole budget: show its head
+        pages = [cut(pages[0], WINDOW_CH)] + list(pages[1:]); shown = [0]
+    text = "\n".join(f"[página {i + 1}]\n{pages[i]}" for i in shown)
+    note = "" if len(shown) == len(pages) else " — páginas mostradas: " + ", ".join(str(i + 1) for i in shown)
     return text, note
 
 

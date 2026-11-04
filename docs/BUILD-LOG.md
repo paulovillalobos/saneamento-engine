@@ -145,3 +145,13 @@
   pages in 6 files, 0 recovered (blank/image covers). No scanned document in the test today.
 - Base model fact checked: AMALIA-9B config = LlamaForCausalLM, max_position_embeddings 32768, rope_theta 1e6. The 8,192 was ours.
 - Cost: USD 0 on Modal; the ceiling ran on the Claude subscription (≈ 2 M tokens).
+
+## 2026-11-04 13:30 UTC — round 10 prepared and launched: whole documents (D16)
+- generator/d1d2.py window(): whole document, 65 000-char budget, pages past it dropped with the header note. generator/expedientes.py:
+  stretch() + MEM_CHAPTERS / REG_TEMPLATES / REG_HEADINGS; long memórias 6–24 pp (facts in the second half), speciality memórias 4–16 pp,
+  40 % of noise 5–30 pp with repeated letterheads. modal/train_lora.py RUNS r10 hp max_len/tokens_per_batch 32 768.
+- Sealed D1/D2 rows regenerated whole (1 145 / 1 190, 0 dropped), stranger regenerated (106; 2 rows lose last pages: Mesão Frio aviso,
+  Alcácer list), r9-view copies kept as sealed/*-r9.jsonl; test_guard ok. Smoke --guard r9 on the 6 longest rows: grammars up to 650 KB
+  compile, 6/6 answered, 21.5 s generate; r9 on whole documents answers inside the language but wrong on the Valpaços use (trained on short docs).
+- Chain training/runs/overnight-r10.sh: regen 80 (seed 1) → d1d2 --augment → commit → train r10 (watchdog 25 min) → r10 reads --guard
+  (d0 schema) → r9 --guard on the whole-document stranger rows (baseline) → scores → commit. Log training/runs/overnight-r10.log.

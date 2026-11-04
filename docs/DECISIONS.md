@@ -90,3 +90,20 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
 - OCR (generator/ocr.py): pages with < 80 characters of pypdf text go through ocrmypdf --skip-text -l por once (cached in
   sources/.ocr-cache, ignored by git); recovered text is prefixed «[texto OCR]». The real corpus has 8 such pages in 6 files,
   all blank/image-only, 0 recovered: no scanned document in the test today.
+
+## D16 — Round 10: whole documents, as long as the real ones (2026-11-04)
+- The view: window() shows the WHOLE document, every page uncut in order, up to 65 000 characters (the base model's 32 768-token
+  context minus prompt and answer); only a longer document loses its last pages, and then the header lists the pages shown so
+  the grammar admits only those. D14's 11 000 / 2 500 / 2 and the signal-page order are retired: one view for both tasks, the
+  document as it is. train_lora.py r10: max_len 32 768, tokens_per_batch 32 768.
+- The length: our documents ran 1–6 pages (sealed memórias all 1 page; training memórias 1/3/5/6; noise 1); real memórias run
+  5–34, real norms and regulations 4–40. The ceiling read the long ones whole and got them; AMALIA never saw one in training.
+  stretch() lengthens with numbered chapters (memória sentences from the real pool; article templates for regulations), optional
+  repeated letterhead per chapter: long memórias 6–24 pages with the cost/prazo in the second half and a few chapters after;
+  speciality memórias 4–16 when long; 40 % of noise documents 5–30 pages. 12-expediente sample: memórias 1–19 pages, noise
+  1–29, D1 prompts median 11k / p90 21k / max 76k chars, 0 keys dropped by the gate.
+- Sealed expedientes stay frozen (1-page documents); their rows are regenerated with the whole-document view (r9-view copies as
+  sealed/*-r9.jsonl). The stranger test, regenerated whole, is the gate. The r9 adapter is read on the whole-document stranger rows
+  as the "view alone" baseline (training/runs/r9-whole/; smoke: 650 KB D2 grammars compile, 6 rows in 21 s).
+- Expected cost 2–3× round 9 (longer rows, attention quadratic): ≈ USD 30–45. Approved by Paulo 2026-11-04 ("go, run round 10
+  with whole documents").

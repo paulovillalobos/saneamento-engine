@@ -1,0 +1,64 @@
+[
+ {
+  "meta": {
+   "model": "amalia-llm/AMALIA-9B-0626-DPO@c4614b9b5c7b",
+   "adapter": "amalia-saneamento-r9",
+   "runtime": "vllm 0.30.0, bf16, L40S, prefix caching, guided JSON per task",
+   "temperature": 0,
+   "max_tokens": 1200,
+   "guard": "grammar",
+   "load_seconds": 142.9,
+   "generate_seconds": 21.5,
+   "answered": 6,
+   "skipped": 0
+  }
+ },
+ {
+  "key": "d2:ca71d15ea43313e9",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:026b8af7c78585ef",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d2:a8efe8080619cc3b",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 35,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"V – Evacuação\", \"pagina\": 10, \"citacao\": \"1 – Evacuação dos locais\"}"
+ },
+ {
+  "key": "d2:6fd9bec08fc6b9cd",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 18,
+  "finish_reason": "stop",
+  "text": "{\"valor\": null, \"pagina\": null, \"citacao\": \"\"}"
+ },
+ {
+  "key": "d1:c2b0b6627f2815be",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:5f7af035b635e9d6",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ }
+]
