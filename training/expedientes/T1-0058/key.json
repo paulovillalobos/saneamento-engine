@@ -2,91 +2,78 @@
  "expediente": "T1-0058",
  "case": {
   "id": "T1-0058",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 3,
-  "plot": 1770,
-  "impl": 416,
-  "built": 1106,
-  "imperm": 447,
-  "perm": 1323,
-  "volume": 3428,
-  "height": 10.5,
-  "facade": 9.8,
-  "parking": 4,
-  "cost": 977700,
-  "submitted": "2026-12-07",
-  "site": "Caminho da Lameira, n.º 123, Rego, 4890-000 Celorico de Basto",
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 2110,
+  "impl": 839,
+  "built": 1463,
+  "imperm": 1038,
+  "perm": 1072,
+  "volume": 4535,
+  "height": 7.5,
+  "facade": 6.8,
+  "parking": 2,
+  "cost": 1812600,
+  "submitted": "2026-12-05",
+  "site": "Caminho da Lameira, n.º 147, Borba de Montanha, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 16,
+  "months": 15,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Helena de Teste Rita",
+    "name": "Filipe Simulado Eva",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "54857-SIM",
-    "address": "Caminho da Lameira, n.º 123, Rego, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0763"
+    "number": "70079-SIM",
+    "address": "Caminho da Lameira, n.º 147, Borba de Montanha, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0017"
    },
    "arquiteto": {
-    "name": "Helena Fictício Teresa",
+    "name": "Filipe Exemplo Nuno",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "21336-SIM",
-    "address": "Rua das Tílias, n.º 16, 4000-000 Porto",
-    "policy": "SIM-RC-6827"
+    "number": "76555-SIM",
+    "address": "Travessa do Souto, n.º 49, 4000-000 Porto",
+    "policy": "SIM-RC-4995"
    },
    "engenheiro": {
-    "name": "Olga Modelo Nuno",
+    "name": "Nuno Simulado Bruno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "79766-SIM",
-    "address": "Lugar de Carvalhal, n.º 13, 4700-000 Braga",
-    "policy": "SIM-RC-0966"
+    "number": "20517-SIM",
+    "address": "Lugar da Devesa, n.º 48, 4000-000 Porto",
+    "policy": "SIM-RC-7329"
    },
    "diretor": {
-    "name": "Nuno Fictício Teresa",
+    "name": "Ana Modelo Gonçalo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "92869-SIM",
-    "address": "Rua do Outeiro, n.º 56, 4800-000 Guimarães",
-    "policy": "SIM-RC-6132"
+    "number": "25707-SIM",
+    "address": "Lugar de Vilar, n.º 92, 4800-000 Guimarães",
+    "policy": "SIM-RC-8382"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "not_pdf",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
-   },
-   "basis": "documents",
-   "values": {
-    "area_parcela": "177 m2",
-    "area_implantacao": "416 m2",
-    "MDARQ": "1770 m2"
-   }
-  },
-  {
-   "type": "template_wording_missing",
-   "target": {
-    "slot": "TRPARQ"
+    "slot": "ALC"
    },
    "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

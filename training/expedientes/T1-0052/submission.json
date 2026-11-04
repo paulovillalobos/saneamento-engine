@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Olga Amostra Pedro",
+  "name": "Rita Simulado Leonor",
   "nif": "999999990"
  },
- "site": "Lugar da Devesa, n.º 214, Ourilhe, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-12-21",
+ "site": "Rua do Outeiro, n.º 264, Ribas, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
+ "submitted_at": "2026-12-02",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -414,22 +414,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "ficha_verificacao_elementos.pdf",
-   "title": "Ficha de verificação",
+   "file": "valpaços_indice_pecas.pdf",
+   "title": "ÍNDICE DE PEÇAS DESENHADAS",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "anexo-criterio-elaboracao-2024.pdf",
-   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "file": "instrucoes-preenchimento-2026.pdf",
+   "title": "Instruções Preenchimento_Q3",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "lista_pecas.pdf",
-   "title": "LISTA DE PEÇAS",
+   "file": "indice-geral-projeto-2024.pdf",
+   "title": "ÍNDICE GERAL DO PROJETO",
    "kind": "written",
    "signed_by": "requerente"
   }

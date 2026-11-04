@@ -2,90 +2,70 @@
  "expediente": "T1-0062",
  "case": {
   "id": "T1-0062",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
   "fogos": 0,
-  "pisos": 3,
-  "plot": 3060,
-  "impl": 795,
-  "built": 2123,
-  "imperm": 935,
-  "perm": 2125,
-  "volume": 6581,
-  "height": 10.3,
-  "facade": 9.6,
+  "pisos": 1,
+  "plot": 1460,
+  "impl": 587,
+  "built": 536,
+  "imperm": 704,
+  "perm": 756,
+  "volume": 1661,
+  "height": 4.6,
+  "facade": 3.9,
   "parking": 2,
-  "cost": 2390400,
-  "submitted": "2026-12-19",
-  "site": "Travessa do Souto, n.º 290, Infesta, 4890-000 Celorico de Basto",
+  "cost": 474300,
+  "submitted": "2026-11-05",
+  "site": "Lugar de Vilar, n.º 242, Britelo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 11,
+  "months": 18,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "João Fictício Bruno",
+    "name": "Helena Fictício Carla",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "32138-SIM",
-    "address": "Travessa do Souto, n.º 290, Infesta, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6438"
+    "number": "84258-SIM",
+    "address": "Lugar de Vilar, n.º 242, Britelo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9127"
    },
    "arquiteto": {
-    "name": "Nuno Amostra Eva",
+    "name": "Sérgio Modelo Helena",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "75018-SIM",
-    "address": "Rua do Outeiro, n.º 72, 4700-000 Braga",
-    "policy": "SIM-RC-7993"
+    "number": "17128-SIM",
+    "address": "Caminho da Lameira, n.º 78, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8359"
    },
    "engenheiro": {
-    "name": "Vasco Amostra Eva",
+    "name": "Vasco Exemplo Leonor",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "90894-SIM",
-    "address": "Travessa do Souto, n.º 50, 4800-000 Guimarães",
-    "policy": "SIM-RC-5882"
+    "number": "79215-SIM",
+    "address": "Caminho da Lameira, n.º 80, 4800-000 Guimarães",
+    "policy": "SIM-RC-4733"
    },
    "diretor": {
-    "name": "Ana Modelo Rita",
+    "name": "Diogo Simulado Eva",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "84556-SIM",
-    "address": "Lugar de Carvalhal, n.º 99, 4000-000 Porto",
-    "policy": "SIM-RC-4084"
+    "number": "69592-SIM",
+    "address": "Rua do Outeiro, n.º 18, 4700-000 Braga",
+    "policy": "SIM-RC-1020"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
-   "target": {
-    "slot": "SRCCP"
-   },
-   "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
-   }
-  },
-  {
-   "type": "not_pdfa",
-   "target": {
-    "slot": "CEO"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
    "type": "unsigned",
    "target": {
-    "slot": "TRDO"
+    "slot": "TREECP"
    },
    "law": {
     "ref": "VI.1",
@@ -93,18 +73,18 @@
    }
   },
   {
-   "type": "wrong_site",
+   "type": "wrong_signer",
    "target": {
-    "slot": "TRPARQ"
+    "slot": "TRDO"
    },
    "basis": "documents",
    "values": {
-    "REQ": "Travessa do Souto, n.º 290, Infesta, 4890-000 Celorico de Basto",
-    "TRPARQ": "Caminho da Lameira, n.º 267, Gagos, 4890-000 Celorico de Basto"
+    "declarante": "Diogo Simulado Eva",
+    "assinante": "Sérgio Modelo Helena"
    }
   }
  ],
- "n_planted": 4,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

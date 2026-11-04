@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Helena de Teste Eva",
+  "name": "Xavier Modelo Vasco",
   "nif": "999999990"
  },
- "site": "Caminho da Lameira, n.º 235, Ourilhe, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-12-10",
+ "site": "Rua das Tílias, n.º 43, Canedo de Basto, 4890-000 Celorico de Basto",
+ "operation": "alteração e ampliação de moradia unifamiliar",
+ "submitted_at": "2026-12-08",
  "files": [
   {
    "slot": "REQ",
@@ -414,50 +414,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "analise_33.pdf",
-   "title": "Análise — Portaria n.º 320/2026/1 e calendarização da execuç",
+   "file": "indice_pecas_28.pdf",
+   "title": "LISTA DE PEÇAS",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "ficha_verificacao_elementos.pdf",
-   "title": "Ficha de verificação",
+   "file": "norma_instrucao_processo_nip.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-10",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "cv_requerente.pdf",
-   "title": "Curriculum vitae",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "anexo_obras_edificacao.pdf",
-   "title": "ANEXO II — OBRAS DE EDIFICAÇÃO",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "alfândega_anexo_criterio.pdf",
-   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "instrucoes_96.pdf",
+   "file": "instrucoes_73.pdf",
    "title": "Instruções Preenchimento_Q3",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "PDF12244274955636.pdf",
-   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
    "kind": "written",
    "signed_by": "requerente"
   }

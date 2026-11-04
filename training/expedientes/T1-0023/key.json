@@ -2,78 +2,91 @@
  "expediente": "T1-0023",
  "case": {
   "id": "T1-0023",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 3,
-  "plot": 2910,
-  "impl": 1214,
-  "built": 3390,
-  "imperm": 1372,
-  "perm": 1538,
-  "volume": 10509,
-  "height": 10.5,
-  "facade": 9.8,
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 690,
+  "impl": 216,
+  "built": 378,
+  "imperm": 282,
+  "perm": 408,
+  "volume": 1171,
+  "height": 7.1,
+  "facade": 6.4,
   "parking": 2,
-  "cost": 3725600,
-  "submitted": "2026-12-17",
-  "site": "Lugar de Carvalhal, n.º 94, Veade, 4890-000 Celorico de Basto",
+  "cost": 471300,
+  "submitted": "2026-12-14",
+  "site": "Caminho da Lameira, n.º 160, Fervença, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 19,
+  "months": 20,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Gonçalo Exemplo Carla",
+    "name": "Xavier de Teste Diogo",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "37296-SIM",
-    "address": "Lugar de Carvalhal, n.º 94, Veade, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2189"
+    "number": "44257-SIM",
+    "address": "Caminho da Lameira, n.º 160, Fervença, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4883"
    },
    "arquiteto": {
-    "name": "Gonçalo Simulado Filipe",
+    "name": "Vasco Exemplo Olga",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "64663-SIM",
-    "address": "Lugar da Devesa, n.º 24, 4000-000 Porto",
-    "policy": "SIM-RC-5904"
+    "number": "69460-SIM",
+    "address": "Caminho da Lameira, n.º 89, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3921"
    },
    "engenheiro": {
-    "name": "Carla Modelo Helena",
+    "name": "Inês Simulado Helena",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "89863-SIM",
-    "address": "Rua do Outeiro, n.º 12, 4800-000 Guimarães",
-    "policy": "SIM-RC-3217"
+    "number": "66309-SIM",
+    "address": "Lugar de Vilar, n.º 102, 4800-000 Guimarães",
+    "policy": "SIM-RC-9731"
    },
    "diretor": {
-    "name": "Xavier de Teste Filipe",
+    "name": "Leonor Fictício Vasco",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "76383-SIM",
-    "address": "Rua da Escola, n.º 28, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7871"
+    "number": "48849-SIM",
+    "address": "Lugar de Carvalhal, n.º 84, 4700-000 Braga",
+    "policy": "SIM-RC-7428"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "impossible_value",
    "target": {
-    "slot": "PI"
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "6900 m2",
+    "area_implantacao": "216 m2",
+    "MDARQ": "690 m2"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
    },
    "law": {
-    "ref": "V.8",
-    "quote": "8 - Planta de implantação, desenhada sobre o levantamento topográfico, quando este for exigível, indicando a construção, as áreas permeáveis e impermeabilizadas e os respetivos materiais e, quando houver alterações na via pública, planta dessas alterações;"
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

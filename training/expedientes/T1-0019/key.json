@@ -2,96 +2,78 @@
  "expediente": "T1-0019",
  "case": {
   "id": "T1-0019",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 2,
-  "plot": 470,
-  "impl": 88,
-  "built": 157,
-  "imperm": 233,
-  "perm": 237,
-  "volume": 486,
-  "height": 7.2,
-  "facade": 6.5,
-  "parking": 4,
-  "cost": 154100,
-  "submitted": "2026-11-21",
-  "site": "Travessa do Souto, n.º 100, Agilde, 4890-000 Celorico de Basto",
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 1710,
+  "impl": 350,
+  "built": 324,
+  "imperm": 492,
+  "perm": 1218,
+  "volume": 1004,
+  "height": 4.4,
+  "facade": 3.7,
+  "parking": 2,
+  "cost": 237800,
+  "submitted": "2026-11-27",
+  "site": "Lugar de Vilar, n.º 58, Basto (São Clemente), 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 13,
+  "months": 16,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Gonçalo Amostra Xavier",
+    "name": "Carla Amostra Leonor",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "39923-SIM",
-    "address": "Travessa do Souto, n.º 100, Agilde, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5956"
+    "number": "90301-SIM",
+    "address": "Lugar de Vilar, n.º 58, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0425"
    },
    "arquiteto": {
-    "name": "Ana Exemplo Ana",
+    "name": "Inês de Teste Miguel",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "14732-SIM",
-    "address": "Rua das Tílias, n.º 106, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5553"
+    "number": "11765-SIM",
+    "address": "Rua do Outeiro, n.º 13, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9061"
    },
    "engenheiro": {
-    "name": "Carla Amostra Olga",
+    "name": "Rita Modelo Ana",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "26597-SIM",
-    "address": "Lugar de Carvalhal, n.º 108, 4800-000 Guimarães",
-    "policy": "SIM-RC-9830"
+    "number": "96060-SIM",
+    "address": "Rua do Outeiro, n.º 108, 4800-000 Guimarães",
+    "policy": "SIM-RC-2077"
    },
    "diretor": {
-    "name": "Vasco Exemplo Xavier",
+    "name": "Rita Amostra Teresa",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "62757-SIM",
-    "address": "Lugar de Vilar, n.º 107, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8593"
+    "number": "58022-SIM",
+    "address": "Rua das Tílias, n.º 68, 4000-000 Porto",
+    "policy": "SIM-RC-9140"
    }
   }
  },
  "planted": [
   {
-   "type": "expired_insurance",
+   "type": "missing_required",
    "target": {
-    "slot": "SRCARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-11-21"
+    "slot": "MDARQ"
    },
    "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
-   }
-  },
-  {
-   "type": "impossible_value",
-   "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
-   },
-   "basis": "documents",
-   "values": {
-    "area_parcela": "4700 m2",
-    "area_implantacao": "88 m2",
-    "MDARQ": "470 m2"
+    "ref": "V.9",
+    "quote": "9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Sérgio Amostra Miguel",
+  "name": "Gonçalo Fictício Xavier",
   "nif": "999999990"
  },
- "site": "Caminho da Lameira, n.º 113, Basto (São Clemente), 4890-000 Celorico de Basto",
- "operation": "construção de armazém agrícola",
- "submitted_at": "2026-11-18",
+ "site": "Travessa do Souto, n.º 14, Caçarilhe, 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
+ "submitted_at": "2026-11-08",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -91,16 +91,16 @@
    "signed_by": "arquiteto"
   },
   {
-   "slot": "MDARQ",
-   "file": "MDARQ-memoria-descritiva.pdf",
-   "title": "Memória descritiva e justificativa",
+   "slot": "CEO",
+   "file": "CEO-calendarizacao.pdf",
+   "title": "Calendarização da execução da obra",
    "kind": "written",
    "signed_by": "arquiteto"
   },
   {
-   "slot": "CEO",
-   "file": "CEO-calendarizacao.pdf",
-   "title": "Calendarização da execução da obra",
+   "slot": "EOCT",
+   "file": "EOCT-estimativa-custo.pdf",
+   "title": "Estimativa do custo total da obra",
    "kind": "written",
    "signed_by": "arquiteto"
   },
@@ -407,8 +407,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "amarante_guia_tecnico.pdf",
-   "title": "Guia Técnico para Projetos de Plano de acessibilidades",
+   "file": "minuta-memoria-descritiva-2024.pdf",
+   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF45398580934446.pdf",
+   "title": "Termo de responsabilidade do diretor de obra ou do diretor d",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "termo_responsabilidade_diretor_obra.pdf",
+   "title": "Termo de responsabilidade do diretor de obra ou do diretor d",
    "kind": "written",
    "signed_by": "requerente"
   },
@@ -416,6 +430,27 @@
    "slot": "OUTDOC",
    "file": "ficha_verificacao_elementos.pdf",
    "title": "Ficha de verificação",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "valpaços_ficha_projeto.pdf",
+   "title": "Ficha de Projeto",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF97677502324491.pdf",
+   "title": "Instruções Preenchimento_Q3",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "lista_elementos_nomeacao_ficheiros.pdf",
+   "title": "Lista de elementos instrutórios",
    "kind": "written",
    "signed_by": "requerente"
   }

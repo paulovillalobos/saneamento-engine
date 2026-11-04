@@ -6,24 +6,17 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Leonor Fictício Inês",
+  "name": "Vasco Amostra Pedro",
   "nif": "999999990"
  },
- "site": "Rua das Tílias, n.º 207, Borba de Montanha, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-11-13",
+ "site": "Lugar de Vilar, n.º 239, Borba de Montanha, 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
+ "submitted_at": "2026-10-17",
  "files": [
   {
    "slot": "REQ",
    "file": "REQ-requerimento.pdf",
    "title": "Requerimento de comunicação prévia (modelo do Anexo I)",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "CRP",
-   "file": "CRP-certidao-permanente.pdf",
-   "title": "Código de acesso à certidão permanente do registo predial",
    "kind": "written",
    "signed_by": "requerente"
   },
@@ -67,7 +60,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -414,29 +407,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "memoria_candidatura_82.pdf",
-   "title": "Memória descritiva da candidatura",
+   "file": "esclarecimento-sobre-levantamento-2019.pdf",
+   "title": "Esclarecimento sobre a levantamento topográfico",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "postura_12.pdf",
-   "title": "Postura Municipal Referente a Projetos de Levantamento topog",
+   "file": "benavente_anexo_criterio.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF11622963700362.pdf",
-   "title": "Cópia de parte da ata da reunião de 2026-09-20",
+   "file": "cv_requerente.pdf",
+   "title": "Curriculum vitae",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "anexo_regulamento_55.pdf",
-   "title": "ANEXO III — OBRAS DE URBANIZAÇÃO",
+   "file": "nota_69.pdf",
+   "title": "NOTA TÉCNICA N.º 09 — PROJETOS DE ÁGUAS PLUVIAIS",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "guia_tecnico_projetos_estimativa.pdf",
+   "title": "Guia Técnico para Projetos de Estimativa do custo total da o",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "pecas_escritas_desenhadas_indice.pdf",
+   "title": "PEÇAS ESCRITAS E DESENHADAS - ÍNDICE",
    "kind": "written",
    "signed_by": "requerente"
   }

@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Carla Exemplo Leonor",
+  "name": "Carla Fictício Pedro",
   "nif": "999999990"
  },
- "site": "Rua do Outeiro, n.º 118, Basto (São Clemente), 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-26",
+ "site": "Rua do Outeiro, n.º 256, Rego, 4890-000 Celorico de Basto",
+ "operation": "ampliação de moradia unifamiliar",
+ "submitted_at": "2026-12-11",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -414,36 +414,15 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "termo_responsabilidade_diretor_obra.pdf",
-   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "minuta-memoria-descritiva-2019.pdf",
-   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "anexo-criterio-elaboracao-2025.pdf",
-   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "informacao_2026.pdf",
-   "title": "INFORMAÇÃO n.º 39/2026",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "anexo_criterio_elaboracao_levantamentos.pdf",
-   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "file": "figueira_plano_acessibilidade.pdf",
+   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
    "kind": "written",
    "signed_by": "requerente"
   },
@@ -451,6 +430,13 @@
    "slot": "OUTDOC",
    "file": "ficha_verificacao_elementos.pdf",
    "title": "Ficha de verificação",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF21361582396957.pdf",
+   "title": "Os termos de responsabilidade passados no âmbito das comunic",
    "kind": "written",
    "signed_by": "requerente"
   }

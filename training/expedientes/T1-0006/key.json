@@ -2,91 +2,119 @@
  "expediente": "T1-0006",
  "case": {
   "id": "T1-0006",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
   "pisos": 3,
-  "plot": 1960,
-  "impl": 316,
-  "built": 935,
-  "imperm": 390,
-  "perm": 1570,
-  "volume": 2898,
-  "height": 9.7,
-  "facade": 9.0,
-  "parking": 4,
-  "cost": 1182700,
-  "submitted": "2026-12-14",
-  "site": "Travessa do Souto, n.º 152, Fervença, 4890-000 Celorico de Basto",
+  "plot": 860,
+  "impl": 204,
+  "built": 559,
+  "imperm": 256,
+  "perm": 604,
+  "volume": 1732,
+  "height": 9.9,
+  "facade": 9.2,
+  "parking": 2,
+  "cost": 419800,
+  "submitted": "2026-12-15",
+  "site": "Lugar de Carvalhal, n.º 40, Veade, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 15,
+  "months": 8,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Nuno Amostra Teresa",
+    "name": "Sérgio Fictício Diogo",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "01525-SIM",
-    "address": "Travessa do Souto, n.º 152, Fervença, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9488"
+    "number": "05839-SIM",
+    "address": "Lugar de Carvalhal, n.º 40, Veade, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7927"
    },
    "arquiteto": {
-    "name": "Ana Simulado Xavier",
+    "name": "Inês Amostra Xavier",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "32750-SIM",
-    "address": "Caminho da Lameira, n.º 27, 4700-000 Braga",
-    "policy": "SIM-RC-4666"
+    "number": "63007-SIM",
+    "address": "Caminho da Lameira, n.º 55, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0261"
    },
    "engenheiro": {
-    "name": "Eva Modelo Gonçalo",
+    "name": "Vasco Exemplo Miguel",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "36812-SIM",
-    "address": "Caminho da Lameira, n.º 75, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7314"
+    "number": "65430-SIM",
+    "address": "Caminho da Lameira, n.º 29, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5740"
    },
    "diretor": {
-    "name": "Filipe Modelo Miguel",
+    "name": "Filipe Amostra Ana",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "65331-SIM",
-    "address": "Rua das Tílias, n.º 110, 4000-000 Porto",
-    "policy": "SIM-RC-3424"
+    "number": "13007-SIM",
+    "address": "Rua das Tílias, n.º 47, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7628"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "expired_insurance",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "slot": "SRCARQ"
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "196 m2",
-    "area_implantacao": "316 m2",
-    "MDARQ": "1960 m2"
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-15"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
    }
   },
   {
    "type": "not_pdf",
    "target": {
-    "slot": "PLANT"
+    "slot": "FOTO"
    },
    "law": {
     "ref": "VI.1.a",
     "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "559 m2",
+    "MDARQ": "517 m2"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Filipe Amostra Ana",
+    "assinante": "Inês Amostra Xavier"
+   }
   }
  ],
- "n_planted": 2,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

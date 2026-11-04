@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Helena de Teste Rita",
+  "name": "Filipe Simulado Eva",
   "nif": "999999990"
  },
- "site": "Caminho da Lameira, n.º 123, Rego, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-12-07",
+ "site": "Caminho da Lameira, n.º 147, Borba de Montanha, 4890-000 Celorico de Basto",
+ "operation": "alteração e ampliação de moradia unifamiliar",
+ "submitted_at": "2026-12-05",
  "files": [
   {
    "slot": "REQ",
@@ -165,7 +165,7 @@
    "file": "ALC-alcados.pdf",
    "title": "Alçados",
    "kind": "drawn",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "CORTES",
@@ -414,29 +414,50 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "minuta-memoria-descritiva-2022.pdf",
-   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "fatura_agua_2026_08.pdf",
-   "title": "Fatura de água",
+   "file": "memoria_descritiva_projeto_empresarial.pdf",
+   "title": "Memória descritiva do projeto empresarial",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "plano-acessibilidade-todos-2026.pdf",
-   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
+   "file": "informacao-2026-2021.pdf",
+   "title": "INFORMAÇÃO n.º 16/2026",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF95952159680368.pdf",
-   "title": "Postura Municipal Referente a Projetos de Estimativa do cust",
+   "file": "parecer.pdf",
+   "title": "PARECER",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF70069987912575.pdf",
+   "title": "MUNICÍPIO DE VISEU — AQUISIÇÃO DE SERVIÇOS DE FISCALIZAÇÃO D",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "anexo-obras-edificacao-2023.pdf",
+   "title": "ANEXO II — OBRAS DE EDIFICAÇÃO",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "instrucoes-preenchimento-2023.pdf",
+   "title": "Instruções Preenchimento_Q3",
    "kind": "written",
    "signed_by": "requerente"
   }

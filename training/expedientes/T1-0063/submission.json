@@ -6,17 +6,24 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Teresa Modelo Carla",
+  "name": "Filipe de Teste Nuno",
   "nif": "999999990"
  },
- "site": "Rua das Tílias, n.º 114, Corgo, 4890-000 Celorico de Basto",
- "operation": "construção de armazém agrícola",
- "submitted_at": "2026-12-10",
+ "site": "Rua do Outeiro, n.º 132, Vale de Bouro, 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
+ "submitted_at": "2026-11-10",
  "files": [
   {
    "slot": "REQ",
    "file": "REQ-requerimento.pdf",
    "title": "Requerimento de comunicação prévia (modelo do Anexo I)",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "CRP",
+   "file": "CRP-certidao-permanente.pdf",
+   "title": "Código de acesso à certidão permanente do registo predial",
    "kind": "written",
    "signed_by": "requerente"
   },
@@ -407,22 +414,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "fatura_agua_2026_08.pdf",
-   "title": "Fatura de água",
+   "file": "informacao-2026-2024.pdf",
+   "title": "INFORMAÇÃO n.º 13/2026",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "amarante_municipio_amarante.pdf",
-   "title": "MUNICÍPIO DE AMARANTE — AQUISIÇÃO DE SERVIÇOS DE FISCALIZAÇÃ",
+   "file": "vila_minuta_memoria.pdf",
+   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "pecas_escritas_desenhadas_indice.pdf",
-   "title": "PEÇAS ESCRITAS E DESENHADAS - ÍNDICE",
+   "file": "anexo_criterio_elaboracao_levantamentos.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "lista_elementos_nomeacao_ficheiros.pdf",
+   "title": "Lista de elementos instrutórios",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "ficha_verificacao_elementos.pdf",
+   "title": "Ficha de verificação",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF77621718649050.pdf",
+   "title": "INFORMAÇÃO n.º 21/2026",
    "kind": "written",
    "signed_by": "requerente"
   }

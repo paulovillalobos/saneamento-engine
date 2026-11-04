@@ -2,67 +2,98 @@
  "expediente": "T1-0018",
  "case": {
   "id": "T1-0018",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 3,
-  "plot": 1960,
-  "impl": 373,
-  "built": 1101,
-  "imperm": 430,
-  "perm": 1530,
-  "volume": 3413,
-  "height": 10.3,
-  "facade": 9.6,
-  "parking": 4,
-  "cost": 1170300,
-  "submitted": "2026-11-28",
-  "site": "Rua das Tílias, n.º 185, Infesta, 4890-000 Celorico de Basto",
+  "work": "ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 2360,
+  "impl": 506,
+  "built": 875,
+  "imperm": 546,
+  "perm": 1814,
+  "volume": 2712,
+  "height": 7.7,
+  "facade": 7.0,
+  "parking": 2,
+  "cost": 623000,
+  "submitted": "2026-10-27",
+  "site": "Rua das Tílias, n.º 285, Borba de Montanha, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 16,
+  "months": 13,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Xavier de Teste Bruno",
+    "name": "Eva Exemplo Inês",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "94184-SIM",
-    "address": "Rua das Tílias, n.º 185, Infesta, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4351"
+    "number": "17627-SIM",
+    "address": "Rua das Tílias, n.º 285, Borba de Montanha, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6224"
    },
    "arquiteto": {
-    "name": "Nuno Modelo João",
+    "name": "Carla Simulado Inês",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "76205-SIM",
-    "address": "Travessa do Souto, n.º 10, 4700-000 Braga",
-    "policy": "SIM-RC-4380"
+    "number": "85616-SIM",
+    "address": "Lugar da Devesa, n.º 1, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6149"
    },
    "engenheiro": {
-    "name": "Olga Simulado Eva",
+    "name": "Pedro Amostra Diogo",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "38018-SIM",
-    "address": "Caminho da Lameira, n.º 31, 4700-000 Braga",
-    "policy": "SIM-RC-1620"
+    "number": "68135-SIM",
+    "address": "Rua do Outeiro, n.º 68, 4700-000 Braga",
+    "policy": "SIM-RC-7012"
    },
    "diretor": {
-    "name": "Inês Amostra Rita",
+    "name": "Helena Simulado Carla",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "07175-SIM",
-    "address": "Caminho da Lameira, n.º 101, 4700-000 Braga",
-    "policy": "SIM-RC-8908"
+    "number": "57893-SIM",
+    "address": "Lugar da Devesa, n.º 19, 4800-000 Guimarães",
+    "policy": "SIM-RC-2927"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "FOTO"
+   },
+   "law": {
+    "ref": "V.15",
+    "quote": "15 - Registo fotográfico da situação existente, abrangendo o imóvel e as edificações adjacentes, quando estas existam;"
+   }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDARQ"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRCP"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  }
+ ],
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

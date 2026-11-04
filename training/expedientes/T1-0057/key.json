@@ -6,58 +6,58 @@
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 3510,
-  "impl": 771,
-  "built": 1499,
-  "imperm": 936,
-  "perm": 2574,
-  "volume": 4646,
-  "height": 7.3,
-  "facade": 6.6,
+  "plot": 2270,
+  "impl": 667,
+  "built": 1160,
+  "imperm": 724,
+  "perm": 1546,
+  "volume": 3596,
+  "height": 6.7,
+  "facade": 6.0,
   "parking": 2,
-  "cost": 993800,
-  "submitted": "2026-11-03",
-  "site": "Travessa do Souto, n.º 125, Borba de Montanha, 4890-000 Celorico de Basto",
+  "cost": 1186600,
+  "submitted": "2026-10-16",
+  "site": "Lugar da Devesa, n.º 231, Borba de Montanha, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 21,
+  "months": 23,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Sérgio Exemplo Teresa",
+    "name": "Teresa Modelo Ana",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "41768-SIM",
-    "address": "Travessa do Souto, n.º 125, Borba de Montanha, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7950"
+    "number": "40352-SIM",
+    "address": "Lugar da Devesa, n.º 231, Borba de Montanha, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9677"
    },
    "arquiteto": {
-    "name": "Xavier de Teste Eva",
+    "name": "Sérgio de Teste Ana",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "72782-SIM",
-    "address": "Travessa do Souto, n.º 27, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8881"
+    "number": "37966-SIM",
+    "address": "Rua do Outeiro, n.º 88, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6099"
    },
    "engenheiro": {
-    "name": "Ana Exemplo Vasco",
+    "name": "Olga Fictício Vasco",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "60356-SIM",
-    "address": "Lugar de Vilar, n.º 19, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6558"
+    "number": "01237-SIM",
+    "address": "Caminho da Lameira, n.º 52, 4700-000 Braga",
+    "policy": "SIM-RC-5397"
    },
    "diretor": {
-    "name": "Pedro de Teste Xavier",
+    "name": "Ana Fictício Vasco",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "61100-SIM",
-    "address": "Lugar da Devesa, n.º 91, 4800-000 Guimarães",
-    "policy": "SIM-RC-9428"
+    "number": "53939-SIM",
+    "address": "Caminho da Lameira, n.º 90, 4800-000 Guimarães",
+    "policy": "SIM-RC-4569"
    }
   }
  },
@@ -70,7 +70,7 @@
    "basis": "documents",
    "values": {
     "validade_fim": "2026-09-30",
-    "submetido": "2026-11-03"
+    "submetido": "2026-10-16"
    },
    "law": {
     "ref": "V.14",
@@ -78,24 +78,23 @@
    }
   },
   {
-   "type": "not_pdf",
+   "type": "template_wording_missing",
    "target": {
-    "slot": "ALC"
+    "slot": "TRPARQ"
    },
    "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
   },
   {
-   "type": "wrong_signer",
+   "type": "unsigned",
    "target": {
-    "slot": "TRDO"
+    "slot": "TRPLAC"
    },
-   "basis": "documents",
-   "values": {
-    "declarante": "Pedro de Teste Xavier",
-    "assinante": "Xavier de Teste Eva"
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
    }
   }
  ],

@@ -6,110 +6,79 @@
   "use": "Armazém agrícola",
   "fogos": 0,
   "pisos": 1,
-  "plot": 760,
-  "impl": 327,
-  "built": 297,
-  "imperm": 425,
-  "perm": 335,
-  "volume": 920,
-  "height": 3.6,
-  "facade": 2.9,
+  "plot": 2060,
+  "impl": 508,
+  "built": 446,
+  "imperm": 669,
+  "perm": 1391,
+  "volume": 1382,
+  "height": 3.8,
+  "facade": 3.1,
   "parking": 2,
-  "cost": 249700,
-  "submitted": "2026-11-26",
-  "site": "Caminho da Lameira, n.º 126, Infesta, 4890-000 Celorico de Basto",
+  "cost": 477600,
+  "submitted": "2026-10-13",
+  "site": "Rua do Outeiro, n.º 52, Infesta, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 11,
+  "months": 13,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Teresa Modelo Vasco",
+    "name": "Nuno Amostra Helena",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "79114-SIM",
-    "address": "Caminho da Lameira, n.º 126, Infesta, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0334"
+    "number": "42585-SIM",
+    "address": "Rua do Outeiro, n.º 52, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3397"
    },
    "arquiteto": {
-    "name": "Helena Exemplo Carla",
+    "name": "Filipe de Teste João",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "36135-SIM",
-    "address": "Travessa do Souto, n.º 94, 4000-000 Porto",
-    "policy": "SIM-RC-0353"
+    "number": "82232-SIM",
+    "address": "Lugar de Carvalhal, n.º 13, 4000-000 Porto",
+    "policy": "SIM-RC-3065"
    },
    "engenheiro": {
-    "name": "Ana de Teste Miguel",
+    "name": "Teresa de Teste Gonçalo",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "65652-SIM",
-    "address": "Lugar de Carvalhal, n.º 111, 4700-000 Braga",
-    "policy": "SIM-RC-1654"
+    "number": "21752-SIM",
+    "address": "Caminho da Lameira, n.º 100, 4700-000 Braga",
+    "policy": "SIM-RC-1820"
    },
    "diretor": {
-    "name": "Sérgio de Teste Carla",
+    "name": "Gonçalo Exemplo Teresa",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "67751-SIM",
-    "address": "Lugar de Vilar, n.º 23, 4700-000 Braga",
-    "policy": "SIM-RC-2319"
+    "number": "57578-SIM",
+    "address": "Caminho da Lameira, n.º 27, 4000-000 Porto",
+    "policy": "SIM-RC-4635"
    }
   }
  },
  "planted": [
   {
-   "type": "not_pdfa",
+   "type": "expired_insurance",
    "target": {
-    "slot": "MDARQ"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
-   "type": "template_wording_missing",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
-   }
-  },
-  {
-   "type": "value_mismatch",
-   "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
+    "slot": "SRCARQ"
    },
    "basis": "documents",
    "values": {
-    "REQ": "297 m2",
-    "MDARQ": "343 m2"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-10-13"
    },
-   "basis": "documents",
-   "values": {
-    "declarante": "Sérgio de Teste Carla",
-    "assinante": "Helena Exemplo Carla"
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
    }
   }
  ],
- "n_planted": 4,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

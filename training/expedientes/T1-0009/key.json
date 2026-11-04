@@ -2,67 +2,78 @@
  "expediente": "T1-0009",
  "case": {
   "id": "T1-0009",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 2,
-  "plot": 2240,
-  "impl": 364,
-  "built": 669,
-  "imperm": 461,
-  "perm": 1779,
-  "volume": 2073,
-  "height": 7.7,
-  "facade": 7.0,
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 1,
+  "plot": 1800,
+  "impl": 360,
+  "built": 343,
+  "imperm": 511,
+  "perm": 1289,
+  "volume": 1063,
+  "height": 3.9,
+  "facade": 3.2,
   "parking": 2,
-  "cost": 458900,
-  "submitted": "2026-12-02",
-  "site": "Lugar de Vilar, n.º 22, Fervença, 4890-000 Celorico de Basto",
+  "cost": 377300,
+  "submitted": "2026-11-25",
+  "site": "Caminho da Lameira, n.º 186, Vale de Bouro, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 11,
+  "months": 10,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Olga Simulado Gonçalo",
+    "name": "Eva de Teste Miguel",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "04620-SIM",
-    "address": "Lugar de Vilar, n.º 22, Fervença, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4576"
+    "number": "23839-SIM",
+    "address": "Caminho da Lameira, n.º 186, Vale de Bouro, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9923"
    },
    "arquiteto": {
-    "name": "Gonçalo Amostra Pedro",
+    "name": "Miguel Fictício Filipe",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "52079-SIM",
-    "address": "Lugar da Devesa, n.º 81, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4258"
+    "number": "02827-SIM",
+    "address": "Rua das Tílias, n.º 102, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8748"
    },
    "engenheiro": {
-    "name": "Helena Fictício Bruno",
+    "name": "Rita Exemplo Helena",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "78060-SIM",
-    "address": "Lugar de Vilar, n.º 45, 4800-000 Guimarães",
-    "policy": "SIM-RC-9919"
+    "number": "45678-SIM",
+    "address": "Lugar de Carvalhal, n.º 99, 4800-000 Guimarães",
+    "policy": "SIM-RC-0034"
    },
    "diretor": {
-    "name": "Teresa Amostra Sérgio",
+    "name": "Gonçalo Amostra Rita",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "08969-SIM",
-    "address": "Lugar da Devesa, n.º 71, 4800-000 Guimarães",
-    "policy": "SIM-RC-8817"
+    "number": "71263-SIM",
+    "address": "Travessa do Souto, n.º 119, 4700-000 Braga",
+    "policy": "SIM-RC-5191"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRDO"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  }
+ ],
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

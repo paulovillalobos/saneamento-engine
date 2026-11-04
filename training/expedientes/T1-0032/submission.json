@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Rita Modelo Nuno",
+  "name": "Vasco Exemplo Ana",
   "nif": "999999990"
  },
- "site": "Lugar de Carvalhal, n.º 143, Borba de Montanha, 4890-000 Celorico de Basto",
+ "site": "Lugar de Carvalhal, n.º 125, Basto (São Clemente), 4890-000 Celorico de Basto",
  "operation": "construção de moradia unifamiliar",
- "submitted_at": "2026-12-18",
+ "submitted_at": "2026-10-13",
  "files": [
   {
    "slot": "REQ",
@@ -60,7 +60,7 @@
    "file": "TRPLAC-termo-acessibilidades.pdf",
    "title": "Termo de responsabilidade do autor do plano de acessibilidades",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "TRDO",
@@ -88,7 +88,7 @@
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "MDARQ",
@@ -414,50 +414,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "gouveia_esclarecimento_sobre.pdf",
-   "title": "Esclarecimento sobre a segurança contra incêndio em edifício",
+   "file": "termo-responsabilidade-2022.pdf",
+   "title": "Termo de Responsabilidade",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "manual_normas_organizacao_instrucao.pdf",
+   "file": "PDF98707924623325.pdf",
+   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "manual_42.pdf",
    "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "plano-acessibilidade-todos-2022.pdf",
-   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "PDF72358421967357.pdf",
-   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "manual-normas-organizacao-2024.pdf",
-   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "PDF14787472940708.pdf",
-   "title": "MUNICÍPIO DE ALFÂNDEGA DA FÉ — AQUISIÇÃO DE SERVIÇOS DE FISC",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "figueira_instrucoes_preenchimento.pdf",
-   "title": "Instruções Preenchimento_Q3",
    "kind": "written",
    "signed_by": "requerente"
   }

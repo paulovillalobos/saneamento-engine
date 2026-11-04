@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Leonor Simulado Olga",
+  "name": "Nuno Fictício Miguel",
   "nif": "999999990"
  },
- "site": "Rua do Outeiro, n.º 251, Canedo de Basto, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-10-10",
+ "site": "Lugar da Devesa, n.º 117, Corgo, 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
+ "submitted_at": "2026-11-09",
  "files": [
   {
    "slot": "REQ",
@@ -87,6 +87,13 @@
    "slot": "FOTO",
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
+   "kind": "written",
+   "signed_by": "arquiteto"
+  },
+  {
+   "slot": "MDARQ",
+   "file": "MDARQ-memoria-descritiva.pdf",
+   "title": "Memória descritiva e justificativa",
    "kind": "written",
    "signed_by": "arquiteto"
   },
@@ -407,29 +414,36 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "regulamento_instrucao_digital_extrato.pdf",
-   "title": "Regulamento municipal (extrato)",
+   "file": "postura_projetos_condicionamento_acustico.pdf",
+   "title": "Postura Municipal Referente a Projetos de Condicionamento ac",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "nota_tecnica_projetos_condicionamento.pdf",
-   "title": "NOTA TÉCNICA N.º 16 — PROJETOS DE CONDICIONAMENTO ACÚSTICO",
+   "file": "informacao_2026.pdf",
+   "title": "INFORMAÇÃO n.º 18/2026",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "manual_normas_organizacao_instrucao.pdf",
-   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
+   "file": "termo-responsabilidade-diretor-2020.pdf",
+   "title": "Termo de responsabilidade do diretor de obra ou do diretor d",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "fatura_agua_2026_08.pdf",
-   "title": "Fatura de água",
+   "file": "ficha_projeto.pdf",
+   "title": "Ficha de Projeto",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "lista_elementos_nomeacao_ficheiros.pdf",
+   "title": "Lista de elementos instrutórios",
    "kind": "written",
    "signed_by": "requerente"
   }

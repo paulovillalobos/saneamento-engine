@@ -6,77 +6,62 @@
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 960,
-  "impl": 225,
-  "built": 437,
-  "imperm": 372,
-  "perm": 588,
-  "volume": 1354,
-  "height": 6.6,
-  "facade": 5.9,
+  "plot": 2970,
+  "impl": 1170,
+  "built": 2064,
+  "imperm": 1328,
+  "perm": 1642,
+  "volume": 6398,
+  "height": 7.3,
+  "facade": 6.6,
   "parking": 2,
-  "cost": 333400,
-  "submitted": "2026-11-23",
-  "site": "Rua das Tílias, n.º 128, Corgo, 4890-000 Celorico de Basto",
+  "cost": 1508700,
+  "submitted": "2026-11-02",
+  "site": "Lugar de Vilar, n.º 37, Ourilhe, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 21,
+  "months": 8,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Vasco de Teste Ana",
+    "name": "Gonçalo de Teste Inês",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "01763-SIM",
-    "address": "Rua das Tílias, n.º 128, Corgo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2444"
+    "number": "03422-SIM",
+    "address": "Lugar de Vilar, n.º 37, Ourilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5004"
    },
    "arquiteto": {
-    "name": "Miguel Simulado Xavier",
+    "name": "Pedro Fictício Vasco",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "33438-SIM",
-    "address": "Lugar de Vilar, n.º 17, 4800-000 Guimarães",
-    "policy": "SIM-RC-2275"
+    "number": "24481-SIM",
+    "address": "Rua da Escola, n.º 83, 4000-000 Porto",
+    "policy": "SIM-RC-1323"
    },
    "engenheiro": {
-    "name": "Xavier Amostra Leonor",
+    "name": "Diogo Modelo Ana",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "26469-SIM",
-    "address": "Lugar de Vilar, n.º 18, 4000-000 Porto",
-    "policy": "SIM-RC-2085"
+    "number": "20799-SIM",
+    "address": "Travessa do Souto, n.º 2, 4700-000 Braga",
+    "policy": "SIM-RC-6080"
    },
    "diretor": {
-    "name": "Bruno Modelo Inês",
+    "name": "Rita Simulado Inês",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "36784-SIM",
-    "address": "Lugar da Devesa, n.º 1, 4700-000 Braga",
-    "policy": "SIM-RC-0143"
+    "number": "17126-SIM",
+    "address": "Lugar de Vilar, n.º 31, 4800-000 Guimarães",
+    "policy": "SIM-RC-4721"
    }
   }
  },
  "planted": [
-  {
-   "type": "expired_insurance",
-   "target": {
-    "slot": "SRCARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-11-23"
-   },
-   "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
-   }
-  },
   {
    "type": "impossible_value",
    "target": {
@@ -85,34 +70,23 @@
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "9600 m2",
-    "area_implantacao": "225 m2",
-    "MDARQ": "960 m2"
+    "area_parcela": "297 m2",
+    "area_implantacao": "1170 m2",
+    "MDARQ": "2970 m2"
    }
   },
   {
-   "type": "unsigned",
-   "target": {
-    "slot": "TRPLAC"
-   },
-   "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
-   }
-  },
-  {
-   "type": "wrong_site",
+   "type": "template_wording_missing",
    "target": {
     "slot": "TRPARQ"
    },
-   "basis": "documents",
-   "values": {
-    "REQ": "Rua das Tílias, n.º 128, Corgo, 4890-000 Celorico de Basto",
-    "TRPARQ": "Lugar de Vilar, n.º 201, Rego, 4890-000 Celorico de Basto"
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
   }
  ],
- "n_planted": 4,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

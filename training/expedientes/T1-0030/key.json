@@ -2,79 +2,98 @@
  "expediente": "T1-0030",
  "case": {
   "id": "T1-0030",
-  "work": "construção de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 1,
-  "plot": 1750,
-  "impl": 673,
-  "built": 613,
-  "imperm": 790,
-  "perm": 960,
-  "volume": 1900,
-  "height": 3.6,
-  "facade": 2.9,
-  "parking": 2,
-  "cost": 763700,
-  "submitted": "2026-12-05",
-  "site": "Rua das Tílias, n.º 252, Corgo, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 2,
+  "plot": 2730,
+  "impl": 939,
+  "built": 1843,
+  "imperm": 1060,
+  "perm": 1670,
+  "volume": 5713,
+  "height": 6.7,
+  "facade": 6.0,
+  "parking": 4,
+  "cost": 2019900,
+  "submitted": "2026-11-13",
+  "site": "Lugar de Carvalhal, n.º 259, Ribas, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 8,
+  "months": 18,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Nuno Simulado Olga",
+    "name": "Helena Fictício Gonçalo",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "79737-SIM",
-    "address": "Rua das Tílias, n.º 252, Corgo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7444"
+    "number": "59689-SIM",
+    "address": "Lugar de Carvalhal, n.º 259, Ribas, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3108"
    },
    "arquiteto": {
-    "name": "Carla de Teste Xavier",
+    "name": "Miguel Modelo João",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "06187-SIM",
-    "address": "Lugar da Devesa, n.º 99, 4000-000 Porto",
-    "policy": "SIM-RC-1120"
+    "number": "04042-SIM",
+    "address": "Rua da Escola, n.º 34, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2245"
    },
    "engenheiro": {
-    "name": "Carla Simulado Vasco",
+    "name": "Filipe Modelo Filipe",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "41200-SIM",
-    "address": "Lugar da Devesa, n.º 40, 4000-000 Porto",
-    "policy": "SIM-RC-8806"
+    "number": "75779-SIM",
+    "address": "Rua do Outeiro, n.º 119, 4700-000 Braga",
+    "policy": "SIM-RC-0482"
    },
    "diretor": {
-    "name": "Rita Modelo Miguel",
+    "name": "Helena Fictício Nuno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "43846-SIM",
-    "address": "Lugar de Vilar, n.º 114, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8622"
+    "number": "68244-SIM",
+    "address": "Lugar de Carvalhal, n.º 62, 4800-000 Guimarães",
+    "policy": "SIM-RC-5987"
    }
   }
  },
  "planted": [
   {
-   "type": "wrong_signer",
+   "type": "expired_insurance",
    "target": {
-    "slot": "TRDO"
+    "slot": "SRCARQ"
    },
    "basis": "documents",
    "values": {
-    "declarante": "Rita Modelo Miguel",
-    "assinante": "Carla de Teste Xavier"
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-11-13"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "1843 m2",
+    "MDARQ": "1812 m2"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

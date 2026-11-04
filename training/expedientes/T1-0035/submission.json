@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Bruno Fictício João",
+  "name": "Olga Amostra Filipe",
   "nif": "999999990"
  },
- "site": "Rua das Tílias, n.º 179, Carvalho, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-25",
+ "site": "Rua das Tílias, n.º 229, Vale de Bouro, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de habitação bifamiliar",
+ "submitted_at": "2026-11-06",
  "files": [
   {
    "slot": "REQ",
@@ -82,6 +82,13 @@
    "title": "Comprovativo de contratação do diretor de obra",
    "kind": "written",
    "signed_by": "requerente"
+  },
+  {
+   "slot": "FOTO",
+   "file": "FOTO-registo-fotografico.pdf",
+   "title": "Registo fotográfico da situação existente",
+   "kind": "written",
+   "signed_by": "arquiteto"
   },
   {
    "slot": "MDARQ",
@@ -407,43 +414,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "instrucoes-preenchimento-2021.pdf",
-   "title": "Instruções Preenchimento_Q3",
+   "file": "PDF39647507256936.pdf",
+   "title": "MUNICÍPIO DE ANADIA — AQUISIÇÃO DE SERVIÇOS DE PROFISSIONAL ",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "ficha_projeto.pdf",
-   "title": "Ficha de Projeto",
+   "file": "lista_pecas.pdf",
+   "title": "LISTA DE PEÇAS",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF32407804260822.pdf",
-   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "file": "cv_requerente.pdf",
+   "title": "Curriculum vitae",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "anexo_regulamento_68.pdf",
-   "title": "ANEXO V — OBRAS DE EDIFICAÇÃO",
+   "file": "nota_50.pdf",
+   "title": "NOTA TÉCNICA N.º 32 — PROJETOS DE ÁGUAS PLUVIAIS",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "lista_elementos_nomeacao_ficheiros.pdf",
-   "title": "Lista de elementos instrutórios",
+   "file": "informacao_2026.pdf",
+   "title": "INFORMAÇÃO n.º 6/2026",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "fatura_agua_2026_08.pdf",
-   "title": "Fatura de água",
+   "file": "PDF91920468128267.pdf",
+   "title": "ÍNDICE GERAL DO PROJETO",
    "kind": "written",
    "signed_by": "requerente"
   }

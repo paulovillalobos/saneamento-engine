@@ -6,89 +6,112 @@
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 3080,
-  "impl": 727,
-  "built": 1451,
-  "imperm": 845,
-  "perm": 2235,
-  "volume": 4498,
-  "height": 7.6,
-  "facade": 6.9,
+  "plot": 2820,
+  "impl": 694,
+  "built": 1276,
+  "imperm": 796,
+  "perm": 2024,
+  "volume": 3955,
+  "height": 7.3,
+  "facade": 6.6,
   "parking": 2,
-  "cost": 1729500,
-  "submitted": "2026-12-18",
-  "site": "Lugar de Carvalhal, n.º 143, Borba de Montanha, 4890-000 Celorico de Basto",
+  "cost": 1566900,
+  "submitted": "2026-10-13",
+  "site": "Lugar de Carvalhal, n.º 125, Basto (São Clemente), 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 13,
+  "months": 15,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Rita Modelo Nuno",
+    "name": "Vasco Exemplo Ana",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "18446-SIM",
-    "address": "Lugar de Carvalhal, n.º 143, Borba de Montanha, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8474"
+    "number": "61302-SIM",
+    "address": "Lugar de Carvalhal, n.º 125, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3014"
    },
    "arquiteto": {
-    "name": "Bruno de Teste Eva",
+    "name": "Diogo Simulado Pedro",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "29686-SIM",
-    "address": "Lugar da Devesa, n.º 51, 4000-000 Porto",
-    "policy": "SIM-RC-6692"
+    "number": "97493-SIM",
+    "address": "Caminho da Lameira, n.º 108, 4800-000 Guimarães",
+    "policy": "SIM-RC-2069"
    },
    "engenheiro": {
-    "name": "Vasco Exemplo Sérgio",
+    "name": "Pedro de Teste Carla",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "09511-SIM",
-    "address": "Rua da Escola, n.º 17, 4800-000 Guimarães",
-    "policy": "SIM-RC-8945"
+    "number": "08947-SIM",
+    "address": "Travessa do Souto, n.º 100, 4800-000 Guimarães",
+    "policy": "SIM-RC-8919"
    },
    "diretor": {
-    "name": "Nuno Modelo Inês",
+    "name": "Eva Fictício Gonçalo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "78575-SIM",
-    "address": "Rua da Escola, n.º 28, 4700-000 Braga",
-    "policy": "SIM-RC-4985"
+    "number": "31645-SIM",
+    "address": "Rua do Outeiro, n.º 47, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0625"
    }
   }
  },
  "planted": [
   {
-   "type": "expired_insurance",
+   "type": "impossible_value",
    "target": {
-    "slot": "SRCARQ"
+    "field": "area_parcela",
+    "slot": "REQ"
    },
    "basis": "documents",
    "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-12-18"
-   },
-   "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+    "area_parcela": "282 m2",
+    "area_implantacao": "694 m2",
+    "MDARQ": "2820 m2"
    }
   },
   {
-   "type": "not_pdfa",
+   "type": "not_pdf",
    "target": {
-    "slot": "MDPAP"
+    "slot": "FOTO"
    },
    "law": {
     "ref": "VI.1.a",
     "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRPLAC"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "1276 m2",
+    "MDARQ": "1176 m2"
+   }
   }
  ],
- "n_planted": 2,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

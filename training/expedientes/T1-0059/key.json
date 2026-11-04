@@ -2,74 +2,74 @@
  "expediente": "T1-0059",
  "case": {
   "id": "T1-0059",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
-  "fogos": 0,
-  "pisos": 1,
-  "plot": 2470,
-  "impl": 601,
-  "built": 539,
-  "imperm": 679,
-  "perm": 1791,
-  "volume": 1670,
-  "height": 4.1,
-  "facade": 3.4,
+  "work": "ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 3480,
+  "impl": 1472,
+  "built": 2736,
+  "imperm": 1652,
+  "perm": 1828,
+  "volume": 8481,
+  "height": 7.0,
+  "facade": 6.3,
   "parking": 2,
-  "cost": 531900,
-  "submitted": "2026-10-19",
-  "site": "Rua do Outeiro, n.º 49, Canedo de Basto, 4890-000 Celorico de Basto",
+  "cost": 3006800,
+  "submitted": "2026-10-22",
+  "site": "Rua da Escola, n.º 111, Corgo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 15,
+  "months": 11,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Miguel Fictício Sérgio",
+    "name": "Eva de Teste Teresa",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "59589-SIM",
-    "address": "Rua do Outeiro, n.º 49, Canedo de Basto, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6828"
+    "number": "45751-SIM",
+    "address": "Rua da Escola, n.º 111, Corgo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7984"
    },
    "arquiteto": {
-    "name": "Leonor Fictício Leonor",
+    "name": "Miguel Fictício Helena",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "10069-SIM",
-    "address": "Rua do Outeiro, n.º 50, 4700-000 Braga",
-    "policy": "SIM-RC-6553"
+    "number": "58781-SIM",
+    "address": "Lugar de Carvalhal, n.º 5, 4800-000 Guimarães",
+    "policy": "SIM-RC-8376"
    },
    "engenheiro": {
-    "name": "Xavier Modelo Teresa",
+    "name": "Helena Simulado Nuno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "12819-SIM",
-    "address": "Lugar de Carvalhal, n.º 28, 4000-000 Porto",
-    "policy": "SIM-RC-2272"
+    "number": "59635-SIM",
+    "address": "Caminho da Lameira, n.º 83, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6705"
    },
    "diretor": {
-    "name": "Nuno Simulado Nuno",
+    "name": "João Amostra Teresa",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "68839-SIM",
-    "address": "Rua do Outeiro, n.º 60, 4800-000 Guimarães",
-    "policy": "SIM-RC-8905"
+    "number": "15364-SIM",
+    "address": "Caminho da Lameira, n.º 30, 4800-000 Guimarães",
+    "policy": "SIM-RC-6521"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "template_wording_missing",
    "target": {
     "slot": "TRPARQ"
    },
    "law": {
-    "ref": "V.11",
-    "quote": "11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;"
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
   },
   {
@@ -83,12 +83,34 @@
    },
    "basis": "documents",
    "values": {
-    "REQ": "539 m2",
-    "MDARQ": "586 m2"
+    "REQ": "2736 m2",
+    "MDARQ": "2679 m2"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "João Amostra Teresa",
+    "assinante": "Miguel Fictício Helena"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Rua da Escola, n.º 111, Corgo, 4890-000 Celorico de Basto",
+    "TRPARQ": "Lugar de Vilar, n.º 186, Infesta, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

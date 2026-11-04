@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Gonçalo Simulado Filipe",
+  "name": "Pedro Amostra Leonor",
   "nif": "999999990"
  },
- "site": "Rua do Outeiro, n.º 182, Canedo de Basto, 4890-000 Celorico de Basto",
+ "site": "Rua do Outeiro, n.º 143, Vale de Bouro, 4890-000 Celorico de Basto",
  "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-12-20",
+ "submitted_at": "2026-12-19",
  "files": [
   {
    "slot": "REQ",
@@ -49,6 +49,13 @@
    "signed_by": "arquiteto"
   },
   {
+   "slot": "SRCCP",
+   "file": "SRCCP-seguro-coordenador.pdf",
+   "title": "Comprovativo de seguro de responsabilidade civil do coordenador de projeto",
+   "kind": "written",
+   "signed_by": "seguradora"
+  },
+  {
    "slot": "TRPLAC",
    "file": "TRPLAC-termo-acessibilidades.pdf",
    "title": "Termo de responsabilidade do autor do plano de acessibilidades",
@@ -60,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCDO",
@@ -407,22 +414,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "fatura_agua_2026_08.pdf",
-   "title": "Fatura de água",
+   "file": "valpaços_minuta_memoria.pdf",
+   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "caderno_95.pdf",
-   "title": "MUNICÍPIO DE BENAVENTE — AQUISIÇÃO DE SERVIÇOS DE PROFISSION",
+   "file": "leiria_consulta_entidade.pdf",
+   "title": "Consulta a entidade externa",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "guia_88.pdf",
-   "title": "Guia Técnico para Projetos de Infraestruturas de telecomunic",
+   "file": "loures_anexo_criterio.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "nota-explicativa-comportamento-2024.pdf",
+   "title": "Nota explicativa — comportamento térmico",
    "kind": "written",
    "signed_by": "requerente"
   }

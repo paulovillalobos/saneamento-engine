@@ -2,66 +2,89 @@
  "expediente": "T1-0054",
  "case": {
   "id": "T1-0054",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 3,
-  "plot": 3450,
-  "impl": 474,
-  "built": 1232,
-  "imperm": 619,
-  "perm": 2831,
-  "volume": 3819,
-  "height": 9.9,
-  "facade": 9.2,
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 590,
+  "impl": 245,
+  "built": 447,
+  "imperm": 307,
+  "perm": 283,
+  "volume": 1385,
+  "height": 7.7,
+  "facade": 7.0,
   "parking": 2,
-  "cost": 1199900,
+  "cost": 353100,
   "submitted": "2026-10-22",
-  "site": "Caminho da Lameira, n.º 78, Fervença, 4890-000 Celorico de Basto",
+  "site": "Travessa do Souto, n.º 274, Borba de Montanha, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 21,
+  "months": 17,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Inês Simulado Ana",
+    "name": "Nuno de Teste Leonor",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "01559-SIM",
-    "address": "Caminho da Lameira, n.º 78, Fervença, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0932"
+    "number": "90105-SIM",
+    "address": "Travessa do Souto, n.º 274, Borba de Montanha, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3628"
    },
    "arquiteto": {
-    "name": "Leonor Fictício Bruno",
+    "name": "Vasco Exemplo Diogo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "05533-SIM",
-    "address": "Rua da Escola, n.º 34, 4700-000 Braga",
-    "policy": "SIM-RC-0504"
+    "number": "25914-SIM",
+    "address": "Rua das Tílias, n.º 57, 4000-000 Porto",
+    "policy": "SIM-RC-5351"
    },
    "engenheiro": {
-    "name": "João Exemplo Xavier",
+    "name": "Eva Fictício Nuno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "85516-SIM",
-    "address": "Lugar de Carvalhal, n.º 44, 4000-000 Porto",
-    "policy": "SIM-RC-3270"
+    "number": "02119-SIM",
+    "address": "Travessa do Souto, n.º 31, 4700-000 Braga",
+    "policy": "SIM-RC-3125"
    },
    "diretor": {
-    "name": "Filipe de Teste Carla",
+    "name": "Olga Amostra Miguel",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "49508-SIM",
-    "address": "Lugar de Vilar, n.º 47, 4700-000 Braga",
-    "policy": "SIM-RC-7565"
+    "number": "22442-SIM",
+    "address": "Rua da Escola, n.º 4, 4700-000 Braga",
+    "policy": "SIM-RC-7522"
    }
   }
  },
  "planted": [
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "5900 m2",
+    "area_implantacao": "245 m2",
+    "MDARQ": "590 m2"
+   }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "FSCI"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
   {
    "type": "value_mismatch",
    "target": {
@@ -73,12 +96,12 @@
    },
    "basis": "documents",
    "values": {
-    "REQ": "1232 m2",
-    "MDARQ": "1171 m2"
+    "REQ": "447 m2",
+    "MDARQ": "399 m2"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

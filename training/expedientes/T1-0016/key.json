@@ -2,67 +2,116 @@
  "expediente": "T1-0016",
  "case": {
   "id": "T1-0016",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 690,
-  "impl": 261,
-  "built": 448,
-  "imperm": 384,
-  "perm": 306,
-  "volume": 1388,
-  "height": 7.1,
-  "facade": 6.4,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 750,
+  "impl": 191,
+  "built": 173,
+  "imperm": 353,
+  "perm": 397,
+  "volume": 536,
+  "height": 4.7,
+  "facade": 4.0,
   "parking": 2,
-  "cost": 353900,
-  "submitted": "2026-12-20",
-  "site": "Lugar de Vilar, n.º 276, Britelo, 4890-000 Celorico de Basto",
+  "cost": 117100,
+  "submitted": "2026-12-25",
+  "site": "Travessa do Souto, n.º 244, Basto (São Clemente), 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 10,
+  "months": 15,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Helena Exemplo Eva",
+    "name": "Diogo Amostra Carla",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "38443-SIM",
-    "address": "Lugar de Vilar, n.º 276, Britelo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5847"
+    "number": "81833-SIM",
+    "address": "Travessa do Souto, n.º 244, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0993"
    },
    "arquiteto": {
-    "name": "Filipe Fictício João",
+    "name": "Gonçalo Amostra Diogo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "93973-SIM",
-    "address": "Lugar de Vilar, n.º 45, 4800-000 Guimarães",
-    "policy": "SIM-RC-8772"
+    "number": "21726-SIM",
+    "address": "Rua do Outeiro, n.º 22, 4800-000 Guimarães",
+    "policy": "SIM-RC-0981"
    },
    "engenheiro": {
-    "name": "João Simulado Sérgio",
+    "name": "Helena Modelo Rita",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "40182-SIM",
-    "address": "Rua do Outeiro, n.º 91, 4800-000 Guimarães",
-    "policy": "SIM-RC-0359"
+    "number": "56567-SIM",
+    "address": "Lugar de Vilar, n.º 79, 4800-000 Guimarães",
+    "policy": "SIM-RC-7513"
    },
    "diretor": {
-    "name": "João Modelo Vasco",
+    "name": "Gonçalo Simulado Teresa",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "14505-SIM",
-    "address": "Lugar da Devesa, n.º 97, 4800-000 Guimarães",
-    "policy": "SIM-RC-4177"
+    "number": "54531-SIM",
+    "address": "Rua das Tílias, n.º 34, 4000-000 Porto",
+    "policy": "SIM-RC-6662"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "7500 m2",
+    "area_implantacao": "191 m2",
+    "MDARQ": "750 m2"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "FOTO"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "173 m2",
+    "MDARQ": "255 m2"
+   }
+  }
+ ],
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

@@ -6,97 +6,63 @@
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 1,
-  "plot": 800,
-  "impl": 309,
-  "built": 272,
-  "imperm": 508,
-  "perm": 292,
-  "volume": 843,
-  "height": 4.6,
-  "facade": 3.9,
+  "plot": 3550,
+  "impl": 834,
+  "built": 770,
+  "imperm": 889,
+  "perm": 2661,
+  "volume": 2387,
+  "height": 4.5,
+  "facade": 3.8,
   "parking": 2,
-  "cost": 340200,
-  "submitted": "2026-12-02",
-  "site": "Lugar da Devesa, n.º 114, Agilde, 4890-000 Celorico de Basto",
+  "cost": 689900,
+  "submitted": "2026-11-21",
+  "site": "Travessa do Souto, n.º 201, Caçarilhe, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 21,
+  "months": 15,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Nuno Simulado Bruno",
+    "name": "Filipe de Teste Filipe",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "57698-SIM",
-    "address": "Lugar da Devesa, n.º 114, Agilde, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1200"
+    "number": "01011-SIM",
+    "address": "Travessa do Souto, n.º 201, Caçarilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2221"
    },
    "arquiteto": {
-    "name": "Diogo de Teste Filipe",
+    "name": "Olga Amostra Pedro",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "46613-SIM",
-    "address": "Rua das Tílias, n.º 60, 4700-000 Braga",
-    "policy": "SIM-RC-2872"
+    "number": "65925-SIM",
+    "address": "Lugar da Devesa, n.º 115, 4700-000 Braga",
+    "policy": "SIM-RC-9134"
    },
    "engenheiro": {
-    "name": "Olga Amostra Rita",
+    "name": "Helena Exemplo Pedro",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "25796-SIM",
-    "address": "Rua da Escola, n.º 65, 4700-000 Braga",
-    "policy": "SIM-RC-3245"
+    "number": "86197-SIM",
+    "address": "Rua das Tílias, n.º 60, 4000-000 Porto",
+    "policy": "SIM-RC-6454"
    },
    "diretor": {
-    "name": "Filipe Amostra Carla",
+    "name": "Xavier Amostra Bruno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "79331-SIM",
-    "address": "Rua da Escola, n.º 12, 4700-000 Braga",
-    "policy": "SIM-RC-7420"
+    "number": "73697-SIM",
+    "address": "Rua do Outeiro, n.º 7, 4000-000 Porto",
+    "policy": "SIM-RC-4047"
    }
   }
  },
- "planted": [
-  {
-   "type": "impossible_value",
-   "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
-   },
-   "basis": "documents",
-   "values": {
-    "area_parcela": "8000 m2",
-    "area_implantacao": "309 m2",
-    "MDARQ": "800 m2"
-   }
-  },
-  {
-   "type": "missing_required",
-   "target": {
-    "slot": "ALC"
-   },
-   "law": {
-    "ref": "V.27.b.ii",
-    "quote": "ii) Alçados à escala de 1:50 ou de 1:100 com a indicação das cores e dos materiais dos elementos que constituem as fachadas e a cobertura, bem como as construções adjacentes, quando existam;"
-   }
-  },
-  {
-   "type": "not_pdfa",
-   "target": {
-    "slot": "MDARQ"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  }
- ],
- "n_planted": 3,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

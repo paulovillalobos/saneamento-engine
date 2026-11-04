@@ -2,67 +2,78 @@
  "expediente": "T1-0036",
  "case": {
   "id": "T1-0036",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 1,
-  "plot": 1820,
-  "impl": 489,
-  "built": 415,
-  "imperm": 678,
-  "perm": 1142,
-  "volume": 1286,
-  "height": 3.7,
-  "facade": 3.0,
+  "work": "alteração e ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 1000,
+  "impl": 364,
+  "built": 671,
+  "imperm": 510,
+  "perm": 490,
+  "volume": 2080,
+  "height": 6.7,
+  "facade": 6.0,
   "parking": 2,
-  "cost": 388800,
-  "submitted": "2026-12-10",
-  "site": "Caminho da Lameira, n.º 235, Ourilhe, 4890-000 Celorico de Basto",
+  "cost": 758200,
+  "submitted": "2026-12-08",
+  "site": "Rua das Tílias, n.º 43, Canedo de Basto, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 11,
+  "months": 8,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Helena de Teste Eva",
+    "name": "Xavier Modelo Vasco",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "67808-SIM",
-    "address": "Caminho da Lameira, n.º 235, Ourilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1547"
+    "number": "40211-SIM",
+    "address": "Rua das Tílias, n.º 43, Canedo de Basto, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5729"
    },
    "arquiteto": {
-    "name": "Olga Amostra Eva",
+    "name": "Olga Modelo Diogo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "37016-SIM",
-    "address": "Travessa do Souto, n.º 48, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-3458"
+    "number": "89744-SIM",
+    "address": "Caminho da Lameira, n.º 18, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7210"
    },
    "engenheiro": {
-    "name": "Leonor Modelo Eva",
+    "name": "Sérgio Amostra Inês",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "74165-SIM",
-    "address": "Rua do Outeiro, n.º 79, 4000-000 Porto",
-    "policy": "SIM-RC-3770"
+    "number": "83157-SIM",
+    "address": "Lugar da Devesa, n.º 18, 4800-000 Guimarães",
+    "policy": "SIM-RC-5068"
    },
    "diretor": {
-    "name": "Rita de Teste Eva",
+    "name": "Ana Modelo Miguel",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "54530-SIM",
-    "address": "Lugar da Devesa, n.º 55, 4800-000 Guimarães",
-    "policy": "SIM-RC-1834"
+    "number": "88896-SIM",
+    "address": "Rua das Tílias, n.º 61, 4000-000 Porto",
+    "policy": "SIM-RC-1999"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "FSCI"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "João Exemplo Sérgio",
+  "name": "Nuno Modelo Leonor",
   "nif": "999999990"
  },
- "site": "Caminho da Lameira, n.º 85, Molares, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-12-17",
+ "site": "Rua do Outeiro, n.º 265, Carvalho, 4890-000 Celorico de Basto",
+ "operation": "construção de armazém agrícola",
+ "submitted_at": "2026-11-20",
  "files": [
   {
    "slot": "REQ",
@@ -138,13 +138,6 @@
    "title": "Planta de localização",
    "kind": "drawn",
    "signed_by": "arquiteto"
-  },
-  {
-   "slot": "LEVT",
-   "file": "LEVT-levantamento-topografico.pdf",
-   "title": "Levantamento topográfico georreferenciado",
-   "kind": "drawn",
-   "signed_by": "engenheiro"
   },
   {
    "slot": "PI",
@@ -414,22 +407,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "anexo_loteamentos.pdf",
-   "title": "ANEXO IV — LOTEAMENTOS",
+   "file": "plano-acessibilidade-todos-2023.pdf",
+   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "nota_explicativa_73.pdf",
-   "title": "Esclarecimento sobre a condicionamento acústico",
+   "file": "lista_elementos_nomeacao_ficheiros.pdf",
+   "title": "Lista de elementos instrutórios",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "castro_nota_tecnica.pdf",
-   "title": "NOTA TÉCNICA N.º 16 — PROJETOS DE ESTABILIDADE E FUNDAÇÕES",
+   "file": "seixal_guia_tecnico.pdf",
+   "title": "Guia Técnico para Projetos de Termos de responsabilidade dos",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "ficha_projeto_26.pdf",
+   "title": "Ficha de Projeto",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF33537734618671.pdf",
+   "title": "INFORMAÇÃO n.º 21/2026",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
    "kind": "written",
    "signed_by": "requerente"
   }

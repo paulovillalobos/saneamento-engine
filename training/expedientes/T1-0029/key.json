@@ -2,75 +2,74 @@
  "expediente": "T1-0029",
  "case": {
   "id": "T1-0029",
-  "work": "alteração e ampliação de moradia unifamiliar",
+  "work": "ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 2,
-  "plot": 470,
-  "impl": 204,
-  "built": 372,
-  "imperm": 314,
-  "perm": 156,
-  "volume": 1153,
-  "height": 7.2,
-  "facade": 6.5,
+  "pisos": 1,
+  "plot": 1020,
+  "impl": 320,
+  "built": 290,
+  "imperm": 406,
+  "perm": 614,
+  "volume": 899,
+  "height": 4.8,
+  "facade": 4.1,
   "parking": 2,
-  "cost": 297900,
-  "submitted": "2026-10-26",
-  "site": "Rua do Outeiro, n.º 118, Basto (São Clemente), 4890-000 Celorico de Basto",
+  "cost": 332300,
+  "submitted": "2026-12-11",
+  "site": "Rua do Outeiro, n.º 256, Rego, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 19,
+  "months": 12,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Carla Exemplo Leonor",
+    "name": "Carla Fictício Pedro",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "29526-SIM",
-    "address": "Rua do Outeiro, n.º 118, Basto (São Clemente), 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8536"
+    "number": "40410-SIM",
+    "address": "Rua do Outeiro, n.º 256, Rego, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1416"
    },
    "arquiteto": {
-    "name": "Nuno Simulado Rita",
+    "name": "Eva de Teste Sérgio",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "90747-SIM",
-    "address": "Rua da Escola, n.º 61, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4301"
+    "number": "69049-SIM",
+    "address": "Rua do Outeiro, n.º 18, 4700-000 Braga",
+    "policy": "SIM-RC-7570"
    },
    "engenheiro": {
-    "name": "João Fictício Eva",
+    "name": "Carla Modelo Inês",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "91380-SIM",
-    "address": "Rua das Tílias, n.º 85, 4000-000 Porto",
-    "policy": "SIM-RC-6268"
+    "number": "27153-SIM",
+    "address": "Lugar de Carvalhal, n.º 113, 4000-000 Porto",
+    "policy": "SIM-RC-3813"
    },
    "diretor": {
-    "name": "Pedro Modelo Ana",
+    "name": "Helena Exemplo Nuno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "18272-SIM",
-    "address": "Rua do Outeiro, n.º 110, 4800-000 Guimarães",
-    "policy": "SIM-RC-1624"
+    "number": "49250-SIM",
+    "address": "Caminho da Lameira, n.º 17, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4563"
    }
   }
  },
  "planted": [
   {
-   "type": "wrong_signer",
+   "type": "not_pdfa",
    "target": {
-    "slot": "TRDO"
+    "slot": "FSCI"
    },
-   "basis": "documents",
-   "values": {
-    "declarante": "Pedro Modelo Ana",
-    "assinante": "Nuno Simulado Rita"
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   }
  ],

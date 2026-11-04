@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Xavier Exemplo Olga",
+  "name": "Carla Amostra Helena",
   "nif": "999999990"
  },
- "site": "Rua das Tílias, n.º 178, Fervença, 4890-000 Celorico de Basto",
+ "site": "Caminho da Lameira, n.º 124, Infesta, 4890-000 Celorico de Basto",
  "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-12-11",
+ "submitted_at": "2026-12-17",
  "files": [
   {
    "slot": "REQ",
@@ -60,7 +60,7 @@
    "file": "TRPLAC-termo-acessibilidades.pdf",
    "title": "Termo de responsabilidade do autor do plano de acessibilidades",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "TRDO",
@@ -165,7 +165,7 @@
    "file": "ALC-alcados.pdf",
    "title": "Alçados",
    "kind": "drawn",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "CORTES",
@@ -414,43 +414,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "consulta_entidade_externa.pdf",
-   "title": "Consulta a entidade externa",
+   "file": "nota_explicativa_58.pdf",
+   "title": "Os termos de responsabilidade passados no âmbito das legaliz",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "amarante_copia_parte.pdf",
-   "title": "Cópia de parte da ata da reunião de 2026-11-17",
+   "file": "PDF42636055557525.pdf",
+   "title": "Esclarecimento sobre a redes prediais de água e esgotos",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF65000043408816.pdf",
-   "title": "Apresentação — Portaria n.º 320/2026/1 e estabilidade e fund",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "regulamento_instrucao_digital_extrato.pdf",
-   "title": "Regulamento municipal (extrato)",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "ficha_verificacao_elementos.pdf",
-   "title": "Ficha de verificação",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "lista_elementos_nomeacao_ficheiros.pdf",
-   "title": "Lista de elementos instrutórios",
+   "file": "nota_tecnica_projetos_estabilidade.pdf",
+   "title": "NOTA TÉCNICA N.º 18 — PROJETOS DE ESTABILIDADE E FUNDAÇÕES",
    "kind": "written",
    "signed_by": "requerente"
   }

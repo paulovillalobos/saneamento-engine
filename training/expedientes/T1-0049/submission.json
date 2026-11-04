@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Carla Modelo Rita",
+  "name": "Pedro Amostra Teresa",
   "nif": "999999990"
  },
- "site": "Lugar de Vilar, n.º 155, Rego, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-12-04",
+ "site": "Lugar da Devesa, n.º 116, Canedo de Basto, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
+ "submitted_at": "2026-10-17",
  "files": [
   {
    "slot": "REQ",
@@ -46,7 +46,7 @@
    "file": "TRCP-termo-coordenador.pdf",
    "title": "Termo de responsabilidade do coordenador de projeto",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "SRCCP",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCDO",
@@ -158,7 +158,7 @@
    "file": "PLANT-plantas.pdf",
    "title": "Plantas",
    "kind": "drawn",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "ALC",
@@ -414,36 +414,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "ficha_verificacao_elementos.pdf",
-   "title": "Ficha de verificação",
+   "file": "ficha_projeto.pdf",
+   "title": "Ficha de Projeto",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "estarreja_municipio_estarreja.pdf",
-   "title": "MUNICÍPIO DE ESTARREJA — AQUISIÇÃO DE SERVIÇOS DE PROFISSION",
+   "file": "nota_tecnica_projetos_registo.pdf",
+   "title": "NOTA TÉCNICA N.º 23 — PROJETOS DE REGISTO FOTOGRÁFICO",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "instrucoes-preenchimento-2019.pdf",
-   "title": "Instruções Preenchimento_Q3",
+   "file": "PDF11943071296621.pdf",
+   "title": "Esclarecimento sobre a redes prediais de água e esgotos",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "anexo-obras-edificacao-2021.pdf",
-   "title": "ANEXO V — OBRAS DE EDIFICAÇÃO",
+   "file": "anexo-obras-urbanizacao-2025.pdf",
+   "title": "ANEXO V — OBRAS DE URBANIZAÇÃO",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "cv_requerente.pdf",
-   "title": "Curriculum vitae",
+   "file": "seixal_postura_projetos.pdf",
+   "title": "Postura Municipal Referente a Projetos de Estimativa do cust",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "norma_instrucao_processo_nip.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-01",
    "kind": "written",
    "signed_by": "requerente"
   }

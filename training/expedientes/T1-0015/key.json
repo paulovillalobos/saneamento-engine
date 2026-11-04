@@ -2,83 +2,67 @@
  "expediente": "T1-0015",
  "case": {
   "id": "T1-0015",
-  "work": "ampliação de moradia unifamiliar",
+  "work": "construção de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 1,
-  "plot": 3690,
-  "impl": 535,
-  "built": 497,
-  "imperm": 697,
-  "perm": 2993,
-  "volume": 1540,
-  "height": 4.8,
-  "facade": 4.1,
+  "pisos": 2,
+  "plot": 3230,
+  "impl": 1208,
+  "built": 2330,
+  "imperm": 1319,
+  "perm": 1911,
+  "volume": 7223,
+  "height": 7.6,
+  "facade": 6.9,
   "parking": 2,
-  "cost": 412000,
-  "submitted": "2026-11-19",
-  "site": "Rua da Escola, n.º 263, Codeçoso, 4890-000 Celorico de Basto",
+  "cost": 2006100,
+  "submitted": "2026-11-21",
+  "site": "Rua da Escola, n.º 181, Basto (São Clemente), 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 21,
+  "months": 16,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Helena Simulado Sérgio",
+    "name": "Filipe Fictício Inês",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "95978-SIM",
-    "address": "Rua da Escola, n.º 263, Codeçoso, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4062"
+    "number": "86438-SIM",
+    "address": "Rua da Escola, n.º 181, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5855"
    },
    "arquiteto": {
-    "name": "Nuno Exemplo Diogo",
+    "name": "Eva Simulado Eva",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "75319-SIM",
-    "address": "Rua da Escola, n.º 50, 4000-000 Porto",
-    "policy": "SIM-RC-9175"
+    "number": "16316-SIM",
+    "address": "Lugar de Carvalhal, n.º 32, 4800-000 Guimarães",
+    "policy": "SIM-RC-1168"
    },
    "engenheiro": {
-    "name": "Diogo Amostra Rita",
+    "name": "Teresa Simulado Filipe",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "06895-SIM",
-    "address": "Rua do Outeiro, n.º 100, 4000-000 Porto",
-    "policy": "SIM-RC-0342"
+    "number": "31970-SIM",
+    "address": "Caminho da Lameira, n.º 99, 4800-000 Guimarães",
+    "policy": "SIM-RC-8938"
    },
    "diretor": {
-    "name": "João Exemplo Inês",
+    "name": "Helena Exemplo Vasco",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "95756-SIM",
-    "address": "Rua das Tílias, n.º 22, 4700-000 Braga",
-    "policy": "SIM-RC-9203"
+    "number": "48870-SIM",
+    "address": "Rua do Outeiro, n.º 43, 4800-000 Guimarães",
+    "policy": "SIM-RC-0212"
    }
   }
  },
- "planted": [
-  {
-   "type": "value_mismatch",
-   "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "497 m2",
-    "MDARQ": "591 m2"
-   }
-  }
- ],
- "n_planted": 1,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

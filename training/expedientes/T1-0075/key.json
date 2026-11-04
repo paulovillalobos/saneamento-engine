@@ -2,88 +2,103 @@
  "expediente": "T1-0075",
  "case": {
   "id": "T1-0075",
-  "work": "ampliação de moradia unifamiliar",
+  "work": "construção de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 1,
-  "plot": 3900,
-  "impl": 542,
-  "built": 468,
-  "imperm": 641,
-  "perm": 3259,
-  "volume": 1450,
-  "height": 4.3,
-  "facade": 3.6,
+  "plot": 2460,
+  "impl": 597,
+  "built": 532,
+  "imperm": 645,
+  "perm": 1815,
+  "volume": 1649,
+  "height": 3.6,
+  "facade": 2.9,
   "parking": 2,
-  "cost": 374800,
-  "submitted": "2026-11-12",
-  "site": "Travessa do Souto, n.º 157, Borba de Montanha, 4890-000 Celorico de Basto",
+  "cost": 359100,
+  "submitted": "2026-10-08",
+  "site": "Rua das Tílias, n.º 133, Moreira do Castelo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 22,
+  "months": 10,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Rita Fictício Helena",
+    "name": "Nuno Exemplo Gonçalo",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "76013-SIM",
-    "address": "Travessa do Souto, n.º 157, Borba de Montanha, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-3253"
+    "number": "78934-SIM",
+    "address": "Rua das Tílias, n.º 133, Moreira do Castelo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3476"
    },
    "arquiteto": {
-    "name": "Gonçalo de Teste Xavier",
+    "name": "Vasco Simulado Filipe",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "13019-SIM",
-    "address": "Rua das Tílias, n.º 53, 4800-000 Guimarães",
-    "policy": "SIM-RC-9336"
+    "number": "49219-SIM",
+    "address": "Lugar da Devesa, n.º 22, 4700-000 Braga",
+    "policy": "SIM-RC-1841"
    },
    "engenheiro": {
-    "name": "Leonor Exemplo Pedro",
+    "name": "Miguel de Teste Xavier",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "37927-SIM",
-    "address": "Lugar da Devesa, n.º 107, 4700-000 Braga",
-    "policy": "SIM-RC-2295"
+    "number": "56248-SIM",
+    "address": "Caminho da Lameira, n.º 39, 4700-000 Braga",
+    "policy": "SIM-RC-6312"
    },
    "diretor": {
-    "name": "Teresa Amostra João",
+    "name": "Miguel Amostra Inês",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "72084-SIM",
-    "address": "Travessa do Souto, n.º 94, 4800-000 Guimarães",
-    "policy": "SIM-RC-5739"
+    "number": "24665-SIM",
+    "address": "Caminho da Lameira, n.º 25, 4700-000 Braga",
+    "policy": "SIM-RC-5981"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "expired_insurance",
    "target": {
-    "slot": "PC"
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-10-08"
    },
    "law": {
-    "ref": "V.27.b.iv",
-    "quote": "iv) Pormenores de construção, à escala adequada, esclarecendo a solução construtiva adotada para as paredes exteriores do edifício e sua articulação com a cobertura, vãos de iluminação/ventilação e de acesso, bem como com o pavimento exterior envolvente;"
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
    }
   },
   {
-   "type": "unsigned",
+   "type": "not_pdf",
    "target": {
-    "slot": "TRDO"
+    "slot": "CORTES"
    },
    "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

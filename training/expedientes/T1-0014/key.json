@@ -6,109 +6,63 @@
   "use": "Comércio e serviços",
   "fogos": 0,
   "pisos": 1,
-  "plot": 1520,
-  "impl": 464,
-  "built": 419,
-  "imperm": 524,
-  "perm": 996,
-  "volume": 1298,
-  "height": 3.7,
-  "facade": 3.0,
+  "plot": 1590,
+  "impl": 365,
+  "built": 311,
+  "imperm": 410,
+  "perm": 1180,
+  "volume": 964,
+  "height": 3.8,
+  "facade": 3.1,
   "parking": 2,
-  "cost": 289500,
-  "submitted": "2026-12-11",
-  "site": "Rua das Tílias, n.º 178, Fervença, 4890-000 Celorico de Basto",
+  "cost": 353200,
+  "submitted": "2026-12-17",
+  "site": "Caminho da Lameira, n.º 124, Infesta, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 9,
+  "months": 23,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Xavier Exemplo Olga",
+    "name": "Carla Amostra Helena",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "50322-SIM",
-    "address": "Rua das Tílias, n.º 178, Fervença, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7226"
+    "number": "07219-SIM",
+    "address": "Caminho da Lameira, n.º 124, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4435"
    },
    "arquiteto": {
-    "name": "Helena Amostra Xavier",
+    "name": "Nuno de Teste Nuno",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "69025-SIM",
-    "address": "Lugar de Vilar, n.º 8, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1860"
+    "number": "16882-SIM",
+    "address": "Rua do Outeiro, n.º 113, 4000-000 Porto",
+    "policy": "SIM-RC-2584"
    },
    "engenheiro": {
-    "name": "Sérgio Fictício Teresa",
+    "name": "Helena de Teste Diogo",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "85245-SIM",
-    "address": "Lugar de Carvalhal, n.º 115, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1991"
+    "number": "65497-SIM",
+    "address": "Rua do Outeiro, n.º 97, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3820"
    },
    "diretor": {
-    "name": "Vasco Simulado Rita",
+    "name": "Sérgio Simulado Leonor",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "28422-SIM",
-    "address": "Rua das Tílias, n.º 81, 4700-000 Braga",
-    "policy": "SIM-RC-6509"
+    "number": "42515-SIM",
+    "address": "Rua da Escola, n.º 111, 4800-000 Guimarães",
+    "policy": "SIM-RC-0995"
    }
   }
  },
- "planted": [
-  {
-   "type": "not_pdf",
-   "target": {
-    "slot": "ALC"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
-   "type": "template_wording_missing",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
-   }
-  },
-  {
-   "type": "unsigned",
-   "target": {
-    "slot": "TRPLAC"
-   },
-   "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
-   }
-  },
-  {
-   "type": "value_mismatch",
-   "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "419 m2",
-    "MDARQ": "509 m2"
-   }
-  }
- ],
- "n_planted": 4,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

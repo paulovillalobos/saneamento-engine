@@ -2,111 +2,104 @@
  "expediente": "T1-0047",
  "case": {
   "id": "T1-0047",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 2,
-  "plot": 1590,
-  "impl": 313,
-  "built": 605,
-  "imperm": 479,
-  "perm": 1111,
-  "volume": 1875,
-  "height": 7.2,
-  "facade": 6.5,
-  "parking": 4,
-  "cost": 511800,
-  "submitted": "2026-10-05",
-  "site": "Caminho da Lameira, n.º 16, Corgo, 4890-000 Celorico de Basto",
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 550,
+  "impl": 121,
+  "built": 105,
+  "imperm": 180,
+  "perm": 370,
+  "volume": 325,
+  "height": 4.1,
+  "facade": 3.4,
+  "parking": 2,
+  "cost": 129600,
+  "submitted": "2026-12-20",
+  "site": "Caminho da Lameira, n.º 288, Codeçoso, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 13,
+  "months": 22,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Filipe Fictício Vasco",
+    "name": "Olga Amostra Vasco",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "81861-SIM",
-    "address": "Caminho da Lameira, n.º 16, Corgo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0057"
+    "number": "96682-SIM",
+    "address": "Caminho da Lameira, n.º 288, Codeçoso, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5825"
    },
    "arquiteto": {
-    "name": "Gonçalo Modelo Miguel",
+    "name": "Xavier Fictício Vasco",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "86418-SIM",
-    "address": "Lugar de Vilar, n.º 35, 4000-000 Porto",
-    "policy": "SIM-RC-1322"
+    "number": "58712-SIM",
+    "address": "Rua da Escola, n.º 66, 4800-000 Guimarães",
+    "policy": "SIM-RC-7760"
    },
    "engenheiro": {
-    "name": "João Fictício Nuno",
+    "name": "Bruno Amostra Olga",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "40017-SIM",
-    "address": "Lugar de Vilar, n.º 119, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2283"
+    "number": "90632-SIM",
+    "address": "Travessa do Souto, n.º 47, 4800-000 Guimarães",
+    "policy": "SIM-RC-4972"
    },
    "diretor": {
-    "name": "João Modelo Diogo",
+    "name": "Inês Simulado Carla",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "40238-SIM",
-    "address": "Travessa do Souto, n.º 99, 4700-000 Braga",
-    "policy": "SIM-RC-7210"
+    "number": "86714-SIM",
+    "address": "Lugar da Devesa, n.º 8, 4800-000 Guimarães",
+    "policy": "SIM-RC-6348"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "missing_required",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "slot": "P10000"
+   },
+   "law": {
+    "ref": "V.2",
+    "quote": "2 - Delimitação da área objeto da operação urbanística e sua área de enquadramento em planta de localização fornecida pela câmara municipal ou planta de localização à escala 1:1.000;"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "159 m2",
-    "area_implantacao": "313 m2",
-    "MDARQ": "1590 m2"
+    "REQ": "105 m2",
+    "MDARQ": "75 m2"
    }
   },
   {
-   "type": "missing_required",
+   "type": "wrong_signer",
    "target": {
-    "slot": "CRP"
+    "slot": "TRDO"
    },
-   "law": {
-    "ref": "V.5",
-    "quote": "5 - Indicação do código de acesso à certidão permanente do registo predial referente ao prédio ou prédios abrangidos pela operação urbanística ou, quando omisso, a respetiva certidão negativa do registo predial, acompanhada da caderneta predial da qual constem os correspondentes artigos matriciais;"
-   }
-  },
-  {
-   "type": "not_pdf",
-   "target": {
-    "slot": "PLANT"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
-   "type": "template_wording_missing",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   "basis": "documents",
+   "values": {
+    "declarante": "Inês Simulado Carla",
+    "assinante": "Xavier Fictício Vasco"
    }
   }
  ],
- "n_planted": 4,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

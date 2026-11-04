@@ -6,63 +6,110 @@
   "use": "Comércio e serviços",
   "fogos": 0,
   "pisos": 2,
-  "plot": 510,
-  "impl": 180,
-  "built": 331,
-  "imperm": 240,
-  "perm": 270,
-  "volume": 1026,
-  "height": 7.0,
-  "facade": 6.3,
+  "plot": 2190,
+  "impl": 870,
+  "built": 1506,
+  "imperm": 944,
+  "perm": 1246,
+  "volume": 4668,
+  "height": 7.2,
+  "facade": 6.5,
   "parking": 2,
-  "cost": 316700,
-  "submitted": "2026-12-10",
-  "site": "Rua da Escola, n.º 269, Infesta, 4890-000 Celorico de Basto",
+  "cost": 1929100,
+  "submitted": "2026-12-15",
+  "site": "Travessa do Souto, n.º 52, Veade, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 17,
+  "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Bruno Exemplo Carla",
+    "name": "Teresa Modelo Gonçalo",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "22423-SIM",
-    "address": "Rua da Escola, n.º 269, Infesta, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4324"
+    "number": "09223-SIM",
+    "address": "Travessa do Souto, n.º 52, Veade, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0968"
    },
    "arquiteto": {
-    "name": "Pedro Simulado Olga",
+    "name": "Pedro de Teste Olga",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "05582-SIM",
-    "address": "Caminho da Lameira, n.º 99, 4000-000 Porto",
-    "policy": "SIM-RC-5686"
+    "number": "32435-SIM",
+    "address": "Caminho da Lameira, n.º 46, 4000-000 Porto",
+    "policy": "SIM-RC-4235"
    },
    "engenheiro": {
-    "name": "Gonçalo de Teste Filipe",
+    "name": "Nuno Exemplo Filipe",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "33086-SIM",
-    "address": "Lugar de Vilar, n.º 12, 4000-000 Porto",
-    "policy": "SIM-RC-1546"
+    "number": "35518-SIM",
+    "address": "Rua da Escola, n.º 46, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0359"
    },
    "diretor": {
-    "name": "Eva de Teste Leonor",
+    "name": "Filipe Fictício Pedro",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "65616-SIM",
-    "address": "Lugar de Carvalhal, n.º 3, 4800-000 Guimarães",
-    "policy": "SIM-RC-9465"
+    "number": "71762-SIM",
+    "address": "Travessa do Souto, n.º 29, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9397"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "CORTES"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDPAP"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "1506 m2",
+    "MDARQ": "1602 m2"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Filipe Fictício Pedro",
+    "assinante": "Pedro de Teste Olga"
+   }
+  }
+ ],
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

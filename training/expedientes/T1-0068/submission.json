@@ -6,11 +6,11 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "João de Teste Helena",
+  "name": "Bruno Simulado Eva",
   "nif": "999999990"
  },
- "site": "Rua das Tílias, n.º 206, Basto (São Clemente), 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
+ "site": "Lugar de Carvalhal, n.º 97, Arnoia, 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
  "submitted_at": "2026-10-13",
  "files": [
   {
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -150,6 +150,13 @@
    "slot": "PI",
    "file": "PI-planta-implantacao.pdf",
    "title": "Planta de implantação",
+   "kind": "drawn",
+   "signed_by": "arquiteto"
+  },
+  {
+   "slot": "PLANT",
+   "file": "PLANT-plantas.pdf",
+   "title": "Plantas",
    "kind": "drawn",
    "signed_by": "arquiteto"
   },
@@ -407,36 +414,36 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF47537336911920.pdf",
-   "title": "Consulta a entidade externa",
+   "file": "indice-pecas-desenhadas-2021.pdf",
+   "title": "ÍNDICE DE PEÇAS DESENHADAS",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "amarante_manual_normas.pdf",
-   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
+   "file": "norma_instrucao_processo_nip.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-36",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "gouveia_termo_responsabilidade.pdf",
-   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
+   "file": "gouveia_nota_explicativa.pdf",
+   "title": "Nota explicativa — águas pluviais",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "memoria_descritiva_projeto_empresarial.pdf",
+   "file": "deliberacao_28.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-08-19",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF46421861835271.pdf",
    "title": "Memória descritiva do projeto empresarial",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "anexo_regulamento_85.pdf",
-   "title": "ANEXO III — OBRAS DE EDIFICAÇÃO",
    "kind": "written",
    "signed_by": "requerente"
   }

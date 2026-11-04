@@ -2,66 +2,79 @@
  "expediente": "T1-0060",
  "case": {
   "id": "T1-0060",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 1830,
-  "impl": 764,
-  "built": 1443,
-  "imperm": 897,
-  "perm": 933,
-  "volume": 4473,
-  "height": 7.8,
-  "facade": 7.1,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 2040,
+  "impl": 763,
+  "built": 736,
+  "imperm": 955,
+  "perm": 1085,
+  "volume": 2281,
+  "height": 4.7,
+  "facade": 4.0,
   "parking": 2,
-  "cost": 1663700,
-  "submitted": "2026-12-16",
-  "site": "Lugar de Vilar, n.º 14, Rego, 4890-000 Celorico de Basto",
+  "cost": 534300,
+  "submitted": "2026-12-05",
+  "site": "Rua da Escola, n.º 10, Vale de Bouro, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 20,
+  "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Filipe de Teste Teresa",
+    "name": "Rita Amostra Teresa",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "91306-SIM",
-    "address": "Lugar de Vilar, n.º 14, Rego, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0422"
+    "number": "55170-SIM",
+    "address": "Rua da Escola, n.º 10, Vale de Bouro, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9375"
    },
    "arquiteto": {
-    "name": "Helena Amostra Rita",
+    "name": "Xavier Amostra Inês",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "45574-SIM",
-    "address": "Lugar da Devesa, n.º 57, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1291"
+    "number": "99435-SIM",
+    "address": "Rua do Outeiro, n.º 68, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8418"
    },
    "engenheiro": {
-    "name": "Bruno Modelo Leonor",
+    "name": "Helena Fictício Miguel",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "21610-SIM",
-    "address": "Lugar de Vilar, n.º 7, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7742"
+    "number": "59498-SIM",
+    "address": "Rua das Tílias, n.º 25, 4700-000 Braga",
+    "policy": "SIM-RC-5144"
    },
    "diretor": {
-    "name": "Helena Modelo Bruno",
+    "name": "Ana Amostra Olga",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "05557-SIM",
-    "address": "Rua da Escola, n.º 62, 4800-000 Guimarães",
-    "policy": "SIM-RC-7652"
+    "number": "69413-SIM",
+    "address": "Lugar de Vilar, n.º 100, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6828"
    }
   }
  },
  "planted": [
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "204 m2",
+    "area_implantacao": "763 m2",
+    "MDARQ": "2040 m2"
+   }
+  },
   {
    "type": "not_pdf",
    "target": {
@@ -71,9 +84,20 @@
     "ref": "VI.1.a",
     "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Ana Amostra Olga",
+    "assinante": "Xavier Amostra Inês"
+   }
   }
  ],
- "n_planted": 1,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Gonçalo Amostra Xavier",
+  "name": "Carla Amostra Leonor",
   "nif": "999999990"
  },
- "site": "Travessa do Souto, n.º 100, Agilde, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-11-21",
+ "site": "Lugar de Vilar, n.º 58, Basto (São Clemente), 4890-000 Celorico de Basto",
+ "operation": "construção de armazém agrícola",
+ "submitted_at": "2026-11-27",
  "files": [
   {
    "slot": "REQ",
@@ -87,13 +87,6 @@
    "slot": "FOTO",
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
-   "kind": "written",
-   "signed_by": "arquiteto"
-  },
-  {
-   "slot": "MDARQ",
-   "file": "MDARQ-memoria-descritiva.pdf",
-   "title": "Memória descritiva e justificativa",
    "kind": "written",
    "signed_by": "arquiteto"
   },
@@ -414,36 +407,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "amarante_norma_instrucao.pdf",
-   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-30",
+   "file": "lista_elementos_nomeacao_ficheiros.pdf",
+   "title": "Lista de elementos instrutórios",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "termo_outro_53.pdf",
-   "title": "Termo de responsabilidade do diretor de obra ou do diretor d",
+   "file": "PDF77132176250523.pdf",
+   "title": "Parecer técnico — Portaria n.º 320/2026/1 e estabilidade e f",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "ficha-projeto-2020.pdf",
-   "title": "Ficha de Projeto",
+   "file": "PDF43496659708764.pdf",
+   "title": "NOTA TÉCNICA N.º 02 — PROJETOS DE TERMOS DE RESPONSABILIDADE",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "ficha_verificacao_elementos.pdf",
-   "title": "Ficha de verificação",
+   "file": "estarreja_informacao_2026.pdf",
+   "title": "INFORMAÇÃO n.º 8/2026",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "regulamento_instrucao_digital_extrato.pdf",
-   "title": "Regulamento municipal (extrato)",
+   "file": "anexo-obras-urbanizacao-2019.pdf",
+   "title": "ANEXO IV — OBRAS DE URBANIZAÇÃO",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "fatura_agua_2026_08.pdf",
+   "title": "Fatura de água",
    "kind": "written",
    "signed_by": "requerente"
   }

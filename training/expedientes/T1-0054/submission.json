@@ -6,11 +6,11 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Inês Simulado Ana",
+  "name": "Nuno de Teste Leonor",
   "nif": "999999990"
  },
- "site": "Caminho da Lameira, n.º 78, Fervença, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de comércio e serviços",
+ "site": "Travessa do Souto, n.º 274, Borba de Montanha, 4890-000 Celorico de Basto",
+ "operation": "alteração e ampliação de moradia unifamiliar",
  "submitted_at": "2026-10-22",
  "files": [
   {
@@ -414,29 +414,50 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "castro_guia_tecnico.pdf",
-   "title": "Guia Técnico para Projetos de Estimativa do custo total da o",
+   "file": "copia-parte-ata-2023.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-02-26",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "fatura_agua_2026_08.pdf",
-   "title": "Fatura de água",
+   "file": "norma_instrucao_processo_nip.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-33",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "manual_26.pdf",
-   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
+   "file": "lista-pecas-2021.pdf",
+   "title": "LISTA DE PEÇAS",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "ficha_verificacao_elementos.pdf",
-   "title": "Ficha de verificação",
+   "file": "cv_requerente.pdf",
+   "title": "Curriculum vitae",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "ficha_projeto_23.pdf",
+   "title": "Ficha de Projeto",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "nota_tecnica_projetos_levantamento.pdf",
+   "title": "NOTA TÉCNICA N.º 23 — PROJETOS DE LEVANTAMENTO TOPOGRÁFICO",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF87073124866046.pdf",
+   "title": "ANEXO IV — OBRAS DE URBANIZAÇÃO",
    "kind": "written",
    "signed_by": "requerente"
   }

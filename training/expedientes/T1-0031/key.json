@@ -6,58 +6,58 @@
   "use": "Habitação bifamiliar",
   "fogos": 2,
   "pisos": 2,
-  "plot": 1120,
-  "impl": 230,
-  "built": 404,
-  "imperm": 292,
-  "perm": 828,
-  "volume": 1252,
-  "height": 7.6,
-  "facade": 6.9,
+  "plot": 3480,
+  "impl": 1028,
+  "built": 1905,
+  "imperm": 1136,
+  "perm": 2344,
+  "volume": 5905,
+  "height": 7.0,
+  "facade": 6.3,
   "parking": 4,
-  "cost": 519500,
-  "submitted": "2026-10-11",
-  "site": "Rua das Tílias, n.º 109, Carvalho, 4890-000 Celorico de Basto",
+  "cost": 1337300,
+  "submitted": "2026-12-19",
+  "site": "Rua das Tílias, n.º 229, Vale de Bouro, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 9,
+  "months": 14,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Pedro Fictício Nuno",
+    "name": "Teresa Simulado Teresa",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "15762-SIM",
-    "address": "Rua das Tílias, n.º 109, Carvalho, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4747"
+    "number": "70376-SIM",
+    "address": "Rua das Tílias, n.º 229, Vale de Bouro, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9309"
    },
    "arquiteto": {
-    "name": "Sérgio Amostra Pedro",
+    "name": "Helena Exemplo Olga",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "45105-SIM",
-    "address": "Travessa do Souto, n.º 9, 4000-000 Porto",
-    "policy": "SIM-RC-3784"
+    "number": "88617-SIM",
+    "address": "Rua do Outeiro, n.º 65, 4000-000 Porto",
+    "policy": "SIM-RC-8061"
    },
    "engenheiro": {
-    "name": "Diogo Modelo Pedro",
+    "name": "Ana Amostra Bruno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "94682-SIM",
-    "address": "Lugar de Carvalhal, n.º 2, 4700-000 Braga",
-    "policy": "SIM-RC-7507"
+    "number": "96176-SIM",
+    "address": "Caminho da Lameira, n.º 58, 4000-000 Porto",
+    "policy": "SIM-RC-2608"
    },
    "diretor": {
-    "name": "Olga Modelo Diogo",
+    "name": "Ana Simulado João",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "26193-SIM",
-    "address": "Rua da Escola, n.º 32, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-3510"
+    "number": "12323-SIM",
+    "address": "Rua do Outeiro, n.º 88, 4800-000 Guimarães",
+    "policy": "SIM-RC-5889"
    }
   }
  },
@@ -65,15 +65,51 @@
   {
    "type": "not_pdfa",
    "target": {
-    "slot": "CEO"
+    "slot": "MDPAP"
    },
    "law": {
     "ref": "VI.1.a",
     "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TREECP"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "1905 m2",
+    "MDARQ": "1786 m2"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Ana Simulado João",
+    "assinante": "Helena Exemplo Olga"
+   }
   }
  ],
- "n_planted": 1,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

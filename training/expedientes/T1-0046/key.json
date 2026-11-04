@@ -2,67 +2,78 @@
  "expediente": "T1-0046",
  "case": {
   "id": "T1-0046",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 3,
-  "plot": 2710,
-  "impl": 549,
-  "built": 1555,
-  "imperm": 594,
-  "perm": 2116,
-  "volume": 4820,
-  "height": 10.1,
-  "facade": 9.4,
-  "parking": 4,
-  "cost": 1887700,
-  "submitted": "2026-12-10",
-  "site": "Travessa do Souto, n.º 27, Rego, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 2,
+  "plot": 1740,
+  "impl": 706,
+  "built": 1280,
+  "imperm": 825,
+  "perm": 915,
+  "volume": 3968,
+  "height": 6.8,
+  "facade": 6.1,
+  "parking": 2,
+  "cost": 1057200,
+  "submitted": "2026-11-09",
+  "site": "Rua da Escola, n.º 57, Britelo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 12,
+  "months": 13,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Miguel Fictício Carla",
+    "name": "Pedro Exemplo Helena",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "60821-SIM",
-    "address": "Travessa do Souto, n.º 27, Rego, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1652"
+    "number": "98823-SIM",
+    "address": "Rua da Escola, n.º 57, Britelo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6440"
    },
    "arquiteto": {
-    "name": "Gonçalo Modelo Leonor",
+    "name": "Olga Amostra Carla",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "21796-SIM",
-    "address": "Lugar de Vilar, n.º 43, 4000-000 Porto",
-    "policy": "SIM-RC-3419"
+    "number": "66024-SIM",
+    "address": "Rua das Tílias, n.º 16, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6023"
    },
    "engenheiro": {
-    "name": "João Modelo Vasco",
+    "name": "Helena Exemplo Olga",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "09626-SIM",
-    "address": "Lugar de Carvalhal, n.º 73, 4800-000 Guimarães",
-    "policy": "SIM-RC-8196"
+    "number": "53434-SIM",
+    "address": "Rua das Tílias, n.º 105, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1261"
    },
    "diretor": {
-    "name": "Pedro Exemplo Miguel",
+    "name": "Diogo de Teste Leonor",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "69597-SIM",
-    "address": "Lugar de Carvalhal, n.º 104, 4700-000 Braga",
-    "policy": "SIM-RC-2336"
+    "number": "87264-SIM",
+    "address": "Lugar de Vilar, n.º 11, 4700-000 Braga",
+    "policy": "SIM-RC-0542"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "CEO"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  }
+ ],
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

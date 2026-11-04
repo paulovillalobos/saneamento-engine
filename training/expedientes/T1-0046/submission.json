@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Miguel Fictício Carla",
+  "name": "Pedro Exemplo Helena",
   "nif": "999999990"
  },
- "site": "Travessa do Souto, n.º 27, Rego, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-12-10",
+ "site": "Rua da Escola, n.º 57, Britelo, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
+ "submitted_at": "2026-11-09",
  "files": [
   {
    "slot": "REQ",
@@ -414,36 +414,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "indice_pecas_62.pdf",
-   "title": "LISTA DE PEÇAS",
+   "file": "postura-projetos-registo-2019.pdf",
+   "title": "Postura Municipal Referente a Projetos de Registo fotográfic",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "benavente_pedido_parecer.pdf",
-   "title": "PEDIDO DE PARECER - ELEMENTOS A REMETER",
+   "file": "PDF10927645676639.pdf",
+   "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF20437084609899.pdf",
-   "title": "Termo de Responsabilidade",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "PDF39711351126979.pdf",
-   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-06",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "PDF13351430602742.pdf",
-   "title": "PARECER",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
    "kind": "written",
    "signed_by": "requerente"
   }

@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Vasco Fictício Gonçalo",
+  "name": "Filipe Amostra Bruno",
   "nif": "999999990"
  },
- "site": "Rua da Escola, n.º 46, Canedo de Basto, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-12-16",
+ "site": "Rua da Escola, n.º 257, Gagos, 4890-000 Celorico de Basto",
+ "operation": "ampliação de moradia unifamiliar",
+ "submitted_at": "2026-12-27",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -165,7 +165,7 @@
    "file": "ALC-alcados.pdf",
    "title": "Alçados",
    "kind": "drawn",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "CORTES",
@@ -414,36 +414,36 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "ficha_verificacao_elementos.pdf",
-   "title": "Ficha de verificação",
+   "file": "norma_22.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-28",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "gouveia_minuta_memoria.pdf",
-   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
+   "file": "postura_projetos_plano_acessibilidades.pdf",
+   "title": "Postura Municipal Referente a Projetos de Plano de acessibil",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "norma_instrucao_processo_nip.pdf",
-   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-26",
+   "file": "plano_acessibilidade_todos_capitulo.pdf",
+   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "ficha_projeto.pdf",
-   "title": "Ficha de Projeto",
+   "file": "nota_tecnica_projetos_infraestruturas.pdf",
+   "title": "NOTA TÉCNICA N.º 39 — PROJETOS DE INFRAESTRUTURAS DE TELECOM",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "viseu_memoria_descritiva.pdf",
-   "title": "Memória descritiva do projeto empresarial",
+   "file": "valpaços_norma_instrucao.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-01",
    "kind": "written",
    "signed_by": "requerente"
   }

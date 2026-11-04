@@ -2,67 +2,112 @@
  "expediente": "T1-0049",
  "case": {
   "id": "T1-0049",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 1620,
-  "impl": 721,
-  "built": 1231,
-  "imperm": 880,
-  "perm": 740,
-  "volume": 3816,
-  "height": 6.7,
-  "facade": 6.0,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 3,
+  "plot": 2050,
+  "impl": 690,
+  "built": 2035,
+  "imperm": 881,
+  "perm": 1169,
+  "volume": 6308,
+  "height": 10.5,
+  "facade": 9.8,
   "parking": 2,
-  "cost": 1197700,
-  "submitted": "2026-12-04",
-  "site": "Lugar de Vilar, n.º 155, Rego, 4890-000 Celorico de Basto",
+  "cost": 1532300,
+  "submitted": "2026-10-17",
+  "site": "Lugar da Devesa, n.º 116, Canedo de Basto, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 12,
+  "months": 23,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Carla Modelo Rita",
+    "name": "Pedro Amostra Teresa",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "69284-SIM",
-    "address": "Lugar de Vilar, n.º 155, Rego, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2451"
+    "number": "51736-SIM",
+    "address": "Lugar da Devesa, n.º 116, Canedo de Basto, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6896"
    },
    "arquiteto": {
-    "name": "Pedro Exemplo Xavier",
+    "name": "Pedro Amostra Carla",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "43956-SIM",
-    "address": "Caminho da Lameira, n.º 64, 4000-000 Porto",
-    "policy": "SIM-RC-8681"
+    "number": "93513-SIM",
+    "address": "Caminho da Lameira, n.º 84, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2812"
    },
    "engenheiro": {
-    "name": "Eva Simulado Carla",
+    "name": "Rita Modelo Bruno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "27897-SIM",
-    "address": "Lugar da Devesa, n.º 62, 4700-000 Braga",
-    "policy": "SIM-RC-2864"
+    "number": "11389-SIM",
+    "address": "Lugar de Carvalhal, n.º 3, 4800-000 Guimarães",
+    "policy": "SIM-RC-3963"
    },
    "diretor": {
-    "name": "Eva Exemplo Bruno",
+    "name": "Filipe de Teste Pedro",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "10776-SIM",
-    "address": "Lugar da Devesa, n.º 82, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4116"
+    "number": "13072-SIM",
+    "address": "Lugar de Carvalhal, n.º 78, 4800-000 Guimarães",
+    "policy": "SIM-RC-4625"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "impossible_value",
+   "target": {
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "205 m2",
+    "area_implantacao": "690 m2",
+    "MDARQ": "2050 m2"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "PLANT"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRCP"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Filipe de Teste Pedro",
+    "assinante": "Pedro Amostra Carla"
+   }
+  }
+ ],
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

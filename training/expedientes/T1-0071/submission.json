@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Eva Simulado Filipe",
+  "name": "Ana Fictício Diogo",
   "nif": "999999990"
  },
- "site": "Rua do Outeiro, n.º 149, Britelo, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de habitação bifamiliar",
- "submitted_at": "2026-12-06",
+ "site": "Rua da Escola, n.º 6, Britelo, 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
+ "submitted_at": "2026-12-21",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -88,7 +88,7 @@
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": null
   },
   {
    "slot": "MDARQ",
@@ -406,44 +406,37 @@
    "signed_by": "seguradora"
   },
   {
+   "slot": "IMPIC",
+   "file": "IMPIC-alvara-impic.pdf",
+   "title": "Número do alvará emitido pelo IMPIC, I. P.",
+   "kind": "written",
+   "signed_by": "diretor"
+  },
+  {
    "slot": "OUTDOC",
-   "file": "diagnostico_16.pdf",
-   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
+   "file": "nota_tecnica_projetos_memoria.pdf",
+   "title": "NOTA TÉCNICA N.º 32 — PROJETOS DE MEMÓRIA DESCRITIVA E JUSTI",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "termo_outro_08.pdf",
-   "title": "Termo de Responsabilidade",
+   "file": "indice_pecas_14.pdf",
+   "title": "PEÇAS ESCRITAS E DESENHADAS - ÍNDICE",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "minuta-memoria-descritiva-2023.pdf",
-   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
+   "file": "lista-pecas-2023.pdf",
+   "title": "LISTA DE PEÇAS",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "fatura_agua_2026_08.pdf",
-   "title": "Fatura de água",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "instrucoes_63.pdf",
-   "title": "Instruções Preenchimento_Q3",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "benavente_guia_tecnico.pdf",
-   "title": "Guia Técnico para Projetos de Redes prediais de água e esgot",
+   "file": "indice_pecas_95.pdf",
+   "title": "LISTA DE PEÇAS",
    "kind": "written",
    "signed_by": "requerente"
   }

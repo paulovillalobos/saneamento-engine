@@ -2,62 +2,62 @@
  "expediente": "T1-0063",
  "case": {
   "id": "T1-0063",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
-  "fogos": 0,
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
   "pisos": 1,
-  "plot": 3960,
-  "impl": 1115,
-  "built": 1105,
-  "imperm": 1217,
-  "perm": 2743,
-  "volume": 3425,
-  "height": 4.4,
-  "facade": 3.7,
+  "plot": 1010,
+  "impl": 134,
+  "built": 127,
+  "imperm": 232,
+  "perm": 778,
+  "volume": 393,
+  "height": 3.7,
+  "facade": 3.0,
   "parking": 2,
-  "cost": 855200,
-  "submitted": "2026-12-10",
-  "site": "Rua das Tílias, n.º 114, Corgo, 4890-000 Celorico de Basto",
+  "cost": 92200,
+  "submitted": "2026-11-10",
+  "site": "Rua do Outeiro, n.º 132, Vale de Bouro, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 20,
+  "months": 8,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Teresa Modelo Carla",
+    "name": "Filipe de Teste Nuno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "53717-SIM",
-    "address": "Rua das Tílias, n.º 114, Corgo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4155"
+    "number": "67693-SIM",
+    "address": "Rua do Outeiro, n.º 132, Vale de Bouro, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9149"
    },
    "arquiteto": {
-    "name": "Helena de Teste Carla",
+    "name": "Ana Modelo Xavier",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "34876-SIM",
-    "address": "Rua das Tílias, n.º 14, 4700-000 Braga",
-    "policy": "SIM-RC-3961"
+    "number": "90427-SIM",
+    "address": "Lugar da Devesa, n.º 30, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7555"
    },
    "engenheiro": {
-    "name": "Rita de Teste Pedro",
+    "name": "Vasco Simulado Inês",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "54322-SIM",
-    "address": "Travessa do Souto, n.º 66, 4800-000 Guimarães",
-    "policy": "SIM-RC-0590"
+    "number": "04301-SIM",
+    "address": "Travessa do Souto, n.º 70, 4800-000 Guimarães",
+    "policy": "SIM-RC-6428"
    },
    "diretor": {
-    "name": "Olga Fictício Nuno",
+    "name": "Filipe Exemplo Gonçalo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "75147-SIM",
-    "address": "Caminho da Lameira, n.º 79, 4700-000 Braga",
-    "policy": "SIM-RC-2184"
+    "number": "90797-SIM",
+    "address": "Rua do Outeiro, n.º 38, 4800-000 Guimarães",
+    "policy": "SIM-RC-2326"
    }
   }
  },
@@ -70,23 +70,38 @@
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "396 m2",
-    "area_implantacao": "1115 m2",
-    "MDARQ": "3960 m2"
+    "area_parcela": "101 m2",
+    "area_implantacao": "134 m2",
+    "MDARQ": "1010 m2"
    }
   },
   {
-   "type": "missing_required",
+   "type": "not_pdfa",
    "target": {
-    "slot": "CRP"
+    "slot": "MDPAP"
    },
    "law": {
-    "ref": "V.5",
-    "quote": "5 - Indicação do código de acesso à certidão permanente do registo predial referente ao prédio ou prédios abrangidos pela operação urbanística ou, quando omisso, a respetiva certidão negativa do registo predial, acompanhada da caderneta predial da qual constem os correspondentes artigos matriciais;"
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "127 m2",
+    "MDARQ": "69 m2"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

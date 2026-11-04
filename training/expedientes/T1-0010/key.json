@@ -2,79 +2,67 @@
  "expediente": "T1-0010",
  "case": {
   "id": "T1-0010",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
-  "fogos": 0,
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
   "pisos": 1,
-  "plot": 2960,
-  "impl": 450,
-  "built": 405,
-  "imperm": 617,
-  "perm": 2343,
-  "volume": 1255,
-  "height": 3.7,
-  "facade": 3.0,
+  "plot": 810,
+  "impl": 190,
+  "built": 178,
+  "imperm": 384,
+  "perm": 426,
+  "volume": 551,
+  "height": 4.8,
+  "facade": 4.1,
   "parking": 2,
-  "cost": 387500,
-  "submitted": "2026-12-18",
-  "site": "Lugar da Devesa, n.º 214, Gagos, 4890-000 Celorico de Basto",
+  "cost": 134000,
+  "submitted": "2026-12-01",
+  "site": "Lugar de Vilar, n.º 160, Borba de Montanha, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 18,
+  "months": 21,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Miguel de Teste Leonor",
+    "name": "Ana Simulado Inês",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "99138-SIM",
-    "address": "Lugar da Devesa, n.º 214, Gagos, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2438"
+    "number": "82826-SIM",
+    "address": "Lugar de Vilar, n.º 160, Borba de Montanha, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5665"
    },
    "arquiteto": {
-    "name": "Leonor Amostra Leonor",
+    "name": "Helena Amostra Bruno",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "43934-SIM",
-    "address": "Travessa do Souto, n.º 58, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7860"
+    "number": "34991-SIM",
+    "address": "Caminho da Lameira, n.º 93, 4000-000 Porto",
+    "policy": "SIM-RC-6695"
    },
    "engenheiro": {
-    "name": "Pedro de Teste Nuno",
+    "name": "Sérgio de Teste Helena",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "11245-SIM",
-    "address": "Rua da Escola, n.º 18, 4000-000 Porto",
-    "policy": "SIM-RC-8581"
+    "number": "16585-SIM",
+    "address": "Rua das Tílias, n.º 85, 4800-000 Guimarães",
+    "policy": "SIM-RC-4570"
    },
    "diretor": {
-    "name": "Rita Modelo Inês",
+    "name": "Sérgio Amostra Inês",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "33160-SIM",
-    "address": "Lugar da Devesa, n.º 47, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6596"
+    "number": "49776-SIM",
+    "address": "Rua da Escola, n.º 1, 4000-000 Porto",
+    "policy": "SIM-RC-5243"
    }
   }
  },
- "planted": [
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
-   },
-   "basis": "documents",
-   "values": {
-    "declarante": "Rita Modelo Inês",
-    "assinante": "Leonor Amostra Leonor"
-   }
-  }
- ],
- "n_planted": 1,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Helena Modelo Diogo",
+  "name": "Bruno Modelo Filipe",
   "nif": "999999990"
  },
- "site": "Lugar de Carvalhal, n.º 197, Carvalho, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-28",
+ "site": "Travessa do Souto, n.º 182, Caçarilhe, 4890-000 Celorico de Basto",
+ "operation": "ampliação de moradia unifamiliar",
+ "submitted_at": "2026-12-25",
  "files": [
   {
    "slot": "REQ",
@@ -46,7 +46,7 @@
    "file": "TRCP-termo-coordenador.pdf",
    "title": "Termo de responsabilidade do coordenador de projeto",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCCP",
@@ -414,29 +414,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "informacao-2026-2022.pdf",
-   "title": "INFORMAÇÃO n.º 32/2026",
+   "file": "PDF40292474498225.pdf",
+   "title": "NOTA TÉCNICA N.º 25 — PROJETOS DE INFRAESTRUTURAS DE TELECOM",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "gouveia_parecer_tecnico.pdf",
-   "title": "Parecer técnico",
+   "file": "vila_copia_parte.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-01-04",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF26542448920885.pdf",
-   "title": "ANEXO III — OBRAS DE EDIFICAÇÃO",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "ficha_verificacao_elementos.pdf",
-   "title": "Ficha de verificação",
+   "file": "ficha_projeto.pdf",
+   "title": "Ficha de Projeto",
    "kind": "written",
    "signed_by": "requerente"
   }

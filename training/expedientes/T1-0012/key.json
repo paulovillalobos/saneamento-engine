@@ -2,62 +2,62 @@
  "expediente": "T1-0012",
  "case": {
   "id": "T1-0012",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
   "pisos": 2,
-  "plot": 2020,
-  "impl": 310,
-  "built": 597,
-  "imperm": 498,
-  "perm": 1522,
-  "volume": 1850,
-  "height": 7.0,
-  "facade": 6.3,
-  "parking": 2,
-  "cost": 551000,
-  "submitted": "2026-10-18",
-  "site": "Lugar de Carvalhal, n.º 154, Caçarilhe, 4890-000 Celorico de Basto",
+  "plot": 3180,
+  "impl": 760,
+  "built": 1370,
+  "imperm": 947,
+  "perm": 2233,
+  "volume": 4247,
+  "height": 6.9,
+  "facade": 6.2,
+  "parking": 4,
+  "cost": 949400,
+  "submitted": "2026-11-09",
+  "site": "Rua do Outeiro, n.º 68, Vale de Bouro, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 15,
+  "months": 10,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Sérgio de Teste Inês",
+    "name": "Leonor Modelo Leonor",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "93571-SIM",
-    "address": "Lugar de Carvalhal, n.º 154, Caçarilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2134"
+    "number": "63431-SIM",
+    "address": "Rua do Outeiro, n.º 68, Vale de Bouro, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8212"
    },
    "arquiteto": {
-    "name": "Inês Fictício Olga",
+    "name": "Helena Exemplo Teresa",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "74511-SIM",
-    "address": "Rua da Escola, n.º 69, 4700-000 Braga",
-    "policy": "SIM-RC-6780"
+    "number": "94305-SIM",
+    "address": "Rua da Escola, n.º 67, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4337"
    },
    "engenheiro": {
-    "name": "Inês de Teste Rita",
+    "name": "João Exemplo Leonor",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "92150-SIM",
-    "address": "Caminho da Lameira, n.º 35, 4800-000 Guimarães",
-    "policy": "SIM-RC-3513"
+    "number": "47028-SIM",
+    "address": "Rua do Outeiro, n.º 29, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2177"
    },
    "diretor": {
-    "name": "Rita de Teste Xavier",
+    "name": "Eva Exemplo Vasco",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "62675-SIM",
-    "address": "Rua do Outeiro, n.º 44, 4700-000 Braga",
-    "policy": "SIM-RC-9925"
+    "number": "98552-SIM",
+    "address": "Travessa do Souto, n.º 108, 4700-000 Braga",
+    "policy": "SIM-RC-3269"
    }
   }
  },
@@ -65,47 +65,25 @@
   {
    "type": "missing_required",
    "target": {
-    "slot": "LEVT"
+    "slot": "PC"
    },
    "law": {
-    "ref": "V.7",
-    "quote": "7 - Levantamento topográfico georreferenciado, acompanhado por termo de responsabilidade, sempre que haja alteração da topografia ou da implantação das construções, à escala de 1:200, ou de 1:500 no caso de loteamentos, devidamente cotado, que identifique o prédio e a respetiva área, construções nela erigidas, assim como o espaço público envolvente (vias, passeios, estacionamentos, árvores e infraestruturas ou instalações aí localizadas, incluindo postes, tampas, sinalização e mobiliário urbano);"
+    "ref": "V.27.b.iv",
+    "quote": "iv) Pormenores de construção, à escala adequada, esclarecendo a solução construtiva adotada para as paredes exteriores do edifício e sua articulação com a cobertura, vãos de iluminação/ventilação e de acesso, bem como com o pavimento exterior envolvente;"
    }
   },
   {
-   "type": "unsigned",
-   "target": {
-    "slot": "TRCP"
-   },
-   "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
-   },
-   "basis": "documents",
-   "values": {
-    "declarante": "Rita de Teste Xavier",
-    "assinante": "Inês Fictício Olga"
-   }
-  },
-  {
-   "type": "wrong_site",
+   "type": "template_wording_missing",
    "target": {
     "slot": "TRPARQ"
    },
-   "basis": "documents",
-   "values": {
-    "REQ": "Lugar de Carvalhal, n.º 154, Caçarilhe, 4890-000 Celorico de Basto",
-    "TRPARQ": "Lugar da Devesa, n.º 271, Canedo de Basto, 4890-000 Celorico de Basto"
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
   }
  ],
- "n_planted": 4,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

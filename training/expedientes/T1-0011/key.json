@@ -2,91 +2,83 @@
  "expediente": "T1-0011",
  "case": {
   "id": "T1-0011",
-  "work": "alteração e ampliação de moradia unifamiliar",
+  "work": "ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 3270,
-  "impl": 880,
-  "built": 1530,
-  "imperm": 1013,
-  "perm": 2257,
-  "volume": 4743,
-  "height": 7.3,
-  "facade": 6.6,
+  "plot": 3020,
+  "impl": 480,
+  "built": 869,
+  "imperm": 660,
+  "perm": 2360,
+  "volume": 2693,
+  "height": 7.0,
+  "facade": 6.3,
   "parking": 2,
-  "cost": 1855800,
-  "submitted": "2026-10-09",
-  "site": "Rua da Escola, n.º 218, Molares, 4890-000 Celorico de Basto",
+  "cost": 934100,
+  "submitted": "2026-12-11",
+  "site": "Rua da Escola, n.º 161, Caçarilhe, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 9,
+  "months": 19,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Miguel Exemplo Nuno",
+    "name": "Ana Modelo Pedro",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "37903-SIM",
-    "address": "Rua da Escola, n.º 218, Molares, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1476"
+    "number": "38003-SIM",
+    "address": "Rua da Escola, n.º 161, Caçarilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8874"
    },
    "arquiteto": {
-    "name": "Ana Exemplo Inês",
+    "name": "Bruno Simulado Ana",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "61865-SIM",
-    "address": "Caminho da Lameira, n.º 102, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7888"
+    "number": "43821-SIM",
+    "address": "Lugar da Devesa, n.º 108, 4800-000 Guimarães",
+    "policy": "SIM-RC-9467"
    },
    "engenheiro": {
-    "name": "Leonor Exemplo Pedro",
+    "name": "Xavier Exemplo Gonçalo",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "16271-SIM",
-    "address": "Lugar de Carvalhal, n.º 46, 4700-000 Braga",
-    "policy": "SIM-RC-6803"
+    "number": "74042-SIM",
+    "address": "Rua do Outeiro, n.º 44, 4000-000 Porto",
+    "policy": "SIM-RC-3482"
    },
    "diretor": {
-    "name": "Eva Simulado Filipe",
+    "name": "Filipe Amostra Sérgio",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "35109-SIM",
-    "address": "Lugar da Devesa, n.º 110, 4700-000 Braga",
-    "policy": "SIM-RC-9660"
+    "number": "60710-SIM",
+    "address": "Rua das Tílias, n.º 114, 4700-000 Braga",
+    "policy": "SIM-RC-8699"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "value_mismatch",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "327 m2",
-    "area_implantacao": "880 m2",
-    "MDARQ": "3270 m2"
-   }
-  },
-  {
-   "type": "not_pdfa",
-   "target": {
-    "slot": "CEO"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    "REQ": "869 m2",
+    "MDARQ": "978 m2"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

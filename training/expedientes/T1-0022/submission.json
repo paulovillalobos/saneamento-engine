@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Vasco Fictício Teresa",
+  "name": "Miguel Amostra Xavier",
   "nif": "999999990"
  },
- "site": "Lugar de Vilar, n.º 155, Carvalho, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-12",
+ "site": "Rua da Escola, n.º 132, Moreira do Castelo, 4890-000 Celorico de Basto",
+ "operation": "construção de armazém agrícola",
+ "submitted_at": "2026-12-25",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCDO",
@@ -87,6 +87,13 @@
    "slot": "FOTO",
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
+   "kind": "written",
+   "signed_by": "arquiteto"
+  },
+  {
+   "slot": "MDARQ",
+   "file": "MDARQ-memoria-descritiva.pdf",
+   "title": "Memória descritiva e justificativa",
    "kind": "written",
    "signed_by": "arquiteto"
   },
@@ -407,36 +414,50 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "memoria_empresa_44.pdf",
+   "file": "copia-parte-ata-2024.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-03-24",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF64076502828500.pdf",
+   "title": "Termo de responsabilidade do diretor de obra ou do diretor d",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF40247389859487.pdf",
+   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "memoria_empresa_77.pdf",
    "title": "MINUTA DA MEMÓRIA DESCRITIVA",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "copia_parte_ata_reuniao.pdf",
-   "title": "Cópia de parte da ata da reunião de 2026-10-23",
+   "file": "PDF85948268086147.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-05",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "termo_outro_07.pdf",
-   "title": "Termo de responsabilidade do diretor de obra ou do diretor d",
+   "file": "carta_cmcb.pdf",
+   "title": "Carta",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "gouveia_termo_responsabilidade.pdf",
-   "title": "Termo de responsabilidade do diretor de obra ou do diretor d",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "instrucoes_preenchimento.pdf",
-   "title": "Instruções Preenchimento_Q3",
+   "file": "nota-tecnica-projetos-2026.pdf",
+   "title": "NOTA TÉCNICA N.º 22 — PROJETOS DE INFRAESTRUTURAS DE TELECOM",
    "kind": "written",
    "signed_by": "requerente"
   }

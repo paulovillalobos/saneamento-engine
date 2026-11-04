@@ -2,94 +2,102 @@
  "expediente": "T1-0053",
  "case": {
   "id": "T1-0053",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 2370,
-  "impl": 569,
-  "built": 1123,
-  "imperm": 718,
-  "perm": 1652,
-  "volume": 3481,
-  "height": 7.1,
-  "facade": 6.4,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 700,
+  "impl": 271,
+  "built": 241,
+  "imperm": 405,
+  "perm": 295,
+  "volume": 747,
+  "height": 4.4,
+  "facade": 3.7,
   "parking": 2,
-  "cost": 1162300,
-  "submitted": "2026-12-01",
-  "site": "Rua da Escola, n.º 250, Infesta, 4890-000 Celorico de Basto",
+  "cost": 194700,
+  "submitted": "2026-11-18",
+  "site": "Rua do Outeiro, n.º 217, Moreira do Castelo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 15,
+  "months": 10,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Diogo Simulado Miguel",
+    "name": "Nuno Fictício Carla",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "11101-SIM",
-    "address": "Rua da Escola, n.º 250, Infesta, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2011"
+    "number": "78941-SIM",
+    "address": "Rua do Outeiro, n.º 217, Moreira do Castelo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3162"
    },
    "arquiteto": {
-    "name": "Helena Fictício Pedro",
+    "name": "Helena Modelo Nuno",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "98146-SIM",
-    "address": "Travessa do Souto, n.º 22, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7757"
+    "number": "88989-SIM",
+    "address": "Caminho da Lameira, n.º 83, 4800-000 Guimarães",
+    "policy": "SIM-RC-6834"
    },
    "engenheiro": {
-    "name": "Miguel Fictício Helena",
+    "name": "Inês Exemplo João",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "06703-SIM",
-    "address": "Caminho da Lameira, n.º 84, 4800-000 Guimarães",
-    "policy": "SIM-RC-8910"
+    "number": "24121-SIM",
+    "address": "Rua da Escola, n.º 70, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5792"
    },
    "diretor": {
-    "name": "Teresa Exemplo Xavier",
+    "name": "Olga Fictício Helena",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "37948-SIM",
-    "address": "Rua do Outeiro, n.º 2, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7703"
+    "number": "60934-SIM",
+    "address": "Rua da Escola, n.º 30, 4000-000 Porto",
+    "policy": "SIM-RC-1320"
    }
   }
  },
  "planted": [
   {
-   "type": "not_pdf",
+   "type": "impossible_value",
    "target": {
-    "slot": "CORTES"
+    "field": "area_parcela",
+    "slot": "REQ"
    },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  },
-  {
-   "type": "not_pdfa",
-   "target": {
-    "slot": "MDARQ"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   "basis": "documents",
+   "values": {
+    "area_parcela": "7000 m2",
+    "area_implantacao": "271 m2",
+    "MDARQ": "700 m2"
    }
   },
   {
    "type": "unsigned",
    "target": {
-    "slot": "TRPLAC"
+    "slot": "TRDO"
    },
    "law": {
     "ref": "VI.1",
     "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "241 m2",
+    "MDARQ": "157 m2"
    }
   }
  ],

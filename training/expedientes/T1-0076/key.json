@@ -2,109 +2,67 @@
  "expediente": "T1-0076",
  "case": {
   "id": "T1-0076",
-  "work": "ampliação de moradia unifamiliar",
+  "work": "construção de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 1,
-  "plot": 1040,
-  "impl": 425,
-  "built": 390,
-  "imperm": 514,
-  "perm": 526,
-  "volume": 1209,
-  "height": 3.7,
-  "facade": 3.0,
+  "plot": 760,
+  "impl": 243,
+  "built": 210,
+  "imperm": 384,
+  "perm": 376,
+  "volume": 651,
+  "height": 4.0,
+  "facade": 3.3,
   "parking": 2,
-  "cost": 288200,
-  "submitted": "2026-10-21",
-  "site": "Travessa do Souto, n.º 255, Canedo de Basto, 4890-000 Celorico de Basto",
+  "cost": 254100,
+  "submitted": "2026-11-15",
+  "site": "Caminho da Lameira, n.º 120, Molares, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 23,
+  "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Pedro Modelo Nuno",
+    "name": "Diogo de Teste Miguel",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "30629-SIM",
-    "address": "Travessa do Souto, n.º 255, Canedo de Basto, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0864"
+    "number": "95085-SIM",
+    "address": "Caminho da Lameira, n.º 120, Molares, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5765"
    },
    "arquiteto": {
-    "name": "João Exemplo Bruno",
+    "name": "Eva Simulado Sérgio",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "21361-SIM",
-    "address": "Rua do Outeiro, n.º 27, 4700-000 Braga",
-    "policy": "SIM-RC-3501"
+    "number": "51401-SIM",
+    "address": "Rua das Tílias, n.º 14, 4700-000 Braga",
+    "policy": "SIM-RC-9981"
    },
    "engenheiro": {
-    "name": "Eva Simulado Nuno",
+    "name": "Filipe Simulado Olga",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "83371-SIM",
-    "address": "Rua da Escola, n.º 97, 4800-000 Guimarães",
-    "policy": "SIM-RC-6028"
+    "number": "38416-SIM",
+    "address": "Lugar de Vilar, n.º 92, 4700-000 Braga",
+    "policy": "SIM-RC-4034"
    },
    "diretor": {
-    "name": "Miguel de Teste Eva",
+    "name": "Inês Exemplo Olga",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "43226-SIM",
-    "address": "Lugar da Devesa, n.º 69, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0963"
+    "number": "73681-SIM",
+    "address": "Lugar da Devesa, n.º 20, 4800-000 Guimarães",
+    "policy": "SIM-RC-4429"
    }
   }
  },
- "planted": [
-  {
-   "type": "missing_required",
-   "target": {
-    "slot": "PLANT"
-   },
-   "law": {
-    "ref": "V.27.b.i",
-    "quote": "i) Plantas à escala de 1:50 ou de 1:100 contendo as dimensões e áreas e utilizações de todos os compartimentos, bem como a representação do mobiliário fixo e equipamento sanitário;"
-   }
-  },
-  {
-   "type": "template_wording_missing",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
-   }
-  },
-  {
-   "type": "unsigned",
-   "target": {
-    "slot": "TRCP"
-   },
-   "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
-   }
-  },
-  {
-   "type": "wrong_site",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "Travessa do Souto, n.º 255, Canedo de Basto, 4890-000 Celorico de Basto",
-    "TRPARQ": "Rua da Escola, n.º 250, Caçarilhe, 4890-000 Celorico de Basto"
-   }
-  }
- ],
- "n_planted": 4,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

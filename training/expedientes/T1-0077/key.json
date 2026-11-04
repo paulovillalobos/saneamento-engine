@@ -2,67 +2,93 @@
  "expediente": "T1-0077",
  "case": {
   "id": "T1-0077",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 330,
-  "impl": 137,
-  "built": 240,
-  "imperm": 185,
-  "perm": 145,
-  "volume": 744,
-  "height": 7.0,
-  "facade": 6.3,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 3210,
+  "impl": 1391,
+  "built": 1214,
+  "imperm": 1447,
+  "perm": 1763,
+  "volume": 3763,
+  "height": 4.3,
+  "facade": 3.6,
   "parking": 2,
-  "cost": 238300,
-  "submitted": "2026-12-17",
-  "site": "Caminho da Lameira, n.º 85, Molares, 4890-000 Celorico de Basto",
+  "cost": 1566000,
+  "submitted": "2026-11-20",
+  "site": "Rua do Outeiro, n.º 265, Carvalho, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 17,
+  "months": 11,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "João Exemplo Sérgio",
+    "name": "Nuno Modelo Leonor",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "43486-SIM",
-    "address": "Caminho da Lameira, n.º 85, Molares, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1066"
+    "number": "99564-SIM",
+    "address": "Rua do Outeiro, n.º 265, Carvalho, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0069"
    },
    "arquiteto": {
-    "name": "Carla de Teste Xavier",
+    "name": "Miguel de Teste Miguel",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "56180-SIM",
-    "address": "Rua das Tílias, n.º 48, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9444"
+    "number": "17642-SIM",
+    "address": "Travessa do Souto, n.º 119, 4700-000 Braga",
+    "policy": "SIM-RC-3791"
    },
    "engenheiro": {
-    "name": "Carla Amostra Eva",
+    "name": "Pedro Simulado Teresa",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "74072-SIM",
-    "address": "Lugar de Carvalhal, n.º 65, 4800-000 Guimarães",
-    "policy": "SIM-RC-3685"
+    "number": "12224-SIM",
+    "address": "Rua do Outeiro, n.º 19, 4800-000 Guimarães",
+    "policy": "SIM-RC-6496"
    },
    "diretor": {
-    "name": "Teresa de Teste Olga",
+    "name": "Bruno Simulado Gonçalo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "45076-SIM",
-    "address": "Caminho da Lameira, n.º 23, 4000-000 Porto",
-    "policy": "SIM-RC-1850"
+    "number": "49944-SIM",
+    "address": "Rua do Outeiro, n.º 38, 4800-000 Guimarães",
+    "policy": "SIM-RC-7102"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-11-20"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "LEVT"
+   },
+   "law": {
+    "ref": "V.7",
+    "quote": "7 - Levantamento topográfico georreferenciado, acompanhado por termo de responsabilidade, sempre que haja alteração da topografia ou da implantação das construções, à escala de 1:200, ou de 1:500 no caso de loteamentos, devidamente cotado, que identifique o prédio e a respetiva área, construções nela erigidas, assim como o espaço público envolvente (vias, passeios, estacionamentos, árvores e infraestruturas ou instalações aí localizadas, incluindo postes, tampas, sinalização e mobiliário urbano);"
+   }
+  }
+ ],
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

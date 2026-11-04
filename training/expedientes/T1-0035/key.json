@@ -2,80 +2,70 @@
  "expediente": "T1-0035",
  "case": {
   "id": "T1-0035",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 2580,
-  "impl": 670,
-  "built": 1286,
-  "imperm": 834,
-  "perm": 1746,
-  "volume": 3986,
-  "height": 7.8,
-  "facade": 7.1,
-  "parking": 2,
-  "cost": 857700,
-  "submitted": "2026-10-25",
-  "site": "Rua das Tílias, n.º 179, Carvalho, 4890-000 Celorico de Basto",
+  "work": "construção de edifício de habitação bifamiliar",
+  "use": "Habitação bifamiliar",
+  "fogos": 2,
+  "pisos": 3,
+  "plot": 1950,
+  "impl": 392,
+  "built": 1171,
+  "imperm": 441,
+  "perm": 1509,
+  "volume": 3630,
+  "height": 10.8,
+  "facade": 10.1,
+  "parking": 4,
+  "cost": 844200,
+  "submitted": "2026-11-06",
+  "site": "Rua das Tílias, n.º 229, Vale de Bouro, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 20,
+  "months": 18,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Bruno Fictício João",
+    "name": "Olga Amostra Filipe",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "68689-SIM",
-    "address": "Rua das Tílias, n.º 179, Carvalho, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-9344"
+    "number": "19638-SIM",
+    "address": "Rua das Tílias, n.º 229, Vale de Bouro, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-0880"
    },
    "arquiteto": {
-    "name": "Rita Amostra João",
+    "name": "Eva Exemplo Diogo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "77385-SIM",
-    "address": "Caminho da Lameira, n.º 95, 4000-000 Porto",
-    "policy": "SIM-RC-6403"
+    "number": "19410-SIM",
+    "address": "Rua da Escola, n.º 91, 4700-000 Braga",
+    "policy": "SIM-RC-7299"
    },
    "engenheiro": {
-    "name": "Teresa Modelo Olga",
+    "name": "Bruno Modelo Diogo",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "20196-SIM",
-    "address": "Lugar da Devesa, n.º 22, 4800-000 Guimarães",
-    "policy": "SIM-RC-6441"
+    "number": "57245-SIM",
+    "address": "Lugar de Carvalhal, n.º 109, 4700-000 Braga",
+    "policy": "SIM-RC-1566"
    },
    "diretor": {
-    "name": "Vasco Modelo Eva",
+    "name": "Gonçalo Exemplo Filipe",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "66972-SIM",
-    "address": "Travessa do Souto, n.º 78, 4800-000 Guimarães",
-    "policy": "SIM-RC-4268"
+    "number": "74974-SIM",
+    "address": "Lugar da Devesa, n.º 47, 4700-000 Braga",
+    "policy": "SIM-RC-7901"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
-   "target": {
-    "slot": "FOTO"
-   },
-   "law": {
-    "ref": "V.15",
-    "quote": "15 - Registo fotográfico da situação existente, abrangendo o imóvel e as edificações adjacentes, quando estas existam;"
-   }
-  },
-  {
    "type": "not_pdfa",
    "target": {
-    "slot": "CEO"
+    "slot": "MDPAP"
    },
    "law": {
     "ref": "VI.1.a",
@@ -83,7 +73,7 @@
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

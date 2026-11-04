@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Nuno Simulado Olga",
+  "name": "Helena Fictício Gonçalo",
   "nif": "999999990"
  },
- "site": "Rua das Tílias, n.º 252, Corgo, 4890-000 Celorico de Basto",
- "operation": "construção de moradia unifamiliar",
- "submitted_at": "2026-12-05",
+ "site": "Lugar de Carvalhal, n.º 259, Ribas, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de habitação bifamiliar",
+ "submitted_at": "2026-11-13",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -414,22 +414,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "lista_elementos_nomeacao_ficheiros.pdf",
-   "title": "Lista de elementos instrutórios",
+   "file": "termo_responsabilidade_diretor_obra.pdf",
+   "title": "Termo de responsabilidade do diretor de obra ou do diretor d",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "cv_requerente.pdf",
-   "title": "Curriculum vitae",
+   "file": "instrucoes_07.pdf",
+   "title": "Instruções Preenchimento_Q3",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "termo-responsabilidade-2023.pdf",
-   "title": "Termo de Responsabilidade",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "indice-pecas-desenhadas-2022.pdf",
+   "title": "ÍNDICE DE PEÇAS DESENHADAS",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "copia_parte_ata_reuniao.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-06-25",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "minuta_memoria_descritiva.pdf",
+   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
    "kind": "written",
    "signed_by": "requerente"
   }

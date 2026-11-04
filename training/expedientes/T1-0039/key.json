@@ -2,88 +2,67 @@
  "expediente": "T1-0039",
  "case": {
   "id": "T1-0039",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 2230,
-  "impl": 429,
-  "built": 781,
-  "imperm": 453,
-  "perm": 1777,
-  "volume": 2421,
-  "height": 7.4,
-  "facade": 6.7,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 730,
+  "impl": 328,
+  "built": 286,
+  "imperm": 388,
+  "perm": 342,
+  "volume": 886,
+  "height": 3.8,
+  "facade": 3.1,
   "parking": 2,
-  "cost": 929300,
-  "submitted": "2026-11-25",
-  "site": "Lugar de Vilar, n.º 28, Ourilhe, 4890-000 Celorico de Basto",
+  "cost": 190400,
+  "submitted": "2026-10-15",
+  "site": "Lugar de Vilar, n.º 296, Codeçoso, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
   "months": 21,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Gonçalo Fictício Helena",
+    "name": "Filipe Modelo Gonçalo",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "13003-SIM",
-    "address": "Lugar de Vilar, n.º 28, Ourilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4099"
+    "number": "75196-SIM",
+    "address": "Lugar de Vilar, n.º 296, Codeçoso, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3338"
    },
    "arquiteto": {
-    "name": "Gonçalo Modelo Xavier",
+    "name": "Eva Fictício João",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "34527-SIM",
-    "address": "Rua das Tílias, n.º 32, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-4224"
+    "number": "85542-SIM",
+    "address": "Caminho da Lameira, n.º 84, 4000-000 Porto",
+    "policy": "SIM-RC-4966"
    },
    "engenheiro": {
-    "name": "Eva Amostra Inês",
+    "name": "Carla Fictício Inês",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "48405-SIM",
-    "address": "Caminho da Lameira, n.º 65, 4700-000 Braga",
-    "policy": "SIM-RC-3102"
+    "number": "56578-SIM",
+    "address": "Rua das Tílias, n.º 101, 4700-000 Braga",
+    "policy": "SIM-RC-1654"
    },
    "diretor": {
-    "name": "Teresa Amostra Ana",
+    "name": "Xavier Fictício Nuno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "14812-SIM",
-    "address": "Rua do Outeiro, n.º 36, 4700-000 Braga",
-    "policy": "SIM-RC-5277"
+    "number": "80574-SIM",
+    "address": "Rua das Tílias, n.º 55, 4700-000 Braga",
+    "policy": "SIM-RC-9948"
    }
   }
  },
- "planted": [
-  {
-   "type": "missing_required",
-   "target": {
-    "slot": "PLANT"
-   },
-   "law": {
-    "ref": "V.27.b.i",
-    "quote": "i) Plantas à escala de 1:50 ou de 1:100 contendo as dimensões e áreas e utilizações de todos os compartimentos, bem como a representação do mobiliário fixo e equipamento sanitário;"
-   }
-  },
-  {
-   "type": "not_pdf",
-   "target": {
-    "slot": "PLANT"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  }
- ],
- "n_planted": 2,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

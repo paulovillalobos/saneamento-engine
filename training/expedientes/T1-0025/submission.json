@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Inês Exemplo Pedro",
+  "name": "Vasco de Teste Eva",
   "nif": "999999990"
  },
- "site": "Travessa do Souto, n.º 199, Basto (São Clemente), 4890-000 Celorico de Basto",
- "operation": "construção de moradia unifamiliar",
- "submitted_at": "2026-11-11",
+ "site": "Rua do Outeiro, n.º 118, Arnoia, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de habitação bifamiliar",
+ "submitted_at": "2026-11-09",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": null
   },
   {
    "slot": "SRCDO",
@@ -158,12 +158,19 @@
    "file": "PLANT-plantas.pdf",
    "title": "Plantas",
    "kind": "drawn",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "ALC",
    "file": "ALC-alcados.pdf",
    "title": "Alçados",
+   "kind": "drawn",
+   "signed_by": "arquiteto"
+  },
+  {
+   "slot": "CORTES",
+   "file": "CORTES-cortes.pdf",
+   "title": "Cortes",
    "kind": "drawn",
    "signed_by": "arquiteto"
   },
@@ -392,13 +399,6 @@
    "signed_by": "requerente"
   },
   {
-   "slot": "ASAT",
-   "file": "ASAT-apolice-acidentes.pdf",
-   "title": "Apólice de seguro de acidentes de trabalho",
-   "kind": "written",
-   "signed_by": "seguradora"
-  },
-  {
    "slot": "IMPIC",
    "file": "IMPIC-alvara-impic.pdf",
    "title": "Número do alvará emitido pelo IMPIC, I. P.",
@@ -407,36 +407,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF44526956353392.pdf",
+   "file": "postura_94.pdf",
+   "title": "Postura Municipal Referente a Projetos de Estimativa do cust",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "loures_memoria_descritiva.pdf",
+   "title": "Memória descritiva do projeto empresarial",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "manual-normas-organizacao-2023.pdf",
    "title": "MANUAL DE NORMAS DE ORGANIZAÇÃO E INSTRUÇÃO DE PROCESSOS DE ",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "termo_outro_47.pdf",
-   "title": "Termo de Responsabilidade",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "gouveia_lista_pecas.pdf",
-   "title": "LISTA DE PEÇAS",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "copia-parte-ata-2021.pdf",
-   "title": "Cópia de parte da ata da reunião de 2026-08-19",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "regulamento_instrucao_digital_extrato.pdf",
-   "title": "Regulamento municipal (extrato)",
    "kind": "written",
    "signed_by": "requerente"
   }

@@ -2,93 +2,67 @@
  "expediente": "T1-0066",
  "case": {
   "id": "T1-0066",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
   "pisos": 1,
-  "plot": 3570,
-  "impl": 739,
-  "built": 707,
-  "imperm": 889,
-  "perm": 2681,
-  "volume": 2191,
-  "height": 4.0,
-  "facade": 3.3,
+  "plot": 1810,
+  "impl": 436,
+  "built": 431,
+  "imperm": 460,
+  "perm": 1350,
+  "volume": 1336,
+  "height": 3.9,
+  "facade": 3.2,
   "parking": 2,
-  "cost": 900700,
-  "submitted": "2026-12-08",
-  "site": "Caminho da Lameira, n.º 83, Canedo de Basto, 4890-000 Celorico de Basto",
+  "cost": 487800,
+  "submitted": "2026-12-05",
+  "site": "Caminho da Lameira, n.º 145, Carvalho, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
   "months": 9,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Pedro de Teste Eva",
+    "name": "Pedro de Teste Bruno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "82025-SIM",
-    "address": "Caminho da Lameira, n.º 83, Canedo de Basto, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6953"
+    "number": "82072-SIM",
+    "address": "Caminho da Lameira, n.º 145, Carvalho, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-7694"
    },
    "arquiteto": {
-    "name": "Pedro Exemplo Bruno",
+    "name": "Eva Simulado Rita",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "23750-SIM",
-    "address": "Rua das Tílias, n.º 104, 4800-000 Guimarães",
-    "policy": "SIM-RC-5121"
+    "number": "02660-SIM",
+    "address": "Caminho da Lameira, n.º 2, 4800-000 Guimarães",
+    "policy": "SIM-RC-7635"
    },
    "engenheiro": {
-    "name": "João de Teste Filipe",
+    "name": "Eva Exemplo Olga",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "47884-SIM",
-    "address": "Lugar da Devesa, n.º 106, 4000-000 Porto",
-    "policy": "SIM-RC-7033"
+    "number": "48850-SIM",
+    "address": "Lugar da Devesa, n.º 16, 4700-000 Braga",
+    "policy": "SIM-RC-2446"
    },
    "diretor": {
-    "name": "Helena Amostra Miguel",
+    "name": "Helena Fictício Carla",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "13377-SIM",
-    "address": "Lugar da Devesa, n.º 32, 4000-000 Porto",
-    "policy": "SIM-RC-6006"
+    "number": "02768-SIM",
+    "address": "Lugar de Carvalhal, n.º 11, 4800-000 Guimarães",
+    "policy": "SIM-RC-3014"
    }
   }
  },
- "planted": [
-  {
-   "type": "expired_insurance",
-   "target": {
-    "slot": "SRCARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-12-08"
-   },
-   "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
-   }
-  },
-  {
-   "type": "not_pdfa",
-   "target": {
-    "slot": "MDPAP"
-   },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
-   }
-  }
- ],
- "n_planted": 2,
+ "planted": [],
+ "n_planted": 0,
  "always": [
   {
    "type": "missing_complement",

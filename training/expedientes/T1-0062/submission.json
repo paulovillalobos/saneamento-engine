@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "João Fictício Bruno",
+  "name": "Helena Fictício Carla",
   "nif": "999999990"
  },
- "site": "Travessa do Souto, n.º 290, Infesta, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-12-19",
+ "site": "Lugar de Vilar, n.º 242, Britelo, 4890-000 Celorico de Basto",
+ "operation": "construção de armazém agrícola",
+ "submitted_at": "2026-11-05",
  "files": [
   {
    "slot": "REQ",
@@ -49,6 +49,13 @@
    "signed_by": "arquiteto"
   },
   {
+   "slot": "SRCCP",
+   "file": "SRCCP-seguro-coordenador.pdf",
+   "title": "Comprovativo de seguro de responsabilidade civil do coordenador de projeto",
+   "kind": "written",
+   "signed_by": "seguradora"
+  },
+  {
    "slot": "TRPLAC",
    "file": "TRPLAC-termo-acessibilidades.pdf",
    "title": "Termo de responsabilidade do autor do plano de acessibilidades",
@@ -60,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCDO",
@@ -179,7 +186,7 @@
    "file": "TREECP-termo-pdeecp.pdf",
    "title": "Termo de responsabilidade do autor do projeto de estabilidade, de escavação e contenção periférica",
    "kind": "written",
-   "signed_by": "engenheiro"
+   "signed_by": null
   },
   {
    "slot": "SRCEST",
@@ -407,6 +414,13 @@
   },
   {
    "slot": "OUTDOC",
+   "file": "PDF50284393202132.pdf",
+   "title": "Termo de Responsabilidade",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
    "file": "fatura_agua_2026_08.pdf",
    "title": "Fatura de água",
    "kind": "written",
@@ -414,43 +428,15 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF18624297228293.pdf",
-   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "file": "vila_plano_acessibilidade.pdf",
+   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF74682540206066.pdf",
-   "title": "Nota explicativa — planta de localização",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "PDF37253262567819.pdf",
-   "title": "Consulta a entidade externa",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "ficha_projeto.pdf",
-   "title": "Ficha de Projeto",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "castro_indice_pecas.pdf",
-   "title": "ÍNDICE DE PEÇAS DESENHADAS",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "instrucoes_preenchimento.pdf",
-   "title": "Instruções Preenchimento_Q3",
+   "file": "nota_tecnica_projetos_plano.pdf",
+   "title": "NOTA TÉCNICA N.º 30 — PROJETOS DE PLANO DE ACESSIBILIDADES",
    "kind": "written",
    "signed_by": "requerente"
   }

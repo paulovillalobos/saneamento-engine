@@ -2,89 +2,102 @@
  "expediente": "T1-0071",
  "case": {
   "id": "T1-0071",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 2,
-  "plot": 1360,
-  "impl": 222,
-  "built": 440,
-  "imperm": 245,
-  "perm": 1115,
-  "volume": 1364,
-  "height": 7.5,
-  "facade": 6.8,
-  "parking": 4,
-  "cost": 487900,
-  "submitted": "2026-12-06",
-  "site": "Rua do Outeiro, n.º 149, Britelo, 4890-000 Celorico de Basto",
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 1,
+  "plot": 3660,
+  "impl": 1583,
+  "built": 1465,
+  "imperm": 1632,
+  "perm": 2028,
+  "volume": 4541,
+  "height": 4.3,
+  "facade": 3.6,
+  "parking": 2,
+  "cost": 1482500,
+  "submitted": "2026-12-21",
+  "site": "Rua da Escola, n.º 6, Britelo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 17,
+  "months": 20,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Eva Simulado Filipe",
+    "name": "Ana Fictício Diogo",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "70554-SIM",
-    "address": "Rua do Outeiro, n.º 149, Britelo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2794"
+    "number": "09986-SIM",
+    "address": "Rua da Escola, n.º 6, Britelo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3907"
    },
    "arquiteto": {
-    "name": "Olga Fictício Gonçalo",
+    "name": "Diogo Exemplo Ana",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "56278-SIM",
-    "address": "Caminho da Lameira, n.º 44, 4700-000 Braga",
-    "policy": "SIM-RC-9132"
+    "number": "73741-SIM",
+    "address": "Rua do Outeiro, n.º 91, 4700-000 Braga",
+    "policy": "SIM-RC-3633"
    },
    "engenheiro": {
-    "name": "Helena Exemplo Leonor",
+    "name": "Xavier Amostra Diogo",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "98554-SIM",
-    "address": "Rua da Escola, n.º 100, 4700-000 Braga",
-    "policy": "SIM-RC-2797"
+    "number": "97126-SIM",
+    "address": "Rua da Escola, n.º 87, 4000-000 Porto",
+    "policy": "SIM-RC-9186"
    },
    "diretor": {
-    "name": "João Simulado Diogo",
+    "name": "Teresa Fictício João",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "30587-SIM",
-    "address": "Rua da Escola, n.º 55, 4000-000 Porto",
-    "policy": "SIM-RC-8485"
+    "number": "73924-SIM",
+    "address": "Caminho da Lameira, n.º 79, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6478"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "impossible_value",
    "target": {
-    "slot": "IMPIC"
-   },
-   "law": {
-    "ref": "V.27.j",
-    "quote": "j) Número do alvará, ou do certificado, ou número de outro título habilitante emitido pelo IMPIC, I. P., que confira habilitações adequadas à natureza ou valor da obra;"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
+    "field": "area_parcela",
+    "slot": "REQ"
    },
    "basis": "documents",
    "values": {
-    "declarante": "João Simulado Diogo",
-    "assinante": "Olga Fictício Gonçalo"
+    "area_parcela": "366 m2",
+    "area_implantacao": "1583 m2",
+    "MDARQ": "3660 m2"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "FOTO"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Rua da Escola, n.º 6, Britelo, 4890-000 Celorico de Basto",
+    "TRPARQ": "Lugar de Carvalhal, n.º 44, Caçarilhe, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

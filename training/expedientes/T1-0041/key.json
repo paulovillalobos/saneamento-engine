@@ -2,66 +2,81 @@
  "expediente": "T1-0041",
  "case": {
   "id": "T1-0041",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
   "fogos": 0,
-  "pisos": 1,
-  "plot": 2180,
-  "impl": 580,
-  "built": 541,
-  "imperm": 700,
-  "perm": 1480,
-  "volume": 1677,
-  "height": 4.0,
-  "facade": 3.3,
+  "pisos": 2,
+  "plot": 2530,
+  "impl": 305,
+  "built": 552,
+  "imperm": 432,
+  "perm": 2098,
+  "volume": 1711,
+  "height": 7.8,
+  "facade": 7.1,
   "parking": 2,
-  "cost": 665400,
-  "submitted": "2026-10-02",
-  "site": "Rua da Escola, n.º 189, Agilde, 4890-000 Celorico de Basto",
+  "cost": 689400,
+  "submitted": "2026-12-24",
+  "site": "Lugar de Vilar, n.º 139, Borba de Montanha, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 22,
+  "months": 11,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Filipe Amostra Pedro",
+    "name": "Rita de Teste Bruno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "76095-SIM",
-    "address": "Rua da Escola, n.º 189, Agilde, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7494"
+    "number": "59099-SIM",
+    "address": "Lugar de Vilar, n.º 139, Borba de Montanha, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2928"
    },
    "arquiteto": {
-    "name": "Gonçalo Modelo Rita",
+    "name": "Teresa Exemplo Vasco",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "71249-SIM",
-    "address": "Caminho da Lameira, n.º 77, 4700-000 Braga",
-    "policy": "SIM-RC-2081"
+    "number": "34906-SIM",
+    "address": "Caminho da Lameira, n.º 50, 4700-000 Braga",
+    "policy": "SIM-RC-1400"
    },
    "engenheiro": {
-    "name": "Xavier Fictício João",
+    "name": "Olga Amostra Eva",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "14868-SIM",
-    "address": "Travessa do Souto, n.º 84, 4700-000 Braga",
-    "policy": "SIM-RC-6954"
+    "number": "98692-SIM",
+    "address": "Rua do Outeiro, n.º 31, 4800-000 Guimarães",
+    "policy": "SIM-RC-9606"
    },
    "diretor": {
-    "name": "Sérgio Fictício João",
+    "name": "João Exemplo Filipe",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "65513-SIM",
-    "address": "Rua da Escola, n.º 49, 4700-000 Braga",
-    "policy": "SIM-RC-0876"
+    "number": "82155-SIM",
+    "address": "Lugar de Vilar, n.º 69, 4000-000 Porto",
+    "policy": "SIM-RC-5516"
    }
   }
  },
  "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-24"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
   {
    "type": "impossible_value",
    "target": {
@@ -70,33 +85,39 @@
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "218 m2",
-    "area_implantacao": "580 m2",
-    "MDARQ": "2180 m2"
+    "area_parcela": "253 m2",
+    "area_implantacao": "305 m2",
+    "MDARQ": "2530 m2"
    }
   },
   {
-   "type": "not_pdf",
+   "type": "value_mismatch",
    "target": {
-    "slot": "FOTO"
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
    },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   "basis": "documents",
+   "values": {
+    "REQ": "552 m2",
+    "MDARQ": "518 m2"
    }
   },
   {
-   "type": "not_pdfa",
+   "type": "wrong_signer",
    "target": {
-    "slot": "MDPAP"
+    "slot": "TRDO"
    },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   "basis": "documents",
+   "values": {
+    "declarante": "João Exemplo Filipe",
+    "assinante": "Teresa Exemplo Vasco"
    }
   }
  ],
- "n_planted": 3,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

@@ -2,66 +2,81 @@
  "expediente": "T1-0079",
  "case": {
   "id": "T1-0079",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
   "pisos": 2,
-  "plot": 3370,
-  "impl": 1122,
-  "built": 2180,
-  "imperm": 1261,
-  "perm": 2109,
-  "volume": 6758,
-  "height": 7.4,
-  "facade": 6.7,
+  "plot": 3050,
+  "impl": 852,
+  "built": 1583,
+  "imperm": 920,
+  "perm": 2130,
+  "volume": 4907,
+  "height": 6.8,
+  "facade": 6.1,
   "parking": 2,
-  "cost": 2347800,
-  "submitted": "2026-12-27",
-  "site": "Travessa do Souto, n.º 10, Arnoia, 4890-000 Celorico de Basto",
+  "cost": 1595600,
+  "submitted": "2026-12-01",
+  "site": "Lugar da Devesa, n.º 41, Ribas, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 9,
+  "months": 22,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Ana Simulado Gonçalo",
+    "name": "Filipe Fictício Leonor",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "49406-SIM",
-    "address": "Travessa do Souto, n.º 10, Arnoia, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0725"
+    "number": "14360-SIM",
+    "address": "Lugar da Devesa, n.º 41, Ribas, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5066"
    },
    "arquiteto": {
-    "name": "Bruno Fictício João",
+    "name": "Miguel Fictício Xavier",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "27299-SIM",
-    "address": "Lugar de Vilar, n.º 25, 4700-000 Braga",
-    "policy": "SIM-RC-6085"
+    "number": "74879-SIM",
+    "address": "Rua da Escola, n.º 18, 4800-000 Guimarães",
+    "policy": "SIM-RC-9068"
    },
    "engenheiro": {
-    "name": "Teresa Fictício Eva",
+    "name": "Olga Fictício Miguel",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "75400-SIM",
-    "address": "Travessa do Souto, n.º 41, 4700-000 Braga",
-    "policy": "SIM-RC-8931"
+    "number": "61714-SIM",
+    "address": "Travessa do Souto, n.º 27, 4000-000 Porto",
+    "policy": "SIM-RC-8047"
    },
    "diretor": {
-    "name": "Pedro Amostra Rita",
+    "name": "Pedro de Teste Olga",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "04031-SIM",
-    "address": "Lugar de Carvalhal, n.º 9, 4000-000 Porto",
-    "policy": "SIM-RC-7443"
+    "number": "87158-SIM",
+    "address": "Rua das Tílias, n.º 2, 4000-000 Porto",
+    "policy": "SIM-RC-3356"
    }
   }
  },
  "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-01"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
   {
    "type": "value_mismatch",
    "target": {
@@ -73,12 +88,12 @@
    },
    "basis": "documents",
    "values": {
-    "REQ": "2180 m2",
-    "MDARQ": "2262 m2"
+    "REQ": "1583 m2",
+    "MDARQ": "1522 m2"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

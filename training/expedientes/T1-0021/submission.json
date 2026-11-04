@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Gonçalo Fictício Filipe",
+  "name": "Rita Amostra Nuno",
   "nif": "999999990"
  },
- "site": "Lugar de Vilar, n.º 259, Borba de Montanha, 4890-000 Celorico de Basto",
- "operation": "construção de armazém agrícola",
- "submitted_at": "2026-10-01",
+ "site": "Caminho da Lameira, n.º 22, Arnoia, 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
+ "submitted_at": "2026-12-06",
  "files": [
   {
    "slot": "REQ",
@@ -414,6 +414,20 @@
   },
   {
    "slot": "OUTDOC",
+   "file": "norma_42.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-19",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "gouveia_anexo_obras.pdf",
+   "title": "ANEXO V — OBRAS DE URBANIZAÇÃO",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
    "file": "lista_elementos_nomeacao_ficheiros.pdf",
    "title": "Lista de elementos instrutórios",
    "kind": "written",
@@ -421,22 +435,8 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "instrucoes_59.pdf",
-   "title": "Instruções Preenchimento_Q3",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "ficha_verificacao_elementos.pdf",
-   "title": "Ficha de verificação",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "ficha_projeto_69.pdf",
-   "title": "Ficha de Projeto",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
    "kind": "written",
    "signed_by": "requerente"
   }

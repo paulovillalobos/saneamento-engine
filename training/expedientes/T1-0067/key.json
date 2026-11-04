@@ -2,83 +2,114 @@
  "expediente": "T1-0067",
  "case": {
   "id": "T1-0067",
-  "work": "construção de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 2460,
-  "impl": 881,
-  "built": 1541,
-  "imperm": 1029,
-  "perm": 1431,
-  "volume": 4777,
-  "height": 6.9,
-  "facade": 6.2,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 3120,
+  "impl": 748,
+  "built": 657,
+  "imperm": 941,
+  "perm": 2179,
+  "volume": 2036,
+  "height": 4.2,
+  "facade": 3.5,
   "parking": 2,
-  "cost": 1368400,
-  "submitted": "2026-10-03",
-  "site": "Rua do Outeiro, n.º 72, Corgo, 4890-000 Celorico de Basto",
+  "cost": 642500,
+  "submitted": "2026-12-12",
+  "site": "Rua do Outeiro, n.º 59, Carvalho, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 15,
+  "months": 18,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Teresa de Teste Sérgio",
+    "name": "Xavier Fictício Ana",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "69442-SIM",
-    "address": "Rua do Outeiro, n.º 72, Corgo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7371"
+    "number": "58897-SIM",
+    "address": "Rua do Outeiro, n.º 59, Carvalho, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3000"
    },
    "arquiteto": {
-    "name": "Bruno Simulado Filipe",
+    "name": "Inês Exemplo Vasco",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "54879-SIM",
-    "address": "Lugar de Vilar, n.º 111, 4800-000 Guimarães",
-    "policy": "SIM-RC-8280"
+    "number": "15689-SIM",
+    "address": "Rua das Tílias, n.º 48, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8627"
    },
    "engenheiro": {
-    "name": "Helena Fictício Bruno",
+    "name": "Vasco de Teste Bruno",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "49701-SIM",
-    "address": "Lugar de Vilar, n.º 111, 4700-000 Braga",
-    "policy": "SIM-RC-7069"
+    "number": "14130-SIM",
+    "address": "Rua da Escola, n.º 52, 4000-000 Porto",
+    "policy": "SIM-RC-7043"
    },
    "diretor": {
-    "name": "Teresa Fictício Inês",
+    "name": "João Amostra Sérgio",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "46394-SIM",
-    "address": "Rua do Outeiro, n.º 38, 4700-000 Braga",
-    "policy": "SIM-RC-1678"
+    "number": "25466-SIM",
+    "address": "Lugar da Devesa, n.º 112, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5721"
    }
   }
  },
  "planted": [
   {
-   "type": "value_mismatch",
+   "type": "expired_insurance",
    "target": {
-    "field": "area_total_construcao",
-    "slots": [
-     "REQ",
-     "MDARQ"
-    ]
+    "slot": "SRCARQ"
    },
    "basis": "documents",
    "values": {
-    "REQ": "1541 m2",
-    "MDARQ": "1642 m2"
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-12"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "CORTES"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Rua do Outeiro, n.º 59, Carvalho, 4890-000 Celorico de Basto",
+    "TRPARQ": "Caminho da Lameira, n.º 95, Infesta, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

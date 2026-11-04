@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Miguel Fictício Sérgio",
+  "name": "Eva de Teste Teresa",
   "nif": "999999990"
  },
- "site": "Rua do Outeiro, n.º 49, Canedo de Basto, 4890-000 Celorico de Basto",
- "operation": "construção de armazém agrícola",
- "submitted_at": "2026-10-19",
+ "site": "Rua da Escola, n.º 111, Corgo, 4890-000 Celorico de Basto",
+ "operation": "ampliação de moradia unifamiliar",
+ "submitted_at": "2026-10-22",
  "files": [
   {
    "slot": "REQ",
@@ -26,6 +26,13 @@
    "title": "Código de acesso à certidão permanente do registo predial",
    "kind": "written",
    "signed_by": "requerente"
+  },
+  {
+   "slot": "TRPARQ",
+   "file": "TRPARQ-termo-arquitetura.pdf",
+   "title": "Termo de responsabilidade do autor do projeto de arquitetura",
+   "kind": "written",
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCARQ",
@@ -60,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCDO",
@@ -407,43 +414,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "estarreja_informacao_2026.pdf",
-   "title": "INFORMAÇÃO n.º 13/2026",
+   "file": "termo-responsabilidade-2020.pdf",
+   "title": "Termo de Responsabilidade",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "analise-portaria-320-2020.pdf",
-   "title": "Análise — Portaria n.º 320/2026/1 e registo fotográfico",
+   "file": "cv_requerente.pdf",
+   "title": "Curriculum vitae",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "norma-instrucao-processo-2021.pdf",
-   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-33",
+   "file": "castro_norma_instrucao.pdf",
+   "title": "NORMA DE INSTRUÇÃO DE PROCESSO NIP-19",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "termo_outro_45.pdf",
-   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
+   "file": "indice-pecas-2019.pdf",
+   "title": "Índice de peças",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "regulamento_instrucao_digital_extrato.pdf",
-   "title": "Regulamento municipal (extrato)",
+   "file": "PDF35579387633526.pdf",
+   "title": "Termo de Responsabilidade",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "termos-responsabilidade-passados-2020.pdf",
-   "title": "Os termos de responsabilidade passados no âmbito das comunic",
+   "file": "indice-geral-projeto-2024.pdf",
+   "title": "ÍNDICE GERAL DO PROJETO",
    "kind": "written",
    "signed_by": "requerente"
   }

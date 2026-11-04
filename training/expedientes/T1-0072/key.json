@@ -6,63 +6,110 @@
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 1030,
-  "impl": 458,
-  "built": 827,
-  "imperm": 652,
-  "perm": 378,
-  "volume": 2563,
-  "height": 7.6,
-  "facade": 6.9,
+  "plot": 1190,
+  "impl": 238,
+  "built": 432,
+  "imperm": 336,
+  "perm": 854,
+  "volume": 1339,
+  "height": 7.2,
+  "facade": 6.5,
   "parking": 2,
-  "cost": 616900,
-  "submitted": "2026-11-28",
-  "site": "Rua do Outeiro, n.º 164, Gagos, 4890-000 Celorico de Basto",
+  "cost": 559800,
+  "submitted": "2026-11-16",
+  "site": "Lugar de Vilar, n.º 88, Ourilhe, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 8,
+  "months": 13,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Inês Exemplo Pedro",
+    "name": "Helena Fictício Leonor",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "35793-SIM",
-    "address": "Rua do Outeiro, n.º 164, Gagos, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0204"
+    "number": "55786-SIM",
+    "address": "Lugar de Vilar, n.º 88, Ourilhe, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4955"
    },
    "arquiteto": {
-    "name": "Inês Exemplo Eva",
+    "name": "Nuno de Teste Carla",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "31303-SIM",
-    "address": "Lugar da Devesa, n.º 105, 4800-000 Guimarães",
-    "policy": "SIM-RC-0081"
+    "number": "37769-SIM",
+    "address": "Rua do Outeiro, n.º 94, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5815"
    },
    "engenheiro": {
-    "name": "Helena Modelo Filipe",
+    "name": "Carla Fictício Diogo",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "30102-SIM",
-    "address": "Travessa do Souto, n.º 25, 4000-000 Porto",
-    "policy": "SIM-RC-3164"
+    "number": "04559-SIM",
+    "address": "Rua do Outeiro, n.º 68, 4700-000 Braga",
+    "policy": "SIM-RC-3534"
    },
    "diretor": {
-    "name": "Helena Simulado Olga",
+    "name": "Rita de Teste Eva",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "96935-SIM",
-    "address": "Lugar da Devesa, n.º 19, 4000-000 Porto",
-    "policy": "SIM-RC-7640"
+    "number": "31634-SIM",
+    "address": "Lugar de Vilar, n.º 41, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-9751"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-11-16"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  },
+  {
+   "type": "missing_required",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "V.11",
+    "quote": "11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Lugar de Vilar, n.º 88, Ourilhe, 4890-000 Celorico de Basto",
+    "TRPARQ": "Lugar de Vilar, n.º 134, Infesta, 4890-000 Celorico de Basto"
+   }
+  }
+ ],
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

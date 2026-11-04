@@ -2,74 +2,87 @@
  "expediente": "T1-0073",
  "case": {
   "id": "T1-0073",
-  "work": "alteração e ampliação de moradia unifamiliar",
+  "work": "construção de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 2,
-  "plot": 1480,
-  "impl": 528,
-  "built": 985,
-  "imperm": 651,
-  "perm": 829,
-  "volume": 3053,
-  "height": 6.8,
-  "facade": 6.1,
+  "pisos": 1,
+  "plot": 2450,
+  "impl": 446,
+  "built": 445,
+  "imperm": 513,
+  "perm": 1937,
+  "volume": 1379,
+  "height": 4.7,
+  "facade": 4.0,
   "parking": 2,
-  "cost": 789900,
-  "submitted": "2026-10-12",
-  "site": "Rua da Escola, n.º 191, Arnoia, 4890-000 Celorico de Basto",
+  "cost": 440900,
+  "submitted": "2026-11-05",
+  "site": "Lugar da Devesa, n.º 144, Basto (São Clemente), 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 23,
+  "months": 8,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Pedro Simulado Bruno",
+    "name": "Pedro Simulado João",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "91157-SIM",
-    "address": "Rua da Escola, n.º 191, Arnoia, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6267"
+    "number": "36232-SIM",
+    "address": "Lugar da Devesa, n.º 144, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6398"
    },
    "arquiteto": {
-    "name": "Inês Simulado Bruno",
+    "name": "Miguel de Teste Ana",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "69774-SIM",
-    "address": "Rua da Escola, n.º 24, 4700-000 Braga",
-    "policy": "SIM-RC-4622"
+    "number": "51704-SIM",
+    "address": "Lugar de Carvalhal, n.º 13, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3584"
    },
    "engenheiro": {
-    "name": "Sérgio Simulado Vasco",
+    "name": "Teresa Amostra Ana",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "40966-SIM",
-    "address": "Lugar de Vilar, n.º 5, 4000-000 Porto",
-    "policy": "SIM-RC-7840"
+    "number": "29860-SIM",
+    "address": "Lugar de Carvalhal, n.º 90, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6992"
    },
    "diretor": {
-    "name": "Eva de Teste Diogo",
+    "name": "Leonor Amostra Helena",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "73751-SIM",
-    "address": "Travessa do Souto, n.º 87, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2174"
+    "number": "47108-SIM",
+    "address": "Caminho da Lameira, n.º 61, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6499"
    }
   }
  },
  "planted": [
   {
-   "type": "not_pdf",
+   "type": "impossible_value",
    "target": {
-    "slot": "FOTO"
+    "field": "area_parcela",
+    "slot": "REQ"
+   },
+   "basis": "documents",
+   "values": {
+    "area_parcela": "245 m2",
+    "area_implantacao": "446 m2",
+    "MDARQ": "2450 m2"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
    },
    "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
   },
   {
@@ -83,12 +96,23 @@
    },
    "basis": "documents",
    "values": {
-    "REQ": "985 m2",
-    "MDARQ": "1087 m2"
+    "REQ": "445 m2",
+    "MDARQ": "547 m2"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Lugar da Devesa, n.º 144, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "TRPARQ": "Rua do Outeiro, n.º 131, Moreira do Castelo, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

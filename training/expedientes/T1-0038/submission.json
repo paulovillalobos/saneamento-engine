@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Olga Simulado Xavier",
+  "name": "Rita Modelo Xavier",
   "nif": "999999990"
  },
- "site": "Rua da Escola, n.º 268, Gagos, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-11",
+ "site": "Lugar da Devesa, n.º 122, Carvalho, 4890-000 Celorico de Basto",
+ "operation": "construção de edifício de comércio e serviços",
+ "submitted_at": "2026-11-12",
  "files": [
   {
    "slot": "REQ",
@@ -414,43 +414,36 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "postura-projetos-redes-2022.pdf",
-   "title": "Postura Municipal Referente a Projetos de Redes prediais de ",
+   "file": "ficha_verificacao_elementos.pdf",
+   "title": "Ficha de verificação",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "parecer_tecnico.pdf",
-   "title": "Parecer técnico",
+   "file": "guia_tecnico_projetos_estimativa.pdf",
+   "title": "Guia Técnico para Projetos de Estimativa do custo total da o",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "instrucoes-preenchimento-2025.pdf",
-   "title": "Instruções Preenchimento_Q3",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "loures_termo_responsabilidade.pdf",
-   "title": "Termo de Responsabilidade – Diretor de Obra/Diretor de Fisca",
+   "file": "anexo_criterio_elaboracao_levantamentos.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "castro_pedido_parecer.pdf",
-   "title": "PEDIDO DE PARECER - ELEMENTOS A REMETER",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "lista_elementos_nomeacao_ficheiros.pdf",
-   "title": "Lista de elementos instrutórios",
+   "file": "nota_explicativa_34.pdf",
+   "title": "Os termos de responsabilidade passados no âmbito das legaliz",
    "kind": "written",
    "signed_by": "requerente"
   }

@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Pedro Simulado Bruno",
+  "name": "Pedro Simulado João",
   "nif": "999999990"
  },
- "site": "Rua da Escola, n.º 191, Arnoia, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-12",
+ "site": "Lugar da Devesa, n.º 144, Basto (São Clemente), 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
+ "submitted_at": "2026-11-05",
  "files": [
   {
    "slot": "REQ",
@@ -88,7 +88,7 @@
    "file": "FOTO-registo-fotografico.pdf",
    "title": "Registo fotográfico da situação existente",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "MDARQ",
@@ -414,22 +414,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF80301868505728.pdf",
-   "title": "Guia Técnico para Projetos de Infraestruturas de telecomunic",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "carta_cmcb.pdf",
-   "title": "Carta",
+   "file": "castro_guia_tecnico.pdf",
+   "title": "Guia Técnico para Projetos de Estabilidade e fundações",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "fatura_agua_2026_08.pdf",
-   "title": "Fatura de água",
+   "file": "cv_requerente.pdf",
+   "title": "Curriculum vitae",
    "kind": "written",
    "signed_by": "requerente"
   }

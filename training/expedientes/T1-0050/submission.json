@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Rita Amostra Nuno",
+  "name": "Leonor Amostra Olga",
   "nif": "999999990"
  },
- "site": "Lugar de Carvalhal, n.º 184, Borba de Montanha, 4890-000 Celorico de Basto",
- "operation": "construção de moradia unifamiliar",
- "submitted_at": "2026-12-01",
+ "site": "Caminho da Lameira, n.º 69, Agilde, 4890-000 Celorico de Basto",
+ "operation": "construção de armazém agrícola",
+ "submitted_at": "2026-11-21",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "diretor"
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCDO",
@@ -414,15 +414,15 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "memoria-descritiva-candidatura-2024.pdf",
-   "title": "Memória descritiva da candidatura",
+   "file": "nota-tecnica-projetos-2021.pdf",
+   "title": "NOTA TÉCNICA N.º 21 — PROJETOS DE ÁGUAS PLUVIAIS",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "carta_cmcb.pdf",
-   "title": "Carta",
+   "file": "anadia_plano_acessibilidade.pdf",
+   "title": "Plano Municipal de Acessibilidade Para Todos — Capítulo II –",
    "kind": "written",
    "signed_by": "requerente"
   },
@@ -430,6 +430,27 @@
    "slot": "OUTDOC",
    "file": "lista_elementos_nomeacao_ficheiros.pdf",
    "title": "Lista de elementos instrutórios",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF52729980080872.pdf",
+   "title": "ÍNDICE DE PEÇAS DESENHADAS",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "ficha_verificacao_elementos.pdf",
+   "title": "Ficha de verificação",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "carta_cmcb.pdf",
+   "title": "Carta",
    "kind": "written",
    "signed_by": "requerente"
   }

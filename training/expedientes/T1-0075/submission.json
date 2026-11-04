@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Rita Fictício Helena",
+  "name": "Nuno Exemplo Gonçalo",
   "nif": "999999990"
  },
- "site": "Travessa do Souto, n.º 157, Borba de Montanha, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-11-12",
+ "site": "Rua das Tílias, n.º 133, Moreira do Castelo, 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
+ "submitted_at": "2026-10-08",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -171,6 +171,13 @@
    "slot": "CORTES",
    "file": "CORTES-cortes.pdf",
    "title": "Cortes",
+   "kind": "drawn",
+   "signed_by": null
+  },
+  {
+   "slot": "PC",
+   "file": "PC-pormenores.pdf",
+   "title": "Pormenores de construção",
    "kind": "drawn",
    "signed_by": "arquiteto"
   },
@@ -407,22 +414,29 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF83303036724597.pdf",
-   "title": "Memória descritiva da candidatura",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF48624351988902.pdf",
-   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
+   "file": "PDF20044168710462.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-02-22",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "memoria_candidatura_65.pdf",
-   "title": "Memória descritiva da candidatura",
+   "file": "PDF77432864408502.pdf",
+   "title": "PEÇAS ESCRITAS E DESENHADAS - ÍNDICE",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "ficha_projeto_79.pdf",
+   "title": "Ficha de Projeto",
    "kind": "written",
    "signed_by": "requerente"
   }

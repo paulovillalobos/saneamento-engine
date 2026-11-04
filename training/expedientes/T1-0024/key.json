@@ -2,67 +2,83 @@
  "expediente": "T1-0024",
  "case": {
   "id": "T1-0024",
-  "work": "ampliação de moradia unifamiliar",
+  "work": "alteração e ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 1130,
-  "impl": 153,
-  "built": 279,
-  "imperm": 329,
-  "perm": 801,
-  "volume": 864,
-  "height": 6.9,
-  "facade": 6.2,
+  "plot": 670,
+  "impl": 132,
+  "built": 256,
+  "imperm": 314,
+  "perm": 356,
+  "volume": 793,
+  "height": 6.7,
+  "facade": 6.0,
   "parking": 2,
-  "cost": 283100,
-  "submitted": "2026-12-24",
-  "site": "Lugar de Carvalhal, n.º 295, Gagos, 4890-000 Celorico de Basto",
+  "cost": 217000,
+  "submitted": "2026-11-28",
+  "site": "Rua das Tílias, n.º 269, Infesta, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
   "months": 16,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Filipe de Teste Eva",
+    "name": "João Exemplo Vasco",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "47100-SIM",
-    "address": "Lugar de Carvalhal, n.º 295, Gagos, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8558"
+    "number": "74095-SIM",
+    "address": "Rua das Tílias, n.º 269, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-1200"
    },
    "arquiteto": {
-    "name": "Vasco Amostra Gonçalo",
+    "name": "Carla Fictício Gonçalo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "52883-SIM",
-    "address": "Lugar de Carvalhal, n.º 20, 4800-000 Guimarães",
-    "policy": "SIM-RC-3980"
+    "number": "36302-SIM",
+    "address": "Lugar da Devesa, n.º 46, 4800-000 Guimarães",
+    "policy": "SIM-RC-6892"
    },
    "engenheiro": {
-    "name": "Bruno Amostra Helena",
+    "name": "Bruno Simulado Carla",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "11353-SIM",
-    "address": "Travessa do Souto, n.º 5, 4800-000 Guimarães",
-    "policy": "SIM-RC-9339"
+    "number": "44008-SIM",
+    "address": "Lugar da Devesa, n.º 81, 4700-000 Braga",
+    "policy": "SIM-RC-3005"
    },
    "diretor": {
-    "name": "Rita Amostra Leonor",
+    "name": "João Simulado Nuno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "69210-SIM",
-    "address": "Lugar de Vilar, n.º 73, 4800-000 Guimarães",
-    "policy": "SIM-RC-6516"
+    "number": "53985-SIM",
+    "address": "Lugar da Devesa, n.º 59, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5234"
    }
   }
  },
- "planted": [],
- "n_planted": 0,
+ "planted": [
+  {
+   "type": "expired_insurance",
+   "target": {
+    "slot": "SRCARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-11-28"
+   },
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+   }
+  }
+ ],
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

@@ -2,78 +2,103 @@
  "expediente": "T1-0037",
  "case": {
   "id": "T1-0037",
-  "work": "construção de moradia unifamiliar",
+  "work": "alteração e ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
-  "pisos": 1,
-  "plot": 1190,
-  "impl": 244,
-  "built": 240,
-  "imperm": 282,
-  "perm": 908,
-  "volume": 744,
-  "height": 4.1,
-  "facade": 3.4,
+  "pisos": 2,
+  "plot": 2030,
+  "impl": 576,
+  "built": 1036,
+  "imperm": 771,
+  "perm": 1259,
+  "volume": 3211,
+  "height": 6.9,
+  "facade": 6.2,
   "parking": 2,
-  "cost": 246400,
-  "submitted": "2026-12-12",
-  "site": "Rua do Outeiro, n.º 55, Arnoia, 4890-000 Celorico de Basto",
+  "cost": 984200,
+  "submitted": "2026-10-10",
+  "site": "Rua da Escola, n.º 279, Infesta, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 20,
+  "months": 12,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Leonor Modelo Leonor",
+    "name": "Helena Exemplo Teresa",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "90688-SIM",
-    "address": "Rua do Outeiro, n.º 55, Arnoia, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6596"
+    "number": "19084-SIM",
+    "address": "Rua da Escola, n.º 279, Infesta, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4282"
    },
    "arquiteto": {
-    "name": "Xavier de Teste Miguel",
+    "name": "Leonor Amostra Inês",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "81385-SIM",
-    "address": "Travessa do Souto, n.º 119, 4800-000 Guimarães",
-    "policy": "SIM-RC-3655"
+    "number": "29031-SIM",
+    "address": "Caminho da Lameira, n.º 52, 4700-000 Braga",
+    "policy": "SIM-RC-7220"
    },
    "engenheiro": {
-    "name": "Xavier Exemplo Miguel",
+    "name": "Olga Amostra Sérgio",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "38069-SIM",
-    "address": "Rua da Escola, n.º 14, 4000-000 Porto",
-    "policy": "SIM-RC-2803"
+    "number": "05609-SIM",
+    "address": "Rua do Outeiro, n.º 66, 4800-000 Guimarães",
+    "policy": "SIM-RC-9936"
    },
    "diretor": {
-    "name": "Xavier Fictício Teresa",
+    "name": "João Modelo Carla",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "58579-SIM",
-    "address": "Caminho da Lameira, n.º 55, 4800-000 Guimarães",
-    "policy": "SIM-RC-0075"
+    "number": "15371-SIM",
+    "address": "Lugar de Vilar, n.º 49, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8336"
    }
   }
  },
  "planted": [
   {
-   "type": "unsigned",
+   "type": "impossible_value",
    "target": {
-    "slot": "TRCP"
+    "field": "area_parcela",
+    "slot": "REQ"
    },
-   "law": {
-    "ref": "VI.1",
-    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   "basis": "documents",
+   "values": {
+    "area_parcela": "203 m2",
+    "area_implantacao": "576 m2",
+    "MDARQ": "2030 m2"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "João Modelo Carla",
+    "assinante": "Leonor Amostra Inês"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Rua da Escola, n.º 279, Infesta, 4890-000 Celorico de Basto",
+    "TRPARQ": "Lugar da Devesa, n.º 220, Britelo, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

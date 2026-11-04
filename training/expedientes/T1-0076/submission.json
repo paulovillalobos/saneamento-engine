@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Pedro Modelo Nuno",
+  "name": "Diogo de Teste Miguel",
   "nif": "999999990"
  },
- "site": "Travessa do Souto, n.º 255, Canedo de Basto, 4890-000 Celorico de Basto",
- "operation": "ampliação de moradia unifamiliar",
- "submitted_at": "2026-10-21",
+ "site": "Caminho da Lameira, n.º 120, Molares, 4890-000 Celorico de Basto",
+ "operation": "construção de moradia unifamiliar",
+ "submitted_at": "2026-11-15",
  "files": [
   {
    "slot": "REQ",
@@ -46,7 +46,7 @@
    "file": "TRCP-termo-coordenador.pdf",
    "title": "Termo de responsabilidade do coordenador de projeto",
    "kind": "written",
-   "signed_by": null
+   "signed_by": "arquiteto"
   },
   {
    "slot": "SRCCP",
@@ -150,6 +150,13 @@
    "slot": "PI",
    "file": "PI-planta-implantacao.pdf",
    "title": "Planta de implantação",
+   "kind": "drawn",
+   "signed_by": "arquiteto"
+  },
+  {
+   "slot": "PLANT",
+   "file": "PLANT-plantas.pdf",
+   "title": "Plantas",
    "kind": "drawn",
    "signed_by": "arquiteto"
   },
@@ -407,50 +414,36 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "pecas_escritas_desenhadas_indice.pdf",
-   "title": "PEÇAS ESCRITAS E DESENHADAS - ÍNDICE",
+   "file": "ficha_verificacao_elementos.pdf",
+   "title": "Ficha de verificação",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "fatura_agua_2026_08.pdf",
-   "title": "Fatura de água",
+   "file": "guia-tecnico-projetos-2022.pdf",
+   "title": "Guia Técnico para Projetos de Águas pluviais",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "cv_requerente.pdf",
-   "title": "Curriculum vitae",
+   "file": "regulamento_instrucao_digital_extrato.pdf",
+   "title": "Regulamento municipal (extrato)",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "postura_43.pdf",
-   "title": "Postura Municipal Referente a Projetos de Redes prediais de ",
+   "file": "indice_pecas_desenhadas.pdf",
+   "title": "ÍNDICE DE PEÇAS DESENHADAS",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "parecer_externo_47.pdf",
-   "title": "PARECER",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "copia_parte_ata_reuniao.pdf",
-   "title": "Cópia de parte da ata da reunião de 2026-06-17",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "lista_elementos_nomeacao_ficheiros.pdf",
-   "title": "Lista de elementos instrutórios",
+   "file": "termo_responsabilidade.pdf",
+   "title": "Termo de Responsabilidade",
    "kind": "written",
    "signed_by": "requerente"
   }

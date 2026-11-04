@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Nuno Simulado Bruno",
+  "name": "Filipe de Teste Filipe",
   "nif": "999999990"
  },
- "site": "Lugar da Devesa, n.º 114, Agilde, 4890-000 Celorico de Basto",
+ "site": "Travessa do Souto, n.º 201, Caçarilhe, 4890-000 Celorico de Basto",
  "operation": "construção de moradia unifamiliar",
- "submitted_at": "2026-12-02",
+ "submitted_at": "2026-11-21",
  "files": [
   {
    "slot": "REQ",
@@ -157,6 +157,13 @@
    "slot": "PLANT",
    "file": "PLANT-plantas.pdf",
    "title": "Plantas",
+   "kind": "drawn",
+   "signed_by": "arquiteto"
+  },
+  {
+   "slot": "ALC",
+   "file": "ALC-alcados.pdf",
+   "title": "Alçados",
    "kind": "drawn",
    "signed_by": "arquiteto"
   },
@@ -407,43 +414,36 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "informacao-2026-2026.pdf",
-   "title": "INFORMAÇÃO n.º 2/2026",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "consulta_entidade_externa.pdf",
-   "title": "Consulta a entidade externa",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "seixal_minuta_memoria.pdf",
-   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "PDF15011206685359.pdf",
-   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "cv_requerente.pdf",
-   "title": "Curriculum vitae",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
    "file": "fatura_agua_2026_08.pdf",
    "title": "Fatura de água",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "instrucoes-preenchimento-2022.pdf",
+   "title": "Instruções Preenchimento_Q3",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "PDF12113637149025.pdf",
+   "title": "PEDIDO DE PARECER - ELEMENTOS A REMETER",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "postura_projetos_redes_prediais.pdf",
+   "title": "Postura Municipal Referente a Projetos de Redes prediais de ",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
+   "file": "analise_54.pdf",
+   "title": "Parecer técnico — Portaria n.º 320/2026/1 e estabilidade e f",
    "kind": "written",
    "signed_by": "requerente"
   }

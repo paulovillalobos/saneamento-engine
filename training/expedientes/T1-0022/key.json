@@ -2,78 +2,92 @@
  "expediente": "T1-0022",
  "case": {
   "id": "T1-0022",
-  "work": "ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 2190,
-  "impl": 592,
-  "built": 1068,
-  "imperm": 713,
-  "perm": 1477,
-  "volume": 3310,
-  "height": 7.7,
-  "facade": 7.0,
+  "work": "construção de armazém agrícola",
+  "use": "Armazém agrícola",
+  "fogos": 0,
+  "pisos": 1,
+  "plot": 1740,
+  "impl": 567,
+  "built": 550,
+  "imperm": 637,
+  "perm": 1103,
+  "volume": 1705,
+  "height": 4.8,
+  "facade": 4.1,
   "parking": 2,
-  "cost": 1252700,
-  "submitted": "2026-10-12",
-  "site": "Lugar de Vilar, n.º 155, Carvalho, 4890-000 Celorico de Basto",
+  "cost": 365700,
+  "submitted": "2026-12-25",
+  "site": "Rua da Escola, n.º 132, Moreira do Castelo, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 17,
+  "months": 19,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Vasco Fictício Teresa",
+    "name": "Miguel Amostra Xavier",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "94244-SIM",
-    "address": "Lugar de Vilar, n.º 155, Carvalho, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2495"
+    "number": "50309-SIM",
+    "address": "Rua da Escola, n.º 132, Moreira do Castelo, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5312"
    },
    "arquiteto": {
-    "name": "Eva Fictício Carla",
+    "name": "Bruno Exemplo Bruno",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "81221-SIM",
-    "address": "Caminho da Lameira, n.º 31, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5165"
+    "number": "45163-SIM",
+    "address": "Lugar de Carvalhal, n.º 19, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3797"
    },
    "engenheiro": {
-    "name": "Filipe de Teste Rita",
+    "name": "Xavier Exemplo Eva",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "41598-SIM",
-    "address": "Travessa do Souto, n.º 55, 4700-000 Braga",
-    "policy": "SIM-RC-9011"
+    "number": "47342-SIM",
+    "address": "Rua das Tílias, n.º 18, 4000-000 Porto",
+    "policy": "SIM-RC-4410"
    },
    "diretor": {
-    "name": "Miguel Exemplo Diogo",
+    "name": "Inês Simulado Inês",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "21421-SIM",
-    "address": "Lugar da Devesa, n.º 9, 4700-000 Braga",
-    "policy": "SIM-RC-7858"
+    "number": "76705-SIM",
+    "address": "Travessa do Souto, n.º 41, 4000-000 Porto",
+    "policy": "SIM-RC-1560"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "impossible_value",
    "target": {
-    "slot": "MDARQ"
+    "field": "area_parcela",
+    "slot": "REQ"
    },
-   "law": {
-    "ref": "V.9",
-    "quote": "9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:"
+   "basis": "documents",
+   "values": {
+    "area_parcela": "174 m2",
+    "area_implantacao": "567 m2",
+    "MDARQ": "1740 m2"
+   }
+  },
+  {
+   "type": "wrong_signer",
+   "target": {
+    "slot": "TRDO"
+   },
+   "basis": "documents",
+   "values": {
+    "declarante": "Inês Simulado Inês",
+    "assinante": "Bruno Exemplo Bruno"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

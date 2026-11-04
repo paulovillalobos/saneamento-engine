@@ -2,78 +2,88 @@
  "expediente": "T1-0007",
  "case": {
   "id": "T1-0007",
-  "work": "construção de edifício de comércio e serviços",
-  "use": "Comércio e serviços",
-  "fogos": 0,
-  "pisos": 3,
-  "plot": 310,
-  "impl": 77,
-  "built": 211,
-  "imperm": 200,
-  "perm": 110,
-  "volume": 654,
-  "height": 10.0,
-  "facade": 9.3,
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 2,
+  "plot": 2780,
+  "impl": 382,
+  "built": 753,
+  "imperm": 454,
+  "perm": 2326,
+  "volume": 2334,
+  "height": 7.3,
+  "facade": 6.6,
   "parking": 2,
-  "cost": 271300,
-  "submitted": "2026-12-24",
-  "site": "Travessa do Souto, n.º 253, Corgo, 4890-000 Celorico de Basto",
+  "cost": 827500,
+  "submitted": "2026-11-17",
+  "site": "Lugar da Devesa, n.º 105, Ribas, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 17,
+  "months": 16,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Ana Exemplo Eva",
+    "name": "Nuno Simulado Gonçalo",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "84064-SIM",
-    "address": "Travessa do Souto, n.º 253, Corgo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2919"
+    "number": "33049-SIM",
+    "address": "Lugar da Devesa, n.º 105, Ribas, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8365"
    },
    "arquiteto": {
-    "name": "Carla Modelo Ana",
+    "name": "Rita Exemplo Filipe",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "46803-SIM",
-    "address": "Caminho da Lameira, n.º 103, 4800-000 Guimarães",
-    "policy": "SIM-RC-8917"
+    "number": "36520-SIM",
+    "address": "Travessa do Souto, n.º 97, 4000-000 Porto",
+    "policy": "SIM-RC-1941"
    },
    "engenheiro": {
-    "name": "João Fictício Pedro",
+    "name": "Inês Exemplo Pedro",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "34993-SIM",
-    "address": "Lugar de Carvalhal, n.º 22, 4800-000 Guimarães",
-    "policy": "SIM-RC-8362"
+    "number": "81933-SIM",
+    "address": "Lugar de Carvalhal, n.º 84, 4700-000 Braga",
+    "policy": "SIM-RC-5839"
    },
    "diretor": {
-    "name": "Bruno de Teste Sérgio",
+    "name": "Bruno Simulado Nuno",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "13927-SIM",
-    "address": "Rua das Tílias, n.º 9, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1098"
+    "number": "58974-SIM",
+    "address": "Caminho da Lameira, n.º 53, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3791"
    }
   }
  },
  "planted": [
   {
-   "type": "missing_required",
+   "type": "not_pdf",
    "target": {
     "slot": "FOTO"
    },
    "law": {
-    "ref": "V.15",
-    "quote": "15 - Registo fotográfico da situação existente, abrangendo o imóvel e as edificações adjacentes, quando estas existam;"
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "unsigned",
+   "target": {
+    "slot": "TRCP"
+   },
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

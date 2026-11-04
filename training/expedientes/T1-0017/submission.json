@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Inês Exemplo Diogo",
+  "name": "Carla de Teste Teresa",
   "nif": "999999990"
  },
- "site": "Rua das Tílias, n.º 141, Rego, 4890-000 Celorico de Basto",
- "operation": "alteração e ampliação de moradia unifamiliar",
- "submitted_at": "2026-12-08",
+ "site": "Lugar de Carvalhal, n.º 166, Codeçoso, 4890-000 Celorico de Basto",
+ "operation": "construção de armazém agrícola",
+ "submitted_at": "2026-12-16",
  "files": [
   {
    "slot": "REQ",
@@ -67,7 +67,7 @@
    "file": "TRDO-termo-diretor-obra.pdf",
    "title": "Termo de responsabilidade pela assunção da função de diretor de obra",
    "kind": "written",
-   "signed_by": "arquiteto"
+   "signed_by": "diretor"
   },
   {
    "slot": "SRCDO",
@@ -414,6 +414,13 @@
   },
   {
    "slot": "OUTDOC",
+   "file": "postura_78.pdf",
+   "title": "Postura Municipal Referente a Projetos de Estimativa do cust",
+   "kind": "written",
+   "signed_by": "requerente"
+  },
+  {
+   "slot": "OUTDOC",
    "file": "ficha_verificacao_elementos.pdf",
    "title": "Ficha de verificação",
    "kind": "written",
@@ -421,29 +428,22 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "pecas_escritas_desenhadas_indice.pdf",
-   "title": "PEÇAS ESCRITAS E DESENHADAS - ÍNDICE",
+   "file": "criterios_56.pdf",
+   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "parecer_tecnico_portaria_320.pdf",
-   "title": "Parecer técnico — Portaria n.º 320/2026/1 e memória descriti",
+   "file": "benavente_indice_pecas.pdf",
+   "title": "ÍNDICE DE PEÇAS DESENHADAS",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "memoria_candidatura_65.pdf",
-   "title": "Memória descritiva do projeto empresarial",
-   "kind": "written",
-   "signed_by": "requerente"
-  },
-  {
-   "slot": "OUTDOC",
-   "file": "regulamento_instrucao_digital_extrato.pdf",
-   "title": "Regulamento municipal (extrato)",
+   "file": "termo-responsabilidade-2026.pdf",
+   "title": "Termo de Responsabilidade",
    "kind": "written",
    "signed_by": "requerente"
   }

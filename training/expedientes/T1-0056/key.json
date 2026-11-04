@@ -2,79 +2,114 @@
  "expediente": "T1-0056",
  "case": {
   "id": "T1-0056",
-  "work": "construção de edifício de habitação bifamiliar",
-  "use": "Habitação bifamiliar",
-  "fogos": 2,
-  "pisos": 2,
-  "plot": 2480,
-  "impl": 498,
-  "built": 860,
-  "imperm": 618,
-  "perm": 1862,
-  "volume": 2666,
-  "height": 7.4,
-  "facade": 6.7,
-  "parking": 4,
-  "cost": 811800,
-  "submitted": "2026-11-20",
-  "site": "Lugar de Carvalhal, n.º 48, Rego, 4890-000 Celorico de Basto",
+  "work": "ampliação de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
+  "pisos": 1,
+  "plot": 2290,
+  "impl": 795,
+  "built": 738,
+  "imperm": 848,
+  "perm": 1442,
+  "volume": 2287,
+  "height": 4.5,
+  "facade": 3.8,
+  "parking": 2,
+  "cost": 515800,
+  "submitted": "2026-10-21",
+  "site": "Lugar de Vilar, n.º 174, Rego, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 15,
+  "months": 22,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Gonçalo Exemplo Diogo",
+    "name": "Olga Modelo Miguel",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "68458-SIM",
-    "address": "Lugar de Carvalhal, n.º 48, Rego, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-0513"
+    "number": "32972-SIM",
+    "address": "Lugar de Vilar, n.º 174, Rego, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6778"
    },
    "arquiteto": {
-    "name": "Carla de Teste Helena",
+    "name": "Gonçalo Exemplo Miguel",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "59012-SIM",
-    "address": "Travessa do Souto, n.º 25, 4000-000 Porto",
-    "policy": "SIM-RC-7231"
+    "number": "26520-SIM",
+    "address": "Lugar da Devesa, n.º 34, 4800-000 Guimarães",
+    "policy": "SIM-RC-6014"
    },
    "engenheiro": {
-    "name": "Eva Simulado Rita",
+    "name": "Diogo Simulado Miguel",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "09453-SIM",
-    "address": "Rua da Escola, n.º 19, 4800-000 Guimarães",
-    "policy": "SIM-RC-2056"
+    "number": "19674-SIM",
+    "address": "Lugar de Carvalhal, n.º 112, 4700-000 Braga",
+    "policy": "SIM-RC-0971"
    },
    "diretor": {
-    "name": "Rita Exemplo Rita",
+    "name": "Rita de Teste Pedro",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "39589-SIM",
-    "address": "Rua da Escola, n.º 78, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8917"
+    "number": "74529-SIM",
+    "address": "Caminho da Lameira, n.º 115, 4800-000 Guimarães",
+    "policy": "SIM-RC-1920"
    }
   }
  },
  "planted": [
   {
-   "type": "wrong_signer",
+   "type": "missing_required",
    "target": {
-    "slot": "TRDO"
+    "slot": "CRP"
+   },
+   "law": {
+    "ref": "V.5",
+    "quote": "5 - Indicação do código de acesso à certidão permanente do registo predial referente ao prédio ou prédios abrangidos pela operação urbanística ou, quando omisso, a respetiva certidão negativa do registo predial, acompanhada da caderneta predial da qual constem os correspondentes artigos matriciais;"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "FOTO"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
    },
    "basis": "documents",
    "values": {
-    "declarante": "Rita Exemplo Rita",
-    "assinante": "Carla de Teste Helena"
+    "REQ": "738 m2",
+    "MDARQ": "621 m2"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Lugar de Vilar, n.º 174, Rego, 4890-000 Celorico de Basto",
+    "TRPARQ": "Lugar de Vilar, n.º 167, Fervença, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 1,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

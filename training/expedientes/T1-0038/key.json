@@ -2,93 +2,104 @@
  "expediente": "T1-0038",
  "case": {
   "id": "T1-0038",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
   "pisos": 2,
-  "plot": 2560,
-  "impl": 916,
-  "built": 1803,
-  "imperm": 1034,
-  "perm": 1526,
-  "volume": 5589,
-  "height": 6.6,
-  "facade": 5.9,
+  "plot": 3500,
+  "impl": 890,
+  "built": 1567,
+  "imperm": 1030,
+  "perm": 2470,
+  "volume": 4857,
+  "height": 7.8,
+  "facade": 7.1,
   "parking": 2,
-  "cost": 2246500,
-  "submitted": "2026-10-11",
-  "site": "Rua da Escola, n.º 268, Gagos, 4890-000 Celorico de Basto",
+  "cost": 1121900,
+  "submitted": "2026-11-12",
+  "site": "Lugar da Devesa, n.º 122, Carvalho, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 9,
+  "months": 20,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Olga Simulado Xavier",
+    "name": "Rita Modelo Xavier",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "83070-SIM",
-    "address": "Rua da Escola, n.º 268, Gagos, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5643"
+    "number": "42932-SIM",
+    "address": "Lugar da Devesa, n.º 122, Carvalho, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-5217"
    },
    "arquiteto": {
-    "name": "Helena Modelo Miguel",
+    "name": "Bruno Amostra Rita",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "69042-SIM",
-    "address": "Rua das Tílias, n.º 92, 4700-000 Braga",
-    "policy": "SIM-RC-8525"
+    "number": "40831-SIM",
+    "address": "Rua das Tílias, n.º 73, 4800-000 Guimarães",
+    "policy": "SIM-RC-8081"
    },
    "engenheiro": {
-    "name": "Carla Simulado Leonor",
+    "name": "Diogo Modelo Leonor",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "03493-SIM",
-    "address": "Lugar de Carvalhal, n.º 4, 4700-000 Braga",
-    "policy": "SIM-RC-4605"
+    "number": "32338-SIM",
+    "address": "Rua das Tílias, n.º 99, 4700-000 Braga",
+    "policy": "SIM-RC-3929"
    },
    "diretor": {
-    "name": "Xavier Fictício Olga",
+    "name": "Miguel Simulado Ana",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "38918-SIM",
-    "address": "Lugar de Vilar, n.º 6, 4000-000 Porto",
-    "policy": "SIM-RC-8147"
+    "number": "71026-SIM",
+    "address": "Lugar de Vilar, n.º 54, 4700-000 Braga",
+    "policy": "SIM-RC-4346"
    }
   }
  },
  "planted": [
   {
-   "type": "expired_insurance",
+   "type": "not_pdfa",
    "target": {
-    "slot": "SRCARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-10-11"
+    "slot": "CEO"
    },
    "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
    }
   },
   {
-   "type": "template_wording_missing",
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "1567 m2",
+    "MDARQ": "1669 m2"
+   }
+  },
+  {
+   "type": "wrong_site",
    "target": {
     "slot": "TRPARQ"
    },
-   "law": {
-    "ref": "VII.I",
-    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
+   "basis": "documents",
+   "values": {
+    "REQ": "Lugar da Devesa, n.º 122, Carvalho, 4890-000 Celorico de Basto",
+    "TRPARQ": "Rua do Outeiro, n.º 227, Codeçoso, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",

@@ -2,92 +2,83 @@
  "expediente": "T1-0052",
  "case": {
   "id": "T1-0052",
-  "work": "alteração e ampliação de moradia unifamiliar",
-  "use": "Habitação unifamiliar",
-  "fogos": 1,
-  "pisos": 2,
-  "plot": 3460,
-  "impl": 1482,
-  "built": 2564,
-  "imperm": 1667,
-  "perm": 1793,
-  "volume": 7948,
-  "height": 7.0,
-  "facade": 6.3,
+  "work": "construção de edifício de comércio e serviços",
+  "use": "Comércio e serviços",
+  "fogos": 0,
+  "pisos": 3,
+  "plot": 560,
+  "impl": 91,
+  "built": 244,
+  "imperm": 244,
+  "perm": 316,
+  "volume": 756,
+  "height": 10.3,
+  "facade": 9.6,
   "parking": 2,
-  "cost": 3194700,
-  "submitted": "2026-12-21",
-  "site": "Lugar da Devesa, n.º 214, Ourilhe, 4890-000 Celorico de Basto",
+  "cost": 172700,
+  "submitted": "2026-12-02",
+  "site": "Rua do Outeiro, n.º 264, Ribas, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 10,
+  "months": 18,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Olga Amostra Pedro",
+    "name": "Rita Simulado Leonor",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "40347-SIM",
-    "address": "Lugar da Devesa, n.º 214, Ourilhe, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8924"
+    "number": "17033-SIM",
+    "address": "Rua do Outeiro, n.º 264, Ribas, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2664"
    },
    "arquiteto": {
-    "name": "Xavier Fictício Pedro",
+    "name": "Bruno Simulado Diogo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "80221-SIM",
-    "address": "Lugar de Carvalhal, n.º 50, 4000-000 Porto",
-    "policy": "SIM-RC-5441"
+    "number": "78850-SIM",
+    "address": "Rua da Escola, n.º 78, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2840"
    },
    "engenheiro": {
-    "name": "Inês Amostra Eva",
+    "name": "Inês Modelo Gonçalo",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "35700-SIM",
-    "address": "Rua da Escola, n.º 13, 4700-000 Braga",
-    "policy": "SIM-RC-0584"
+    "number": "59678-SIM",
+    "address": "Rua da Escola, n.º 16, 4000-000 Porto",
+    "policy": "SIM-RC-7696"
    },
    "diretor": {
-    "name": "Ana de Teste Leonor",
+    "name": "Carla Modelo Filipe",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "06399-SIM",
-    "address": "Lugar de Vilar, n.º 54, 4800-000 Guimarães",
-    "policy": "SIM-RC-0284"
+    "number": "18445-SIM",
+    "address": "Travessa do Souto, n.º 69, 4800-000 Guimarães",
+    "policy": "SIM-RC-0315"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "expired_insurance",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "slot": "SRCARQ"
    },
    "basis": "documents",
    "values": {
-    "area_parcela": "346 m2",
-    "area_implantacao": "1482 m2",
-    "MDARQ": "3460 m2"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
+    "validade_fim": "2026-09-30",
+    "submetido": "2026-12-02"
    },
-   "basis": "documents",
-   "values": {
-    "declarante": "Ana de Teste Leonor",
-    "assinante": "Xavier Fictício Pedro"
+   "law": {
+    "ref": "V.14",
+    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 1,
  "always": [
   {
    "type": "missing_complement",

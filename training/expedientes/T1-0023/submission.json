@@ -6,12 +6,12 @@
  "municipality": "Celorico de Basto",
  "form_subject": "form:nopaper:celorico-de-basto:CP:CPEDI",
  "applicant": {
-  "name": "Gonçalo Exemplo Carla",
+  "name": "Xavier de Teste Diogo",
   "nif": "999999990"
  },
- "site": "Lugar de Carvalhal, n.º 94, Veade, 4890-000 Celorico de Basto",
- "operation": "construção de edifício de comércio e serviços",
- "submitted_at": "2026-12-17",
+ "site": "Caminho da Lameira, n.º 160, Fervença, 4890-000 Celorico de Basto",
+ "operation": "alteração e ampliação de moradia unifamiliar",
+ "submitted_at": "2026-12-14",
  "files": [
   {
    "slot": "REQ",
@@ -145,6 +145,13 @@
    "title": "Levantamento topográfico georreferenciado",
    "kind": "drawn",
    "signed_by": "engenheiro"
+  },
+  {
+   "slot": "PI",
+   "file": "PI-planta-implantacao.pdf",
+   "title": "Planta de implantação",
+   "kind": "drawn",
+   "signed_by": "arquiteto"
   },
   {
    "slot": "PLANT",
@@ -407,43 +414,43 @@
   },
   {
    "slot": "OUTDOC",
-   "file": "PDF95161949694455.pdf",
-   "title": "ANEXO IV — Critério para elaboração dos Levantamentos Topogr",
+   "file": "PDF17731367387663.pdf",
+   "title": "Guia Técnico para Projetos de Comportamento térmico",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "memoria_candidatura_09.pdf",
-   "title": "Memória descritiva e justificativa — Candidatura ao programa",
+   "file": "viseu_esclarecimento_sobre.pdf",
+   "title": "Esclarecimento sobre a levantamento topográfico",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "lista_elementos_nomeacao_ficheiros.pdf",
-   "title": "Lista de elementos instrutórios",
+   "file": "memoria_empresa_04.pdf",
+   "title": "MINUTA DA MEMÓRIA DESCRITIVA",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "fatura_agua_2026_08.pdf",
-   "title": "Fatura de água",
+   "file": "nota_24.pdf",
+   "title": "NOTA TÉCNICA N.º 13 — PROJETOS DE COMPORTAMENTO TÉRMICO",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "carta_cmcb.pdf",
-   "title": "Carta",
+   "file": "copia_parte_ata_reuniao.pdf",
+   "title": "Cópia de parte da ata da reunião de 2026-11-14",
    "kind": "written",
    "signed_by": "requerente"
   },
   {
    "slot": "OUTDOC",
-   "file": "instrucoes-preenchimento-2025.pdf",
-   "title": "Instruções Preenchimento_Q3",
+   "file": "municipio-benavente-aquisicao-2019.pdf",
+   "title": "MUNICÍPIO DE BENAVENTE — AQUISIÇÃO DE SERVIÇOS DE FISCALIZAÇ",
    "kind": "written",
    "signed_by": "requerente"
   }

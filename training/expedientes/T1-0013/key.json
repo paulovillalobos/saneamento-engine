@@ -6,74 +6,109 @@
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 940,
-  "impl": 238,
-  "built": 453,
-  "imperm": 416,
-  "perm": 524,
-  "volume": 1404,
+  "plot": 950,
+  "impl": 413,
+  "built": 797,
+  "imperm": 563,
+  "perm": 387,
+  "volume": 2470,
   "height": 7.5,
   "facade": 6.8,
   "parking": 2,
-  "cost": 514600,
-  "submitted": "2026-12-14",
-  "site": "Rua das Tílias, n.º 155, Corgo, 4890-000 Celorico de Basto",
+  "cost": 618400,
+  "submitted": "2026-12-24",
+  "site": "Lugar de Vilar, n.º 275, Basto (São Clemente), 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 17,
+  "months": 20,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Teresa Fictício Bruno",
+    "name": "Eva de Teste Ana",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "79655-SIM",
-    "address": "Rua das Tílias, n.º 155, Corgo, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-3523"
+    "number": "61892-SIM",
+    "address": "Lugar de Vilar, n.º 275, Basto (São Clemente), 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-4436"
    },
    "arquiteto": {
-    "name": "Olga de Teste Teresa",
+    "name": "Teresa Amostra Teresa",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "03619-SIM",
-    "address": "Caminho da Lameira, n.º 69, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8686"
+    "number": "40000-SIM",
+    "address": "Rua da Escola, n.º 2, 4000-000 Porto",
+    "policy": "SIM-RC-4505"
    },
    "engenheiro": {
-    "name": "Inês Exemplo Eva",
+    "name": "Diogo Fictício Eva",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "53859-SIM",
-    "address": "Travessa do Souto, n.º 96, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1132"
+    "number": "68372-SIM",
+    "address": "Rua das Tílias, n.º 86, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3169"
    },
    "diretor": {
-    "name": "Teresa de Teste Teresa",
+    "name": "Diogo Modelo Eva",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "73808-SIM",
-    "address": "Rua da Escola, n.º 80, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-7299"
+    "number": "69243-SIM",
+    "address": "Rua da Escola, n.º 80, 4700-000 Braga",
+    "policy": "SIM-RC-4062"
    }
   }
  },
  "planted": [
   {
+   "type": "missing_required",
+   "target": {
+    "slot": "PLANT"
+   },
+   "law": {
+    "ref": "V.27.b.i",
+    "quote": "i) Plantas à escala de 1:50 ou de 1:100 contendo as dimensões e áreas e utilizações de todos os compartimentos, bem como a representação do mobiliário fixo e equipamento sanitário;"
+   }
+  },
+  {
+   "type": "not_pdf",
+   "target": {
+    "slot": "FOTO"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
    "type": "unsigned",
    "target": {
-    "slot": "TRDO"
+    "slot": "TRPLAC"
    },
    "law": {
     "ref": "VI.1",
     "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
    }
+  },
+  {
+   "type": "value_mismatch",
+   "target": {
+    "field": "area_total_construcao",
+    "slots": [
+     "REQ",
+     "MDARQ"
+    ]
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "797 m2",
+    "MDARQ": "879 m2"
+   }
   }
  ],
- "n_planted": 1,
+ "n_planted": 4,
  "always": [
   {
    "type": "missing_complement",

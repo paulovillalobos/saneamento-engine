@@ -2,79 +2,94 @@
  "expediente": "T1-0026",
  "case": {
   "id": "T1-0026",
-  "work": "alteração e ampliação de moradia unifamiliar",
+  "work": "ampliação de moradia unifamiliar",
   "use": "Habitação unifamiliar",
   "fogos": 1,
   "pisos": 2,
-  "plot": 3890,
-  "impl": 1230,
-  "built": 2098,
-  "imperm": 1294,
-  "perm": 2596,
-  "volume": 6503,
-  "height": 6.9,
-  "facade": 6.2,
+  "plot": 2830,
+  "impl": 646,
+  "built": 1140,
+  "imperm": 824,
+  "perm": 2006,
+  "volume": 3534,
+  "height": 7.0,
+  "facade": 6.3,
   "parking": 2,
-  "cost": 2429400,
-  "submitted": "2026-12-16",
-  "site": "Rua da Escola, n.º 46, Canedo de Basto, 4890-000 Celorico de Basto",
+  "cost": 1167300,
+  "submitted": "2026-12-27",
+  "site": "Rua da Escola, n.º 257, Gagos, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 23,
+  "months": 14,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Vasco Fictício Gonçalo",
+    "name": "Filipe Amostra Bruno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "48253-SIM",
-    "address": "Rua da Escola, n.º 46, Canedo de Basto, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-1063"
+    "number": "29614-SIM",
+    "address": "Rua da Escola, n.º 257, Gagos, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-3095"
    },
    "arquiteto": {
-    "name": "Nuno Exemplo Ana",
+    "name": "Sérgio Amostra Filipe",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "70341-SIM",
-    "address": "Lugar de Carvalhal, n.º 114, 4700-000 Braga",
-    "policy": "SIM-RC-3947"
+    "number": "32912-SIM",
+    "address": "Rua das Tílias, n.º 41, 4000-000 Porto",
+    "policy": "SIM-RC-5952"
    },
    "engenheiro": {
-    "name": "Gonçalo Amostra Ana",
+    "name": "Vasco Modelo Pedro",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "95695-SIM",
-    "address": "Caminho da Lameira, n.º 6, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-8503"
+    "number": "16508-SIM",
+    "address": "Rua da Escola, n.º 32, 4000-000 Porto",
+    "policy": "SIM-RC-2551"
    },
    "diretor": {
-    "name": "Gonçalo Simulado Diogo",
+    "name": "Rita Exemplo Miguel",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "15437-SIM",
-    "address": "Rua das Tílias, n.º 43, 4000-000 Porto",
-    "policy": "SIM-RC-7298"
+    "number": "04300-SIM",
+    "address": "Caminho da Lameira, n.º 42, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-8840"
    }
   }
  },
  "planted": [
   {
-   "type": "expired_insurance",
+   "type": "not_pdf",
    "target": {
-    "slot": "SRCARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "validade_fim": "2026-09-30",
-    "submetido": "2026-12-16"
+    "slot": "ALC"
    },
    "law": {
-    "ref": "V.14",
-    "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "MDPAP"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
+  },
+  {
+   "type": "template_wording_missing",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "law": {
+    "ref": "VII.I",
+    "quote": "observa as normas legais e regulamentares aplicáveis à pretensão"
    }
   },
   {
@@ -88,30 +103,8 @@
    },
    "basis": "documents",
    "values": {
-    "REQ": "2098 m2",
-    "MDARQ": "2210 m2"
-   }
-  },
-  {
-   "type": "wrong_signer",
-   "target": {
-    "slot": "TRDO"
-   },
-   "basis": "documents",
-   "values": {
-    "declarante": "Gonçalo Simulado Diogo",
-    "assinante": "Nuno Exemplo Ana"
-   }
-  },
-  {
-   "type": "wrong_site",
-   "target": {
-    "slot": "TRPARQ"
-   },
-   "basis": "documents",
-   "values": {
-    "REQ": "Rua da Escola, n.º 46, Canedo de Basto, 4890-000 Celorico de Basto",
-    "TRPARQ": "Caminho da Lameira, n.º 74, Rego, 4890-000 Celorico de Basto"
+    "REQ": "1140 m2",
+    "MDARQ": "1087 m2"
    }
   }
  ],

@@ -2,62 +2,62 @@
  "expediente": "T1-0021",
  "case": {
   "id": "T1-0021",
-  "work": "construção de armazém agrícola",
-  "use": "Armazém agrícola",
-  "fogos": 0,
+  "work": "construção de moradia unifamiliar",
+  "use": "Habitação unifamiliar",
+  "fogos": 1,
   "pisos": 1,
-  "plot": 600,
-  "impl": 264,
-  "built": 252,
-  "imperm": 293,
-  "perm": 307,
-  "volume": 781,
-  "height": 4.0,
-  "facade": 3.3,
+  "plot": 1600,
+  "impl": 230,
+  "built": 207,
+  "imperm": 250,
+  "perm": 1350,
+  "volume": 641,
+  "height": 4.1,
+  "facade": 3.4,
   "parking": 2,
-  "cost": 268600,
-  "submitted": "2026-10-01",
-  "site": "Lugar de Vilar, n.º 259, Borba de Montanha, 4890-000 Celorico de Basto",
+  "cost": 143400,
+  "submitted": "2026-12-06",
+  "site": "Caminho da Lameira, n.º 22, Arnoia, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 13,
+  "months": 15,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "Gonçalo Fictício Filipe",
+    "name": "Rita Amostra Nuno",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "40870-SIM",
-    "address": "Lugar de Vilar, n.º 259, Borba de Montanha, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-2397"
+    "number": "63191-SIM",
+    "address": "Caminho da Lameira, n.º 22, Arnoia, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-2834"
    },
    "arquiteto": {
-    "name": "Carla Exemplo Eva",
+    "name": "Bruno de Teste Gonçalo",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "31269-SIM",
-    "address": "Rua da Escola, n.º 96, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-5642"
+    "number": "06650-SIM",
+    "address": "Rua das Tílias, n.º 78, 4000-000 Porto",
+    "policy": "SIM-RC-8724"
    },
    "engenheiro": {
-    "name": "Bruno Modelo Carla",
+    "name": "Nuno Simulado Eva",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "59002-SIM",
-    "address": "Rua do Outeiro, n.º 102, 4700-000 Braga",
-    "policy": "SIM-RC-3033"
+    "number": "42335-SIM",
+    "address": "Lugar de Carvalhal, n.º 71, 4700-000 Braga",
+    "policy": "SIM-RC-4542"
    },
    "diretor": {
-    "name": "Diogo Simulado Gonçalo",
+    "name": "Nuno Simulado Olga",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "08083-SIM",
-    "address": "Travessa do Souto, n.º 12, 4700-000 Braga",
-    "policy": "SIM-RC-4688"
+    "number": "48971-SIM",
+    "address": "Caminho da Lameira, n.º 91, 4700-000 Braga",
+    "policy": "SIM-RC-0570"
    }
   }
  },
@@ -70,15 +70,25 @@
    "basis": "documents",
    "values": {
     "validade_fim": "2026-09-30",
-    "submetido": "2026-10-01"
+    "submetido": "2026-12-06"
    },
    "law": {
     "ref": "V.14",
     "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;"
    }
+  },
+  {
+   "type": "not_pdfa",
+   "target": {
+    "slot": "FSCI"
+   },
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   }
   }
  ],
- "n_planted": 1,
+ "n_planted": 2,
  "always": [
   {
    "type": "missing_complement",

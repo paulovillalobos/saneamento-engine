@@ -6,87 +6,96 @@
   "use": "Habitação bifamiliar",
   "fogos": 2,
   "pisos": 2,
-  "plot": 2980,
-  "impl": 745,
-  "built": 1395,
-  "imperm": 847,
-  "perm": 2133,
-  "volume": 4324,
-  "height": 7.4,
-  "facade": 6.7,
+  "plot": 2470,
+  "impl": 843,
+  "built": 1509,
+  "imperm": 878,
+  "perm": 1592,
+  "volume": 4677,
+  "height": 7.1,
+  "facade": 6.4,
   "parking": 4,
-  "cost": 1514900,
-  "submitted": "2026-10-24",
-  "site": "Caminho da Lameira, n.º 65, Codeçoso, 4890-000 Celorico de Basto",
+  "cost": 1062300,
+  "submitted": "2026-11-24",
+  "site": "Caminho da Lameira, n.º 108, Rego, 4890-000 Celorico de Basto",
   "start": "janeiro de 2027",
-  "months": 9,
+  "months": 8,
   "insurance_from": "2026-01-01",
   "insurance_to": "2026-12-31",
   "people": {
    "requerente": {
-    "name": "João Simulado Carla",
+    "name": "Pedro de Teste Olga",
     "role": "requerente",
     "title": null,
     "body": null,
-    "number": "41679-SIM",
-    "address": "Caminho da Lameira, n.º 65, Codeçoso, 4890-000 Celorico de Basto",
-    "policy": "SIM-RC-6819"
+    "number": "32980-SIM",
+    "address": "Caminho da Lameira, n.º 108, Rego, 4890-000 Celorico de Basto",
+    "policy": "SIM-RC-6262"
    },
    "arquiteto": {
-    "name": "Vasco de Teste Eva",
+    "name": "Filipe Simulado Sérgio",
     "role": "arquiteto",
     "title": "arquiteto",
     "body": "Ordem dos Arquitectos",
-    "number": "02111-SIM",
-    "address": "Rua da Escola, n.º 76, 4700-000 Braga",
-    "policy": "SIM-RC-9344"
+    "number": "66007-SIM",
+    "address": "Lugar de Carvalhal, n.º 48, 4800-000 Guimarães",
+    "policy": "SIM-RC-0472"
    },
    "engenheiro": {
-    "name": "Pedro Fictício Xavier",
+    "name": "Xavier Amostra Olga",
     "role": "engenheira",
     "title": "engenheira civil",
     "body": "Ordem dos Engenheiros",
-    "number": "67699-SIM",
-    "address": "Rua da Escola, n.º 49, 4700-000 Braga",
-    "policy": "SIM-RC-5685"
+    "number": "52012-SIM",
+    "address": "Rua do Outeiro, n.º 67, 4000-000 Porto",
+    "policy": "SIM-RC-9172"
    },
    "diretor": {
-    "name": "Diogo Fictício Vasco",
+    "name": "Bruno Amostra Gonçalo",
     "role": "diretor de obra",
     "title": "engenheiro civil",
     "body": "Ordem dos Engenheiros",
-    "number": "89362-SIM",
-    "address": "Rua das Tílias, n.º 76, 4700-000 Braga",
-    "policy": "SIM-RC-8067"
+    "number": "85816-SIM",
+    "address": "Lugar da Devesa, n.º 5, 4700-000 Braga",
+    "policy": "SIM-RC-7188"
    }
   }
  },
  "planted": [
   {
-   "type": "impossible_value",
+   "type": "unsigned",
    "target": {
-    "field": "area_parcela",
-    "slot": "REQ"
+    "slot": "TRCP"
    },
-   "basis": "documents",
-   "values": {
-    "area_parcela": "298 m2",
-    "area_implantacao": "745 m2",
-    "MDARQ": "2980 m2"
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
    }
   },
   {
-   "type": "not_pdfa",
+   "type": "wrong_signer",
    "target": {
-    "slot": "FSCI"
+    "slot": "TRDO"
    },
-   "law": {
-    "ref": "VI.1.a",
-    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   "basis": "documents",
+   "values": {
+    "declarante": "Bruno Amostra Gonçalo",
+    "assinante": "Filipe Simulado Sérgio"
+   }
+  },
+  {
+   "type": "wrong_site",
+   "target": {
+    "slot": "TRPARQ"
+   },
+   "basis": "documents",
+   "values": {
+    "REQ": "Caminho da Lameira, n.º 108, Rego, 4890-000 Celorico de Basto",
+    "TRPARQ": "Caminho da Lameira, n.º 259, Ourilhe, 4890-000 Celorico de Basto"
    }
   }
  ],
- "n_planted": 2,
+ "n_planted": 3,
  "always": [
   {
    "type": "missing_complement",
