@@ -143,4 +143,9 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
   all rejected, invented 0, fabricated 0, refused 0. Facts 22/29 (r10 25): six values answered "not present". Cause found after the
   run: the real D2 rows were 229 absent against 1 value (two absent questions per document, almost no keyed values) ×6 in the mix.
   Decision stands; the real set needs balanced fact rows (D17 fix, USD 0) before round 12.
+- D17 fix (2026-11-05 midday, USD 0): fact values read off the 44 element documents by four readers, kept only when printed as a
+  whole token of one page (build check), short values pinned to their page (realtrain.py KEYS tuple takes an optional page);
+  absent question only on documents that state a value, one each. 20 values : 22 null. Real memórias rarely print these facts;
+  no value was invented to balance the file. r12 = r11 recipe on the rebalanced file (modal/train_lora.py RUNS r12,
+  training/runs/overnight-r12.sh, no regeneration). Needs Paulo's go (≈ USD 44 at ×6).
 

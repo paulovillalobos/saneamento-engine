@@ -6,7 +6,7 @@
 Same prompts, same whole-document view and same scaffold gate as the generated rows (generator/d1d2.py): a key the reader could
 not give is never a row. Each document yields one D1 row under its real name, one under an uninformative name, and one with
 extractor damage under a stranger name (the three shapes r6/D11 taught us real submissions take); each hand-keyed fact yields a D2
-row (quote code-aligned on the page), and two absent-fact questions per document yield null rows. HARD RULE: a file whose sha256
+row (quote code-aligned on the page), and one absent-fact question per document that states a value yields a null row. HARD RULE: a file whose sha256
 equals any file of the stranger test (sources/real/{memorias,modelos,normas,wave2,wave3}) stops the script. The test never trains.
 """
 import argparse
@@ -26,18 +26,19 @@ T = "sources/real/train"
 P = "portaria-320-2026-1:anexo-V."
 TEST_DIRS = ["memorias", "modelos", "normas", "wave2", "wave3"]
 
-# (file, element id or None, tipo, [(field, value or None)], note). Element ids: P + "9", P + "27.i.i" …; None = not an element.
+# (file, element id or None, tipo, [(field, value or None)], note). Fact values 2026-11-05: read off the text by four readers, each
+# kept only if printed as a whole token of one page (the build drops the rest); None = the word is there but not the fact (trap). Element ids: P + "9", P + "27.i.i" …; None = not an element.
 KEYS = [
-    ("angra_alteracao_loteamento_proposta.pdf", P + "9", "escrito", [], "MDJ, alteração de loteamento (lote 219), Angra do Heroísmo"),
+    ("angra_alteracao_loteamento_proposta.pdf", P + "9", "escrito", [('uso', 'Equipamento - Centro Comunitário e Social')], "MDJ, alteração de loteamento (lote 219), Angra do Heroísmo"),
     ("angra_aviso_94_alteracao_lote1.pdf", None, "nao_e_elemento", [], "municipal aviso announcing a loteamento alteration (public discussion)"),
-    ("angra_loteamento_mdj.pdf", P + "9", "escrito", [], "peças escritas bundle whose body is the MDJ of an industrial loteamento (index, termo, declaração, MDJ, quadros de áreas), Angra"),
+    ("angra_loteamento_mdj.pdf", P + "9", "escrito", [('area_parcela', '840 943 m²')], "peças escritas bundle whose body is the MDJ of an industrial loteamento (index, termo, declaração, MDJ, quadros de áreas), Angra"),
     ("apa_siaia_drenagem_aguas_residuais_memoria.pdf", P + "27.i.v", "escrito", [], "MDJ of a wastewater drainage project, estudo prévio (public AIA archive)"),
     ("arganil_anexo_i_portaria320.pdf", None, "nao_e_elemento", [], "blank Portaria 320/2026 Anexo I form, Arganil"),
     ("arganil_anexo_iv_portaria320.pdf", None, "nao_e_elemento", [], "blank Portaria 320/2026 Anexo IV form, Arganil"),
     ("arganil_legalizacao_lista_elementos.pdf", None, "nao_e_elemento", [], "legalisation request form with element list, Arganil"),
     ("arganil_minuta_rcd.pdf", None, "nao_e_elemento", [], "blank PPGRCD minuta, Arganil"),
     ("arganil_rececao_obras_urbanizacao.pdf", None, "nao_e_elemento", [], "request form for reception of urbanisation works, Arganil"),
-    ("aveiro_parque_infantil_bicicleta_memoria.pdf", P + "9", "escrito", [], "memória descritiva, projeto de execução of a playground (Aveiro, Viva a Cidade)"),
+    ("aveiro_parque_infantil_bicicleta_memoria.pdf", P + "9", "escrito", [('area_parcela', '2990 m2')], "memória descritiva, projeto de execução of a playground (Aveiro, Viva a Cidade)"),
     ("borba_comunicacao_inicio_trabalhos.pdf", None, "nao_e_elemento", [], "blank form, comunicação de início dos trabalhos, Borba"),
     ("borba_cp_obras_demolicao.pdf", None, "nao_e_elemento", [], "blank form, comunicação prévia de demolição, Borba"),
     ("borba_cp_utilizacao.pdf", None, "nao_e_elemento", [], "blank form, comunicação prévia para utilização, Borba"),
@@ -61,10 +62,10 @@ KEYS = [
     ("jfalvalade_md_sede_gdcfc.pdf", P + "9", "escrito", [], "MDJ, club building rehabilitation, JF Alvalade"),
     ("jfalvalade_mdj_rua_silva_albuquerque.pdf", P + "9", "escrito", [], "MDJ, street requalification, JF Alvalade"),
     ("jfalvalade_memoria_arquitetura_cave_conde_arnoso.pdf", P + "9", "escrito", [], "MDJ, projeto de arquitetura, basement requalification, JF Alvalade"),
-    ("jfalvalade_orcamento_enocivil.pdf", P + "27.f", "escrito", [('prazo_meses', None)], "priced orçamento by items and quantities (trap: prazo 30 dias → null)"),
+    ("jfalvalade_orcamento_enocivil.pdf", P + "27.f", "escrito", [('prazo_meses', None), ('custo_total', '24.999,45 €')], "priced orçamento by items and quantities (trap: prazo 30 dias → null)"),
     ("jfalvalade_parque_gomes_ferreira_mapa_medicoes.pdf", None, "nao_e_elemento", [], "mapa de medições (unpriced measurements)"),
     ("jfalvalade_parque_gomes_ferreira_mapa_quantidades.pdf", None, "nao_e_elemento", [('custo_total', None)], "unpriced mapa de quantidades (- € columns)"),
-    ("jfalvalade_rua_antonio_ferreira_lista_precos_unitarios.pdf", P + "27.f", "escrito", [], "priced lista de preços unitários with totals per item (as Vagos LPU in the test)"),
+    ("jfalvalade_rua_antonio_ferreira_lista_precos_unitarios.pdf", P + "27.f", "escrito", [('custo_total', '36.502,71 €')], "priced lista de preços unitários with totals per item (as Vagos LPU in the test)"),
     ("jfalvalade_sede_gdcfc_mtq.pdf", None, "nao_e_elemento", [], "unpriced mapa de quantidades with chapter index"),
     ("jfesgueira_prospecao_geotecnica_taboeira.pdf", None, "nao_e_elemento", [], "proposal for geotechnical prospecting services"),
     ("jfestrela_academia_contencao_mqt.pdf", None, "nao_e_elemento", [], "unpriced medições (0,00 €)"),
@@ -83,9 +84,9 @@ KEYS = [
     ("lousa_rmue.pdf", None, "nao_e_elemento", [], "DR pages with the RMUE of Lousã"),
     ("lousa_sol016_juncao_elementos.pdf", None, "nao_e_elemento", [], "blank form, junção de elementos"),
     ("lousa_sol111_prorrogacao_prazo.pdf", None, "nao_e_elemento", [('prazo_meses', None)], "blank form, prorrogação de prazo (trap: the word prazo)"),
-    ("madeira_dre_ligacao_quebradas_amparo_mdj.pdf", P + "9", "escrito", [], "MDJ of a road project, 124 pages (regional roads directorate) — only the first ~65k chars are shown"),
+    ("madeira_dre_ligacao_quebradas_amparo_mdj.pdf", P + "9", "escrito", [('prazo_meses', None), ('custo_total', None)], "MDJ of a road project, 124 pages (regional roads directorate) — only the first ~65k chars are shown"),
     ("mealhada_imp_gu_60.pdf", None, "nao_e_elemento", [], "blank certidão request form, Mealhada"),
-    ("melgaco_alteracao_loteamento_sra_graca_mdj.pdf", P + "9", "escrito", [('fogos', '17')], "MDJ + regulamento, alteração de loteamento of a municipal bairro (17 fogos, p.3)"),
+    ("melgaco_alteracao_loteamento_sra_graca_mdj.pdf", P + "9", "escrito", [('fogos', '17', 3), ('area_parcela', '6008,00 m2'), ('uso', 'uso habitacional')], "MDJ + regulamento, alteração de loteamento of a municipal bairro (17 fogos, p.3)"),
     ("melgaco_boucas_md_infraestruturas_eletricas.pdf", P + "27.i.iii", "escrito", [], "memória descritiva, electrical infrastructure of an industrial loteamento, Melgaço"),
     ("melgaco_zea_md_abastecimento_agua.pdf", P + "27.i.v", "escrito", [], "MDJ, water supply and irrigation network of the ZEA loteamento (urbanisation network, keyed as the water-and-sewage project)"),
     ("melgaco_zea_md_aguas_residuais.pdf", P + "27.i.v", "escrito", [], "MDJ, wastewater drainage network of the ZEA loteamento"),
@@ -98,7 +99,7 @@ KEYS = [
     ("oaz_edital_normas_desmaterializacao.pdf", None, "nao_e_elemento", [], "edital with technical norms for digital processes, Oliveira de Azeméis"),
     ("oeiras_ciclovia_lombos_programa_preliminar.pdf", None, "nao_e_elemento", [], "programa preliminar for a design-services tender (not a project memória)"),
     ("peniche_gnr_mdj_aguas_pluviais.pdf", P + "27.i.vi", "escrito", [], "MDJ, public stormwater drainage network of a loteamento, Peniche"),
-    ("peniche_gnr_pecas_escritas_eletricidade.pdf", P + "27.i.iii", "escrito", [], "peças escritas (memória + condições técnicas) of the electrical project of a loteamento, Peniche (41 pages)"),
+    ("peniche_gnr_pecas_escritas_eletricidade.pdf", P + "27.i.iii", "escrito", [('custo_total', '30 683,21 €'), ('area_parcela', '6 880.00m²'), ('uso', 'Moradias unifamiliares')], "peças escritas (memória + condições técnicas) of the electrical project of a loteamento, Peniche (41 pages)"),
     ("peniche_marginal_norte_memoria_estudo_previo.pdf", P + "9", "escrito", [], "memória descritiva, estudo prévio of a road relocation (40 pages)"),
     ("peniche_smas_ferrel_ppgrcd_1664_2013.pdf", None, "nao_e_elemento", [], "PPGRCD volume of a sewer tender (scanned-looking text)"),
     ("peniche_smas_ferrel_ppgrcd_2fase.pdf", None, "nao_e_elemento", [], "PPGRCD of a sewer and water-main tender"),
@@ -114,13 +115,13 @@ KEYS = [
     ("sabugal_ppgrcd_memoria_descritiva.pdf", None, "nao_e_elemento", [], "PPGRCD memória of the ZLE loteamento (consultancy letterhead on every page)"),
     ("sabugal_req020_projetos_especialidades.pdf", None, "nao_e_elemento", [], "blank request form for speciality projects, Sabugal"),
     ("sabugal_req022_inicio_obra.pdf", None, "nao_e_elemento", [], "blank request form, início de obra, Sabugal"),
-    ("sabugal_zle_md_acessibilidades.pdf", P + "27.b.vi", "escrito", [], "memória of the plano de acessibilidades of the ZLE loteamento (as Anadia in the test)"),
-    ("sabugal_zle_md_acustica.pdf", P + "27.i.xii", "escrito", [], "acoustic project memória of the ZLE loteamento"),
+    ("sabugal_zle_md_acessibilidades.pdf", P + "27.b.vi", "escrito", [('area_parcela', '30,5 ha')], "memória of the plano de acessibilidades of the ZLE loteamento (as Anadia in the test)"),
+    ("sabugal_zle_md_acustica.pdf", P + "27.i.xii", "escrito", [('area_parcela', '30,5 ha')], "acoustic project memória of the ZLE loteamento"),
     ("sabugal_zle_md_agua_esgotos.pdf", P + "27.i.v", "escrito", [], "water, sewage and stormwater networks memória of the ZLE loteamento"),
     ("sabugal_zle_md_arquitetura_paisagista.pdf", P + "27.i.vii", "escrito", [], "landscape (green space) speciality memória of the ZLE loteamento"),
     ("sabugal_zle_md_eletricidade_ip.pdf", P + "27.i.iii", "escrito", [], "electrical infrastructure memória of the ZLE loteamento (23 pages)"),
     ("sabugal_zle_md_gas.pdf", P + "27.i.iv", "escrito", [], "gas network memória of the ZLE loteamento (26 pages)"),
-    ("sabugal_zle_md_infraestrutura_viaria.pdf", P + "9", "escrito", [], "road infrastructure memória of the ZLE loteamento — urbanisation memória as item 9 (D12)"),
+    ("sabugal_zle_md_infraestrutura_viaria.pdf", P + "9", "escrito", [('area_parcela', '30,5 ha')], "road infrastructure memória of the ZLE loteamento — urbanisation memória as item 9 (D12)"),
     ("sabugal_zle_md_itur.pdf", P + "27.i.viii", "escrito", [], "ITUR telecommunications memória of the ZLE loteamento"),
     ("sardoal_req_vistoria_71_ebf.pdf", None, "nao_e_elemento", [], "blank vistoria request form"),
     ("sardoal_rmue.pdf", None, "nao_e_elemento", [], "DR pages with the RMUE of Sardoal"),
@@ -132,9 +133,9 @@ KEYS = [
     ("sjm_rotunda_av_liberdade_memoria_conceptual.pdf", P + "9", "escrito", [], "memória descritiva, estudo conceptual of a roundabout redesign (32 pages) — ambiguous: early stage"),
     ("tomar_normas_instrucao_digital_proposta.pdf", None, "nao_e_elemento", [], "proposed norms for digital instruction, Tomar"),
     ("vfxira_ifrru_modelo_parecer_vinculativo.pdf", None, "nao_e_elemento", [], "blank model of a municipal binding opinion (IFRRU)"),
-    ("vianacastelo_parecer_apa_pu.pdf", P + "27.h", "escrito", [], "APA (external entity) opinion letter, 24 pages — ambiguous: an external entity's parecer, here on a plan rather than on a building operation"),
-    ("vianacastelo_parecer_apa_s046221.pdf", P + "27.h", "escrito", [], "APA (external entity) opinion letter, 20 pages — same ambiguity"),
-    ("angra_mercado_duque_braganca_memoria_descritiva.pdf", P + "9", "escrito", [], "memória descritiva of a design-build market tender (conceção-construção), 57 pages, Angra — the memória of the works"),
+    ("vianacastelo_parecer_apa_pu.pdf", P + "27.h", "escrito", [('prazo_meses', None)], "APA (external entity) opinion letter, 24 pages — ambiguous: an external entity's parecer, here on a plan rather than on a building operation"),
+    ("vianacastelo_parecer_apa_s046221.pdf", P + "27.h", "escrito", [('prazo_meses', None)], "APA (external entity) opinion letter, 20 pages — same ambiguity"),
+    ("angra_mercado_duque_braganca_memoria_descritiva.pdf", P + "9", "escrito", [('area_total_construcao', '7.929,40m2'), ('area_implantacao', '3.315,00m2'), ('area_parcela', '3.381,38m2'), ('pisos_acima_soleira', '01'), ('altura_edificacao', '7.50m'), ('uso', 'equipamento de utilização coletiva')], "memória descritiva of a design-build market tender (conceção-construção), 57 pages, Angra — the memória of the works"),
     ("pcoura_eb23_programa_procedimento.pdf", None, "nao_e_elemento", [], "programa do procedimento of a school rehabilitation tender, Paredes de Coura"),
     ("pcoura_eb23_caderno_encargos.pdf", None, "nao_e_elemento", [], "caderno de encargos of the school rehabilitation tender"),
     ("pcoura_eb23_relatorio_final.pdf", None, "nao_e_elemento", [], "final evaluation report of the tender jury (image first page)"),
@@ -177,14 +178,16 @@ def main():
                 dropped.append((name, "d1", k, why)); continue
             rows.append({"id": f"d1:{M.rid('real', name, str(k))}", "task": "d1_elemento", "prompt": prompt, "answer": json.dumps(ans, ensure_ascii=False), "expediente": "real"})
         have = set()
-        for field, value in facts:
+        for fact in facts:
+            field, value = fact[0], fact[1]
+            want = fact[2] if len(fact) > 2 else None  # page pinned by the keyer: a short value (17, 6, 01) sits on many pages
             if field not in M.QUESTIONS:
                 raise SystemExit(f"{path}: unknown fact field {field}")
             have.add(field)
             if value is None:
                 ans2 = {"valor": None, "pagina": None, "citacao": ""}
             else:
-                page = next((i + 1 for i, t in enumerate(cpages) if M.guard.aligned(t, value)), None)
+                page = next((i + 1 for i, t in enumerate(cpages) if M.guard.aligned(t, value) and (want is None or i + 1 == want)), None)
                 if not page:
                     dropped.append((name, field, value, "value is not a whole token of any page")); continue
                 ans2 = {"valor": value, "pagina": page, "citacao": M.quote_for(cpages[page - 1], value, field)}
@@ -193,11 +196,12 @@ def main():
             if why:
                 dropped.append((name, field, value, why)); continue
             rows.append({"id": f"d2:{M.rid('real', name, field)}", "task": "d2_facto", "prompt": prompt, "answer": json.dumps(ans2, ensure_ascii=False), "expediente": "real"})
-        for field in rng.sample([q for q in M.QUESTIONS if q not in have and q != "wording_annex_vii"], 2):
-            # absent-fact rows: a question this document does not answer → null (hand check: the keyer lists every fact the document DOES state)
+        # absent-fact rows: ONE question this document does not answer → null (round 11 had two per document and almost no keyed
+        # values: 229 null rows against 1 value, ×6 in the mix, taught the reader to call real numbers absent; D17 fix 2026-11-05)
+        for field in rng.sample([q for q in M.QUESTIONS if q not in have and q != "wording_annex_vii"], 1 if any(f[1] is not None for f in facts) else 0):
             prompt = M.D2_FACT.format(question=M.QUESTIONS[field], name=name, pages=len(pages), shown=shown, text=text)
             rows.append({"id": f"d2:{M.rid('real', name, field, 'absent')}", "task": "d2_facto", "prompt": prompt, "answer": json.dumps({"valor": None, "pagina": None, "citacao": ""}, ensure_ascii=False), "expediente": "real"})
-        index.append((name, len(pages), elem or "—", tipo, ", ".join(f"{k}={v}" for k, v in facts) or "—", note))
+        index.append((name, len(pages), elem or "—", tipo, ", ".join(f"{f[0]}={f[1]}" for f in facts) or "—", note))
     for d in dropped:
         print("dropped:", d)
     print(f"{len(KEYS)} documents → {len(rows)} rows ({sum(r['task'] == 'd1_elemento' for r in rows)} D1, {sum(r['task'] == 'd2_facto' for r in rows)} D2), {len(dropped)} keys dropped")

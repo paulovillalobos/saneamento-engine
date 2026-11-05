@@ -2,16 +2,16 @@
 
 | file | pages | element | tipo | facts | note |
 |---|---|---|---|---|---|
-| angra_alteracao_loteamento_proposta.pdf | 4 | V.9 | escrito | — | MDJ, alteração de loteamento (lote 219), Angra do Heroísmo |
+| angra_alteracao_loteamento_proposta.pdf | 4 | V.9 | escrito | uso=Equipamento - Centro Comunitário e Social | MDJ, alteração de loteamento (lote 219), Angra do Heroísmo |
 | angra_aviso_94_alteracao_lote1.pdf | 1 | — | nao_e_elemento | — | municipal aviso announcing a loteamento alteration (public discussion) |
-| angra_loteamento_mdj.pdf | 6 | V.9 | escrito | — | peças escritas bundle whose body is the MDJ of an industrial loteamento (index, termo, declaração, MDJ, quadros de áreas), Angra |
+| angra_loteamento_mdj.pdf | 6 | V.9 | escrito | area_parcela=840 943 m² | peças escritas bundle whose body is the MDJ of an industrial loteamento (index, termo, declaração, MDJ, quadros de áreas), Angra |
 | apa_siaia_drenagem_aguas_residuais_memoria.pdf | 7 | V.27.i.v | escrito | — | MDJ of a wastewater drainage project, estudo prévio (public AIA archive) |
 | arganil_anexo_i_portaria320.pdf | 4 | — | nao_e_elemento | — | blank Portaria 320/2026 Anexo I form, Arganil |
 | arganil_anexo_iv_portaria320.pdf | 4 | — | nao_e_elemento | — | blank Portaria 320/2026 Anexo IV form, Arganil |
 | arganil_legalizacao_lista_elementos.pdf | 3 | — | nao_e_elemento | — | legalisation request form with element list, Arganil |
 | arganil_minuta_rcd.pdf | 4 | — | nao_e_elemento | — | blank PPGRCD minuta, Arganil |
 | arganil_rececao_obras_urbanizacao.pdf | 1 | — | nao_e_elemento | — | request form for reception of urbanisation works, Arganil |
-| aveiro_parque_infantil_bicicleta_memoria.pdf | 13 | V.9 | escrito | — | memória descritiva, projeto de execução of a playground (Aveiro, Viva a Cidade) |
+| aveiro_parque_infantil_bicicleta_memoria.pdf | 13 | V.9 | escrito | area_parcela=2990 m2 | memória descritiva, projeto de execução of a playground (Aveiro, Viva a Cidade) |
 | borba_comunicacao_inicio_trabalhos.pdf | 3 | — | nao_e_elemento | — | blank form, comunicação de início dos trabalhos, Borba |
 | borba_cp_obras_demolicao.pdf | 3 | — | nao_e_elemento | — | blank form, comunicação prévia de demolição, Borba |
 | borba_cp_utilizacao.pdf | 3 | — | nao_e_elemento | — | blank form, comunicação prévia para utilização, Borba |
@@ -35,10 +35,10 @@
 | jfalvalade_md_sede_gdcfc.pdf | 2 | V.9 | escrito | — | MDJ, club building rehabilitation, JF Alvalade |
 | jfalvalade_mdj_rua_silva_albuquerque.pdf | 5 | V.9 | escrito | — | MDJ, street requalification, JF Alvalade |
 | jfalvalade_memoria_arquitetura_cave_conde_arnoso.pdf | 2 | V.9 | escrito | — | MDJ, projeto de arquitetura, basement requalification, JF Alvalade |
-| jfalvalade_orcamento_enocivil.pdf | 7 | V.27.f | escrito | prazo_meses=None | priced orçamento by items and quantities (trap: prazo 30 dias → null) |
+| jfalvalade_orcamento_enocivil.pdf | 7 | V.27.f | escrito | prazo_meses=None, custo_total=24.999,45 € | priced orçamento by items and quantities (trap: prazo 30 dias → null) |
 | jfalvalade_parque_gomes_ferreira_mapa_medicoes.pdf | 18 | — | nao_e_elemento | — | mapa de medições (unpriced measurements) |
 | jfalvalade_parque_gomes_ferreira_mapa_quantidades.pdf | 12 | — | nao_e_elemento | custo_total=None | unpriced mapa de quantidades (- € columns) |
-| jfalvalade_rua_antonio_ferreira_lista_precos_unitarios.pdf | 6 | V.27.f | escrito | — | priced lista de preços unitários with totals per item (as Vagos LPU in the test) |
+| jfalvalade_rua_antonio_ferreira_lista_precos_unitarios.pdf | 6 | V.27.f | escrito | custo_total=36.502,71 € | priced lista de preços unitários with totals per item (as Vagos LPU in the test) |
 | jfalvalade_sede_gdcfc_mtq.pdf | 8 | — | nao_e_elemento | — | unpriced mapa de quantidades with chapter index |
 | jfesgueira_prospecao_geotecnica_taboeira.pdf | 5 | — | nao_e_elemento | — | proposal for geotechnical prospecting services |
 | jfestrela_academia_contencao_mqt.pdf | 2 | — | nao_e_elemento | — | unpriced medições (0,00 €) |
@@ -57,9 +57,9 @@
 | lousa_rmue.pdf | 14 | — | nao_e_elemento | — | DR pages with the RMUE of Lousã |
 | lousa_sol016_juncao_elementos.pdf | 3 | — | nao_e_elemento | — | blank form, junção de elementos |
 | lousa_sol111_prorrogacao_prazo.pdf | 3 | — | nao_e_elemento | prazo_meses=None | blank form, prorrogação de prazo (trap: the word prazo) |
-| madeira_dre_ligacao_quebradas_amparo_mdj.pdf | 124 | V.9 | escrito | — | MDJ of a road project, 124 pages (regional roads directorate) — only the first ~65k chars are shown |
+| madeira_dre_ligacao_quebradas_amparo_mdj.pdf | 124 | V.9 | escrito | prazo_meses=None, custo_total=None | MDJ of a road project, 124 pages (regional roads directorate) — only the first ~65k chars are shown |
 | mealhada_imp_gu_60.pdf | 4 | — | nao_e_elemento | — | blank certidão request form, Mealhada |
-| melgaco_alteracao_loteamento_sra_graca_mdj.pdf | 23 | V.9 | escrito | fogos=17 | MDJ + regulamento, alteração de loteamento of a municipal bairro (17 fogos, p.3) |
+| melgaco_alteracao_loteamento_sra_graca_mdj.pdf | 23 | V.9 | escrito | fogos=17, area_parcela=6008,00 m2, uso=uso habitacional | MDJ + regulamento, alteração de loteamento of a municipal bairro (17 fogos, p.3) |
 | melgaco_boucas_md_infraestruturas_eletricas.pdf | 9 | V.27.i.iii | escrito | — | memória descritiva, electrical infrastructure of an industrial loteamento, Melgaço |
 | melgaco_zea_md_abastecimento_agua.pdf | 17 | V.27.i.v | escrito | — | MDJ, water supply and irrigation network of the ZEA loteamento (urbanisation network, keyed as the water-and-sewage project) |
 | melgaco_zea_md_aguas_residuais.pdf | 13 | V.27.i.v | escrito | — | MDJ, wastewater drainage network of the ZEA loteamento |
@@ -72,7 +72,7 @@
 | oaz_edital_normas_desmaterializacao.pdf | 6 | — | nao_e_elemento | — | edital with technical norms for digital processes, Oliveira de Azeméis |
 | oeiras_ciclovia_lombos_programa_preliminar.pdf | 11 | — | nao_e_elemento | — | programa preliminar for a design-services tender (not a project memória) |
 | peniche_gnr_mdj_aguas_pluviais.pdf | 12 | V.27.i.vi | escrito | — | MDJ, public stormwater drainage network of a loteamento, Peniche |
-| peniche_gnr_pecas_escritas_eletricidade.pdf | 41 | V.27.i.iii | escrito | — | peças escritas (memória + condições técnicas) of the electrical project of a loteamento, Peniche (41 pages) |
+| peniche_gnr_pecas_escritas_eletricidade.pdf | 41 | V.27.i.iii | escrito | custo_total=30 683,21 €, area_parcela=6 880.00m², uso=Moradias unifamiliares | peças escritas (memória + condições técnicas) of the electrical project of a loteamento, Peniche (41 pages) |
 | peniche_marginal_norte_memoria_estudo_previo.pdf | 40 | V.9 | escrito | — | memória descritiva, estudo prévio of a road relocation (40 pages) |
 | peniche_smas_ferrel_ppgrcd_1664_2013.pdf | 11 | — | nao_e_elemento | — | PPGRCD volume of a sewer tender (scanned-looking text) |
 | peniche_smas_ferrel_ppgrcd_2fase.pdf | 8 | — | nao_e_elemento | — | PPGRCD of a sewer and water-main tender |
@@ -88,13 +88,13 @@
 | sabugal_ppgrcd_memoria_descritiva.pdf | 16 | — | nao_e_elemento | — | PPGRCD memória of the ZLE loteamento (consultancy letterhead on every page) |
 | sabugal_req020_projetos_especialidades.pdf | 4 | — | nao_e_elemento | — | blank request form for speciality projects, Sabugal |
 | sabugal_req022_inicio_obra.pdf | 2 | — | nao_e_elemento | — | blank request form, início de obra, Sabugal |
-| sabugal_zle_md_acessibilidades.pdf | 5 | V.27.b.vi | escrito | — | memória of the plano de acessibilidades of the ZLE loteamento (as Anadia in the test) |
-| sabugal_zle_md_acustica.pdf | 12 | V.27.i.xii | escrito | — | acoustic project memória of the ZLE loteamento |
+| sabugal_zle_md_acessibilidades.pdf | 5 | V.27.b.vi | escrito | area_parcela=30,5 ha | memória of the plano de acessibilidades of the ZLE loteamento (as Anadia in the test) |
+| sabugal_zle_md_acustica.pdf | 12 | V.27.i.xii | escrito | area_parcela=30,5 ha | acoustic project memória of the ZLE loteamento |
 | sabugal_zle_md_agua_esgotos.pdf | 10 | V.27.i.v | escrito | — | water, sewage and stormwater networks memória of the ZLE loteamento |
 | sabugal_zle_md_arquitetura_paisagista.pdf | 13 | V.27.i.vii | escrito | — | landscape (green space) speciality memória of the ZLE loteamento |
 | sabugal_zle_md_eletricidade_ip.pdf | 23 | V.27.i.iii | escrito | — | electrical infrastructure memória of the ZLE loteamento (23 pages) |
 | sabugal_zle_md_gas.pdf | 26 | V.27.i.iv | escrito | — | gas network memória of the ZLE loteamento (26 pages) |
-| sabugal_zle_md_infraestrutura_viaria.pdf | 11 | V.9 | escrito | — | road infrastructure memória of the ZLE loteamento — urbanisation memória as item 9 (D12) |
+| sabugal_zle_md_infraestrutura_viaria.pdf | 11 | V.9 | escrito | area_parcela=30,5 ha | road infrastructure memória of the ZLE loteamento — urbanisation memória as item 9 (D12) |
 | sabugal_zle_md_itur.pdf | 19 | V.27.i.viii | escrito | — | ITUR telecommunications memória of the ZLE loteamento |
 | sardoal_req_vistoria_71_ebf.pdf | 1 | — | nao_e_elemento | — | blank vistoria request form |
 | sardoal_rmue.pdf | 18 | — | nao_e_elemento | — | DR pages with the RMUE of Sardoal |
@@ -106,9 +106,9 @@
 | sjm_rotunda_av_liberdade_memoria_conceptual.pdf | 32 | V.9 | escrito | — | memória descritiva, estudo conceptual of a roundabout redesign (32 pages) — ambiguous: early stage |
 | tomar_normas_instrucao_digital_proposta.pdf | 7 | — | nao_e_elemento | — | proposed norms for digital instruction, Tomar |
 | vfxira_ifrru_modelo_parecer_vinculativo.pdf | 7 | — | nao_e_elemento | — | blank model of a municipal binding opinion (IFRRU) |
-| vianacastelo_parecer_apa_pu.pdf | 24 | V.27.h | escrito | — | APA (external entity) opinion letter, 24 pages — ambiguous: an external entity's parecer, here on a plan rather than on a building operation |
-| vianacastelo_parecer_apa_s046221.pdf | 20 | V.27.h | escrito | — | APA (external entity) opinion letter, 20 pages — same ambiguity |
-| angra_mercado_duque_braganca_memoria_descritiva.pdf | 57 | V.9 | escrito | — | memória descritiva of a design-build market tender (conceção-construção), 57 pages, Angra — the memória of the works |
+| vianacastelo_parecer_apa_pu.pdf | 24 | V.27.h | escrito | prazo_meses=None | APA (external entity) opinion letter, 24 pages — ambiguous: an external entity's parecer, here on a plan rather than on a building operation |
+| vianacastelo_parecer_apa_s046221.pdf | 20 | V.27.h | escrito | prazo_meses=None | APA (external entity) opinion letter, 20 pages — same ambiguity |
+| angra_mercado_duque_braganca_memoria_descritiva.pdf | 57 | V.9 | escrito | area_total_construcao=7.929,40m2, area_implantacao=3.315,00m2, area_parcela=3.381,38m2, pisos_acima_soleira=01, altura_edificacao=7.50m, uso=equipamento de utilização coletiva | memória descritiva of a design-build market tender (conceção-construção), 57 pages, Angra — the memória of the works |
 | pcoura_eb23_programa_procedimento.pdf | 23 | — | nao_e_elemento | — | programa do procedimento of a school rehabilitation tender, Paredes de Coura |
 | pcoura_eb23_caderno_encargos.pdf | 21 | — | nao_e_elemento | — | caderno de encargos of the school rehabilitation tender |
 | pcoura_eb23_relatorio_final.pdf | 28 | — | nao_e_elemento | — | final evaluation report of the tender jury (image first page) |

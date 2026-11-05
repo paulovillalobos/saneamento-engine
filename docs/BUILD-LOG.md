@@ -189,3 +189,10 @@
 - Claude: cause of the fact drop = my data: training/data/real/train.jsonl D2 rows are 229 null vs 1 value (realtrain.py: two absent questions per document, almost no keyed values) ×6 = 1,374 "not present" fact rows. Elements had the test's proportion and gained.
 - Claude: report section "Round 11" + "Next (after round 11)", D17 outcome, memory.
 - Paulo: decide round 12 on the corrected real set (≈ USD 44 at weight 6, ≈ 25 at weight 3). Fixing the rows costs USD 0 and comes first.
+
+## 2026-11-05 13:30 UTC — D17 fix: real fact rows rebalanced, round 12 chain ready
+- Paulo: "fix what makes it go wrong".
+- Claude: text of the 111 PDFs dumped; four parallel readers over the 44 element documents (11 fields each) → every declared value with page and line; I kept 20 values printed as whole tokens (two priced-bill totals, Peniche electrical estimate 30 683,21 €, Angra market quadro sinóptico 6 values, Melgaço/Sabugal/Angra terrain areas, uses), 8 traps (Madeira 720 dias, Viana 24-month plan deadline ×2, empty price columns), dropped Póvoa de Lanhoso (OCR without spaces) and Peniche fogos (jumbled table). Short values pinned to their page (Melgaço 17 was quoted from p2 "17 d." in round 11 — fixed).
+- Claude: realtrain.py — one absent question, only on documents that state a value. Real set 376 rows: 333 D1, 42 D2 = 20 values : 22 null (round 11: 1 : 229).
+- Claude: train_lora.py RUNS r12 (= r11 recipe), training/runs/overnight-r12.sh (no regeneration). Cost so far USD 0.
+- Paulo: the go for round 12 (≈ USD 44 at weight 6, ≈ 25 at weight 3).
