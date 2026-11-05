@@ -239,4 +239,5 @@
 ## 2026-11-05 21:30 UTC — code to 10 (D23): 24 tests, pre-commit check, static pages, web.py, constants in the table
 - Paulo: "is our code a 10/10?" → "so make it a 10 then".
 - Claude: tests/, tools/check.sh (+ pre-commit hook), .github/workflows/check.yml, engine/static/*, engine/ui.py renderer, engine/web.py,
-  cpedi.json vocabulary; status/work-state key clash fixed; redeployed and verified. Round 12 ≈ step 760/1379.
+  cpedi.json vocabulary; status/work-state key clash fixed; redeployed and verified (after `modal app stop --yes`: a warm old
+  container had kept serving). Round 12 ≈ step 800/1379.

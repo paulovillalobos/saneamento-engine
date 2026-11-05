@@ -298,5 +298,8 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
 - Data: engine/cpedi.json now also holds fact_keywords, number_words, months, site_pattern, declarant_pattern, work_states,
   finding_labels; application.py reads them. A jurist or a técnico changes vocabulary without touching code.
 - Check at this commit: 24 tests OK, exam 11/11, sealed 55/55, hosted routes verified after redeploy.
+- TRAP (cost three redeploys): after `modal deploy`, a warm container of the previous version kept answering for minutes, so the
+  status route still showed the old shape. `modal app stop saneamento-service --yes` then `modal deploy` gives fresh containers.
+  Verify a deploy on a route whose output changed, never on one that looks the same either way.
 - What is still not 10: one shared key (users come with the second técnico); the pages' JavaScript has no tests of its own (the
   browser pane screenshot is the check); the service module itself is exercised only live (its logic is in web.py, tested).
