@@ -241,3 +241,10 @@
 - Claude: tests/, tools/check.sh (+ pre-commit hook), .github/workflows/check.yml, engine/static/*, engine/ui.py renderer, engine/web.py,
   cpedi.json vocabulary; status/work-state key clash fixed; redeployed and verified (after `modal app stop --yes`: a warm old
   container had kept serving). Round 12 ≈ step 800/1379.
+
+## 2026-11-06 00:20 UTC — round 12 scored (not adopted) · snapshot reader live (D25) · lei.foaap.app
+- Claude: r12 checker + per-wave table + verdict (training/runs/r12/SCORES.md, commit 60f5e0b); reader_warm.py on Modal's sleep-mode
+  pattern, 5 cold cycles measured (25/25/248/20 s), concurrent requests (40 prompts 8.4 s warm), service switched; law page thinking line;
+  Cache-Control no-store (the domain is a static export by the other session: it must re-export to pick up page changes).
+- Paulo: lei.foaap.app put up (static export + Modal origin, by the other session).
+- Claude next: product-level check of r12 (engine/reads-r12, running), then the six-step flow, second procedure.

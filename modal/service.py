@@ -56,8 +56,8 @@ def _process(muni, eid, files_dir, use_reader, label):
     t0 = time.time()
     reads = None
     if use_reader:
-        reader = modal.Function.from_name("saneamento-reader", "answer")
-        reads = R.read_with(files_dir, LORA, lambda items, lora, guard: reader.remote(items, lora, guard))
+        reader = modal.Cls.from_name("saneamento-reader-warm", "Reader")()   # GPU snapshot: ≈ 20–25 s cold, 3 s warm (D25)
+        reads = R.read_with(files_dir, LORA, lambda items, lora, guard: reader.answer.remote(items, lora, guard))
         rd = files_dir.parent / "reads"
         rd.mkdir(exist_ok=True)
         (rd / "prompts.jsonl").write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in reads["prompt_rows"]), encoding="utf-8")
@@ -87,8 +87,8 @@ def answer_law(qid: str):
         L = law_search.law()
         cands = r["passagens"]
         prompt = L.prompt(r["pergunta"], cands)
-        reader = modal.Function.from_name("saneamento-reader", "answer")
-        out = reader.remote([{"key": qid, "task": "exigencia", "prompt": prompt}], LORA, False)
+        reader = modal.Cls.from_name("saneamento-reader-warm", "Reader")()
+        out = reader.answer.remote([{"key": qid, "task": "exigencia", "prompt": prompt}], LORA, False)
         text = next((o.get("text") for o in out[1:] if o.get("key") == qid), None)
         pick, why = L.check(text, cands) if text else (None, "sem resposta")
         r["escolhida"] = pick

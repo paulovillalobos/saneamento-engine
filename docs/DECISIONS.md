@@ -148,6 +148,8 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
   absent question only on documents that state a value, one each. 20 values : 22 null. Real memórias rarely print these facts;
   no value was invented to balance the file. r12 = r11 recipe on the rebalanced file (modal/train_lora.py RUNS r12,
   training/runs/overnight-r12.sh, no regeneration). Needs Paulo's go (≈ USD 44 at ×6).
+- Round 12 outcome (2026-11-05 23:44 UTC, ≈ USD 40): elements 69/77 (r11 74), facts 24/29 (r11 22), wave-3 facts 8/8 = ceiling; five
+  termos lost. NOT adopted; r11 stays. Last data round, as agreed. See training/runs/r12/SCORES.md and the report.
 
 
 ## D18 — The verdict layer: folder in, findings out (2026-11-05)
@@ -303,3 +305,19 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
   Verify a deploy on a route whose output changed, never on one that looks the same either way.
 - What is still not 10: one shared key (users come with the second técnico); the pages' JavaScript has no tests of its own (the
   browser pane screenshot is the check); the service module itself is exercised only live (its logic is in web.py, tested).
+
+## D25 — The reader wakes in seconds: GPU memory snapshot on Modal's vLLM pattern (2026-11-05 night)
+- Why: cold start of 180 s on every wake; Paulo refused both a warm pool (USD 23/day) and a rented server. "The user needs to feel
+  like it's ChatGPT, seconds."
+- What: modal/reader_warm.py, app «saneamento-reader-warm», class Reader. `@modal.enter(snap=True)` starts `vllm serve` as a
+  subprocess (bf16, 32k window, LoRA r11 as a served adapter, xgrammar, --enable-sleep-mode), waits for /health, sends three warm-up
+  requests, calls /sleep?level=1; the snapshot is taken then. `@modal.enter(snap=False)` calls /wake_up. Requests go to the server
+  over localhost (OpenAI chat API with structured_outputs grammar or JSON), 16 concurrent. Same model, revision, adapter, sampling and
+  guard as modal/reader.py, which stays for training-time reads.
+- Measured on the deployed app (snapshots only exist on deployed apps; `modal run` is ephemeral and never restores — my first two
+  measurements were wrong for that reason, and a redeploy throws the snapshot away): cold cycles 25.1, 24.7, 248.0, 19.7 s wall for 5
+  guarded prompts (wake 1.6 s; the 248 s cycle rebuilt the snapshot, load 225 s); warm 3–10 s; 40 prompts warm 8.4 s. Service switched
+  (process_expediente and answer_law) with scaledown_window 600 s.
+- Cost: nothing while idle; a cold question ≈ 25 s × L40S ≈ USD 0.01; an expediente warm ≈ 20 s.
+- Known: one cold start in four rebuilt the snapshot (new host). Modal calls the feature experimental. If that rate grows, the
+  fallback is a 4-bit copy kept warm in working hours (≈ USD 10/day), not a warm pool of the full model.
