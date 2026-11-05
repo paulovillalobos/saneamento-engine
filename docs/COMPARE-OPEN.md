@@ -20,3 +20,33 @@ What to take from them, in order:
 3. OpenFisca's YAML test cases → our interpretation table (engine/cpedi.json) deserves one case per line: an expediente shape in, the expected finding out. Today the exam and the sealed set cover them collectively.
 
 What they cannot take from us without the rest of the stack: reading the documents, the grammar that forbids invention, the sealed measurement. Catala and OpenFisca stop where the facts are typed in by a person; our engine starts at the PDF.
+
+# The two open municipal permit systems in production (added 2026-11-05 night)
+
+Read at HEAD on 2026-11-05: unboxed/bops (Back-Office Planning System, MIT, Ruby on Rails, Southwark and partner councils,
+England; last commit 2026-11-04) and lupapiste/lupapiste (EUPL 1.2, Clojure + ClojureScript + MongoDB, Finland, Helsinki among
+its users; open-source release 2026.1, June 2026). These are the first peers that do our job: receive a permit application,
+check it, send the applicant back for what is missing, decide. Same four axes.
+
+| | BOPS (England) | Lupapiste (Finland) | saneamento-engine |
+|---|---|---|---|
+| Size and proof | 3 914 files, 315 RSpec files; MIT; six years in production | 3 819 files, 667 Clojure test files; EUPL; ten+ years in production, national standard interfaces (KRYSP XML) | ~60 files; 25 unit tests + 2 acceptance sets replayed on every commit; three weeks old |
+| Where the law lives | Tables: `Legislation` (title + link), `PolicyClass` / `PolicySection` (permitted development classes typed in by hand, five fixed titles), `Condition` sets. The text of the law is a link, not data | Not in the code: operations and attachment types are configuration (`operations.clj`, 1 400 lines; a 4 054-line `schemas.clj` of form fields), legal references live in i18n strings. A code comment: "Mappings to schemas and attachments are currently random" | The Portaria itself decomposed (642 passages with offsets and hashes), 88 rules with conditions; the municipal slot mapping derived from them |
+| What «check» means | A checklist of document tags (`DRAWING_TAGS`, `EVIDENCE_TAGS`, `SUPPORTING_DOCUMENT_TAGS`) ticked by an officer; `ValidationRequest` state machine (pending → open → closed) to ask the applicant for more | Required attachments per operation; a verdict workflow; statements from authorities | The content of each PDF read by a model under a grammar; facts compared across files; signature certificate parsed; every finding with page, quote and article |
+| Reads inside the documents | No (no PDF text library in the stack) | Only for stamping and previews (pdfbox); never to decide | Yes: this is the engine |
+| Law in time | No model: links to current legislation | No model | Not yet (planned after OpenFisca) |
+| AI | None | None | A Portuguese sovereign model, grammar-bound, checked |
+| Explainability of a decision | Officer's notes and conditions, auditable workflow | Workflow audit, authority statements | File, page, document quote, law quote, interpretation rule with its why |
+| The técnico's work | Mature: validation requests, consultees, conditions, appeals, fees, two-factor auth, GOV.UK design system | Mature: parties, authority statements, verdicts, archiving, e-identification, national integrations | Thin: an inbox with four states, one key |
+
+Ratings on architecture, the way the rest of this file rates:
+- BOPS 6: a well-built case-management system with the GOV.UK discipline; the law is a link and the check is a human's tick.
+- Lupapiste 6.5: the national plumbing of a country (KRYSP, e-identification, archiving) and a decade of use; the law is config and the
+  check is "attachment present".
+- saneamento-engine 9 as it stands: the check is the content, the law is data, the proof is measured; everything they have
+  around the check (parties, statements, appeals, archiving, users) we do not.
+
+What to take from them: BOPS's `ValidationRequest` state machine is the six-step journey Paulo asked for, with sixteen years of
+officer practice behind its states; Lupapiste's "operation → required attachments" is our slot mapping at national scale, and its
+authority-statement flow is the model for «pareceres de entidades externas», the element we mark not assessed.
+What they would take from us: the check itself. Either could put our verdict layer behind its "request more documents" button.
