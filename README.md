@@ -16,7 +16,7 @@ Layout
 - engine/               the verdict layer (D18): application.py = folder in, findings out (inventory, required list, element check, facts, format), convite.md + verdict.html; read.py = the reader's answers on Modal under the guard; cpedi.json = the interpretation rules for the conditional elements, each with its why; verdicts/ = the exam's verdicts
 - generator/            expedientes written from the law + real pieces, with answer keys; guard.py; ceiling.py = the whole-document ceiling with a large general model; ocr.py = OCR for pages without text; privacy.py = private-identifier scan before a real document enters; realtrain.py = rows from the real training documents (sources/real/train, D17); guard.py = the hard scaffold (D13)
 - sealed/               held-out expedientes frozen before any training (to build)
-- training/, modal/     data per round, LoRA runs on Modal (app saneamento, volume amalia-saneamento-lora)
+- training/, modal/     data per round, LoRA runs on Modal (app saneamento, volume amalia-saneamento-lora); modal/service.py = the hosted verdict service (D20): upload page, storage volume saneamento-store, reader called as a deployed function; key = Modal secret saneamento-token (local copy deploy/.saneamento-token, never in git)
 - docs/                 DECISIONS.md, BUILD-LOG.md
 
 Rules: no citizen data, ever; passive reading of public sites only; AI proposes, code checks, a person decides; the sealed set is

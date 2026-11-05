@@ -41,6 +41,16 @@ def prompts(folder):
     return key, rows
 
 
+def read_with(folder, lora, call):
+    """The reader's checked answers for one folder, through `call(items, lora, guard) -> reader.py output` (answer.remote on Modal,
+    or a stub in tests). Returns what application.load_reads returns, plus the prompt rows, so the caller can store both."""
+    key, rows = prompts(folder)
+    items = [{"key": r["id"], "task": r["task"], "prompt": r["prompt"], "grammar": guard.grammar_for(r["task"], r["prompt"])} for r in rows]
+    answers = call(items, lora, True) if items else [{"meta": {"adapter": f"amalia-saneamento-{lora}", "answered": 0}}]
+    checked, stats = guard.apply(rows, answers)
+    return {"meta": checked[0]["meta"], "rows": {r["id"]: r for r in rows}, "answers": {a["key"]: a for a in checked[1:]}, "checked": checked, "prompt_rows": rows, "stats": stats}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("folder", nargs="+")

@@ -216,3 +216,10 @@
   reads for 23 folders in engine/reads/ (r11, ≈ USD 0.25). Exam re-scored 11/11, 0 FA, 9/9 (exam/scores.jsonl: two lines with
   2 FA between 17:07 and 17:10 are the implantação habit before the rule). Round 12 at step 460/≈1380 (17:10 UTC), untouched.
 - Claude next: second procedure (LICEDI / LEGEDI) as a table change; round 12 scoring when the chain ends.
+
+## 2026-11-05 18:20 UTC — hosted service live (D20)
+- Paulo: "nothing can depend on my computer"; "how good is it as a finished product?" → 6 (engine 9).
+- Claude: modal/service.py deployed (web + worker + volume + secret), modal/reader.py deployed as a persistent app; engine/application.py
+  verdict(folder, reads=None); engine/read.py read_with(). First hosted reader run hit Modal's 150 s web timeout → worker + status
+  endpoint + polling page. Demo C with reader: 268 s cold, same verdict as local (8 findings). Round 12 at step ≈ 570/1380.
+- Claude next: round 12 scoring (chain ends ≈ 01:10 UTC); then second procedure; then the shell items above in Paulo's order.

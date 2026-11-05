@@ -209,3 +209,26 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
   quadro's first number in the second; temperature 0, vLLM batching). The code rule above makes the verdict stable either way.
 - Still not done: real stranger documents are single files without a folder, slot or key, so check() does not apply to them as
   expedientes; what applies is the element and fact reading already scored per round. The second procedure is next.
+
+## D20 — The verdict layer hosted: nothing on a laptop (2026-11-05 night)
+- Why: Paulo, "we need a backend and a front end, nothing can depend on my computer". The engine was a command on the Mac.
+- What: modal/service.py, one Modal app «saneamento-service»: a FastAPI web endpoint (upload page in Portuguese, list page, verdict
+  page, convite.md, verdict.json, the uploaded PDFs), a volume «saneamento-store» (/store/<municipality>/<id>/files, reads, verdict.*,
+  meta.json), a worker function process_expediente (reader through the deployed app «saneamento-reader», Function.from_name; then
+  application.verdict) spawned by the web request, a status endpoint the page polls. Key = Modal secret «saneamento-token» (X-API-Key
+  header or the session cookie the page sets; local copy deploy/.saneamento-token, gitignored). Image carries engine/, generator/, law/,
+  structure/, celorico/ and exam/dossiers/ (demo buttons A, B, C); no training data, no sealed set. URL printed by modal deploy
+  (…saneamento-service-web.us-east.modal.run); health /v1/saude public; everything else needs the key.
+- Why Modal and not Cloud Run tonight: the reader already lives there, so storage sits next to the GPU and no second cloud, no cross-cloud
+  token, no bucket (gcloud's storage command is broken on this Mac). Region us-east: fine for simulated expedientes; before a câmara
+  uploads a real file, storage and reader move to the EU together (the same move Paulo wants for the CCP engine). No Supabase yet: files
+  are the source of truth; a database comes with the second municipality, users and roles, and the audit trail.
+- Found on the first hosted run: a web request on Modal must answer within 150 s; the reader loads in ≈ 150 s when cold, so the first
+  synchronous run never returned (no log line, empty body). Fix: the worker. Measured after it: demo B code-only ready in 1.9 s; demo C
+  with the reader, cold, ready in 268 s wall (257.0 s inside the worker), 8 findings, 17 not assessed,
+  2 review, 0 not read — the same verdict as the local run. Sealed S777000-0007 uploaded as a zip,
+  code-only: 3 findings in 0.6 s (unsigned TREECP, DWG, wrong signer from the certificate; openssl is in the image).
+- Not done: EU hosting; a warm reader (every cold run pays ≈ 2.5 min of model loading); accounts and roles (one key = one municipality);
+  Celorico's own convite template; a public demo mode (today nobody enters without the key; the repo has no remote).
+- Finished-product rating given to Paulo: 6 (engine 9). A 10 = a técnico in Celorico runs a real expediente without us in the room:
+  EU move, warm reader, template, accounts. Shell, not engine; three to four days.

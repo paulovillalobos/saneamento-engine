@@ -10,3 +10,4 @@ sources/.ocr-cache/
 training/runs/ceiling-*/prompts/
 engine/reads/_batch*
 engine/reads/_run.log
+deploy/.saneamento-token

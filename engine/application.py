@@ -431,14 +431,15 @@ def consistency(files, meta):
 
 
 # ---- the verdict ----------------------------------------------------------------------------------------------------------
-def verdict(folder):
+def verdict(folder, reads=None):
+    """reads: the reader's checked answers as load_reads() returns them ({"meta","rows","answers"}); None = look under engine/reads/."""
     folder = Path(folder)
     key = key_of(folder)
     sub = folder / "submission.json"
     meta = json.loads(sub.read_text(encoding="utf-8")) if sub.exists() else {}
     SUBMITTED[key] = meta.get("submitted_at")
     files = inventory(folder)
-    reads = load_reads(folder)
+    reads = reads if reads is not None else load_reads(folder)
     req, elements = required(files)
     fmt = formats(files, folder)
     cons = consistency(files, meta)
@@ -456,9 +457,9 @@ def verdict(folder):
             "elements": elements, "facts": values}
 
 
-def check(folder):
-    """The exam contract: every item with a status (finding | not_assessed | provisional | review | not_read | ok)."""
-    v = verdict(folder)
+def check(folder, reads=None):
+    """The exam contract: every item with a status (finding | not_assessed | provisional | review | not_read | absent | ok)."""
+    v = verdict(folder, reads)
     return v["findings"] + v["not_assessed"] + v["provisional"] + v["review"] + v["not_read"] + v["absent"] + v["elements_ok"]
 
 
