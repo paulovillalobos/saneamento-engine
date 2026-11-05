@@ -35,7 +35,7 @@ def prompts(folder):
         text, shown = d1d2.window(f["pages"])
         rows.append({"id": d1d2.rid("d1", key, f["file"]), "task": "d1_elemento", "expediente": key, "file": f["file"], "slot": f["slot"],
                      "prompt": d1d2.D1_PROMPT.format(shortlist=d1d2.SHORTLIST, name=f["file"], pages=f["n"], shown=shown, text=text)})
-        for field in A.TABLE["facts"].get(f["slot"], []):
+        for field in A.fields_of(f["slot"]):
             rows.append({"id": d1d2.rid("d2", key, f["file"], field), "task": "d2_facto", "expediente": key, "file": f["file"], "slot": f["slot"], "field": field,
                          "prompt": d1d2.D2_FACT.format(question=d1d2.QUESTIONS[field], name=f["file"], pages=f["n"], shown=shown, text=text)})
     return key, rows

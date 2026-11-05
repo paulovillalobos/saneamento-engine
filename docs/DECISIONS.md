@@ -180,3 +180,32 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
 - Not done here: the convite is Portuguese but its wording is the engine's, not Celorico's minuta; verdicts are files under
   engine/verdicts/ (no database until a second municipality or técnico); the sealed expedientes and the real strangers have not
   been run through check() yet (next); PDF/A conformance stays provisional; signature qualification stays not_assessed.
+
+## D19 — The sealed expedientes through the verdict layer (2026-11-05 evening)
+- Why: Paulo, "run the sealed ones through it now". The exam has 3 folders and 11 planted errors; sealed/expedientes has 20
+  folders, 55 planted errors of 10 kinds (3 the exam does not plant: wrong site, expired insurance, wrong signer) and 20 honesty
+  items, frozen before any training round. First run of check() on them.
+- What the sealed keys needed that the exam did not, added in engine/application.py: (1) expired_insurance — the reader's
+  «validade_seguro_fim» on every insurance slot (engine/cpedi.json facts_by_passage V.14 / V.27.m) against submitted_at; dates in ISO,
+  dd/mm/yyyy or «31 de dezembro de 2026». (2) wrong_site — the «localizada em …» of memória and termos must begin with the request's
+  site (submission.json). (3) wrong_signer — the signing certificate is parsed out of the PDF (CMS /Contents → openssl pkcs7 -print_certs);
+  rule in the table: one certificate, one declarant — the certificate that signs the project authors' termos (V.11) belongs to their
+  declarant; a termo of another declarant (coordinator V.12, works director V.27.k) under the same certificate is wrong_signer. The
+  planted error lives only in the certificate: the text still says «Assinado digitalmente por <the declarant>». (4) a mandatory
+  municipal slot with no file is a finding even when a sibling slot carries the same Annex V element (V.14: one insurance per author);
+  conditional law → not_assessed (TRDFO/SRCDFO, «quando exista»).
+- Code-only: 45/55, 0 false alarms, 20/20 honest. With the reader (r11, 1 916 questions over 23 folders in one Modal call, 2 refused,
+  load 146 s + generate 165 s, ≈ USD 0.25): 55/55, 0 false alarms, 20/20 honest, 0 review, 5 not read (engine/SCORES-sealed.md).
+- Two reader habits surfaced and were answered in code, not by retraining: (a) asked for the implantação, the reader quotes the
+  memória's quadro sinóptico and gives the first number in it («superfície do terreno 1200 m2; área da parcela 1200 m2; área de
+  implantação de 277 m2» → 1200), 2 false alarms on the exam, 2 on the sealed set; rule names_fact(): the segment of the quote that
+  holds the value must name the fact asked (keyword per field), otherwise the reading is «not_read», never a finding. (b) «superfície
+  do terreno» read as área da parcela: kept (the training keys define parcela by parcela|terreno|lote; Annex I-C separates them, the
+  generator makes them equal; a real divergence would show as a value_mismatch with both quotes).
+- Statuses: «absent» added — the reader says the document does not state the fact (fogos on a memória of a warehouse): an answer,
+  not a failure; «not_read» is now only a refused or neighbour-quoting answer. Scorer: a value_mismatch on the field of a planted
+  impossible_value is the same typo seen twice (the exam's also_accept), not an alarm.
+- Observed: the same prompt can get a different answer in a different batch (exam A's implantação right in the first read, the
+  quadro's first number in the second; temperature 0, vLLM batching). The code rule above makes the verdict stable either way.
+- Still not done: real stranger documents are single files without a folder, slot or key, so check() does not apply to them as
+  expedientes; what applies is the element and fact reading already scored per round. The second procedure is next.

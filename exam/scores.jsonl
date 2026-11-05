@@ -1,3 +1,6 @@
 {"at": "2026-10-14T12:07:13+00:00", "commit": "0274f13", "engine_ran": false, "exam": "rjue-exam-0.1", "expected": 11, "false_alarms": 0, "found": 0, "honest": 0, "honesty_items": 9}
 {"at": "2026-11-05T16:41:49+00:00", "commit": "eacd19d", "engine_ran": true, "exam": "rjue-exam-0.1", "expected": 11, "false_alarms": 6, "found": 11, "honest": 9, "honesty_items": 9}
 {"at": "2026-11-05T16:42:30+00:00", "commit": "eacd19d", "engine_ran": true, "exam": "rjue-exam-0.1", "expected": 11, "false_alarms": 0, "found": 11, "honest": 9, "honesty_items": 9}
+{"at": "2026-11-05T17:07:29+00:00", "commit": "17aa02f", "engine_ran": true, "exam": "rjue-exam-0.1", "expected": 11, "false_alarms": 2, "found": 11, "honest": 9, "honesty_items": 9}
+{"at": "2026-11-05T17:10:33+00:00", "commit": "17aa02f", "engine_ran": true, "exam": "rjue-exam-0.1", "expected": 11, "false_alarms": 2, "found": 11, "honest": 9, "honesty_items": 9}
+{"at": "2026-11-05T17:11:56+00:00", "commit": "17aa02f", "engine_ran": true, "exam": "rjue-exam-0.1", "expected": 11, "false_alarms": 0, "found": 11, "honest": 9, "honesty_items": 9}

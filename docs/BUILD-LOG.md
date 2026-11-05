@@ -208,3 +208,11 @@
   Reads: engine/reads/dossiers-{A,B,C}/ (prompts + checked answers, r11, 222 questions, 0 refused), ≈ USD 0.15 on the L40S.
 - Claude next: sealed expedientes + stranger folders through check(); second procedure (LICEDI/LEGEDI) as a rule-pack change only;
   round 12 scoring when the chain ends (≈ 01:10 UTC 11-06).
+
+## 2026-11-05 17:15 UTC — sealed expedientes through the verdict layer (D19): 55/55, 0 false alarms, 20/20 honest
+- Paulo: "run the sealed ones through it now".
+- Claude: engine/application.py + expired_insurance, wrong_site, wrong_signer (certificate from the CMS), per-slot mandatory check,
+  names_fact() rule, «absent» status, Portuguese dates; engine/score_sealed.py (+ engine/SCORES-sealed.md, engine/sealed-scores.jsonl);
+  reads for 23 folders in engine/reads/ (r11, ≈ USD 0.25). Exam re-scored 11/11, 0 FA, 9/9 (exam/scores.jsonl: two lines with
+  2 FA between 17:07 and 17:10 are the implantação habit before the rule). Round 12 at step 460/≈1380 (17:10 UTC), untouched.
+- Claude next: second procedure (LICEDI / LEGEDI) as a table change; round 12 scoring when the chain ends.

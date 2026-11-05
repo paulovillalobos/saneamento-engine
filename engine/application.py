@@ -21,9 +21,11 @@ The reader's answers come from engine/read.py (Modal, guarded), stored under eng
 them steps 3 and 4 report every file and fact as not_read, and the code-only findings still stand.
 """
 import argparse
+import hashlib
 import html
 import json
 import re
+import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -79,10 +81,47 @@ def inventory(folder):
         is_pdf = data.startswith(b"%PDF")
         slot = path.name.split("-")[0] if "-" in path.name else None
         pages, n = d1d2.extract(path, is_pdf)
+        signed = is_pdf and (b"/Type /Sig" in data or b"/Type/Sig" in data or b"/ByteRange" in data)
         files.append({"file": path.name, "slot": slot if slot in CAT else None, "slot_raw": slot, "is_pdf": is_pdf, "ext": path.suffix.lower(),
-                      "pdfa": is_pdf and b"pdfaid:part" in data, "signed": is_pdf and (b"/Type /Sig" in data or b"/Type/Sig" in data or b"/ByteRange" in data),
-                      "pages": pages, "n": n})
+                      "pdfa": is_pdf and b"pdfaid:part" in data, "signed": signed, "signer": signer_of(data) if signed else None,
+                      "declarant": declarant_of(pages) if pages else None, "pages": pages, "n": n})
     return files
+
+
+SIG_CONTENTS = re.compile(rb"/Type\s*/Sig.*?/Contents\s*<([0-9A-Fa-f]+)>", re.S)
+SUBJECT_CN = re.compile(r"CN\s*=\s*([^,/\n]+)")
+
+
+def signer_of(data):
+    """{"cn", "sha256"} of the signing certificate inside the first CMS signature of a PDF (openssl pkcs7 -print_certs), or None."""
+    m = SIG_CONTENTS.search(data)
+    if not m:
+        return None
+    try:
+        der = bytes.fromhex(m.group(1).decode("ascii"))  # zero padding after the CMS is fine for openssl; stripping it can cut a real trailing 00
+        out = subprocess.run(["openssl", "pkcs7", "-inform", "DER", "-print_certs"], input=der, capture_output=True, check=True).stdout.decode("utf-8", "replace")
+    except (ValueError, subprocess.CalledProcessError, FileNotFoundError):
+        return None
+    certs = [c for c in out.split("-----END CERTIFICATE-----") if "-----BEGIN CERTIFICATE-----" in c]
+    if not certs:
+        return None
+    # the signer is the certificate whose subject is not a CA (openssl prints subject= before each certificate)
+    for c in certs:
+        subj = next((l for l in c.splitlines() if l.startswith("subject=")), "")
+        if "CA " not in subj and "/CN=CA" not in subj and " CA" not in subj.split("CN=")[-1][:3]:
+            pem = c[c.index("-----BEGIN"):] + "-----END CERTIFICATE-----"
+            return {"cn": (SUBJECT_CN.search(subj) or [None, None])[1].strip() if SUBJECT_CN.search(subj) else subj, "sha256": hashlib.sha256(pem.encode()).hexdigest()[:16]}
+    return None
+
+
+DECLARANT = re.compile(r"(?:^|\n)\s*(?:Eu,\s*)?([A-ZÁÉÍÓÚÂÊÔÃÕÇ][^,\n]{2,80}?),\s*(?:[a-zç ]+,\s*)?com domicílio em", re.M)
+
+
+def declarant_of(pages):
+    """The person who declares in a termo de responsabilidade: the name before «, com domicílio em» (Annex VII models), else None."""
+    text = "\n".join(pages[:1])
+    m = DECLARANT.search(text)
+    return " ".join(m.group(1).split()) if m else None
 
 
 # ---- step 2: the required list --------------------------------------------------------------------------------------------
@@ -130,6 +169,22 @@ def required(files):
                     item["slot"] = slots[0]
                 out.append(item)
         elements.append(status)
+    # every mandatory municipal slot that carries an Annex V element (relation same / part_of) and has no file: the element may be
+    # present through a sibling slot (V.14 has one insurance slot per author), the slot is still empty. Conditional law → not_assessed.
+    for code, d in DOCS.items():
+        if CAT.get(code, {}).get("kind") != "O" or d["relation"] not in ("same", "part_of") or by_slot.get(code) or not d["passages"]:
+            continue
+        passage = d["passages"][0].replace("anexo-", "")
+        rule = RULES.get(passage)
+        entry = TABLE["elements"].get(passage, {})
+        if entry.get("decision") in ("not_assessed", "optional", "satisfied_by"):
+            continue
+        if rule and rule["conditions"] and entry.get("decision") != "required":
+            out.append({"status": "not_assessed", "type": "conditional_requirement", "rule": passage, "slot": code, "law": law(passage),
+                        "condition": rule["conditions"][0]["phrase"] + f" — the municipal slot {code} is marked mandatory, the law conditions it"})
+        elif not any(i.get("slot") == code and i["type"] == "missing_required" for i in out):
+            out.append({"status": "finding", "type": "missing_required", "rule": passage, "slot": code, "law": law(passage),
+                        "detail": f"campo obrigatório {code} («{CAT[code]['label']}») sem ficheiro"})
     return out, elements
 
 
@@ -212,6 +267,20 @@ def elements_read(files, reads, key):
     return out
 
 
+def names_fact(field, value, quote):
+    """True when the piece of the quote that holds the value also names the fact asked. A quote is cut at ; , . and «e»/«com»
+    boundaries; the segment with the value must match the field's keyword. «superfície do terreno 1200 m2; área da parcela 1200 m2;
+    área de implantação de 277 m2» names the implantação, but 1200 sits in the other segments: not an implantação reading."""
+    kw = re.compile(KEYWORD.get(field, "."), re.I)
+    segs = [x for x in re.split(r"[;,.]|\s+e\s+|\s+com\s+", quote or "") if x.strip()]
+    hits = [x for x in segs if value in x]
+    return any(kw.search(x) for x in hits) if hits else bool(kw.search(quote or ""))
+
+
+KEYWORD = {**d1d2.KEYWORD, "area_parcela": "parcela|lote|terreno", "area_total_construcao": "constru", "area_implantacao": "implanta", "altura_edificacao": "altura",
+           "pisos_acima_soleira": "piso", "fogos": "fogo|habita|tipologia|T\\d", "uso": "destin|uso|habita|com[eé]rcio|armaz|servi", "custo_total": "custo|valor|total|€",
+           "prazo_meses": "mes|prazo|dura|conclus", "validade_seguro_fim": "valid|até|ate|vigor|\\d{4}"}
+
 NUM = re.compile(r"\d{1,3}(?:[ .]\d{3})+(?:,\d+)?|\d+(?:[.,]\d+)?")
 
 
@@ -239,10 +308,35 @@ def number(value):
         return None
 
 
+def fields_of(slot):
+    """The fact questions asked of a slot: the table's list for the slot, plus the list for the Annex V passage it carries."""
+    out = list(TABLE["facts"].get(slot or "", []))
+    for p in DOCS.get(slot, {}).get("passages", []):
+        for field in TABLE.get("facts_by_passage", {}).get(p.replace("anexo-", ""), []):
+            if field not in out:
+                out.append(field)
+    return out
+
+
+MONTHS = {m: i + 1 for i, m in enumerate(["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"])}
+
+
+def iso_date(value):
+    """YYYY-MM-DD from an ISO date, a dd/mm/yyyy or dd-mm-yyyy date, or «31 de dezembro de 2026»."""
+    m = re.search(r"(\d{4})-(\d{2})-(\d{2})", value or "")
+    if m:
+        return m.group(0)
+    m = re.search(r"(\d{1,2})[/.-](\d{1,2})[/.-](\d{4})", value or "")
+    if m:
+        return f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}"
+    m = re.search(r"(\d{1,2}) de ([a-zç]+) de (\d{4})", (value or "").lower())
+    return f"{m.group(3)}-{MONTHS[m.group(2)]:02d}-{int(m.group(1)):02d}" if m and m.group(2) in MONTHS else None
+
+
 def facts_read(files, reads, key):
     items, values = [], {}
     for f in files:
-        fields = TABLE["facts"].get(f["slot"] or "", [])
+        fields = fields_of(f["slot"])
         if not fields or not f["is_pdf"]:
             continue
         for field in fields:
@@ -253,7 +347,13 @@ def facts_read(files, reads, key):
                 continue
             ans = json.loads(a["text"])
             if ans["valor"] is None:
-                items.append({"status": "not_read", "type": "fact", "field": field, "slot": f["slot"], "file": f["file"], "detail": "the reader finds no such value in the document"})
+                items.append({"status": "absent", "type": "fact", "field": field, "slot": f["slot"], "file": f["file"], "detail": "o documento não declara este facto (resposta do leitor)"})
+                continue
+            if not names_fact(field, ans["valor"], ans["citacao"]):
+                # the value is on the page and inside the quote (the grammar saw to that), but the quote does not name the fact asked:
+                # the reader took a neighbour (round 11 reads «superfície do terreno 1200» for the implantação). Code does not decide on it.
+                items.append({"status": "not_read", "type": "fact", "field": field, "slot": f["slot"], "file": f["file"], "value": ans["valor"], "quote": ans["citacao"],
+                              "detail": "a citação não nomeia o facto perguntado"})
                 continue
             values.setdefault(field, []).append({"file": f["file"], "slot": f["slot"], "value": ans["valor"], "page": ans["pagina"], "quote": ans["citacao"], "number": number(ans["valor"])})
     # across files: the same fact with two different values
@@ -266,7 +366,7 @@ def facts_read(files, reads, key):
                 else:
                     differ = " ".join(a["value"].lower().split()) != " ".join(b["value"].lower().split())
                 if differ:
-                    items.append({"status": "finding", "type": "value_mismatch", "field": field, "files": [a["file"], b["file"]], "file": a["file"],
+                    items.append({"status": "finding", "type": "value_mismatch", "field": field, "files": [a["file"], b["file"]], "file": a["file"], "slots": [a["slot"], b["slot"]],
                                   "values": {a["file"]: a["value"], b["file"]: b["value"]},
                                   "evidence": [{"file": x["file"], "page": x["page"], "quote": x["quote"]} for x in (a, b)],
                                   "detail": f"{field}: {a['value']} em {a['file']} contra {b['value']} em {b['file']}"})
@@ -282,37 +382,84 @@ def facts_read(files, reads, key):
                           "values": {"area_parcela": p["value"], "area_implantacao": i["value"]},
                           "evidence": [{"file": file, "page": x["page"], "quote": x["quote"]} for x in (p, i)],
                           "detail": f"área da parcela {p['value']} inferior à área de implantação {i['value']} em {file}"})
+    # an insurance that ends before the day the expediente came in
+    submitted = SUBMITTED.get(key)
+    if submitted:
+        for v in values.get("validade_seguro_fim", []):
+            end = iso_date(v["value"])
+            if end and end < submitted:
+                items.append({"status": "finding", "type": "expired_insurance", "slot": v["slot"], "file": v["file"], "field": "validade_seguro_fim", "law": law("V.14"),
+                              "values": {"validade_fim": end, "submetido": submitted}, "evidence": [{"file": v["file"], "page": v["page"], "quote": v["quote"]}],
+                              "detail": f"a apólice termina em {end}, antes da entrega do expediente em {submitted}"})
     return items, values
+
+
+SUBMITTED = {}  # key -> submitted_at, set by verdict() from submission.json
+
+
+# ---- step 5b: the site and the signer, code over the text and the certificates ------------------------------------------------
+SITE = re.compile(r"localizad[ao] em (.+?)(?=, cuj[ao]|, observa|, com período|, declara|, freguesia|\. [A-ZÀ-Ú]|;|$)", re.I)
+
+
+def consistency(files, meta):
+    out = []
+    site = " ".join((meta.get("site") or "").split()) if isinstance(meta.get("site"), str) else ""
+    site_slots = {s for p in TABLE.get("site_slots_passage", []) for s in SLOTS_OF.get(p, [])}
+    if site:
+        for f in files:
+            if f["slot"] in site_slots and f["pages"]:
+                m = SITE.search(" ".join(" ".join(f["pages"]).split()))
+                if m and not " ".join(m.group(1).split()).lower().startswith(site.lower()):  # the text may go on («, concelho de…»); it must begin with the request's site
+                    out.append({"status": "finding", "type": "wrong_site", "slot": f["slot"], "file": f["file"], "values": {"REQ": site, f["slot"]: m.group(1).strip()},
+                                "evidence": [{"file": f["file"], "page": 1, "quote": m.group(0)}],
+                                "detail": f"o documento situa a obra em «{m.group(1).strip()}», o requerimento em «{site}»"})
+    # one certificate, one declarant (engine/cpedi.json signer_rule)
+    authors = {s for s in SLOTS_OF.get("V.11", [])}
+    others = {s for p in ("V.12", "V.27.k") for s in SLOTS_OF.get(p, [])}
+    owner = {}
+    for f in files:
+        if f["slot"] in authors and f["signer"] and f["declarant"]:
+            owner.setdefault(f["signer"]["sha256"], set()).add(f["declarant"])
+    for f in files:
+        if f["slot"] in others and f["signer"] and f["declarant"]:
+            names = owner.get(f["signer"]["sha256"])
+            if names and f["declarant"] not in names:
+                out.append({"status": "finding", "type": "wrong_signer", "slot": f["slot"], "file": f["file"], "law": law("VI.1"),
+                            "values": {"declarante": f["declarant"], "certificado": f["signer"]["cn"], "mesmo certificado em": sorted(names)},
+                            "detail": f"o termo é declarado por {f['declarant']} mas assinado com o certificado «{f['signer']['cn']}» que assina os termos de {', '.join(sorted(names))}"})
+    return out
 
 
 # ---- the verdict ----------------------------------------------------------------------------------------------------------
 def verdict(folder):
     folder = Path(folder)
     key = key_of(folder)
+    sub = folder / "submission.json"
+    meta = json.loads(sub.read_text(encoding="utf-8")) if sub.exists() else {}
+    SUBMITTED[key] = meta.get("submitted_at")
     files = inventory(folder)
     reads = load_reads(folder)
     req, elements = required(files)
     fmt = formats(files, folder)
+    cons = consistency(files, meta)
     el = elements_read(files, reads, key)
     fx, values = facts_read(files, reads, key)
-    items = req + fmt + el + fx
-    sub = folder / "submission.json"
-    meta = json.loads(sub.read_text(encoding="utf-8")) if sub.exists() else {}
+    items = req + fmt + cons + el + fx
     return {"expediente": meta.get("expediente") or meta.get("dossier") or folder.name, "key": key, "folder": str(folder),
             "checked_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "law": LAW_ID, "procedure": TABLE["procedure"], "request": TABLE["request"],
             "reader": (reads or {}).get("meta"), "operation": meta.get("operation"), "applicant": meta.get("applicant", {}).get("name"),
             "files": [{k: v for k, v in f.items() if k != "pages"} for f in files],
-            "counts": {s: sum(1 for i in items if i["status"] == s) for s in ("finding", "not_assessed", "provisional", "review", "not_read", "ok")},
+            "counts": {s: sum(1 for i in items if i["status"] == s) for s in ("finding", "not_assessed", "provisional", "review", "not_read", "absent", "ok")},
             "findings": [i for i in items if i["status"] == "finding"], "not_assessed": [i for i in items if i["status"] == "not_assessed"],
             "provisional": [i for i in items if i["status"] == "provisional"], "review": [i for i in items if i["status"] == "review"],
-            "not_read": [i for i in items if i["status"] == "not_read"], "elements_ok": [i for i in el if i["status"] == "ok"],
+            "not_read": [i for i in items if i["status"] == "not_read"], "absent": [i for i in items if i["status"] == "absent"], "elements_ok": [i for i in el if i["status"] == "ok"],
             "elements": elements, "facts": values}
 
 
 def check(folder):
     """The exam contract: every item with a status (finding | not_assessed | provisional | review | not_read | ok)."""
     v = verdict(folder)
-    return v["findings"] + v["not_assessed"] + v["provisional"] + v["review"] + v["not_read"] + v["elements_ok"]
+    return v["findings"] + v["not_assessed"] + v["provisional"] + v["review"] + v["not_read"] + v["absent"] + v["elements_ok"]
 
 
 def convite(v):
@@ -328,7 +475,8 @@ def convite(v):
         what = {"missing_required": "Falta o elemento", "missing_complement": "Falta o elemento complementar ao", "not_pdf": "O ficheiro não é um PDF:",
                 "not_pdfa": "O ficheiro não tem identificação PDF/A:", "unsigned": "O ficheiro não está assinado digitalmente:",
                 "template_wording_missing": "O termo de responsabilidade não contém a declaração do Anexo VII:",
-                "value_mismatch": "Valores divergentes entre documentos:", "impossible_value": "Valor incompatível:"}.get(f["type"], f["type"])
+                "value_mismatch": "Valores divergentes entre documentos:", "impossible_value": "Valor incompatível:", "wrong_site": "Local da obra divergente:",
+                "expired_insurance": "Seguro caducado:", "wrong_signer": "Assinatura de outra pessoa:"}.get(f["type"], f["type"])
         detail = f.get("detail") or ""
         lawref = f"Portaria n.º 320/2026/1, Anexo {f['law']['ref']}: «{f['law']['quote']}»" if f.get("law") else ""
         lines.append(f"{n}. {what}{where}. {detail}".strip() + (f"\n   {lawref}" if lawref else ""))

@@ -2,7 +2,7 @@
  "expediente": "B",
  "key": "dossiers-B",
  "folder": "exam/dossiers/B",
- "checked_at": "2026-11-05T16:42:15+00:00",
+ "checked_at": "2026-11-05T17:11:45+00:00",
  "law": "dr:portaria:320/2026/1",
  "procedure": "cp-edificacao",
  "request": "CP/CPEDI",
@@ -13,9 +13,9 @@
   "temperature": 0,
   "max_tokens": 1200,
   "guard": "checked",
-  "load_seconds": 125.9,
-  "generate_seconds": 13.2,
-  "answered": 222,
+  "load_seconds": 146.1,
+  "generate_seconds": 165.2,
+  "answered": 1916,
   "skipped": 0
  },
  "operation": "construção de moradia unifamiliar",
@@ -29,6 +29,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -39,6 +44,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Seguradora Exemplo (TESTE)",
+    "sha256": "fe5d9e0bcdfab5fa"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -49,6 +59,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Maria Simulada Exame (TESTE)",
+    "sha256": "f76449ecb26b94d6"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -59,6 +74,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -69,6 +89,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -79,6 +104,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Maria Simulada Exame (TESTE)",
+    "sha256": "f76449ecb26b94d6"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -89,6 +119,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -99,6 +134,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Maria Simulada Exame (TESTE)",
+    "sha256": "f76449ecb26b94d6"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -109,6 +149,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -119,6 +164,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Rui Simulado (TESTE)",
+    "sha256": "f9a0231c67264fba"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -129,6 +179,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -139,6 +194,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -149,6 +209,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -159,6 +224,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -169,6 +239,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -179,6 +254,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -189,6 +269,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -199,6 +284,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -209,6 +299,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -219,6 +314,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -229,6 +329,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -239,6 +344,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -249,6 +359,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -259,6 +374,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -269,6 +389,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -279,6 +404,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -289,6 +419,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -299,6 +434,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -309,6 +449,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -319,6 +464,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -329,6 +479,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -339,6 +494,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -349,6 +509,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -359,6 +524,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Maria Simulada Exame (TESTE)",
+    "sha256": "f76449ecb26b94d6"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -369,6 +539,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Seguradora Exemplo (TESTE)",
+    "sha256": "fe5d9e0bcdfab5fa"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -379,6 +554,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Seguradora Exemplo (TESTE)",
+    "sha256": "fe5d9e0bcdfab5fa"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -389,6 +569,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Seguradora Exemplo (TESTE)",
+    "sha256": "fe5d9e0bcdfab5fa"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -399,6 +584,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Seguradora Exemplo (TESTE)",
+    "sha256": "fe5d9e0bcdfab5fa"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -409,6 +599,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Seguradora Exemplo (TESTE)",
+    "sha256": "fe5d9e0bcdfab5fa"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -419,6 +614,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Seguradora Exemplo (TESTE)",
+    "sha256": "fe5d9e0bcdfab5fa"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -429,6 +629,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Seguradora Exemplo (TESTE)",
+    "sha256": "fe5d9e0bcdfab5fa"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -439,6 +644,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Seguradora Exemplo (TESTE)",
+    "sha256": "fe5d9e0bcdfab5fa"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -449,6 +659,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Seguradora Exemplo (TESTE)",
+    "sha256": "fe5d9e0bcdfab5fa"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -459,6 +674,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Seguradora Exemplo (TESTE)",
+    "sha256": "fe5d9e0bcdfab5fa"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -469,6 +689,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Seguradora Exemplo (TESTE)",
+    "sha256": "fe5d9e0bcdfab5fa"
+   },
+   "declarant": null,
    "n": 1
   },
   {
@@ -479,6 +704,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": "Tiago Simulado",
    "n": 1
   },
   {
@@ -489,6 +719,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Rui Simulado (TESTE)",
+    "sha256": "f9a0231c67264fba"
+   },
+   "declarant": "Rui Simulado",
    "n": 1
   },
   {
@@ -499,6 +734,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": "Sofia Simulada",
    "n": 1
   },
   {
@@ -509,6 +749,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": "Sofia Simulada",
    "n": 1
   },
   {
@@ -519,6 +764,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": "Sofia Simulada",
    "n": 1
   },
   {
@@ -529,6 +779,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": "Sofia Simulada",
    "n": 1
   },
   {
@@ -539,6 +794,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": "Tiago Simulado",
    "n": 1
   },
   {
@@ -549,6 +809,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": "Sofia Simulada",
    "n": 1
   },
   {
@@ -559,6 +824,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": "Sofia Simulada",
    "n": 1
   },
   {
@@ -569,6 +839,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": "Sofia Simulada",
    "n": 1
   },
   {
@@ -579,6 +854,11 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": "Tiago Simulado",
    "n": 1
   },
   {
@@ -589,15 +869,21 @@
    "ext": ".pdf",
    "pdfa": true,
    "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": "Sofia Simulada",
    "n": 1
   }
  ],
  "counts": {
   "finding": 3,
-  "not_assessed": 15,
+  "not_assessed": 17,
   "provisional": 1,
   "review": 2,
-  "not_read": 0,
+  "not_read": 1,
+  "absent": 0,
   "ok": 55
  },
  "findings": [
@@ -788,6 +1074,28 @@
   },
   {
    "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.27.m",
+   "slot": "SRCDFO",
+   "law": {
+    "ref": "V.27.m",
+    "quote": "m) Comprovativo da contratação de seguro de responsabilidade civil do diretor de obra e, quando exista, do diretor de fiscalização de obra, nos termos da Lei n.º 31/2009 de 3 de julho;"
+   },
+   "condition": "quando exista — the municipal slot SRCDFO is marked mandatory, the law conditions it"
+  },
+  {
+   "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.27.k",
+   "slot": "TRDFO",
+   "law": {
+    "ref": "V.27.k",
+    "quote": "k) Termo de responsabilidade pela assunção da função de diretor de obra e, quando exista, de diretor de fiscalização de obra para efeitos do início da sua execução;"
+   },
+   "condition": "quando exista — the municipal slot TRDFO is marked mandatory, the law conditions it"
+  },
+  {
+   "status": "not_assessed",
    "type": "signature_qualification",
    "all_signed_files": true,
    "files": [
@@ -955,7 +1263,19 @@
    "detail": "the reader says this file is not an Annex V element"
   }
  ],
- "not_read": [],
+ "not_read": [
+  {
+   "status": "not_read",
+   "type": "fact",
+   "field": "area_implantacao",
+   "slot": "MDARQ",
+   "file": "MDARQ-memoria-descritiva.pdf",
+   "value": "1200",
+   "quote": "Quadro sinóptico: superfície do terreno 1200 m2; área da parcela 1200 m2; área de implantação 277 m2; área total de construção 554 m2;",
+   "detail": "a citação não nomeia o facto perguntado"
+  }
+ ],
+ "absent": [],
  "elements_ok": [
   {
    "status": "ok",
@@ -2123,24 +2443,6 @@
     "number": 1200.0
    }
   ],
-  "area_implantacao": [
-   {
-    "file": "MDARQ-memoria-descritiva.pdf",
-    "slot": "MDARQ",
-    "value": "277",
-    "page": 1,
-    "quote": "A edificação desenvolve-se em dois pisos acima da cota de soleira, com área de implantação de 277 m2 e área total de construção de 554 m2, destinada a habitação unifamiliar (um fogo, tipologia T3), com dois lugares de estacionamento no interior do lote.",
-    "number": 277.0
-   },
-   {
-    "file": "REQ-requerimento.pdf",
-    "slot": "REQ",
-    "value": "277",
-    "page": 1,
-    "quote": "ÁREA TOTAL DE IMPLANTAÇÃO 277 m2",
-    "number": 277.0
-   }
-  ],
   "pisos_acima_soleira": [
    {
     "file": "MDARQ-memoria-descritiva.pdf",
@@ -2211,6 +2513,106 @@
     "page": 1,
     "quote": "ALTURA DA EDIFICAÇÃO 7,2 m",
     "number": 7.2
+   }
+  ],
+  "area_implantacao": [
+   {
+    "file": "REQ-requerimento.pdf",
+    "slot": "REQ",
+    "value": "277",
+    "page": 1,
+    "quote": "ÁREA TOTAL DE IMPLANTAÇÃO 277 m2",
+    "number": 277.0
+   }
+  ],
+  "validade_seguro_fim": [
+   {
+    "file": "SRCAP-seguro-pdpap.pdf",
+    "slot": "SRCAP",
+    "value": "31 de dezembro de 2026",
+    "page": 1,
+    "quote": ", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.",
+    "number": 31.0
+   },
+   {
+    "file": "SRCARQ-seguro-arquiteto.pdf",
+    "slot": "SRCARQ",
+    "value": "31 de dezembro de 2026",
+    "page": 1,
+    "quote": ", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.",
+    "number": 31.0
+   },
+   {
+    "file": "SRCCA-seguro-pdpca.pdf",
+    "slot": "SRCCA",
+    "value": "31 de dezembro de 2026",
+    "page": 1,
+    "quote": ", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.",
+    "number": 31.0
+   },
+   {
+    "file": "SRCCP-seguro-coordenador.pdf",
+    "slot": "SRCCP",
+    "value": "31 de dezembro de 2026",
+    "page": 1,
+    "quote": ", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.",
+    "number": 31.0
+   },
+   {
+    "file": "SRCCT-seguro-pdpct.pdf",
+    "slot": "SRCCT",
+    "value": "31 de dezembro de 2026",
+    "page": 1,
+    "quote": ", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.",
+    "number": 31.0
+   },
+   {
+    "file": "SRCDO-seguro-diretor-obra.pdf",
+    "slot": "SRCDO",
+    "value": "31 de dezembro de 2026",
+    "page": 1,
+    "quote": ", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.",
+    "number": 31.0
+   },
+   {
+    "file": "SRCEST-seguro-pdeecp.pdf",
+    "slot": "SRCEST",
+    "value": "31 de dezembro de 2026",
+    "page": 1,
+    "quote": ", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.",
+    "number": 31.0
+   },
+   {
+    "file": "SRCIE-seguro-pdpie.pdf",
+    "slot": "SRCIE",
+    "value": "31 de dezembro de 2026",
+    "page": 1,
+    "quote": ", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.",
+    "number": 31.0
+   },
+   {
+    "file": "SRCPAE-seguro-pdrpae.pdf",
+    "slot": "SRCPAE",
+    "value": "31 de dezembro de 2026",
+    "page": 1,
+    "quote": ", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.",
+    "number": 31.0
+   },
+   {
+    "file": "SRCSCI-seguro-sci.pdf",
+    "slot": "SRCSCI",
+    "value": "31 de dezembro de 2026",
+    "page": 1,
+    "quote": ", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.",
+    "number": 31.0
+   },
+   {
+    "file": "SRITED-seguro-pdited.pdf",
+    "slot": "SRITED",
+    "value": "31 de dezembro de 2026",
+    "page": 1,
+    "quote": ", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.",
+    "number": 31.0
    }
   ]
  }

@@ -28,8 +28,12 @@ Nota interna (não segue no convite): elementos cuja exigibilidade depende de fa
 - V.27.i.xiv: «quando exigível»: centralised technical management depends on the building's class and systems, not stated
 - V.27.l: only when the professional body cannot issue the code for the works director
 - V.27.q: only when construction products without harmonised rules are used, which the expediente does not state
+- V.27.m: quando exista — the municipal slot SRCDFO is marked mandatory, the law conditions it
+- V.27.k: quando exista — the municipal slot TRDFO is marked mandatory, the law conditions it
+
+Nota interna: 1 leitura(s) sem resposta verificada — ver verdict.json (not_read).
 
 Com os melhores cumprimentos,
 
 O/A Técnico(a)
-(rascunho gerado 2026-11-05T16:42:15+00:00, a validar)
+(rascunho gerado 2026-11-05T17:11:45+00:00, a validar)

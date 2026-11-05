@@ -1,0 +1,2630 @@
+{
+ "expediente": "S777000-0005",
+ "key": "expedientes-S777000-0005",
+ "folder": "sealed/expedientes/S777000-0005",
+ "checked_at": "2026-11-05T17:11:28+00:00",
+ "law": "dr:portaria:320/2026/1",
+ "procedure": "cp-edificacao",
+ "request": "CP/CPEDI",
+ "reader": {
+  "model": "amalia-llm/AMALIA-9B-0626-DPO@c4614b9b5c7b",
+  "adapter": "amalia-saneamento-r11",
+  "runtime": "vllm 0.30.0, bf16, L40S, prefix caching, guided JSON per task",
+  "temperature": 0,
+  "max_tokens": 1200,
+  "guard": "checked",
+  "load_seconds": 146.1,
+  "generate_seconds": 165.2,
+  "answered": 1916,
+  "skipped": 0
+ },
+ "operation": "construção de armazém agrícola",
+ "applicant": "Olga Fictício Diogo",
+ "files": [
+  {
+   "file": "ALC-alcados.pdf",
+   "slot": "ALC",
+   "slot_raw": "ALC",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "ASAT-apolice-acidentes.pdf",
+   "slot": "ASAT",
+   "slot_raw": "ASAT",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "CCDO-contrato-diretor-obra.pdf",
+   "slot": "CCDO",
+   "slot_raw": "CCDO",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Maria Simulada Exame (TESTE)",
+    "sha256": "f76449ecb26b94d6"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "CEO-calendarizacao.pdf",
+   "slot": "CEO",
+   "slot_raw": "CEO",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "CORTES-cortes.pdf",
+   "slot": "CORTES",
+   "slot_raw": "CORTES",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "CRP-certidao-permanente.pdf",
+   "slot": "CRP",
+   "slot_raw": "CRP",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Maria Simulada Exame (TESTE)",
+    "sha256": "f76449ecb26b94d6"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "EOCT-estimativa-custo.pdf",
+   "slot": "EOCT",
+   "slot_raw": "EOCT",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "FEE-ficha-estatistica.pdf",
+   "slot": "FEE",
+   "slot_raw": "FEE",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Maria Simulada Exame (TESTE)",
+    "sha256": "f76449ecb26b94d6"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "FOTO-registo-fotografico.pdf",
+   "slot": "FOTO",
+   "slot_raw": "FOTO",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "FSCI-ficha-sci.pdf",
+   "slot": "FSCI",
+   "slot_raw": "FSCI",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "IMPIC-alvara-impic.pdf",
+   "slot": "IMPIC",
+   "slot_raw": "IMPIC",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Rui Simulado (TESTE)",
+    "sha256": "f9a0231c67264fba"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "LEVT-levantamento-topografico.pdf",
+   "slot": "LEVT",
+   "slot_raw": "LEVT",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "MDARQ-memoria-descritiva.pdf",
+   "slot": "MDARQ",
+   "slot_raw": "MDARQ",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "MDEECP-memoria-pdeecp.pdf",
+   "slot": "MDEECP",
+   "slot_raw": "MDEECP",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "MDITED-memoria-pdited.pdf",
+   "slot": "MDITED",
+   "slot_raw": "MDITED",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "MDPAP-memoria-pdpap.pdf",
+   "slot": "MDPAP",
+   "slot_raw": "MDPAP",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "MDPCA-memoria-pdpca.pdf",
+   "slot": "MDPCA",
+   "slot_raw": "MDPCA",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "MDPCT-memoria-pdpct.pdf",
+   "slot": "MDPCT",
+   "slot_raw": "MDPCT",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "MDPIE-memoria-pdpie.pdf",
+   "slot": "MDPIE",
+   "slot_raw": "MDPIE",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "MDPLAC-memoria-acessibilidades.pdf",
+   "slot": "MDPLAC",
+   "slot_raw": "MDPLAC",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "MDRPAE-memoria-pdrpae.pdf",
+   "slot": "MDRPAE",
+   "slot_raw": "MDRPAE",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "OUTDOC-curriculo.pdf",
+   "slot": "OUTDOC",
+   "slot_raw": "OUTDOC",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Maria Simulada Exame (TESTE)",
+    "sha256": "f76449ecb26b94d6"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "OUTDOC-estimativa-encargos.pdf",
+   "slot": "OUTDOC",
+   "slot_raw": "OUTDOC",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Maria Simulada Exame (TESTE)",
+    "sha256": "f76449ecb26b94d6"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "P10000-planta-localizacao.pdf",
+   "slot": "P10000",
+   "slot_raw": "P10000",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "PC-pormenores.pdf",
+   "slot": "PC",
+   "slot_raw": "PC",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "PDEECP-pecas-pdeecp.pdf",
+   "slot": "PDEECP",
+   "slot_raw": "PDEECP",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "PDITED-pecas-pdited.pdf",
+   "slot": "PDITED",
+   "slot_raw": "PDITED",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "PDPAP-pecas-pdpap.pdf",
+   "slot": "PDPAP",
+   "slot_raw": "PDPAP",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "PDPCA-pecas-pdpca.pdf",
+   "slot": "PDPCA",
+   "slot_raw": "PDPCA",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "PDPCT-pecas-pdpct.pdf",
+   "slot": "PDPCT",
+   "slot_raw": "PDPCT",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "PDPIE-pecas-pdpie.pdf",
+   "slot": "PDPIE",
+   "slot_raw": "PDPIE",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "PDPLAC-pecas-acessibilidades.pdf",
+   "slot": "PDPLAC",
+   "slot_raw": "PDPLAC",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "PDRPAE-pecas-pdrpae.pdf",
+   "slot": "PDRPAE",
+   "slot_raw": "PDRPAE",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "PI-planta-implantacao.pdf",
+   "slot": "PI",
+   "slot_raw": "PI",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "PLANT-plantas.pdf",
+   "slot": "PLANT",
+   "slot_raw": "PLANT",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "REQ-requerimento.pdf",
+   "slot": "REQ",
+   "slot_raw": "REQ",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Maria Simulada Exame (TESTE)",
+    "sha256": "f76449ecb26b94d6"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "SRCAP-seguro-pdpap.pdf",
+   "slot": "SRCAP",
+   "slot_raw": "SRCAP",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "SRCARQ-seguro-arquiteto.pdf",
+   "slot": "SRCARQ",
+   "slot_raw": "SRCARQ",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "SRCCA-seguro-pdpca.pdf",
+   "slot": "SRCCA",
+   "slot_raw": "SRCCA",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "SRCCP-seguro-coordenador.pdf",
+   "slot": "SRCCP",
+   "slot_raw": "SRCCP",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "SRCCT-seguro-pdpct.pdf",
+   "slot": "SRCCT",
+   "slot_raw": "SRCCT",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "SRCDO-seguro-diretor-obra.pdf",
+   "slot": "SRCDO",
+   "slot_raw": "SRCDO",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "SRCEST-seguro-pdeecp.pdf",
+   "slot": "SRCEST",
+   "slot_raw": "SRCEST",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "SRCIE-seguro-pdpie.pdf",
+   "slot": "SRCIE",
+   "slot_raw": "SRCIE",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "SRCPAE-seguro-pdrpae.pdf",
+   "slot": "SRCPAE",
+   "slot_raw": "SRCPAE",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "SRITED-seguro-pdited.pdf",
+   "slot": "SRITED",
+   "slot_raw": "SRITED",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": null,
+   "n": 1
+  },
+  {
+   "file": "TRCP-termo-coordenador.pdf",
+   "slot": "TRCP",
+   "slot_raw": "TRCP",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": "Bruno Modelo Helena",
+   "n": 1
+  },
+  {
+   "file": "TRDO-termo-diretor-obra.pdf",
+   "slot": "TRDO",
+   "slot_raw": "TRDO",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Rui Simulado (TESTE)",
+    "sha256": "f9a0231c67264fba"
+   },
+   "declarant": "Xavier Fictício João",
+   "n": 1
+  },
+  {
+   "file": "TREECP-termo-pdeecp.pdf",
+   "slot": "TREECP",
+   "slot_raw": "TREECP",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": "Xavier Modelo Sérgio",
+   "n": 1
+  },
+  {
+   "file": "TRFSCI-termo-sci.pdf",
+   "slot": "TRFSCI",
+   "slot_raw": "TRFSCI",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": "Xavier Modelo Sérgio",
+   "n": 1
+  },
+  {
+   "file": "TRITED-termo-pdited.pdf",
+   "slot": "TRITED",
+   "slot_raw": "TRITED",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": "Xavier Modelo Sérgio",
+   "n": 1
+  },
+  {
+   "file": "TRPAP-termo-pdpap.pdf",
+   "slot": "TRPAP",
+   "slot_raw": "TRPAP",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": "Xavier Modelo Sérgio",
+   "n": 1
+  },
+  {
+   "file": "TRPARQ-termo-arquitetura.pdf",
+   "slot": "TRPARQ",
+   "slot_raw": "TRPARQ",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": "Bruno Modelo Helena",
+   "n": 1
+  },
+  {
+   "file": "TRPCA-termo-pdpca.pdf",
+   "slot": "TRPCA",
+   "slot_raw": "TRPCA",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": "Xavier Modelo Sérgio",
+   "n": 1
+  },
+  {
+   "file": "TRPCT-termo-pdpct.pdf",
+   "slot": "TRPCT",
+   "slot_raw": "TRPCT",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": "Xavier Modelo Sérgio",
+   "n": 1
+  },
+  {
+   "file": "TRPIE-termo-pdpie.pdf",
+   "slot": "TRPIE",
+   "slot_raw": "TRPIE",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": "Xavier Modelo Sérgio",
+   "n": 1
+  },
+  {
+   "file": "TRPLAC-termo-acessibilidades.pdf",
+   "slot": "TRPLAC",
+   "slot_raw": "TRPLAC",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Tiago Simulado (TESTE)",
+    "sha256": "2d2e2b6d732371f8"
+   },
+   "declarant": "Bruno Modelo Helena",
+   "n": 1
+  },
+  {
+   "file": "TRRPAE-termo-pdrpae.pdf",
+   "slot": "TRRPAE",
+   "slot_raw": "TRRPAE",
+   "is_pdf": true,
+   "ext": ".pdf",
+   "pdfa": true,
+   "signed": true,
+   "signer": {
+    "cn": "Sofia Simulada (TESTE)",
+    "sha256": "ca0dd9e1d18ee271"
+   },
+   "declarant": "Xavier Modelo Sérgio",
+   "n": 1
+  }
+ ],
+ "counts": {
+  "finding": 2,
+  "not_assessed": 17,
+  "provisional": 1,
+  "review": 0,
+  "not_read": 1,
+  "absent": 1,
+  "ok": 58
+ },
+ "findings": [
+  {
+   "status": "finding",
+   "type": "missing_complement",
+   "slot": "PI",
+   "law": {
+    "ref": "VI.1.b",
+    "quote": "b) A planta de implantação deverá ser ainda apresentada em formato dwg (drawing), como elemento complementar, devidamente georreferenciada;"
+   },
+   "detail": "a peça do campo PI vem só em PDF; a lei acrescenta o ficheiro .dwg/.dxf"
+  },
+  {
+   "status": "finding",
+   "type": "wrong_site",
+   "slot": "TRPARQ",
+   "file": "TRPARQ-termo-arquitetura.pdf",
+   "values": {
+    "REQ": "Lugar da Devesa, n.º 234, Ribas, 4890-000 Celorico de Basto",
+    "TRPARQ": "Caminho da Lameira, n.º 59, Moreira do Castelo, 4890-000 Celorico de Basto"
+   },
+   "evidence": [
+    {
+     "file": "TRPARQ-termo-arquitetura.pdf",
+     "page": 1,
+     "quote": "localizada em Caminho da Lameira, n.º 59, Moreira do Castelo, 4890-000 Celorico de Basto"
+    }
+   ],
+   "detail": "o documento situa a obra em «Caminho da Lameira, n.º 59, Moreira do Castelo, 4890-000 Celorico de Basto», o requerimento em «Lugar da Devesa, n.º 234, Ribas, 4890-000 Celorico de Basto»"
+  }
+ ],
+ "not_assessed": [
+  {
+   "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.10",
+   "law": {
+    "ref": "V.10",
+    "quote": "10 - Pareceres, autorizações ou aprovações que não respeitem a aspetos relacionados com a localização;"
+   },
+   "condition": "whether any opinion, authorisation or approval unrelated to location is required depends on facts the expediente does not hold",
+   "slot": "PAAEE"
+  },
+  {
+   "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.13",
+   "law": {
+    "ref": "V.13",
+    "quote": "13 - Declaração de habilitação profissional que permita a verificação das competências profissionais detidas pelos técnicos autores dos projetos e técnico coordenador, nos termos previstos nos n.os 3 e 4 do artigo 10.º do RJUE e da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional;"
+   },
+   "condition": "only when the professional body cannot issue the code: the declaration of professional qualification replaces it"
+  },
+  {
+   "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.27.c.i",
+   "law": {
+    "ref": "V.27.c.i",
+    "quote": "i) Planta de cedências;"
+   },
+   "condition": "only when the operation cedes areas to the municipality, which the expediente does not state",
+   "slot": "PLCED"
+  },
+  {
+   "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.27.c.ii",
+   "law": {
+    "ref": "V.27.c.ii",
+    "quote": "ii) Planta de cadastro atual;"
+   },
+   "condition": "only when the operation cedes areas to the municipality, which the expediente does not state",
+   "slot": "PCA"
+  },
+  {
+   "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.27.c.iii",
+   "law": {
+    "ref": "V.27.c.iii",
+    "quote": "iii) Planta e quadro de transformação fundiária;"
+   },
+   "condition": "only when the operation cedes areas to the municipality, which the expediente does not state",
+   "slot": "PQTF"
+  },
+  {
+   "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.27.d",
+   "law": {
+    "ref": "V.27.d",
+    "quote": "d) Relatório de avaliação de vulnerabilidade sísmica, quando exigível, nos termos da lei;"
+   },
+   "condition": "«quando exigível»: the seismic vulnerability report depends on the building's class and date, not stated",
+   "slot": "RAVS"
+  },
+  {
+   "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.27.h",
+   "law": {
+    "ref": "V.27.h",
+    "quote": "h) Pareceres, autorizações ou aprovações das entidades externas cuja consulta seja obrigatória nos termos da lei, exceto se estas já se pronunciaram favoravelmente no âmbito de procedimento de informação prévia ou de aprovação de plano de pormenor, nos termos do n.º 2 do artigo 13.º do RJUE, caso em que é indicado o procedimento e os termos em que tal pronúncia ocorreu;"
+   },
+   "condition": "whether an external entity must be consulted (servidões administrativas, restrições de utilidade pública, áreas classificadas) is not stated in the expediente",
+   "slot": "PAAEE"
+  },
+  {
+   "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.27.i.iv",
+   "law": {
+    "ref": "V.27.i.iv",
+    "quote": "iv) Projeto de instalação de gás, quando exigível, nos termos da lei;"
+   },
+   "condition": "«quando exigível, nos termos da lei»: whether the building needs a gas installation project is not stated",
+   "slot": "TRPIG"
+  },
+  {
+   "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.27.i.vii",
+   "law": {
+    "ref": "V.27.i.vii",
+    "quote": "vii) Projeto de arranjos exteriores, quando exista logradouro privativo;"
+   },
+   "condition": "«quando exista logradouro privativo»: the expediente does not state whether there is a private yard to arrange",
+   "slot": "TRPAE"
+  },
+  {
+   "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.27.i.x",
+   "law": {
+    "ref": "V.27.i.x",
+    "quote": "x) Projeto de instalações eletromecânicas, incluindo as de transporte de pessoas e ou mercadorias;"
+   },
+   "condition": "electromechanical installations exist only when the project has lifts or similar equipment, not stated",
+   "slot": "TRPIEM"
+  },
+  {
+   "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.27.i.xiii",
+   "law": {
+    "ref": "V.27.i.xiii",
+    "quote": "xiii) Projeto de instalações, equipamentos e sistemas de aquecimento, ventilação e ar condicionado (AVAC);"
+   },
+   "condition": "an HVAC project depends on the building's systems, not stated",
+   "slot": "TRAVAC"
+  },
+  {
+   "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.27.i.xiv",
+   "law": {
+    "ref": "V.27.i.xiv",
+    "quote": "xiv) Projeto de sistemas de gestão técnica centralizada, quando exigível, nos termos da lei;"
+   },
+   "condition": "«quando exigível»: centralised technical management depends on the building's class and systems, not stated",
+   "slot": "TRSGTC"
+  },
+  {
+   "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.27.l",
+   "law": {
+    "ref": "V.27.l",
+    "quote": "l) Declaração de habilitação profissional que permita a verificação das competências profissionais detidas pelo diretor de obra e, quando exista, pelo diretor de fiscalização de obra, nos termos da Lei n.º 31/2009, de 3 de julho, em caso de impossibilidade técnica de emissão do código por associação pública de natureza profissional;"
+   },
+   "condition": "only when the professional body cannot issue the code for the works director"
+  },
+  {
+   "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.27.q",
+   "law": {
+    "ref": "V.27.q",
+    "quote": "q) Em caso de utilização de produtos de construção não abrangidos por regras harmonizadas, sem marcação CE e sem declaração de desempenho e conformidade, e sem prejuízo do reconhecimento mútuo, deve ser apresentada declaração do projetista em como o produto não comporta risco para a satisfação de requisitos de desempenho e segurança, nos casos previstos para a sua aplicação, e em que não se justifica a solicitação de apreciação técnica ou de homologação."
+   },
+   "condition": "only when construction products without harmonised rules are used, which the expediente does not state"
+  },
+  {
+   "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.27.m",
+   "slot": "SRCDFO",
+   "law": {
+    "ref": "V.27.m",
+    "quote": "m) Comprovativo da contratação de seguro de responsabilidade civil do diretor de obra e, quando exista, do diretor de fiscalização de obra, nos termos da Lei n.º 31/2009 de 3 de julho;"
+   },
+   "condition": "quando exista — the municipal slot SRCDFO is marked mandatory, the law conditions it"
+  },
+  {
+   "status": "not_assessed",
+   "type": "conditional_requirement",
+   "rule": "V.27.k",
+   "slot": "TRDFO",
+   "law": {
+    "ref": "V.27.k",
+    "quote": "k) Termo de responsabilidade pela assunção da função de diretor de obra e, quando exista, de diretor de fiscalização de obra para efeitos do início da sua execução;"
+   },
+   "condition": "quando exista — the municipal slot TRDFO is marked mandatory, the law conditions it"
+  },
+  {
+   "status": "not_assessed",
+   "type": "signature_qualification",
+   "all_signed_files": true,
+   "files": [
+    "ALC-alcados.pdf",
+    "ASAT-apolice-acidentes.pdf",
+    "CCDO-contrato-diretor-obra.pdf",
+    "CEO-calendarizacao.pdf",
+    "CORTES-cortes.pdf",
+    "CRP-certidao-permanente.pdf",
+    "EOCT-estimativa-custo.pdf",
+    "FEE-ficha-estatistica.pdf",
+    "FOTO-registo-fotografico.pdf",
+    "FSCI-ficha-sci.pdf",
+    "IMPIC-alvara-impic.pdf",
+    "LEVT-levantamento-topografico.pdf",
+    "MDARQ-memoria-descritiva.pdf",
+    "MDEECP-memoria-pdeecp.pdf",
+    "MDITED-memoria-pdited.pdf",
+    "MDPAP-memoria-pdpap.pdf",
+    "MDPCA-memoria-pdpca.pdf",
+    "MDPCT-memoria-pdpct.pdf",
+    "MDPIE-memoria-pdpie.pdf",
+    "MDPLAC-memoria-acessibilidades.pdf",
+    "MDRPAE-memoria-pdrpae.pdf",
+    "OUTDOC-curriculo.pdf",
+    "OUTDOC-estimativa-encargos.pdf",
+    "P10000-planta-localizacao.pdf",
+    "PC-pormenores.pdf",
+    "PDEECP-pecas-pdeecp.pdf",
+    "PDITED-pecas-pdited.pdf",
+    "PDPAP-pecas-pdpap.pdf",
+    "PDPCA-pecas-pdpca.pdf",
+    "PDPCT-pecas-pdpct.pdf",
+    "PDPIE-pecas-pdpie.pdf",
+    "PDPLAC-pecas-acessibilidades.pdf",
+    "PDRPAE-pecas-pdrpae.pdf",
+    "PI-planta-implantacao.pdf",
+    "PLANT-plantas.pdf",
+    "REQ-requerimento.pdf",
+    "SRCAP-seguro-pdpap.pdf",
+    "SRCARQ-seguro-arquiteto.pdf",
+    "SRCCA-seguro-pdpca.pdf",
+    "SRCCP-seguro-coordenador.pdf",
+    "SRCCT-seguro-pdpct.pdf",
+    "SRCDO-seguro-diretor-obra.pdf",
+    "SRCEST-seguro-pdeecp.pdf",
+    "SRCIE-seguro-pdpie.pdf",
+    "SRCPAE-seguro-pdrpae.pdf",
+    "SRITED-seguro-pdited.pdf",
+    "TRCP-termo-coordenador.pdf",
+    "TRDO-termo-diretor-obra.pdf",
+    "TREECP-termo-pdeecp.pdf",
+    "TRFSCI-termo-sci.pdf",
+    "TRITED-termo-pdited.pdf",
+    "TRPAP-termo-pdpap.pdf",
+    "TRPARQ-termo-arquitetura.pdf",
+    "TRPCA-termo-pdpca.pdf",
+    "TRPCT-termo-pdpct.pdf",
+    "TRPIE-termo-pdpie.pdf",
+    "TRPLAC-termo-acessibilidades.pdf",
+    "TRRPAE-termo-pdrpae.pdf"
+   ],
+   "law": {
+    "ref": "VI.1",
+    "quote": "1 - Todos os elementos instrutórios são obrigatoriamente entregues em formato eletrónico, com a assinatura digital qualificada dos respetivos subscritores ou autores, nomeadamente pelo requerente ou representante legal, pelos autores dos projetos ou do coordenador de projeto, conforme aplicável, nos seguintes termos:"
+   },
+   "condition": "whether the signatures are qualified (certificate chain to a qualified trust service) is not checked here"
+  }
+ ],
+ "provisional": [
+  {
+   "status": "provisional",
+   "type": "pdfa_conformance",
+   "files_claiming_pdfa": true,
+   "files": [
+    "ALC-alcados.pdf",
+    "ASAT-apolice-acidentes.pdf",
+    "CCDO-contrato-diretor-obra.pdf",
+    "CEO-calendarizacao.pdf",
+    "CORTES-cortes.pdf",
+    "CRP-certidao-permanente.pdf",
+    "EOCT-estimativa-custo.pdf",
+    "FEE-ficha-estatistica.pdf",
+    "FOTO-registo-fotografico.pdf",
+    "FSCI-ficha-sci.pdf",
+    "IMPIC-alvara-impic.pdf",
+    "LEVT-levantamento-topografico.pdf",
+    "MDARQ-memoria-descritiva.pdf",
+    "MDEECP-memoria-pdeecp.pdf",
+    "MDITED-memoria-pdited.pdf",
+    "MDPAP-memoria-pdpap.pdf",
+    "MDPCA-memoria-pdpca.pdf",
+    "MDPCT-memoria-pdpct.pdf",
+    "MDPIE-memoria-pdpie.pdf",
+    "MDPLAC-memoria-acessibilidades.pdf",
+    "MDRPAE-memoria-pdrpae.pdf",
+    "OUTDOC-curriculo.pdf",
+    "OUTDOC-estimativa-encargos.pdf",
+    "P10000-planta-localizacao.pdf",
+    "PC-pormenores.pdf",
+    "PDEECP-pecas-pdeecp.pdf",
+    "PDITED-pecas-pdited.pdf",
+    "PDPAP-pecas-pdpap.pdf",
+    "PDPCA-pecas-pdpca.pdf",
+    "PDPCT-pecas-pdpct.pdf",
+    "PDPIE-pecas-pdpie.pdf",
+    "PDPLAC-pecas-acessibilidades.pdf",
+    "PDRPAE-pecas-pdrpae.pdf",
+    "PI-planta-implantacao.pdf",
+    "PLANT-plantas.pdf",
+    "REQ-requerimento.pdf",
+    "SRCAP-seguro-pdpap.pdf",
+    "SRCARQ-seguro-arquiteto.pdf",
+    "SRCCA-seguro-pdpca.pdf",
+    "SRCCP-seguro-coordenador.pdf",
+    "SRCCT-seguro-pdpct.pdf",
+    "SRCDO-seguro-diretor-obra.pdf",
+    "SRCEST-seguro-pdeecp.pdf",
+    "SRCIE-seguro-pdpie.pdf",
+    "SRCPAE-seguro-pdrpae.pdf",
+    "SRITED-seguro-pdited.pdf",
+    "TRCP-termo-coordenador.pdf",
+    "TRDO-termo-diretor-obra.pdf",
+    "TREECP-termo-pdeecp.pdf",
+    "TRFSCI-termo-sci.pdf",
+    "TRITED-termo-pdited.pdf",
+    "TRPAP-termo-pdpap.pdf",
+    "TRPARQ-termo-arquitetura.pdf",
+    "TRPCA-termo-pdpca.pdf",
+    "TRPCT-termo-pdpct.pdf",
+    "TRPIE-termo-pdpie.pdf",
+    "TRPLAC-termo-acessibilidades.pdf",
+    "TRRPAE-termo-pdrpae.pdf"
+   ],
+   "law": {
+    "ref": "VI.1.a",
+    "quote": "a) As peças escritas e desenhadas são entregues em formato PDF/A (Portable Document Format), devidamente datadas e com assinatura digital qualificada do(s) técnico(s) autor(es) dos projetos, podendo ser apresentado complementarmente o formato IFC (Industry Foundation Classes);"
+   },
+   "condition": "PDF/A identification is present; conformance is not validated (no reference validator)"
+  }
+ ],
+ "review": [],
+ "not_read": [
+  {
+   "status": "not_read",
+   "type": "fact",
+   "field": "area_implantacao",
+   "slot": "MDARQ",
+   "file": "MDARQ-memoria-descritiva.pdf",
+   "value": "1380",
+   "quote": "Quadro sinóptico: superfície do terreno 1380 m2;",
+   "detail": "a citação não nomeia o facto perguntado"
+  }
+ ],
+ "absent": [
+  {
+   "status": "absent",
+   "type": "fact",
+   "field": "fogos",
+   "slot": "MDARQ",
+   "file": "MDARQ-memoria-descritiva.pdf",
+   "detail": "o documento não declara este facto (resposta do leitor)"
+  }
+ ],
+ "elements_ok": [
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "ALC",
+   "file": "ALC-alcados.pdf",
+   "element": "V.27.b.ii",
+   "quote": "ii) Alçados à escala de 1:50 ou de 1:100 com a indicação das cores e dos materiais dos elementos que constituem as fachadas e a cobertura, bem como as construções adjacentes, quando existam;",
+   "kind": "desenhado"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "ASAT",
+   "file": "ASAT-apolice-acidentes.pdf",
+   "element": "V.27.n",
+   "quote": "n) Apólice de seguro que cubra a responsabilidade pela reparação dos danos emergentes de acidentes de trabalho, nos termos previstos na Lei n.º 98/2009, de 4 de setembro, na sua redação atual;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "CCDO",
+   "file": "CCDO-contrato-diretor-obra.pdf",
+   "element": "V.27.p",
+   "quote": "p) Comprovativo de contratação do diretor de obra;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "CEO",
+   "file": "CEO-calendarizacao.pdf",
+   "element": "V.27.e",
+   "quote": "e) Calendarização da execução da obra, com estimativa do prazo de início e de conclusão dos trabalhos;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "CORTES",
+   "file": "CORTES-cortes.pdf",
+   "element": "V.27.b.iii",
+   "quote": "iii) Cortes longitudinais e transversais à escala de 1:50 ou de 1:100 abrangendo o terreno e o arranque dos terrenos vizinhos, com indicação do perfil existente e o proposto, bem como das cotas dos diversos pisos, da cota de soleira e dos acessos ao estacionamento;",
+   "kind": "desenhado"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "CRP",
+   "file": "CRP-certidao-permanente.pdf",
+   "element": "V.5",
+   "quote": "5 - Indicação do código de acesso à certidão permanente do registo predial referente ao prédio ou prédios abrangidos pela operação urbanística ou, quando omisso, a respetiva certidão negativa do registo predial, acompanhada da caderneta predial da qual constem os correspondentes artigos matriciais;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "EOCT",
+   "file": "EOCT-estimativa-custo.pdf",
+   "element": "V.27.f",
+   "quote": "f) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "FEE",
+   "file": "FEE-ficha-estatistica.pdf",
+   "element": "V.27.o",
+   "quote": "o) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013, de 24 de julho;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "FOTO",
+   "file": "FOTO-registo-fotografico.pdf",
+   "element": "V.15",
+   "quote": "15 - Registo fotográfico da situação existente, abrangendo o imóvel e as edificações adjacentes, quando estas existam;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "FSCI",
+   "file": "FSCI-ficha-sci.pdf",
+   "element": "V.27.i.xi",
+   "quote": "xi) Projeto de segurança contra incêndios em edifícios ou ficha de segurança, de acordo com a categoria de risco do edifício;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "IMPIC",
+   "file": "IMPIC-alvara-impic.pdf",
+   "element": "V.27.j",
+   "quote": "j) Número do alvará, ou do certificado, ou número de outro título habilitante emitido pelo IMPIC, I. P., que confira habilitações adequadas à natureza ou valor da obra;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "LEVT",
+   "file": "LEVT-levantamento-topografico.pdf",
+   "element": "V.7",
+   "quote": "7 - Levantamento topográfico georreferenciado, acompanhado por termo de responsabilidade, sempre que haja alteração da topografia ou da implantação das construções, à escala de 1:200, ou de 1:500 no caso de loteamentos, devidamente cotado, que identifique o prédio e a respetiva área, construções nela erigidas, assim como o espaço público envolvente (vias, passeios, estacionamentos, árvores e infraestruturas ou instalações aí localizadas, incluindo postes, tampas, sinalização e mobiliário urbano);",
+   "kind": "desenhado"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "MDARQ",
+   "file": "MDARQ-memoria-descritiva.pdf",
+   "element": "V.9",
+   "quote": "9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "MDEECP",
+   "file": "MDEECP-memoria-pdeecp.pdf",
+   "element": "V.27.i.i",
+   "quote": "i) Projeto de estabilidade que inclua o projeto de escavação e contenção periférica;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "MDITED",
+   "file": "MDITED-memoria-pdited.pdf",
+   "element": "V.27.i.viii",
+   "quote": "viii) Projeto de infraestruturas de telecomunicações;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "MDPAP",
+   "file": "MDPAP-memoria-pdpap.pdf",
+   "element": "V.27.i.vi",
+   "quote": "vi) Projeto de águas pluviais;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "MDPCA",
+   "file": "MDPCA-memoria-pdpca.pdf",
+   "element": "V.27.i.xii",
+   "quote": "xii) Projeto de condicionamento acústico;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "MDPCT",
+   "file": "MDPCT-memoria-pdpct.pdf",
+   "element": "V.27.i.ix",
+   "quote": "ix) Projeto de conforto térmico;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "MDPIE",
+   "file": "MDPIE-memoria-pdpie.pdf",
+   "element": "V.27.i.iii",
+   "quote": "iii) Projeto de instalações elétricas;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "MDPLAC",
+   "file": "MDPLAC-memoria-acessibilidades.pdf",
+   "element": "V.27.b.vi",
+   "quote": "vi) Plano de acessibilidades, que integrando peças escritas e desenhadas, permita evidenciar as opções de projeto em matéria de garantia do acesso aos utilizadores com mobilidade reduzida, apresentando a rede de espaços e equipamentos acessíveis, existente ou proposta, para a área objeto da operação urbanística, comprovando que a execução da operação se conforma com o regime jurídico da acessibilidade;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "MDRPAE",
+   "file": "MDRPAE-memoria-pdrpae.pdf",
+   "element": "V.27.i.v",
+   "quote": "v) Projeto de redes prediais de água e esgotos;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "OUTDOC",
+   "file": "OUTDOC-curriculo.pdf",
+   "element": null,
+   "quote": "",
+   "kind": "nao_e_elemento",
+   "detail": "slot has no Annex V element"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "OUTDOC",
+   "file": "OUTDOC-estimativa-encargos.pdf",
+   "element": null,
+   "quote": "",
+   "kind": "nao_e_elemento",
+   "detail": "slot has no Annex V element"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "P10000",
+   "file": "P10000-planta-localizacao.pdf",
+   "element": "V.2",
+   "quote": "2 - Delimitação da área objeto da operação urbanística e sua área de enquadramento em planta de localização fornecida pela câmara municipal ou planta de localização à escala 1:1.000;",
+   "kind": "desenhado"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "PC",
+   "file": "PC-pormenores.pdf",
+   "element": "V.27.b.iv",
+   "quote": "iv) Pormenores de construção, à escala adequada, esclarecendo a solução construtiva adotada para as paredes exteriores do edifício e sua articulação com a cobertura, vãos de iluminação/ventilação e de acesso, bem como com o pavimento exterior envolvente;",
+   "kind": "desenhado"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "PDEECP",
+   "file": "PDEECP-pecas-pdeecp.pdf",
+   "element": "V.27.i.i",
+   "quote": "i) Projeto de estabilidade que inclua o projeto de escavação e contenção periférica;",
+   "kind": "desenhado"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "PDITED",
+   "file": "PDITED-pecas-pdited.pdf",
+   "element": "V.27.i.viii",
+   "quote": "viii) Projeto de infraestruturas de telecomunicações;",
+   "kind": "desenhado"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "PDPAP",
+   "file": "PDPAP-pecas-pdpap.pdf",
+   "element": "V.27.i.vi",
+   "quote": "vi) Projeto de águas pluviais;",
+   "kind": "desenhado"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "PDPCA",
+   "file": "PDPCA-pecas-pdpca.pdf",
+   "element": "V.27.i.xii",
+   "quote": "xii) Projeto de condicionamento acústico;",
+   "kind": "desenhado"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "PDPCT",
+   "file": "PDPCT-pecas-pdpct.pdf",
+   "element": "V.27.i.ix",
+   "quote": "ix) Projeto de conforto térmico;",
+   "kind": "desenhado"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "PDPIE",
+   "file": "PDPIE-pecas-pdpie.pdf",
+   "element": "V.27.i.iii",
+   "quote": "iii) Projeto de instalações elétricas;",
+   "kind": "desenhado"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "PDPLAC",
+   "file": "PDPLAC-pecas-acessibilidades.pdf",
+   "element": "V.27.b.vi",
+   "quote": "vi) Plano de acessibilidades, que integrando peças escritas e desenhadas, permita evidenciar as opções de projeto em matéria de garantia do acesso aos utilizadores com mobilidade reduzida, apresentando a rede de espaços e equipamentos acessíveis, existente ou proposta, para a área objeto da operação urbanística, comprovando que a execução da operação se conforma com o regime jurídico da acessibilidade;",
+   "kind": "desenhado"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "PDRPAE",
+   "file": "PDRPAE-pecas-pdrpae.pdf",
+   "element": "V.27.i.v",
+   "quote": "v) Projeto de redes prediais de água e esgotos;",
+   "kind": "desenhado"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "PI",
+   "file": "PI-planta-implantacao.pdf",
+   "element": "V.8",
+   "quote": "8 - Planta de implantação, desenhada sobre o levantamento topográfico, quando este for exigível, indicando a construção, as áreas permeáveis e impermeabilizadas e os respetivos materiais e, quando houver alterações na via pública, planta dessas alterações;",
+   "kind": "desenhado"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "PLANT",
+   "file": "PLANT-plantas.pdf",
+   "element": "V.27.b.i",
+   "quote": "i) Plantas à escala de 1:50 ou de 1:100 contendo as dimensões e áreas e utilizações de todos os compartimentos, bem como a representação do mobiliário fixo e equipamento sanitário;",
+   "kind": "desenhado"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "REQ",
+   "file": "REQ-requerimento.pdf",
+   "element": null,
+   "quote": "",
+   "kind": "nao_e_elemento",
+   "detail": "slot has no Annex V element"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "SRCAP",
+   "file": "SRCAP-seguro-pdpap.pdf",
+   "element": "V.14",
+   "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "SRCARQ",
+   "file": "SRCARQ-seguro-arquiteto.pdf",
+   "element": "V.14",
+   "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "SRCCA",
+   "file": "SRCCA-seguro-pdpca.pdf",
+   "element": "V.14",
+   "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "SRCCP",
+   "file": "SRCCP-seguro-coordenador.pdf",
+   "element": "V.14",
+   "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "SRCCT",
+   "file": "SRCCT-seguro-pdpct.pdf",
+   "element": "V.14",
+   "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "SRCDO",
+   "file": "SRCDO-seguro-diretor-obra.pdf",
+   "element": "V.27.m",
+   "quote": "m) Comprovativo da contratação de seguro de responsabilidade civil do diretor de obra e, quando exista, do diretor de fiscalização de obra, nos termos da Lei n.º 31/2009 de 3 de julho;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "SRCEST",
+   "file": "SRCEST-seguro-pdeecp.pdf",
+   "element": "V.14",
+   "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "SRCIE",
+   "file": "SRCIE-seguro-pdpie.pdf",
+   "element": "V.14",
+   "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "SRCPAE",
+   "file": "SRCPAE-seguro-pdrpae.pdf",
+   "element": "V.14",
+   "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "SRITED",
+   "file": "SRITED-seguro-pdited.pdf",
+   "element": "V.14",
+   "quote": "14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "TRCP",
+   "file": "TRCP-termo-coordenador.pdf",
+   "element": "V.12",
+   "quote": "12 - Termo de responsabilidade do coordenador de projeto quanto à garantia de compatibilidade entre os diversos projetos;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "TRDO",
+   "file": "TRDO-termo-diretor-obra.pdf",
+   "element": "V.27.k",
+   "quote": "k) Termo de responsabilidade pela assunção da função de diretor de obra e, quando exista, de diretor de fiscalização de obra para efeitos do início da sua execução;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "TREECP",
+   "file": "TREECP-termo-pdeecp.pdf",
+   "element": "V.11",
+   "quote": "11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "TRFSCI",
+   "file": "TRFSCI-termo-sci.pdf",
+   "element": "V.11",
+   "quote": "11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "TRITED",
+   "file": "TRITED-termo-pdited.pdf",
+   "element": null,
+   "quote": "",
+   "kind": "nao_e_elemento",
+   "detail": "slot has no Annex V element"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "TRPAP",
+   "file": "TRPAP-termo-pdpap.pdf",
+   "element": "V.11",
+   "quote": "11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "TRPARQ",
+   "file": "TRPARQ-termo-arquitetura.pdf",
+   "element": "V.11",
+   "quote": "11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "TRPCA",
+   "file": "TRPCA-termo-pdpca.pdf",
+   "element": "V.11",
+   "quote": "11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "TRPCT",
+   "file": "TRPCT-termo-pdpct.pdf",
+   "element": "V.11",
+   "quote": "11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "TRPIE",
+   "file": "TRPIE-termo-pdpie.pdf",
+   "element": "V.11",
+   "quote": "11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "TRPLAC",
+   "file": "TRPLAC-termo-acessibilidades.pdf",
+   "element": "V.11",
+   "quote": "11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;",
+   "kind": "escrito"
+  },
+  {
+   "status": "ok",
+   "type": "element",
+   "slot": "TRRPAE",
+   "file": "TRRPAE-termo-pdrpae.pdf",
+   "element": "V.11",
+   "quote": "11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;",
+   "kind": "escrito"
+  }
+ ],
+ "elements": [
+  {
+   "element": "V.5",
+   "slots": [
+    "CRP"
+   ],
+   "files": [
+    "CRP-certidao-permanente.pdf"
+   ],
+   "mandatory_slots": [
+    "CRP"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.6",
+   "slots": [
+    "P10000"
+   ],
+   "files": [
+    "P10000-planta-localizacao.pdf"
+   ],
+   "mandatory_slots": [
+    "P10000"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.7",
+   "slots": [
+    "LEVT"
+   ],
+   "files": [
+    "LEVT-levantamento-topografico.pdf"
+   ],
+   "mandatory_slots": [
+    "LEVT"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.8",
+   "slots": [
+    "PI",
+    "PIE"
+   ],
+   "files": [
+    "PI-planta-implantacao.pdf"
+   ],
+   "mandatory_slots": [
+    "PI"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.10",
+   "slots": [
+    "PAAEE"
+   ],
+   "files": [],
+   "mandatory_slots": [],
+   "state": "not_assessed"
+  },
+  {
+   "element": "V.11",
+   "slots": [
+    "TRAVAC",
+    "TREECP",
+    "TRFSCI",
+    "TRPAE",
+    "TRPAP",
+    "TRPARQ",
+    "TRPCA",
+    "TRPCT",
+    "TRPIE",
+    "TRPIEM",
+    "TRPIG",
+    "TRPLAC",
+    "TRPSCI",
+    "TRRPAE",
+    "TRSGTC"
+   ],
+   "files": [
+    "TREECP-termo-pdeecp.pdf",
+    "TRFSCI-termo-sci.pdf",
+    "TRPAP-termo-pdpap.pdf",
+    "TRPARQ-termo-arquitetura.pdf",
+    "TRPCA-termo-pdpca.pdf",
+    "TRPCT-termo-pdpct.pdf",
+    "TRPIE-termo-pdpie.pdf",
+    "TRPLAC-termo-acessibilidades.pdf",
+    "TRRPAE-termo-pdrpae.pdf"
+   ],
+   "mandatory_slots": [
+    "TRPARQ",
+    "TRPLAC"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.12",
+   "slots": [
+    "TRCP"
+   ],
+   "files": [
+    "TRCP-termo-coordenador.pdf"
+   ],
+   "mandatory_slots": [
+    "TRCP"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.13",
+   "slots": [],
+   "files": [],
+   "mandatory_slots": [],
+   "state": "not_assessed"
+  },
+  {
+   "element": "V.14",
+   "slots": [
+    "SRAVAC",
+    "SRCAE",
+    "SRCAP",
+    "SRCARQ",
+    "SRCCA",
+    "SRCCP",
+    "SRCCT",
+    "SRCEST",
+    "SRCGAS",
+    "SRCIE",
+    "SRCIEM",
+    "SRCPAE",
+    "SRCSCI",
+    "SRITED",
+    "SRSGTC"
+   ],
+   "files": [
+    "SRCAP-seguro-pdpap.pdf",
+    "SRCARQ-seguro-arquiteto.pdf",
+    "SRCCA-seguro-pdpca.pdf",
+    "SRCCP-seguro-coordenador.pdf",
+    "SRCCT-seguro-pdpct.pdf",
+    "SRCEST-seguro-pdeecp.pdf",
+    "SRCIE-seguro-pdpie.pdf",
+    "SRCPAE-seguro-pdrpae.pdf",
+    "SRITED-seguro-pdited.pdf"
+   ],
+   "mandatory_slots": [
+    "SRCARQ",
+    "SRCCP"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.15",
+   "slots": [
+    "FOTO"
+   ],
+   "files": [
+    "FOTO-registo-fotografico.pdf"
+   ],
+   "mandatory_slots": [],
+   "state": "present"
+  },
+  {
+   "element": "V.27.a",
+   "slots": [
+    "DCQT"
+   ],
+   "files": [],
+   "mandatory_slots": [],
+   "state": "satisfied_by",
+   "by": [
+    "CRP-certidao-permanente.pdf"
+   ]
+  },
+  {
+   "element": "V.27.b.i",
+   "slots": [
+    "PLANT",
+    "PLANTE"
+   ],
+   "files": [
+    "PLANT-plantas.pdf"
+   ],
+   "mandatory_slots": [
+    "PLANT"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.27.b.ii",
+   "slots": [
+    "ALC",
+    "ALCE"
+   ],
+   "files": [
+    "ALC-alcados.pdf"
+   ],
+   "mandatory_slots": [
+    "ALC"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.27.b.iii",
+   "slots": [
+    "CORE",
+    "CORTES"
+   ],
+   "files": [
+    "CORTES-cortes.pdf"
+   ],
+   "mandatory_slots": [
+    "CORTES"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.27.b.iv",
+   "slots": [
+    "PC"
+   ],
+   "files": [
+    "PC-pormenores.pdf"
+   ],
+   "mandatory_slots": [
+    "PC"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.27.b.v",
+   "slots": [
+    "PH"
+   ],
+   "files": [],
+   "mandatory_slots": [],
+   "state": "optional"
+  },
+  {
+   "element": "V.27.b.vi",
+   "slots": [
+    "MDPLAC",
+    "PDPLAC"
+   ],
+   "files": [
+    "MDPLAC-memoria-acessibilidades.pdf",
+    "PDPLAC-pecas-acessibilidades.pdf"
+   ],
+   "mandatory_slots": [
+    "MDPLAC",
+    "PDPLAC"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.27.c.i",
+   "slots": [
+    "PLCED"
+   ],
+   "files": [],
+   "mandatory_slots": [],
+   "state": "not_assessed"
+  },
+  {
+   "element": "V.27.c.ii",
+   "slots": [
+    "PCA"
+   ],
+   "files": [],
+   "mandatory_slots": [],
+   "state": "not_assessed"
+  },
+  {
+   "element": "V.27.c.iii",
+   "slots": [
+    "PQTF"
+   ],
+   "files": [],
+   "mandatory_slots": [],
+   "state": "not_assessed"
+  },
+  {
+   "element": "V.27.d",
+   "slots": [
+    "RAVS"
+   ],
+   "files": [],
+   "mandatory_slots": [],
+   "state": "not_assessed"
+  },
+  {
+   "element": "V.27.e",
+   "slots": [
+    "CEO"
+   ],
+   "files": [
+    "CEO-calendarizacao.pdf"
+   ],
+   "mandatory_slots": [
+    "CEO"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.27.f",
+   "slots": [
+    "EOCT"
+   ],
+   "files": [
+    "EOCT-estimativa-custo.pdf"
+   ],
+   "mandatory_slots": [
+    "EOCT"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.27.g",
+   "slots": [
+    "OUTDOC"
+   ],
+   "files": [
+    "OUTDOC-curriculo.pdf",
+    "OUTDOC-estimativa-encargos.pdf"
+   ],
+   "mandatory_slots": [],
+   "state": "present"
+  },
+  {
+   "element": "V.27.h",
+   "slots": [
+    "PAAEE"
+   ],
+   "files": [],
+   "mandatory_slots": [],
+   "state": "not_assessed"
+  },
+  {
+   "element": "V.27.i.i",
+   "slots": [
+    "MDEECP",
+    "PDEECP"
+   ],
+   "files": [
+    "MDEECP-memoria-pdeecp.pdf",
+    "PDEECP-pecas-pdeecp.pdf"
+   ],
+   "mandatory_slots": [],
+   "state": "present"
+  },
+  {
+   "element": "V.27.i.ii",
+   "slots": [
+    "RAVS",
+    "MDEECP"
+   ],
+   "files": [
+    "MDEECP-memoria-pdeecp.pdf"
+   ],
+   "mandatory_slots": [],
+   "state": "present"
+  },
+  {
+   "element": "V.27.i.iii",
+   "slots": [
+    "MDPIE",
+    "PDPIE"
+   ],
+   "files": [
+    "MDPIE-memoria-pdpie.pdf",
+    "PDPIE-pecas-pdpie.pdf"
+   ],
+   "mandatory_slots": [],
+   "state": "present"
+  },
+  {
+   "element": "V.27.i.iv",
+   "slots": [
+    "TRPIG",
+    "MDPIG",
+    "PDPIG",
+    "SRCGAS"
+   ],
+   "files": [],
+   "mandatory_slots": [],
+   "state": "not_assessed"
+  },
+  {
+   "element": "V.27.i.v",
+   "slots": [
+    "MDRPAE",
+    "PDRPAE"
+   ],
+   "files": [
+    "MDRPAE-memoria-pdrpae.pdf",
+    "PDRPAE-pecas-pdrpae.pdf"
+   ],
+   "mandatory_slots": [],
+   "state": "present"
+  },
+  {
+   "element": "V.27.i.vi",
+   "slots": [
+    "MDPAP",
+    "PDPAP"
+   ],
+   "files": [
+    "MDPAP-memoria-pdpap.pdf",
+    "PDPAP-pecas-pdpap.pdf"
+   ],
+   "mandatory_slots": [],
+   "state": "present"
+  },
+  {
+   "element": "V.27.i.vii",
+   "slots": [
+    "TRPAE",
+    "MDPAE",
+    "PDPAE",
+    "SRCAE"
+   ],
+   "files": [],
+   "mandatory_slots": [],
+   "state": "not_assessed"
+  },
+  {
+   "element": "V.27.i.viii",
+   "slots": [
+    "MDITED",
+    "PDITED"
+   ],
+   "files": [
+    "MDITED-memoria-pdited.pdf",
+    "PDITED-pecas-pdited.pdf"
+   ],
+   "mandatory_slots": [],
+   "state": "present"
+  },
+  {
+   "element": "V.27.i.ix",
+   "slots": [
+    "MDPCT",
+    "PDPCT"
+   ],
+   "files": [
+    "MDPCT-memoria-pdpct.pdf",
+    "PDPCT-pecas-pdpct.pdf"
+   ],
+   "mandatory_slots": [],
+   "state": "present"
+  },
+  {
+   "element": "V.27.i.x",
+   "slots": [
+    "TRPIEM",
+    "MDPIEM",
+    "PDPIEM",
+    "SRCIEM"
+   ],
+   "files": [],
+   "mandatory_slots": [],
+   "state": "not_assessed"
+  },
+  {
+   "element": "V.27.i.xi",
+   "slots": [
+    "FSCI",
+    "MDPSCI",
+    "PDPSCI"
+   ],
+   "files": [
+    "FSCI-ficha-sci.pdf"
+   ],
+   "mandatory_slots": [],
+   "state": "present"
+  },
+  {
+   "element": "V.27.i.xii",
+   "slots": [
+    "MDPCA",
+    "PDPCA"
+   ],
+   "files": [
+    "MDPCA-memoria-pdpca.pdf",
+    "PDPCA-pecas-pdpca.pdf"
+   ],
+   "mandatory_slots": [],
+   "state": "present"
+  },
+  {
+   "element": "V.27.i.xiii",
+   "slots": [
+    "TRAVAC",
+    "MDAVAC",
+    "PDAVAC",
+    "SRAVAC"
+   ],
+   "files": [],
+   "mandatory_slots": [],
+   "state": "not_assessed"
+  },
+  {
+   "element": "V.27.i.xiv",
+   "slots": [
+    "TRSGTC",
+    "MDSGTC",
+    "PDSGTC",
+    "SRSGTC"
+   ],
+   "files": [],
+   "mandatory_slots": [],
+   "state": "not_assessed"
+  },
+  {
+   "element": "V.27.j",
+   "slots": [
+    "IMPIC"
+   ],
+   "files": [
+    "IMPIC-alvara-impic.pdf"
+   ],
+   "mandatory_slots": [
+    "IMPIC"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.27.k",
+   "slots": [
+    "TRDFO",
+    "TRDO"
+   ],
+   "files": [
+    "TRDO-termo-diretor-obra.pdf"
+   ],
+   "mandatory_slots": [
+    "TRDFO",
+    "TRDO"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.27.l",
+   "slots": [],
+   "files": [],
+   "mandatory_slots": [],
+   "state": "not_assessed"
+  },
+  {
+   "element": "V.27.m",
+   "slots": [
+    "SRCDFO",
+    "SRCDO"
+   ],
+   "files": [
+    "SRCDO-seguro-diretor-obra.pdf"
+   ],
+   "mandatory_slots": [
+    "SRCDFO",
+    "SRCDO"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.27.n",
+   "slots": [
+    "ASAT"
+   ],
+   "files": [
+    "ASAT-apolice-acidentes.pdf"
+   ],
+   "mandatory_slots": [
+    "ASAT"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.27.o",
+   "slots": [
+    "FEE"
+   ],
+   "files": [
+    "FEE-ficha-estatistica.pdf"
+   ],
+   "mandatory_slots": [
+    "FEE"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.27.p",
+   "slots": [
+    "CCDO"
+   ],
+   "files": [
+    "CCDO-contrato-diretor-obra.pdf"
+   ],
+   "mandatory_slots": [
+    "CCDO"
+   ],
+   "state": "present"
+  },
+  {
+   "element": "V.27.q",
+   "slots": [],
+   "files": [],
+   "mandatory_slots": [],
+   "state": "not_assessed"
+  }
+ ],
+ "facts": {
+  "prazo_meses": [
+   {
+    "file": "CEO-calendarizacao.pdf",
+    "slot": "CEO",
+    "value": "19",
+    "page": 1,
+    "quote": "Duração prevista: 19 meses.",
+    "number": 19.0
+   }
+  ],
+  "custo_total": [
+   {
+    "file": "EOCT-estimativa-custo.pdf",
+    "slot": "EOCT",
+    "value": "188 400,00 €",
+    "page": 1,
+    "quote": "Estimativa do custo total da obra Estimativa do custo total da obra, baseada em quantidades e tipologias de trabalhos: 188 400,00 € (valor fictício).",
+    "number": 188400.0
+   }
+  ],
+  "area_total_construcao": [
+   {
+    "file": "MDARQ-memoria-descritiva.pdf",
+    "slot": "MDARQ",
+    "value": "247",
+    "page": 1,
+    "quote": "A edificação desenvolve-se em 1 piso(s) acima da cota de soleira, com área de implantação de 278 m2 e área total de construção de 247 m2, destinada a armazém agrícola, com 2 lugar(es) de estacionamento no interior da parcela.",
+    "number": 247.0
+   },
+   {
+    "file": "REQ-requerimento.pdf",
+    "slot": "REQ",
+    "value": "247",
+    "page": 1,
+    "quote": "Área total de construção: 247 m2",
+    "number": 247.0
+   }
+  ],
+  "area_parcela": [
+   {
+    "file": "MDARQ-memoria-descritiva.pdf",
+    "slot": "MDARQ",
+    "value": "1380",
+    "page": 1,
+    "quote": "Quadro sinóptico: superfície do terreno 1380 m2;",
+    "number": 1380.0
+   },
+   {
+    "file": "REQ-requerimento.pdf",
+    "slot": "REQ",
+    "value": "1380",
+    "page": 1,
+    "quote": "Área da parcela ou lote: 1380 m2",
+    "number": 1380.0
+   }
+  ],
+  "pisos_acima_soleira": [
+   {
+    "file": "MDARQ-memoria-descritiva.pdf",
+    "slot": "MDARQ",
+    "value": "1",
+    "page": 1,
+    "quote": "A edificação desenvolve-se em 1 piso(s) acima da cota de soleira, com área de implantação de 278 m2 e área total de construção de 247 m2, destinada a armazém agrícola, com 2 lugar(es) de estacionamento no interior da parcela.",
+    "number": 1.0
+   },
+   {
+    "file": "REQ-requerimento.pdf",
+    "slot": "REQ",
+    "value": "1",
+    "page": 1,
+    "quote": "N.º de pisos acima da cota de soleira: 1",
+    "number": 1.0
+   }
+  ],
+  "uso": [
+   {
+    "file": "MDARQ-memoria-descritiva.pdf",
+    "slot": "MDARQ",
+    "value": "armazém agrícola",
+    "page": 1,
+    "quote": "A edificação desenvolve-se em 1 piso(s) acima da cota de soleira, com área de implantação de 278 m2 e área total de construção de 247 m2, destinada a armazém agrícola, com 2 lugar(es) de estacionamento no interior da parcela.",
+    "number": null
+   },
+   {
+    "file": "REQ-requerimento.pdf",
+    "slot": "REQ",
+    "value": "Armazém agrícola",
+    "page": 1,
+    "quote": "Uso a que se destina a edificação: Armazém agrícola",
+    "number": null
+   }
+  ],
+  "altura_edificacao": [
+   {
+    "file": "MDARQ-memoria-descritiva.pdf",
+    "slot": "MDARQ",
+    "value": "4,3",
+    "page": 1,
+    "quote": "altura da edificação 4,3 m;",
+    "number": 4.3
+   },
+   {
+    "file": "REQ-requerimento.pdf",
+    "slot": "REQ",
+    "value": "4,3",
+    "page": 1,
+    "quote": "Altura da edificação: 4,3 m",
+    "number": 4.3
+   }
+  ],
+  "area_implantacao": [
+   {
+    "file": "REQ-requerimento.pdf",
+    "slot": "REQ",
+    "value": "278",
+    "page": 1,
+    "quote": "Área total de implantação: 278 m2",
+    "number": 278.0
+   }
+  ],
+  "fogos": [
+   {
+    "file": "REQ-requerimento.pdf",
+    "slot": "REQ",
+    "value": "0",
+    "page": 1,
+    "quote": "N.º total de fogos: 0",
+    "number": 0.0
+   }
+  ],
+  "validade_seguro_fim": [
+   {
+    "file": "SRCAP-seguro-pdpap.pdf",
+    "slot": "SRCAP",
+    "value": "2026-12-31",
+    "page": 1,
+    "quote": ", localizada em Lugar da Devesa, n.º 234, Ribas, 4890-000 Celorico de Basto, com período de validade de 2026-01-01 a 2026-12-31.",
+    "number": 2026.0
+   },
+   {
+    "file": "SRCARQ-seguro-arquiteto.pdf",
+    "slot": "SRCARQ",
+    "value": "2026-12-31",
+    "page": 1,
+    "quote": ", localizada em Lugar da Devesa, n.º 234, Ribas, 4890-000 Celorico de Basto, com período de validade de 2026-01-01 a 2026-12-31.",
+    "number": 2026.0
+   },
+   {
+    "file": "SRCCA-seguro-pdpca.pdf",
+    "slot": "SRCCA",
+    "value": "2026-12-31",
+    "page": 1,
+    "quote": ", localizada em Lugar da Devesa, n.º 234, Ribas, 4890-000 Celorico de Basto, com período de validade de 2026-01-01 a 2026-12-31.",
+    "number": 2026.0
+   },
+   {
+    "file": "SRCCP-seguro-coordenador.pdf",
+    "slot": "SRCCP",
+    "value": "2026-12-31",
+    "page": 1,
+    "quote": ", localizada em Lugar da Devesa, n.º 234, Ribas, 4890-000 Celorico de Basto, com período de validade de 2026-01-01 a 2026-12-31.",
+    "number": 2026.0
+   },
+   {
+    "file": "SRCCT-seguro-pdpct.pdf",
+    "slot": "SRCCT",
+    "value": "2026-12-31",
+    "page": 1,
+    "quote": ", localizada em Lugar da Devesa, n.º 234, Ribas, 4890-000 Celorico de Basto, com período de validade de 2026-01-01 a 2026-12-31.",
+    "number": 2026.0
+   },
+   {
+    "file": "SRCDO-seguro-diretor-obra.pdf",
+    "slot": "SRCDO",
+    "value": "2026-12-31",
+    "page": 1,
+    "quote": ", localizada em Lugar da Devesa, n.º 234, Ribas, 4890-000 Celorico de Basto, com período de validade de 2026-01-01 a 2026-12-31.",
+    "number": 2026.0
+   },
+   {
+    "file": "SRCEST-seguro-pdeecp.pdf",
+    "slot": "SRCEST",
+    "value": "2026-12-31",
+    "page": 1,
+    "quote": ", localizada em Lugar da Devesa, n.º 234, Ribas, 4890-000 Celorico de Basto, com período de validade de 2026-01-01 a 2026-12-31.",
+    "number": 2026.0
+   },
+   {
+    "file": "SRCIE-seguro-pdpie.pdf",
+    "slot": "SRCIE",
+    "value": "2026-12-31",
+    "page": 1,
+    "quote": ", localizada em Lugar da Devesa, n.º 234, Ribas, 4890-000 Celorico de Basto, com período de validade de 2026-01-01 a 2026-12-31.",
+    "number": 2026.0
+   },
+   {
+    "file": "SRCPAE-seguro-pdrpae.pdf",
+    "slot": "SRCPAE",
+    "value": "2026-12-31",
+    "page": 1,
+    "quote": ", localizada em Lugar da Devesa, n.º 234, Ribas, 4890-000 Celorico de Basto, com período de validade de 2026-01-01 a 2026-12-31.",
+    "number": 2026.0
+   },
+   {
+    "file": "SRITED-seguro-pdited.pdf",
+    "slot": "SRITED",
+    "value": "2026-12-31",
+    "page": 1,
+    "quote": ", localizada em Lugar da Devesa, n.º 234, Ribas, 4890-000 Celorico de Basto, com período de validade de 2026-01-01 a 2026-12-31.",
+    "number": 2026.0
+   }
+  ]
+ }
+}

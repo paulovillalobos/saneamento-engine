@@ -7,9 +7,9 @@
    "temperature": 0,
    "max_tokens": 1200,
    "guard": "checked",
-   "load_seconds": 125.9,
-   "generate_seconds": 13.2,
-   "answered": 222,
+   "load_seconds": 146.1,
+   "generate_seconds": 165.2,
+   "answered": 1916,
    "skipped": 0
   }
  },
@@ -161,9 +161,9 @@
   "key": "d2:fd052b6526cae7d9",
   "task": "d2_facto",
   "prompt_tokens": 2,
-  "completion_tokens": 91,
+  "completion_tokens": 74,
   "finish_reason": "stop",
-  "text": "{\"valor\": \"277\", \"pagina\": 1, \"citacao\": \"A edificação desenvolve-se em dois pisos acima da cota de soleira, com área de implantação de 277 m2 e área total de construção de 554 m2, destinada a habitação unifamiliar (um fogo, tipologia T3), com dois lugares de estacionamento no interior do lote.\"}"
+  "text": "{\"valor\": \"1200\", \"pagina\": 1, \"citacao\": \"Quadro sinóptico: superfície do terreno 1200 m2; área da parcela 1200 m2; área de implantação 277 m2; área total de construção 554 m2;\"}"
  },
  {
   "key": "d2:a54dcf7ea904e7f1",
@@ -438,12 +438,28 @@
   "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
  },
  {
+  "key": "d2:c1e50edcc682da66",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 91,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"31 de dezembro de 2026\", \"pagina\": 1, \"citacao\": \", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.\"}"
+ },
+ {
   "key": "d1:58ce299d693c3f01",
   "task": "d1_elemento",
   "prompt_tokens": 2,
   "completion_tokens": 92,
   "finish_reason": "stop",
   "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:53d64977eadfd738",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 91,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"31 de dezembro de 2026\", \"pagina\": 1, \"citacao\": \", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.\"}"
  },
  {
   "key": "d1:ce9a3782c025661c",
@@ -454,12 +470,28 @@
   "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
  },
  {
+  "key": "d2:165979e15b584d0a",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 91,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"31 de dezembro de 2026\", \"pagina\": 1, \"citacao\": \", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.\"}"
+ },
+ {
   "key": "d1:5c10c3afaaaf2e1f",
   "task": "d1_elemento",
   "prompt_tokens": 2,
   "completion_tokens": 92,
   "finish_reason": "stop",
   "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:394c8581bab858f8",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 91,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"31 de dezembro de 2026\", \"pagina\": 1, \"citacao\": \", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.\"}"
  },
  {
   "key": "d1:576c994aaf705d22",
@@ -470,12 +502,28 @@
   "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
  },
  {
+  "key": "d2:e5f2a8f47e85a56f",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 91,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"31 de dezembro de 2026\", \"pagina\": 1, \"citacao\": \", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.\"}"
+ },
+ {
   "key": "d1:a4c2653476b7a033",
   "task": "d1_elemento",
   "prompt_tokens": 2,
   "completion_tokens": 98,
   "finish_reason": "stop",
   "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.m\", \"citacao\": \"m) Comprovativo da contratação de seguro de responsabilidade civil do diretor de obra e, quando exista, do diretor de fiscalização de obra, nos termos da Lei n.º 31/2009 de 3 de julho;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:3d05faf44e0b1b50",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 91,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"31 de dezembro de 2026\", \"pagina\": 1, \"citacao\": \", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.\"}"
  },
  {
   "key": "d1:4134cb013c107f54",
@@ -486,12 +534,28 @@
   "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
  },
  {
+  "key": "d2:ac08408ee9f30ffa",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 91,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"31 de dezembro de 2026\", \"pagina\": 1, \"citacao\": \", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.\"}"
+ },
+ {
   "key": "d1:027b1113a6715c5d",
   "task": "d1_elemento",
   "prompt_tokens": 2,
   "completion_tokens": 92,
   "finish_reason": "stop",
   "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:486e175df4f0d284",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 91,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"31 de dezembro de 2026\", \"pagina\": 1, \"citacao\": \", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.\"}"
  },
  {
   "key": "d1:7c1432c6acb84fbb",
@@ -502,6 +566,14 @@
   "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
  },
  {
+  "key": "d2:2042e3e1c5c0a6d9",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 91,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"31 de dezembro de 2026\", \"pagina\": 1, \"citacao\": \", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.\"}"
+ },
+ {
   "key": "d1:0654800040b16f2d",
   "task": "d1_elemento",
   "prompt_tokens": 2,
@@ -510,12 +582,28 @@
   "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
  },
  {
+  "key": "d2:1d49cd964fdb9351",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 91,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"31 de dezembro de 2026\", \"pagina\": 1, \"citacao\": \", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.\"}"
+ },
+ {
   "key": "d1:1eeb9b97c236be14",
   "task": "d1_elemento",
   "prompt_tokens": 2,
   "completion_tokens": 27,
   "finish_reason": "stop",
   "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d2:f6f616f95582457a",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 91,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"31 de dezembro de 2026\", \"pagina\": 1, \"citacao\": \", localizada em Rua Fictícia do Exame, n.º 1, 4890-000 Celorico de Basto, com período de validade de 1 de janeiro de 2026 a 31 de dezembro de 2026.\"}"
  },
  {
   "key": "d1:aace69340b65145a",
