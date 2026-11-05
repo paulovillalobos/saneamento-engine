@@ -96,6 +96,7 @@ def _app():
     sys.path.insert(0, REMOTE)
     from engine import application as A
     from engine import read as R
+    from engine import ui
 
     web = FastAPI(title="saneamento-engine", docs_url=None, redoc_url=None)
     STORE = Path("/store")
@@ -198,21 +199,36 @@ def _app():
     @web.get("/expedientes", response_class=HTMLResponse)
     def expedientes(request: Request, x_api_key: str | None = Header(default=None)):
         muni = authed(request, x_api_key)
-        rows = listing(muni)
-        esc = html.escape
-        tr = "".join(f"<tr><td><a href='/expedientes/{esc(r['id'])}/'>{esc(r['label'])}</a></td><td>{esc(r['at'][:16].replace('T', ' '))}</td><td>{r['files']}</td>"
-                     f"<td class='{'bad' if r['counts']['finding'] else 'good'}'>{r['counts']['finding']}</td><td>{r['counts']['not_assessed']}</td><td>{r['counts'].get('review', 0)}</td>"
-                     f"<td>{r['counts'].get('not_read', 0)}</td><td>{esc(r.get('reader') or '—')}</td><td>{r.get('seconds', '')}</td></tr>" for r in rows)
-        return HTMLResponse(f"""<!doctype html><html lang="pt"><head><meta charset="utf-8"><title>Expedientes — {esc(muni)}</title>{CSS}</head><body>
-<h1>Expedientes · {esc(muni)}</h1><p><a href="/">← novo expediente</a></p>
-<table><tr><th>Expediente</th><th>Verificado (UTC)</th><th>Ficheiros</th><th>Deficiências</th><th>Não avaliado</th><th>Revisão</th><th>Não lido</th><th>Leitor</th><th>s</th></tr>{tr or '<tr><td colspan=9>nenhum ainda</td></tr>'}</table>
-<p><small>{len(rows)} expediente(s). O leitor lê, o código decide, o técnico assina.</small></p></body></html>""")
+        return HTMLResponse(ui.inbox(listing(muni), muni))
+
+    @web.post("/v1/expedientes/{eid}/trabalho")
+    async def trabalho(eid: str, request: Request, x_api_key: str | None = Header(default=None)):
+        """The técnico's work state on an expediente: estado (novo | em_analise | convite_enviado | saneado) and responsável; kept in meta.json."""
+        muni = authed(request, x_api_key)
+        body = await request.json()
+        store.reload()
+        m = STORE / muni / safe(eid) / "meta.json"
+        if not m.exists():
+            raise HTTPException(404, "expediente desconhecido")
+        meta = json.loads(m.read_text(encoding="utf-8"))
+        if "estado" in body:
+            if body["estado"] not in dict(ui.STATES):
+                raise HTTPException(422, "estado desconhecido")
+            meta["estado"] = body["estado"]
+        if "responsavel" in body:
+            meta["responsavel"] = str(body["responsavel"])[:80]
+        meta.setdefault("historico", []).append({"at": datetime.now(timezone.utc).isoformat(timespec="seconds"), **{k: body[k] for k in ("estado", "responsavel") if k in body}})
+        m.write_text(json.dumps(meta, ensure_ascii=False), encoding="utf-8")
+        store.commit()
+        return {"ok": True, "estado": meta.get("estado"), "responsavel": meta.get("responsavel")}
 
     @web.get("/expedientes/{eid}/", response_class=HTMLResponse)
     def verdict_page(eid: str, request: Request, x_api_key: str | None = Header(default=None)):
         muni = authed(request, x_api_key)
         store.reload()
         base = STORE / muni / safe(eid)
+        if (base / "verdict.json").exists():
+            return HTMLResponse(ui.app())
         f = base / "verdict.html"
         if f.exists():
             return HTMLResponse(f.read_text(encoding="utf-8"))
@@ -225,13 +241,13 @@ def _app():
     @web.get("/expedientes/{eid}/{name}")
     def artefact(eid: str, name: str, request: Request, x_api_key: str | None = Header(default=None)):
         muni = authed(request, x_api_key)
-        if name not in ("verdict.json", "convite.md"):
-            raise HTTPException(404, "verdict.json ou convite.md")
+        if name not in ("verdict.json", "convite.md", "verdict.html"):
+            raise HTTPException(404, "verdict.json, convite.md ou verdict.html")
         store.reload()
         f = STORE / muni / safe(eid) / name
         if not f.exists():
             raise HTTPException(404, "expediente desconhecido")
-        media = "application/json" if name.endswith(".json") else "text/markdown; charset=utf-8"
+        media = {"json": "application/json", "md": "text/markdown; charset=utf-8", "html": "text/html; charset=utf-8"}[name.rsplit(".", 1)[1]]
         return Response(f.read_bytes(), media_type=media)
 
     @web.get("/expedientes/{eid}/ficheiros/{name}")

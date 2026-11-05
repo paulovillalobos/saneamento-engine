@@ -232,3 +232,22 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
   Celorico's own convite template; a public demo mode (today nobody enters without the key; the repo has no remote).
 - Finished-product rating given to Paulo: 6 (engine 9). A 10 = a técnico in Celorico runs a real expediente without us in the room:
   EU move, warm reader, template, accounts. Shell, not engine; three to four days.
+
+## D21 — The técnico's screens: inbox and the three-pane expediente view (2026-11-05 night)
+- Why: Paulo looked at build.palantir.com and asked which interface fits; the answer was Palantir's "full object view, high density"
+  (identity rail · tabbed content · document preview · side drawer) plus the action-oriented inbox for the list. "Build it now."
+- What: engine/ui.py, plain HTML + JS over verdict.json, no framework. inbox(rows): one card per expediente with state (novo → em
+  análise → convite enviado → saneado), responsável, counters, one-click state buttons; the header strip counts total / with
+  deficiencies / clean. app(): dark header strip (expediente, operation, the five counters, the reader), left rail (identity +
+  sections), middle tabs Elementos (the findings table, then the Annex V table one row per element) · Factos (divergent facts, then
+  every fact read with its quote) · Convite (editable draft, copy, download) · Ficheiros (per file: PDF, PDF/A, signature + certificate
+  CN, pages, element read); right pane = the PDF in an iframe opened at the quoted page (#page=n) when a finding, a quote, an element
+  or a file is clicked; drawer under the content = não avaliado / para revisão / não lido / sem valor. Law text collapsed per finding
+  (details), evidence quotes always open. Type weight 500 minimum, no grey text.
+- Service: GET /expedientes → ui.inbox; GET /expedientes/{id}/ → ui.app (verdict.html stays as a file); POST /v1/expedientes/{id}/trabalho
+  {estado, responsavel} → meta.json (+ historico). Deployed and checked: inbox lists 4, app page served, state change to em_analise with
+  a responsável persisted, unknown state → 422.
+- Preview without a server: ui.app(inline=…) embeds the verdict (the local http server was refused by the sandbox; a file inside
+  the project folder renders live in the browser pane). Screenshot checked at 800 px: rail, tabs, findings with evidence, PDF pane.
+- Not done: the PDF pane depends on the browser's viewer honouring #page (Chrome, Edge, Firefox do; Safari ignores it); no
+  highlight of the quote inside the PDF; the convite edits are not saved server-side (copy/download only); one shared key.

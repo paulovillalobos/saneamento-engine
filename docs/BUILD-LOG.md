@@ -223,3 +223,8 @@
   verdict(folder, reads=None); engine/read.py read_with(). First hosted reader run hit Modal's 150 s web timeout → worker + status
   endpoint + polling page. Demo C with reader: 268 s cold, same verdict as local (8 findings). Round 12 at step ≈ 570/1380.
 - Claude next: round 12 scoring (chain ends ≈ 01:10 UTC); then second procedure; then the shell items above in Paulo's order.
+
+## 2026-11-05 19:00 UTC — técnico's screens live (D21)
+- Paulo: "which Palantir interface fits?" → full object view, high density + inbox; "build it now".
+- Claude: engine/ui.py (inbox + three-pane app), service routes + work-state endpoint, deployed; preview checked in the browser pane.
+- Claude next: round 12 scoring (chain running, step ≈ 650/1380); second procedure.
