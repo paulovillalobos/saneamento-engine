@@ -277,3 +277,26 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
 - Six questions checked code-only: gas project → V.27.i.iv condicional «quando exigível»; levantamento → V.7 condicional «sempre que
   haja alteração da topografia…»; fotografias → V.15; DWG → VI.1.b; pareceres externos → RJUE art. 13-B + V.27.h; prazo do convite →
   RJUE art. 11 n.º 5 / n.º 2 a). Hosted run with AMALIA: see BUILD-LOG.
+
+## D23 — Code to 10: tests on every commit, pages as files, constants as data (2026-11-05 night)
+- Why: Paulo, "is our code a 10/10?" → 7.5: no tests on the verdict layer, screens as JavaScript inside Python strings, service state
+  in a process dict, constants in code. "So make it a 10 then."
+- Tests: tests/ (stdlib unittest, 24 tests): rules (number words and formats, dates, the quote-names-the-fact rule, the declarant,
+  the signing certificate from a real exam PDF), the exam replayed from engine/reads (11/11, 0 false alarms, 9/9), the sealed set
+  (55/55, 0, 20/20; skipped where the PDFs are not on the machine), the verdict's shape, the table as the source; «Pergunte à lei»
+  (six questions, scope, the checker's refusals); the pages (every placeholder filled, inline previews, no grey text in the CSS);
+  the service's pure parts (ids never a path, the zip intake flattening and filtering, the listing, the work state, the shared
+  hourly budget). tools/check.sh = scaffold tests + engine tests + the two scorers; installed as the pre-commit hook
+  (tools/install-hooks.sh): a red check refuses the commit. .github/workflows/check.yml runs the same when the repo has a remote.
+- Pages: engine/static/{app.css, lei.html, app.html, inbox.html}; engine/ui.py is a 40-line renderer that fills __CSS__, __HEAD__,
+  __DATA__, __PDF_BASE__, __BACK__, __STATES__ and refuses a page with a placeholder left. The inbox renders client-side from
+  GET /v1/expedientes (JSON), so the same file serves the service and a file preview.
+- Service: engine/web.py holds the pure parts (new_id, safe_id, unzip_to, listing, status_of, set_work, take_budget); modal/service.py
+  is the HTTP layer over them. The reader's hourly budget moved from a process dict to a counter file in the volume (all
+  containers see it). Found by the hosted check: the status endpoint reported the técnico's work state («em_analise») in the
+  field the page polls for «pronto» → status_of now keeps the processing state in «estado» and the work state in «trabalho».
+- Data: engine/cpedi.json now also holds fact_keywords, number_words, months, site_pattern, declarant_pattern, work_states,
+  finding_labels; application.py reads them. A jurist or a técnico changes vocabulary without touching code.
+- Check at this commit: 24 tests OK, exam 11/11, sealed 55/55, hosted routes verified after redeploy.
+- What is still not 10: one shared key (users come with the second técnico); the pages' JavaScript has no tests of its own (the
+  browser pane screenshot is the check); the service module itself is exercised only live (its logic is in web.py, tested).

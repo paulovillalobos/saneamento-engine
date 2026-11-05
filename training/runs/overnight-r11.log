@@ -1,0 +1,24 @@
+== regenerate training expedientes (80, D16 whole documents, D17 sentence pool) 2026-11-04T23:25:14Z
+80 expedientes in training/expedientes: 4940 files, 164 planted errors
+== D1/D2 rows with augmentation
+training/data/d1/train.jsonl: 7124 rows
+training/data/d2/train.jsonl: 4763 rows
+{'files': 4940, 'illegible': 15, 'noise': 394, 'facts': 3981, 'absent': 782, 'dropped': 0, 'augmented': 2184}
+== real rows
+wrote training/data/real/train.jsonl and INDEX.md
+== train r11 2026-11-04T23:30:25Z
+'checkpoint': 1300
+'examples': 18670
+'steps': 1379, 'seconds': 39638.6
+== evaluate r11 under the scaffold 2026-11-05T10:33:44Z
+- **alinea_de** n=203; passagem 198/203 (98%); citacao 198/203 (98%); ambos 198/203 (98%); nao_sei 1
+- **elemento_doc** n=91; passagem 89/91 (98%); citacao 89/91 (98%); ambos 89/91 (98%); tipo 69/91 (76%)
+- **exigencia** n=116; passagem 109/116 (94%); citacao 108/116 (93%); ambos 108/116 (93%); exigido 61/116 (53%); nao_sei 4
+- **localiza** n=492; passagem 473/492 (96%); citacao 471/492 (96%); ambos 469/492 (95%); inventado 5; probes nao_sei 42/47
+- **proibido** n=30; passagem 28/30 (93%); citacao 29/30 (97%); ambos 28/30 (93%); resposta 25/30 (83%)
+- **transcreve** n=491; passagem 486/491 (99%); citacao 485/491 (99%); ambos 485/491 (99%); inventado 13; nao_sei 3; probes nao_sei 48/61
+- **d1_elemento** n=1145; citacao 1071/1071 (100%); elemento 1145/1145 (100%); tipo 1145/1145 (100%)
+- **d2_facto** n=1190; valor 1190/1190 (100%); pagina 1035/1035 (100%); valor_e_pagina 1035/1035 (100%); citacao_contem 1035/1035 (100%)
+- **d1_elemento** n=77; citacao 29/32 (91%); elemento 74/77 (96%); tipo 74/77 (96%)
+- **d2_facto** n=29; valor 22/29 (76%); pagina 1/7 (14%); valor_e_pagina 0/7 (0%); citacao_contem 1/7 (14%); perdido 6
+== done 2026-11-05T10:45:00Z

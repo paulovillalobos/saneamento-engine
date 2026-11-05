@@ -114,7 +114,7 @@ def signer_of(data):
     return None
 
 
-DECLARANT = re.compile(r"(?:^|\n)\s*(?:Eu,\s*)?([A-ZÁÉÍÓÚÂÊÔÃÕÇ][^,\n]{2,80}?),\s*(?:[a-zç ]+,\s*)?com domicílio em", re.M)
+DECLARANT = re.compile(TABLE["declarant_pattern"], re.M)
 
 
 def declarant_of(pages):
@@ -233,7 +233,7 @@ def load_reads(folder):
     if not f.exists():
         return None
     rows = {r["id"]: r for r in (json.loads(l) for l in (d / "prompts.jsonl").read_text(encoding="utf-8").splitlines() if l.strip())}
-    answers = json.load(open(f, encoding="utf-8"))
+    answers = json.loads(f.read_text(encoding="utf-8"))
     return {"meta": answers[0]["meta"], "rows": rows, "answers": {a["key"]: a for a in answers[1:]}}
 
 
@@ -277,15 +277,12 @@ def names_fact(field, value, quote):
     return any(kw.search(x) for x in hits) if hits else bool(kw.search(quote or ""))
 
 
-KEYWORD = {**d1d2.KEYWORD, "area_parcela": "parcela|lote|terreno", "area_total_construcao": "constru", "area_implantacao": "implanta", "altura_edificacao": "altura",
-           "pisos_acima_soleira": "piso", "fogos": "fogo|habita|tipologia|T\\d", "uso": "destin|uso|habita|com[eé]rcio|armaz|servi", "custo_total": "custo|valor|total|€",
-           "prazo_meses": "mes|prazo|dura|conclus", "validade_seguro_fim": "valid|até|ate|vigor|\\d{4}"}
+KEYWORD = {**d1d2.KEYWORD, **TABLE["fact_keywords"]}  # the field a quote must name (engine/cpedi.json fact_keywords)
 
 NUM = re.compile(r"\d{1,3}(?:[ .]\d{3})+(?:,\d+)?|\d+(?:[.,]\d+)?")
 
 
-WORDS = {"zero": 0, "um": 1, "uma": 1, "dois": 2, "duas": 2, "três": 3, "tres": 3, "quatro": 4, "cinco": 5, "seis": 6, "sete": 7, "oito": 8, "nove": 9, "dez": 10,
-         "onze": 11, "doze": 12, "treze": 13, "catorze": 14, "quatorze": 14, "quinze": 15, "dezasseis": 16, "dezassete": 17, "dezoito": 18, "dezanove": 19, "vinte": 20}
+WORDS = {k: int(v) for k, v in TABLE["number_words"].items()}
 
 
 def number(value):
@@ -318,7 +315,7 @@ def fields_of(slot):
     return out
 
 
-MONTHS = {m: i + 1 for i, m in enumerate(["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"])}
+MONTHS = {m: i + 1 for i, m in enumerate(TABLE["months"])}
 
 
 def iso_date(value):
@@ -398,7 +395,7 @@ SUBMITTED = {}  # key -> submitted_at, set by verdict() from submission.json
 
 
 # ---- step 5b: the site and the signer, code over the text and the certificates ------------------------------------------------
-SITE = re.compile(r"localizad[ao] em (.+?)(?=, cuj[ao]|, observa|, com período|, declara|, freguesia|\. [A-ZÀ-Ú]|;|$)", re.I)
+SITE = re.compile(TABLE["site_pattern"], re.I)
 
 
 def consistency(files, meta):

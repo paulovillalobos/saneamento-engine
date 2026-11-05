@@ -1,0 +1,21 @@
+<!doctype html><html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Expedientes</title>__HEAD__<style>__CSS__</style></head>
+<body><div class="frame">
+<div class="card"><div class="hd"><div class="tile blue"><span class="bp5-icon-standard bp5-icon-inbox"></span></div><div><h2 id="h2">Expedientes</h2><div class="sub" id="sub">a carregar…</div></div><div class="right"><a href="/">+ novo expediente</a> · <a href="/lei">pergunte à lei</a></div></div>
+<div class="inbox" id="rows"><div class="empty">a carregar…</div></div></div>
+<p style="margin:14px 4px"><b>O leitor lê, o código decide, o técnico assina.</b> Estados: novo → em análise → convite enviado → saneado.</p></div>
+<script>
+const INLINE=__DATA__;const STATES=__STATES__;const $=id=>document.getElementById(id);const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const LABEL=Object.fromEntries(STATES);
+function row(r){const c=r.counts||{};const st=r.estado||(r.files?"novo":"");const pend=!r.files;
+ return `<div class="row2"><div><div class="t"><a href="/expedientes/${esc(r.id)}/">${esc(r.label)}</a><span class="state ${esc(st)}">${esc(LABEL[st]||st)}</span></div>
+ <div class="m">${esc((r.at||"").slice(0,16).replace("T"," "))} UTC · ${r.files||0} ficheiros · leitor ${esc(r.reader||"—")}${r.responsavel?" · responsável <b>"+esc(r.responsavel)+"</b>":""}
+ ${pend?"":` · <span class="tag ${c.finding?"nao":"sempre"}">${c.finding||0} deficiência(s)</span> <span class="tag condicional">${c.not_assessed||0} não avaliado</span>`}</div></div>
+ <div>${pend?"":STATES.filter(([k])=>k!==st).map(([k,v])=>`<button class="btn sm" onclick="setState(this,${JSON.stringify(r.id)},${JSON.stringify(k)})">${esc(v)}</button> `).join("")+`<button class="btn sm" onclick="assign(this,${JSON.stringify(r.id)})">assumir</button>`}</div></div>`}
+function render(d){const rows=d.expedientes||[];const bad=rows.filter(r=>(r.counts||{}).finding).length;$("h2").textContent="Expedientes · "+(d.municipio||"");
+ $("sub").textContent=`Comunicação prévia de obras de edificação · ${rows.length} expedientes · ${bad} com deficiências · ${rows.length-bad} limpos`;
+ $("rows").innerHTML=rows.length?rows.map(row).join(""):'<div class="empty">Nenhum expediente ainda.</div>'}
+async function load(){if(INLINE){render(INLINE);return}const r=await fetch("/v1/expedientes");if(!r.ok){$("rows").innerHTML='<div class="empty">erro '+r.status+' — a chave?</div>';return}render(await r.json())}
+async function setState(b,id,st){b.disabled=true;const r=await fetch('/v1/expedientes/'+id+'/trabalho',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({estado:st})});if(r.ok)load();else{b.disabled=false;alert('erro '+r.status)}}
+async function assign(b,id){const n=prompt('Nome do técnico responsável');if(!n)return;b.disabled=true;const r=await fetch('/v1/expedientes/'+id+'/trabalho',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({responsavel:n,estado:'em_analise'})});if(r.ok)load();else{b.disabled=false;alert('erro '+r.status)}}
+load();
+</script></body></html>

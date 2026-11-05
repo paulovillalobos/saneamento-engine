@@ -203,5 +203,93 @@
   "V.27.k",
   "V.9"
  ],
- "signer_rule": "one certificate, one declarant: the certificate that signs the project authors' termos (V.11) belongs to their declarant; a termo of another declarant (coordinator V.12, works director V.27.k) signed with that same certificate is wrong_signer"
+ "signer_rule": "one certificate, one declarant: the certificate that signs the project authors' termos (V.11) belongs to their declarant; a termo of another declarant (coordinator V.12, works director V.27.k) signed with that same certificate is wrong_signer",
+ "fact_keywords": {
+  "area_parcela": "parcela|lote|terreno",
+  "area_total_construcao": "constru",
+  "area_implantacao": "implanta",
+  "altura_edificacao": "altura",
+  "pisos_acima_soleira": "piso",
+  "fogos": "fogo|habita|tipologia|T\\d",
+  "uso": "destin|uso|habita|com[eé]rcio|armaz|servi",
+  "custo_total": "custo|valor|total|€",
+  "prazo_meses": "mes|prazo|dura|conclus",
+  "validade_seguro_fim": "valid|até|ate|vigor|\\d{4}",
+  "apolice": "apólice|apolice",
+  "wording_annex_vii": "observa"
+ },
+ "number_words": {
+  "zero": 0,
+  "um": 1,
+  "uma": 1,
+  "dois": 2,
+  "duas": 2,
+  "três": 3,
+  "tres": 3,
+  "quatro": 4,
+  "cinco": 5,
+  "seis": 6,
+  "sete": 7,
+  "oito": 8,
+  "nove": 9,
+  "dez": 10,
+  "onze": 11,
+  "doze": 12,
+  "treze": 13,
+  "catorze": 14,
+  "quatorze": 14,
+  "quinze": 15,
+  "dezasseis": 16,
+  "dezassete": 17,
+  "dezoito": 18,
+  "dezanove": 19,
+  "vinte": 20
+ },
+ "months": [
+  "janeiro",
+  "fevereiro",
+  "março",
+  "abril",
+  "maio",
+  "junho",
+  "julho",
+  "agosto",
+  "setembro",
+  "outubro",
+  "novembro",
+  "dezembro"
+ ],
+ "site_pattern": "localizad[ao] em (.+?)(?=, cuj[ao]|, observa|, com período|, declara|, freguesia|\\. [A-ZÀ-Ú]|;|$)",
+ "declarant_pattern": "(?:^|\\n)\\s*(?:Eu,\\s*)?([A-ZÁÉÍÓÚÂÊÔÃÕÇ][^,\\n]{2,80}?),\\s*(?:[a-zç ]+,\\s*)?com domicílio em",
+ "work_states": [
+  [
+   "novo",
+   "Novo"
+  ],
+  [
+   "em_analise",
+   "Em análise"
+  ],
+  [
+   "convite_enviado",
+   "Convite enviado"
+  ],
+  [
+   "saneado",
+   "Saneado"
+  ]
+ ],
+ "finding_labels": {
+  "missing_required": "Elemento em falta",
+  "missing_complement": "Complemento em falta",
+  "not_pdf": "Não é PDF",
+  "not_pdfa": "Sem PDF/A",
+  "unsigned": "Sem assinatura",
+  "template_wording_missing": "Sem redação do Anexo VII",
+  "value_mismatch": "Valores divergentes",
+  "impossible_value": "Valor impossível",
+  "wrong_site": "Local divergente",
+  "expired_insurance": "Seguro caducado",
+  "wrong_signer": "Assinatura de outra pessoa"
+ }
 }

@@ -15,7 +15,7 @@ Storage: volume saneamento-store, /store/<municipality>/<id>/{files/, reads/, ve
 Key: Modal secret saneamento-token (SANEAMENTO_TOKEN); the one key is Celorico de Basto's for now (one municipality = one key).
 Processing runs in a worker function (process_expediente.spawn): a web request must answer within Modal's 150 s, the reader loads
 in ≈ 2.5 min when cold. POST answers at once with the id; the page polls GET /v1/expedientes/{id}/estado until the verdict exists.
-Until a câmara signs a data-processing agreement only simulated expedientes go through here (the engine needs no citizen data,
+Pure parts in engine/web.py (tested without Modal). Until a câmara signs a data-processing agreement only simulated expedientes go through here (the engine needs no citizen data,
 the files carry it). The image carries engine/, generator/, law/, structure/, celorico/ and exam/dossiers/; no training data.
 """
 import hashlib
@@ -124,6 +124,7 @@ def _app():
     from engine import read as R
     from engine import ui
     from engine import law_search
+    from engine import web as W
 
     web = FastAPI(title="saneamento-engine", docs_url=None, redoc_url=None)
     STORE = Path("/store")
@@ -136,9 +137,7 @@ def _app():
             raise HTTPException(401, "chave em falta ou inválida (X-API-Key)")
         return MUNICIPALITY
 
-    def new_id(name):
-        stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
-        return f"{stamp}-{hashlib.sha256(f'{name}{time.time()}'.encode()).hexdigest()[:6]}"
+    new_id = W.new_id
 
     def start(muni, eid, use_reader, label):
         (STORE / muni / eid / "pending.json").write_text(json.dumps({"id": eid, "label": label, "at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "leitor": use_reader}), encoding="utf-8")
@@ -146,19 +145,7 @@ def _app():
         process_expediente.spawn(muni, eid, use_reader, label)
         return {"id": eid, "url": f"/expedientes/{eid}/", "estado": "a processar", "estado_url": f"/v1/expedientes/{eid}/estado"}
 
-    def unzip_to(data, files_dir):
-        files_dir.mkdir(parents=True, exist_ok=True)
-        n = 0
-        with zipfile.ZipFile(io.BytesIO(data)) as z:
-            for info in z.infolist():
-                name = Path(info.filename).name
-                if info.is_dir() or not name or name.startswith(".") or name.startswith("__MACOSX") or info.file_size > 60 * 1024 * 1024:
-                    continue
-                if not re.fullmatch(r"[\w .()\-–]+", name):
-                    continue
-                (files_dir / name).write_bytes(z.read(info))
-                n += 1
-        return n
+    unzip_to = W.unzip_to
 
     @web.get("/v1/saude")
     def saude():
@@ -198,35 +185,24 @@ def _app():
     def estado(eid: str, request: Request, x_api_key: str | None = Header(default=None)):
         muni = authed(request, x_api_key)
         store.reload()
-        base = STORE / muni / safe(eid)
-        if (base / "meta.json").exists():
-            return {"estado": "pronto", **json.loads((base / "meta.json").read_text(encoding="utf-8")), "url": f"/expedientes/{eid}/"}
-        if (base / "error.json").exists():
-            return {"estado": "erro", **json.loads((base / "error.json").read_text(encoding="utf-8"))}
-        if (base / "pending.json").exists():
-            return {"estado": "a processar", **json.loads((base / "pending.json").read_text(encoding="utf-8"))}
+        st = W.status_of(STORE / muni / safe(eid))
+        if st:
+            return {**st, "url": f"/expedientes/{eid}/"} if st["estado"] == "pronto" else st
         raise HTTPException(404, "expediente desconhecido")
 
     def listing(muni):
         store.reload()
-        rows = []
-        root = STORE / muni
-        if root.is_dir():
-            for d in sorted(root.iterdir(), reverse=True):
-                if (d / "meta.json").exists():
-                    rows.append(json.loads((d / "meta.json").read_text(encoding="utf-8")))
-                elif (d / "error.json").exists():
-                    e = json.loads((d / "error.json").read_text(encoding="utf-8"))
-                    rows.append({"id": d.name, "label": f"ERRO — {e['erro'][:60]}", "at": e["at"], "files": 0, "counts": {"finding": 0, "not_assessed": 0}, "reader": None, "seconds": ""})
-                elif (d / "pending.json").exists():
-                    p = json.loads((d / "pending.json").read_text(encoding="utf-8"))
-                    rows.append({"id": d.name, "label": f"{p['label']} — a processar", "at": p["at"], "files": 0, "counts": {"finding": 0, "not_assessed": 0}, "reader": None, "seconds": ""})
-        return rows
+        return W.listing(STORE / muni)
+
+    @web.get("/v1/expedientes")
+    def expedientes_json(request: Request, x_api_key: str | None = Header(default=None)):
+        muni = authed(request, x_api_key)
+        return {"municipio": muni, "expedientes": listing(muni)}
 
     @web.get("/expedientes", response_class=HTMLResponse)
     def expedientes(request: Request, x_api_key: str | None = Header(default=None)):
         muni = authed(request, x_api_key)
-        return HTMLResponse(ui.inbox(listing(muni), muni))
+        return HTMLResponse(ui.inbox())
 
     @web.post("/v1/expedientes/{eid}/trabalho")
     async def trabalho(eid: str, request: Request, x_api_key: str | None = Header(default=None)):
@@ -237,15 +213,10 @@ def _app():
         m = STORE / muni / safe(eid) / "meta.json"
         if not m.exists():
             raise HTTPException(404, "expediente desconhecido")
-        meta = json.loads(m.read_text(encoding="utf-8"))
-        if "estado" in body:
-            if body["estado"] not in dict(ui.STATES):
-                raise HTTPException(422, "estado desconhecido")
-            meta["estado"] = body["estado"]
-        if "responsavel" in body:
-            meta["responsavel"] = str(body["responsavel"])[:80]
-        meta.setdefault("historico", []).append({"at": datetime.now(timezone.utc).isoformat(timespec="seconds"), **{k: body[k] for k in ("estado", "responsavel") if k in body}})
-        m.write_text(json.dumps(meta, ensure_ascii=False), encoding="utf-8")
+        try:
+            meta = W.set_work(m, body, ui.STATES)
+        except ValueError as e:
+            raise HTTPException(422, str(e))
         store.commit()
         return {"ok": True, "estado": meta.get("estado"), "responsavel": meta.get("responsavel")}
 
@@ -301,7 +272,6 @@ def _app():
     def lei_page():
         return HTMLResponse(ui.lei())
 
-    LAW_BUDGET = {"n": 0, "hour": 0}
 
     @web.post("/v1/lei")
     async def lei_ask(request: Request):
@@ -314,11 +284,8 @@ def _app():
         cands = L.search(q)
         qid = new_id(q)
         r = {"id": qid, "pergunta": q, "passagens": cands, "escolhida": None, "leitor": None, "at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
-        hour = int(time.time() // 3600)
-        if LAW_BUDGET["hour"] != hour:
-            LAW_BUDGET.update(n=0, hour=hour)
-        if body.get("leitor") and cands and LAW_BUDGET["n"] < 40:
-            LAW_BUDGET["n"] += 1
+        store.reload()
+        if body.get("leitor") and cands and W.take_budget(STORE / "_lei", 40):
             r["leitor"] = "a confirmar"
             d = STORE / "_lei"
             d.mkdir(exist_ok=True)
@@ -338,7 +305,7 @@ def _app():
         return json.loads(f.read_text(encoding="utf-8"))
 
     def safe(eid):
-        if not re.fullmatch(r"[0-9]{8}-[0-9]{6}-[0-9a-f]{6}", eid):
+        if not W.safe_id(eid):
             raise HTTPException(404, "expediente desconhecido")
         return eid
 

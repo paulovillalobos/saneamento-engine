@@ -1,0 +1,15 @@
+== evaluate r10 (step-1000 checkpoint) under the scaffold 2026-11-04T19:16:55Z
+== r9 under the scaffold on the whole-document stranger rows (baseline: the view alone) 2026-11-04T19:27:34Z
+- **alinea_de** n=203; passagem 197/203 (97%); citacao 197/203 (97%); ambos 197/203 (97%)
+- **elemento_doc** n=91; passagem 86/91 (95%); citacao 86/91 (95%); ambos 86/91 (95%); tipo 75/91 (82%); nao_sei 1
+- **exigencia** n=116; passagem 108/116 (93%); citacao 107/116 (92%); ambos 107/116 (92%); exigido 56/116 (48%); nao_sei 6
+- **localiza** n=492; passagem 472/492 (96%); citacao 472/492 (96%); ambos 471/492 (96%); inventado 4; nao_sei 1; probes nao_sei 43/47
+- **proibido** n=30; passagem 28/30 (93%); citacao 28/30 (93%); ambos 28/30 (93%); resposta 23/30 (77%)
+- **transcreve** n=491; passagem 490/491 (100%); citacao 488/491 (99%); ambos 488/491 (99%); inventado 18; probes nao_sei 43/61
+- **d1_elemento** n=1145; citacao 1071/1071 (100%); elemento 1145/1145 (100%); tipo 1145/1145 (100%)
+- **d2_facto** n=1190; valor 1190/1190 (100%); pagina 1035/1035 (100%); valor_e_pagina 1035/1035 (100%); citacao_contem 1035/1035 (100%)
+- **d1_elemento** n=77; citacao 26/32 (81%); elemento 67/77 (87%); tipo 69/77 (90%); inventado 4
+- **d2_facto** n=29; valor 27/29 (93%); pagina 4/7 (57%); valor_e_pagina 4/7 (57%); citacao_contem 3/7 (43%); perdido 1
+- **d1_elemento** n=77; citacao 19/32 (59%); elemento 59/77 (77%); tipo 62/77 (81%); inventado 5
+- **d2_facto** n=29; valor 25/29 (86%); pagina 4/7 (57%); valor_e_pagina 3/7 (43%); citacao_contem 3/7 (43%); inventado 1; perdido 1
+== done 2026-11-04T19:32:33Z

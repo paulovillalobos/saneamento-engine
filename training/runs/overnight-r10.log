@@ -1,0 +1,7 @@
+== regenerate training expedientes (80, D16 whole documents + scaffold-clean keys) 2026-11-04T13:09:22Z
+80 expedientes in training/expedientes: 4940 files, 164 planted errors
+== D1/D2 rows with augmentation
+training/data/d1/train.jsonl: 7184 rows
+training/data/d2/train.jsonl: 4772 rows
+{'files': 4940, 'illegible': 15, 'noise': 394, 'facts': 3975, 'absent': 797, 'dropped': 3, 'augmented': 2244}
+== train r10 2026-11-04T13:13:53Z

@@ -235,3 +235,8 @@
   worker answer_law; deployed; /lei public. Hosted check: «Preciso de projeto de gás numa moradia unifamiliar?» → code answer at once
   (V.27.i.iv, condicional «quando exigível»); AMALIA's pick confirmed the same passage after 207 s wall (cold reader; 3.1 s of
   generation), checker accepted. Round 12 at checkpoint 700, still training.
+
+## 2026-11-05 21:30 UTC — code to 10 (D23): 24 tests, pre-commit check, static pages, web.py, constants in the table
+- Paulo: "is our code a 10/10?" → "so make it a 10 then".
+- Claude: tests/, tools/check.sh (+ pre-commit hook), .github/workflows/check.yml, engine/static/*, engine/ui.py renderer, engine/web.py,
+  cpedi.json vocabulary; status/work-state key clash fixed; redeployed and verified. Round 12 ≈ step 760/1379.
