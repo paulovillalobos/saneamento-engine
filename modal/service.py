@@ -75,6 +75,32 @@ def _process(muni, eid, files_dir, use_reader, label):
     return meta
 
 
+@app.function(volumes={"/store": store}, timeout=900)
+def answer_law(qid: str):
+    """AMALIA picks the passage among the code's candidates (D0 «exigencia» task); the pick counts only if the checker accepts it."""
+    sys.path.insert(0, REMOTE)
+    from engine import law_search
+    store.reload()
+    f = Path("/store") / "_lei" / f"{qid}.json"
+    r = json.loads(f.read_text(encoding="utf-8"))
+    try:
+        L = law_search.law()
+        cands = r["passagens"]
+        prompt = L.prompt(r["pergunta"], cands)
+        reader = modal.Function.from_name("saneamento-reader", "answer")
+        out = reader.remote([{"key": qid, "task": "exigencia", "prompt": prompt}], LORA, False)
+        text = next((o.get("text") for o in out[1:] if o.get("key") == qid), None)
+        pick, why = L.check(text, cands) if text else (None, "sem resposta")
+        r["escolhida"] = pick
+        r["leitor"] = "confirmada" if pick else f"sem confirmação ({why})"
+        r["leitor_meta"] = {"adapter": out[0]["meta"].get("adapter"), "seconds": out[0]["meta"].get("generate_seconds")}
+    except Exception as e:
+        r["leitor"] = f"erro do leitor ({type(e).__name__})"
+    f.write_text(json.dumps(r, ensure_ascii=False), encoding="utf-8")
+    store.commit()
+    return r["leitor"]
+
+
 @app.function(volumes={"/store": store}, timeout=1800)
 def process_expediente(muni: str, eid: str, use_reader: bool, label: str):
     store.reload()
@@ -97,6 +123,7 @@ def _app():
     from engine import application as A
     from engine import read as R
     from engine import ui
+    from engine import law_search
 
     web = FastAPI(title="saneamento-engine", docs_url=None, redoc_url=None)
     STORE = Path("/store")
@@ -269,6 +296,46 @@ def _app():
     @web.get("/", response_class=HTMLResponse)
     def home():
         return HTMLResponse(HOME)
+
+    @web.get("/lei", response_class=HTMLResponse)
+    def lei_page():
+        return HTMLResponse(ui.lei())
+
+    LAW_BUDGET = {"n": 0, "hour": 0}
+
+    @web.post("/v1/lei")
+    async def lei_ask(request: Request):
+        """Public: the question → candidate passages now (code); AMALIA's pick in the background when asked, within a per-hour budget."""
+        body = await request.json()
+        q = str(body.get("pergunta", "")).strip()[:600]
+        if len(q) < 4:
+            raise HTTPException(400, "pergunta demasiado curta")
+        L = law_search.law()
+        cands = L.search(q)
+        qid = new_id(q)
+        r = {"id": qid, "pergunta": q, "passagens": cands, "escolhida": None, "leitor": None, "at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+        hour = int(time.time() // 3600)
+        if LAW_BUDGET["hour"] != hour:
+            LAW_BUDGET.update(n=0, hour=hour)
+        if body.get("leitor") and cands and LAW_BUDGET["n"] < 40:
+            LAW_BUDGET["n"] += 1
+            r["leitor"] = "a confirmar"
+            d = STORE / "_lei"
+            d.mkdir(exist_ok=True)
+            (d / f"{qid}.json").write_text(json.dumps(r, ensure_ascii=False), encoding="utf-8")
+            store.commit()
+            answer_law.spawn(qid)
+        elif body.get("leitor") and cands:
+            r["leitor"] = "limite horário do leitor atingido; resposta do código"
+        return r
+
+    @web.get("/v1/lei/{qid}")
+    def lei_status(qid: str):
+        store.reload()
+        f = STORE / "_lei" / f"{safe(qid)}.json"
+        if not f.exists():
+            raise HTTPException(404, "pergunta desconhecida")
+        return json.loads(f.read_text(encoding="utf-8"))
 
     def safe(eid):
         if not re.fullmatch(r"[0-9]{8}-[0-9]{6}-[0-9a-f]{6}", eid):

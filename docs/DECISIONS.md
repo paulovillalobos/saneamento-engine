@@ -251,3 +251,29 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
   the project folder renders live in the browser pane). Screenshot checked at 800 px: rail, tabs, findings with evidence, PDF pane.
 - Not done: the PDF pane depends on the browser's viewer honouring #page (Chrome, Edge, Firefox do; Safari ignores it); no
   highlight of the quote inside the PDF; the convite edits are not saved server-side (copy/download only); one shared key.
+
+## D22 — «Pergunte à lei» and the screens copied from Palantir (2026-11-05 night)
+- Why: Paulo saw build.palantir.com: "wide, simple, I loved it; ours is stale and sad". And: "should the user be able to talk with
+  AMALIA? we have the whole law decomposed, why are we scoped to Celorico?" Then: "copy literally the images I send you".
+- Screens (engine/ui.py, Blueprint = Palantir's open-source design system, CSS from a CDN; Source Sans; no framework): «Pergunte à lei»
+  copies the "Request / Feedback Configuration" layout — purple band with icon tile, title and one-line subtitle; left: question card
+  with one blue «Submeter», answer card, «Passagens encontradas» card with a pager; right: «Configuração» panel with the scope, who
+  answers, six example questions, one green button. The expediente copies the "full object view, high density" layout — identity rail
+  (icon + requerente, Deficiências / Elementos / Documentos, the facts), tabs with icons (Deficiências · Revisão · Elementos · Factos ·
+  Ficheiros · Convite), content left, «Pré-visualização do documento» right (the PDF at the quoted page), the counters as a strip above.
+  Inbox restyled the same way. Checked in the browser pane at 800 px: both read as the originals, with our content.
+- Not a chat. A chat box is where invention returns. engine/law_search.py: the técnico's question → BM25-style search over the
+  decomposed law (Portaria 320/2026/1 Annex V/VI/VII leaves + RJUE articles from structure/decreto-lei-108-2026.json) → candidate
+  passages quoted letter by letter; «exigido sempre / condicional / não» decided by CODE from the rule pack (conditions of the passage;
+  a V element outside the CPEDI lists = não); AMALIA, when asked, picks the passage among the candidates with the D0 «exigencia» task
+  it was trained on (round 11: passage 94 %, citação 93 %; its own «exigido» label 53 % and therefore unused). The pick counts only
+  when the passage id is a candidate and the citation equals the passage text (law_search.check); otherwise the code's first
+  candidate stands and the page says so.
+- Service: GET /lei public, POST /v1/lei public (code answer at once; AMALIA's pick in a worker, answer_law.spawn, ≤ 40 per hour per
+  container, result under /store/_lei/<id>.json, GET /v1/lei/{id} polled by the page). No key, no citizen data: a question about the
+  Portaria is public. First public door of the product.
+- Scope: the law is national; the verdict needs a municipality's slot mapping (Celorico checked line by line; rjue-engine holds other
+  mapped catalogues). «Pergunte à lei» needs none.
+- Six questions checked code-only: gas project → V.27.i.iv condicional «quando exigível»; levantamento → V.7 condicional «sempre que
+  haja alteração da topografia…»; fotografias → V.15; DWG → VI.1.b; pareceres externos → RJUE art. 13-B + V.27.h; prazo do convite →
+  RJUE art. 11 n.º 5 / n.º 2 a). Hosted run with AMALIA: see BUILD-LOG.

@@ -228,3 +228,8 @@
 - Paulo: "which Palantir interface fits?" → full object view, high density + inbox; "build it now".
 - Claude: engine/ui.py (inbox + three-pane app), service routes + work-state endpoint, deployed; preview checked in the browser pane.
 - Claude next: round 12 scoring (chain running, step ≈ 650/1380); second procedure.
+
+## 2026-11-05 20:30 UTC — «Pergunte à lei» + Palantir-layout screens live (D22)
+- Paulo: "copy literally the images I send you about Palantir"; talk to AMALIA; why Celorico only.
+- Claude: engine/law_search.py, engine/ui.py rewritten on Blueprint (lei, app, inbox), service routes /lei, POST /v1/lei, GET /v1/lei/{id},
+  worker answer_law; deployed; /lei public. Round 12 still training.
