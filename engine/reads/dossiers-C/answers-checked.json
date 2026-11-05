@@ -1,0 +1,608 @@
+[
+ {
+  "meta": {
+   "model": "amalia-llm/AMALIA-9B-0626-DPO@c4614b9b5c7b",
+   "adapter": "amalia-saneamento-r11",
+   "runtime": "vllm 0.30.0, bf16, L40S, prefix caching, guided JSON per task",
+   "temperature": 0,
+   "max_tokens": 1200,
+   "guard": "checked",
+   "load_seconds": 125.9,
+   "generate_seconds": 13.2,
+   "answered": 222,
+   "skipped": 0
+  }
+ },
+ {
+  "key": "d1:a4f1782b96b573c7",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 101,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.b.ii\", \"citacao\": \"ii) Alçados à escala de 1:50 ou de 1:100 com a indicação das cores e dos materiais dos elementos que constituem as fachadas e a cobertura, bem como as construções adjacentes, quando existam;\", \"tipo\": \"desenhado\"}"
+ },
+ {
+  "key": "d1:e2aa9bdf59985f12",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 102,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.n\", \"citacao\": \"n) Apólice de seguro que cubra a responsabilidade pela reparação dos danos emergentes de acidentes de trabalho, nos termos previstos na Lei n.º 98/2009, de 4 de setembro, na sua redação atual;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:80d6e8b26a134e97",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 58,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.p\", \"citacao\": \"p) Comprovativo de contratação do diretor de obra;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:6e3ede73b27ae2c7",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 68,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.e\", \"citacao\": \"e) Calendarização da execução da obra, com estimativa do prazo de início e de conclusão dos trabalhos;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:2129d18fd642c771",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 39,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"12\", \"pagina\": 1, \"citacao\": \"Conclusão prevista: dezembro de 2027 (12 meses).\"}"
+ },
+ {
+  "key": "d1:432452b95031e104",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 108,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.5\", \"citacao\": \"5 - Indicação do código de acesso à certidão permanente do registo predial referente ao prédio ou prédios abrangidos pela operação urbanística ou, quando omisso, a respetiva certidão negativa do registo predial, acompanhada da caderneta predial da qual constem os correspondentes artigos matriciais;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:9e6dd2c2fabb38a1",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 97,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.f\", \"citacao\": \"f) Estimativa do custo total da obra, baseado em quantidades e tipologias dos trabalhos necessários à sua execução, devendo ser adotadas as normas europeias e portuguesas em vigor ou as especificações do Laboratório Nacional de Engenharia Civil;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:8769e7956e4d7062",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 76,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"320 000,00 €\", \"pagina\": 1, \"citacao\": \"Estimativa do custo total da obra Estimativa do custo total da obra, baseada em quantidades e tipologias de trabalhos: 320 000,00 € (valor fictício).\"}"
+ },
+ {
+  "key": "d1:df726ddd73b54809",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 79,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.o\", \"citacao\": \"o) Ficha de elementos estatísticos, prevista na Portaria n.º 235/2013, de 24 de julho;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:ac1b17f42e1a7459",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.15\", \"citacao\": \"15 - Registo fotográfico da situação existente, abrangendo o imóvel e as edificações adjacentes, quando estas existam;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:bc0bd093c9e216b6",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 73,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.xi\", \"citacao\": \"xi) Projeto de segurança contra incêndios em edifícios ou ficha de segurança, de acordo com a categoria de risco do edifício;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:3fc6b636da8fae79",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.j\", \"citacao\": \"j) Número do alvará, ou do certificado, ou número de outro título habilitante emitido pelo IMPIC, I. P., que confira habilitações adequadas à natureza ou valor da obra;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:965a2f1e053fc7d2",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 167,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.7\", \"citacao\": \"7 - Levantamento topográfico georreferenciado, acompanhado por termo de responsabilidade, sempre que haja alteração da topografia ou da implantação das construções, à escala de 1:200, ou de 1:500 no caso de loteamentos, devidamente cotado, que identifique o prédio e a respetiva área, construções nela erigidas, assim como o espaço público envolvente (vias, passeios, estacionamentos, árvores e infraestruturas ou instalações aí localizadas, incluindo postes, tampas, sinalização e mobiliário urbano);\", \"tipo\": \"desenhado\"}"
+ },
+ {
+  "key": "d1:00ceb65312c4d256",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.11\", \"citacao\": \"11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:f44f2dcfc68dc373",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.9\", \"citacao\": \"9 - Memória descritiva e justificativa do projeto ordenador, que justifique as opções adotadas e evidencie o cumprimento das normas legais e regulamentares aplicáveis, a qual deve conter, em função das características da operação urbanística:\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d2:09184b66564458ec",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 91,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"610\", \"pagina\": 1, \"citacao\": \"A edificação desenvolve-se em dois pisos acima da cota de soleira, com área de implantação de 277 m2 e área total de construção de 610 m2, destinada a habitação unifamiliar (um fogo, tipologia T3), com dois lugares de estacionamento no interior do lote.\"}"
+ },
+ {
+  "key": "d2:eab34d51c785a6db",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 53,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"1200\", \"pagina\": 1, \"citacao\": \"Quadro sinóptico: superfície do terreno 1200 m2; área da parcela 1200 m2;\"}"
+ },
+ {
+  "key": "d2:fd93f1a30b0bd5c7",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 91,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"277\", \"pagina\": 1, \"citacao\": \"A edificação desenvolve-se em dois pisos acima da cota de soleira, com área de implantação de 277 m2 e área total de construção de 610 m2, destinada a habitação unifamiliar (um fogo, tipologia T3), com dois lugares de estacionamento no interior do lote.\"}"
+ },
+ {
+  "key": "d2:15ea3cf7af5e506f",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 90,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"dois\", \"pagina\": 1, \"citacao\": \"A edificação desenvolve-se em dois pisos acima da cota de soleira, com área de implantação de 277 m2 e área total de construção de 610 m2, destinada a habitação unifamiliar (um fogo, tipologia T3), com dois lugares de estacionamento no interior do lote.\"}"
+ },
+ {
+  "key": "d2:8f9b22d89907d6d9",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 94,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"habitação unifamiliar\", \"pagina\": 1, \"citacao\": \"A edificação desenvolve-se em dois pisos acima da cota de soleira, com área de implantação de 277 m2 e área total de construção de 610 m2, destinada a habitação unifamiliar (um fogo, tipologia T3), com dois lugares de estacionamento no interior do lote.\"}"
+ },
+ {
+  "key": "d2:5ace06389c791c7c",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 89,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"um\", \"pagina\": 1, \"citacao\": \"A edificação desenvolve-se em dois pisos acima da cota de soleira, com área de implantação de 277 m2 e área total de construção de 610 m2, destinada a habitação unifamiliar (um fogo, tipologia T3), com dois lugares de estacionamento no interior do lote.\"}"
+ },
+ {
+  "key": "d2:3eeea7679b031a81",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 33,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"7,2\", \"pagina\": 1, \"citacao\": \"altura da edificação 7,2 m;\"}"
+ },
+ {
+  "key": "d1:a43e02c4cb12e6d9",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 67,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.i\", \"citacao\": \"i) Projeto de estabilidade que inclua o projeto de escavação e contenção periférica;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:34310045e205682e",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 61,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.viii\", \"citacao\": \"viii) Projeto de infraestruturas de telecomunicações;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:a147cf5bc30dab45",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 56,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.vi\", \"citacao\": \"vi) Projeto de águas pluviais;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:45ff9ebcca500a11",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 58,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.xii\", \"citacao\": \"xii) Projeto de condicionamento acústico;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:c603cf32d1d6a489",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 55,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.ix\", \"citacao\": \"ix) Projeto de conforto térmico;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:507e1c3ff0f38d71",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 55,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.iii\", \"citacao\": \"iii) Projeto de instalações elétricas;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:bb78ee0d2ae7a400",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 127,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.b.vi\", \"citacao\": \"vi) Plano de acessibilidades, que integrando peças escritas e desenhadas, permita evidenciar as opções de projeto em matéria de garantia do acesso aos utilizadores com mobilidade reduzida, apresentando a rede de espaços e equipamentos acessíveis, existente ou proposta, para a área objeto da operação urbanística, comprovando que a execução da operação se conforma com o regime jurídico da acessibilidade;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:48d94e61a19ad67b",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 61,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.v\", \"citacao\": \"v) Projeto de redes prediais de água e esgotos;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:bfef14c13e1c7f09",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:79c8b45e114ae638",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 86,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.2\", \"citacao\": \"2 - Delimitação da área objeto da operação urbanística e sua área de enquadramento em planta de localização fornecida pela câmara municipal ou planta de localização à escala 1:1.000;\", \"tipo\": \"desenhado\"}"
+ },
+ {
+  "key": "d1:239373de208cd379",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 104,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.b.iv\", \"citacao\": \"iv) Pormenores de construção, à escala adequada, esclarecendo a solução construtiva adotada para as paredes exteriores do edifício e sua articulação com a cobertura, vãos de iluminação/ventilação e de acesso, bem como com o pavimento exterior envolvente;\", \"tipo\": \"desenhado\"}"
+ },
+ {
+  "key": "d1:ee5dcbe08d15836d",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 68,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.i\", \"citacao\": \"i) Projeto de estabilidade que inclua o projeto de escavação e contenção periférica;\", \"tipo\": \"desenhado\"}"
+ },
+ {
+  "key": "d1:3780af8cc9e28e16",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 62,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.viii\", \"citacao\": \"viii) Projeto de infraestruturas de telecomunicações;\", \"tipo\": \"desenhado\"}"
+ },
+ {
+  "key": "d1:85a776099c0c1ce0",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 57,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.vi\", \"citacao\": \"vi) Projeto de águas pluviais;\", \"tipo\": \"desenhado\"}"
+ },
+ {
+  "key": "d1:384005d215eb9892",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 59,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.xii\", \"citacao\": \"xii) Projeto de condicionamento acústico;\", \"tipo\": \"desenhado\"}"
+ },
+ {
+  "key": "d1:90f751f543a0daf3",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 56,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.ix\", \"citacao\": \"ix) Projeto de conforto térmico;\", \"tipo\": \"desenhado\"}"
+ },
+ {
+  "key": "d1:51d93056ecea3948",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 56,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.iii\", \"citacao\": \"iii) Projeto de instalações elétricas;\", \"tipo\": \"desenhado\"}"
+ },
+ {
+  "key": "d1:821fd25493396627",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 128,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.b.vi\", \"citacao\": \"vi) Plano de acessibilidades, que integrando peças escritas e desenhadas, permita evidenciar as opções de projeto em matéria de garantia do acesso aos utilizadores com mobilidade reduzida, apresentando a rede de espaços e equipamentos acessíveis, existente ou proposta, para a área objeto da operação urbanística, comprovando que a execução da operação se conforma com o regime jurídico da acessibilidade;\", \"tipo\": \"desenhado\"}"
+ },
+ {
+  "key": "d1:e7f7c959d1e4878d",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 62,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.i.v\", \"citacao\": \"v) Projeto de redes prediais de água e esgotos;\", \"tipo\": \"desenhado\"}"
+ },
+ {
+  "key": "d1:3c1c577412396ec6",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 97,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.8\", \"citacao\": \"8 - Planta de implantação, desenhada sobre o levantamento topográfico, quando este for exigível, indicando a construção, as áreas permeáveis e impermeabilizadas e os respetivos materiais e, quando houver alterações na via pública, planta dessas alterações;\", \"tipo\": \"desenhado\"}"
+ },
+ {
+  "key": "d1:760264b13d68f0a0",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 96,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.b.i\", \"citacao\": \"i) Plantas à escala de 1:50 ou de 1:100 contendo as dimensões e áreas e utilizações de todos os compartimentos, bem como a representação do mobiliário fixo e equipamento sanitário;\", \"tipo\": \"desenhado\"}"
+ },
+ {
+  "key": "d1:c856a8112c721b44",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d2:048e1a080ba5e1dd",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 40,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"554\", \"pagina\": 1, \"citacao\": \"ÁREA TOTAL DE CONSTRUÇÃO 554 m2\"}"
+ },
+ {
+  "key": "d2:5954c630c5cc1d1e",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 40,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"120\", \"pagina\": 1, \"citacao\": \"ÁREA DA PARCELA OU LOTE 120 m2\"}"
+ },
+ {
+  "key": "d2:920b191f4f7a77cd",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 40,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"277\", \"pagina\": 1, \"citacao\": \"ÁREA TOTAL DE IMPLANTAÇÃO 277 m2\"}"
+ },
+ {
+  "key": "d2:921307c3c5072e8b",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 40,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"2\", \"pagina\": 1, \"citacao\": \"N.º DE PISOS ACIMA DA COTA DE SOLEIRA 2\"}"
+ },
+ {
+  "key": "d2:4bfe4aa40247e41a",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 53,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"Habitação unifamiliar\", \"pagina\": 1, \"citacao\": \"USO A QUE SE DESTINA A EDIFICAÇÃO / USO DA EDIFICAÇÃO Habitação unifamiliar\"}"
+ },
+ {
+  "key": "d2:bf4286ab1ec2c1c8",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 34,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"1\", \"pagina\": 1, \"citacao\": \"N.º TOTAL DE FOGOS 1\"}"
+ },
+ {
+  "key": "d2:82f7eb176bf922cb",
+  "task": "d2_facto",
+  "prompt_tokens": 2,
+  "completion_tokens": 35,
+  "finish_reason": "stop",
+  "text": "{\"valor\": \"7,2\", \"pagina\": 1, \"citacao\": \"ALTURA DA EDIFICAÇÃO 7,2 m\"}"
+ },
+ {
+  "key": "d1:56b332e831802059",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 92,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:ee9db9ebe7799bf6",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 92,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:5a078947d0aeb07d",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 92,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:e86cae4dd1c2b6d0",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 92,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:27d33efd7dc9dd1a",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 92,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:510d66b10bd37a75",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 98,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.m\", \"citacao\": \"m) Comprovativo da contratação de seguro de responsabilidade civil do diretor de obra e, quando exista, do diretor de fiscalização de obra, nos termos da Lei n.º 31/2009 de 3 de julho;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:b93aeb8f8a5785df",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 92,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:501f6037c780c908",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 92,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:ba3a93cc0fbfc51a",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 92,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:8c1fb313c7ab7854",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 92,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.14\", \"citacao\": \"14 - Comprovativo da contratação de seguro de responsabilidade civil dos técnicos autores dos projetos e do técnico coordenador, nos termos da Lei n.º 31/2009, de 3 de julho;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:4a83871288ad36ed",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:1b0efeaab32520df",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 67,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.12\", \"citacao\": \"12 - Termo de responsabilidade do coordenador de projeto quanto à garantia de compatibilidade entre os diversos projetos;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:8c742bdabee26b1c",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 82,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.27.k\", \"citacao\": \"k) Termo de responsabilidade pela assunção da função de diretor de obra e, quando exista, de diretor de fiscalização de obra para efeitos do início da sua execução;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:ff323032c4cbdf92",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.11\", \"citacao\": \"11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:8896c68832dec06a",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.11\", \"citacao\": \"11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:20a753965767565f",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 27,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": null, \"citacao\": \"\", \"tipo\": \"nao_e_elemento\"}"
+ },
+ {
+  "key": "d1:30939ed9041b7897",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.11\", \"citacao\": \"11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:7063a74d0ed97bb5",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.11\", \"citacao\": \"11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:1cd85cf6682c1bc4",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.11\", \"citacao\": \"11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:58900eca45c637a8",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.11\", \"citacao\": \"11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:e01e84bf7f3c51e6",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.11\", \"citacao\": \"11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:7e27c089ca682229",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.11\", \"citacao\": \"11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;\", \"tipo\": \"escrito\"}"
+ },
+ {
+  "key": "d1:0a54df49b6640e4a",
+  "task": "d1_elemento",
+  "prompt_tokens": 2,
+  "completion_tokens": 70,
+  "finish_reason": "stop",
+  "text": "{\"elemento\": \"portaria-320-2026-1:anexo-V.11\", \"citacao\": \"11 - Termos de responsabilidade subscritos pelos autores dos projetos quanto ao cumprimento das disposições legais e regulamentares aplicáveis;\", \"tipo\": \"escrito\"}"
+ }
+]

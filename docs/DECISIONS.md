@@ -149,3 +149,34 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
   no value was invented to balance the file. r12 = r11 recipe on the rebalanced file (modal/train_lora.py RUNS r12,
   training/runs/overnight-r12.sh, no regeneration). Needs Paulo's go (≈ USD 44 at ×6).
 
+
+## D18 — The verdict layer: folder in, findings out (2026-11-05)
+- Why: the exam (exam/) had scored 0 since 2026-10-14 because nothing took a whole expediente and produced findings; the reader
+  answered one question per document and the law sat as data. Paulo: "why not today" — the layer does not depend on round 12,
+  and a model with no product around it is a slide.
+- What: engine/application.py, check(folder) → items with a status. Five steps: inventory (slot from the file name, PDF bytes,
+  pdfaid mark, /Sig, text per page); required list (every Annex V document element for a CPEDI, its Celorico slots from the
+  mapping, mandatory/optional from the catalogue: mandatory + no file = finding missing_required with the law's quote; conditional
+  + no file = not_assessed naming the condition); element check (the reader's guarded D1 answer against the slot; another family =
+  «review» for the técnico, never a finding; refused = not_read); facts (the reader's D2 answers on REQ, MDARQ, EOCT, CEO; code
+  compares across files = value_mismatch with both quotes, within a file parcela < implantação = impossible_value; null or
+  refused = not_read); format (not a PDF, no PDF/A mark, unsigned where the slot says S, V.11 termo without the Annex VII core
+  wording, PI without a .dwg/.dxf). engine/read.py builds the prompts with generator/d1d2.py's own templates and runs
+  modal/reader.py --guard once for all folders, guard.apply over the answers. Output per expediente: verdict.json, convite.md
+  (one numbered paragraph per finding with the article and the quotes), verdict.html (yes/no per element).
+- Interpretation rules in code, each with its why, in engine/cpedi.json: V.27.g estimativa dos encargos required on every new
+  building (no Celorico slot: recognised by its text under OUTDOC); V.15 registo fotográfico required (the condition qualifies the
+  neighbours, not the record); V.27.h / V.10 external opinions, gas, seismic, HVAC, electromechanical, cedências, logradouro =
+  not_assessed with the missing fact named; V.27.a satisfied by the certidão (CRP); V.27.b.v propriedade horizontal optional.
+  Proposed by Claude from the rule pack; a jurist may overturn any line by editing the table, no code changes.
+- Result (exam/scores.jsonl, 2026-11-05 16:42 UTC): 11/11 findings, 0 false alarms, 9/9 honest not-assessed, on A, B and C.
+  Code-only (before the reads): 9/11, 0 false alarms, 9/9. The reads (r11 adapter, 222 questions, 0 refused, load 126 s +
+  generate 13 s on the L40S, ≈ USD 0.15) added the two fact findings: 554 vs 610 m² between requerimento and memória, and the
+  plot typed 120 against an implantação of 277 (and 1200 in the memória). One bug found and fixed on the way: the memória says
+  «dois pisos» and «um fogo», the requerimento says 2 and 1; the first comparison flagged them (6 false alarms) → number words.
+  Reader vs slot: 2 «review» items per dossier — LEVT-termo-levantamento (a termo de responsabilidade filed in the levantamento
+  slot: the reader says V.11, the slot says V.7; both are right) and SRITED-seguro (the reader says not an element; the ITED
+  author's insurance is V.14). Shown to the técnico, not in the convite.
+- Not done here: the convite is Portuguese but its wording is the engine's, not Celorico's minuta; verdicts are files under
+  engine/verdicts/ (no database until a second municipality or técnico); the sealed expedientes and the real strangers have not
+  been run through check() yet (next); PDF/A conformance stays provisional; signature qualification stays not_assessed.

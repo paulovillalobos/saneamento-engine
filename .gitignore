@@ -8,3 +8,5 @@ sealed/expedientes/*/*.pdf
 training/runs/*/*.log
 sources/.ocr-cache/
 training/runs/ceiling-*/prompts/
+engine/reads/_batch*
+engine/reads/_run.log

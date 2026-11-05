@@ -1,0 +1,41 @@
+{
+ "procedure": "cp-edificacao",
+ "request": "CP/CPEDI",
+ "note": "Interpretation rules the verdict layer applies in code to the Annex V elements whose requirement the Portaria conditions (D18). Default for an absent conditional element with no mandatory municipal slot: not_assessed, naming the condition. Entries here override the default and each says why. Proposed by Claude from the rule pack; not a legal opinion; Paulo decides product, not law.",
+ "elements": {
+  "V.27.g": {"decision": "required", "slots": ["OUTDOC"], "text_marker": "encargos urbanísticos",
+             "why": "«quando aplicável»: the taxa pela realização, manutenção e reforço de infraestruturas is due on every new building or enlargement (RJUE art. 116 + Celorico's taxas regulation); a prior communication for construção/ampliação is never exempt by its own facts, so the estimate is required. Celorico has no slot for it: the applicant files it under OUTDOC, recognised by its text."},
+  "V.15":   {"decision": "required", "slots": ["FOTO"],
+             "why": "«quando estas existam» qualifies the adjacent buildings, not the record itself: a photographic record of the existing situation of the plot is always possible and always asked for; Celorico marks FOTO optional, the law does not."},
+  "V.27.h": {"decision": "not_assessed", "slots": ["PAAEE"],
+             "condition": "whether an external entity must be consulted (servidões administrativas, restrições de utilidade pública, áreas classificadas) is not stated in the expediente"},
+  "V.10":   {"decision": "not_assessed", "slots": ["PAAEE"],
+             "condition": "whether any opinion, authorisation or approval unrelated to location is required depends on facts the expediente does not hold"},
+  "V.27.i.ii":  {"decision": "not_assessed", "slots": ["RAVS", "MDEECP"], "condition": "«quando exigível, nos termos da lei»: the seismic reinforcement project depends on the building's class and date, not stated"},
+  "V.27.i.iv":  {"decision": "not_assessed", "slots": ["TRPIG", "MDPIG", "PDPIG", "SRCGAS"], "condition": "«quando exigível, nos termos da lei»: whether the building needs a gas installation project is not stated"},
+  "V.27.i.vii": {"decision": "not_assessed", "slots": ["TRPAE", "MDPAE", "PDPAE", "SRCAE"], "condition": "«quando exista logradouro privativo»: the expediente does not state whether there is a private yard to arrange"},
+  "V.27.i.x":   {"decision": "not_assessed", "slots": ["TRPIEM", "MDPIEM", "PDPIEM", "SRCIEM"], "condition": "electromechanical installations exist only when the project has lifts or similar equipment, not stated"},
+  "V.27.i.xiii": {"decision": "not_assessed", "slots": ["TRAVAC", "MDAVAC", "PDAVAC", "SRAVAC"], "condition": "an HVAC project depends on the building's systems, not stated"},
+  "V.27.i.xiv": {"decision": "not_assessed", "slots": ["TRSGTC", "MDSGTC", "PDSGTC", "SRSGTC"], "condition": "«quando exigível»: centralised technical management depends on the building's class and systems, not stated"},
+  "V.27.a": {"decision": "satisfied_by", "slots": ["DCQT"], "by": ["CRP"],
+             "why": "«sempre que tal comprovação não resulte diretamente do n.º 5»: the certidão permanente (V.5, slot CRP) proves the right; the separate proof is needed only when it does not."},
+  "V.27.b.v": {"decision": "optional", "slots": ["PH"], "why": "«caso se pretenda» propriedade horizontal: the applicant's choice, never missing."},
+  "V.27.c.i": {"decision": "not_assessed", "slots": ["PLCED"], "condition": "only when the operation cedes areas to the municipality, which the expediente does not state"},
+  "V.27.c.ii": {"decision": "not_assessed", "slots": ["PCA"], "condition": "only when the operation cedes areas to the municipality, which the expediente does not state"},
+  "V.27.c.iii": {"decision": "not_assessed", "slots": ["PQTF"], "condition": "only when the operation cedes areas to the municipality, which the expediente does not state"},
+  "V.27.d": {"decision": "not_assessed", "slots": ["RAVS"], "condition": "«quando exigível»: the seismic vulnerability report depends on the building's class and date, not stated"},
+  "V.13":   {"decision": "not_assessed", "slots": [], "condition": "only when the professional body cannot issue the code: the declaration of professional qualification replaces it"},
+  "V.27.l": {"decision": "not_assessed", "slots": [], "condition": "only when the professional body cannot issue the code for the works director"},
+  "V.27.q": {"decision": "not_assessed", "slots": [], "condition": "only when construction products without harmonised rules are used, which the expediente does not state"}
+ },
+ "wording_slots_passage": "V.11",
+ "wording_core": "observa as normas legais e regulamentares aplicáveis",
+ "wording_quote": "observa as normas legais e regulamentares aplicáveis à pretensão",
+ "facts": {
+  "REQ":   ["area_total_construcao", "area_parcela", "area_implantacao", "pisos_acima_soleira", "uso", "fogos", "altura_edificacao"],
+  "MDARQ": ["area_total_construcao", "area_parcela", "area_implantacao", "pisos_acima_soleira", "uso", "fogos", "altura_edificacao"],
+  "EOCT":  ["custo_total"],
+  "CEO":   ["prazo_meses"]
+ },
+ "complements": {"PI": {"extensions": [".dwg", ".dxf"], "law": "VI.1.b"}}
+}
