@@ -127,6 +127,14 @@ def _app():
     from engine import web as W
 
     web = FastAPI(title="saneamento-engine", docs_url=None, redoc_url=None)
+
+    @web.middleware("http")
+    async def no_store(request, call_next):
+        """Pages and answers change with every deploy and every expediente: nothing here may be cached by a CDN in front (the
+        domain is a Vercel rewrite; without this it served a 20-minute-old copy of /lei)."""
+        response = await call_next(request)
+        response.headers["Cache-Control"] = "private, no-store, max-age=0, must-revalidate"
+        return response
     STORE = Path("/store")
     TOKEN = os.environ.get("SANEAMENTO_TOKEN", "")
     reader = modal.Function.from_name("saneamento-reader", "answer")
