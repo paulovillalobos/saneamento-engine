@@ -138,4 +138,9 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
   matches any test file stops the build. Whole-document view, 65k-char cap (p90 prompt 64.7k chars, max 75.7k).
 - r11 = r10 data + real set repeated 3× (modal/train_lora.py RUNS r11). Chain training/runs/overnight-r11.sh; needs Paulo's go
   (≈ USD 25-30, 6-7 h at 32k; timeout now 12 h).
+- Paulo's go 2026-11-04: weight 6, not 3. Ran 2026-11-04 23:30 → 11-05 10:33 UTC, clean finish, ≈ USD 44 (11 h: the long real rows).
+- Outcome (training/runs/r11/SCORES.md): elements 74/77 (r10 67, ceiling 76), wave 3 30/32 (r10 26), about-element documents
+  all rejected, invented 0, fabricated 0, refused 0. Facts 22/29 (r10 25): six values answered "not present". Cause found after the
+  run: the real D2 rows were 229 absent against 1 value (two absent questions per document, almost no keyed values) ×6 in the mix.
+  Decision stands; the real set needs balanced fact rows (D17 fix, USD 0) before round 12.
 

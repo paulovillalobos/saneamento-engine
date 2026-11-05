@@ -181,3 +181,11 @@
 ## 2026-11-04 23:25 UTC — round 11 launched (commit f2d3090)
 - Paulo: "go, run round 11 with weight 6".
 - Claude: real set repeated 6× (≈ 3,400 of ≈ 15,000 examples; about half of the element rows). Sentence pool of the generated memórias moved from sources/real/memorias (the four wave-1 TEST memórias, a mild leak of test text into training since round 9) to the 39 memórias of the training collection (3,218 sentences); 80 expedientes regenerated. Chain training/runs/overnight-r11.sh: regen → rows → commit → train r11 (12 h limit) → guarded reads → score → commit. Log training/runs/overnight-r11.log, pid training/runs/r11.pid. Expected ≈ USD 25-30, results ≈ 06:30-07:30 UTC.
+
+## 2026-11-05 10:45 UTC — round 11 done (chain commit 197ded8 + this commit)
+- Claude: training finished clean at 10:33 UTC: 1,379 steps, 2 epochs, 11.0 h H100 ≈ USD 43.5 (estimate was 25-30: the real rows are long, 29 s/step vs 21). Reads --guard d0/d1/d2/stranger ≈ USD 1. Total to date ≈ USD 180.
+- Claude: checker (guard.py CLI) over every output → *-checked.json: 0 refused anywhere. Per-wave table in training/runs/r11/SCORES.md.
+- Claude: stranger elements 74/77 (r10 67, ceiling 76); wave 3 30/32 (r10 26); the four about-element false positives gone; invented 0, fabricated 0. Facts 22/29 (r10 25): six values the documents hold answered null.
+- Claude: cause of the fact drop = my data: training/data/real/train.jsonl D2 rows are 229 null vs 1 value (realtrain.py: two absent questions per document, almost no keyed values) ×6 = 1,374 "not present" fact rows. Elements had the test's proportion and gained.
+- Claude: report section "Round 11" + "Next (after round 11)", D17 outcome, memory.
+- Paulo: decide round 12 on the corrected real set (≈ USD 44 at weight 6, ≈ 25 at weight 3). Fixing the rows costs USD 0 and comes first.
