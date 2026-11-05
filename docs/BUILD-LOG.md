@@ -196,3 +196,7 @@
 - Claude: realtrain.py — one absent question, only on documents that state a value. Real set 376 rows: 333 D1, 42 D2 = 20 values : 22 null (round 11: 1 : 229).
 - Claude: train_lora.py RUNS r12 (= r11 recipe), training/runs/overnight-r12.sh (no regeneration). Cost so far USD 0.
 - Paulo: the go for round 12 (≈ USD 44 at weight 6, ≈ 25 at weight 3).
+
+## 2026-11-05 13:36 UTC — round 12 launched (commit 2cbd64e)
+- Paulo: "run 12" (the last data round, as agreed).
+- Claude: chain training/runs/overnight-r12.sh detached (pid training/runs/r12.pid, log overnight-r12.log): train r12 (r11 recipe, real set ×6, rebalanced D2 rows) → reads --guard d0/d1/d2/stranger → score → commit. Expected ≈ 11 h + 20 min, ≈ USD 45, end ≈ 01:30 UTC 11-06. Retry rule: `modal volume rm -r amalia-saneamento-lora /amalia-saneamento-r12` first. When it ends: guard.py CLI checker, per-wave table (scratchpad waves11.py pattern), the 7 value rows of the stranger test (r10 4/7, r11 1/7, ceiling 6-7/7), report section "Round 12", 1-10 line in the arc table.
