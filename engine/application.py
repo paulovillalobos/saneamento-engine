@@ -24,6 +24,7 @@ import argparse
 import hashlib
 import html
 import json
+import os
 import re
 import subprocess
 import sys
@@ -227,8 +228,11 @@ def key_of(folder):
     return f"{folder.parent.name}-{folder.name}"
 
 
+READS_DIR = Path(os.environ.get("SANEAMENTO_READS_DIR", str(ROOT / "engine" / "reads")))  # another adapter's reads live in another dir (r12 trial)
+
+
 def load_reads(folder):
-    d = ROOT / "engine" / "reads" / key_of(folder)
+    d = READS_DIR / key_of(folder)
     f = d / "answers-checked.json"
     if not f.exists():
         return None

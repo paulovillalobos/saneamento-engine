@@ -57,7 +57,7 @@ def main():
     ap.add_argument("--lora", default="r11")
     ap.add_argument("--prompts-only", action="store_true")
     a = ap.parse_args()
-    out = ROOT / "engine" / "reads"
+    out = A.READS_DIR
     out.mkdir(exist_ok=True)
     batch, per = [], {}
     for folder in a.folder:
