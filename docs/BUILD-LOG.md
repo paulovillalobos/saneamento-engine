@@ -232,4 +232,6 @@
 ## 2026-11-05 20:30 UTC — «Pergunte à lei» + Palantir-layout screens live (D22)
 - Paulo: "copy literally the images I send you about Palantir"; talk to AMALIA; why Celorico only.
 - Claude: engine/law_search.py, engine/ui.py rewritten on Blueprint (lei, app, inbox), service routes /lei, POST /v1/lei, GET /v1/lei/{id},
-  worker answer_law; deployed; /lei public. Round 12 still training.
+  worker answer_law; deployed; /lei public. Hosted check: «Preciso de projeto de gás numa moradia unifamiliar?» → code answer at once
+  (V.27.i.iv, condicional «quando exigível»); AMALIA's pick confirmed the same passage after 207 s wall (cold reader; 3.1 s of
+  generation), checker accepted. Round 12 at checkpoint 700, still training.
