@@ -266,7 +266,7 @@ def _app():
 
     @web.get("/", response_class=HTMLResponse)
     def home():
-        return HTMLResponse(HOME)
+        return HTMLResponse(ui.home())
 
     @web.get("/lei", response_class=HTMLResponse)
     def lei_page():

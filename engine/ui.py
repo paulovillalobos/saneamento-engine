@@ -28,7 +28,7 @@ def render(name, **subs):
     subs = {"__CSS__": (STATIC / "app.css").read_text(encoding="utf-8"), "__HEAD__": BP, **subs}
     for k, v in subs.items():
         page = page.replace(k, v)
-    left = [m for m in ("__CSS__", "__HEAD__", "__DATA__", "__PDF_BASE__", "__BACK__", "__STATES__") if m in page]
+    left = [m for m in ("__CSS__", "__HEAD__", "__DATA__", "__PDF_BASE__", "__BACK__", "__STATES__", "__LOCAL__") if m in page]
     if left:
         raise ValueError(f"{name}: placeholders not filled: {left}")
     return page
@@ -45,3 +45,8 @@ def app(pdf_base="ficheiros/", back="/expedientes", inline=None):
 def inbox(rows=None, municipality=""):
     data = json.dumps({"municipio": municipality, "expedientes": rows}, ensure_ascii=False) if rows is not None else "null"
     return render("inbox.html", __DATA__=data, __STATES__=json.dumps(STATES, ensure_ascii=False))
+
+
+def home(local=False):
+    """The upload page: the key card hidden and any key accepted when the server is the local one."""
+    return render("home.html", __LOCAL__="true" if local else "false")

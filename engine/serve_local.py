@@ -30,12 +30,6 @@ from engine import law_search, read as R, ui, web as W  # noqa: E402
 STORE = ROOT / "engine" / "store_local"
 MUNI = "celorico-de-basto"
 LORA = "r11"
-HOME = (ROOT / "modal" / "service.py").read_text(encoding="utf-8")
-HOME = HOME[HOME.index('HOME = f"""') + len('HOME = f"""'):HOME.index('"""\n\n\n@app.function')].replace("{{", "{").replace("}}", "}").replace("{CSS}", "")
-CSS_HOME = "<style>body{font:500 15px/1.45 system-ui,sans-serif;margin:24px auto;max-width:1000px;color:#111;padding:0 16px}input,button{font:inherit;padding:8px 12px}button{background:#111;color:#fff;border:0;border-radius:6px;cursor:pointer}button.alt{background:#555}#estado{margin-top:16px;font-weight:600}.drop{border:2px dashed #888;border-radius:10px;padding:28px;text-align:center;margin:16px 0}small{color:#333}</style>"
-HOME = HOME.replace("</head>", CSS_HOME + "</head>", 1)
-
-
 def reader():
     try:
         import modal
@@ -105,7 +99,7 @@ class H(BaseHTTPRequestHandler):
         u = urlsplit(self.path)
         p = u.path
         if p == "/":
-            return self.send(200, HOME)
+            return self.send(200, ui.home(local=True))
         if p == "/lei":
             return self.send(200, ui.lei())
         if p == "/v1/saude":

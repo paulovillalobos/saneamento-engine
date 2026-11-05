@@ -1,0 +1,2 @@
+saneamento-engine local: http://127.0.0.1:5340/  (store /Users/baphomet/Downloads/saneamento-engine/engine/store_local, reader modal)
+GET /

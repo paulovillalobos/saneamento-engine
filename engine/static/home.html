@@ -1,0 +1,46 @@
+<!doctype html><html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Saneamento de expedientes</title>__HEAD__<style>__CSS__
+.drop{border:2px dashed #a7b6c2;border-radius:6px;padding:34px 20px;text-align:center;font-weight:600;font-size:16px;background:#fff}.drop.on{background:var(--blue-bg);border-color:var(--blue)}
+</style></head>
+<body><div class="frame">
+<div class="card"><div class="hd band"><div class="tile purple"><span class="bp5-icon-standard bp5-icon-folder-open"></span></div><div><h2>Saneamento de expedientes · Celorico de Basto</h2><div class="sub">Um expediente de comunicação prévia de obras de edificação entra; sai, por elemento do Anexo V, presente / em falta / não avaliado, com o ficheiro, a página, a citação e o artigo, e o rascunho do convite.</div></div>
+<div class="right"><a href="/expedientes"><span class="bp5-icon-standard bp5-icon-inbox"></span> expedientes</a> · <a href="/lei"><span class="bp5-icon-standard bp5-icon-help"></span> pergunte à lei</a></div></div>
+<div class="body"><div class="two">
+<div>
+  <div class="section" style="padding-left:0;padding-top:0"><h3><span class="bp5-icon-standard bp5-icon-upload"></span> Verificar um expediente</h3><div class="sub">Largue o zip que a plataforma exporta. O leitor lê, o código decide, o técnico assina.</div></div>
+  <div class="card" style="padding:16px 18px">
+    <div class="drop" id="drop">Largue aqui o zip do expediente<br><span style="font-weight:500">ou</span> <input id="zip" type="file" accept=".zip,application/zip" style="font:inherit"></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px;gap:12px;flex-wrap:wrap"><label><input type="checkbox" id="semleitor"> sem leitor (só código, segundos)</label><button class="btn blue" onclick="enviar()"><span class="bp5-icon-standard bp5-icon-arrow-right"></span> Verificar expediente</button></div></div>
+  <div class="section" style="padding-left:0;margin-top:10px"><h3><span class="bp5-icon-standard bp5-icon-lightning"></span> Estado</h3></div>
+  <div class="card" id="estado"><div class="empty"><span class="ic bp5-icon-large bp5-icon-time"></span>Nenhuma verificação em curso.</div></div>
+</div>
+<div class="card"><div class="hd"><div class="tile grey"><span class="bp5-icon-standard bp5-icon-manual"></span></div><div><h2 style="font-size:19px">Demonstração</h2><div class="sub">Os três dossiers do exame, simulados, com erros plantados.</div></div></div>
+  <div class="body">
+   <div class="kv"><div class="k">A</div><div class="v">Completo. Só a limitação conhecida: a planta de implantação sem DWG. <button class="btn sm" onclick="demo('A')">correr A</button></div></div>
+   <div class="kv"><div class="k">B</div><div class="v">Faltam o registo fotográfico e a estimativa dos encargos. <button class="btn sm" onclick="demo('B')">correr B</button></div></div>
+   <div class="kv"><div class="k">C</div><div class="v">Seis armadilhas: um «.pdf» que é imagem, sem PDF/A, termo sem assinatura, termo sem a redação do Anexo VII, 554 contra 610 m², parcela 120 em vez de 1200. <button class="btn sm" onclick="demo('C')">correr C</button></div></div>
+   <div id="keybox"><div class="section" style="padding:8px 0 6px"><h3><span class="bp5-icon-standard bp5-icon-key"></span> Chave de acesso</h3><div class="sub">Uma chave por município. Fica neste browser.</div></div>
+   <div class="kv"><div class="k">X-API-Key</div><div class="v"><input id="chave" type="password" autocomplete="off" style="font:inherit;padding:6px 8px;width:70%"> <button class="btn sm" onclick="guardar()">guardar</button></div></div></div>
+   <p style="margin:12px 0 0"><small>A primeira verificação do dia carrega o leitor (≈ 2–3 minutos); as seguintes demoram segundos. Só expedientes simulados até haver acordo de tratamento de dados.</small></p>
+  </div></div>
+</div></div></div>
+<p style="margin:14px 4px"><b>O leitor lê, o código decide, o técnico assina.</b></p></div>
+<script>
+const LOCAL=__LOCAL__;const $=id=>document.getElementById(id);
+if(LOCAL){$('keybox').style.display='none'}else{try{$('chave').value=localStorage.getItem('sk')||''}catch(e){}}
+function chave(){return LOCAL?'local':$('chave').value.trim()}
+async function guardar(){try{localStorage.setItem('sk',chave())}catch(e){} const r=await fetch('/v1/sessao',{method:'POST',headers:{'X-API-Key':chave()}}); set(r.ok?'chave guardada':'chave inválida')}
+function set(h){$('estado').innerHTML='<div class="body" style="font-weight:600">'+h+'</div>'}
+async function correr(url,body,tipo){
+  if(!chave()){set('indique a chave de acesso');return}
+  if(!LOCAL)await guardar(); const q=$('semleitor').checked?'?leitor=0':''; const t0=Date.now();
+  set('a verificar… (o leitor pode demorar 2–3 minutos a carregar)'); const tick=setInterval(()=>set('a verificar… '+Math.round((Date.now()-t0)/1000)+' s'),1000);
+  try{const sep=url.includes('?')?'&':'?';const r=await fetch(url+(q?sep+q.slice(1):''),{method:'POST',headers:Object.assign({'X-API-Key':chave()},tipo?{'Content-Type':tipo}:{}),body});
+    if(!r.ok){clearInterval(tick);set('erro '+r.status+': '+(await r.text()));return} const j=await r.json();
+    while(true){await new Promise(z=>setTimeout(z,4000)); const e=await (await fetch(j.estado_url,{headers:{'X-API-Key':chave()}})).json();
+      if(e.estado==='pronto'){clearInterval(tick);set('pronto: <b>'+(e.counts.finding)+'</b> deficiência(s), '+e.counts.not_assessed+' não avaliado(s) — <a href="'+e.url+'">abrir veredicto</a>');location.href=e.url;return}
+      if(e.estado==='erro'){clearInterval(tick);set('erro: '+e.erro);return}}}
+  catch(e){clearInterval(tick);set('erro: '+e)}}
+function enviar(){const f=$('zip').files[0]; if(!f){set('escolha um zip');return} correr('/v1/expedientes?nome='+encodeURIComponent(f.name),f,'application/zip')}
+function demo(d){correr('/v1/demo/'+d,null,null)}
+const dz=$('drop'); dz.ondragover=e=>{e.preventDefault();dz.classList.add('on')}; dz.ondragleave=()=>dz.classList.remove('on'); dz.ondrop=e=>{e.preventDefault();dz.classList.remove('on');$('zip').files=e.dataTransfer.files};
+</script></body></html>

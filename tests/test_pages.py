@@ -34,6 +34,11 @@ class Pages(unittest.TestCase):
         h2 = ui.inbox(rows=[{"id": "20260101-000000-abcdef", "label": "x", "at": "2026-01-01T00:00:00", "files": 3, "counts": {"finding": 1, "not_assessed": 0}}], municipality="m")
         self.assertIn('"municipio": "m"', h2)
 
+    def test_home(self):
+        self.assertIn("const LOCAL=false;", ui.home())
+        self.assertIn("const LOCAL=true;", ui.home(local=True))
+        self.assertIn("correr C", ui.home())
+
     def test_css_inlined_and_no_grey_text(self):
         css = (ROOT / "engine" / "static" / "app.css").read_text(encoding="utf-8")
         self.assertIn(".bp5-text-muted", css)
