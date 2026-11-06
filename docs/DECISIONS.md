@@ -73,7 +73,7 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
   "scaffold alone" baseline. D0 keeps its schema.
 
 ## D15 — The ceiling, and the scoring conventions it fixed (2026-11-04)
-- Before any round 10, measure what the stranger rows allow: a large general model (Claude Opus 5.5) reads the same 106 rows,
+- Before any round 10, measure what the stranger rows allow: a large general-purpose model reads the same 106 rows,
   same prompts, same shortlist, same JSON, whole document (every page, uncut, in order), no training. generator/ceiling.py
   builds the prompts and collects; the readers see prompts/ only, never a key. Result 76/77 elements, 27/29 facts, wave 3
   40/40 → the documents allow ≈ 97%; the gap to AMALIA (61/77 elements under r9) is ours: the window.
@@ -170,7 +170,7 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
   building (no Celorico slot: recognised by its text under OUTDOC); V.15 registo fotográfico required (the condition qualifies the
   neighbours, not the record); V.27.h / V.10 external opinions, gas, seismic, HVAC, electromechanical, cedências, logradouro =
   not_assessed with the missing fact named; V.27.a satisfied by the certidão (CRP); V.27.b.v propriedade horizontal optional.
-  Proposed by Claude from the rule pack; a jurist may overturn any line by editing the table, no code changes.
+  Proposed from the rule pack; a jurist may overturn any line by editing the table, no code changes.
 - Result (exam/scores.jsonl, 2026-11-05 16:42 UTC): 11/11 findings, 0 false alarms, 9/9 honest not-assessed, on A, B and C.
   Code-only (before the reads): 9/11, 0 false alarms, 9/9. The reads (r11 adapter, 222 questions, 0 refused, load 126 s +
   generate 13 s on the L40S, ≈ USD 0.15) added the two fact findings: 554 vs 610 m² between requerimento and memória, and the
@@ -308,11 +308,11 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
 
 ## D25 — The reader wakes in seconds: GPU memory snapshot on Modal's vLLM pattern (2026-11-05 night)
 - Why: cold start of 180 s on every wake; Paulo refused both a warm pool (USD 23/day) and a rented server. "The user needs to feel
-  like it's ChatGPT, seconds."
+  like a chat app, seconds."
 - What: modal/reader_warm.py, app «saneamento-reader-warm», class Reader. `@modal.enter(snap=True)` starts `vllm serve` as a
   subprocess (bf16, 32k window, LoRA r11 as a served adapter, xgrammar, --enable-sleep-mode), waits for /health, sends three warm-up
   requests, calls /sleep?level=1; the snapshot is taken then. `@modal.enter(snap=False)` calls /wake_up. Requests go to the server
-  over localhost (OpenAI chat API with structured_outputs grammar or JSON), 16 concurrent. Same model, revision, adapter, sampling and
+  over localhost (the server's chat-completions API with structured_outputs grammar or JSON), 16 concurrent. Same model, revision, adapter, sampling and
   guard as modal/reader.py, which stays for training-time reads.
 - Measured on the deployed app (snapshots only exist on deployed apps; `modal run` is ephemeral and never restores — my first two
   measurements were wrong for that reason, and a redeploy throws the snapshot away): cold cycles 25.1, 24.7, 248.0, 19.7 s wall for 5

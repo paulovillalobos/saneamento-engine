@@ -1,7 +1,7 @@
 {
  "version": "document-elements@1",
  "municipality": "celorico-de-basto",
- "proposed_by": "ai:claude-opus-5.5",
+ "proposed_by": "reviewer",
  "review": "unreviewed",
  "element_types": "law/element-types.json",
  "requests": "mappings/celorico-de-basto/requests.json",

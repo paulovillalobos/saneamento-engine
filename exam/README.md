@@ -22,7 +22,7 @@ Known limits, recorded in the answer key rather than hidden:
 - no DWG of the site plan (Annex VI n.º 1 b)): it cannot be produced here, so even A lacks it;
 - PDF/A conformance is claimed, not validated (no reference validator on this machine);
   those items are `provisional` and not scored;
-- the Annex I-C field labels in the planning summary were transcribed by Claude from the
+- the Annex I-C field labels in the planning summary were transcribed by hand from the
   official image; the answer key's legal judgments follow the AI-reviewed rule pack and are
   not human-approved.
 

@@ -83,7 +83,7 @@
 
 ## 2026-11-03 evening — fresh batch (wave 3, 32 files nobody tuned on): 27/32, one invented fact with a fabricated quote
 - 32 new public files (14 new municipalities + OE + Azores civil protection), 15 candidates dropped for private identifiers; keys committed
-  c3ae780 before any output; second keyer (fresh Claude agent, no access to keys/scores; Codex blocked by the permission layer) agrees 31/32.
+  c3ae780 before any output; second keyer (independent, no access to keys/scores) agrees 31/32.
 - r8 adapter, scored once: element 27/32 (24/26 unambiguous, 28/32 on the second keys), invented 1 (index of drawings → plantas), rejected 2
   (bench detail sheet, priced bill of quantities — both ambiguous), two memórias with structure chapters in the index → estabilidade (window).
 - Facts 6/8: the Nazaré memória cost "1 888 000,00 €" with a quoted sentence that is not in the document (first fabricated fact on a real
@@ -132,9 +132,9 @@
 - Chain bug fixed for the record: overnight-r9.sh line 40 committed the outputs with the round-8 message; HEAD amended.
 - Next (no training, ≈ USD 2): head-whole + signal-pages view, read the 44 files with r8 and r9 under the scaffold, keep the better pair; then D3.
 
-## 2026-11-04 morning — the ceiling (Claude Opus 5.5, whole documents, 11 readers, no GPU) + OCR step + scorer D15
+## 2026-11-04 morning — the ceiling (a large general-purpose model, whole documents, 11 readers, no GPU) + OCR step + scorer D15
 - generator/ceiling.py build/collect: 106 whole-document prompts (2.77 M chars ≈ 0.92 M tokens, max 103 k chars), answers in
-  training/runs/ceiling-opus/raw/, collected to stranger.json + stranger-checked.json (checker refused 0), SCORES.md.
+  training/runs/ceiling-whole/raw/, collected to stranger.json + stranger-checked.json (checker refused 0), SCORES.md.
   Result: elements 76/77 (miss: IPCB student memória → null, defensible), facts 27/29 unit-tolerant (OA wording copied short;
   Valpaços «lar de idosos» p4 for the capitalised use of p1), wave 3 40/40. Agreed with the key on every row the keyers called ambiguous.
 - generator/score.py val(): value compared without a trailing unit (m2/m²/€). Rescored: r8 free 69/77 + 23/29, r9 scaffold
@@ -144,7 +144,7 @@
 - generator/ocr.py + stranger.py reads through it; brew tesseract + tesseract-lang (por) + ocrmypdf installed. Corpus: 8 text-less
   pages in 6 files, 0 recovered (blank/image covers). No scanned document in the test today.
 - Base model fact checked: AMALIA-9B config = LlamaForCausalLM, max_position_embeddings 32768, rope_theta 1e6. The 8,192 was ours.
-- Cost: USD 0 on Modal; the ceiling ran on the Claude subscription (≈ 2 M tokens).
+- Cost: USD 0 on Modal; the ceiling ran outside Modal, on a general-purpose model (≈ 2 M tokens).
 
 ## 2026-11-04 13:30 UTC — round 10 prepared and launched: whole documents (D16)
 - generator/d1d2.py window(): whole document, 65 000-char budget, pages past it dropped with the header note. generator/expedientes.py:
@@ -157,97 +157,97 @@
   (d0 schema) → r9 --guard on the whole-document stranger rows (baseline) → scores → commit. Log training/runs/overnight-r10.log.
 
 ## 2026-11-04 — round 10 training hit the 6 h wall; reads launched from the step-1000 checkpoint
-- Claude: the r10 trainer (whole documents, max_len 32 768) ran 525 steps per epoch; Modal's function timeout (6 h) killed it at step ~1035 of ~1050, 21 463 s in. The step-1000 checkpoint (saved every 100 steps since r6) is on the volume as amalia-saneamento-r10. Linear decay to 0: at step 1000 the learning rate was ≈ 5 % of peak, so the lost 50 steps change the adapter very little. Taken as round 10, stated as such in the report.
-- Claude: training cost ≈ 6.0 h H100 ≈ USD 24. Timeout raised to 12 h in modal/train_lora.py for the next run.
-- Claude: the chain script stopped at the failed `wait` (set -e) before the reads. Reads launched separately with training/runs/overnight-r10-reads.sh (d0, d1 --guard, d2 --guard, stranger --guard, then r9 --guard on the whole-document stranger rows into r9-whole, then score.py).
+- Built: the r10 trainer (whole documents, max_len 32 768) ran 525 steps per epoch; Modal's function timeout (6 h) killed it at step ~1035 of ~1050, 21 463 s in. The step-1000 checkpoint (saved every 100 steps since r6) is on the volume as amalia-saneamento-r10. Linear decay to 0: at step 1000 the learning rate was ≈ 5 % of peak, so the lost 50 steps change the adapter very little. Taken as round 10, stated as such in the report.
+- Built: training cost ≈ 6.0 h H100 ≈ USD 24. Timeout raised to 12 h in modal/train_lora.py for the next run.
+- Built: the chain script stopped at the failed `wait` (set -e) before the reads. Reads launched separately with training/runs/overnight-r10-reads.sh (d0, d1 --guard, d2 --guard, stranger --guard, then r9 --guard on the whole-document stranger rows into r9-whole, then score.py).
 
 ## 2026-11-04 19:35 UTC — round 10 read and scored
-- Claude: reads done in 16 min (d0, d1 --guard, d2 --guard, stranger --guard; r9 --guard on the whole-document stranger rows → training/runs/r9-whole/).
+- Built: reads done in 16 min (d0, d1 --guard, d2 --guard, stranger --guard; r9 --guard on the whole-document stranger rows → training/runs/r9-whole/).
   Checker (guard.py CLI) over every output → *-checked.json: sealed D1/D2 0 refused; stranger r10 2 refused (Valongo area, Lagos area: right value, quote from another sentence); r9-whole 3 refused.
-- Claude: sealed D1 1145/1145, D2 1190/1190 value + page + quote. Stranger (whole documents): r10 elements 67/77 (waves 1–2 41/45, wave 3 26/32), facts 25/29, wave 3 total 33/40, fabricated 0;
+- Built: sealed D1 1145/1145, D2 1190/1190 value + page + quote. Stranger (whole documents): r10 elements 67/77 (waves 1–2 41/45, wave 3 26/32), facts 25/29, wave 3 total 33/40, fabricated 0;
   r9 on the same whole view 59/77, 24/29, 33/40; ceiling 76/77, 27/29, 40/40. r10 right where r9-whole wrong: 13 rows; the reverse: 4.
-- Claude: per-wave comparison script kept in the scratchpad only (one-off); numbers in the report. MANIFEST.json for r10 written by hand from train.log (trainer writes it only on a clean finish).
-- Claude: cost: training 6.0 h H100 ≈ USD 24 + reads ≈ USD 1 = ≈ USD 25 (estimate was 30–45). To date ≈ USD 135.
+- Built: per-wave comparison script kept in the scratchpad only (one-off); numbers in the report. MANIFEST.json for r10 written by hand from train.log (trainer writes it only on a clean finish).
+- Built: cost: training 6.0 h H100 ≈ USD 24 + reads ≈ USD 1 = ≈ USD 25 (estimate was 30–45). To date ≈ USD 135.
 - Paulo: decide the next data step (real-document TRAINING collection, work not money) and whether a round 11 on it (≈ USD 25) gets the go.
 
 ## 2026-11-04 evening — real-document TRAINING collection (D17)
-- Claude: six parallel searches by shape (general memórias; speciality memórias; quantities and prices; about-element documents; tender packages; small pieces), municipalities of the test excluded. 4 download batches (fetch helper, %PDF check, page count): 117 files landed, Coimbra refused (WAF 403).
-- Claude: generator/privacy.py written (number classes by first digit + phone context, ID words, personal e-mail, professional numbers); scan → 3 files dropped for a private person's data, 3 for unreadable text/scans. 111 kept (a last batch of 5 from the tender-package search, whose finding was that works packages sit behind e-procurement logins).
-- Claude: generator/realtrain.py written (KEYS by hand → rows with the whole-document view and the scaffold gate; sha256 test guard; INDEX.md). 563 rows, 0 dropped. sources/real/PROVENANCE.md train section with every URL.
-- Claude: train_lora.py r11 run (sets d0,d1,d2,real; real ×3), training/runs/overnight-r11.sh ready. Cost so far USD 0.
+- Built: six parallel searches by shape (general memórias; speciality memórias; quantities and prices; about-element documents; tender packages; small pieces), municipalities of the test excluded. 4 download batches (fetch helper, %PDF check, page count): 117 files landed, Coimbra refused (WAF 403).
+- Built: generator/privacy.py written (number classes by first digit + phone context, ID words, personal e-mail, professional numbers); scan → 3 files dropped for a private person's data, 3 for unreadable text/scans. 111 kept (a last batch of 5 from the tender-package search, whose finding was that works packages sit behind e-procurement logins).
+- Built: generator/realtrain.py written (KEYS by hand → rows with the whole-document view and the scaffold gate; sha256 test guard; INDEX.md). 563 rows, 0 dropped. sources/real/PROVENANCE.md train section with every URL.
+- Built: train_lora.py r11 run (sets d0,d1,d2,real; real ×3), training/runs/overnight-r11.sh ready. Cost so far USD 0.
 - Paulo: the go for round 11 (≈ USD 25-30).
 
 
 ## 2026-11-04 23:25 UTC — round 11 launched (commit f2d3090)
 - Paulo: "go, run round 11 with weight 6".
-- Claude: real set repeated 6× (≈ 3,400 of ≈ 15,000 examples; about half of the element rows). Sentence pool of the generated memórias moved from sources/real/memorias (the four wave-1 TEST memórias, a mild leak of test text into training since round 9) to the 39 memórias of the training collection (3,218 sentences); 80 expedientes regenerated. Chain training/runs/overnight-r11.sh: regen → rows → commit → train r11 (12 h limit) → guarded reads → score → commit. Log training/runs/overnight-r11.log, pid training/runs/r11.pid. Expected ≈ USD 25-30, results ≈ 06:30-07:30 UTC.
+- Built: real set repeated 6× (≈ 3,400 of ≈ 15,000 examples; about half of the element rows). Sentence pool of the generated memórias moved from sources/real/memorias (the four wave-1 TEST memórias, a mild leak of test text into training since round 9) to the 39 memórias of the training collection (3,218 sentences); 80 expedientes regenerated. Chain training/runs/overnight-r11.sh: regen → rows → commit → train r11 (12 h limit) → guarded reads → score → commit. Log training/runs/overnight-r11.log, pid training/runs/r11.pid. Expected ≈ USD 25-30, results ≈ 06:30-07:30 UTC.
 
 ## 2026-11-05 10:45 UTC — round 11 done (chain commit 197ded8 + this commit)
-- Claude: training finished clean at 10:33 UTC: 1,379 steps, 2 epochs, 11.0 h H100 ≈ USD 43.5 (estimate was 25-30: the real rows are long, 29 s/step vs 21). Reads --guard d0/d1/d2/stranger ≈ USD 1. Total to date ≈ USD 180.
-- Claude: checker (guard.py CLI) over every output → *-checked.json: 0 refused anywhere. Per-wave table in training/runs/r11/SCORES.md.
-- Claude: stranger elements 74/77 (r10 67, ceiling 76); wave 3 30/32 (r10 26); the four about-element false positives gone; invented 0, fabricated 0. Facts 22/29 (r10 25): six values the documents hold answered null.
-- Claude: cause of the fact drop = my data: training/data/real/train.jsonl D2 rows are 229 null vs 1 value (realtrain.py: two absent questions per document, almost no keyed values) ×6 = 1,374 "not present" fact rows. Elements had the test's proportion and gained.
-- Claude: report section "Round 11" + "Next (after round 11)", D17 outcome, memory.
+- Built: training finished clean at 10:33 UTC: 1,379 steps, 2 epochs, 11.0 h H100 ≈ USD 43.5 (estimate was 25-30: the real rows are long, 29 s/step vs 21). Reads --guard d0/d1/d2/stranger ≈ USD 1. Total to date ≈ USD 180.
+- Built: checker (guard.py CLI) over every output → *-checked.json: 0 refused anywhere. Per-wave table in training/runs/r11/SCORES.md.
+- Built: stranger elements 74/77 (r10 67, ceiling 76); wave 3 30/32 (r10 26); the four about-element false positives gone; invented 0, fabricated 0. Facts 22/29 (r10 25): six values the documents hold answered null.
+- Built: cause of the fact drop = my data: training/data/real/train.jsonl D2 rows are 229 null vs 1 value (realtrain.py: two absent questions per document, almost no keyed values) ×6 = 1,374 "not present" fact rows. Elements had the test's proportion and gained.
+- Built: report section "Round 11" + "Next (after round 11)", D17 outcome, memory.
 - Paulo: decide round 12 on the corrected real set (≈ USD 44 at weight 6, ≈ 25 at weight 3). Fixing the rows costs USD 0 and comes first.
 
 ## 2026-11-05 13:30 UTC — D17 fix: real fact rows rebalanced, round 12 chain ready
 - Paulo: "fix what makes it go wrong".
-- Claude: text of the 111 PDFs dumped; four parallel readers over the 44 element documents (11 fields each) → every declared value with page and line; I kept 20 values printed as whole tokens (two priced-bill totals, Peniche electrical estimate 30 683,21 €, Angra market quadro sinóptico 6 values, Melgaço/Sabugal/Angra terrain areas, uses), 8 traps (Madeira 720 dias, Viana 24-month plan deadline ×2, empty price columns), dropped Póvoa de Lanhoso (OCR without spaces) and Peniche fogos (jumbled table). Short values pinned to their page (Melgaço 17 was quoted from p2 "17 d." in round 11 — fixed).
-- Claude: realtrain.py — one absent question, only on documents that state a value. Real set 376 rows: 333 D1, 42 D2 = 20 values : 22 null (round 11: 1 : 229).
-- Claude: train_lora.py RUNS r12 (= r11 recipe), training/runs/overnight-r12.sh (no regeneration). Cost so far USD 0.
+- Built: text of the 111 PDFs dumped; four parallel readers over the 44 element documents (11 fields each) → every declared value with page and line; I kept 20 values printed as whole tokens (two priced-bill totals, Peniche electrical estimate 30 683,21 €, Angra market quadro sinóptico 6 values, Melgaço/Sabugal/Angra terrain areas, uses), 8 traps (Madeira 720 dias, Viana 24-month plan deadline ×2, empty price columns), dropped Póvoa de Lanhoso (OCR without spaces) and Peniche fogos (jumbled table). Short values pinned to their page (Melgaço 17 was quoted from p2 "17 d." in round 11 — fixed).
+- Built: realtrain.py — one absent question, only on documents that state a value. Real set 376 rows: 333 D1, 42 D2 = 20 values : 22 null (round 11: 1 : 229).
+- Built: train_lora.py RUNS r12 (= r11 recipe), training/runs/overnight-r12.sh (no regeneration). Cost so far USD 0.
 - Paulo: the go for round 12 (≈ USD 44 at weight 6, ≈ 25 at weight 3).
 
 ## 2026-11-05 13:36 UTC — round 12 launched (commit 2cbd64e)
 - Paulo: "run 12" (the last data round, as agreed).
-- Claude: chain training/runs/overnight-r12.sh detached (pid training/runs/r12.pid, log overnight-r12.log): train r12 (r11 recipe, real set ×6, rebalanced D2 rows) → reads --guard d0/d1/d2/stranger → score → commit. Expected ≈ 11 h + 20 min, ≈ USD 45, end ≈ 01:30 UTC 11-06. Retry rule: `modal volume rm -r amalia-saneamento-lora /amalia-saneamento-r12` first. When it ends: guard.py CLI checker, per-wave table (scratchpad waves11.py pattern), the 7 value rows of the stranger test (r10 4/7, r11 1/7, ceiling 6-7/7), report section "Round 12", 1-10 line in the arc table.
+- Built: chain training/runs/overnight-r12.sh detached (pid training/runs/r12.pid, log overnight-r12.log): train r12 (r11 recipe, real set ×6, rebalanced D2 rows) → reads --guard d0/d1/d2/stranger → score → commit. Expected ≈ 11 h + 20 min, ≈ USD 45, end ≈ 01:30 UTC 11-06. Retry rule: `modal volume rm -r amalia-saneamento-lora /amalia-saneamento-r12` first. When it ends: guard.py CLI checker, per-wave table (scratchpad waves11.py pattern), the 7 value rows of the stranger test (r10 4/7, r11 1/7, ceiling 6-7/7), report section "Round 12", 1-10 line in the arc table.
 
 ## 2026-11-05 16:45 UTC — the verdict layer (D18): exam 11/11, 0 false alarms, 9/9 honest
 - Paulo: "why not today"; "I need the system to be a 10/10". Round 12 keeps training on its H100 (step ≈ 340/1380 at 16:14 UTC).
-- Claude: engine/application.py + engine/read.py + engine/cpedi.json; verdicts of A, B, C under engine/verdicts/ (verdict.json,
+- Built: engine/application.py + engine/read.py + engine/cpedi.json; verdicts of A, B, C under engine/verdicts/ (verdict.json,
   convite.md, verdict.html); exam/scores.jsonl two new lines (16:41 with 6 false alarms = number words, 16:42 fixed: 0).
   Reads: engine/reads/dossiers-{A,B,C}/ (prompts + checked answers, r11, 222 questions, 0 refused), ≈ USD 0.15 on the L40S.
-- Claude next: sealed expedientes + stranger folders through check(); second procedure (LICEDI/LEGEDI) as a rule-pack change only;
+- Next: sealed expedientes + stranger folders through check(); second procedure (LICEDI/LEGEDI) as a rule-pack change only;
   round 12 scoring when the chain ends (≈ 01:10 UTC 11-06).
 
 ## 2026-11-05 17:15 UTC — sealed expedientes through the verdict layer (D19): 55/55, 0 false alarms, 20/20 honest
 - Paulo: "run the sealed ones through it now".
-- Claude: engine/application.py + expired_insurance, wrong_site, wrong_signer (certificate from the CMS), per-slot mandatory check,
+- Built: engine/application.py + expired_insurance, wrong_site, wrong_signer (certificate from the CMS), per-slot mandatory check,
   names_fact() rule, «absent» status, Portuguese dates; engine/score_sealed.py (+ engine/SCORES-sealed.md, engine/sealed-scores.jsonl);
   reads for 23 folders in engine/reads/ (r11, ≈ USD 0.25). Exam re-scored 11/11, 0 FA, 9/9 (exam/scores.jsonl: two lines with
   2 FA between 17:07 and 17:10 are the implantação habit before the rule). Round 12 at step 460/≈1380 (17:10 UTC), untouched.
-- Claude next: second procedure (LICEDI / LEGEDI) as a table change; round 12 scoring when the chain ends.
+- Next: second procedure (LICEDI / LEGEDI) as a table change; round 12 scoring when the chain ends.
 
 ## 2026-11-05 18:20 UTC — hosted service live (D20)
 - Paulo: "nothing can depend on my computer"; "how good is it as a finished product?" → 6 (engine 9).
-- Claude: modal/service.py deployed (web + worker + volume + secret), modal/reader.py deployed as a persistent app; engine/application.py
+- Built: modal/service.py deployed (web + worker + volume + secret), modal/reader.py deployed as a persistent app; engine/application.py
   verdict(folder, reads=None); engine/read.py read_with(). First hosted reader run hit Modal's 150 s web timeout → worker + status
   endpoint + polling page. Demo C with reader: 268 s cold, same verdict as local (8 findings). Round 12 at step ≈ 570/1380.
-- Claude next: round 12 scoring (chain ends ≈ 01:10 UTC); then second procedure; then the shell items above in Paulo's order.
+- Next: round 12 scoring (chain ends ≈ 01:10 UTC); then second procedure; then the shell items above in Paulo's order.
 
 ## 2026-11-05 19:00 UTC — técnico's screens live (D21)
 - Paulo: "which Palantir interface fits?" → full object view, high density + inbox; "build it now".
-- Claude: engine/ui.py (inbox + three-pane app), service routes + work-state endpoint, deployed; preview checked in the browser pane.
-- Claude next: round 12 scoring (chain running, step ≈ 650/1380); second procedure.
+- Built: engine/ui.py (inbox + three-pane app), service routes + work-state endpoint, deployed; preview checked in the browser pane.
+- Next: round 12 scoring (chain running, step ≈ 650/1380); second procedure.
 
 ## 2026-11-05 20:30 UTC — «Pergunte à lei» + Palantir-layout screens live (D22)
 - Paulo: "copy literally the images I send you about Palantir"; talk to AMALIA; why Celorico only.
-- Claude: engine/law_search.py, engine/ui.py rewritten on Blueprint (lei, app, inbox), service routes /lei, POST /v1/lei, GET /v1/lei/{id},
+- Built: engine/law_search.py, engine/ui.py rewritten on Blueprint (lei, app, inbox), service routes /lei, POST /v1/lei, GET /v1/lei/{id},
   worker answer_law; deployed; /lei public. Hosted check: «Preciso de projeto de gás numa moradia unifamiliar?» → code answer at once
   (V.27.i.iv, condicional «quando exigível»); AMALIA's pick confirmed the same passage after 207 s wall (cold reader; 3.1 s of
   generation), checker accepted. Round 12 at checkpoint 700, still training.
 
 ## 2026-11-05 21:30 UTC — code to 10 (D23): 24 tests, pre-commit check, static pages, web.py, constants in the table
 - Paulo: "is our code a 10/10?" → "so make it a 10 then".
-- Claude: tests/, tools/check.sh (+ pre-commit hook), .github/workflows/check.yml, engine/static/*, engine/ui.py renderer, engine/web.py,
+- Built: tests/, tools/check.sh (+ pre-commit hook), .github/workflows/check.yml, engine/static/*, engine/ui.py renderer, engine/web.py,
   cpedi.json vocabulary; status/work-state key clash fixed; redeployed and verified (after `modal app stop --yes`: a warm old
   container had kept serving). Round 12 ≈ step 800/1379.
 
 ## 2026-11-06 00:20 UTC — round 12 scored (not adopted) · snapshot reader live (D25) · lei.foaap.app
-- Claude: r12 checker + per-wave table + verdict (training/runs/r12/SCORES.md, commit 60f5e0b); reader_warm.py on Modal's sleep-mode
+- Built: r12 checker + per-wave table + verdict (training/runs/r12/SCORES.md, commit 60f5e0b); reader_warm.py on Modal's sleep-mode
   pattern, 5 cold cycles measured (25/25/248/20 s), concurrent requests (40 prompts 8.4 s warm), service switched; law page thinking line;
   Cache-Control no-store (the domain is a static export by the other session: it must re-export to pick up page changes).
 - Paulo: lei.foaap.app put up (static export + Modal origin, by the other session).
-- Claude next: product-level check of r12 (engine/reads-r12, running), then the six-step flow, second procedure.
+- Next: product-level check of r12 (engine/reads-r12, running), then the six-step flow, second procedure.
 
 ## 2026-11-06 — lei.foaap.app proxies the live Modal service
 - Vercel project `lei-saneamento` now deploys only `deploy/vercel/vercel.json`. The public root redirects to `/lei`; all other paths and their query strings pass through to Modal. Service deployments no longer require a static re-export or a Vercel redeploy.
@@ -255,6 +255,6 @@
 - The domain and origin served byte-identical law pages. Both returned zero matches for `AMALIA a confirmar a passagem` at verification time; the expected thinking line was absent at the origin.
 
 ## 2026-11-06 01:30 UTC — open-source pass done (D26), README for strangers
-- Claude: privacy scan clean on 188 real PDFs, provenance complete, AMALIA Apache 2.0 confirmed, secrets none, d1 set as .gz, test keys
+- Built: privacy scan clean on 188 real PDFs, provenance complete, AMALIA Apache 2.0 confirmed, secrets none, d1 set as .gz, test keys
   untracked, README rewritten, public clone with filtered history prepared in the scratchpad (not pushed).
 - Paulo: choose the code licence (EUPL-1.2 proposed) and say "push" with the GitHub repo name.

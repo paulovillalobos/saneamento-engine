@@ -269,7 +269,7 @@
     "part": 0,
     "passage": null,
     "relation": "no_basis_found",
-    "why": "statement, insurance or qualification of the author of the SCIE ficha: V.11, V.13 and V.14 bind the authors of projects, and no express provision extends them to the ficha (ANEPC; Codex analysis B4, an AI)"
+    "why": "statement, insurance or qualification of the author of the SCIE ficha: V.11, V.13 and V.14 bind the authors of projects, and no express provision extends them to the ficha"
    },
    "assertion": "mapping_rule:A2-006",
    "revision": 1,
@@ -2273,7 +2273,7 @@
     "part": 0,
     "passage": null,
     "relation": "no_basis_found",
-    "why": "financial element with a possible basis in the RJUE; check applicability (Codex analysis B3, an AI): no element of Annex V, but the proof of payment is part of the title (art. 4.º-A n.º 4) and of the start of works (art. 34.º n.º 2); it cannot be a general condition of submission (art. 34.º n.º 3), and an optional slot suits payments already made"
+    "why": "financial element with a possible basis in the RJUE; check applicability (analysis B3): no element of Annex V, but the proof of payment is part of the title (art. 4.º-A n.º 4) and of the start of works (art. 34.º n.º 2); it cannot be a general condition of submission (art. 34.º n.º 3), and an optional slot suits payments already made"
    },
    "assertion": "mapping_rule:A2-102",
    "revision": 1,
@@ -2290,7 +2290,7 @@
     "part": 0,
     "passage": null,
     "relation": "no_basis_found",
-    "why": "financial element with a possible basis in the RJUE; check applicability (Codex analysis B3, an AI): a caução may rest on the fractioned payment of the fees of art. 117.º n.º 2; it is not a general obligation of the building prior communication"
+    "why": "financial element with a possible basis in the RJUE; check applicability (analysis B3): a caução may rest on the fractioned payment of the fees of art. 117.º n.º 2; it is not a general obligation of the building prior communication"
    },
    "assertion": "mapping_rule:A2-103",
    "revision": 1,

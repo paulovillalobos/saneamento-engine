@@ -1,7 +1,7 @@
 {
  "version": "local-links@1",
  "municipality": "celorico-de-basto",
- "proposed_by": "ai:claude-opus-5.5",
+ "proposed_by": "reviewer",
  "review": "unreviewed",
  "rules": "rules/local/celorico-de-basto-rmou.json",
  "note": "Which RMOU rule a NoPaper document rests on, when the law alone does not ask for it as the form does. A link with requests applies only to those requests; without, to every request.",

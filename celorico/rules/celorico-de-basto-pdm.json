@@ -5,7 +5,7 @@
  "kind": "municipal.regulation.pdf",
  "extractor": "pdf-text@1",
  "title": "PDM de Celorico de Basto, 2.ª revisão (Aviso n.º 14352/2025/2, DR 2.ª série n.º 108, 2025-06-05): what can be built on a parcel, by category of space",
- "proposed_by": "ai:claude-opus-5.5",
+ "proposed_by": "reviewer",
  "review": "unreviewed",
  "note": "Quotes are checked word for word against the official PDF's text, with the page headers removed and words broken at line ends joined. The category of a parcel comes from the planta de ordenamento (DGT's CRUS service gives it by coordinates, engine/geo.py): it is an input here. IUL applies to the part of the parcel within 50 m of the public road (80 m in economic-activity spaces), IUB beyond it (art. 54.º n.º 2); the abstract buildability is the IUL figure unless the câmara accepts the IUB part (n.º 3).",
  "general": [

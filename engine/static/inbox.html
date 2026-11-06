@@ -1,21 +1,72 @@
-<!doctype html><html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Expedientes</title>__HEAD__<style>__CSS__</style></head>
-<body><div class="frame">
-<div class="card"><div class="hd"><div class="tile blue"><span class="bp5-icon-standard bp5-icon-inbox"></span></div><div><h2 id="h2">Expedientes</h2><div class="sub" id="sub">a carregar…</div></div><div class="right"><a href="/">+ novo expediente</a> · <a href="/lei">pergunte à lei</a></div></div>
-<div class="inbox" id="rows"><div class="empty">a carregar…</div></div></div>
-<p style="margin:14px 4px"><b>O leitor lê, o código decide, o técnico assina.</b> Estados: novo → em análise → convite enviado → saneado.</p></div>
+<!doctype html>
+<html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Caixa de trabalho · Expedientes</title>__HEAD__
+<style>__CSS__
+*{box-sizing:border-box}body{background:#f5f7f8}.mast{background:#182935;color:white;border-bottom:3px solid #367c91}.bar,.desk{width:min(100%,1560px);margin:auto;padding:0 clamp(16px,3vw,48px)}.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:54px}.bar strong{display:flex;align-items:center;gap:12px;font-size:17px}.mark{width:23px;height:23px;display:inline-block;border:2px solid #adced3;background:linear-gradient(90deg,transparent 34%,#adced3 34% 44%,transparent 44%),linear-gradient(0deg,transparent 46%,#adced3 46% 56%,transparent 56%)}.bar a:not(.law-action){color:white}.desk{padding-top:30px;padding-bottom:30px}.lead{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 22px}.kicker{font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#41606f}.lead h1{font-size:clamp(27px,3vw,36px);line-height:1.22;margin:5px 0}.lead p{margin:0}.btn{text-decoration:none}.btn:hover{text-decoration:none}.shell{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(300px,1fr);background:white;border:1px solid #ccd5d9;border-radius:5px;overflow:hidden;min-height:438px}.queue,.detail{min-width:0}.detail{padding:22px;border-left:1px solid #ccd5d9;background:#fcfdfd}.qhead{padding:16px 20px;border-bottom:1px solid #d7dfe2}.qhead h2,.detail h2{font-size:20px;margin:3px 0 8px}.filters{display:flex;flex-wrap:wrap;gap:6px}.filter{font:inherit;font-size:13px;border:1px solid transparent;border-radius:3px;padding:3px 7px;color:#344955;background:#eef2f3;cursor:pointer}.filter[aria-pressed=true]{color:#123e55;background:#dcedf4;border-color:#96b6c5}.filter b{margin-left:5px}.case{display:block;width:100%;text-align:left;border:0;border-bottom:1px solid #e1e6e8;background:white;border-left:3px solid transparent;padding:13px 17px;font:inherit;cursor:pointer;color:inherit}.case:hover{background:#f4f7f8}.case[aria-pressed=true]{background:#edf5f8;border-left-color:#25718b}.line{display:flex;justify-content:space-between;align-items:baseline;gap:10px}.line strong,.detail h2{overflow-wrap:anywhere}.meta{font-size:13px;color:#455965;margin-top:4px}.badge{display:inline-block;border-radius:3px;background:#e9eef1;color:#304553;font-size:12px;line-height:1.6;font-weight:700;padding:0 7px;white-space:nowrap}.pending{background:#f9ecd4;color:#714713}.failed{background:#fbe8e6;color:#8f342b}.issue{color:#943c32;font-weight:650}.none{color:#284c46}.detail dl{margin:15px 0}.detail dl div{display:grid;grid-template-columns:1fr 1.3fr;gap:10px;padding:7px 0;border-bottom:1px solid #e2e8ea}.detail dt{color:#435661}.detail dd{margin:0;overflow-wrap:anywhere}.detail details{margin-top:18px}.detail summary{cursor:pointer;color:#275d75}.detail form{display:grid;gap:9px;margin-top:12px}.detail label{display:grid;gap:3px}.detail input,.detail select{width:100%;font:inherit;border:1px solid #afbdc4;padding:5px}.note{padding:20px}.alert:not(:empty){padding:9px 12px;background:#fff1d9;margin:10px 0}.foot{font-size:13px;color:#445a65;margin-top:14px}:focus-visible{outline:2px solid #156588;outline-offset:-2px}
+@media(max-width:760px){.shell{grid-template-columns:1fr}.detail{border-left:0;border-top:1px solid #ccd5d9}.desk{padding-top:18px}.lead{flex-wrap:wrap}.case{padding:12px}.bar strong{font-size:15px}}
+</style></head>
+<body><header class="mast"><div class="bar"><strong><span class="mark" aria-hidden="true"></span>Saneamento municipal</strong><a class="law-action" href="/lei">Pergunte à lei <span aria-hidden="true">↗</span></a></div></header>
+<main class="desk">
+<div class="lead"><div><div class="kicker" id="municipality">Município</div><h1>Expedientes</h1><p>Comunicação prévia de obras de edificação</p></div><a class="btn" href="/?novo=1">+ Novo expediente</a></div>
+<p class="alert" id="message" role="status"></p>
+<div class="shell"><section class="queue" aria-labelledby="queue-title"><div class="qhead"><h2 id="queue-title">Caixa de trabalho</h2><nav class="filters" id="filters" aria-label="Filtrar expedientes"></nav></div><div id="rows"><p class="note">A carregar expedientes…</p></div></section>
+<aside class="detail" id="detail" aria-label="Expediente selecionado"></aside></div>
+<p class="foot">O leitor lê, o código verifica, o técnico decide.</p></main>
 <script>
-const INLINE=__DATA__;const STATES=__STATES__;const $=id=>document.getElementById(id);const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const LABEL=Object.fromEntries(STATES);
-function row(r){const c=r.counts||{};const st=r.estado||(r.files?"novo":"");const pend=!r.files;
- return `<div class="row2"><div><div class="t"><a href="/expedientes/${esc(r.id)}/">${esc(r.label)}</a><span class="state ${esc(st)}">${esc(LABEL[st]||st)}</span></div>
- <div class="m">${esc((r.at||"").slice(0,16).replace("T"," "))} UTC · ${r.files||0} ficheiros · leitor ${esc(r.reader||"—")}${r.responsavel?" · responsável <b>"+esc(r.responsavel)+"</b>":""}
- ${pend?"":` · <span class="tag ${c.finding?"nao":"sempre"}">${c.finding||0} deficiência(s)</span> <span class="tag condicional">${c.not_assessed||0} não avaliado</span>`}</div></div>
- <div>${pend?"":STATES.filter(([k])=>k!==st).map(([k,v])=>`<button class="btn sm" onclick="setState(this,${JSON.stringify(r.id)},${JSON.stringify(k)})">${esc(v)}</button> `).join("")+`<button class="btn sm" onclick="assign(this,${JSON.stringify(r.id)})">assumir</button>`}</div></div>`}
-function render(d){const rows=d.expedientes||[];const bad=rows.filter(r=>(r.counts||{}).finding).length;$("h2").textContent="Expedientes · "+(d.municipio||"");
- $("sub").textContent=`Comunicação prévia de obras de edificação · ${rows.length} expedientes · ${bad} com deficiências · ${rows.length-bad} limpos`;
- $("rows").innerHTML=rows.length?rows.map(row).join(""):'<div class="empty">Nenhum expediente ainda.</div>'}
-async function load(){if(INLINE){render(INLINE);return}const r=await fetch("/v1/expedientes");if(!r.ok){$("rows").innerHTML='<div class="empty">erro '+r.status+' — a chave?</div>';return}render(await r.json())}
-async function setState(b,id,st){b.disabled=true;const r=await fetch('/v1/expedientes/'+id+'/trabalho',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({estado:st})});if(r.ok)load();else{b.disabled=false;alert('erro '+r.status)}}
-async function assign(b,id){const n=prompt('Nome do técnico responsável');if(!n)return;b.disabled=true;const r=await fetch('/v1/expedientes/'+id+'/trabalho',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({responsavel:n,estado:'em_analise'})});if(r.ok)load();else{b.disabled=false;alert('erro '+r.status)}}
+const INLINE=__DATA__;const STATES=__STATES__;
+const label=Object.fromEntries(STATES), el=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const groups={review:"Para rever",pending:"A processar",failed:"Com erro",sent:"Convite enviado",closed:"Saneados"};
+const slugName=s=>s==="celorico-de-basto"?"Celorico de Basto":s;
+let rows=[],selected=null,filter="all",timer;
+function group(r){
+  if(r.estado==="a_processar")return "pending";
+  if(r.estado==="erro")return "failed";
+  if(r.estado==="saneado")return "closed";
+  if(r.estado==="convite_enviado")return "sent";
+  return "review";
+}
+function ready(r){return !["pending","failed"].includes(group(r))}
+function state(r){return ready(r)?label[r.estado||"novo"]:groups[group(r)]}
+function result(r){
+  if(!ready(r))return group(r)==="pending"?"A aguardar verificação":"Verificação interrompida";
+  const c=r.counts||{};
+  const found=c.finding===0?"Sem deficiências detetadas":Number.isInteger(c.finding)?c.finding+" deficiência"+(c.finding===1?"":"s"):"Sem contagem de deficiências";
+  return '<span class="'+(c.finding>0?"issue":"none")+'">'+esc(found)+'</span>'+(c.not_assessed>0?" · Não avaliado: "+esc(c.not_assessed):"");
+}
+function name(r){return group(r)==="pending"?String(r.label).replace(/ — a processar$/,""):r.label}
+function render(){
+  const visible=rows.filter(r=>filter==="all"||group(r)===filter);
+  if(!visible.some(r=>r.id===selected))selected=visible[0]?.id??null;
+  el("filters").innerHTML=Object.entries({all:"Todos",...groups}).filter(([k])=>k==="all"||k==="review"||filter===k||rows.some(r=>group(r)===k)).map(([k,v])=>'<button class="filter" data-filter="'+k+'" aria-pressed="'+(filter===k)+'">'+v+' <b>'+(k==="all"?rows.length:rows.filter(r=>group(r)===k).length)+'</b></button>').join("");
+  el("rows").innerHTML=visible.map(r=>'<button class="case" data-id="'+esc(r.id)+'" aria-pressed="'+(selected===r.id)+'"><span class="line"><strong>'+esc(name(r))+'</strong><span class="badge '+group(r)+'">'+esc(state(r))+'</span></span><span class="meta">'+result(r)+'</span><span class="meta" style="display:block">'+esc(r.id)+(r.responsavel?" · "+esc(r.responsavel):"")+'</span></button>').join("")||'<p class="note">'+(rows.length?"Nenhum expediente nesta fila.":"Ainda não há expedientes. Comece em Novo expediente.")+'</p>';
+  const r=visible.find(r=>r.id===selected);
+  if(!r){el("detail").innerHTML="";return}
+  const url="/expedientes/"+encodeURIComponent(r.id)+"/", entry=(key,v)=>'<div><dt>'+key+'</dt><dd>'+v+'</dd></div>';
+  el("detail").innerHTML='<div class="kicker">Expediente selecionado</div><h2>'+esc(name(r))+'</h2><span class="badge '+group(r)+'">'+esc(state(r))+'</span><dl>'+entry("Registo",esc((r.at||"").slice(0,16).replace("T"," "))+" UTC")+entry("Responsável",esc(r.responsavel||"Por atribuir"))+
+    (ready(r)?entry("Ficheiros",esc(r.files))+entry("Verificação",result(r)):"")+'</dl>'+
+    (ready(r)?'<a class="btn blue" href="'+url+'">'+(group(r)==="review"?"Rever expediente":"Consultar expediente")+' →</a>':group(r)==="pending"?'<p>A verificação está em curso. A fila atualiza-se automaticamente.</p>':'<a href="'+url+'">Consultar erro →</a>')+
+    (ready(r)&&!INLINE?'<details id="work"><summary>Gerir responsável e estado</summary><form id="edit"><label>Responsável<input name="responsavel" maxlength="80" value="'+esc(r.responsavel||"")+'"></label><label>Estado<select name="estado">'+STATES.map(([k,v])=>'<option value="'+esc(k)+'" '+(k===(r.estado||"novo")?"selected":"")+'>'+esc(v)+'</option>').join("")+'</select></label><button class="btn" type="submit">Guardar alterações</button></form></details>':"");
+}
+el("filters").onclick=e=>{const b=e.target.closest("[data-filter]");if(b){filter=b.dataset.filter;render();el("filters").querySelector('[aria-pressed="true"]').focus()}};
+el("rows").onclick=e=>{const b=e.target.closest("[data-id]");if(b){selected=b.dataset.id;render();el("rows").querySelector('[aria-pressed="true"]').focus()}};
+const order=["review","pending","failed","sent","closed"];
+async function load(){
+  clearTimeout(timer);
+  try{
+    let d=INLINE;
+    if(!d){const res=await fetch("/v1/expedientes",{cache:"no-store"});if(!res.ok)throw Error("HTTP "+res.status);d=await res.json()}
+    rows=d.expedientes.slice().sort((a,b)=>order.indexOf(group(a))-order.indexOf(group(b)));
+    el("municipality").textContent=slugName(d.municipio)||"Município";
+    el("message").textContent="";render();
+  }catch(e){el("message").textContent="Não foi possível carregar os expedientes: "+e.message; if(!rows.length)el("rows").innerHTML='<p class="note">Fila indisponível.</p>'}
+  if(!INLINE&&(rows.some(r=>group(r)==="pending")||el("message").textContent))timer=setTimeout(poll,5000);
+}
+function poll(){if(el("work")?.open){timer=setTimeout(poll,5000);return}load()}
+el("detail").onsubmit=async e=>{
+  e.preventDefault();const form=e.target,button=form.querySelector("button");button.disabled=true;clearTimeout(timer);
+  try{const res=await fetch("/v1/expedientes/"+encodeURIComponent(selected)+"/trabalho",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(Object.fromEntries(new FormData(form)))});if(!res.ok)throw Error("HTTP "+res.status);await load()}
+  catch(err){button.disabled=false;el("message").textContent="Alterações não guardadas: "+err.message;if(rows.some(r=>group(r)==="pending"))timer=setTimeout(poll,5000)}
+};
 load();
 </script></body></html>

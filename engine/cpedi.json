@@ -1,7 +1,7 @@
 {
  "procedure": "cp-edificacao",
  "request": "CP/CPEDI",
- "note": "Interpretation rules the verdict layer applies in code to the Annex V elements whose requirement the Portaria conditions (D18). Default for an absent conditional element with no mandatory municipal slot: not_assessed, naming the condition. Entries here override the default and each says why. Proposed by Claude from the rule pack; not a legal opinion; Paulo decides product, not law.",
+ "note": "Interpretation rules the verdict layer applies in code to the Annex V elements whose requirement the Portaria conditions (D18). Default for an absent conditional element with no mandatory municipal slot: not_assessed, naming the condition. Entries here override the default and each says why. Proposed from the rule pack; not a legal opinion; the product owner decides product, not law.",
  "elements": {
   "V.27.g": {
    "decision": "required",

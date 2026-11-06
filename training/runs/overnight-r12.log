@@ -1,1 +1,38 @@
 == train r12 2026-11-05T13:36:31Z
+'checkpoint': 1200
+'examples': 17542
+'steps': 1276, 'seconds': 35539.0
+== evaluate r12 under the scaffold 2026-11-05T23:31:51Z
+- **alinea_de** n=203; passagem 196/203 (97%); citacao 196/203 (97%); ambos 196/203 (97%); nao_sei 4
+- **elemento_doc** n=91; passagem 90/91 (99%); citacao 90/91 (99%); ambos 90/91 (99%); tipo 68/91 (75%)
+- **exigencia** n=116; passagem 101/116 (87%); citacao 103/116 (89%); ambos 101/116 (87%); exigido 62/116 (53%); nao_sei 1
+- **localiza** n=492; passagem 475/492 (97%); citacao 473/492 (96%); ambos 472/492 (96%); inventado 5; nao_sei 1; probes nao_sei 42/47
+- **proibido** n=30; passagem 28/30 (93%); citacao 29/30 (97%); ambos 28/30 (93%); resposta 29/30 (97%)
+- **transcreve** n=491; passagem 491/491 (100%); citacao 490/491 (100%); ambos 490/491 (100%); inventado 9; probes nao_sei 52/61
+- **d1_elemento** n=1145; citacao 1071/1071 (100%); elemento 1145/1145 (100%); tipo 1145/1145 (100%)
+- **d2_facto** n=1190; valor 1190/1190 (100%); pagina 1035/1035 (100%); valor_e_pagina 1035/1035 (100%); citacao_contem 1035/1035 (100%)
+- **d1_elemento** n=77; citacao 25/32 (78%); elemento 69/77 (90%); tipo 68/77 (88%); inventado 1
+- **d2_facto** n=29; valor 25/29 (86%); pagina 5/7 (71%); valor_e_pagina 4/7 (57%); citacao_contem 4/7 (57%); inventado 1; perdido 1
+== scaffold tests
+keys checked 2441; outside the language 0; grammar size min/median/max 75/11301/650123 chars
+  refused  d1 id outside the shortlist: elemento 'portaria-320-2026-1:anexo-i-99' não está na lista
+  refused  d1 citation not the law text: citação não é o texto da lei para esse elemento
+  refused  d1 keys out of order: as chaves não são ['elemento', 'citacao', 'tipo']
+  refused  d1 element with tipo nao_e_elemento: tipo 'nao_e_elemento' com elemento
+  refused  d2 fabricated quote: citação não está na página 1
+  refused  d2 page not shown: página 12 não foi mostrada
+  refused  d2 value outside the quote: valor fora da citação
+  refused  d2 null with a page: valor null com página ou citação
+  refused  d2 value cut inside a token: valor não está na página 1
+ok
+== engine tests
+----------------------------------------------------------------------
+Ran 25 tests in 38.325s
+
+OK
+== exam
+TOTAL: 11/11 findings, 0 false alarms, 9/9 honest not-assessed
+== sealed
+TOTAL: 55/55 findings, 0 false alarms, 20/20 honest, 0 review, 5 not read, reader answers on 20/20
+CHECK OK
+== done 2026-11-05T23:44:10Z

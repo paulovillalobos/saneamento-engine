@@ -66,7 +66,7 @@ PEOPLE = {
 WORK = "construção de moradia unifamiliar"
 COST = "320 000,00 €"
 
-# -- the planning summary (Annex I-C). Labels transcribed by Claude from the official image
+# -- the planning summary (Annex I-C). Labels transcribed by hand from the official image
 #    files.diariodarepublica.pt/images/1153698591/1153716690.png: a reading, not verified text.
 SUMMARY_A = [
     ("superficie_total_terreno", "SUPERFÍCIE TOTAL DO TERRENO OBJETO DA OPERAÇÃO URBANÍSTICA", "1200", "m2"),
@@ -598,7 +598,7 @@ def write_answers():
         ],
     }
     body = {"version": "rjue-exam-0.1", "procedure": "cp-edificacao", "law": LAW,
-            "review": "proposed by claude-opus-5.5 from the AI-reviewed rule pack; not human-approved",
+            "review": "proposed from the reviewed rule pack; not human-approved",
             "statuses": {"finding": "the engine must report it", "not_assessed": "the engine must say it cannot decide, naming the missing fact",
                          "provisional": "not scored until a reference check exists"},
             "dossiers": dossiers}

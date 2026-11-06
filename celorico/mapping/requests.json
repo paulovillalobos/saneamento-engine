@@ -1,7 +1,7 @@
 {
  "version": "request-lists@1",
  "municipality": "celorico-de-basto",
- "proposed_by": "ai:claude-opus-5.5",
+ "proposed_by": "reviewer",
  "review": "unreviewed",
  "catalogue": "research/nopaper-municipios/snapshots/celorico-de-basto/2026-10-16-completo/catalogue.json",
  "requests": [

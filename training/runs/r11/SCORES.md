@@ -37,7 +37,7 @@ sealed D1 0 refused, sealed D2 0 refused, stranger 0 refused (round 10: 2 refuse
 
 | run | el w1 | el w2 | el w3 | fact w1 | fact w2 | fact w3 | el total | fact total | w3 total |
 |---|---|---|---|---|---|---|---|---|---|
-| ceiling (Opus, no training) | 12/12 | 32/33 | 32/32 | 7/8 | 12/13 | 8/8 | 76/77 | 27/29 | 40/40 |
+| ceiling (general model, no training) | 12/12 | 32/33 | 32/32 | 7/8 | 12/13 | 8/8 | 76/77 | 27/29 | 40/40 |
 | r9 (11k view) | 8/12 | 26/33 | 27/32 | 6/8 | 12/13 | 7/8 | 61/77 | 25/29 | 34/40 |
 | r10 (whole documents) | 11/12 | 30/33 | 26/32 | 6/8 | 12/13 | 7/8 | 67/77 | 25/29 | 33/40 |
 | **r11 (real documents ×6)** | 12/12 | 32/33 | 30/32 | 5/8 | 12/13 | 5/8 | **74/77** | **22/29** | **35/40** |

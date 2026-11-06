@@ -5,12 +5,13 @@ verification runs code-only and the law page answers from the code alone.
 
     .venv-modal/bin/python -I engine/serve_local.py [--port 5340]        then open http://127.0.0.1:5340/
 
-Routes: /  /lei  /expedientes  /expedientes/<id>/  …/verdict.json  …/convite.md  …/ficheiros/<name>
+Routes: / (inbox)  /?novo=1 (intake)  /lei  /expedientes  /expedientes/<id>/  …/verdict.json  …/convite.md  …/ficheiros/<name>
         POST /v1/expedientes (zip)  POST /v1/demo/{A|B|C}  GET /v1/expedientes  GET /v1/expedientes/<id>/estado
         POST /v1/expedientes/<id>/trabalho  POST /v1/lei  GET /v1/lei/<id>  GET /v1/saude
 Processing runs in a thread per expediente so the page can poll, exactly as on Modal.
 """
 import argparse
+import html
 import json
 import shutil
 import sys
@@ -19,7 +20,7 @@ import traceback
 import zipfile
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from urllib.parse import parse_qs, urlsplit
+from urllib.parse import parse_qs, unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
@@ -98,13 +99,13 @@ class H(BaseHTTPRequestHandler):
     def do_GET(self):
         u = urlsplit(self.path)
         p = u.path
-        if p == "/":
+        if p == "/" and parse_qs(u.query).get("novo") == ["1"]:
             return self.send(200, ui.home(local=True))
         if p == "/lei":
             return self.send(200, ui.lei())
         if p == "/v1/saude":
             return self.js(200, {"ok": True, "leitor": f"amalia-saneamento-{LORA}", "municipio": MUNI, "local": True})
-        if p == "/expedientes":
+        if p in ("/", "/expedientes"):
             return self.send(200, ui.inbox())
         if p == "/v1/expedientes":
             return self.js(200, {"municipio": MUNI, "expedientes": W.listing(STORE / MUNI)})
@@ -114,14 +115,14 @@ class H(BaseHTTPRequestHandler):
             if len(parts) == 2:
                 if (base / "verdict.json").exists():
                     return self.send(200, ui.app())
+                if (base / "error.json").exists():
+                    return self.send(200, f'<!doctype html><meta charset="utf-8"><pre style="margin:40px">{html.escape((base / "error.json").read_text(encoding="utf-8"))}</pre>')
                 if (base / "pending.json").exists():
                     return self.send(200, f'<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="8"><p style="font:600 18px system-ui;margin:40px">a processar… (o leitor pode demorar 2–3 minutos a carregar; esta página atualiza-se)</p><p style="margin:0 40px"><a href="/expedientes">← expedientes</a></p>')
-                if (base / "error.json").exists():
-                    return self.send(200, f'<!doctype html><meta charset="utf-8"><pre style="margin:40px">{(base / "error.json").read_text(encoding="utf-8")}</pre>')
             if len(parts) == 3 and parts[2] in ("verdict.json", "convite.md") and (base / parts[2]).exists():
                 return self.send(200, (base / parts[2]).read_bytes(), "application/json" if parts[2].endswith("json") else "text/markdown; charset=utf-8")
             if len(parts) == 4 and parts[2] == "ficheiros":
-                f = base / "files" / Path(parts[3]).name
+                f = base / "files" / Path(unquote(parts[3])).name
                 if f.exists():
                     return self.send(200, f.read_bytes(), "application/pdf" if f.read_bytes()[:4] == b"%PDF" else "application/octet-stream")
         if parts[:2] == ["v1", "expedientes"] and len(parts) == 4 and parts[3] == "estado" and W.safe_id(parts[2]):

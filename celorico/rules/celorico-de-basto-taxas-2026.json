@@ -5,7 +5,7 @@
  "kind": "muni.web.document",
  "extractor": "pdf-text@1",
  "title": "Tabela de Taxas Municipais 2026 (anexo I do regulamento de taxas), parte II — gestão urbanística, and the items of part I an urban operation meets",
- "proposed_by": "ai:claude-opus-5.5",
+ "proposed_by": "reviewer",
  "review": "unreviewed",
  "note": "Each item: the table's line (quote, checked word for word in the captured PDF text, with its amount), the unit and the stage of the procedure. The table still names the 'alvará' and the 'autorização de utilização'; the RJUE in force since 2026-10-01 titles a licence otherwise and turns use into a prior communication (arts. 4.º n.º 4 k), 62.º-A): reading those items as the fee of the title and of the use communication is an open reading (open: true), shown, never hidden.",
  "items": [

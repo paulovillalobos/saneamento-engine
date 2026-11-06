@@ -86,7 +86,7 @@ tools/check.sh                                           # everything that must 
 
 No citizen data, ever: every simulated person carries NIF 999999990 and every page says SIMULADO; every real document is a public
 publication listed in `sources/real/PROVENANCE.md` and scanned by `generator/privacy.py`. Passive reading of public sites only. The
-sealed sets are never trained on. AI proposes, code checks, a person decides.
+sealed sets are never trained on. The model proposes, code checks, a person decides.
 
 ## Status
 

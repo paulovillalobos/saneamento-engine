@@ -1,7 +1,7 @@
 [
  {
   "meta": {
-   "model": "claude-opus-5-5",
+   "model": "general-purpose-model",
    "adapter": null,
    "whole_document": true,
    "answered": 106,

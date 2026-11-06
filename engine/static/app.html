@@ -1,12 +1,13 @@
-<!doctype html><html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Expediente</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://unpkg.com/@blueprintjs/core@5.10.5/lib/css/blueprint.css"><link rel="stylesheet" href="https://unpkg.com/@blueprintjs/icons@5.9.0/lib/css/blueprint-icons.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500;600;700&display=swap"><style>__CSS__</style></head><body><div class="frame">
-<div class="strip" id="strip"><div><div class="k">Expediente</div><h1 id="h1" style="font-size:24px">a carregar…</h1></div></div>
+<!doctype html><html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Expediente</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://unpkg.com/@blueprintjs/core@5.10.5/lib/css/blueprint.css"><link rel="stylesheet" href="https://unpkg.com/@blueprintjs/icons@5.9.0/lib/css/blueprint-icons.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500;600;700&display=swap"><style>__CSS__
+.frame{max-width:1480px}.ov{display:block;min-height:0}.main,.split,.content,.preview{min-width:0}.strip{padding-top:12px}.strip h1{font-size:clamp(28px,4vw,40px);line-height:1.2;color:#19343b}.strip .k{color:#4b6669}.case-info{margin:0 4px 18px;color:#3f555b}.case-info summary{width:fit-content;cursor:pointer}.case-info dl{display:flex;gap:12px 32px;flex-wrap:wrap}.case-info dt{font-size:13px;color:#516266}.case-info dd{margin:0;font-weight:600}
+.preview .bar{flex-wrap:wrap}.preview #docname{overflow-wrap:anywhere}.preview #docempty{display:grid;align-content:start;justify-items:start;gap:12px;padding:24px 18px;color:#344d54;background:#f5f8f7}.preview #docempty p{margin:0;max-width:40ch}.preview iframe{width:100%;min-height:480px}.preview .file-link{color:#185a53;text-decoration:underline;border:0;padding:0;background:transparent;font:inherit;cursor:pointer}.content .t th,.content .t td{overflow-wrap:anywhere}.finding-heading{font-size:21px;margin-bottom:14px}.draft-action{margin-top:18px;color:#194e49;border-color:#a7c6bf;background:#f1f7f4}
+@media(max-width:760px){.frame{padding:14px 12px}.tabs{gap:2px}.tabs a{padding:7px 9px}.content{padding:12px;max-height:none}.preview iframe{min-height:360px}.product-nav .workspace-link{font-size:14px}}
+</style></head><body>
+<nav class="product-nav" aria-label="Navegação principal"><strong>Saneamento municipal</strong><div><a class="workspace-link" href="__BACK__">← Expedientes</a><a class="law-action" href="/lei">Pergunte à lei <span aria-hidden="true">↗</span></a></div></nav>
+<div class="frame">
+<div class="strip" id="strip"><div><div class="k">Revisão do expediente</div><h1 id="h1">A carregar…</h1></div></div>
+<details class="case-info"><summary>Dados do expediente</summary><dl id="facts"></dl></details>
 <div class="ov">
- <aside class="rail"><div class="who"><span class="ic bp5-icon-standard bp5-icon-id-number"></span><span id="who">—</span></div>
-  <a class="item on" href="#" data-t="deficiencias" onclick="event.preventDefault();show('deficiencias')"><span class="bp5-icon-standard bp5-icon-issue"></span> Deficiências</a>
-  <a class="item" href="#" data-t="elementos" onclick="event.preventDefault();show('elementos')"><span class="bp5-icon-standard bp5-icon-form"></span> Elementos</a>
-  <a class="item" href="#" data-t="ficheiros" onclick="event.preventDefault();show('ficheiros')"><span class="bp5-icon-standard bp5-icon-document"></span> Documentos</a>
-  <div class="facts" id="facts"></div>
-  <div class="facts"><a href="__BACK__"><span class="bp5-icon-standard bp5-icon-arrow-left"></span> expedientes</a> · <a href="verdict.json">JSON</a> · <a href="/lei">pergunte à lei</a></div></aside>
  <section class="main"><nav class="tabs" id="tabs">
    <a href="#" class="on" data-t="deficiencias" onclick="event.preventDefault();show('deficiencias')"><span class="bp5-icon-standard bp5-icon-endorsed"></span> Deficiências</a>
    <a href="#" data-t="revisao" onclick="event.preventDefault();show('revisao')"><span class="bp5-icon-standard bp5-icon-bookmark"></span> Revisão</a>
@@ -16,34 +17,68 @@
    <a href="#" data-t="convite" onclick="event.preventDefault();show('convite')"><span class="bp5-icon-standard bp5-icon-envelope"></span> Convite</a></nav>
   <div class="split"><div class="content" id="pane"></div>
    <aside class="preview"><div class="bar"><span>Pré-visualização do documento</span><span id="docname" style="font-weight:500"></span></div>
-    <div class="empty" id="docempty"><span class="bp5-icon-large bp5-icon-document" style="font-size:44px;color:#8f99a8"></span><div style="font-weight:700;font-size:18px;margin-top:10px">Pré-visualização do documento</div><div>Clique numa deficiência, numa citação ou num ficheiro.</div></div>
-    <iframe id="pdf" style="display:none"></iframe></aside></div></section>
+    <div id="docempty"><p id="preview-note">Selecione um documento para consultar a página.</p><button class="file-link" type="button" onclick="show('ficheiros')">Consultar ficheiros</button></div>
+    <iframe id="pdf" title="Documento do expediente" style="display:none"></iframe></aside></div></section>
 </div></div>
 <script>
 const INLINE=__DATA__;const PDF="__PDF_BASE__";const $=s=>document.querySelector(s);let V=null,CONV="";
 const TYPES={missing_required:"Elemento em falta",missing_complement:"Complemento em falta",not_pdf:"Não é PDF",not_pdfa:"Sem PDF/A",unsigned:"Sem assinatura",template_wording_missing:"Sem redação do Anexo VII",value_mismatch:"Valores divergentes",impossible_value:"Valor impossível",wrong_site:"Local divergente",expired_insurance:"Seguro caducado",wrong_signer:"Assinatura de outra pessoa"};
 const STATE={present:["sim","sempre"],missing:["FALTA","nao"],not_assessed:["não avaliado","condicional"],satisfied_by:["sim, via outro","sempre"],optional:["facultativo","n"],not_required_here:["n/a","n"]};
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-function showPdf(file,page){if(!file)return;const src=PDF+encodeURIComponent(file)+(page?("#page="+page):"");$("#pdf").src=src;$("#pdf").style.display="block";$("#docempty").style.display="none";$("#docname").textContent=file+(page?(" · p."+page):"")}
+function showPdf(file, page, message) {
+  const viewer = $("#pdf");
+  if (!file) {
+    viewer.removeAttribute("src");
+    viewer.style.display = "none";
+    $("#docempty").style.display = "grid";
+    $("#docname").textContent = "";
+    $("#preview-note").textContent = message || "Não existe ficheiro associado a este elemento.";
+    return;
+  }
+  viewer.src = PDF + encodeURIComponent(file) + (page ? "#page=" + page : "");
+  viewer.style.display = "block";
+  $("#docempty").style.display = "none";
+  $("#docname").textContent = file + (page ? " · p. " + page : "");
+}
+function previewFinding(finding) {
+  const evidence = finding.evidence?.[0];
+  const submitted = finding.type === "missing_complement"
+      ? V.files.find(file => file.slot === finding.slot && file.is_pdf)?.file : null;
+  showPdf(evidence?.file || finding.file || submitted, evidence?.page || 1,
+    finding.type === "missing_required" ? "Este elemento está em falta. Consulte o fundamento legal junto da deficiência." : undefined);
+}
+function findingTitle(finding) {
+  if (finding.type === "missing_required" && finding.rule === "V.15") return "Falta o registo fotográfico";
+  if (finding.type === "missing_required" && finding.rule === "V.27.g") return "Falta a estimativa dos encargos urbanísticos";
+  if (finding.type === "missing_complement" && finding.slot === "PI") return "Falta o desenho complementar da planta de implantação";
+  return TYPES[finding.type] || finding.type;
+}
 function tag(st){const [t,k]=STATE[st]||[st,"n"];return `<span class="tag ${k}">${esc(t)}</span>`}
 function law(f){return f.law?`<details class="law" onclick="event.stopPropagation()"><summary>Anexo ${esc(f.law.ref)} · ver o texto da lei</summary><q>«${esc(f.law.quote)}»</q></details>`:""}
-function evid(f){return (f.evidence||[]).map(e=>`<span class="q" onclick="event.stopPropagation();showPdf(${JSON.stringify(e.file)},${e.page||1})">${esc(e.file)} · p.${esc(e.page)} — «${esc(e.quote)}»</span>`).join("")}
-function table(list){if(!list.length)return '<div class="empty"><span class="ic bp5-icon-large bp5-icon-tick-circle" style="color:var(--green)"></span>Sem deficiências.</div>';return `<table class="t"><tr><th>#</th><th>Deficiência</th><th>Onde</th><th>Evidência e lei</th></tr>`+list.map((f,i)=>`<tr class="row" onclick="sel(this);showPdf(${JSON.stringify(f.file||'')},${(f.evidence&&f.evidence[0]&&f.evidence[0].page)||1})"><td>${i+1}</td><td><span class="tag nao">${esc(TYPES[f.type]||f.type)}</span><div style="margin-top:4px">${esc(f.detail||"")}</div></td><td><b>${esc(f.slot||"")}</b><br>${esc(f.file||f.rule||"")}</td><td>${evid(f)}${law(f)}</td></tr>`).join("")+"</table>"}
+function evid(f){return (f.evidence||[]).map(e=>`<span class="q" onclick="event.stopPropagation();showPdf(${esc(JSON.stringify(e.file))},${e.page||1})">${esc(e.file)} · p.${esc(e.page)} — «${esc(e.quote)}»</span>`).join("")}
+function table(list){if(!list.length)return '<div class="empty"><span class="ic bp5-icon-large bp5-icon-tick-circle" style="color:var(--green)"></span>Sem deficiências.</div>';return `<table class="t"><tr><th>#</th><th>Deficiência</th><th>Onde</th><th>Evidência e lei</th></tr>`+list.map((f,i)=>`<tr class="row" onclick="sel(this);previewFinding(V.findings[${V.findings.indexOf(f)}])"><td>${i+1}</td><td><span class="tag nao">${esc(findingTitle(f))}</span><div style="margin-top:4px">${esc(f.detail||"")}</div></td><td><b>${esc(f.slot||"")}</b><br>${esc(f.file||f.rule||"")}</td><td>${evid(f)}${law(f)}</td></tr>`).join("")+"</table>"}
 function sel(tr){document.querySelectorAll("tr.sel").forEach(e=>e.classList.remove("sel"));tr.classList.add("sel")}
 const P={
- deficiencias:()=>`<h3 style="font-size:17px;margin-bottom:10px">Deficiências (${V.findings.length}) — vão no convite</h3>`+table(V.findings),
- revisao:()=>{const na=V.not_assessed||[],rv=V.review||[],nr=V.not_read||[],ab=V.absent||[];return `<h3 style="font-size:17px">Para revisão do técnico (${rv.length})</h3><p>O leitor e o campo discordam; nunca entra no convite sem o técnico.</p>${rv.map(i=>`<div class="pass"><b><a href="#" onclick="event.preventDefault();showPdf(${JSON.stringify(i.file)},1)">${esc(i.file)}</a></b> — ${esc(i.detail)}${i.element?" <span class='tag n'>"+esc(i.element)+"</span>":""}</div>`).join("")||"<p>nenhum</p>"}
+ deficiencias:()=>`<h3 class="finding-heading">Deficiências a verificar (${V.findings.length})</h3>` + table(V.findings)
+    + (V.findings.length ? '<button type="button" class="btn draft-action" onclick="show(&quot;convite&quot;)">Rever rascunho do convite →</button>' : ""),
+ revisao:()=>{const na=V.not_assessed||[],rv=V.review||[],nr=V.not_read||[],ab=V.absent||[];return `<h3 style="font-size:17px">Para revisão do técnico (${rv.length})</h3><p>O leitor e o campo discordam; nunca entra no convite sem o técnico.</p>${rv.map(i=>`<div class="pass"><b><a href="#" onclick="event.preventDefault();showPdf(${esc(JSON.stringify(i.file))},1)">${esc(i.file)}</a></b> — ${esc(i.detail)}${i.element?" <span class='tag n'>"+esc(i.element)+"</span>":""}</div>`).join("")||"<p>nenhum</p>"}
   <h3 style="font-size:17px;margin-top:18px">Não avaliado (${na.length})</h3><p>Depende de factos que o expediente não traz.</p>${na.map(i=>`<div class="pass"><b>${esc(i.rule||i.type)}</b>${i.slot?" · "+esc(i.slot):""} <span class="tag condicional">não avaliado</span><div>${esc(i.condition||"")}</div></div>`).join("")||"<p>nenhum</p>"}
   <h3 style="font-size:17px;margin-top:18px">Não lido (${nr.length}) · sem valor no documento (${ab.length})</h3>${nr.map(i=>`<div class="pass">${esc(i.file)} · ${esc(i.field||i.type)} — ${esc(i.detail)}</div>`).join("")||"<p>nenhum</p>"}`},
- elementos:()=>`<h3 style="font-size:17px;margin-bottom:10px">Elementos do Anexo V (${V.elements.length})</h3><table class="t"><tr><th>Elemento</th><th>Campos</th><th>Estado</th><th>Ficheiros</th></tr>`+V.elements.map(e=>`<tr class="row" onclick="sel(this);showPdf(${JSON.stringify(e.files[0]||'')},1)"><td><b>${esc(e.element)}</b></td><td>${esc(e.slots.join(", "))}</td><td>${tag(e.state)}</td><td>${e.files.map(n=>esc(n)).join("<br>")}</td></tr>`).join("")+"</table>",
- factos:()=>{const F=V.facts||{};const keys=Object.keys(F);const fx=V.findings.filter(f=>["value_mismatch","impossible_value","expired_insurance"].includes(f.type));return `<h3 style="font-size:17px;margin-bottom:10px">Factos divergentes (${fx.length})</h3>`+table(fx)+`<h3 style="font-size:17px;margin:18px 0 10px">Factos lidos</h3><table class="t"><tr><th>Facto</th><th>Valor</th><th>Onde</th><th>Citação</th></tr>`+keys.map(k=>F[k].map(v=>`<tr class="row" onclick="sel(this);showPdf(${JSON.stringify(v.file)},${v.page||1})"><td><b>${esc(k)}</b></td><td>${esc(v.value)}</td><td>${esc(v.slot)} · p.${esc(v.page)}</td><td>«${esc(v.quote)}»</td></tr>`).join("")).join("")+"</table>"},
- ficheiros:()=>`<h3 style="font-size:17px;margin-bottom:10px">Ficheiros (${V.files.length})</h3><table class="t"><tr><th>Ficheiro</th><th>Campo</th><th>PDF</th><th>PDF/A</th><th>Assinado</th><th>Pág.</th><th>Elemento lido</th></tr>`+V.files.map(f=>{const ok=(V.elements_ok||[]).find(x=>x.file===f.file);const rv=(V.review||[]).find(x=>x.file===f.file);return `<tr class="row" onclick="sel(this);showPdf(${JSON.stringify(f.file)},1)"><td>${esc(f.file)}</td><td>${esc(f.slot||f.slot_raw||"")}</td><td>${f.is_pdf?"sim":'<span class="tag nao">não</span>'}</td><td>${f.pdfa?"sim":(f.is_pdf?'<span class="tag nao">não</span>':"")}</td><td>${f.signed?("sim"+(f.signer?" · "+esc(f.signer.cn):"")):(f.is_pdf?'<span class="tag condicional">não</span>':"")}</td><td>${f.n||""}</td><td>${ok?esc(ok.element):(rv?'<span class="tag condicional">revisão</span>':"")}</td></tr>`}).join("")+"</table>",
+ elementos:()=>`<h3 style="font-size:17px;margin-bottom:10px">Elementos do Anexo V (${V.elements.length})</h3><table class="t"><tr><th>Elemento</th><th>Campos</th><th>Estado</th><th>Ficheiros</th></tr>`+V.elements.map(e=>`<tr class="row" onclick="sel(this);showPdf(${esc(JSON.stringify(e.files[0]||''))},1)"><td><b>${esc(e.element)}</b></td><td>${esc(e.slots.join(", "))}</td><td>${tag(e.state)}</td><td>${e.files.map(n=>esc(n)).join("<br>")}</td></tr>`).join("")+"</table>",
+ factos:()=>{const F=V.facts||{};const keys=Object.keys(F);const fx=V.findings.filter(f=>["value_mismatch","impossible_value","expired_insurance"].includes(f.type));return `<h3 style="font-size:17px;margin-bottom:10px">Factos divergentes (${fx.length})</h3>`+table(fx)+`<h3 style="font-size:17px;margin:18px 0 10px">Factos lidos</h3><table class="t"><tr><th>Facto</th><th>Valor</th><th>Onde</th><th>Citação</th></tr>`+keys.map(k=>F[k].map(v=>`<tr class="row" onclick="sel(this);showPdf(${esc(JSON.stringify(v.file))},${v.page||1})"><td><b>${esc(k)}</b></td><td>${esc(v.value)}</td><td>${esc(v.slot)} · p.${esc(v.page)}</td><td>«${esc(v.quote)}»</td></tr>`).join("")).join("")+"</table>"},
+ ficheiros:()=>`<h3 style="font-size:17px;margin-bottom:10px">Ficheiros (${V.files.length})</h3><table class="t"><tr><th>Ficheiro</th><th>Campo</th><th>PDF</th><th>PDF/A</th><th>Assinado</th><th>Pág.</th><th>Elemento lido</th></tr>`+V.files.map(f=>{const ok=(V.elements_ok||[]).find(x=>x.file===f.file);const rv=(V.review||[]).find(x=>x.file===f.file);return `<tr class="row" onclick="sel(this);showPdf(${esc(JSON.stringify(f.file))},1)"><td>${esc(f.file)}</td><td>${esc(f.slot||f.slot_raw||"")}</td><td>${f.is_pdf?"sim":'<span class="tag nao">não</span>'}</td><td>${f.pdfa?"sim":(f.is_pdf?'<span class="tag nao">não</span>':"")}</td><td>${f.signed?("sim"+(f.signer?" · "+esc(f.signer.cn):"")):(f.is_pdf?'<span class="tag condicional">não</span>':"")}</td><td>${f.n||""}</td><td>${ok?esc(ok.element):(rv?'<span class="tag condicional">revisão</span>':"")}</td></tr>`}).join("")+"</table>",
  convite:()=>`<h3 style="font-size:17px">Convite ao aperfeiçoamento — rascunho</h3><p>Editável. Copie para o ofício da câmara e assine. <button class="btn sm" onclick="navigator.clipboard.writeText($('#conv').value)">copiar</button> <a href="convite.md" download>descarregar .md</a></p><textarea class="conv" id="conv">${esc(CONV)}</textarea>`};
 function show(t){document.querySelectorAll("[data-t]").forEach(a=>a.classList.toggle("on",a.dataset.t===t));$("#pane").innerHTML=P[t]()}
 async function load(){if(INLINE){V=INLINE.verdict;CONV=INLINE.convite}else{V=await (await fetch("verdict.json")).json();try{CONV=await (await fetch("convite.md")).text()}catch(e){CONV=""}}
- const c=V.counts||{};$("#h1").textContent=V.label||V.expediente;$("#who").textContent=V.applicant||V.expediente;
- $("#strip").insertAdjacentHTML("beforeend",`<div><div class="k">deficiências</div><div class="n ${c.finding?"red":"green"}">${c.finding||0}</div></div><div><div class="k">não avaliado</div><div class="n">${c.not_assessed||0}</div></div><div><div class="k">revisão</div><div class="n">${c.review||0}</div></div><div><div class="k">elementos confirmados</div><div class="n green">${c.ok||0}</div></div><div><div class="k">leitor</div><div style="font-weight:600">${esc((V.reader&&V.reader.adapter)||"sem leituras")}</div></div>`);
- $("#facts").innerHTML=[["operação",V.operation],["requerente",V.applicant],["verificado",(V.checked_at||"").slice(0,16).replace("T"," ")+" UTC"],["ficheiros",V.files.length],["lei",V.law]].map(([k,v])=>`<div class="k">${k}</div><div>${esc(v||"—")}</div>`).join("");
- show("deficiencias");const f=V.findings.find(x=>x.file);if(f)showPdf(f.file,(f.evidence&&f.evidence[0]&&f.evidence[0].page)||1)}
+ $("#h1").textContent=V.label || V.expediente;
+ const metadata = [["Operação", V.operation], ["Requerente", V.applicant], ["Verificado em", V.checked_at], ["Ficheiros", V.files.length]];
+ $("#facts").innerHTML = metadata.map(([key,value]) => `<div><dt>${key}</dt><dd>${esc(value ?? "—")}</dd></div>`).join("");
+ show("deficiencias");
+ if (V.findings.length) {
+   const first = $("#pane tr.row");
+   if (first) sel(first);
+   previewFinding(V.findings[0]);
+ }
+}
 load();
 </script></body></html>

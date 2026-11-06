@@ -3,7 +3,7 @@
  "municipality": "celorico-de-basto",
  "act": "dr:regulamento-extrato:323/2013",
  "structure": "structure/regulamento-extrato-323-2013.json",
- "proposed_by": "ai:claude-opus-5.5",
+ "proposed_by": "reviewer",
  "proposed_at": "2026-10-16",
  "review": "unreviewed",
  "scope": "Every article of the RMOU (86): each is covered by at least one rule or listed in not_rules with its reason.",

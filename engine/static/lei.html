@@ -29,20 +29,60 @@
 <script>
 const INLINE=__DATA__;const $=id=>document.getElementById(id);const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const TAG={sempre:["Exigido sempre","sempre"],condicional:["Exigido em certa condição","condicional"],nao:["Não exigido neste pedido","nao"],"—":["Não é um elemento: lê-se","n"]};
-let page=0,R=null,tick=null,t0=0;
-function thinking(on){clearInterval(tick);const el=document.getElementById('think');if(!el)return;if(!on){el.style.display='none';return}
- t0=Date.now();el.style.display='flex';const paint=()=>{const s=Math.round((Date.now()-t0)/1000);el.innerHTML='<span class="dots"><i></i><i></i><i></i></span><span>AMALIA a confirmar a passagem… '+s+' s'+(s>12?' · a primeira pergunta do dia acorda-a (30–40 s); as seguintes demoram segundos':'')+'</span>'};paint();tick=setInterval(paint,1000)}
+let page=0, R=null;
+let thinkTick=null, thinkT0=0;
+function thinking(on){clearInterval(thinkTick);const el=document.getElementById('think');if(!el)return;if(!on){el.style.display='none';return}
+ thinkT0=Date.now();el.style.display='flex';const paint=()=>{const s=Math.round((Date.now()-thinkT0)/1000);el.innerHTML='<span class="dots"><i></i><i></i><i></i></span><span>AMALIA a confirmar a passagem… '+s+' s'+(s>12?' · a primeira pergunta do dia acorda-a (20–40 s); as seguintes demoram segundos':'')+'</span>'};paint();thinkTick=setInterval(paint,1000)}
+let requestNumber=0;
 function pass(c,picked){const [t,k]=TAG[c.exigido]||[c.exigido,"n"];return `<div class="pass ${picked?"pick":""}"><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class="lbl">${esc(c.label)}</span><span class="act">${esc(c.act)}</span><span class="tag ${k}">${t}</span>${picked?'<span class="tag blue">escolhida por AMALIA</span>':''}</div><q>${esc(c.text)}</q>${c.condicao?`<div><b>Condição:</b> «${esc(c.condicao)}»</div>`:""}<div style="font-size:13px">${esc(c.porque)}</div></div>`}
 function render(){const ps=R.passagens||[];const per=3,n=Math.max(1,Math.ceil(ps.length/per));page=Math.min(page,n-1);
  $('pager').innerHTML=`<a href="#" onclick="event.preventDefault();page=Math.max(0,page-1);render()">‹</a> <b>${page+1}</b> / ${n} <a href="#" onclick="event.preventDefault();page=Math.min(${n-1},page+1);render()">›</a>`;
  $('passages').innerHTML=ps.length?ps.slice(page*per,page*per+per).map(c=>pass(c,R.escolhida&&R.escolhida.id===c.id)).join(""):'<div class="empty"><span class="ic bp5-icon-large bp5-icon-refresh"></span>Nenhuma passagem encontrada.</div>';
  const top=R.escolhida||ps[0];
- $('answer').innerHTML=top?`<div class="body"><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:8px"><span class="tag ${(TAG[top.exigido]||["","n"])[1]}" style="font-size:15px;padding:5px 12px">${(TAG[top.exigido]||[top.exigido])[0]}</span>${R.escolhida?'<span class="tag blue">passagem confirmada por AMALIA</span>':(R.leitor==="a confirmar"?'<span class="tag n">AMALIA a confirmar…</span>':(R.leitor?'<span class="tag n">'+esc(R.leitor)+'</span>':''))}</div>
+ $('answer').innerHTML=top?`<div class="body"><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:8px"><span class="tag ${(TAG[top.exigido]||["","n"])[1]}" style="font-size:15px;padding:5px 12px">${(TAG[top.exigido]||[top.exigido])[0]}</span>${R.escolhida?'<span class="tag blue">passagem confirmada por AMALIA</span>':(R.leitor==="a confirmar"?'':(R.leitor?'<span class="tag n">'+esc(R.leitor)+'</span>':''))}</div>
   <div style="font-size:17px;font-weight:700">${esc(top.label)} <span style="font-weight:500">· ${esc(top.act)}</span></div><q style="display:block;margin:10px 0;font-size:16px;font-weight:500">«${esc(top.text)}»</q>${top.condicao?`<div><b>Condição:</b> «${esc(top.condicao)}»</div>`:""}<div style="margin-top:8px;font-size:13.5px">${esc(top.porque)}</div></div>`:'<div class="empty">Sem resposta.</div>'}
-async function poll(id){thinking(true);for(let i=0;i<60;i++){await new Promise(z=>setTimeout(z,3000));const r=await fetch('/v1/lei/'+id);if(!r.ok)break;const j=await r.json();if(j.leitor!=="a confirmar"){R=j;render();break}}thinking(false)}
-async function ask(q){q=q||$('q').value.trim();if(!q)return;$('q').value=q;$('answer').innerHTML='<div class="empty">a procurar…</div>';
- if(INLINE){R=INLINE;render();return}
- const r=await fetch('/v1/lei',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({pergunta:q,leitor:$('leitor').checked})});
- if(!r.ok){$('answer').innerHTML='<div class="empty">erro '+r.status+'</div>';return}R=await r.json();page=0;render();if(R.leitor==="a confirmar")poll(R.id)}
+async function fetchResult(url, options={}) {
+  const response = await fetch(url, {...options, signal:AbortSignal.timeout(60000)});
+  if (!response.ok) throw Error("HTTP " + response.status);
+  return response.json();
+}
+async function poll(id, ticket) {
+  thinking(true);
+  try {
+  const deadline = performance.now() + 300000;
+  while (performance.now() < deadline) {
+    await new Promise(resolve => setTimeout(resolve, 3000));
+    if (ticket !== requestNumber) return;
+    const result = await fetchResult('/v1/lei/' + encodeURIComponent(id), {cache:'no-store'});
+    if (ticket !== requestNumber) return;
+    if (result.leitor !== 'a confirmar') { R=result; render(); return; }
+  }
+  throw Error('Sem confirmação dentro do tempo de espera');
+  } finally { thinking(false); }
+}
+async function ask(question) {
+  const q = (question || $('q').value).trim();
+  if (!q) { $('q').focus(); return; }
+  const ticket = ++requestNumber;
+  $('q').value=q;
+  R=null; page=0;
+  $('pager').textContent='';
+  $('passages').textContent='';
+  $('answer').innerHTML='<div class="empty">A procurar passagens…</div>';
+  if (INLINE) { R=INLINE; render(); return; }
+  try {
+    const result = await fetchResult('/v1/lei',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({pergunta:q,leitor:$('leitor').checked})});
+    if (ticket !== requestNumber) return;
+    R=result; render();
+    if (R.leitor === 'a confirmar') {
+      await poll(R.id,ticket);
+    }
+  } catch (error) {
+    if (ticket !== requestNumber) return;
+    if (R) { R.leitor='Sem confirmação do leitor'; render(); }
+    else { $('answer').textContent='Não foi possível pesquisar. Tente novamente.'; }
+  }
+}
 if(INLINE){$('q').value=INLINE.pergunta;R=INLINE;render()}
 </script></body></html>

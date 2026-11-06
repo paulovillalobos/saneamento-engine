@@ -2,9 +2,9 @@
 training, no window. Its score is what these 106 real rows allow; the gap between it and AMALIA is ours to close, the rest is
 the documents.
 
-    python -I generator/ceiling.py build --tag opus      # -> training/runs/ceiling-opus/prompts/<id>.txt + index.json
-    (the readers write training/runs/ceiling-opus/raw/<id>.json = {"text": "<the JSON answer>"} ; they see prompts/ only)
-    python -I generator/ceiling.py collect --tag opus    # -> stranger.json (reader format), stranger-checked.json (scaffold checker), SCORES
+    python -I generator/ceiling.py build --tag whole      # -> training/runs/ceiling-whole/prompts/<id>.txt + index.json
+    (the readers write training/runs/ceiling-whole/raw/<id>.json = {"text": "<the JSON answer>"} ; they see prompts/ only)
+    python -I generator/ceiling.py collect --tag whole    # -> stranger.json (reader format), stranger-checked.json (scaffold checker), SCORES
 
 The prompts are the generator's own D1/D2 templates (generator/d1d2.py), so the ceiling answers the same question in the same
 shape as the adapters; only the text differs: all pages. The keys stay where they are (sealed/stranger-test.jsonl); the
@@ -98,6 +98,6 @@ def collect(tag, model):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["build", "collect"]); ap.add_argument("--tag", default="opus"); ap.add_argument("--model", default="claude-opus-5-5")
+    ap.add_argument("cmd", choices=["build", "collect"]); ap.add_argument("--tag", default="whole"); ap.add_argument("--model", default="general-purpose-model")
     a = ap.parse_args()
     build(a.tag) if a.cmd == "build" else collect(a.tag, a.model)
