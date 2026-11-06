@@ -1,5 +1,4 @@
 <!doctype html><html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pergunte à lei</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://unpkg.com/@blueprintjs/core@5.10.5/lib/css/blueprint.css"><link rel="stylesheet" href="https://unpkg.com/@blueprintjs/icons@5.9.0/lib/css/blueprint-icons.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500;600;700&display=swap"><style>__CSS__
-.dots{display:inline-flex;gap:4px}.dots i{width:7px;height:7px;border-radius:50%;background:#d9822b;animation:pulse 1.2s infinite ease-in-out}.dots i:nth-child(2){animation-delay:.2s}.dots i:nth-child(3){animation-delay:.4s}@keyframes pulse{0%,80%,100%{opacity:.25;transform:scale(.8)}40%{opacity:1;transform:scale(1)}}
 </style></head><body><div class="frame">
 <div class="card"><div class="hd band"><div class="tile purple"><span class="bp5-icon-standard bp5-icon-help"></span></div><div><h2>Pergunte à lei</h2><div class="sub">A pergunta de um técnico, nas suas palavras; a resposta são as passagens da lei, citadas letra a letra, e a condição em que se aplicam.</div></div>
 <div class="right"><span class="bp5-icon-standard bp5-icon-cog"></span> Portaria n.º 320/2026/1 · RJUE</div></div>
@@ -10,7 +9,6 @@
     <div style="display:flex;justify-content:flex-end;margin-top:12px"><button class="btn blue" onclick="ask()"><span class="bp5-icon-standard bp5-icon-arrow-right"></span> Submeter</button></div></div>
   <div class="section" style="padding-left:0;margin-top:10px"><h3><span class="bp5-icon-standard bp5-icon-lightning"></span> Resposta</h3></div>
   <div class="card" id="answer"><div class="empty"><span class="ic bp5-icon-large bp5-icon-help"></span>Escreva uma pergunta e carregue em «Submeter».</div></div>
-  <div id="think" style="display:none;align-items:center;gap:10px;padding:10px 4px;font-weight:600"></div>
   <div class="card" style="margin-top:18px"><div class="hd"><div class="tile grey"><span class="bp5-icon-standard bp5-icon-book"></span></div><div><h2 style="font-size:17px">Passagens encontradas</h2><div class="sub">As passagens da lei mais próximas da pergunta</div></div><div class="pager" id="pager"></div></div>
     <div class="body" id="passages"><div class="empty"><span class="ic bp5-icon-large bp5-icon-refresh"></span>Nenhuma passagem ainda.</div></div></div>
 </div>
@@ -30,9 +28,6 @@
 const INLINE=__DATA__;const $=id=>document.getElementById(id);const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const TAG={sempre:["Exigido sempre","sempre"],condicional:["Exigido em certa condição","condicional"],nao:["Não exigido neste pedido","nao"],"—":["Não é um elemento: lê-se","n"]};
 let page=0, R=null;
-let thinkTick=null, thinkT0=0;
-function thinking(on){clearInterval(thinkTick);const el=document.getElementById('think');if(!el)return;if(!on){el.style.display='none';return}
- thinkT0=Date.now();el.style.display='flex';const paint=()=>{const s=Math.round((Date.now()-thinkT0)/1000);el.innerHTML='<span class="dots"><i></i><i></i><i></i></span><span>AMALIA a confirmar a passagem… '+s+' s'+(s>12?' · a primeira pergunta do dia acorda-a (20–40 s); as seguintes demoram segundos':'')+'</span>'};paint();thinkTick=setInterval(paint,1000)}
 let requestNumber=0;
 function pass(c,picked){const [t,k]=TAG[c.exigido]||[c.exigido,"n"];return `<div class="pass ${picked?"pick":""}"><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class="lbl">${esc(c.label)}</span><span class="act">${esc(c.act)}</span><span class="tag ${k}">${t}</span>${picked?'<span class="tag blue">escolhida por AMALIA</span>':''}</div><q>${esc(c.text)}</q>${c.condicao?`<div><b>Condição:</b> «${esc(c.condicao)}»</div>`:""}<div style="font-size:13px">${esc(c.porque)}</div></div>`}
 function render(){const ps=R.passagens||[];const per=3,n=Math.max(1,Math.ceil(ps.length/per));page=Math.min(page,n-1);
@@ -47,7 +42,6 @@ async function fetchResult(url, options={}) {
   return response.json();
 }
 async function poll(id, ticket) {
-  thinking(true);
   try {
   const deadline = performance.now() + 300000;
   while (performance.now() < deadline) {
@@ -58,7 +52,7 @@ async function poll(id, ticket) {
     if (result.leitor !== 'a confirmar') { R=result; render(); return; }
   }
   throw Error('Sem confirmação dentro do tempo de espera');
-  } finally { thinking(false); }
+  } finally { }
 }
 async function ask(question) {
   const q = (question || $('q').value).trim();
