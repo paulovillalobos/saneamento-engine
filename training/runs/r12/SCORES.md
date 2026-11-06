@@ -50,5 +50,6 @@ training set has few positives for (the OA minutas were keyed as elements in r11
 questions on them).
 
 Verdict: round 12 is not adopted. Elements are the backbone of the verdict (presence per slot); facts are compared by code and a
-missing value is filed as not read, never guessed. r11 stays the reader behind the product. Product-level check (sealed + exam
-read with r12, engine/reads-r12/) recorded in docs/REPORT-2026-10-28.md when it lands.
+missing value is filed as not read, never guessed. r11 stays the reader behind the product. Product-level check (sealed + exam read
+with r12, engine/reads-r12/): exam 11/11, sealed 55/55, 0 false alarms, 0 not read (r11: 5 not read). Tie on simulated files; r11 wins
+on real strangers (+5 elements). r11 stays.

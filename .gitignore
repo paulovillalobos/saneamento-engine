@@ -12,3 +12,5 @@ engine/reads/_batch*
 engine/reads/_run.log
 deploy/.saneamento-token
 engine/store_local/
+engine/reads-r12/
+engine/reads-r12.log
