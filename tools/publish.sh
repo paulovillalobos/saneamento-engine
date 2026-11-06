@@ -8,6 +8,7 @@ set -eo pipefail
 cd "$(dirname "$0")/.."
 FR=/Users/baphomet/Downloads/foaap-core/.venv-modal/bin/git-filter-repo
 OUT=${TMPDIR:-/tmp}/saneamento-engine-public-$$
+trap 'rm -rf "$OUT" /tmp/replace-messages-$$.txt' EXIT   # a failed run must not leave a 500 MB clone behind (it filled the disk once)
 git clone -q --no-local . "$OUT"
 cd "$OUT"
 printf 'Claude Opus 5.5 reads the 106 stranger rows whole==>A large general-purpose model reads the 106 stranger rows whole\nClaude Opus 5.5==>a general-purpose model\nClaude Opus==>a general-purpose model\nclaude-opus-5.5==>the reviewer\nCodex==>the second reviewer\n' > /tmp/replace-messages-$$.txt
@@ -20,4 +21,3 @@ git remote add origin https://github.com/paulovillalobos/saneamento-engine.git
 git branch -M main
 git push --force origin main
 echo "published $(git rev-parse --short HEAD) ($(git log --oneline | wc -l | tr -d ' ') commits) → https://github.com/paulovillalobos/saneamento-engine"
-rm -rf "$OUT" /tmp/replace-messages-$$.txt
