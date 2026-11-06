@@ -6,7 +6,7 @@ Written before the engine can read applications, so every later step is measured
 
 Everything is fictional and every page says **DOCUMENTO SIMULADO — SEM VALOR LEGAL**: the
 people, NIF 999999990 (the generic "consumidor final" number, not a person), the address,
-the policies. Signatures use a test CA (`pki/`) and are not qualified signatures.
+the policies. Signatures use a test CA (`pki/`, certificates committed, private keys ignored since the open-source pass) and are not qualified signatures.
 
 | Dossier | Content | What the engine must report |
 |---|---|---|

@@ -18,6 +18,7 @@ commit, start and end instants, the loss log, the adapter files' sha256 and the 
 from Modal's billing report afterwards: training/runs/<run>/COST.json, `modal billing report`).
 """
 import hashlib
+import pathlib
 import json
 import subprocess
 import time
@@ -59,13 +60,23 @@ adapters = modal.Volume.from_name("amalia-saneamento-lora", create_if_missing=Tr
 app = modal.App("saneamento-train", image=image)
 
 
+def _text(f):
+    """A set's rows: the plain file when present, else the gzip twin (the d1 set is 109 MB plain, kept in git only as .gz: GitHub
+    refuses files over 100 MB; the hash is of the plain text either way, so MANIFEST indexes stay comparable)."""
+    import gzip
+    f = pathlib.Path(f)
+    if f.exists():
+        return f.read_text(encoding="utf-8")
+    return gzip.open(str(f) + ".gz", "rt", encoding="utf-8").read()
+
+
 def mixture(run="r1"):
     by_task = {}
     for d in RUNS[run]["data"]:
-        for f in sorted((ROOT / d).glob("*/train.jsonl")):
+        for f in sorted(set((ROOT / d).glob("*/train.jsonl")) | {g.with_suffix("") for g in (ROOT / d).glob("*/train.jsonl.gz")}):
             if f.parent.name not in RUNS[run]["sets"]:
                 continue
-            rows = [json.loads(l) for l in f.read_text(encoding="utf-8").splitlines() if l.strip()]
+            rows = [json.loads(l) for l in _text(f).splitlines() if l.strip()]
             by_task[f.parent.name] = rows * RUNS[run]["repeat"].get(f.parent.name, 1)
     mix = [{"id": r["id"], "task": r["task"], "prompt": r["prompt"], "answer": r["answer"]} for k in sorted(by_task) for r in by_task[k]]
     return mix, {k: len(v) for k, v in sorted(by_task.items())}
@@ -179,7 +190,7 @@ def main(run: str = "r1"):
         raise SystemExit(f"{out}/MANIFEST.json exists: a run is never redone in place")
     rows, mix = mixture(run)
     adapter = RUNS[run]["adapter"]
-    indexes = {st: hashlib.sha256((DATA / st / "train.jsonl").read_bytes()).hexdigest() for st in RUNS[run]["sets"]}
+    indexes = {st: hashlib.sha256(_text(DATA / st / "train.jsonl").encode("utf-8")).hexdigest() for st in RUNS[run]["sets"]}
     commit = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip()
     dirty = bool(subprocess.run(["git", "status", "--porcelain", "training/data", "law", "generator"], cwd=ROOT, capture_output=True, text=True).stdout.strip())
     started = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())

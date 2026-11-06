@@ -193,3 +193,12 @@ Dropped before filing: fornos_plano_seguranca_escolas.pdf (staff mobile numbers)
 | pcoura_eb23_caderno_encargos.pdf | https://www.paredesdecoura.pt/wp-content/uploads/2017/10/CE_EB23.pdf |
 | pcoura_eb23_programa_procedimento.pdf | https://www.paredesdecoura.pt/wp-content/uploads/2017/10/PP_EB23.pdf |
 | pcoura_eb23_relatorio_final.pdf | https://www.paredesdecoura.pt/wp-content/uploads/2017/10/RELATORIOFINAL.pdf |
+
+## Files named here for completeness (2026-11-06 open-source pass; all public downloads, no private person's data, privacy scan clean)
+- memorias/cascais_md_loteamento_1032.pdf, _1037.pdf, _1145.pdf — Câmara Municipal de Cascais, memórias descritivas of loteamento alvarás, public files under cascais.pt/sites/default/files/anexos/gerais/new/ (see sources/PROVENANCE.md).
+- memorias/valongo_74l2023_md.pdf — Câmara Municipal de Valongo, memória descritiva e justificativa of process 74L/2023, public consultation file.
+- modelos/OA_TR_autor_projeto.pdf, OA_TR_coordenador.pdf, OA_TR_dir_obra_fisc.pdf, OA_analise_portaria.pdf — Ordem dos Arquitectos, official blank minutas of the termos de responsabilidade under Portaria 320/2026/1 and its analysis of the Portaria, published on ordemdosarquitectos.org. Blank forms: the words «contribuinte» and «assinatura» the scan flags are the form's own labels.
+- wave2/OA_TR_dir_obra_inicio.pdf — Ordem dos Arquitectos, blank minuta (as above).
+- normas/torresvedras_manual_construtor_eurb2023.pdf, torresvedras_regulamento_instrucao_digital.pdf — Câmara Municipal de Torres Vedras, public manual and regulation on digital instruction of urban processes.
+- normas/alcacer_lista_elementos_nomeacao_ficheiros_2026.pdf — Câmara Municipal de Alcácer do Sal, public list of elements and file-naming norm (2026).
+- normas/macedo_fichas_CP_edificacao.pdf — Câmara Municipal de Macedo de Cavaleiros, public instruction sheets for comunicação prévia de edificação.
