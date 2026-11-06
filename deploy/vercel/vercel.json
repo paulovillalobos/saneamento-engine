@@ -1,0 +1,11 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "/lei", "permanent": false }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "https://paulovillalobos--saneamento-service-web.us-east.modal.run/$1"
+    }
+  ]
+}

@@ -248,3 +248,8 @@
   Cache-Control no-store (the domain is a static export by the other session: it must re-export to pick up page changes).
 - Paulo: lei.foaap.app put up (static export + Modal origin, by the other session).
 - Claude next: product-level check of r12 (engine/reads-r12, running), then the six-step flow, second procedure.
+
+## 2026-11-06 — lei.foaap.app proxies the live Modal service
+- Vercel project `lei-saneamento` now deploys only `deploy/vercel/vercel.json`. The public root redirects to `/lei`; all other paths and their query strings pass through to Modal. Service deployments no longer require a static re-export or a Vercel redeploy.
+- Production checks: health returned `ok: true`; the photographs question returned «Anexo V, n.º 15» first; two HEAD requests returned the origin's `private, no-store` policy and Vercel `MISS`. Modal returns 405 for HEAD on `/lei`; GET returns 200.
+- The domain and origin served byte-identical law pages. Both returned zero matches for `AMALIA a confirmar a passagem` at verification time; the expected thinking line was absent at the origin.
