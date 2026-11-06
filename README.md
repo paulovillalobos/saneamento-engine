@@ -1,5 +1,18 @@
 # saneamento-engine
 
+[![check](https://github.com/paulovillalobos/saneamento-engine/actions/workflows/check.yml/badge.svg)](https://github.com/paulovillalobos/saneamento-engine/actions/workflows/check.yml)
+![AMALIA-9B fine-tuned](https://img.shields.io/badge/AMALIA--9B-fine--tuned%20%C2%B7%2012%20rounds-7961db)
+![false alarms](https://img.shields.io/badge/false%20alarms-0%20of%2066%20planted%20errors-238551)
+![law](https://img.shields.io/badge/law%20as%20data-Portaria%20320%2F2026%2F1%20%C2%B7%20RJUE-2d72d2)
+![licence](https://img.shields.io/badge/licence-EUPL--1.2%20%C2%B7%20commercial%20on%20request-1c2127)
+[![try it](https://img.shields.io/badge/try%20it-lei.foaap.app-c87619)](https://lei.foaap.app)
+
+**A Portuguese sovereign LLM, fine-tuned on the urban-licensing law, that reads a municipality's expediente and cannot invent a
+word of it.** We took [AMALIA-9B](https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO), the Portuguese universities' model, and
+fine-tuned it through twelve rounds on Portaria n.º 320/2026/1 and on 188 public municipal documents, under a grammar that only lets
+it answer with what is literally on the page. Then we put the law itself, decomposed and hashed, in charge of the decision.
+Result: 66 planted errors found out of 66, zero false alarms, on test sets frozen before training. **Try it: [lei.foaap.app](https://lei.foaap.app).**
+
 **The técnico's desk for Portuguese urban licensing.** An expediente (the zip a municipality's platform exports) goes in; out comes,
 for every element Portaria n.º 320/2026/1 requires of that request, *present / missing / cannot be decided*, with the file, the page,
 the quoted sentence and the article, plus the draft of the *convite ao aperfeiçoamento*. Public door: **[lei.foaap.app](https://lei.foaap.app)**,
@@ -81,4 +94,11 @@ Built in three weeks, November 2026, by one person and the tools in this reposit
 procedure (comunicação prévia de obras de edificação); the law is national and the next proofs are a second procedure and a second
 municipality as table changes. Not legal advice. Not a decision system: the mayor decides, as the RJUE says.
 
-AMALIA citation: Simplício et al., *AMALIA*, PROPOR 2026.
+## Licence
+
+Code: **EUPL-1.2** (`LICENSE`), the European Union's copyleft licence; running a modified version as a service counts as distribution
+and obliges publishing the changes. A **commercial licence** for vendors who cannot or will not comply is available from FOAAP Lda.
+The fine-tuned AMALIA adapters and the municipal mappings beyond Celorico are not part of this repository.
+
+Model: AMALIA-9B-0626-DPO, Apache 2.0, by the AMALIA LLM project (NOVA, IST, Coimbra, Porto, Minho, FCT). Citation: Simplício et al.,
+*AMALIA*, PROPOR 2026. Law texts: Diário da República, public.
