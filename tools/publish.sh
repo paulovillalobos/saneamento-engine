@@ -12,8 +12,8 @@ git clone -q --no-local . "$OUT"
 cd "$OUT"
 printf 'Claude Opus 5.5 reads the 106 stranger rows whole==>A large general-purpose model reads the 106 stranger rows whole\nClaude Opus 5.5==>a general-purpose model\nClaude Opus==>a general-purpose model\nclaude-opus-5.5==>the reviewer\nCodex==>the second reviewer\n' > /tmp/replace-messages-$$.txt
 "$FR" --path training/data/d1/train.jsonl --path-glob 'exam/pki/*.key' --invert-paths --replace-message /tmp/replace-messages-$$.txt --force >/dev/null
-big=$(git rev-list --objects --all | git cat-file --batch-check='%(objecttype) %(objectsize)' | awk '$1=="blob" && $2>100000000' | wc -l | tr -d ' ')
-names=$(git grep -i -w 'claude\|opus\|codex\|fable\|anthropic\|chatgpt\|openai' -- ':!*.pdf' ':!*.jsonl' ':!*.gz' ':!*.pem' ':!tools/publish.sh' | wc -l | tr -d ' ')
+big=$(git rev-list --objects --all | git cat-file --batch-check='%(objecttype) %(objectsize)' | awk '$1=="blob" && $2>100000000' | wc -l | tr -d ' ' || true)
+names=$(git grep -i -w 'claude\|opus\|codex\|fable\|anthropic\|chatgpt\|openai' -- ':!*.pdf' ':!*.jsonl' ':!*.gz' ':!*.pem' ':!tools/publish.sh' | wc -l | tr -d ' ' || true)
 msgs=$(git log --format='%s%n%b' | grep -ci 'claude\|opus\|codex\|fable\|anthropic' || true)
 [ "$big" = 0 ] && [ "$names" = 0 ] && [ "$msgs" = 0 ] || { echo "refused: blobs>100MB=$big names=$names messages=$msgs"; exit 1; }
 git remote add origin https://github.com/paulovillalobos/saneamento-engine.git
