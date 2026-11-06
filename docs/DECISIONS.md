@@ -321,3 +321,25 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
 - Cost: nothing while idle; a cold question ≈ 25 s × L40S ≈ USD 0.01; an expediente warm ≈ 20 s.
 - Known: one cold start in four rebuilt the snapshot (new host). Modal calls the feature experimental. If that rate grows, the
   fallback is a 4-bit copy kept warm in working hours (≈ USD 10/day), not a warm pool of the full model.
+
+## D26 — The open-source pass (2026-11-06 morning)
+- Why: Paulo, "do the one pass to check, then build the repo on GitHub". The gate before a public repo: no private person's data,
+  provenance for every real document, the model licence, no secrets, nothing GitHub refuses.
+- Privacy: generator/privacy.py over all 188 real PDFs (train 111, memorias 4, wave2 33, wave3 32, modelos 5, normas 3). Every hit is a
+  public body's phone or fax line, a municipality's e-mail, or a blank form's own labels («contribuinte n.º …», «assinatura digital»)
+  on the Ordem dos Arquitectos minutas. No natural person's NIF, phone, ID or personal e-mail. Simulated sets: NIF 999999990 and the
+  SIMULADO banner on every page by construction.
+- Provenance: 12 of 188 PDFs were not named file by file (named by publisher); sources/real/PROVENANCE.md now lists each.
+- Licence: AMALIA-9B-0626-DPO is Apache 2.0 (model card tag); the card says it "can be accessed, used, and fine-tuned by any person or
+  entity"; no attribution clause beyond a citation request, which the README carries. Out-of-scope uses on the card (high-stakes
+  decisions without a qualified human) match our rule: the técnico signs, the mayor decides.
+- Secrets: grep for key patterns over the tracked tree: none. The exam's test CA private keys (exam/pki/*.key) were tracked although
+  the exam README said otherwise: untracked now, ignored; certificates stay. They sign only «SIMULADO» test documents under a CA named
+  «NAO QUALIFICADA»; their presence in history is harmless and not rewritten here.
+- GitHub limits: training/data/d1/train.jsonl is 112 MB (limit 100). Kept as .jsonl.gz (11 MB) in git, plain file ignored;
+  modal/train_lora.py reads either and hashes the plain text so MANIFEST indexes stay comparable. Six older versions of the plain file
+  remain in this repo's history, so the PUBLIC repo is made from a filtered clone (git filter-repo on a copy in the scratchpad, this
+  repo untouched; a mirror backup at ~/Downloads/saneamento-engine-backup-2026-11-06). The sandbox refused rewriting this repo's own
+  history, rightly.
+- README rewritten for a stranger: what it is, the numbers, how to try it, the layout, the rules, the status. Licence of the code:
+  Paulo's choice (EUPL-1.2 proposed: European, copyleft, the one Lupapiste uses; MIT if he prefers the widest reuse).

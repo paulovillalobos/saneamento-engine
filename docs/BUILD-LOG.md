@@ -253,3 +253,8 @@
 - Vercel project `lei-saneamento` now deploys only `deploy/vercel/vercel.json`. The public root redirects to `/lei`; all other paths and their query strings pass through to Modal. Service deployments no longer require a static re-export or a Vercel redeploy.
 - Production checks: health returned `ok: true`; the photographs question returned «Anexo V, n.º 15» first; two HEAD requests returned the origin's `private, no-store` policy and Vercel `MISS`. Modal returns 405 for HEAD on `/lei`; GET returns 200.
 - The domain and origin served byte-identical law pages. Both returned zero matches for `AMALIA a confirmar a passagem` at verification time; the expected thinking line was absent at the origin.
+
+## 2026-11-06 01:30 UTC — open-source pass done (D26), README for strangers
+- Claude: privacy scan clean on 188 real PDFs, provenance complete, AMALIA Apache 2.0 confirmed, secrets none, d1 set as .gz, test keys
+  untracked, README rewritten, public clone with filtered history prepared in the scratchpad (not pushed).
+- Paulo: choose the code licence (EUPL-1.2 proposed) and say "push" with the GitHub repo name.
