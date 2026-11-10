@@ -258,3 +258,7 @@
 - Built: privacy scan clean on 188 real PDFs, provenance complete, AMALIA Apache 2.0 confirmed, secrets none, d1 set as .gz, test keys
   untracked, README rewritten, public clone with filtered history prepared in the scratchpad (not pushed).
 - Paulo: choose the code licence (EUPL-1.2 proposed) and say "push" with the GitHub repo name.
+
+## 2026-11-10 night — lei.foaap.app fixed for a non-técnico reader (D27)
+- Audit: 4/10 right first answers, one dangerous «Não exigido», answer swapping, jargon. Fixed search (10/10 + 10/10 unseen), engine
+  answer shown with AMALIA as confirmation, page rewritten, deployed, checked on a phone. Before the Celorico vice-president email.

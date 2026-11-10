@@ -1,82 +1,91 @@
-<!doctype html><html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pergunte à lei</title><link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"><link rel="stylesheet" href="https://unpkg.com/@blueprintjs/core@5.10.5/lib/css/blueprint.css"><link rel="stylesheet" href="https://unpkg.com/@blueprintjs/icons@5.9.0/lib/css/blueprint-icons.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500;600;700&display=swap"><style>__CSS__
-</style></head><body><div class="frame">
-<div class="card"><div class="hd band"><div class="tile purple"><span class="bp5-icon-standard bp5-icon-help"></span></div><div><h2>Pergunte à lei</h2><div class="sub">A pergunta de um técnico, nas suas palavras; a resposta são as passagens da lei, citadas letra a letra, e a condição em que se aplicam.</div></div>
-<div class="right"><span class="bp5-icon-standard bp5-icon-cog"></span> Portaria n.º 320/2026/1 · RJUE</div></div>
-<div class="body"><div class="two">
-<div>
-  <div class="section" style="padding-left:0;padding-top:0"><h3><span class="bp5-icon-standard bp5-icon-chat"></span> Pergunta do técnico</h3><div class="sub">Escreva como falaria com um colega. O motor procura nas passagens da lei decomposta; AMALIA escolhe a passagem; o código diz se é exigido sempre, só em certa condição, ou não.</div></div>
-  <div class="card" style="padding:16px 18px"><textarea class="q" id="q" placeholder="Ex.: preciso de projeto de gás numa moradia unifamiliar?"></textarea>
-    <div style="display:flex;justify-content:flex-end;margin-top:12px"><button class="btn blue" onclick="ask()"><span class="bp5-icon-standard bp5-icon-arrow-right"></span> Submeter</button></div></div>
-  <div class="section" style="padding-left:0;margin-top:10px"><h3><span class="bp5-icon-standard bp5-icon-lightning"></span> Resposta</h3></div>
-  <div class="card" id="answer"><div class="empty"><span class="ic bp5-icon-large bp5-icon-help"></span>Escreva uma pergunta e carregue em «Submeter».</div></div>
-  <div class="card" style="margin-top:18px"><div class="hd"><div class="tile grey"><span class="bp5-icon-standard bp5-icon-book"></span></div><div><h2 style="font-size:17px">Passagens encontradas</h2><div class="sub">As passagens da lei mais próximas da pergunta</div></div><div class="pager" id="pager"></div></div>
-    <div class="body" id="passages"><div class="empty"><span class="ic bp5-icon-large bp5-icon-refresh"></span>Nenhuma passagem ainda.</div></div></div>
+<!doctype html><html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pergunte à lei · FOAAP</title><meta name="description" content="Pergunte o que a lei exige num pedido de comunicação prévia de obras de edificação. A resposta é a própria lei, citada palavra por palavra.">__HEAD__<style>__CSS__
+.page{max-width:880px;margin:0 auto;padding:20px 16px 40px}
+.brand{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:4px 2px 14px;font-weight:700}
+.brand .mark{display:flex;align-items:center;gap:10px;font-size:15px;letter-spacing:.04em}
+.brand .mark i{width:26px;height:26px;border-radius:6px;background:var(--purple);display:inline-block}
+.brand a{font-weight:600;font-size:14px}
+.hero{background:#e8e4f3;border:1px solid var(--line);border-radius:6px;padding:22px 22px 18px}
+.hero h1{font-size:26px;line-height:1.2;margin:0 0 6px}
+.hero p{margin:0;font-size:16px;font-weight:500}
+.ask{margin-top:16px;background:#fff;border:1px solid var(--line);border-radius:6px;padding:16px}
+.ask textarea{width:100%;min-height:84px;border:1px solid var(--line);border-radius:4px;padding:12px 14px;font:500 17px/1.45 "Source Sans 3",system-ui,sans-serif;resize:vertical}
+.ask .row{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:10px;flex-wrap:wrap}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{border:1px solid var(--line);background:#f6f7f9;border-radius:999px;padding:6px 12px;font:600 14px "Source Sans 3",sans-serif;color:var(--ink);cursor:pointer}
+.chip:hover{border-color:var(--blue);color:var(--blue)}
+.think{display:none;align-items:center;gap:12px;margin-top:18px;padding:14px 16px;border:1px solid var(--line);border-radius:6px;background:#fff;font-weight:600;font-size:16px}
+.dots{display:inline-flex;gap:5px}.dots i{width:8px;height:8px;border-radius:50%;background:var(--purple);animation:pulse 1.2s infinite ease-in-out}.dots i:nth-child(2){animation-delay:.2s}.dots i:nth-child(3){animation-delay:.4s}
+@keyframes pulse{0%,80%,100%{opacity:.25;transform:scale(.8)}40%{opacity:1;transform:scale(1)}}
+.ans{display:none;margin-top:18px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--purple);border-radius:6px;padding:18px 20px}
+.ans .verdict{font-size:22px;font-weight:700;margin:2px 0 10px}
+.ans .verdict.sempre{color:var(--green)}.ans .verdict.condicional{color:var(--orange)}.ans .verdict.nao{color:var(--red)}
+.ans .where{font-size:15px;font-weight:700}
+.law{display:block;margin:10px 0;padding:12px 14px;background:#f6f7f9;border-radius:4px;font-size:17px;font-weight:500;line-height:1.5;quotes:none}
+.ctx{font-size:15px;font-weight:600;margin-top:4px}.cond{font-size:16px;margin-top:6px}.why{font-size:14px;margin-top:8px}
+.who{display:inline-block;margin-top:12px;font-size:13px;font-weight:700;color:var(--purple);background:var(--purple-bg);padding:3px 10px;border-radius:3px}
+.others{margin-top:18px}.others h3{font-size:15px;margin:0 0 8px}
+.other{background:#fff;border:1px solid var(--line);border-radius:6px;padding:12px 14px;margin:8px 0}
+.other .l{font-weight:700;font-size:14px}.other .t{font-size:15px;font-weight:500;margin-top:4px}
+.how{margin-top:26px;background:#fff;border:1px solid var(--line);border-radius:6px;padding:16px 18px;font-size:15px}
+.how h3{font-size:16px;margin:0 0 8px}.how ol{margin:0;padding-left:20px}.how li{margin:4px 0}
+.foot{margin-top:18px;font-size:14px;font-weight:600}
+</style></head><body><div class="page">
+<div class="brand"><span class="mark"><i></i>FOAAP</span><a href="https://github.com/paulovillalobos/saneamento-engine">código aberto ↗</a></div>
+<div class="hero"><h1>Pergunte à lei</h1><p>O que é preciso entregar numa comunicação prévia de obras de edificação? Pergunte nas suas palavras. A resposta é a própria lei, citada palavra por palavra.</p></div>
+<div class="ask">
+  <textarea id="q" placeholder="Ex.: preciso de projeto de gás numa moradia?"></textarea>
+  <div class="row"><span style="font-size:14px;font-weight:600">Portaria n.º 320/2026/1 e RJUE</span><button class="btn blue" onclick="ask()"><span class="bp5-icon-standard bp5-icon-arrow-right"></span> Perguntar</button></div>
+  <div class="chips" id="chips"></div>
 </div>
-<div class="card"><div class="hd"><div class="tile purple"><span class="bp5-icon-standard bp5-icon-lightbulb"></span></div><div><h2 style="font-size:19px">Configuração</h2><div class="sub">O que conta como exigido, e quem responde.</div></div></div>
-  <div class="body">
-   <div class="section" style="padding:0 0 6px"><h3><span class="bp5-icon-standard bp5-icon-user"></span> Pedido</h3><div class="sub">A lista do Anexo V que conta para este pedido.</div></div>
-   <div class="kv"><div class="k">Procedimento</div><div class="v">Comunicação prévia de obras de edificação (CP/CPEDI)</div><div class="k">Conta</div><div class="v">Anexo V n.º 27 + elementos comuns n.os 5 a 17; Anexo VI e VII; RJUE</div></div>
-   <div class="section" style="padding:8px 0 6px"><h3><span class="bp5-icon-standard bp5-icon-globe"></span> Quem responde</h3><div class="sub">O código decide; o leitor escolhe a passagem.</div></div>
-   <div class="kv"><div class="k">Passagens</div><div class="v">pesquisa no texto decomposto (Portaria 320/2026/1 e RJUE)</div><div class="k">Exigido</div><div class="v">lido pelo código da própria passagem (regra do pacote cp-edificacao)</div><div class="k">AMALIA</div><div class="v"><label><input type="checkbox" id="leitor" checked> confirma a passagem (só pode citar uma das candidatas)</label></div></div>
-   <div class="section" style="padding:8px 0 6px"><h3><span class="bp5-icon-standard bp5-icon-manual"></span> Exemplos</h3></div><div class="kv"><div class="k">Exemplo</div><div class="v"><a href="#" onclick="event.preventDefault();ask(this.textContent)">Preciso de projeto de gás numa moradia unifamiliar?</a></div></div><div class="kv"><div class="k">Exemplo</div><div class="v"><a href="#" onclick="event.preventDefault();ask(this.textContent)">O levantamento topográfico é sempre obrigatório?</a></div></div><div class="kv"><div class="k">Exemplo</div><div class="v"><a href="#" onclick="event.preventDefault();ask(this.textContent)">A planta de implantação tem de ir em DWG?</a></div></div><div class="kv"><div class="k">Exemplo</div><div class="v"><a href="#" onclick="event.preventDefault();ask(this.textContent)">Quando é que preciso de pareceres de entidades externas?</a></div></div><div class="kv"><div class="k">Exemplo</div><div class="v"><a href="#" onclick="event.preventDefault();ask(this.textContent)">Qual é o prazo do convite ao aperfeiçoamento?</a></div></div><div class="kv"><div class="k">Exemplo</div><div class="v"><a href="#" onclick="event.preventDefault();ask(this.textContent)">Fotografias do terreno são obrigatórias?</a></div></div>
-   <button class="btn green" style="margin-top:8px" onclick="ask($('q').value)"><span class="bp5-icon-standard bp5-icon-plus"></span> Perguntar</button>
-  </div></div>
-</div></div></div>
-<p style="margin:14px 4px"><b>O leitor lê, o código decide, o técnico assina.</b> Nada aqui é parecer jurídico: são as palavras da lei e a condição que elas próprias põem. · <a href="/expedientes">expedientes</a></p>
+<div class="think" id="think"><span class="dots"><i></i><i></i><i></i></span><span id="thinktext">A AMALIA está a ler a lei…</span></div>
+<div class="ans" id="answer"></div>
+<div class="others" id="others"></div>
+<div class="how"><h3>Como funciona</h3><ol>
+  <li>O motor procura a pergunta na Portaria e no RJUE, decompostos passagem a passagem.</li>
+  <li>A AMALIA, o modelo de língua português, afinado por nós para esta lei, lê as mesmas passagens e indica qual responde. Quando concorda com o motor, a resposta leva o selo «confirmada pela AMALIA». Só pode citar a lei palavra por palavra: não inventa.</li>
+  <li>O código diz se o elemento é exigido sempre, só em certa condição, ou não, a partir do texto da própria lei.</li>
+</ol><p style="margin:10px 0 0">Não é parecer jurídico: são as palavras da lei e as condições que ela própria põe.</p></div>
+<div class="foot">FOAAP Lda · Porto · <a href="mailto:paulo@foaap.app">paulo@foaap.app</a></div>
 </div>
 <script>
 const INLINE=__DATA__;const $=id=>document.getElementById(id);const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const TAG={sempre:["Exigido sempre","sempre"],condicional:["Exigido em certa condição","condicional"],nao:["Não exigido neste pedido","nao"],"—":["Não é um elemento: lê-se","n"]};
-let page=0, R=null;
-let requestNumber=0;
-function pass(c,picked){const [t,k]=TAG[c.exigido]||[c.exigido,"n"];return `<div class="pass ${picked?"pick":""}"><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class="lbl">${esc(c.label)}</span><span class="act">${esc(c.act)}</span><span class="tag ${k}">${t}</span>${picked?'<span class="tag blue">escolhida por AMALIA</span>':''}</div><q>${esc(c.text)}</q>${c.condicao?`<div><b>Condição:</b> «${esc(c.condicao)}»</div>`:""}<div style="font-size:13px">${esc(c.porque)}</div></div>`}
-function render(){const ps=R.passagens||[];const per=3,n=Math.max(1,Math.ceil(ps.length/per));page=Math.min(page,n-1);
- $('pager').innerHTML=`<a href="#" onclick="event.preventDefault();page=Math.max(0,page-1);render()">‹</a> <b>${page+1}</b> / ${n} <a href="#" onclick="event.preventDefault();page=Math.min(${n-1},page+1);render()">›</a>`;
- $('passages').innerHTML=ps.length?ps.slice(page*per,page*per+per).map(c=>pass(c,R.escolhida&&R.escolhida.id===c.id)).join(""):'<div class="empty"><span class="ic bp5-icon-large bp5-icon-refresh"></span>Nenhuma passagem encontrada.</div>';
- const top=R.escolhida||ps[0];
- $('answer').innerHTML=top?`<div class="body"><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:8px"><span class="tag ${(TAG[top.exigido]||["","n"])[1]}" style="font-size:15px;padding:5px 12px">${(TAG[top.exigido]||[top.exigido])[0]}</span>${R.escolhida?'<span class="tag blue">passagem confirmada por AMALIA</span>':(R.leitor==="a confirmar"?'':(R.leitor?'<span class="tag n">'+esc(R.leitor)+'</span>':''))}</div>
-  <div style="font-size:17px;font-weight:700">${esc(top.label)} <span style="font-weight:500">· ${esc(top.act)}</span></div><q style="display:block;margin:10px 0;font-size:16px;font-weight:500">«${esc(top.text)}»</q>${top.condicao?`<div><b>Condição:</b> «${esc(top.condicao)}»</div>`:""}<div style="margin-top:8px;font-size:13.5px">${esc(top.porque)}</div></div>`:'<div class="empty">Sem resposta.</div>'}
-async function fetchResult(url, options={}) {
-  const response = await fetch(url, {...options, signal:AbortSignal.timeout(60000)});
-  if (!response.ok) throw Error("HTTP " + response.status);
-  return response.json();
-}
-async function poll(id, ticket) {
-  try {
-  const deadline = performance.now() + 300000;
-  while (performance.now() < deadline) {
-    await new Promise(resolve => setTimeout(resolve, 3000));
-    if (ticket !== requestNumber) return;
-    const result = await fetchResult('/v1/lei/' + encodeURIComponent(id), {cache:'no-store'});
-    if (ticket !== requestNumber) return;
-    if (result.leitor !== 'a confirmar') { R=result; render(); return; }
-  }
-  throw Error('Sem confirmação dentro do tempo de espera');
-  } finally { }
-}
-async function ask(question) {
-  const q = (question || $('q').value).trim();
-  if (!q) { $('q').focus(); return; }
-  const ticket = ++requestNumber;
-  $('q').value=q;
-  R=null; page=0;
-  $('pager').textContent='';
-  $('passages').textContent='';
-  $('answer').innerHTML='<div class="empty">A procurar passagens…</div>';
-  if (INLINE) { R=INLINE; render(); return; }
-  try {
-    const result = await fetchResult('/v1/lei',{method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({pergunta:q,leitor:$('leitor').checked})});
-    if (ticket !== requestNumber) return;
-    R=result; render();
-    if (R.leitor === 'a confirmar') {
-      await poll(R.id,ticket);
-    }
-  } catch (error) {
-    if (ticket !== requestNumber) return;
-    if (R) { R.leitor='Sem confirmação do leitor'; render(); }
-    else { $('answer').textContent='Não foi possível pesquisar. Tente novamente.'; }
-  }
-}
-if(INLINE){$('q').value=INLINE.pergunta;R=INLINE;render()}
+const EXAMPLES=["Preciso de projeto de gás numa moradia?","O seguro do arquiteto é obrigatório?","Quanto tempo a câmara tem para responder?","As plantas podem ir em PDF?","A estimativa de custo da obra é obrigatória?","Preciso de licença para fazer um muro?"];
+const VERDICT={sempre:"Exigido",condicional:"Exigido em certa condição",nao:"Não exigido neste pedido","—":"Regra geral da lei"};
+const WAIT_MS=40000, LATE_MS=240000;
+let R=null, requestNumber=0, slowTimer=null;
+$('chips').innerHTML=EXAMPLES.map(e=>`<button class="chip" onclick='ask(${JSON.stringify(e)})'>${esc(e)}</button>`).join("");
+$('q').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();ask()}});
+function thinking(on){clearTimeout(slowTimer);$('think').style.display=on?'flex':'none';$('thinktext').textContent='A AMALIA está a ler a lei…';
+ if(on)$('think').scrollIntoView({behavior:'smooth',block:'center'});
+ if(on)slowTimer=setTimeout(()=>{$('thinktext').textContent='A AMALIA está a ler a lei… a primeira pergunta do dia acorda-a, demora cerca de meio minuto.'},12000)}
+function card(top,confirmed,note){const k=top.exigido;return `<div class="where">${esc(top.label)} · ${esc(top.act)}</div>
+ <div class="verdict ${esc(k)}">${esc(VERDICT[k]||k)}</div>
+ ${top.contexto&&top.contexto.length<=160?`<div class="ctx">${esc(top.contexto)}</div>`:""}<span class="law">${esc(top.text)}</span>${top.condicao?`<div class="cond"><b>Condição:</b> ${esc(top.condicao)}</div>`:""}
+ <div class="why">${esc(top.porque)}</div>${confirmed?'<span class="who">Passagem confirmada pela AMALIA</span>':(note?`<div class="why"><b>${esc(note)}</b></div>`:'')}`}
+function showAnswer(confirmed,note){thinking(false);const ps=R.passagens||[];const top=ps[0];   // the engine's answer is the answer; AMALIA confirms it or not
+ const pick=R.escolhida;confirmed=!!(pick&&top&&pick.id===top.id);
+ if(pick&&top&&pick.id!==top.id)note='A AMALIA indicou outra passagem como resposta: está em baixo, em «Outras passagens».';
+ if(!top){$('answer').style.display='block';$('answer').innerHTML='<div class="where">Nenhuma passagem da lei responde a esta pergunta.</div><div class="why">Experimente com outras palavras, ou com um dos exemplos.</div>';$('others').innerHTML='';return}
+ $('answer').style.display='block';$('answer').innerHTML=card(top,confirmed,note);
+ let rest=ps.filter(p=>p.id!==top.id);if(pick&&pick.id!==top.id)rest=[pick].concat(rest.filter(p=>p.id!==pick.id));rest=rest.slice(0,3);
+ $('others').innerHTML=rest.length?`<h3>Outras passagens próximas</h3>`+rest.map(p=>`<div class="other"><div class="l">${esc(p.label)} · ${esc(VERDICT[p.exigido]||p.exigido)}${pick&&p.id===pick.id&&pick.id!==top.id?' · <span style="color:var(--purple)">indicada pela AMALIA</span>':''}</div><div class="t">${esc(p.text)}</div></div>`).join(""):''}
+function showCandidates(){const ps=(R.passagens||[]).slice(0,4);
+ $('others').innerHTML=ps.length?`<h3>A AMALIA está a escolher entre estas passagens</h3>`+ps.map(p=>`<div class="other"><div class="l">${esc(p.label)}</div><div class="t">${esc(p.text)}</div></div>`).join(""):''}
+async function fetchResult(url,options={}){const r=await fetch(url,{...options,signal:AbortSignal.timeout(60000)});if(!r.ok)throw Error("HTTP "+r.status);return r.json()}
+async function poll(id,ticket){const t0=performance.now();let shown=false;
+ while(performance.now()-t0<LATE_MS){await new Promise(z=>setTimeout(z,2500));if(ticket!==requestNumber)return;
+  let res;try{res=await fetchResult('/v1/lei/'+encodeURIComponent(id),{cache:'no-store'})}catch(e){continue}
+  if(ticket!==requestNumber)return;
+  if(res.leitor!=='a confirmar'){R=res;showAnswer(false,R.escolhida?null:'A AMALIA não confirmou esta passagem.');return}
+  if(!shown&&performance.now()-t0>WAIT_MS){shown=true;showAnswer(false,'A AMALIA ainda está a acordar; a confirmação aparece aqui quando chegar.')}}
+ if(ticket===requestNumber&&!shown)showAnswer(false,'A AMALIA não respondeu a tempo; esta é a resposta do motor.')}
+async function ask(question){const q=(question||$('q').value).trim();if(!q){$('q').focus();return}
+ const ticket=++requestNumber;$('q').value=q;R=null;$('answer').style.display='none';$('others').innerHTML='';
+ if(INLINE){R=INLINE;showAnswer(!!R.escolhida);return}
+ thinking(true);
+ try{R=await fetchResult('/v1/lei',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({pergunta:q,leitor:true})});
+  if(ticket!==requestNumber)return;
+  if(R.leitor==='a confirmar'){showCandidates();await poll(R.id,ticket)}else{showAnswer(false,R.leitor?'Resposta do motor: '+R.leitor+'.':null)}}
+ catch(e){if(ticket!==requestNumber)return;if(R&&R.passagens)showAnswer(false,'Resposta do motor: a AMALIA não está disponível agora.');else{thinking(false);$('answer').style.display='block';$('answer').innerHTML='<div class="where">Não foi possível pesquisar. Tente novamente.</div>'}}}
+if(INLINE){$('q').value=INLINE.pergunta;R=INLINE;showAnswer(!!R.escolhida)}
 </script></body></html>

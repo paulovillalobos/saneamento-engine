@@ -75,7 +75,7 @@ def _process(muni, eid, files_dir, use_reader, label):
     return meta
 
 
-@app.function(volumes={"/store": store}, timeout=900)
+@app.function(volumes={"/store": store}, timeout=900, scaledown_window=600)   # stays up 10 min after a question: the next one skips the cold start
 def answer_law(qid: str):
     """AMALIA picks the passage among the code's candidates (D0 «exigencia» task); the pick counts only if the checker accepts it."""
     sys.path.insert(0, REMOTE)
@@ -85,7 +85,7 @@ def answer_law(qid: str):
     r = json.loads(f.read_text(encoding="utf-8"))
     try:
         L = law_search.law()
-        cands = r["passagens"]
+        cands = r["passagens"][:5]   # the five best: a longer list lets the reader drift to a neighbouring procedure (2026-11-10)
         prompt = L.prompt(r["pergunta"], cands)
         reader = modal.Cls.from_name("saneamento-reader-warm", "Reader")()
         out = reader.answer.remote([{"key": qid, "task": "exigencia", "prompt": prompt}], LORA, False)

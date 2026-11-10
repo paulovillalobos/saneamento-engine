@@ -32,7 +32,7 @@ class Search(unittest.TestCase):
         self.assertTrue(any("art11" in c["id"] for c in L.search("prazo para o convite ao aperfeiçoamento")[:3]))
 
     def test_other_list_is_not_required(self):
-        c = next(c for c in L.search("projeto de instalação de gás") if L.p[c["id"]]["path"] == "anexo-V.26.a.iv")
+        c = L.card("portaria-320-2026-1:anexo-V.26.a.iv")   # another procedure's list: ranked down in search since 2026-11-10, still «não» when shown
         self.assertEqual(c["exigido"], "nao")
 
     def test_prompt_and_check(self):
@@ -55,6 +55,35 @@ class Search(unittest.TestCase):
         self.assertFalse(L.in_scope("portaria-320-2026-1:anexo-V.26.a.iv", "CP/CPEDI"))
         self.assertEqual(LS.label_of("anexo-V.27.i.iv"), "Anexo V, n.º 27, alínea i), subalínea iv)")
         self.assertGreater(len(L.p), 600)
+
+
+
+class PlainQuestions(unittest.TestCase):
+    """Ten questions in a person's words (2026-11-10 audit of lei.foaap.app: 4/10 right before the fix). The top passage must be
+    one of the accepted ones, and an element of the CPEDI list must never be called «não exigido»."""
+    CASES = [("o seguro do arquiteto é obrigatório?", {"anexo-V.14"}),
+             ("preciso de licença para fazer um muro?", {"anexo.art6-A.1.b"}),
+             ("quanto tempo a câmara tem para responder?", {"anexo.art11.2", "anexo.art11.5", "anexo.art23.1", "anexo.art23.1.a", "anexo.art20.3.a", "anexo.art35.10"}),
+             ("preciso de projeto de gás numa moradia?", {"anexo-V.27.i.iv"}),
+             ("o que tenho de entregar para construir uma casa?", {"anexo-V.27"}),
+             ("preciso de levantamento topográfico?", {"anexo-V.7", "anexo-V.8"}),
+             ("a estimativa de custo da obra é obrigatória?", {"anexo-V.27.f"}),
+             ("posso entregar as plantas em pdf?", {"anexo-VI.1.a"}),
+             ("termo de responsabilidade do diretor de obra", {"anexo-V.27.k"}),
+             ("fotografias do terreno", {"anexo-V.15"})]
+
+    def test_ten(self):
+        for q, want in self.CASES:
+            top = L.search(q)[0]
+            self.assertIn(L.p[top["id"]]["path"], want, q)
+
+    def test_estimate_is_required(self):
+        top = L.search("a estimativa de custo da obra é obrigatória?")[0]
+        self.assertEqual(top["exigido"], "sempre")
+
+    def test_specialty_projects_inherit_the_group_condition(self):
+        top = L.search("o projeto de eletricidade é obrigatório?")[0]
+        self.assertEqual((top["exigido"], top["condicao"]), ("condicional", "em função do tipo de obra a executar"))
 
 
 if __name__ == "__main__":

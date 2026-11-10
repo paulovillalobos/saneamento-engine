@@ -343,3 +343,23 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
   history, rightly.
 - README rewritten for a stranger: what it is, the numbers, how to try it, the layout, the rules, the status. Licence of the code:
   Paulo's choice (EUPL-1.2 proposed: European, copyleft, the one Lupapiste uses; MIT if he prefers the widest reuse).
+
+## D27 — «Pergunte à lei» for a reader who is not a técnico (2026-11-10 night)
+- Why: an audit before sending the link to a vice-president. On a phone, ten plain questions: the first answer shown was right 4/10;
+  «a estimativa de custo da obra é obrigatória?» answered «Não exigido» (V.34.f, another procedure's list); the answer silently changed
+  when AMALIA landed ~35 s later; the copy was jargon («lei decomposta», «regra do pacote»); no name, no contact.
+- Search (engine/law_search.py): question words swapped for the law's before stemming («responder» no longer matches
+  «responsabilidade»; «muro» → «vedação, escassa relevância»); plain stems expanded to the law's at 0.6 weight; each clause inherits its
+  parent and grandparent's words at half weight; in-scope ×1.6, other Annex V lists ×0.35, RJUE definitions ×0.6, prior-information
+  articles 14.º–17.º ×0.5. Cards inherit the condition of the clause that groups them (V.27.i «em função do tipo de obra a executar»
+  now governs every specialty project: they were wrongly «Exigido sempre»); RJUE rules are «Regra geral da lei», not «exigido»; each
+  card carries the parent sentence as context. Ten plain questions are a test (tests/test_law_search.py PlainQuestions): 10/10, and ten
+  unseen ones 10/10 after the contractor-licence swap.
+- Reader: on the same ten questions AMALIA's pick disagreed with the engine 3/10 and the engine was right each time (works director's
+  insurance for the architect's; construction details for «what do I deliver»; an RJUE line for the CPEDI estimate). So the shown answer
+  is the engine's; «confirmada pela AMALIA» only when she picks the same passage; a different pick is listed below, labelled. She gets
+  the top five candidates, not eight. Worker scaledown 600 s. Measured live: 6–15 s per question warm; a fully cold first question
+  takes longer, and the page shows the engine's answer at 40 s and keeps listening.
+- Page (engine/static/lei.html): FOAAP name, plain Portuguese for an owner or an official, examples as chips under the box (first
+  screen on a phone), Enter to ask, one «A AMALIA está a ler a lei…» line scrolled into view (no counter), no doubled quotes, «Como
+  funciona» in three lines, contact in the footer. The configuration panel and the key-only link are gone.
