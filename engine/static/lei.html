@@ -19,6 +19,7 @@
 .ans{display:none;margin-top:18px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--purple);border-radius:6px;padding:18px 20px}
 .ans .verdict{font-size:22px;font-weight:700;margin:2px 0 10px}
 .ans .verdict.sempre{color:var(--green)}.ans .verdict.condicional{color:var(--orange)}.ans .verdict.nao{color:var(--red)}
+.ans .verdict.proibido{color:#fff;background:var(--red);display:inline-block;padding:4px 12px;border-radius:4px}.ans .verdict.isento{color:#fff;background:var(--green);display:inline-block;padding:4px 12px;border-radius:4px}
 .ans .where{font-size:15px;font-weight:700}
 .law{display:block;margin:10px 0;padding:12px 14px;background:#f6f7f9;border-radius:4px;font-size:17px;font-weight:500;line-height:1.5;quotes:none}
 .ctx{font-size:15px;font-weight:600;margin-top:4px}.cond{font-size:16px;margin-top:6px}.why{font-size:14px;margin-top:8px}
@@ -43,14 +44,14 @@
 <div class="how"><h3>Como funciona</h3><ol>
   <li>O motor procura a pergunta na Portaria e no RJUE, decompostos passagem a passagem.</li>
   <li>A AMALIA, o modelo de língua português, afinado por nós para esta lei, lê as mesmas passagens e indica qual responde. Quando concorda com o motor, a resposta leva o selo «confirmada pela AMALIA». Só pode citar a lei palavra por palavra: não inventa.</li>
-  <li>O código diz se o elemento é exigido sempre, só em certa condição, ou não, a partir do texto da própria lei.</li>
+  <li>O código diz, a partir do texto da própria lei, se o elemento é exigido sempre, só em certa condição, ou não; se a obra está isenta; e se é um dos documentos que a lei proíbe a câmara de pedir (RJUE, artigo 9.º, n.º 12).</li>
 </ol><p style="margin:10px 0 0">Não é parecer jurídico: são as palavras da lei e as condições que ela própria põe.</p></div>
 <div class="foot">FOAAP Lda · Porto · <a href="mailto:paulo@foaap.app">paulo@foaap.app</a></div>
 </div>
 <script>
 const INLINE=__DATA__;const $=id=>document.getElementById(id);const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const EXAMPLES=["Preciso de projeto de gás numa moradia?","O seguro do arquiteto é obrigatório?","Quanto tempo a câmara tem para responder?","As plantas podem ir em PDF?","A estimativa de custo da obra é obrigatória?","Preciso de licença para fazer um muro?"];
-const VERDICT={sempre:"Exigido",condicional:"Exigido em certa condição",nao:"Não exigido neste pedido","—":"Regra geral da lei"};
+const EXAMPLES=["Preciso de projeto de gás numa moradia?","A câmara pode exigir o plano de segurança e saúde?","Quando posso começar a obra?","Preciso de licença para mudar as janelas?","A estimativa de custo da obra é obrigatória?","Preciso de licença para fazer um muro?"];
+const VERDICT={sempre:"Exigido",condicional:"Exigido em certa condição",nao:"Não exigido neste pedido",proibido:"A câmara não pode exigir",isento:"Isento de licença e de comunicação prévia","—":"Regra geral da lei"};
 const WAIT_MS=40000, LATE_MS=240000;
 let R=null, requestNumber=0, slowTimer=null;
 $('chips').innerHTML=EXAMPLES.map(e=>`<button class="chip" onclick='ask(${JSON.stringify(e)})'>${esc(e)}</button>`).join("");
@@ -60,7 +61,7 @@ function thinking(on){clearTimeout(slowTimer);$('think').style.display=on?'flex'
  if(on)slowTimer=setTimeout(()=>{$('thinktext').textContent='A AMALIA está a ler a lei… a primeira pergunta do dia acorda-a, demora cerca de meio minuto.'},12000)}
 function card(top,confirmed,note){const k=top.exigido;return `<div class="where">${esc(top.label)} · ${esc(top.act)}</div>
  <div class="verdict ${esc(k)}">${esc(VERDICT[k]||k)}</div>
- ${top.contexto&&top.contexto.length<=160?`<div class="ctx">${esc(top.contexto)}</div>`:""}<span class="law">${esc(top.text)}</span>${top.condicao?`<div class="cond"><b>Condição:</b> ${esc(top.condicao)}</div>`:""}
+ ${top.contexto&&(top.contexto.length<=240||k==="proibido"||k==="isento")?`<div class="ctx">${esc(top.contexto)}</div>`:""}<span class="law">${esc(top.text)}</span>${top.condicao?`<div class="cond"><b>${k==="isento"?"Atenção":"Condição"}:</b> ${esc(top.condicao)}</div>`:""}
  <div class="why">${esc(top.porque)}</div>${confirmed?'<span class="who">Passagem confirmada pela AMALIA</span>':(note?`<div class="why"><b>${esc(note)}</b></div>`:'')}`}
 function showAnswer(confirmed,note){thinking(false);const ps=R.passagens||[];const top=ps[0];   // the engine's answer is the answer; AMALIA confirms it or not
  const pick=R.escolhida;confirmed=!!(pick&&top&&pick.id===top.id);

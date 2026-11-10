@@ -363,3 +363,22 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
 - Page (engine/static/lei.html): FOAAP name, plain Portuguese for an owner or an official, examples as chips under the box (first
   screen on a phone), Enter to ask, one «A AMALIA está a ler a lei…» line scrolled into view (no counter), no doubled quotes, «Como
   funciona» in three lines, contact in the footer. The configuration panel and the key-only link are gone.
+
+## D28 — The law's own «no» and «isento», and the comunicação prévia's own articles (2026-11-10, late)
+- Why: a second check with twenty new questions and a field comparison. The worst answer: «preciso de plano de segurança e saúde?»
+  showed RJUE 9.º n.º 12 g) as «Regra geral da lei, Condição: quando aplicável» — the parent sentence («não pode … nem os municípios
+  podem determinar a apresentação de:») was hidden for length, so a forbidden document read as required. «Quanto tempo a câmara tem
+  para responder?» (an example button) answered with the licença's deadlines; 11.º (saneamento) covers PIP and licença only.
+  A 25-letter floor had dropped short rules: «a) As obras de conservação;», «c) A caderneta predial;», «V.27.c.i Planta de cedências».
+- Verdicts from the text: RJUE 9.º n.º 12 items → «A câmara não pode exigir» (proibido); 6.º n.º 1 items → «Isento de licença e de
+  comunicação prévia»; 6.º-A n.º 1 items → isento by 6.º n.º 1 c), with the 6.º-A n.º 2 exception shown as «Atenção». The parent
+  sentence is always shown for these.
+- Search: short rules kept (only headings, «[Revogado.]», article titles and Annex VII form fields dropped); in CP scope 34.º/35.º/80.º
+  ×1.4, licença 18.º–27.º ×0.5, 11.º ×0.5; TOPICS (six regex patterns on the question → the articles that answer, ×2.5 with a floor)
+  for: deadline/approval → 34.º n.º 2, 35.º n.º 10; start of works → 80.º n.º 2, 34.º n.º 2; missing/correction → 35.º n.º 9; who
+  signs → 10.º n.º 3, V.27.k; not complying → 102.º n.º 2, 35.º n.º 8; «a câmara pode pedir/exigir» → the 9.º n.º 12 list. Search
+  hints only; every verdict still comes from the passage. Word swaps for começar, pintar, janelas, caderneta, aperfeiçoamento.
+- Tests: deadline accepted set narrowed to 34.º n.º 2 / 35.º n.º 10; «convite ao aperfeiçoamento» → 35.º n.º 9; fifteen more cases
+  (test_second_round), short-rule and no-revoked tests. 30 tests green.
+- Page: example buttons now include «A câmara pode exigir o plano de segurança e saúde?», «Quando posso começar a obra?», «Preciso de
+  licença para mudar as janelas?»; red and green verdict badges for proibido and isento.

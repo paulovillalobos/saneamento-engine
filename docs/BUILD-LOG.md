@@ -262,3 +262,7 @@
 ## 2026-11-10 night — lei.foaap.app fixed for a non-técnico reader (D27)
 - Audit: 4/10 right first answers, one dangerous «Não exigido», answer swapping, jargon. Fixed search (10/10 + 10/10 unseen), engine
   answer shown with AMALIA as confirmation, page rewritten, deployed, checked on a phone. Before the Celorico vice-president email.
+
+## 2026-11-10 late — second check and field comparison (D28)
+- Field: ours 6, Vergunningcheck (NL) 5, UK Planning Portal 4, Coimbra 3–4, DR LIA ~3, Lupapiste 3, NoPaper/ePaper 2, gov.pt assistant 1.
+- Fixed: forbidden-document verdict, exemption verdict, comunicação prévia articles over licença ones, short rules searchable.

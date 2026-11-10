@@ -37,6 +37,18 @@ EXPAND = {
     "fotogr": ("regist", "fotogr"), "fotos": ("regist", "fotogr"),
     "custo": ("estima",), "orcame": ("estima", "custo"),
 }
+# Questions a person asks about the comunicação prévia itself, where a bag of words drifts to the licença's deadlines: each pattern
+# (on the folded question) names the articles that answer it, ranked up ×2.5. Search hints only — the verdict still comes from the
+# passage. Every pattern has a case in tests/test_law_search.py.
+TOPICS = [
+    (r"(quanto tempo|prazo|demora|quando).*(respond|respost|aprov|decid|deferi)|(respond|respost|aprov|decid).*(quanto tempo|prazo|demora)",
+     ("anexo.art34.2", "anexo.art35.10")),
+    (r"(comec|inici|arranc).*(obra|trabalh)|(obra|trabalh).*(comec|inici|arranc)", ("anexo.art80.2", "anexo.art34.2")),
+    (r"\b(falt|esquec|incomplet|corrig|aperfeico)", ("anexo.art35.9",)),
+    (r"(quem|tecnico).*(assin|subscrev|responsavel|habilitad)|(assin|subscrev).*projet", ("anexo.art10.3", "anexo-V.27.k")),
+    (r"(nao cumpr|desconform|ilegal|embarg)", ("anexo.art102.2", "anexo.art35.8")),
+    (r"camara.*\b(pode|podem|deve)\b.*\b(pedir|exigir|solicitar)", ("anexo.art9.12.",)),   # a path ending in «.» ranks up its whole list, no floor
+]
 LISTS = {"CP/CPEDI": ["anexo-V.27"] + [f"anexo-V.{n}" for n in range(5, 18)]}
 
 
@@ -46,14 +58,23 @@ def fold(s):
 
 WORDS = {"quanto": "", "tem": "", "fazer": "", "alvara": "alvara titulo habilitante impic", "empreiteiro": "empreiteiro alvara habilitante impic",
          "muro": "muro vedacao escassa relevancia", "muros": "muros vedacao escassa relevancia",
-         "responder": "prazo delibera", "resposta": "prazo delibera", "responde": "prazo delibera", "demorar": "prazo dias",
-         "demora": "prazo dias", "aprovar": "delibera prazo", "aprovacao": "delibera prazo"}
+         "responder": "prazo delibera proceder realizacao", "resposta": "prazo delibera proceder realizacao", "responde": "prazo delibera proceder realizacao", "demorar": "prazo dias",
+         "demora": "prazo dias", "aprovar": "delibera prazo", "aprovacao": "delibera prazo",
+         "comecar": "iniciar trabalhos proceder realizacao", "iniciar": "iniciar trabalhos proceder realizacao",
+         "pintar": "pintar obras conservacao", "pintura": "pintura obras conservacao",
+         "janela": "janela caixilhos vaos caixilharia", "janelas": "janelas caixilhos vaos caixilharia",
+         "caderneta": "caderneta predial", "aperfeicoamento": "aperfeicoamento suprir falta elementos",
+         "corrigir": "corrigir suprir falta", "completar": "completar suprir falta"}
+PHRASES = [(r"\bo que e\b", " consiste ")]   # «o que é uma comunicação prévia?» asks for the article that says what it consists of
 
 
 def qtoks(s):
     """The question's stems, with whole words a person uses swapped for the law's (fold first so «resposta» and «responder» are
     caught before they are cut to «respon», the stem of «responsabilidade»)."""
-    words = re.findall(r"[a-z0-9]+", fold(s))
+    s = fold(s)
+    for pat, add in PHRASES:
+        s = re.sub(pat, add, s)
+    words = re.findall(r"[a-z0-9]+", s)
     return toks(" ".join(WORDS.get(w, w) for w in words))
 
 
@@ -77,6 +98,15 @@ def label_of(path):
     return ", ".join(out)
 
 
+def keep(x):
+    """A passage worth searching: not a heading, not «[Revogado.]», not an «Artigo n.º» title, not an Annex VII form field. Short
+    rules stay («a) As obras de conservação;», «c) A caderneta predial;»): a length floor of 25 letters had dropped them (2026-11-10)."""
+    t = strip_label(x["text"])
+    if x["kind"] == "heading" or re.match(r"\[?revogad", t, re.I) or re.match(r"Artigo \d", t) or len(t) < 6:
+        return False
+    return len(t) >= 25 or not x["path"].startswith("anexo-VII")
+
+
 def strip_label(text):
     return re.sub(r"^\s*(\d+\s*-\s*|[a-z]{1,4}\)\s*|[ivx]+\)\s*)", "", text).strip()
 
@@ -86,12 +116,12 @@ class Law:
         self.p = {}
         port = json.loads((ROOT / "structure" / "portaria-320-2026-1.json").read_text(encoding="utf-8"))["passages"]
         for x in port:
-            if x["path"].startswith(("anexo-V.", "anexo-VI.", "anexo-VII.")) and x["kind"] != "heading" and len(strip_label(x["text"])) >= 25:
+            if x["path"].startswith(("anexo-V.", "anexo-VI.", "anexo-VII.")) and keep(x):
                 self.p[x["id"]] = {**x, "act": PORTARIA, "label": label_of(x["path"])}
         f = ROOT / "structure" / "decreto-lei-108-2026.json"
         if f.exists():
             for x in json.loads(f.read_text(encoding="utf-8"))["passages"]:
-                if re.match(r"anexo\.art(\d+[A-Z-]*)(\.|$)", x["path"]) and x["kind"] != "heading" and len(strip_label(x["text"])) >= 25:
+                if re.match(r"anexo\.art(\d+[A-Z-]*)(\.|$)", x["path"]) and keep(x):
                     self.p[x["id"]] = {**x, "act": RJUE, "label": label_of(x["path"])}
         self.rules = {r["passage"]: r for r in json.loads((ROOT / "law" / "cp-edificacao.json").read_text(encoding="utf-8"))["rules"]}
         self.order = list(self.p)
@@ -126,6 +156,8 @@ class Law:
 
     def search(self, q, k=8, scope="CP/CPEDI"):
         base = qtoks(q)
+        fq = fold(q)
+        topic = {p for pat, paths in TOPICS if re.search(pat, fq) for p in paths} if scope else set()
         qt = base + [e for t in base for e in EXPAND.get(t, ()) if e not in base]
         scored = []
         for pid in self.p:
@@ -135,10 +167,20 @@ class Law:
                 if f:
                     w = 1.0 if t in base else 0.6   # a word the person typed counts more than the law word it stands for
                     s += w * self.idf.get(t, 0) * f * 2.2 / (f + 1.2 * (0.25 + 0.75 * self.len[pid] / self.avg))
+            path = self.p[pid]["path"]
+            if path in topic:
+                s = (s + 2.0) * 2.5   # counted even when the person's words miss the law's
+            elif any(t.endswith(".") and path.startswith(t) for t in topic):
+                s *= 2.5
             if s > 0:
-                path = self.p[pid]["path"]
                 if scope and self.in_scope(pid, scope):
                     s *= 1.6
+                elif scope and re.match(r"anexo\.art(34|35|80)\.", path):
+                    s *= 1.4    # the comunicação prévia's own articles: what it is, when works may start, the after-the-fact check
+                elif scope and re.match(r"anexo\.art(1[89]|2[0-7])(\.|$)", path):
+                    s *= 0.5    # the licença procedure (RJUE 18.º–27.º): its deadlines are not the comunicação prévia's
+                elif scope and re.match(r"anexo\.art11(\.|$)", path):
+                    s *= 0.5    # saneamento of PIP and licença requests only (11.º n.º 1); a comunicação prévia is corrected under 35.º n.º 9
                 elif scope and re.match(r"anexo\.art1[4-7](\.|$)", path):
                     s *= 0.5    # pedido de informação prévia (RJUE 14.º–17.º): another procedure's deadlines and contents
                 elif path.startswith("anexo.art2."):
@@ -177,6 +219,14 @@ class Law:
             exig, cond, why = "condicional", self._group_condition(passage), "a condição está na alínea que agrupa esta passagem"
         elif rule:
             exig, cond, why = "sempre", "", "elemento exigido neste pedido, sem condição na lei"
+        elif x["path"].startswith("anexo.art9.12."):   # the law's own list of what no câmara may ask for
+            exig, cond, why = "proibido", "", "o RJUE proíbe a câmara de pedir este elemento (artigo 9.º, n.º 12)"
+        elif x["path"].startswith("anexo.art6.1."):
+            m = COND.search(txt)
+            exig, cond, why = "isento", (txt[m.start():].rstrip(";:.") if m else ""), "o artigo 6.º, n.º 1 isenta esta obra de licença e de comunicação prévia"
+        elif x["path"].startswith("anexo.art6-A.1."):
+            exig, cond, why = ("isento", "exceto em imóveis classificados, em vias de classificação ou nas suas zonas de proteção (artigo 6.º-A, n.º 2)",
+                               "obra de escassa relevância urbanística: isenta pelo artigo 6.º, n.º 1, alínea c)")
         else:   # a rule of the RJUE or of Annex VI/VII: it applies, it is not a document to deliver
             m = COND.search(txt)
             exig, cond, why = "—", (txt[m.start():].rstrip(";:.") if m else ""), "regra da lei: aplica-se ao pedido, não é um documento a entregar"
