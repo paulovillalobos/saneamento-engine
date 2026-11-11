@@ -97,6 +97,16 @@ class PlainQuestions(unittest.TestCase):
             if exig:
                 self.assertEqual(top["exigido"], exig, q)
 
+    def test_honesty_gate(self):
+        """D29: questions the law does not answer directly get no verdict; the questions above all keep theirs."""
+        for q in ("preciso de autorização dos vizinhos?", "preciso de licença para uma marquise?", "posso demolir uma casa antiga?",
+                  "qual é a cor que posso pintar a casa?", "a câmara pode pedir o PDM?"):
+            self.assertTrue(L.search(q)[0]["fraca"], q)
+        for q, _, _ in self.MORE:
+            self.assertFalse(L.search(q)[0]["fraca"], q)
+        for q, _ in PlainQuestions.CASES:
+            self.assertFalse(L.search(q)[0]["fraca"], q)
+
     def test_short_rules_are_searchable(self):
         for path in ("anexo.art6.1.a", "anexo.art9.12.c", "anexo-V.27.c.i"):
             self.assertTrue(any(x["path"] == path for x in L.p.values()), path)

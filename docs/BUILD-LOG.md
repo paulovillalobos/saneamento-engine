@@ -266,3 +266,6 @@
 ## 2026-11-10 late — second check and field comparison (D28)
 - Field: ours 6, Vergunningcheck (NL) 5, UK Planning Portal 4, Coimbra 3–4, DR LIA ~3, Lupapiste 3, NoPaper/ePaper 2, gov.pt assistant 1.
 - Fixed: forbidden-document verdict, exemption verdict, comunicação prévia articles over licença ones, short rules searchable.
+
+## 2026-11-11 — honesty gate on lei.foaap.app (D29)
+- No verdict on a weak match; 0/36 right answers lose their verdict, 8/14 wrong ones are caught. 31 tests green.

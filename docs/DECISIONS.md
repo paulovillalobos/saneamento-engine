@@ -382,3 +382,15 @@ round from now on is trained and read inside the scaffold. Round 9 is the first.
   (test_second_round), short-rule and no-revoked tests. 30 tests green.
 - Page: example buttons now include «A câmara pode exigir o plano de segurança e saúde?», «Quando posso começar a obra?», «Preciso de
   licença para mudar as janelas?»; red and green verdict badges for proibido and isento.
+
+## D29 — Honesty gate: no verdict on a guess (2026-11-11)
+- Why: sixteen blind questions on the live site — 7 right, 6 harmlessly wrong, 3 wrong under a verdict badge («marquise» and «anexo no
+  quintal» → a loteamento clause «Exigido em certa condição»; «demolir uma casa antiga» → green «Isento» on 6.º n.º 1 i), illegal
+  buildings). A person types what they want; a verdict on a guess is the one thing the page must never show.
+- Rule (engine/law_search.py, WEAK_SCORE 9.0, WEAK_GAP 1.5): the top passage is «fraca» when its score is under 9 AND it leads the
+  second by less than 1.5×. Calibrated on 36 right and 14 wrong answers: 0/36 right ones flagged, 8/14 wrong ones flagged; the six
+  wrong ones left show general rules or a related element, never a wrong «isento/proibido/exigido» on the asked thing.
+- Page: a weak top shows «A lei não responde diretamente a esta pergunta», the three closest passages as clues, no badge.
+- Two more TOPICS: finishing the works → 58.º n.º 2, 71.º n.º 3 d); validity/caducidade → 71.º n.º 3 (a, d). Topic floor raised to
+  (s + 4) × 2.5 so the named article outranks a neighbour that only shares «prazo».
+- Test: test_honesty_gate (five weak questions flagged; every PlainQuestions and second-round question keeps its verdict). 31 green.

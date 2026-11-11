@@ -47,8 +47,13 @@ TOPICS = [
     (r"\b(falt|esquec|incomplet|corrig|aperfeico)", ("anexo.art35.9",)),
     (r"(quem|tecnico).*(assin|subscrev|responsavel|habilitad)|(assin|subscrev).*projet", ("anexo.art10.3", "anexo-V.27.k")),
     (r"(nao cumpr|desconform|ilegal|embarg)", ("anexo.art102.2", "anexo.art35.8")),
+    (r"(acabar|conclu|terminar).*\bobras?\b|prazo de execuc", ("anexo.art58.2", "anexo.art71.3.d")),
+    (r"\b(valid|caduc|expir)", ("anexo.art71.3", "anexo.art71.3.a", "anexo.art71.3.d")),
     (r"camara.*\b(pode|podem|deve)\b.*\b(pedir|exigir|solicitar)", ("anexo.art9.12.",)),   # a path ending in «.» ranks up its whole list, no floor
 ]
+# Calibrated 2026-11-11 on 36 questions answered right and 14 answered wrong: every wrong top passage scored < 9 with ≤ 1.11× the
+# second; every right one either scored ≥ 9.5 or led the second by ≥ 1.4×.
+WEAK_SCORE, WEAK_GAP = 9.0, 1.5
 LISTS = {"CP/CPEDI": ["anexo-V.27"] + [f"anexo-V.{n}" for n in range(5, 18)]}
 
 
@@ -169,7 +174,7 @@ class Law:
                     s += w * self.idf.get(t, 0) * f * 2.2 / (f + 1.2 * (0.25 + 0.75 * self.len[pid] / self.avg))
             path = self.p[pid]["path"]
             if path in topic:
-                s = (s + 2.0) * 2.5   # counted even when the person's words miss the law's
+                s = (s + 4.0) * 2.5   # counted even when the person's words miss the law's
             elif any(t.endswith(".") and path.startswith(t) for t in topic):
                 s *= 2.5
             if s > 0:
@@ -189,7 +194,11 @@ class Law:
                     s *= 0.35   # an element of another procedure's list answers a different question (V.34.f is not the CPEDI estimate)
                 scored.append((s, pid))
         scored.sort(reverse=True)
-        return [self.card(pid, scope, s) for s, pid in scored[:k]]
+        cards = [self.card(pid, scope, s) for s, pid in scored[:k]]
+        if cards:   # the honesty gate (D29): a low score with no lead over the next passage is a guess, so no verdict is shown for it
+            gap = scored[0][0] / scored[1][0] if len(scored) > 1 and scored[1][0] > 0 else 9.0
+            cards[0]["fraca"] = scored[0][0] < WEAK_SCORE and gap < WEAK_GAP
+        return cards
 
     def in_scope(self, pid, scope):
         path = self.p[pid]["path"]

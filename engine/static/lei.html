@@ -67,6 +67,9 @@ function showAnswer(confirmed,note){thinking(false);const ps=R.passagens||[];con
  const pick=R.escolhida;confirmed=!!(pick&&top&&pick.id===top.id);
  if(pick&&top&&pick.id!==top.id)note='A AMALIA indicou outra passagem como resposta: está em baixo, em «Outras passagens».';
  if(!top){$('answer').style.display='block';$('answer').innerHTML='<div class="where">Nenhuma passagem da lei responde a esta pergunta.</div><div class="why">Experimente com outras palavras, ou com um dos exemplos.</div>';$('others').innerHTML='';return}
+ if(top.fraca){$('answer').style.display='block';   // the honesty gate: a weak match gets no verdict
+  $('answer').innerHTML='<div class="verdict">A lei não responde diretamente a esta pergunta</div><div class="why">Não encontrámos uma passagem que responda com segurança. Estas são as mais próximas; leia-as como pistas, não como resposta. Experimente perguntar por um documento ou por um prazo concreto.</div>';
+  $('others').innerHTML=`<h3>Passagens mais próximas</h3>`+ps.slice(0,3).map(p=>`<div class="other"><div class="l">${esc(p.label)} · ${esc(p.act)}</div><div class="t">${esc(p.text)}</div></div>`).join("");return}
  $('answer').style.display='block';$('answer').innerHTML=card(top,confirmed,note);
  let rest=ps.filter(p=>p.id!==top.id);if(pick&&pick.id!==top.id)rest=[pick].concat(rest.filter(p=>p.id!==pick.id));rest=rest.slice(0,3);
  $('others').innerHTML=rest.length?`<h3>Outras passagens próximas</h3>`+rest.map(p=>`<div class="other"><div class="l">${esc(p.label)} · ${esc(VERDICT[p.exigido]||p.exigido)}${pick&&p.id===pick.id&&pick.id!==top.id?' · <span style="color:var(--purple)">indicada pela AMALIA</span>':''}</div><div class="t">${esc(p.text)}</div></div>`).join(""):''}
